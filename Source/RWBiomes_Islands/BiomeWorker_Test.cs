@@ -12,7 +12,10 @@ namespace RWBiomes_Islands
     {
         public override float GetScore(Tile tile, int tileID)
         {
-
+            if(!tile.WaterCovered)
+            {
+                return -100;
+            }
             return 100;
 
         }

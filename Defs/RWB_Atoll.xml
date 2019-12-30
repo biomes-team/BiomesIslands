@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GenStepDef>
+    <defName>RWB_GenAtoll</defName>
+    <order>320</order>
+    <genStep Class="RWBiomes_Islands.GenStep_Atoll" />
+  </GenStepDef>
+  
+  
+  
+<BiomeDef>							<!-- Atoll -->
+    <defName>RWB_Atoll_NoBeach</defName>
+    <label>atoll</label>
+    <description>Ring island.</description>
+    <workerClass>RWBiomes_Islands.BiomeWorker_Atoll</workerClass>
+	<canAutoChoose>false</canAutoChoose>
+	<allowRoads>false</allowRoads>
+	<allowRivers>false</allowRivers>
+    <animalDensity>3.0</animalDensity>
+    <plantDensity>0.9</plantDensity>
+    <settlementSelectionWeight>0.01</settlementSelectionWeight>
+    <movementDifficulty>1.5</movementDifficulty>
+    <texture>World/Biomes/RWB_Atoll</texture>
+    <forageability>0.1</forageability>
+	<foragedFood>RawAgave</foragedFood>
+    <wildPlantRegrowDays>30</wildPlantRegrowDays>
+    <soundsAmbient>
+      <li>Ambient_NightInsects_Standard</li>
+    </soundsAmbient>
+    <diseaseMtbDays>70</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>60</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>60</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+    </diseases>
+    <terrainsByFertility>
+<li>
+        <terrain>WaterOceanDeep</terrain>
+        <min>-999</min>
+        <max>0.35</max>
+      </li>
+	  <li>
+        <terrain>WaterOceanShallow</terrain>
+        <min>0.35</min>
+        <max>1.0</max>
+      </li>
+	  <li>
+        <terrain>Sand</terrain>
+        <min>1.0</min>
+        <max>2.0</max>
+      </li>
+	  <li>
+        <terrain>Soil</terrain>
+        <min>2.0</min>
+        <max>3.0</max>
+      </li>
+	  <li>
+        <terrain>SoilRich</terrain>
+        <min>3.0</min>
+        <max>5.0</max>
+      </li>
+    </terrainsByFertility>
+
+	
+    <baseWeatherCommonalities>
+      <Clear>18</Clear>
+      <Fog>0.5</Fog>
+      <Rain>2</Rain>
+      <DryThunderstorm>1</DryThunderstorm>
+      <RainyThunderstorm>1</RainyThunderstorm>
+      <FoggyRain>0.5</FoggyRain>
+      <SnowGentle>3</SnowGentle>
+      <SnowHard>3</SnowHard>
+    </baseWeatherCommonalities>
+    <wildPlants>
+		<Plant_Grass>3.0</Plant_Grass>
+		<Plant_TallGrass>2.0</Plant_TallGrass>
+		<Plant_ShrubLow>2.0</Plant_ShrubLow>
+		<Plant_Alocasia>0.8</Plant_Alocasia>
+		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
+		<Plant_TreePalm>0.3</Plant_TreePalm>
+		<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+		<Plant_TreeTeak>0.2</Plant_TreeTeak>
+		<Plant_Bush>0.15</Plant_Bush>
+		<Plant_Clivia>0.07</Plant_Clivia>
+		<Plant_Berry>0.05</Plant_Berry>
+		<Plant_Rafflesia>0.0008</Plant_Rafflesia>
+    </wildPlants>
+    <wildAnimals>
+		<Rat>1</Rat>
+		<Monkey>1</Monkey>
+		<Boomalope>0.5</Boomalope>
+		<Capybara>0.5</Capybara>
+		<Cassowary>0.5</Cassowary>
+		<Tortoise>0.5</Tortoise>
+		<Chinchilla>0.5</Chinchilla>
+		<WildBoar>0.5</WildBoar>
+		<Elephant>0.5</Elephant>
+		<Rhinoceros>0.5</Rhinoceros>
+		<Alpaca>0.5</Alpaca>
+		<Cobra>0.15</Cobra>
+		<Panther>0.15</Panther>
+		</wildAnimals>
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+      <li>Dromedary</li>
+    </allowedPackAnimals>
+</BiomeDef>
+  
+
+</Defs>

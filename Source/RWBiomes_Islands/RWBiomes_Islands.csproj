@@ -47,10 +47,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiomeWorker_Atoll.cs" />
     <Compile Include="BiomeWorker_IslandTropSwamp.cs" />
     <Compile Include="BiomeWorker_IslandRainforest.cs" />
     <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Test.cs" />
+    <Compile Include="GenStep_Atoll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
