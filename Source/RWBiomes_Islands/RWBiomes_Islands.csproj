@@ -53,6 +53,7 @@
     <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Test.cs" />
     <Compile Include="GenStep_Atoll.cs" />
+    <Compile Include="GenStep_OceanDeepResources.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

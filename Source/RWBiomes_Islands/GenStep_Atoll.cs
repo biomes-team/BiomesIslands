@@ -16,37 +16,52 @@ namespace RWBiomes_Islands
         {
             get
             {
-                return 12651228;
+                return 123651228;
             }
         }
 
-        public IntRange NoiseRange = new IntRange(-20, 20);
+        public IntRange mainSizeRange = new IntRange(45, 56);
+
+        public IntRange NoiseRange = new IntRange(-3, 3);
         public IntRange SizeRange = new IntRange(3, 14);
-        public float stretch = 1.4f;
+        private float stretch = 1.2f;
 
 
         public override void Generate(Map map, GenStepParams parms)
         {
 
-            if (map.Biome.defName != "RWB_Atoll_NoBeach")
+            if (map.Biome.defName != "RWB_IslandAtoll_NoBeach")
             {
                 return;
             }
+            Log.Message("Generating atoll");
 
             List<IntVec3> list = new List<IntVec3>();
             MapGenFloatGrid elevation = MapGenerator.Elevation;
             MapGenFloatGrid fertility = MapGenerator.Fertility;
             TerrainGrid terrainGrid = map.terrainGrid;
 
-            IntVec3 mapCenter = map.Center;
+            int x = NoiseRange.RandomInRange;
+            int z = NoiseRange.RandomInRange;
 
-            int outerRadius = 55;
-            int innerRadius = 50;
-            //int innerRadius = 52;
-            List<IntVec3> anchorRing = GenRadial.RadialCellsAround(mapCenter, outerRadius, true).Except(GenRadial.RadialCellsAround(mapCenter, innerRadius, true)).ToList();
+            IntVec3 outerCenter = map.Center;
+            outerCenter.x += x;
+            outerCenter.z += z;
+            IntVec3 innerCenter = map.Center;
+            //innerCenter.x -= x;
+            //innerCenter.z -= z;
+
+            int outerRadius = mainSizeRange.RandomInRange;
+            int innerRadius = outerRadius - 6;
+
+
+
+            List<IntVec3> anchorRing = GenRadial.RadialCellsAround(outerCenter, outerRadius, true).Except(GenRadial.RadialCellsAround(innerCenter, innerRadius, true)).ToList();
 
 
             int centerCoord = map.Size.x / 2;
+            stretch = 0.7f + Rand.Value;
+            Log.Message("Stretch value: " + stretch);
 
             foreach (IntVec3 a in anchorRing)
             {
@@ -71,14 +86,14 @@ namespace RWBiomes_Islands
 
                     foreach (IntVec3 groundTile in island)
                     {
-                        fertility[groundTile] += 0.015f;
+                        fertility[groundTile] += 0.035f;
                     }
                 }
 
 
             }
 
-            List<IntVec3> lagoon = GenRadial.RadialCellsAround(mapCenter, outerRadius, true).ToList();
+            List<IntVec3> lagoon = GenRadial.RadialCellsAround(map.Center, outerRadius, true).ToList();
 
             foreach (IntVec3 current in map.AllCells)
             {
@@ -97,6 +112,8 @@ namespace RWBiomes_Islands
                 terrainGrid.SetTerrain(current, terrainDef);
             }
 
+            GenStep_OceanDeepResources deepLumps = new GenStep_OceanDeepResources();
+            deepLumps.Generate(map, parms);
         }
 
 

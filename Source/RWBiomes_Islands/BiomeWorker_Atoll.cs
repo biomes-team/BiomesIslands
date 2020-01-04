@@ -17,11 +17,11 @@ namespace RWBiomes_Islands
             {
                 return -100f;
             }
-            if (tile.elevation < -500f || tile.elevation > -120f)
+            if (tile.elevation < -500f || tile.elevation > -80f)
             {
                 return 0f;
             }
-            if (Rand.Value < 0.998f)
+            if (Rand.Value < 0.997f)
             {
                 return 0f;
             }

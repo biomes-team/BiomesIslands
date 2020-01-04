@@ -3,14 +3,14 @@
 
   <GenStepDef>
     <defName>RWB_GenAtoll</defName>
-    <order>320</order>
+    <order>330</order>
     <genStep Class="RWBiomes_Islands.GenStep_Atoll" />
   </GenStepDef>
   
   
   
 <BiomeDef>							<!-- Atoll -->
-    <defName>RWB_Atoll_NoBeach</defName>
+    <defName>RWB_IslandAtoll_NoBeach</defName>
     <label>atoll</label>
     <description>Ring island.</description>
     <workerClass>RWBiomes_Islands.BiomeWorker_Atoll</workerClass>
@@ -89,6 +89,16 @@
         <min>3.0</min>
         <max>5.0</max>
       </li>
+	  <li>
+        <terrain>Marsh</terrain>
+        <min>5.0</min>
+        <max>10.0</max>
+      </li>
+	  <li>
+        <terrain>Ice</terrain>
+        <min>10.0</min>
+        <max>999</max>
+      </li>
     </terrainsByFertility>
 
 	
@@ -107,6 +117,7 @@
 		<Plant_TallGrass>2.0</Plant_TallGrass>
 		<Plant_ShrubLow>2.0</Plant_ShrubLow>
 		<Plant_Alocasia>0.8</Plant_Alocasia>
+		<RWB_CoconutPalm>0.5</RWB_CoconutPalm>
 		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
 		<Plant_TreePalm>0.3</Plant_TreePalm>
 		<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
