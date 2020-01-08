@@ -10,8 +10,8 @@
       <Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/RWB_CoconutPalm</texPath>
-			<!--<graphicClass>Graphic_Random</graphicClass>-->
+			<texPath>Things/Plant/RWB_CoconutPalm/RWB_CoconutPalm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.18, 0.3, 0.15)</volume>
         		<offset>(0.03,0,-0.44)</offset>
@@ -26,8 +26,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<growDays>18</growDays>
-			<!--<leaflessGraphicPath>Things/Plant/BerryPlant_Leafless</leaflessGraphicPath>-->
-			<immatureGraphicPath>Things/Plant/RWB_CoconutPalm_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/RWB_CoconutPalm/RWB_CoconutPalm_Immature</immatureGraphicPath>
 			<harvestYield>6</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestTag>Standard</harvestTag>
