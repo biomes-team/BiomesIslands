@@ -31,10 +31,10 @@ namespace RWBiomes_Islands
             {
                 return 0f;
             }
-            if (tile.rainfall < 2000f)
-            {
-                return 0f;
-            }
+            //if (tile.rainfall < 2000f)
+            //{
+            //    return 0f;
+            //}
 
             return tile.temperature + 0.0001f;
 

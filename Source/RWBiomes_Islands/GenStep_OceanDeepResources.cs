@@ -21,17 +21,13 @@ namespace RWBiomes_Islands
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            //if (map.TileInfo.WaterCovered)
-            //{
-            //    return;
-            //}
-            Log.Message("Starting deep lumps");
+            if (!map.TileInfo.WaterCovered)
+            {
+                return;
+            }
             int num = base.CalculateFinalCount(map);
 
             num = CountFromPer10kCells(14, map);
-
-            Log.Message("final count " + num);
-
 
             for (int i = 0; i < num; i++)
             {

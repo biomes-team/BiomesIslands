@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!-- 					Coral 				     -->
+   <ThingDef ParentName="UglyRockBase" Name="RWB_CoralRockBase">
+    <defName>RWB_CoralRock</defName>
+    <label>coral</label>
+	<generateCommonality>0</generateCommonality>
+    <description>A chunk of coral.</description>
+    <graphicData>
+      <color>(245,155,120)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+    </statBases>
+    <building>
+      <mineableThing>RWB_ChunkCoral</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>RWB_SmoothedCoral</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="RWB_CoralRockBase">
+    <defName>RWB_SmoothedCoral</defName>
+    <label>smoothed coral</label>
+    <description>Smoothed and polished coral</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>15</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>RWB_ChunkCoral</defName>
+    <label>coral chunk</label>
+    <graphicData>
+      <color>(245,155,120)</color>
+	  <texPath>Things/Item/Chunk/ChunkCoral</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>22</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <RWB_BlocksCoral>20</RWB_BlocksCoral>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>RWB_BlocksCoral</defName>
+    <label>coral blocks</label>
+    <description>Blocks of solid coral.</description>
+    <graphicData>
+      <color>(245,155,120)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(245,155,120)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>coral</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.2</MaxHitPoints>
+      </statFactors>
+	  <commonality>0</commonality>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>RWB_Make_StoneBlocksCoral</defName>
+		<label>make coral blocks</label>
+		<description>Cuts coral chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RWB_ChunkCoral</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RWB_ChunkCoral</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RWB_BlocksCoral>20</RWB_BlocksCoral>
+		</products>
+	</RecipeDef>
+
+	
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>RWB_TileCoral</defName>
+    <label>coral tile</label>
+    <color>(245,155,120)</color>
+    <costList>
+      <RWB_BlocksCoral>4</RWB_BlocksCoral>
+    </costList>
+  </TerrainDef>
+
+
+   	<TerrainDef ParentName="FlagstoneBase">
+		<defName>RWB_FlagstoneCoral</defName>
+		<label>coral flagstone</label>
+		<color>(245,155,120)</color>
+		<costList>
+			<RWB_BlocksCoral>4</RWB_BlocksCoral>
+		</costList>
+	</TerrainDef>
+</Defs>
