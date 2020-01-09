@@ -5,7 +5,7 @@ using System.Text;
 using RimWorld;
 using RimWorld.Planet;
 
-namespace RWBiomes_Islands
+namespace BiomesIslands.BiomeWorkers
 {
     // Spawns the biome on every tile
     public class BiomeWorker_Test : BiomeWorker

@@ -7,7 +7,7 @@ using RimWorld.BaseGen;
 using Verse;
 
 
-namespace RWBiomes_Islands
+namespace BiomesIslands.GenSteps
 {
     public class GenStep_Atoll : GenStep
     {
@@ -32,7 +32,7 @@ namespace RWBiomes_Islands
         public override void Generate(Map map, GenStepParams parms)
         {
 
-            if (map.Biome.defName != "RWB_IslandAtoll_NoBeach")
+            if (map.Biome.defName != "BiomesIslands_Atoll_NoBeach")
             {
                 return;
             }

@@ -6,7 +6,7 @@ using RimWorld.Planet;
 using RimWorld;
 using Verse;
 
-namespace RWBiomes_Islands
+namespace BiomesIslands.BiomeWorkers
 {
     public class BiomeWorker_Atoll : BiomeWorker
     {

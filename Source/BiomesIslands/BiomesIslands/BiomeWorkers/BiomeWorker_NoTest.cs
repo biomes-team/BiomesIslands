@@ -5,7 +5,7 @@ using System.Text;
 using RimWorld;
 using RimWorld.Planet;
 
-namespace RWBiomes_Islands
+namespace BiomesIslands.BiomeWorkers
 {
     // Never spawns the biome
     public class BiomeWorker_NoTest : BiomeWorker

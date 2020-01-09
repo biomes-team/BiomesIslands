@@ -6,7 +6,7 @@ using Verse;
 using RimWorld;
 using Verse.Noise;
 
-namespace RWBiomes_Islands
+namespace BiomesIslands.GenSteps
 {
     public class GenStep_OceanRockChunks : GenStep
     {

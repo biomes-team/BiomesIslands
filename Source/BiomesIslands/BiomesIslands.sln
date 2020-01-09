@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RWBiomes_Islands", "RWBiomes_Islands.csproj", "{C87AC0BA-1005-478A-80B4-E8830B7DBF1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiomesIslands", "BiomesIslands/BiomesIslands.csproj", "{C87AC0BA-1005-478A-80B4-E8830B7DBF1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

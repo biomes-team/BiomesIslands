@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="PlantBase">
-		<defName>RWB_CoconutPalm</defName>
+	<ThingDef ParentName="PlantBase">
+		<defName>BiomesIslands_CoconutPalm</defName>
 		<label>coconut tree</label>
 		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces any coconuts.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-      <Nutrition>0.35</Nutrition>
+			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/RWB_CoconutPalm/RWB_CoconutPalm</texPath>
+			<texPath>Things/Plant/CoconutPalm/CoconutPalm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.18, 0.3, 0.15)</volume>
-        		<offset>(0.03,0,-0.44)</offset>
+				<offset>(0.03,0,-0.44)</offset>
 			</shadowData>
 		</graphicData>
 		<selectable>true</selectable>
@@ -26,13 +26,13 @@
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<growDays>18</growDays>
-			<immatureGraphicPath>Things/Plant/RWB_CoconutPalm/RWB_CoconutPalm_Immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/CoconutPalm/CoconutPalm_Immature</immatureGraphicPath>
 			<harvestYield>6</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestAfterGrowth>0.60</harvestAfterGrowth>
-			<harvestedThingDef>RWB_Coconuts</harvestedThingDef>
+			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
 			<wildClusterRadius>8</wildClusterRadius>

@@ -6,7 +6,7 @@ using RimWorld;
 using RimWorld.BaseGen;
 using Verse;
 
-namespace RWBiomes_Islands
+namespace BiomesIslands.GenSteps
 {
     public class GenStep_SauronAtoll : GenStep
     {
@@ -30,11 +30,11 @@ namespace RWBiomes_Islands
         public override void Generate(Map map, GenStepParams parms)
         {
 
-            if (map.Biome.defName != "RWB_IslandAtoll_NoBeach")
+            if (map.Biome.defName != "BiomesIslands_Atoll_NoBeach")
             {
                 return;
             }
-            if (RWBIslands_Settings.flagSauronAtoll)
+            if (BiomesIslands_Settings.flagSauronAtoll)
             {
                 // spawn eye atoll
             }

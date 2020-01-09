@@ -5,11 +5,11 @@ using System.Text;
 using Verse;
 using RimWorld;
 
-namespace RWBiomes_Islands
+namespace BiomesIslands
 {
     [DefOf]
-    public static class RWB_Islands_DefOf
+    public static class BiomesIslandsDefOf
     {
-        public static ThingDef RWB_CoralRock;
+        public static ThingDef BiomesIslands_CoralRock;
     }
 }

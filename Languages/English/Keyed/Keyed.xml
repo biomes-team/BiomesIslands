@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-
   <!-- Settings -->
-  <RWBIslands_ModName>RimWorld Biomes! Islands</RWBIslands_ModName>
-  <RWBIslands_SauronAtollLabel>Atolls are eye shaped</RWBIslands_SauronAtollLabel>
-  
+  <BiomesIslands_ModName>Biomes! Islands</BiomesIslands_ModName>
+  <BiomesIslands_SauronAtollLabel>Atolls are eye shaped</BiomesIslands_SauronAtollLabel>
 </LanguageData>

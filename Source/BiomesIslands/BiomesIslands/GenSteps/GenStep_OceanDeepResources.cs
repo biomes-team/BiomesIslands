@@ -7,7 +7,7 @@ using Verse;
 using RimWorld;
 
 
-namespace RWBiomes_Islands
+namespace BiomesIslands.GenSteps
 {
     public class GenStep_OceanDeepResources : GenStep_Scatterer
     {
