@@ -11,8 +11,6 @@ namespace BiomesIslands.GenSteps
 {
     public class GenStep_Atoll : GenStep
     {
-
-
         public override int SeedPart
         {
             get
@@ -21,25 +19,24 @@ namespace BiomesIslands.GenSteps
             }
         }
 
-        public IntRange SizeRange = new IntRange(3, 16);
+        // allowed sizes for the little circles that get piled to make the landmass
+        public IntRange SizeRange = new IntRange(3, 16);                
 
-        public float stretch = 1.4f;
-        public int totalDist = 150;
-
+        // used for the total size of the main ellipse. These numbers work well for the default map size, but are adjusted to actual map size before use
         private IntRange totalRange = new IntRange(100, 150);
+        public int totalDist;
 
 
         public override void Generate(Map map, GenStepParams parms)
         {
-
             if (map.Biome.defName != "BiomesIslands_Atoll_NoBeach")
             {
                 return;
             }
 
-            List<IntVec3> list = new List<IntVec3>();
             MapGenFloatGrid fertility = MapGenerator.Fertility;
 
+            // make ellipse centered on the map's center. Smaller maps get smaller ellipses
             IntRange NoiseRange = new IntRange(-50, 50);
             NoiseRange.min = (int)(0 - 0.2 * map.Size.x);
             NoiseRange.max = (int)(0.2 * map.Size.x);
@@ -58,15 +55,12 @@ namespace BiomesIslands.GenSteps
 
             List<IntVec3> shape = MakeEllipse(focus1, focus2, map);
 
-            IntVec3 circleTest = focus2;
-            focus2.x -= 3 * x;
-            focus2.z -= 3 * z;
+            // generate random circles and cut them out of the ellipse, so that the final shape is squigglier
+            // some circles won't overlap with the main shape, so maps can end up either really squiggly or almost perfectly elliptical. Variety!
             List<IntVec3> originalShape = shape;
-
             IntRange cutoutSizes = new IntRange(Math.Min(totalRange.min / 8, 56), Math.Min(totalRange.max / 3, 56));
 
             int numCutouts = 6;
-
             for (int i = 0; i < numCutouts; i++)
             {
                 IntVec3 tempCenter = map.AllCells.RandomElement();
@@ -122,18 +116,9 @@ namespace BiomesIslands.GenSteps
         }
 
 
-        private void SetTestTerrains(Map map, List<IntVec3> shape)
-        {
-            TerrainGrid terrainGrid = map.terrainGrid;
-            TerrainDef testTerr = TerrainDefOf.MetalTile;
-            foreach (IntVec3 current in shape)
-            {
-                terrainGrid.SetTerrain(current, testTerr);
-            }
-
-        }
-
-
+        /// <summary>
+        /// Assigns terrains to the finished fertility bump map, using the terrainsByFertility list from BiomeDef in xml
+        /// </summary>
         private void SetNewTerrains(Map map)
         {
             TerrainGrid terrainGrid = map.terrainGrid;
@@ -153,10 +138,14 @@ namespace BiomesIslands.GenSteps
 
         }
 
-
+        /// <summary>
+        /// Makes the landmass shape on the map's fertility grid. 
+        /// Generates randomly-sized circles on each tile in the main shape and increments fertility in each circle.
+        /// The circles "pile" up, resulting in a bumpy, irregular landmass with the same overall shape as the initial landCells list
+        /// </summary>
         private void Makelandmass(List<IntVec3> landCells, ref MapGenFloatGrid fertility, Map map)
         {
-
+            // smaller shapes get higher increments. For atolls, this lets smaller "hills" get tall enough to actually spawn water at the peak
             float fertIncrement = 0.06f;
 
             if (totalDist < 90)
@@ -165,7 +154,7 @@ namespace BiomesIslands.GenSteps
             }
             if (totalDist < 70)
             {
-                fertIncrement = 0.12f;
+                fertIncrement = 0.13f;
             }
             if (totalDist < 55)
             {
@@ -184,6 +173,8 @@ namespace BiomesIslands.GenSteps
 
                     List<IntVec3> island = new List<IntVec3>();
 
+                    // Small chance of bigger circles. Helps the overall shape to look more natural.
+                    // For atolls, this helps to flatten/ spread out the sand and shallow water around the island. 
                     if (Rand.Chance(0.3f))
                     {
                         if (Rand.Chance(0.2f))
@@ -194,14 +185,11 @@ namespace BiomesIslands.GenSteps
                         else
                         {
                             island = GenRadial.RadialCellsAround(ne, Math.Min(56, 2.0f * SizeRange.RandomInRange), true).ToList();
-
                         }
-
                     }
                     else
                     {
                         island = GenRadial.RadialCellsAround(ne, Math.Min(56, SizeRange.RandomInRange), true).ToList();
-
                     }
 
                     foreach (IntVec3 groundTile in island)
@@ -209,16 +197,18 @@ namespace BiomesIslands.GenSteps
                         if (groundTile.InBounds(map))
                         {
                             fertility[groundTile] += fertIncrement;
-
                         }
                     }
                 }
-
 
             }
         }
 
 
+        /// <summary>
+        /// Finds the actual terrain types. 
+        /// Copied from Vanilla, probably needs heavy cleanup
+        /// </summary>
         private TerrainDef TerrainFrom(IntVec3 c, Map map, float elevation, float fertility, bool preferSolid)
         {
             TerrainDef terrainDef = null;
@@ -268,8 +258,6 @@ namespace BiomesIslands.GenSteps
 
             return TerrainDefOf.Sand;
         }
-
-
 
     }
 }
