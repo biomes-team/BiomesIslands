@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef ParentName="WaterShallowBase">
+    <defName>BiomesIslands_WaterShallowLagoon</defName>
+    <label>lagoon water</label>
+    <texturePath>Terrain/Surfaces/WaterShallowLagoon</texturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <renderPrecedence>394</renderPrecedence>
+    <driesTo>Gravel</driesTo>
+  </TerrainDef>
+
+</Defs>

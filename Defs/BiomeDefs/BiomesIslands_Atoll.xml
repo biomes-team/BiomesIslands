@@ -5,6 +5,8 @@
     <order>330</order>
     <genStep Class="BiomesIslands.GenSteps.GenStep_Atoll" />
   </GenStepDef>
+  
+  
   <BiomeDef>    <!-- Atoll -->
     <defName>BiomesIslands_Atoll_NoBeach</defName>
     <label>atoll</label>
@@ -14,7 +16,7 @@
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
     <animalDensity>2.0</animalDensity>
-    <plantDensity>0.9</plantDensity>
+    <plantDensity>0.0</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
     <texture>World/Biomes/Atoll</texture>
@@ -90,7 +92,7 @@
         <max>16</max>
       </li>
       <li>
-        <terrain>WaterOceanShallow</terrain>
+        <terrain>BiomesIslands_WaterShallowLagoon</terrain>
         <min>16</min>
         <max>999</max>
       </li>
@@ -98,13 +100,38 @@
     <terrainPatchMakers>
       <li>
         <perlinFrequency>0.015</perlinFrequency>
-        <minFertility>3.0</minFertility>
+        <minFertility>2.0</minFertility>
+        <maxFertility>10.0</maxFertility>
+        <thresholds>
+          <li>
+            <terrain>SoilRich</terrain>
+            <min>-999</min>
+            <max>-0.30</max>
+          </li>
+		  <!--
+		  <li>
+            <terrain>SoilRich</terrain>
+            <min>-0.2</min>
+            <max>0.2</max>
+          </li>
+		  -->
+		  <li>
+            <terrain>Sand</terrain>
+            <min>0.58</min>
+            <max>999</max>
+          </li>
+
+        </thresholds>
+      </li>
+	  <li>
+        <perlinFrequency>0.028</perlinFrequency>
+		<minFertility>3.0</minFertility>
         <maxFertility>8.0</maxFertility>
         <thresholds>
           <li>
             <terrain>SoilRich</terrain>
-            <min>0.40</min>
-            <max>0.90</max>
+            <min>0.25</min>
+            <max>999</max>
           </li>
         </thresholds>
       </li>
