@@ -16,7 +16,7 @@
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
     <animalDensity>2.0</animalDensity>
-    <plantDensity>0.0</plantDensity>
+    <plantDensity>0.85</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
     <texture>World/Biomes/Atoll</texture>
@@ -108,13 +108,6 @@
             <min>-999</min>
             <max>-0.30</max>
           </li>
-		  <!--
-		  <li>
-            <terrain>SoilRich</terrain>
-            <min>-0.2</min>
-            <max>0.2</max>
-          </li>
-		  -->
 		  <li>
             <terrain>Sand</terrain>
             <min>0.58</min>
@@ -147,13 +140,15 @@
       <SnowHard>3</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-      <Plant_Grass>3.0</Plant_Grass>
+		<Plant_Grass>2.0</Plant_Grass>
+		<Plant_ShrubLow>1.0</Plant_ShrubLow>
+		<BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
+		<Plant_TreePalm>0.6</Plant_TreePalm>
+	<!--
       <Plant_TallGrass>2.0</Plant_TallGrass>
-      <Plant_ShrubLow>2.0</Plant_ShrubLow>
       <Plant_Alocasia>0.8</Plant_Alocasia>
-      <BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
       <Plant_TreeCecropia>0.15</Plant_TreeCecropia>
-      <Plant_TreePalm>0.3</Plant_TreePalm>
+      
       <Plant_TreeBamboo>0.15</Plant_TreeBamboo>
       <Plant_Bush>0.15</Plant_Bush>
       <Plant_Clivia>0.07</Plant_Clivia>
@@ -161,8 +156,11 @@
       <Plant_PincushionCactus>0.6</Plant_PincushionCactus>
       <Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
       <Plant_Rafflesia>0.0008</Plant_Rafflesia>
+	  -->
     </wildPlants>
     <wildAnimals>
+		<BiomesIslands_KiwiBird>1.5</BiomesIslands_KiwiBird>
+	<!--
       <Rat>1.2</Rat>
       <Monkey>1</Monkey>
       <Boomalope>0.5</Boomalope>
@@ -177,6 +175,7 @@
       <Alpaca>0.3</Alpaca>
       <Cobra>0.20</Cobra>
       <Panther>0.10</Panther>
+	  -->
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

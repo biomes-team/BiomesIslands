@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--================== Plant products ==================-->
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>BiomesIslands_Coconuts</defName>
     <label>coconuts</label>
     <description>Big round fruit with a hard shell and a milky center</description>
     <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/Berries</texPath>
+      <texPath>Things/Item/Crops/Coconut</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.2</MarketValue>
@@ -23,4 +24,28 @@
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
+  
+  <!--================== Animal products ==================-->
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggKiwiFertilized</defName>
+	<label>kiwi egg (fert.)</label>
+	<description>A fertilized kiwi egg. If all goes well, it should hatch into a baby kiwi. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(236,217,184)</color>
+		<drawSize>1.1</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>25.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_KiwiBird</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
 </Defs>

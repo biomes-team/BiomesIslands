@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BiomesIslands_CoconutPalm</defName>
 		<label>coconut tree</label>
-		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces any coconuts.</description>
+		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces coconuts.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Nutrition>0.35</Nutrition>
@@ -27,11 +27,11 @@
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<growDays>18</growDays>
 			<immatureGraphicPath>Things/Plant/CoconutPalm/CoconutPalm_Immature</immatureGraphicPath>
-			<harvestYield>6</harvestYield>
+			<harvestYield>10</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
-			<harvestAfterGrowth>0.60</harvestAfterGrowth>
+			<harvestAfterGrowth>0.75</harvestAfterGrowth>
 			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
@@ -45,6 +45,13 @@
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<interferesWithRoof>true</interferesWithRoof>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
 		</plant>
 	</ThingDef>
 
