@@ -9,11 +9,12 @@
       <MoveSpeed>3.1</MoveSpeed>
       <MarketValue>80</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+	  <LeatherAmount>7</LeatherAmount>
     </statBases>
     <race>
       <herdAnimal>false</herdAnimal>
-      <baseBodySize>0.2</baseBodySize>
-		<baseHealthScale>0.4</baseHealthScale>
+      <baseBodySize>0.15</baseBodySize>
+		<baseHealthScale>0.5</baseHealthScale>
 		<baseHungerRate>0.4</baseHungerRate>
 		<foodType>VegetarianRoughAnimal</foodType>
       <wildness>0.45</wildness>
@@ -92,8 +93,9 @@
     <defName>BiomesIslands_KiwiBird</defName>
     <label>kiwi</label>
     <race>BiomesIslands_KiwiBird</race>
-		<combatPower>38</combatPower>
-		<lifeStages>
+	<combatPower>38</combatPower>
+	<ecoSystemWeight>0.28</ecoSystemWeight>
+	<lifeStages>
       <li>
 	  <label>kiwi chick</label>
         <bodyGraphicData>
