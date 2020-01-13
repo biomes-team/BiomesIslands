@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>BiomesIslands_CoconutPalm</defName>
 		<label>coconut tree</label>
-		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces any coconuts.</description>
+		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces coconuts.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Nutrition>0.35</Nutrition>
@@ -27,11 +27,11 @@
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<growDays>18</growDays>
 			<immatureGraphicPath>Things/Plant/CoconutPalm/CoconutPalm_Immature</immatureGraphicPath>
-			<harvestYield>6</harvestYield>
+			<harvestYield>10</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
-			<harvestAfterGrowth>0.60</harvestAfterGrowth>
+			<harvestAfterGrowth>0.75</harvestAfterGrowth>
 			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
 			<soundHarvesting>Harvest_Tree</soundHarvesting>
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
@@ -45,6 +45,67 @@
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<interferesWithRoof>true</interferesWithRoof>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>BiomesIslands_BananaPlant</defName>
+		<label>Banana Plant</label>
+		<description>A large flowering herb often mistaken for a tree. Produces bananas.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Bananaplant/BananaPlant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+				<offset>(0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>30</pathCost>
+		<altitudeLayer>Building</altitudeLayer>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<growDays>18</growDays>
+			<immatureGraphicPath>Things/Plant/Bananaplant/BananaPlant_immature</immatureGraphicPath>
+			<harvestYield>10</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestMinGrowth>0.90</harvestMinGrowth>
+			<harvestAfterGrowth>0.75</harvestAfterGrowth>
+			<harvestedThingDef>BiomesIslands_Bananas</harvestedThingDef>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>30</wildClusterWeight>
+			<visualSizeRange>
+				<min>0.95</min>
+				<max>2</max>
+			</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<interferesWithRoof>true</interferesWithRoof>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
 		</plant>
 	</ThingDef>
 

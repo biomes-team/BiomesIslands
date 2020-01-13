@@ -29,7 +29,11 @@ namespace BiomesIslands.GenSteps
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            if (map.Biome.defName != "BiomesIslands_Atoll_NoBeach")
+            if(!map.Biome.HasModExtension<IslandMap>())
+            {
+                return;
+            }
+            if(!map.Biome.GetModExtension<IslandMap>().isIsland)
             {
                 return;
             }
@@ -38,8 +42,8 @@ namespace BiomesIslands.GenSteps
 
             // make ellipse centered on the map's center. Smaller maps get smaller ellipses
             IntRange NoiseRange = new IntRange(-50, 50);
-            NoiseRange.min = (int)(0 - 0.2 * map.Size.x);
-            NoiseRange.max = (int)(0.2 * map.Size.x);
+            NoiseRange.min = (int)(0 - 0.15 * map.Size.x);
+            NoiseRange.max = (int)(0.15 * map.Size.x);
 
             IntVec3 mapCenter = map.Center;
             int x = NoiseRange.RandomInRange;
@@ -65,7 +69,7 @@ namespace BiomesIslands.GenSteps
             {
                 IntVec3 tempCenter = map.AllCells.RandomElement();
 
-                if (!originalShape.Contains(tempCenter))
+                if (!originalShape.Contains(tempCenter) && shape.Count >= 0.75 * originalShape.Count)
                 {
                     shape = shape.Except(GenRadial.RadialCellsAround(tempCenter, cutoutSizes.RandomInRange, true)).ToList();
                 }
