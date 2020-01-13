@@ -25,6 +25,30 @@
     </ingestible>
   </ThingDef>
   
+    <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BiomesIslands_Bananas</defName>
+    <label>Bananas</label>
+    <description>Long yellow fruit with a thick peel and creamy flesh.</description>
+    <graphicData>
+      <texPath>Things/Item/Crops/Bananas</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
   <!--================== Animal products ==================-->
   
   <ThingDef ParentName="EggFertBase">
