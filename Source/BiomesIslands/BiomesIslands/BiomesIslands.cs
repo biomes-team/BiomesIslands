@@ -1,4 +1,5 @@
 ﻿using Harmony;
+using System;
 using System.Reflection;
 using Verse;
 
@@ -9,7 +10,7 @@ namespace BiomesIslands
     {
         public const string Id = "rimworld.biomes.islands";
         public const string Name = "Biomes! Islands";
-        public static string Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        public static string Version = (Attribute.GetCustomAttribute(Assembly.GetExecutingAssembly(), typeof(AssemblyInformationalVersionAttribute)) as AssemblyInformationalVersionAttribute).InformationalVersion;
 
         static BiomesIslands()
         {
