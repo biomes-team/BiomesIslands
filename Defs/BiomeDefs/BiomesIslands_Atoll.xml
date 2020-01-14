@@ -27,7 +27,7 @@
     <texture>World/Biomes/Atoll</texture>
     <forageability>0.1</forageability>
     <foragedFood>RawAgave</foragedFood>
-    <wildPlantRegrowDays>30</wildPlantRegrowDays>
+    <wildPlantRegrowDays>15</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
