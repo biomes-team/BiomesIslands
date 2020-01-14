@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+Arctic
+Desert
+Jungle
+Stone
+Urban
+Woodland
+-->
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Camouflage and Stealth</modName>
+				<yourMod>Biomes! Islands</yourMod>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/BiomeDef[defName="BiomesIslands_Atoll_NoBeach"]</xpath>
+				<value>
+					<li Class="CompCamo.CompCamoDefs">
+					<CamoType>Jungle</CamoType>
+					</li>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+
+
+</Patch>
+

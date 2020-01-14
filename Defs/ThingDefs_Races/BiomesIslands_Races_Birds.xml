@@ -9,7 +9,7 @@
       <MoveSpeed>3.1</MoveSpeed>
       <MarketValue>80</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
-	  <LeatherAmount>7</LeatherAmount>
+	  <LeatherAmount>5</LeatherAmount>
     </statBases>
     <race>
       <herdAnimal>false</herdAnimal>
@@ -20,7 +20,7 @@
       <wildness>0.45</wildness>
       <trainability>Simple</trainability>
       <lifeExpectancy>15</lifeExpectancy>
-      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <nuzzleMtbHours>48</nuzzleMtbHours>
     </race>
