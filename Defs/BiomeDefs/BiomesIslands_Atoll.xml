@@ -87,7 +87,7 @@
         <max>2.0</max>
       </li>
       <li>
-        <terrain>Soil</terrain>
+        <terrain>Gravel</terrain>
         <min>2.0</min>
         <max>10.0</max>
       </li>
@@ -109,7 +109,7 @@
         <maxFertility>10.0</maxFertility>
         <thresholds>
           <li>
-            <terrain>SoilRich</terrain>
+            <terrain>Soil</terrain>
             <min>-999</min>
             <max>-0.30</max>
           </li>
