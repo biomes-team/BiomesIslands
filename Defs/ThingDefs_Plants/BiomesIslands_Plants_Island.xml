@@ -30,7 +30,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<growDays>18</growDays>
-			<immatureGraphicPath>Things/Plant/Bananaplant/BananaPlant_immature</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plant/Bananaplant/BananaPlant_Immature</immatureGraphicPath>
 			<harvestYield>10</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
@@ -38,5 +38,26 @@
 			<harvestedThingDef>BiomesIslands_Bananas</harvestedThingDef>
 		</plant>
 	</ThingDef>
+	
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
+		<defName>BiomesIslands_DevilsClawTree</defName>
+		<label>devil's claw</label>
+		<description>A tropical tree with broad, edible leaves.</description>
+		<graphicData>
+			<texPath>Things/Plant/DevilsClaw/DevilsClawTree</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<growDays>18</growDays>
+			<immatureGraphicPath>Things/Plant/DevilsClaw/DevilsClawTree_Immature</immatureGraphicPath>
+			<harvestYield>10</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestMinGrowth>0.90</harvestMinGrowth>
+			<harvestAfterGrowth>0.75</harvestAfterGrowth>
+			<harvestedThingDef>BiomesIslands_DevilsClawTree</harvestedThingDef>
+		</plant>
+	</ThingDef>
+
 
 </Defs>
