@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="BiomesCore_CrabThingBase">
     <defName>BiomesIslands_RimCrab</defName>
     <label>rimcrab</label>
     <description>A crab</description>
@@ -9,38 +9,15 @@
       <MoveSpeed>3.5</MoveSpeed>
       <MarketValue>110</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
-	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
     </statBases>
     <race>
-      <herdAnimal>false</herdAnimal>
-	  <body>BeetleLikeWithClaw</body>
+      <herdAnimal>true</herdAnimal>
       <baseBodySize>0.25</baseBodySize>
 	  <baseHealthScale>0.8</baseHealthScale>
 	  <baseHungerRate>0.55</baseHungerRate>
-	  <foodType>OmnivoreRoughAnimal</foodType>
-      <wildness>0.75</wildness>
-      <trainability>Intermediate</trainability>
       <lifeExpectancy>9</lifeExpectancy>
       <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBabyTiny</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.22</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.45</minAge>
-        </li>
-      </lifeStageAges>
-	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
     <comps>
       <li Class="CompProperties_EggLayer">
@@ -74,10 +51,6 @@
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 		</li>
 	</tools>
-    <tradeTags>
-      <li>AnimalUncommon</li>
-      <li>AnimalExotic</li>
-    </tradeTags>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
