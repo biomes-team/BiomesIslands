@@ -55,7 +55,7 @@
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestAfterGrowth>0.75</harvestAfterGrowth>
-			<harvestedThingDef>BiomesIslands_DevilsClawTree</harvestedThingDef>
+			<harvestedThingDef>BiomesIslands_Devilsclaw</harvestedThingDef>
 		</plant>
 	</ThingDef>
 
