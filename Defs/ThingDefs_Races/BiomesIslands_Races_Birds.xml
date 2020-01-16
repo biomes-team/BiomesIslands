@@ -23,6 +23,8 @@
       <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <nuzzleMtbHours>48</nuzzleMtbHours>
+	  <nameOnTameChance>0.5</nameOnTameChance>
+	  <petness>0.1</petness>
     </race>
     <comps>
       <li Class="CompProperties_EggLayer">

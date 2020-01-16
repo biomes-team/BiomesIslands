@@ -115,7 +115,7 @@
    <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggSeagullFertilized</defName>
 	<label>seagull egg (fert.)</label>
-	<description>A fertilized rimcrab egg. If all goes well, it should hatch into a baby seagull. It can be eaten raw, but it's much better cooked.</description>
+	<description>A fertilized seagull egg. If all goes well, it should hatch into a baby seagull. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(236,217,184)</color>
 		<drawSize>1.1</drawSize>
@@ -131,5 +131,23 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggGigantacondaFertilized</defName>
+	<label>gigantaconda egg (fert.)</label>
+	<description>A fertilized gigantaconda egg. If all goes well, it should hatch into a baby gigantaconda. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(220,230,180)</color>
+		<drawSize>2.0</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>88.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>11</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Gigantaconda</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
   
 </Defs>
