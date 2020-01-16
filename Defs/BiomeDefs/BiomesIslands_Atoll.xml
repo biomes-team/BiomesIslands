@@ -153,8 +153,10 @@
 	
     </wildPlants>
     <wildAnimals>
-		<BiomesIslands_KiwiBird>1.5</BiomesIslands_KiwiBird>
-		<BiomesIslands_RimCrab>0.8</BiomesIslands_RimCrab>
+		<BiomesIslands_Seagull>1.5</BiomesIslands_Seagull>
+		<BiomesIslands_KiwiBird>1.0</BiomesIslands_KiwiBird>
+		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
+		<Tortoise>0.5</Tortoise>
 
     </wildAnimals>
     <allowedPackAnimals>

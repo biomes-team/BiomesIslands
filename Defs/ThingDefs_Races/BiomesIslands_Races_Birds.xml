@@ -130,4 +130,136 @@
     </lifeStages>
   </PawnKindDef>
 
+
+  <ThingDef ParentName="BigBirdThingBase">
+    <defName>BiomesIslands_Seagull</defName>
+    <label>seagull</label>
+    <description>Annoying flocking bird</description>
+    <statBases>
+      <MoveSpeed>3.6</MoveSpeed>
+      <MarketValue>95</MarketValue>
+      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+    </statBases>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>0.45</baseBodySize>
+		<baseHealthScale>0.5</baseHealthScale>
+		<baseHungerRate>0.5</baseHungerRate>
+		<foodType>OmnivoreRoughAnimal</foodType>
+      <wildness>0.45</wildness>
+      <trainability>Simple</trainability>
+      <lifeExpectancy>11</lifeExpectancy>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.013</manhunterOnDamageChance>
+    </race>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BiomesIslands_EggSeagullFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>2</eggFertilizationCountMax>
+        <eggLayIntervalDays>9</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>1</min>
+          <max>2</max>
+        </eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4.5</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalPet</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigBirdKindBase">
+    <defName>BiomesIslands_Seagull</defName>
+    <label>seagull</label>
+    <race>BiomesIslands_Seagull</race>
+	<combatPower>45</combatPower>
+	<ecoSystemWeight>0.40</ecoSystemWeight>
+	<wildGroupSize>
+      <min>6</min>
+      <max>11</max>
+    </wildGroupSize>
+	<lifeStages>
+      <li>
+	  <label>seagull chick</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagull</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagull</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagull</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData> 
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
 </Defs>
