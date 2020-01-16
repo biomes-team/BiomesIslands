@@ -27,7 +27,7 @@
   
     <ThingDef ParentName="PlantFoodRawBase">
     <defName>BiomesIslands_Bananas</defName>
-    <label>Bananas</label>
+    <label>bananas</label>
     <description>Long yellow fruit with a thick peel and creamy flesh.</description>
     <graphicData>
       <texPath>Things/Item/Crops/Bananas</texPath>
@@ -45,6 +45,29 @@
     <ingestible>
       <preferability>RawTasty</preferability>
       <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+    <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BiomesIslands_Devilsclaw</defName>
+    <label>devil's claw leaves</label>
+    <description>Edible leaves from the devil's claw tree. A healthy leafy green!</description>
+    <graphicData>
+      <texPath>Things/Item/Crops/DevilsClaw</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
