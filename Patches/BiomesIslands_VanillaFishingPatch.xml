@@ -15,13 +15,6 @@
 					<li>BiomesIslands_Atoll_NoBeach</li>		
 				</value>
 			</li>
-			
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/VCE_Fishing.FishableTerrainDef[defName="VCEF_VanillaFishableTerrainsOcean"]/allowedTerrains</xpath>
-				<value>
-					<li>BiomesIslands_WaterShallowLagoon</li>		
-				</value>
-			</li>
 
 		</operations>
 	</Operation>
