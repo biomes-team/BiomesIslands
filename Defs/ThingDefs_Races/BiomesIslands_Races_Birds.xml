@@ -5,7 +5,7 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_KiwiBird</defName>
     <label>kiwi</label>
-    <description>Small flightless birds</description>
+    <description>Tiny round bird. It's lack of flight makes it helpless against even small predators. No relation to the fruit.</description>
     <statBases>
       <MoveSpeed>3.1</MoveSpeed>
       <MarketValue>80</MarketValue>
@@ -137,7 +137,7 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_Seagull</defName>
     <label>seagull</label>
-    <description>Annoying flocking bird</description>
+    <description>A bird that moves in large flocks, consuming any edible material they find. They can eat almost anything.</description>
     <statBases>
       <MoveSpeed>3.6</MoveSpeed>
       <MarketValue>95</MarketValue>
@@ -273,7 +273,7 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_Flamingo</defName>
     <label>flamingo</label>
-    <description>A large pink bird</description>
+    <description>A wading bird that gets it's color from the krill it eats. Prized for their beauty.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <MarketValue>230</MarketValue>

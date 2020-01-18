@@ -10,10 +10,10 @@
 		</graphicData>
 		<plant>
 			<fertilityMin>0.5</fertilityMin>
-			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<growDays>18</growDays>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>20</growDays>
 			<immatureGraphicPath>Things/Plant/CoconutPalm/CoconutPalm_Immature</immatureGraphicPath>
-			<harvestYield>10</harvestYield>
+			<harvestYield>8</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
 		</plant>
@@ -29,12 +29,12 @@
 		<plant>
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<growDays>18</growDays>
+			<growDays>20</growDays>
 			<immatureGraphicPath>Things/Plant/Bananaplant/BananaPlant_Immature</immatureGraphicPath>
-			<harvestYield>10</harvestYield>
+			<harvestYield>8</harvestYield>
 			<harvestWork>400</harvestWork>
-			<harvestMinGrowth>0.90</harvestMinGrowth>
-			<harvestAfterGrowth>0.75</harvestAfterGrowth>
+			<harvestMinGrowth>0.80</harvestMinGrowth>
+			<harvestAfterGrowth>0.65</harvestAfterGrowth>
 			<harvestedThingDef>BiomesIslands_Bananas</harvestedThingDef>
 		</plant>
 	</ThingDef>
@@ -48,13 +48,13 @@
 		</graphicData>
 		<plant>
 			<fertilityMin>0.5</fertilityMin>
-			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<growDays>18</growDays>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>20</growDays>
 			<immatureGraphicPath>Things/Plant/DevilsClaw/DevilsClawTree_Immature</immatureGraphicPath>
-			<harvestYield>10</harvestYield>
+			<harvestYield>8</harvestYield>
 			<harvestWork>400</harvestWork>
-			<harvestMinGrowth>0.90</harvestMinGrowth>
-			<harvestAfterGrowth>0.75</harvestAfterGrowth>
+			<harvestMinGrowth>0.80</harvestMinGrowth>
+			<harvestAfterGrowth>0.65</harvestAfterGrowth>
 			<harvestedThingDef>BiomesIslands_Devilsclaw</harvestedThingDef>
 		</plant>
 	</ThingDef>
