@@ -112,6 +112,25 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggOmegaDodoFertilized</defName>
+	<label>OmegaDodo egg (fert.)</label>
+	<description>A fertilized OmegaDodo egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(128,128,128)</color>
+		<drawSize>1.0</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>50.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_OmegaDodo</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
    <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggSeagullFertilized</defName>
 	<label>seagull egg (fert.)</label>
