@@ -4,7 +4,7 @@
   <BiomeDef>    <!-- TropicalIsland -->
     <defName>BiomesIslands_TropicalIsland_NoBeach</defName>
     <label>tropical island</label>
-    <description>Volcanic island.</description>
+    <description>Tropical island.</description>
     <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
 	<modExtensions>
 		<li Class="BiomesIslands.IslandMap">
@@ -16,7 +16,7 @@
     <allowRivers>false</allowRivers>
     <animalDensity>2.7</animalDensity>
     <plantDensity>0.9</plantDensity>
-    <settlementSelectionWeight>0.01</settlementSelectionWeight>
+    <settlementSelectionWeight>0.03</settlementSelectionWeight>
     <movementDifficulty>2</movementDifficulty>
     <texture>World/Biomes/TropicalRainforest</texture>
     <forageability>1</forageability>
@@ -127,11 +127,11 @@
 	  </li>
     </terrainPatchMakers>
     <baseWeatherCommonalities>
-		<Clear>18</Clear>
+		<Clear>12</Clear>
 		<Fog>1</Fog>
-		<Rain>2</Rain>
-		<DryThunderstorm>0.3</DryThunderstorm>
-		<RainyThunderstorm>1.7</RainyThunderstorm>
+		<Rain>4</Rain>
+		<DryThunderstorm>1</DryThunderstorm>
+		<RainyThunderstorm>4</RainyThunderstorm>
 		<FoggyRain>1</FoggyRain>
 		<SnowGentle>4</SnowGentle>
 		<SnowHard>4</SnowHard>
