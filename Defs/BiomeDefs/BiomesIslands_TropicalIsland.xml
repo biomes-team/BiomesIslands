@@ -141,7 +141,8 @@
 		
 		<Plant_Grass>3.0</Plant_Grass>
 		<Plant_TallGrass>2.0</Plant_TallGrass>
-		<Plant_ShrubLow>2.0</Plant_ShrubLow>
+		<BiomesIslands_FloweringFern>2.0</BiomesIslands_FloweringFern>
+		<Plant_ShrubLow>0.5</Plant_ShrubLow>
 		<Plant_Alocasia>0.8</Plant_Alocasia>
 		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
 		<Plant_TreePalm>0.3</Plant_TreePalm>

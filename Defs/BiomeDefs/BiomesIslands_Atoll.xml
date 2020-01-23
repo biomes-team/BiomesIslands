@@ -150,15 +150,15 @@
 		<BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
 		<BiomesIslands_DevilsClawTree>0.4</BiomesIslands_DevilsClawTree>
 		<Plant_TreePalm>0.6</Plant_TreePalm>
-	
+		<BiomesIslands_FloweringFern>0.5</BiomesIslands_FloweringFern>
     </wildPlants>
     <wildAnimals>
 		<BiomesIslands_Seagull>1.5</BiomesIslands_Seagull>
 		<BiomesIslands_KiwiBird>1.0</BiomesIslands_KiwiBird>
 		<BiomesIslands_Flamingo>0.8</BiomesIslands_Flamingo>
+		<BiomesIslands_OmegaDodo>0.8</BiomesIslands_OmegaDodo>
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
 		<Tortoise>0.5</Tortoise>
-		
 		
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 
