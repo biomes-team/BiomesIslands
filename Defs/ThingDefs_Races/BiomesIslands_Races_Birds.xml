@@ -133,9 +133,10 @@
     </lifeStages>
   </PawnKindDef>
   
+
 <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_OmegaDodo</defName>
-    <label>OmegaDodo</label>
+    <label>omegadodo</label>
     <description>The last dodo you'll ever want or need! Having been brought back from extinction by Urbworld scientists, this species of dodo has been genetically engineered to be far larger than the rest of its kind for the purposes of giving meat.</description>
     <statBases>
       <MoveSpeed>2.8</MoveSpeed>
@@ -146,8 +147,8 @@
     </statBases>
     <race>
       <herdAnimal>false</herdAnimal>
-      <baseBodySize>0.8</baseBodySize>
-		<baseHealthScale>0.5</baseHealthScale>
+      <baseBodySize>2.2</baseBodySize>
+		<baseHealthScale>1.3</baseHealthScale>
 		<baseHungerRate>0.60</baseHungerRate>
 		<foodType>VegetarianRoughAnimal</foodType>
       <wildness>0.50</wildness>
@@ -184,7 +185,7 @@
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>40</amount>
+              <amount>20</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -194,7 +195,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>50</power>
+        <power>25</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -211,7 +212,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>15</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -226,13 +227,13 @@
 
   <PawnKindDef ParentName="BigBirdKindBase">
     <defName>BiomesIslands_OmegaDodo</defName>
-    <label>OmegaDodo</label>
+    <label>omegadodo</label>
     <race>BiomesIslands_OmegaDodo</race>
-	<combatPower>38</combatPower>
-	<ecoSystemWeight>0.28</ecoSystemWeight>
+	<combatPower>200</combatPower>
+	<ecoSystemWeight>1.0</ecoSystemWeight>
 	<lifeStages>
       <li>
-	  <label>Dodo Chick</label>
+	  <label>dodo chick</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
           <drawSize>0.8</drawSize>
@@ -245,25 +246,26 @@
       <li>
         <bodyGraphicData>
 		  <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.0</drawSize>
+          <drawSize>1.3</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.0</drawSize>
+          <drawSize>1.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.4</drawSize>
+          <drawSize>1.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.4</drawSize>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData> 
       </li>
     </lifeStages>
   </PawnKindDef>
+
 
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_Seagull</defName>
