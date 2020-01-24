@@ -57,6 +57,7 @@
     <Compile Include="GenSteps\GenStep_OceanDeepResources.cs" />
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
     <Compile Include="IslandMap.cs" />
+    <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />
     <Compile Include="Patches\World_AddNaturalRockTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BiomesIslandsDefOf.cs" />
