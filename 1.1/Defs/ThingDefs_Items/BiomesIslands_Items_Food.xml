@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--================== Plant products ==================-->
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BiomesIslands_Coconuts</defName>
+    <label>coconuts</label>
+    <description>Big round fruit with a hard shell and a milky center</description>
+    <graphicData>
+      <texPath>Things/Item/Crops/Coconut</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+    <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BiomesIslands_Bananas</defName>
+    <label>bananas</label>
+    <description>Long yellow fruit with a thick peel and creamy flesh.</description>
+    <graphicData>
+      <texPath>Things/Item/Crops/Bananas</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+    <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BiomesIslands_Devilsclaw</defName>
+    <label>devil's claw leaves</label>
+    <description>Edible leaves from the devil's claw tree. A healthy leafy green!</description>
+    <graphicData>
+      <texPath>Things/Item/Crops/DevilsClaw</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+  <!--================== Animal products ==================-->
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggKiwiFertilized</defName>
+	<label>kiwi egg (fert.)</label>
+	<description>A fertilized kiwi egg. If all goes well, it should hatch into a baby kiwi. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(236,217,184)</color>
+		<drawSize>1.1</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>25.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_KiwiBird</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggRimCrabFertilized</defName>
+	<label>rimcrab egg (fert.)</label>
+	<description>A fertilized rimcrab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(236,217,184)</color>
+		<drawSize>1.1</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>35.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_RimCrab</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggOmegaDodoFertilized</defName>
+	<label>OmegaDodo egg (fert.)</label>
+	<description>A fertilized OmegaDodo egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(128,128,128)</color>
+		<drawSize>1.0</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>50.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_OmegaDodo</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggSeagullFertilized</defName>
+	<label>seagull egg (fert.)</label>
+	<description>A fertilized seagull egg. If all goes well, it should hatch into a baby seagull. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(236,217,184)</color>
+		<drawSize>1.1</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>28.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Seagull</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggGigantacondaFertilized</defName>
+	<label>gigantaconda egg (fert.)</label>
+	<description>A fertilized gigantaconda egg. If all goes well, it should hatch into a baby gigantaconda. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(220,230,180)</color>
+		<drawSize>2.0</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>88.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>11</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Gigantaconda</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggFlamingoFertilized</defName>
+	<label>flamingo egg (fert.)</label>
+	<description>A fertilized flamingo egg. If all goes well, it should hatch into a baby flamingo. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(255,230,220)</color>
+		<drawSize>1.4</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>40.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Flamingo</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

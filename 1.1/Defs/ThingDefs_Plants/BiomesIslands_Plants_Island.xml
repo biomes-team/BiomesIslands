@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
+		<defName>BiomesIslands_CoconutPalm</defName>
+		<label>coconut tree</label>
+		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces coconuts.</description>
+		<graphicData>
+			<texPath>Things/Plant/CoconutPalm/CoconutPalm</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>20</growDays>
+			<immatureGraphicPath>Things/Plant/CoconutPalm/CoconutPalm_immature</immatureGraphicPath>
+			<harvestYield>8</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
+		<defName>BiomesIslands_BananaPlant</defName>
+		<label>banana plant</label>
+		<description>A large flowering herb often mistaken for a tree. Produces bananas.</description>
+		<graphicData>
+			<texPath>Things/Plant/Bananaplant/BananaPlant</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<growDays>20</growDays>
+			<immatureGraphicPath>Things/Plant/Bananaplant/BananaPlant_immature</immatureGraphicPath>
+			<harvestYield>8</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestMinGrowth>0.80</harvestMinGrowth>
+			<harvestAfterGrowth>0.65</harvestAfterGrowth>
+			<harvestedThingDef>BiomesIslands_Bananas</harvestedThingDef>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
+		<defName>BiomesIslands_DevilsClawTree</defName>
+		<label>devil's claw</label>
+		<description>A tropical tree with broad, edible leaves.</description>
+		<graphicData>
+			<texPath>Things/Plant/DevilsClaw/DevilsClawTree</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>20</growDays>
+			<immatureGraphicPath>Things/Plant/DevilsClaw/DevilsClawTree_immature</immatureGraphicPath>
+			<harvestYield>8</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestMinGrowth>0.80</harvestMinGrowth>
+			<harvestAfterGrowth>0.65</harvestAfterGrowth>
+			<harvestedThingDef>BiomesIslands_Devilsclaw</harvestedThingDef>
+		</plant>
+	</ThingDef>
+
+
+</Defs>
