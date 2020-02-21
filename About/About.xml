@@ -3,9 +3,10 @@
   <name>Biomes! Islands</name>
   <author>The Biomes Mod Team</author>
   <supportedVersions>
-    <li>1.0</li>
+    <li>1.1</li>
   </supportedVersions>
   <description>
 The islands module for the Biomes! mods. Requires Biomes! Core loaded before in order to work.
   </description>
+    	<packageId>Biomes.Islands</packageId>
 </ModMetaData>
