@@ -6,11 +6,13 @@
     <label>tropical island</label>
     <description>Volcanic island.</description>
     <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
+	
 	<modExtensions>
 		<li Class="BiomesIslands.IslandMap">
 			<isIsland>true</isIsland>
 		</li>
 	</modExtensions>
+	
     <canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
