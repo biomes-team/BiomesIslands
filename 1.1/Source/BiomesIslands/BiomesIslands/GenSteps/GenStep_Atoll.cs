@@ -79,8 +79,9 @@ namespace BiomesIslands.GenSteps
             Makelandmass(shape, ref fertility, map);
             SetNewTerrains(map);
 
-            //GenStep_OceanRockChunks genStep = new GenStep_OceanRockChunks();
-            //genStep.Generate(map, parms);
+            //TODO: Fix
+            GenStep_OceanRockChunks genStep = new GenStep_OceanRockChunks();
+            genStep.Generate(map, parms);
 
         }
 

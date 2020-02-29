@@ -5,8 +5,23 @@
   <supportedVersions>
     <li>1.1</li>
   </supportedVersions>
+  <packageId>BiomesTeam.BiomesIslands</packageId>
+  <modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+	<li>
+        <packageId>BiomesTeam.BiomesCore</packageId>
+        <displayName>Biomes! Core</displayName>
+        <!--<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>-->
+        <downloadUrl>placeholder</downloadUrl>
+
+    </li>
+</modDependencies>
   <description>
 The islands module for the Biomes! mods. Requires Biomes! Core loaded before in order to work.
   </description>
-    	<packageId>Biomes.Islands</packageId>
 </ModMetaData>
