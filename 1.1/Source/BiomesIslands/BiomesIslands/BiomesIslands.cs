@@ -14,7 +14,7 @@ namespace BiomesIslands
     
         static BiomesIslands()
         {
-            //new Harmony(Id).PatchAll();
+            new Harmony(Id).PatchAll();
             //HarmonyInstance.Create(Id).PatchAll();
             Log("Initialized");
         }

@@ -15,7 +15,6 @@ namespace BiomesIslands.Patches
     {
         internal static void Postfix(int tile, ref IEnumerable<ThingDef> __result, ref World __instance)
         {
-            Log.Message("Natural Rock Type patch");
             var world = Traverse.Create(__instance);
             WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
             if (worldGrid[tile].biome.defName == "BiomesIslands_Atoll_NoBeach")

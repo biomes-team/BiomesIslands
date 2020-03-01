@@ -10,10 +10,11 @@ using UnityEngine;
 namespace BiomesIslands.Patches
 {
 
-    [HarmonyPatch(typeof(GenStep_ScatterThings), "Generate", null)]
-    public static class GenStep_IslandSteamGeysers
+    //[HarmonyPatch(typeof(GenStep_ScatterThings), "Generate", null)]
+    [HarmonyPatch(typeof(GenStep_ScatterThings), nameof(GenStep_ScatterThings.Generate))]
+    internal static class GenStep_IslandSteamGeysers
     {
-        public static bool Prefix(Map map, GenStepParams parms, ref GenStep_ScatterThings __instance)
+        internal static bool Prefix(Map map, GenStepParams parms, ref GenStep_ScatterThings __instance)
         {
             if (__instance.thingDef == ThingDefOf.SteamGeyser)
             {
