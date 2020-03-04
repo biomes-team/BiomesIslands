@@ -135,7 +135,7 @@
   
 <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_OmegaDodo</defName>
-    <label>OmegaDodo</label>
+    <label>Omegadodo</label>
     <description>The last dodo you'll ever want or need! Having been brought back from extinction by Urbworld scientists, this species of dodo has been genetically engineered to be far larger than the rest of its kind for the purposes of giving meat.</description>
     <statBases>
       <MoveSpeed>2.8</MoveSpeed>
@@ -226,7 +226,7 @@
 
   <PawnKindDef ParentName="BigBirdKindBase">
     <defName>BiomesIslands_OmegaDodo</defName>
-    <label>OmegaDodo</label>
+    <label>Omegadodo</label>
     <race>BiomesIslands_OmegaDodo</race>
 	<combatPower>38</combatPower>
 	<ecoSystemWeight>0.28</ecoSystemWeight>
