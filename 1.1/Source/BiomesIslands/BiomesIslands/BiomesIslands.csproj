@@ -300,10 +300,12 @@
     <Compile Include="BiomeWorkers\BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_Test.cs" />
     <Compile Include="GenSteps\GenStep_Atoll.cs" />
+    <Compile Include="GenSteps\GenStep_IslandHills.cs" />
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
     <Compile Include="IslandMap.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />
     <Compile Include="Patches\World_AddNaturalRockTypes.cs" />
+    <Compile Include="Patches\WorldGenStepTerrain_IslandHillliness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BiomesIslandsDefOf.cs" />
   </ItemGroup>

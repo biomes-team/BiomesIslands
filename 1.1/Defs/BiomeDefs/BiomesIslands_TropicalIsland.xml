@@ -4,7 +4,7 @@
   <BiomeDef>    <!-- TropicalIsland -->
     <defName>BiomesIslands_TropicalIsland_NoBeach</defName>
     <label>tropical island</label>
-    <description>Volcanic island.</description>
+    <description>Tropical island.</description>
     <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
 	
 	<modExtensions>

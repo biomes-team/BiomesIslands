@@ -17,6 +17,7 @@
 	<modExtensions>
 		<li Class="BiomesIslands.IslandMap">
 			<isIsland>true</isIsland>
+			<hasHilliness>false</hasHilliness>
 		</li>
 	</modExtensions>
     

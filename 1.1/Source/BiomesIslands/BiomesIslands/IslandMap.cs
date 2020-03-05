@@ -9,5 +9,6 @@ namespace BiomesIslands
     public class IslandMap : DefModExtension
     {
         public bool isIsland = false;
+        public bool hasHilliness = true;
     }
 }
