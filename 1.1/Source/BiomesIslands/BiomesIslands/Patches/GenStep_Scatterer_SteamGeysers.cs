@@ -11,6 +11,7 @@ namespace BiomesIslands.Patches
 {
 
     //[HarmonyPatch(typeof(GenStep_ScatterThings), "Generate", null)]
+
     [HarmonyPatch(typeof(GenStep_ScatterThings), nameof(GenStep_ScatterThings.Generate))]
     internal static class GenStep_IslandSteamGeysers
     {

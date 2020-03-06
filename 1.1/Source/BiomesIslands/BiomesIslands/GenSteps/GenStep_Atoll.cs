@@ -77,7 +77,6 @@ namespace BiomesIslands.GenSteps
             }
 
             Makelandmass(shape, ref fertility, map);
-            SetNewTerrains(map);
 
             if (map.Biome.GetModExtension<IslandMap>().hasHilliness)
             {
@@ -86,7 +85,8 @@ namespace BiomesIslands.GenSteps
             }
 
 
-            //TODO: Fix
+            SetNewTerrains(map);
+
             GenStep_OceanRockChunks genStep = new GenStep_OceanRockChunks();
             genStep.Generate(map, parms);
 
@@ -253,11 +253,14 @@ namespace BiomesIslands.GenSteps
                     return terrainDef2;
                 }
             }
-            if (elevation > 0.55f && elevation < 0.61f)
+
+            // this prevents stone terrain from spawning all over the water
+            elevation = Math.Min(elevation, fertility - 1.5f);
+            if (elevation > 0.45f && elevation < 0.53f)
             {
                 return TerrainDefOf.Gravel;
             }
-            if (elevation >= 0.61f)
+            if (elevation >= 0.53f)
             {
                 return GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
             }

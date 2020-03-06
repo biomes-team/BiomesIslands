@@ -10,5 +10,8 @@ namespace BiomesIslands
     {
         public bool isIsland = false;
         public bool hasHilliness = true;
+        //public bool hasRuins = true;
+
+        public bool hasScatterables = true;
     }
 }

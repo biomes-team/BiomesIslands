@@ -11,6 +11,7 @@ using UnityEngine;
 
 namespace BiomesIslands.GenSteps
 {
+    // from GenStep_ElevationFertility
     public class GenStep_IslandHills : GenStep
     {
         private class RoofThreshold
@@ -163,6 +164,8 @@ namespace BiomesIslands.GenSteps
                     break;
             }
 
+            num *= num;
+
             //num *= 1.2f;
 
             moduleBase = new Multiply(moduleBase, new Const((double)num));
@@ -175,18 +178,17 @@ namespace BiomesIslands.GenSteps
             {
                 //elevation[current] = moduleBase.GetValue(current);
 
-
                 //elevation[current] = hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter) * moduleBase.GetValue(current);     // round 1
-
                 //elevation[current] = hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter) + moduleBase.GetValue(current) - 1f;  // rouund 2
+                //elevation[current] = (1 + hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter)) * moduleBase.GetValue(current) - 0.5f;     // round 3
 
-                elevation[current] = (1 + hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter)) * moduleBase.GetValue(current) - 0.5f;     // round 3
+                elevation[current] = (1 + hillTuning * Mathf.Min(fertility[current], hillCenter)) * moduleBase.GetValue(current) - 0.5f;     // round 5
+
+                //elevation[current] = (1 + hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter)) * moduleBase.GetValue(current) - 0.5f;     // round 5
 
 
             }
-
         }
-
 
 
         private bool IsNaturalRoofAt(IntVec3 c, Map map)
