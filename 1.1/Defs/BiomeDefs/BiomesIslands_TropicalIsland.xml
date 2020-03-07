@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
   <BiomeDef>    <!-- TropicalIsland -->
@@ -140,6 +140,7 @@
 	</baseWeatherCommonalities>
     <wildPlants>
 		<BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
+		<BiomesIslands_OrangeTree>0.3</BiomesIslands_OrangeTree>
 		
 		<Plant_Grass>3.0</Plant_Grass>
 		<Plant_TallGrass>2.0</Plant_TallGrass>
@@ -163,7 +164,6 @@
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
 		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
 		<BiomesIslands_Gigantaconda>0.15</BiomesIslands_Gigantaconda>
-		<BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
     </wildAnimals>
 	<allowedPackAnimals>
 		<li>Muffalo</li>
