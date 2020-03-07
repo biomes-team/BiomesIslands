@@ -157,27 +157,12 @@
     <wildAnimals>
 		<BiomesIslands_Seagull>1.5</BiomesIslands_Seagull>
 		<Monkey>1</Monkey>
-		<BiomesIslands_Flamingo>0.8</BiomesIslands_Flamingo>
+		<BiomesIslands_Flamingo>0.7</BiomesIslands_Flamingo>
 		<Iguana>0.8</Iguana>
 		<WildBoar>0.5</WildBoar>
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
-		
-		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
-		
-		<!-- 		Vanilla Rainforest Animals
-		<Rat>1</Rat>
-		<Boomalope>0.5</Boomalope>
-		<Capybara>0.5</Capybara>
-		<Cassowary>0.5</Cassowary>
-		<Tortoise>0.5</Tortoise>
-		<Chinchilla>0.5</Chinchilla>
-		<Elephant>0.5</Elephant>
-		<Rhinoceros>0.5</Rhinoceros>
-		<Alpaca>0.5</Alpaca>
-		<Cobra>0.15</Cobra>
-		<Panther>0.15</Panther>
-		<Tortoise>0.5</Tortoise>
-		-->
+		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
+		<BiomesIslands_Gigantaconda>0.15</BiomesIslands_Gigantaconda>
     </wildAnimals>
 	<allowedPackAnimals>
 		<li>Muffalo</li>
