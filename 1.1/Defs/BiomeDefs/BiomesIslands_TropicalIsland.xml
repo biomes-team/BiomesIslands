@@ -163,6 +163,7 @@
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
 		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
 		<BiomesIslands_Gigantaconda>0.15</BiomesIslands_Gigantaconda>
+		<BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
     </wildAnimals>
 	<allowedPackAnimals>
 		<li>Muffalo</li>
