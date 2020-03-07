@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <!--================== Plant products ==================-->
   <ThingDef ParentName="PlantFoodRawBase">
@@ -68,6 +68,30 @@
     </comps>
     <ingestible>
       <preferability>RawBad</preferability>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BiomesIslands_Oranges</defName>
+    <label>oranges</label>
+    <description>Round, orange and with a sweet juice.</description>
+    <graphicData>
+      <texPath>Things/Item/Crops/Oranges</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>25</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
@@ -204,26 +228,6 @@
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
         <hatcherPawn>BiomesIslands_SeaTurtle</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>  
-  
-  
-  <ThingDef ParentName="EggFertBase">
-	<defName>BiomesIslands_EggMarineIguanaFertilized</defName>
-	<label>Marine Iguana egg (fert.)</label>
-	<description>A fertilized marien iguana egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
-	<graphicData>
-		<color>(236,217,184)</color>
-		<drawSize>1.1</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>25.0</MarketValue>
-	</statBases>
-	<comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-        <hatcherPawn>BiomesIslands_MarineIguana</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
