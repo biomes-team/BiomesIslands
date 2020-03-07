@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingDef ParentName="BiomesCore_FruitTreeBase">
@@ -56,6 +56,26 @@
 			<harvestMinGrowth>0.80</harvestMinGrowth>
 			<harvestAfterGrowth>0.65</harvestAfterGrowth>
 			<harvestedThingDef>BiomesIslands_Devilsclaw</harvestedThingDef>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
+		<defName>BiomesIslands_OrangeTree</defName>
+		<label>Orange Tree</label>
+		<description>The orange tree is a tree, which can reach 10 m in height, provided with branches with few weak spines. Produces sweet oranges.</description>
+		<graphicData>
+			<texPath>Things/Plant/OrangeTree/OrangeFruitTree</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<growDays>20</growDays>
+			<immatureGraphicPath>Things/Plant/OrangeTree/OrangeFruitTree_immature</immatureGraphicPath>
+			<harvestYield>8</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestMinGrowth>0.80</harvestMinGrowth>
+			<harvestAfterGrowth>0.65</harvestAfterGrowth>
+			<harvestedThingDef>BiomesIslands_Oranges</harvestedThingDef>
 		</plant>
 	</ThingDef>
 
