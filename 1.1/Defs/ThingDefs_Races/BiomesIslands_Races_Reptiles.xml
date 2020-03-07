@@ -182,7 +182,7 @@
     </tools>
     <comps>
       <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggIguanaFertilized</eggFertilizedDef>
+        <eggFertilizedDef>BiomesIslands_EggMarineIguanaFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -267,7 +267,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+          <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/Dessicated_BiomesIslandsMarineIguana</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
