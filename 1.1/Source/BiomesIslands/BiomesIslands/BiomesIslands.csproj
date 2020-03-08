@@ -305,6 +305,7 @@
     <Compile Include="IslandMap.cs" />
     <Compile Include="Patches\GenStep_IslandScatterables.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />
+    <Compile Include="Patches\Patches_Debug.cs" />
     <Compile Include="Patches\World_AddNaturalRockTypes.cs" />
     <Compile Include="Patches\WorldGenStepTerrain_IslandHillliness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
