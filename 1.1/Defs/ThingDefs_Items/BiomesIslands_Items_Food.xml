@@ -135,11 +135,24 @@
       </li>
     </comps>
   </ThingDef>
+   
+  <ThingDef ParentName="EggUnfertBase">
+	<defName>BiomesIslands_EggOmegaDodoUnfertilized</defName>
+	<label>OmegaDodo egg (fert.)</label>
+	<description>An unfertilized omegadodo egg. If all goes well, it should hatch into a baby omegadodo. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(128,128,128)</color>
+		<drawSize>1.0</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>50.0</MarketValue>
+	</statBases>
+  </ThingDef>
   
   <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggOmegaDodoFertilized</defName>
-	<label>OmegaDodo egg (fert.)</label>
-	<description>A fertilized OmegaDodo egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+	<label>Omegadodo egg (fert.)</label>
+	<description>A fertilized omegadodo egg. If all goes well, it should hatch into a baby omegadodo. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(128,128,128)</color>
 		<drawSize>1.0</drawSize>

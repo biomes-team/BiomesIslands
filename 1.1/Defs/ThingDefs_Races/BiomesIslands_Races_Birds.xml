@@ -283,9 +283,9 @@
     </statBases>
     <race>
       <herdAnimal>false</herdAnimal>
-      <baseBodySize>0.8</baseBodySize>
-		<baseHealthScale>0.5</baseHealthScale>
-		<baseHungerRate>0.60</baseHungerRate>
+      <baseBodySize>1.5</baseBodySize>
+		<baseHealthScale>1.0</baseHealthScale>
+		<baseHungerRate>0.70</baseHungerRate>
 		<foodType>VegetarianRoughAnimal</foodType>
       <wildness>0.50</wildness>
       <trainability>Simple</trainability>
@@ -314,8 +314,8 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>3</power>
-        <cooldownTime>1.5</cooldownTime>
+        <power>20</power>
+        <cooldownTime>1.4</cooldownTime>
         <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -331,7 +331,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>50</power>
+        <power>80</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -348,7 +348,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>40</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -372,31 +372,31 @@
 	  <label>Dodo Chick</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
 		  <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
 		  <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.0</drawSize>
+          <drawSize>2.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.0</drawSize>
+          <drawSize>2.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.4</drawSize>
+          <drawSize>2.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.4</drawSize>
+          <drawSize>2.8</drawSize>
         </dessicatedBodyGraphicData> 
       </li>
     </lifeStages>
