@@ -372,31 +372,31 @@
 	  <label>dodo chick</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
 		  <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
 		  <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>2.0</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>2.0</drawSize>
+          <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
-          <drawSize>2.8</drawSize>
+          <drawSize>1.9</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
-          <drawSize>2.8</drawSize>
+          <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData> 
       </li>
     </lifeStages>
