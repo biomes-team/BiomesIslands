@@ -3,7 +3,7 @@
 
  <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_Gigantaconda</defName>
-    <label>BiomesIslands_Gigantaconda</label>
+    <label>gigantaconda</label>
     <description>A huge predatory snake. Gigantacondas can be highly aggressive if provoked.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
@@ -105,31 +105,31 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/BiomesIslandsGigantaconda</texPath>
-          <drawSize>2.0</drawSize>
+          <drawSize>2.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
-          <drawSize>2.0</drawSize>
+          <drawSize>2.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/BiomesIslandsGigantaconda</texPath>
-          <drawSize>2.6</drawSize>
+          <drawSize>2.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>TThings/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
-          <drawSize>2.6</drawSize>
+          <drawSize>2.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/BiomesIslandsGigantaconda</texPath>
-          <drawSize>3.2</drawSize>
+          <drawSize>3.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
-          <drawSize>3.2</drawSize>
+          <drawSize>3.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

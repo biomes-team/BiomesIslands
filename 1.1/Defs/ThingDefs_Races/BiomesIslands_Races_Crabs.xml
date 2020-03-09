@@ -9,6 +9,7 @@
       <MoveSpeed>3.5</MoveSpeed>
       <MarketValue>110</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
     </statBases>
     <race>
       <herdAnimal>true</herdAnimal>

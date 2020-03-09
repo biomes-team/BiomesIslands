@@ -314,26 +314,9 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>20</power>
+        <power>6</power>
         <cooldownTime>1.4</cooldownTime>
         <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>40</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>beak</label>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>80</power>
-        <cooldownTime>1.8</cooldownTime>
-        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -344,11 +327,28 @@
         </surpriseAttack>
       </li>
       <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>10</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>40</power>
+        <power>10</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
