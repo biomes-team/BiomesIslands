@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[1.0, 1.1] RimCuisine 2 Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations> 
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll_NoBeach"]/wildPlants</xpath> 
+			   <value> 
+					<RC2_PlantCucumber>0.0000000000000001</RC2_PlantCucumber>
+					<RC2_PlantYam>0.001</RC2_PlantYam>
+					<RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant>
+					<RC2_PlantPepper>0.02</RC2_PlantPepper>
+					<RC2_PlantSoybean>0.0000000000000001</RC2_PlantSoybean>
+					<RC2_PlantMelon>0.0000000000000001</RC2_PlantMelon>
+					<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+					<RC2_PlantPineapple>0.02</RC2_PlantPineapple>
+					<RC2_PlantTea>0.0000000000000001</RC2_PlantTea>
+					<RC2_PlantQuinoa>0.0000000000000001</RC2_PlantQuinoa>
+					<RC2_PlantOnion>0.0000000000000001</RC2_PlantOnion>
+					<RC2_PlantMushroom>0.0000000000000001</RC2_PlantMushroom>
+					<RC2_PlantPlumTree>0.03</RC2_PlantPlumTree>
+					<RC2_PlantBreadfruitTree>0.03</RC2_PlantBreadfruitTree>
+					<RC2_PlantDurianTree>0.01</RC2_PlantDurianTree>
+					<RC2_PlantBananaTree>0.02</RC2_PlantBananaTree>
+					<Plant_TreeCocoa>0.011</Plant_TreeCocoa>
+					<RC2_PlantSugarcane>0.03</RC2_PlantSugarcane>
+					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+			   </value> 
+			 </li> 
+			
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_TropicalIsland_NoBeach"]/wildPlants</xpath> 
+			   <value> 
+					<RC2_PlantCucumber>0.0000000000000001</RC2_PlantCucumber>
+					<RC2_PlantYam>0.0000000000000001</RC2_PlantYam>
+					<RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant>
+					<RC2_PlantPepper>0.0015</RC2_PlantPepper>
+					<RC2_PlantSoybean>0.0000000000000001</RC2_PlantSoybean>
+					<RC2_PlantMelon>0.02</RC2_PlantMelon>
+					<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+					<RC2_PlantPineapple>0.0000000000000001</RC2_PlantPineapple>
+					<RC2_PlantTea>0.001</RC2_PlantTea>
+					<RC2_PlantQuinoa>0.02</RC2_PlantQuinoa>
+					<RC2_PlantOnion>0.03</RC2_PlantOnion>
+					<RC2_PlantMushroom>0.05</RC2_PlantMushroom>
+					<RC2_PlantPlumTree>0.0000000000000001</RC2_PlantPlumTree>
+					<RC2_PlantBreadfruitTree>0.03</RC2_PlantBreadfruitTree>
+					<RC2_PlantDurianTree>0.01</RC2_PlantDurianTree>
+					<RC2_PlantBananaTree>0.02</RC2_PlantBananaTree>
+					<Plant_TreeCocoa>0.0000000000000001</Plant_TreeCocoa>
+					<RC2_PlantSugarcane>0.03</RC2_PlantSugarcane>
+					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+			   </value> 
+			 </li> 
+			
+		 </operations> 
+		</match>
+	 </Operation> 
+
+
+</Patch>
+
