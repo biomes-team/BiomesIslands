@@ -224,27 +224,43 @@ namespace BiomesIslands.GenSteps
         {
             TerrainDef terrainDef = null;
 
-            if (terrainDef == null && preferSolid)
+            //if (terrainDef == null && preferSolid)
+            //{
+            //    return GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
+            //}
+            //TerrainDef terrainDef2 = BeachMaker.BeachTerrainAt(c, map.Biome);
+            //if (terrainDef2 == TerrainDefOf.WaterOceanDeep)
+            //{
+            //    return terrainDef2;
+            //}
+            //if (terrainDef != null && terrainDef.IsRiver)
+            //{
+            //    return terrainDef;
+            //}
+            //if (terrainDef2 != null)
+            //{
+            //    return terrainDef2;
+            //}
+            //if (terrainDef != null)
+            //{
+            //    return terrainDef;
+            //}
+
+
+            // prevents stone terrain from spawning all over the water
+            elevation = Math.Min(elevation, fertility - 1.5f);
+
+            if (elevation > 0.45f && elevation < 0.53f)
+            {
+                return TerrainDefOf.Gravel;
+            }
+            if (elevation >= 0.53f)
             {
                 return GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
             }
-            TerrainDef terrainDef2 = BeachMaker.BeachTerrainAt(c, map.Biome);
-            if (terrainDef2 == TerrainDefOf.WaterOceanDeep)
-            {
-                return terrainDef2;
-            }
-            if (terrainDef != null && terrainDef.IsRiver)
-            {
-                return terrainDef;
-            }
-            if (terrainDef2 != null)
-            {
-                return terrainDef2;
-            }
-            if (terrainDef != null)
-            {
-                return terrainDef;
-            }
+
+
+            TerrainDef terrainDef2;
             for (int i = 0; i < map.Biome.terrainPatchMakers.Count; i++)
             {
                 terrainDef2 = map.Biome.terrainPatchMakers[i].TerrainAt(c, map, fertility);
@@ -254,16 +270,7 @@ namespace BiomesIslands.GenSteps
                 }
             }
 
-            // this prevents stone terrain from spawning all over the water
-            elevation = Math.Min(elevation, fertility - 1.5f);
-            if (elevation > 0.45f && elevation < 0.53f)
-            {
-                return TerrainDefOf.Gravel;
-            }
-            if (elevation >= 0.53f)
-            {
-                return GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
-            }
+            
             terrainDef2 = TerrainThreshold.TerrainAtValue(map.Biome.terrainsByFertility, fertility);
             if (terrainDef2 != null)
             {
