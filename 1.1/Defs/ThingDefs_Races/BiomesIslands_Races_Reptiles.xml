@@ -401,7 +401,7 @@
   </PawnKindDef>
   
   
-  <ThingDef ParentName="AnimalThingBase">
+<ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_Treefrog</defName>
     <label>tree frog</label>
     <description>Frogs are amphibians that are known for their jumping abilities, croaking sounds, bulging eyes and slimy skin.</description>
@@ -426,25 +426,14 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
-    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>BiomesIslands_EggGreenGekoFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>30</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.6</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>2</min>
-          <max>5</max>
-        </eggCountRange>
-      </li>
-    </comps>
+
     <race>
       <body>QuadrupedAnimalWithClawsTailAndJowl</body>
 	  <herdAnimal>true</herdAnimal>
       <baseBodySize>0.6</baseBodySize>
       <baseHungerRate>0.33</baseHungerRate>
       <baseHealthScale>0.8</baseHealthScale>
-      <foodType>OmnivoreRoughAnimal</foodType>
+      <foodType>CarnivoreAnimalStrict</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.75</wildness>
       <lifeExpectancy>180</lifeExpectancy>
