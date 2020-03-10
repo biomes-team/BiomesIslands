@@ -4,7 +4,7 @@
   <BiomeDef>    <!-- TropicalIsland -->
     <defName>BiomesIslands_TropicalIsland_NoBeach</defName>
     <label>tropical island</label>
-    <description>Tropical island.</description>
+    <description>Despite the heat and constant humidity, the sandy beaches and plentiful resources make these islands superb for a tropical getaway. Few animals here are a threat to humans, making the environment reasonably safe.</description>
     <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
 	
 	<modExtensions>

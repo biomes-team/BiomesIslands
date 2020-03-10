@@ -11,7 +11,7 @@
   <BiomeDef>    <!-- Atoll -->
     <defName>BiomesIslands_Atoll_NoBeach</defName>
     <label>atoll</label>
-    <description>A living island made of corals in the form of a semicircular island with a shallow lagoon in the middle. Abundant wild food, relatively small and rare predators, and warm winters make surviving with a small colony a breeze, but building space is at a premium.</description>
+    <description>Formed by living corals growing upward from the subsiding of a volcano, these islands are often semicircular with a shallow lagoon in the middle. While the lagoon is beautiful, its size offers little space for building. With abundant wild food, relatively small and rare predators, and warm winters, surviving can be as pleasant as a tropical breeze.</description>
     <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
 	
 	<modExtensions>
