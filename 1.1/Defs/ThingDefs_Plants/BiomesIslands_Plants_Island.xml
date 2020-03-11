@@ -27,6 +27,7 @@
 			<texPath>Things/Plant/Bananaplant/BananaPlant</texPath>
 		</graphicData>
 		<plant>
+			<visualSizeRange>1.3~3.0</visualSizeRange>
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<growDays>20</growDays>
