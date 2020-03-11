@@ -310,7 +310,7 @@
     </tools>
     <comps>
       <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>BiomesIslands_EggGreenGekoFertilized</eggFertilizedDef>
+        <eggFertilizedDef>BiomesIslands_EggGreenGeckoFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>30</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.6</eggProgressUnfertilizedMax>
@@ -512,4 +512,3 @@
   
   </Defs>
 
-  </Defs>

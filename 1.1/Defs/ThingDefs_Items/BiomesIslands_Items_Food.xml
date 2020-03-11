@@ -138,8 +138,8 @@
    
   <ThingDef ParentName="EggUnfertBase">
 	<defName>BiomesIslands_EggOmegaDodoUnfertilized</defName>
-	<label>OmegaDodo egg (fert.)</label>
-	<description>An unfertilized omegadodo egg. If all goes well, it should hatch into a baby omegadodo. It can be eaten raw, but it's much better cooked.</description>
+	<label>omegadodo egg (unfert.)</label>
+	<description>An unfertilized omegadodo egg. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(128,128,128)</color>
 		<drawSize>1.0</drawSize>
@@ -151,7 +151,7 @@
   
   <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggOmegaDodoFertilized</defName>
-	<label>Omegadodo egg (fert.)</label>
+	<label>omegadodo egg (fert.)</label>
 	<description>A fertilized omegadodo egg. If all goes well, it should hatch into a baby omegadodo. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(128,128,128)</color>
@@ -228,7 +228,7 @@
   
   <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggSeaTurtleFertilized</defName>
-	<label>Sea turtle egg (fert.)</label>
+	<label>sea turtle egg (fert.)</label>
 	<description>A fertilized sea turtle egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(236,217,184)</color>
@@ -247,7 +247,26 @@
 
    <ThingDef ParentName="EggFertBase">
         <defName>BiomesIslands_EggMarineIguanaFertilized</defName>
-        <label>Marine Iguana egg (fert.)</label>
+        <label>marine iguana egg (fert.)</label>
+        <description>A fertilized marien iguana egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(236,217,184)</color>
+		<drawSize>1.1</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>25.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_MarineIguana</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggFertBase">
+        <defName>BiomesIslands_EggGreenGeckoFertilized</defName>
+        <label>green gecko egg (fert.)</label>
         <description>A fertilized marien iguana egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(236,217,184)</color>
