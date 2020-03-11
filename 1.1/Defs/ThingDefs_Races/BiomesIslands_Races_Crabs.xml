@@ -19,6 +19,7 @@
       <lifeExpectancy>9</lifeExpectancy>
       <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+	  <wildness>0.10</wildness>
     </race>
     <comps>
       <li Class="CompProperties_EggLayer">
@@ -60,6 +61,7 @@
     <race>BiomesIslands_RimCrab</race>
 	<combatPower>50</combatPower>
 	<ecoSystemWeight>0.35</ecoSystemWeight>
+
 	<wildGroupSize>
       <min>4</min>
       <max>15</max>

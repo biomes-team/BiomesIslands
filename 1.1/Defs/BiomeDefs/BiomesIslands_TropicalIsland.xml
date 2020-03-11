@@ -139,9 +139,9 @@
 		<SnowHard>4</SnowHard>
 	</baseWeatherCommonalities>
     <wildPlants>
-		<BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
-		<BiomesIslands_OrangeTree>0.3</BiomesIslands_OrangeTree>
-                <BiomesIslands_BananaPlant>0.4</BiomesIslands_BananaPlant>
+		<BiomesIslands_CoconutPalm>0.3</BiomesIslands_CoconutPalm>
+		<BiomesIslands_OrangeTree>0.2</BiomesIslands_OrangeTree>
+        <BiomesIslands_BananaPlant>0.3</BiomesIslands_BananaPlant>
 		
 		<Plant_Grass>3.0</Plant_Grass>
 		<Plant_TallGrass>2.0</Plant_TallGrass>
@@ -165,10 +165,10 @@
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
 		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
 		<BiomesIslands_Gigantaconda>0.15</BiomesIslands_Gigantaconda>
-                <BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
-	    	<BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
+        <BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
+	    <BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
 		<BiomesIslands_Treefrog>0.9</BiomesIslands_Treefrog>
-</wildAnimals>
+	</wildAnimals>
 	<allowedPackAnimals>
 		<li>Muffalo</li>
 		<li>Elephant</li>

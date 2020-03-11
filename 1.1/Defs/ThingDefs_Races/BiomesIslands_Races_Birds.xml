@@ -424,6 +424,7 @@
       <useMeatFrom>Cassowary</useMeatFrom>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+	  <leatherDef>BiomesIslands_Leather_Flamingo</leatherDef>
     </race>
     <comps>
       <li Class="CompProperties_EggLayer">
