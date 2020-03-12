@@ -235,11 +235,11 @@
 		<drawSize>1.1</drawSize>
 	</graphicData>
 	<statBases>
-		<MarketValue>25.0</MarketValue>
+		<MarketValue>35.0</MarketValue>
 	</statBases>
 	<comps>
       <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherDaystoHatch>10</hatcherDaystoHatch>
         <hatcherPawn>BiomesIslands_SeaTurtle</hatcherPawn>
       </li>
     </comps>
@@ -258,7 +258,7 @@
 	</statBases>
 	<comps>
       <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
         <hatcherPawn>BiomesIslands_MarineIguana</hatcherPawn>
       </li>
     </comps>
@@ -274,6 +274,25 @@
 	</graphicData>
 	<statBases>
 		<MarketValue>25.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_GreenGecko</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   <ThingDef ParentName="EggFertBase">
+        <defName>BiomesIslands_EggTreeFrogFertilized</defName>
+        <label>treefrog egg (fert.)</label>
+        <description>A fertilized marien iguana egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(236,217,184)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>15.0</MarketValue>
 	</statBases>
 	<comps>
       <li Class="CompProperties_Hatcher">

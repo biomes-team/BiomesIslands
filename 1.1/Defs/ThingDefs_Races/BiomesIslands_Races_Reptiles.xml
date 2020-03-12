@@ -406,14 +406,21 @@
     <label>tree frog</label>
     <description>Frogs are amphibians that are known for their jumping abilities, croaking sounds, bulging eyes and slimy skin.</description>
     <statBases>
-        <MoveSpeed>0.7</MoveSpeed>
-      <MarketValue>200</MarketValue>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MoveSpeed>4.3</MoveSpeed>
+      <MarketValue>45</MarketValue>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
     </statBases>
     <tools>
+	  <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
       <li>
         <label>head</label>
         <capacities>
@@ -426,17 +433,30 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
-
+	<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BiomesIslands_EggTreeFrogFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>26</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>2</min>
+          <max>5</max>
+        </eggCountRange>
+      </li>
+    </comps>
     <race>
-      <body>QuadrupedAnimalWithClawsTailAndJowl</body>
-	  <herdAnimal>true</herdAnimal>
-      <baseBodySize>0.6</baseBodySize>
-      <baseHungerRate>0.33</baseHungerRate>
-      <baseHealthScale>0.8</baseHealthScale>
+      <body>QuadrupedAnimalWithPaws</body>
+	  <herdAnimal>false</herdAnimal>
+      <baseBodySize>0.15</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>0.3</baseHealthScale>
       <foodType>CarnivoreAnimalStrict</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
-      <wildness>0.75</wildness>
-      <lifeExpectancy>180</lifeExpectancy>
+      <wildness>0.20</wildness>
+	  <manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.00</manhunterOnDamageChance>
+      <lifeExpectancy>9</lifeExpectancy>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -444,11 +464,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.16</minAge>
+          <minAge>0.10</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.30</minAge>
+          <minAge>0.25</minAge>
           <soundWounded>Pawn_Iguana_Wounded</soundWounded>
           <soundDeath>Pawn_Iguana_Death</soundDeath>
           <soundCall>Pawn_Iguana_Call</soundCall>
@@ -469,37 +489,39 @@
     <defName>BiomesIslands_Treefrog</defName>
     <label>tree frog</label>
     <race>BiomesIslands_Treefrog</race>
-    <combatPower>60</combatPower>
-    <ecoSystemWeight>0.70</ecoSystemWeight>
+    <combatPower>30</combatPower>
+    <ecoSystemWeight>0.20</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsTreefrog/BiomesIslandsTreefrog</texPath>
-          <drawSize>0.5</drawSize>
+          <drawSize>0.7</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
-          <drawSize>0.5</drawSize>
+          <drawSize>0.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsTreefrog/BiomesIslandsTreefrog</texPath>
-          <drawSize>0.7</drawSize>
+          <drawSize>0.9</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
-          <drawSize>0.7</drawSize>
+          <drawSize>0.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsTreefrog/BiomesIslandsTreefrog</texPath>
           <drawSize>1.2</drawSize>
+		  <!--
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
+		  -->
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
