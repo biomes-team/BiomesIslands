@@ -6,7 +6,7 @@
     <label>flamingo leather</label>
     <description>Bright pink leather from a flamingo. It's somewhat stronger than your typical birdskin.</description>
     <graphicData>
-      <color>(255,95,80)</color>
+      <color>(255,125,100)</color>
     </graphicData>
     <statBases>
       <MarketValue>2.9</MarketValue>
@@ -14,7 +14,7 @@
       <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
-      <color>(255,95,80)</color>
+      <color>(255,125,100)</color>
       <commonality>0.04</commonality>
 	  <statFactors>
         <Beauty>1.7</Beauty>
