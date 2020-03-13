@@ -11,6 +11,7 @@
     <statBases>
       <MarketValue>1.2</MarketValue>
       <Mass>0.027</Mass>
+      <Nutrition>0.25</Nutrition>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -20,7 +21,7 @@
     </comps>
     <ingestible>
       <preferability>RawTasty</preferability>
-      <tasteThought></tasteThought>
+      <specialThoughtDirect>BiomesIslands_Coconut</specialThoughtDirect>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
