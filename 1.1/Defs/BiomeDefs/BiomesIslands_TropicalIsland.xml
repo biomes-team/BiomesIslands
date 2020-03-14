@@ -28,7 +28,7 @@
 			<li>Ambient_NightInsects_Jungle</li>
 			<li>Ambient_DayInsects_Jungle</li>
 		</soundsAmbient>
-    <diseaseMtbDays>35</diseaseMtbDays>
+    <diseaseMtbDays>40</diseaseMtbDays>
 		<diseases>
 		  <li>
 			<diseaseInc>Disease_Malaria</diseaseInc>
@@ -113,11 +113,11 @@
 			<li>
 				<terrain>Marsh</terrain>
 				<min>-999</min>
-				<max>-0.92</max>
+				<max>-0.8</max>
 			</li>
 			<li>
 				<terrain>MarshyTerrain</terrain>
-				<min>-0.92</min>
+				<min>-0.8</min>
 				<max>-0.64</max>
 			</li>
 			<li>

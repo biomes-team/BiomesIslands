@@ -6,4 +6,12 @@
 			<li>BiomesIslands_GenAtoll</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
+		<value>
+			<li>BiomesIslands_TropicalIsland_NoBeach</li>
+		</value>
+	</Operation>
+	
 </Patch>
