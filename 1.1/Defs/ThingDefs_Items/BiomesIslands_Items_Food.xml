@@ -9,8 +9,8 @@
       <texPath>Things/Item/Crops/Coconut</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>1.2</MarketValue>
-      <Mass>0.027</Mass>
+      <MarketValue>4.2</MarketValue>
+      <Mass>0.06</Mass>
       <Nutrition>0.25</Nutrition>
     </statBases>
     <comps>
