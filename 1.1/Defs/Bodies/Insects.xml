@@ -90,7 +90,7 @@
             <li>
               <def>Paw</def>
               <customLabel>front left scythe</customLabel>
-              <coverage>0.15</coverage>
+              <coverage>0.03</coverage>
               <groups>
                 <li>FrontLeftScythe</li>
               </groups>
@@ -106,7 +106,7 @@
             <li>
               <def>Paw</def>
               <customLabel>front right scythe</customLabel>
-              <coverage>0.15</coverage>
+              <coverage>0.03</coverage>
               <groups>
                 <li>FrontRightScythe</li>
               </groups>
