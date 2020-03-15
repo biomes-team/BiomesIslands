@@ -28,8 +28,8 @@
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>
-          <min>2</min>
-          <max>5</max>
+          <min>1</min>
+          <max>3</max>
         </eggCountRange>
       </li>
     </comps>

@@ -32,11 +32,7 @@
         <eggFertilizedDef>BiomesIslands_EggKiwiFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>2</eggFertilizationCountMax>
         <eggLayIntervalDays>9</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>1</min>
-          <max>2</max>
-        </eggCountRange>
+        <eggCountRange>1</eggCountRange>
       </li>
     </comps>
     <tools>
@@ -162,8 +158,8 @@
         <eggLayIntervalDays>9</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>
-          <min>1</min>
-          <max>2</max>
+          <min>2</min>
+          <max>4</max>
         </eggCountRange>
       </li>
     </comps>
@@ -302,10 +298,7 @@
         <eggFertilizationCountMax>3</eggFertilizationCountMax>
         <eggLayIntervalDays>10</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>1</min>
-          <max>3</max>
-        </eggCountRange>
+        <eggCountRange>1</eggCountRange>
       </li>
     </comps>
     <tools>

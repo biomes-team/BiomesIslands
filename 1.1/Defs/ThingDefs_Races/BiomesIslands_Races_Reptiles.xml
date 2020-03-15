@@ -42,8 +42,8 @@
         <eggLayIntervalDays>30</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>
-          <min>2</min>
-          <max>5</max>
+          <min>5</min>
+          <max>10</max>
         </eggCountRange>
       </li>
     </comps>
@@ -187,8 +187,8 @@
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>
-          <min>1</min>
-          <max>2</max>
+          <min>3</min>
+          <max>6</max>
         </eggCountRange>
       </li>
     </comps>
@@ -315,8 +315,8 @@
         <eggLayIntervalDays>30</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.6</eggProgressUnfertilizedMax>
         <eggCountRange>
-          <min>2</min>
-          <max>5</max>
+          <min>1</min>
+          <max>2</max>
         </eggCountRange>
       </li>
     </comps>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>FrontLeftScythe</defName>
+    <label>front left scythe</label>
+    <labelShort>scythe</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>FrontRightScythe</defName>
+    <label>front right scythe</label>
+    <labelShort>scythe</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>

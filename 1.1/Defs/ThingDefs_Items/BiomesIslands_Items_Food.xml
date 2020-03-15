@@ -237,6 +237,7 @@
 	</graphicData>
 	<statBases>
 		<MarketValue>35.0</MarketValue>
+      <Nutrition>0.05</Nutrition>
 	</statBases>
 	<comps>
       <li Class="CompProperties_Hatcher">
@@ -287,13 +288,32 @@
    <ThingDef ParentName="EggFertBase">
         <defName>BiomesIslands_EggTreeFrogFertilized</defName>
         <label>treefrog egg (fert.)</label>
-        <description>A fertilized marien iguana egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
+        <description>A fertilized marine iguana egg. If all goes well, it should hatch into a baby marine iguana. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(236,217,184)</color>
 		<drawSize>0.9</drawSize>
 	</graphicData>
 	<statBases>
 		<MarketValue>15.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_GreenGecko</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggFertBase">
+        <defName>BiomesIslands_EggMegamantisFertilized</defName>
+        <label>megamantis egg (fert.)</label>
+        <description>A fertilized megamantis egg. If all goes well, it should hatch into a baby megamantis. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(236,217,184)</color>
+		<drawSize>1.1</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>25.0</MarketValue>
 	</statBases>
 	<comps>
       <li Class="CompProperties_Hatcher">
