@@ -168,6 +168,7 @@
         <BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
 	    <BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
 		<BiomesIslands_Treefrog>0.9</BiomesIslands_Treefrog>
+		<BiomesIslands_Megamantis>0.2</BiomesIslands_Megamantis>
 	</wildAnimals>
 	<allowedPackAnimals>
 		<li>Muffalo</li>
