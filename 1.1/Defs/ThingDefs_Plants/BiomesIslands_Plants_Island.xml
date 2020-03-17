@@ -13,7 +13,7 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>20</growDays>
 			<immatureGraphicPath>Things/Plant/CoconutPalm/CoconutPalm_immature</immatureGraphicPath>
-			<harvestYield>2</harvestYield>
+			<harvestYield>3</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
 		</plant>
@@ -32,7 +32,7 @@
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<growDays>30</growDays>
 			<immatureGraphicPath>Things/Plant/Bananaplant/BananaPlant_immature</immatureGraphicPath>
-			<harvestYield>18</harvestYield>
+			<harvestYield>20</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
 			<harvestAfterGrowth>0.65</harvestAfterGrowth>
@@ -52,7 +52,7 @@
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>15</growDays>
 			<immatureGraphicPath>Things/Plant/DevilsClaw/DevilsClawTree_immature</immatureGraphicPath>
-			<harvestYield>6</harvestYield>
+			<harvestYield>10</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
 			<harvestAfterGrowth>0.65</harvestAfterGrowth>
@@ -62,7 +62,7 @@
 	
 	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_OrangeTree</defName>
-		<label>Orange Tree</label>
+		<label>orange tree</label>
 		<description>The orange tree is a tree, which can reach 10 m in height, provided with branches with few weak spines. Produces sweet oranges.</description>
 		<graphicData>
 			<texPath>Things/Plant/OrangeTree/OrangeFruitTree</texPath>
@@ -79,6 +79,27 @@
 			<harvestedThingDef>BiomesIslands_Oranges</harvestedThingDef>
 		</plant>
 	</ThingDef>
+	
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
+		<defName>BiomesIslands_Pineappleplant</defName>
+		<label>pineapple</label>
+		<description>A tall fruiting herb. It produces only a single fruit before dying, but leaves offspring behind to take it's place.</description>
+		<graphicData>
+			<texPath>Things/Plant/Pineapple/Pineapple</texPath>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>15</growDays>
+			<immatureGraphicPath>Things/Plant/Pineapple/Pineapple_immature</immatureGraphicPath>
+			<harvestYield>35</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestMinGrowth>0.90</harvestMinGrowth>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
+			<harvestedThingDef>BiomesIslands_Pineapples</harvestedThingDef>
+		</plant>
+	</ThingDef>
+	
 
 
 </Defs>
