@@ -15,7 +15,7 @@
       <herdAnimal>true</herdAnimal>
       <baseBodySize>0.25</baseBodySize>
 	  <baseHealthScale>0.8</baseHealthScale>
-	  <baseHungerRate>0.55</baseHungerRate>
+	  <baseHungerRate>0.30</baseHungerRate>
       <lifeExpectancy>9</lifeExpectancy>
       <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
@@ -114,7 +114,7 @@
       <herdAnimal>true</herdAnimal>
       <baseBodySize>0.15</baseBodySize>
 	  <baseHealthScale>1.5</baseHealthScale>
-	  <baseHungerRate>0.55</baseHungerRate>
+	  <baseHungerRate>0.25</baseHungerRate>
       <lifeExpectancy>9</lifeExpectancy>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.01</manhunterOnDamageChance>

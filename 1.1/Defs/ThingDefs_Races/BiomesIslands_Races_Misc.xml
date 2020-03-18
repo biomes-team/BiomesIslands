@@ -6,7 +6,7 @@
   <ThingDef ParentName="BaseInsect">
     <defName>BiomesIslands_Megamantis</defName>
     <label>megamantis</label>
-    <description>A large, genetically-engineered beetle. Once the worker caste of an artifical ecosystem of insectoids designed to fight mechanoid invasions, it is now often seen without its deadlier insectoid cousins. Still, its size and hard shell make it dangerous when it attacks. A eusocial creature, it cannot reproduce individually.</description>
+    <description>A large, genetically-engineered mantis. Probably escaped from some lab run by a rogue scientist, it has become an apex predator on the tropical islands where it makes its home.</description>
     <statBases>
       <MoveSpeed>3.75</MoveSpeed>
       <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
