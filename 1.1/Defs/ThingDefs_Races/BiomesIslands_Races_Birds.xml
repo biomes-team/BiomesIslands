@@ -485,8 +485,8 @@
     <label>flamingo</label>
     <race>BiomesIslands_Flamingo</race>
 	<wildGroupSize>
-      <min>1</min>
-      <max>4</max>
+      <min>4</min>
+      <max>8</max>
     </wildGroupSize>
     <lifeStages>
       <li>

@@ -353,4 +353,23 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggHermitCrabFertilized</defName>
+	<label>rimcrab egg (fert.)</label>
+	<description>A fertilized hermit crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(95,125,140)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>35.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_HermitCrab</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
 </Defs>

@@ -100,4 +100,103 @@
     </lifeStages>
   </PawnKindDef>
 
+  <ThingDef ParentName="BiomesCore_CrabThingBase">
+    <defName>BiomesIslands_HermitCrab</defName>
+    <label>hermit crab</label>
+    <description>A crab species known for hiding inside seashells. Very tough for their size.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+      <MarketValue>110</MarketValue>
+      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+    </statBases>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>0.15</baseBodySize>
+	  <baseHealthScale>1.5</baseHealthScale>
+	  <baseHungerRate>0.55</baseHungerRate>
+      <lifeExpectancy>9</lifeExpectancy>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+	  <wildness>0.10</wildness>
+    </race>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BiomesIslands_EggHermitCrabFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>2</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>1</min>
+          <max>3</max>
+        </eggCountRange>
+      </li>
+    </comps>
+    <tools>
+		<li>
+			<label>claw</label>
+			<capacities>
+				<li>Cut</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2.2</cooldownTime>
+			<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>3</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		</li>
+	</tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BiomesIslands_HermitCrab</defName>
+    <label>hermitcrab</label>
+    <race>BiomesIslands_HermitCrab</race>
+	<combatPower>50</combatPower>
+	<ecoSystemWeight>0.35</ecoSystemWeight>
+
+	<wildGroupSize>
+      <min>12</min>
+      <max>30</max>
+    </wildGroupSize>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrabSpiral</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/Dessicated_BiomesIslandsHermitCrab</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrabSpiral</texPath>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/Dessicated_BiomesIslandsHermitCrab</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrabSpiral</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/Dessicated_BiomesIslandsHermitCrab</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData> 
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
 </Defs>

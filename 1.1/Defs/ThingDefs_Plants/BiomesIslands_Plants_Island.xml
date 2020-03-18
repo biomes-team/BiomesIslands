@@ -80,13 +80,24 @@
 		</plant>
 	</ThingDef>
 	
-	<ThingDef ParentName="BiomesCore_FruitTreeBase">
+	<ThingDef ParentName="PlantBase">
 		<defName>BiomesIslands_Pineappleplant</defName>
 		<label>pineapple</label>
 		<description>A tall fruiting herb. It produces only a single fruit before dying, but leaves offspring behind to take it's place.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
 		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.08, 0.10, 0.45)</volume>
+				<offset>(-0.07,0,0.04)</offset>
+			</shadowData>
 			<texPath>Things/Plant/Pineapple/Pineapple</texPath>
 		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
 		<plant>
 			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.1</fertilitySensitivity>
@@ -96,6 +107,13 @@
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.90</harvestMinGrowth>
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
+			<visualSizeRange>0.8~1.3</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<purpose>Food</purpose>
+			<interferesWithRoof>false</interferesWithRoof>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
 			<harvestedThingDef>BiomesIslands_Pineapples</harvestedThingDef>
 		</plant>
 	</ThingDef>
