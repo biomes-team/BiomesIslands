@@ -439,15 +439,6 @@
     </statBases>
     <tools>
       <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>1.2</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
-      </li>
-      <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
