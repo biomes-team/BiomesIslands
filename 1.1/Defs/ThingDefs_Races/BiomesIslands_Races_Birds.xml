@@ -421,7 +421,7 @@
       <lifeExpectancy>45</lifeExpectancy>
       <useMeatFrom>Cassowary</useMeatFrom>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+      <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
 	  <leatherDef>BiomesIslands_Leather_Flamingo</leatherDef>
     </race>
     <comps>
