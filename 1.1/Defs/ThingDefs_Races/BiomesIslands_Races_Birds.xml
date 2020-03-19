@@ -295,10 +295,15 @@
     <comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>BiomesIslands_EggOmegaDodoFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>3</eggFertilizationCountMax>
-        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggUnfertilizedDef>BiomesIslands_EggOmegaDodoUnfertilized</eggUnfertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>4</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
-        <eggCountRange>1</eggCountRange>
+        <eggCountRange>
+		<min>1</min>
+		<max>3</max>
+		
+		</eggCountRange>
       </li>
     </comps>
     <tools>
@@ -407,7 +412,7 @@
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
     </statBases>
     <race>
-      <herdAnimal>false</herdAnimal>
+      <herdAnimal>true</herdAnimal>
       <baseBodySize>0.7</baseBodySize>
       <baseHealthScale>0.9</baseHealthScale>
 			<baseHungerRate>0.45</baseHungerRate>
