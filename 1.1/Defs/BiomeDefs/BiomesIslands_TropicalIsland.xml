@@ -17,7 +17,7 @@
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
     <animalDensity>2.5</animalDensity>
-    <plantDensity>0.9</plantDensity>
+    <plantDensity>1.9</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>2</movementDifficulty>
     <texture>World/Biomes/TropicalRainforest</texture>
