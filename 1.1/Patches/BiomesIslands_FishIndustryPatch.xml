@@ -12,12 +12,14 @@
 				<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishSduiggles"]/naturalBiomes</xpath>
 				<value>
 					<li>BiomesIslands_Atoll_NoBeach</li>
+					<li>BiomesIslands_TropicalIsland_NoBeach</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishSeasnake"]/naturalBiomes</xpath>
 				<value>
 					<li>BiomesIslands_Atoll_NoBeach</li>
+					<li>BiomesIslands_TropicalIsland_NoBeach</li>
 				</value>
 			</li>
 			
@@ -25,6 +27,7 @@
 				<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishMashgon"]/naturalBiomes</xpath>
 				<value>
 					<li>BiomesIslands_Atoll_NoBeach</li>
+					<li>BiomesIslands_TropicalIsland_NoBeach</li>
 				</value>
 			</li>
 			
@@ -41,6 +44,7 @@
 				<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishTailteeth"]/naturalBiomes</xpath>
 				<value>
 					<li>BiomesIslands_Atoll_NoBeach</li>
+					<li>BiomesIslands_TropicalIsland_NoBeach</li>
 				</value>
 			</li>
 				
