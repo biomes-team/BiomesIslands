@@ -15,7 +15,7 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>25</daysToRotStart>
+        <daysToRotStart>14</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
@@ -39,7 +39,7 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>25</daysToRotStart>
+        <daysToRotStart>60</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
@@ -62,7 +62,7 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>25</daysToRotStart>
+        <daysToRotStart>14</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
@@ -98,6 +98,7 @@
       <preferability>RawTasty</preferability>
       <specialThoughtDirect>BiomesIslands_Coconut</specialThoughtDirect>
       <foodType>VegetableOrFruit</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
     </ingestible>
   </ThingDef>
   
@@ -116,7 +117,7 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>25</daysToRotStart>
+        <daysToRotStart>14</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
@@ -124,6 +125,7 @@
       <preferability>RawTasty</preferability>
       <specialThoughtDirect>BiomesIslands_Pineapple</specialThoughtDirect>
       <foodType>VegetableOrFruit</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
     </ingestible>
   </ThingDef>
   
