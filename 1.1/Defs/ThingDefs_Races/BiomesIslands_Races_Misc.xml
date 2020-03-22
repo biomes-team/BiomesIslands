@@ -120,10 +120,10 @@
         <li>
           <def>EusocialInsectAdult</def>
           <minAge>0.4</minAge>
-          <soundWounded>Pawn_Megaspider_Wounded</soundWounded>
-          <soundDeath>Pawn_Megaspider_Death</soundDeath>
-          <soundCall>Mantis</soundCall>
-          <soundAngry>Pawn_Megaspider_Angry</soundAngry>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Mantis_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
