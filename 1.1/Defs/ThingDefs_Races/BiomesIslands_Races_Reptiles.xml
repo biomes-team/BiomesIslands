@@ -4,7 +4,7 @@
  <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_Gigantaconda</defName>
     <label>gigantaconda</label>
-    <description>A huge predatory snake. Gigantacondas can be highly aggressive if provoked.</description>
+    <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey can crush it to death. They can even kill elephants.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>420</MarketValue>
@@ -535,137 +535,6 @@
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>
           </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
-          <drawSize>1.2</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-  
-<ThingDef ParentName="AnimalThingBase">
-    <defName>BiomesIslands_Treefrog</defName>
-    <label>tree frog</label>
-    <description>Frogs are amphibians that are known for their jumping abilities, croaking sounds, bulging eyes and slimy skin.</description>
-    <statBases>
-      <MoveSpeed>4.3</MoveSpeed>
-      <MarketValue>45</MarketValue>
-      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-      <ComfyTemperatureMax>50</ComfyTemperatureMax>
-    </statBases>
-    <tools>
-	  <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>6</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-	<comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>BiomesIslands_EggTreeFrogFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>26</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>2</min>
-          <max>5</max>
-        </eggCountRange>
-      </li>
-    </comps>
-    <race>
-      <body>QuadrupedAnimalWithPaws</body>
-	  <herdAnimal>false</herdAnimal>
-      <baseBodySize>0.15</baseBodySize>
-      <baseHungerRate>0.25</baseHungerRate>
-      <baseHealthScale>0.3</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict</foodType>
-      <leatherDef>Leather_Lizard</leatherDef>
-      <wildness>0.20</wildness>
-	  <manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.00</manhunterOnDamageChance>
-      <lifeExpectancy>9</lifeExpectancy>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.10</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.25</minAge>
-          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
-          <soundDeath>Pawn_Iguana_Death</soundDeath>
-          <soundCall>Pawn_Iguana_Call</soundCall>
-          <soundAngry>Pawn_Iguana_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-    </race>
-    <tradeTags>
-      <li>AnimalUncommon</li>
-    </tradeTags>
-  </ThingDef>
-  
-  
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BiomesIslands_Treefrog</defName>
-    <label>tree frog</label>
-    <race>BiomesIslands_Treefrog</race>
-    <combatPower>30</combatPower>
-    <ecoSystemWeight>0.20</ecoSystemWeight>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsTreefrog/BiomesIslandsTreefrog</texPath>
-          <drawSize>0.7</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
-          <drawSize>0.7</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsTreefrog/BiomesIslandsTreefrog</texPath>
-          <drawSize>0.9</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
-          <drawSize>0.9</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsTreefrog/BiomesIslandsTreefrog</texPath>
-          <drawSize>1.2</drawSize>
-		  <!--
-          <shadowData>
-            <volume>(0.45, 0.45, 0.45)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
-		  -->
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>

@@ -5,7 +5,7 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_KiwiBird</defName>
     <label>kiwi</label>
-    <description>Tiny round bird. It's lack of flight makes it helpless against even small predators. No relation to the fruit.</description>
+    <description>The miniscule, spherical cousin of the moa. Inferior in every way to their bigger relative. Helpless in the face of danger because of it's lack of flight.</description>
     <statBases>
       <MoveSpeed>3.1</MoveSpeed>
       <MarketValue>80</MarketValue>
@@ -133,7 +133,7 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_Seagull</defName>
     <label>seagull</label>
-    <description>A bird that moves in large flocks, consuming any edible material they find. They can eat almost anything.</description>
+    <description>Noisy birds that eat anything small enough to fit down their gullets.They live in large colonies, and will happily prey on and swallow whole any animal they can.</description>
     <statBases>
       <MoveSpeed>3.6</MoveSpeed>
       <MarketValue>95</MarketValue>
@@ -141,10 +141,12 @@
     </statBases>
     <race>
       <herdAnimal>true</herdAnimal>
+      <predator>true</predator>
+      <maxPreyBodySize>0.40</maxPreyBodySize>
       <baseBodySize>0.45</baseBodySize>
-		<baseHealthScale>0.5</baseHealthScale>
-		<baseHungerRate>0.5</baseHungerRate>
-		<foodType>OmnivoreRoughAnimal</foodType>
+      <baseHealthScale>0.5</baseHealthScale>
+      <baseHungerRate>0.5</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
       <wildness>0.45</wildness>
       <trainability>Simple</trainability>
       <lifeExpectancy>11</lifeExpectancy>
@@ -404,7 +406,7 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_Flamingo</defName>
     <label>flamingo</label>
-    <description>A wading bird that gets it's color from the krill it eats. Prized for their beauty.</description>
+    <description>Wading birds that get their color from the krill they eat by filtering food out of the water with their beaks. They thrive anywhere with warm, shallow water.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <MarketValue>230</MarketValue>
