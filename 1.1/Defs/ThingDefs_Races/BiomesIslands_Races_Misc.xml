@@ -13,7 +13,7 @@
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <MarketValue>100</MarketValue>
-      <LeatherAmount>0</LeatherAmount>
+      <LeatherAmount>20</LeatherAmount>
     </statBases>
     <uiIconScale>2</uiIconScale>
     <tools>
@@ -106,6 +106,7 @@
       <wildness>0.95</wildness>
       <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+	  <leatherDef>BiomesCore_GreenChitin</leatherDef>
       <lifeExpectancy>10</lifeExpectancy>
       <lifeStageAges>
         <li>
