@@ -152,9 +152,9 @@
     <wildPlants>
 		<Plant_Grass>2.0</Plant_Grass>
 		<Plant_ShrubLow>1.0</Plant_ShrubLow>
-		<BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
-		<BiomesIslands_DevilsClawTree>0.4</BiomesIslands_DevilsClawTree>
-		<Plant_TreePalm>0.6</Plant_TreePalm>
+		<BiomesIslands_CoconutPalm>0.3</BiomesIslands_CoconutPalm>
+		<BiomesIslands_DevilsClawTree>0.3</BiomesIslands_DevilsClawTree>
+		<Plant_TreePalm>0.8</Plant_TreePalm>
 	
     </wildPlants>
     <wildAnimals>

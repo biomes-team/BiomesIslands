@@ -139,18 +139,18 @@
 		<SnowHard>4</SnowHard>
 	</baseWeatherCommonalities>
     <wildPlants>
-		<BiomesIslands_CoconutPalm>0.3</BiomesIslands_CoconutPalm>
-		<BiomesIslands_OrangeTree>0.2</BiomesIslands_OrangeTree>
-        <BiomesIslands_BananaPlant>0.3</BiomesIslands_BananaPlant>
+		<BiomesIslands_CoconutPalm>0.2</BiomesIslands_CoconutPalm>
+		<BiomesIslands_OrangeTree>0.1</BiomesIslands_OrangeTree>
+        <BiomesIslands_BananaPlant>0.2</BiomesIslands_BananaPlant>
 		
 		<Plant_Grass>3.0</Plant_Grass>
 		<Plant_TallGrass>2.0</Plant_TallGrass>
 		<Plant_ShrubLow>2.0</Plant_ShrubLow>
 		<Plant_Alocasia>0.8</Plant_Alocasia>
-		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
-		<Plant_TreePalm>0.3</Plant_TreePalm>
-		<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
-		<Plant_TreeTeak>0.2</Plant_TreeTeak>
+		<Plant_TreeCecropia>0.5</Plant_TreeCecropia>
+		<Plant_TreePalm>0.5</Plant_TreePalm>
+		<Plant_TreeBamboo>0.4</Plant_TreeBamboo>
+		<Plant_TreeTeak>0.4</Plant_TreeTeak>
 		<Plant_Bush>0.15</Plant_Bush>
 		<Plant_Clivia>0.07</Plant_Clivia>
 		<Plant_Berry>0.05</Plant_Berry>
@@ -165,11 +165,11 @@
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
 		<BiomesIslands_HermitCrab>0.6</BiomesIslands_HermitCrab>
 		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
-		<BiomesIslands_Gigantaconda>0.15</BiomesIslands_Gigantaconda>
+		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
         <BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
 	    <BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
 		<BiomesIslands_Treefrog>0.9</BiomesIslands_Treefrog>
-		<BiomesIslands_Megamantis>0.2</BiomesIslands_Megamantis>
+		<BiomesIslands_Megamantis>0.1</BiomesIslands_Megamantis>
 	</wildAnimals>
 	<allowedPackAnimals>
 		<li>Muffalo</li>
