@@ -8,7 +8,7 @@ using Verse;
 
 namespace BiomesIslands.BiomeWorkers
 {
-    public class BiomeWorker_Atoll : BiomeWorker
+    public class BiomeWorker_IslandCold : BiomeWorker
     {
         public override float GetScore(Tile tile, int tileID)
         {
@@ -21,22 +21,17 @@ namespace BiomesIslands.BiomeWorkers
             {
                 return 0f;
             }
-            if (Rand.Value < 0.997f)
+            if (Rand.Value < 0.998f)
+            {
+                return 0f;
+            }
+            if (tile.temperature < -20f || tile.temperature > 5f)
             {
                 return 0f;
             }
 
 
-            if (tile.temperature < 15f)
-            {
-                return 0f;
-            }
-            //if (tile.rainfall < 2000f)
-            //{
-            //    return 0f;
-            //}
-
-            return tile.temperature + 0.0001f;
+            return 10f;
 
         }
     }

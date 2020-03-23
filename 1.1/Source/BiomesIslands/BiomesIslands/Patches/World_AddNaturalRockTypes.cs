@@ -17,7 +17,7 @@ namespace BiomesIslands.Patches
         {
             var world = Traverse.Create(__instance);
             WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
-            if (worldGrid[tile].biome.defName == "BiomesIslands_Atoll_NoBeach")
+            if (worldGrid[tile].biome.defName == "BiomesIslands_Atoll")
             {
                 List<ThingDef> rocks = new List<ThingDef>() { BiomesIslandsDefOf.BiomesIslands_CoralRock };
                 __result = rocks;

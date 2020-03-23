@@ -19,18 +19,33 @@ namespace BiomesIslands.Patches
         {
             if (__instance.thingDef == ThingDefOf.SteamGeyser)
             {
-                if (map.Biome.defName == "BiomesIslands_TropicalIsland_NoBeach" && __instance.allowInWaterBiome == false)
+                if (map.Biome.HasModExtension<IslandMap>())
                 {
-                    bool seaSpawns = __instance.allowInWaterBiome;
-                    FloatRange range = __instance.countPer10kCellsRange;
-                    __instance.allowInWaterBiome = true;
-                    __instance.countPer10kCellsRange.min /= 2;
-                    __instance.countPer10kCellsRange.max /= 2;
-                    __instance.Generate(map, parms);
-                    __instance.allowInWaterBiome = seaSpawns;
-                    __instance.countPer10kCellsRange = range;
-                    return false;
+                    if (map.Biome.GetModExtension<IslandMap>().hasScatterables && __instance.allowInWaterBiome == false)
+                    {
+                        bool seaSpawns = __instance.allowInWaterBiome;
+                        FloatRange range = __instance.countPer10kCellsRange;
+                        __instance.allowInWaterBiome = true;
+                        __instance.countPer10kCellsRange.min /= 2;
+                        __instance.countPer10kCellsRange.max /= 2;
+                        __instance.Generate(map, parms);
+                        __instance.allowInWaterBiome = seaSpawns;
+                        __instance.countPer10kCellsRange = range;
+                        return false;
+                    }
                 }
+                //if (map.Biome.defName == "BiomesIslands_TropicalIsland_NoBeach" && __instance.allowInWaterBiome == false)
+                //{
+                //    bool seaSpawns = __instance.allowInWaterBiome;
+                //    FloatRange range = __instance.countPer10kCellsRange;
+                //    __instance.allowInWaterBiome = true;
+                //    __instance.countPer10kCellsRange.min /= 2;
+                //    __instance.countPer10kCellsRange.max /= 2;
+                //    __instance.Generate(map, parms);
+                //    __instance.allowInWaterBiome = seaSpawns;
+                //    __instance.countPer10kCellsRange = range;
+                //    return false;
+                //}
             }
 
             return true;

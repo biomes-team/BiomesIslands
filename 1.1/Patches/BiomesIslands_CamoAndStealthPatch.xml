@@ -18,7 +18,7 @@ Woodland
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/BiomeDef[defName="BiomesIslands_Atoll_NoBeach"]</xpath>
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_Atoll"]</xpath>
 					<value>
 						<li Class="CompCamo.CompCamoDefs">
 						<CamoType>Jungle</CamoType>
@@ -26,7 +26,7 @@ Woodland
 					</value>
 				</li>
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TropicalIsland_NoBeach"]</xpath>
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TropicalIsland"]</xpath>
 					<value>
 						<li Class="CompCamo.CompCamoDefs">
 						<CamoType>Jungle</CamoType>

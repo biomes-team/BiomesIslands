@@ -9,7 +9,7 @@ using Verse;
 
 namespace BiomesIslands.GenSteps
 {
-    public class GenStep_Atoll : GenStep
+    public class GenStep_Island : GenStep
     {
         public override int SeedPart
         {
@@ -84,12 +84,10 @@ namespace BiomesIslands.GenSteps
                 islandHills.Generate(map, parms);
             }
 
-
             SetNewTerrains(map);
 
             GenStep_OceanRockChunks genStep = new GenStep_OceanRockChunks();
             genStep.Generate(map, parms);
-
         }
 
 
@@ -120,7 +118,6 @@ namespace BiomesIslands.GenSteps
             float dist = 0;
             double xDist = Math.Pow(point1.x - point2.x, 2);
             double zDist = Math.Pow(point1.z - point2.z, 2);
-
             dist = (float)Math.Sqrt(xDist + zDist);
 
             return dist;
@@ -138,12 +135,8 @@ namespace BiomesIslands.GenSteps
 
             foreach (IntVec3 current in map.AllCells)
             {
-
                 TerrainDef terrainDef;
-
                 terrainDef = this.TerrainFrom(current, map, elevation[current], fertility[current], false);
-
-
                 terrainGrid.SetTerrain(current, terrainDef);
             }
 
@@ -181,7 +174,6 @@ namespace BiomesIslands.GenSteps
                 if (Rand.Bool)
                 {
                     IntVec3 ne = a;
-
                     List<IntVec3> island = new List<IntVec3>();
 
                     // Small chance of bigger circles. Helps the overall shape to look more natural.
@@ -211,7 +203,6 @@ namespace BiomesIslands.GenSteps
                         }
                     }
                 }
-
             }
         }
 
@@ -222,7 +213,7 @@ namespace BiomesIslands.GenSteps
         /// </summary>
         private TerrainDef TerrainFrom(IntVec3 c, Map map, float elevation, float fertility, bool preferSolid)
         {
-            TerrainDef terrainDef = null;
+            //TerrainDef terrainDef = null;
 
             //if (terrainDef == null && preferSolid)
             //{
@@ -259,7 +250,6 @@ namespace BiomesIslands.GenSteps
                 return GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
             }
 
-
             TerrainDef terrainDef2;
             for (int i = 0; i < map.Biome.terrainPatchMakers.Count; i++)
             {
@@ -269,7 +259,6 @@ namespace BiomesIslands.GenSteps
                     return terrainDef2;
                 }
             }
-
             
             terrainDef2 = TerrainThreshold.TerrainAtValue(map.Biome.terrainsByFertility, fertility);
             if (terrainDef2 != null)

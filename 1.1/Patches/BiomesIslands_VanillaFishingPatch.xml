@@ -10,8 +10,8 @@
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeHot"]/biomes</xpath>
 				<value>
-					<li>BiomesIslands_Atoll_NoBeach</li>	
-					<li>BiomesIslands_TropicalIsland_NoBeach</li>					
+					<li>BiomesIslands_Atoll</li>	
+					<li>BiomesIslands_TropicalIsland</li>					
 				</value>
 			</li>
 		</operations>

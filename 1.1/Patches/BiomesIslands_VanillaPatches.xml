@@ -3,14 +3,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
 		<value>
-			<li>BiomesIslands_GenAtoll</li>
+			<li>BiomesIslands_GenIsland</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
 		<value>
-			<li>BiomesIslands_TropicalIsland_NoBeach</li>
+			<li>BiomesIslands_TropicalIsland</li>
 		</value>
 	</Operation>
 	

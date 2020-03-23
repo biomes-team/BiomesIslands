@@ -144,7 +144,9 @@ namespace BiomesIslands.GenSteps
 
         private void ElevationGrid(Map map)
         {
-            ModuleBase moduleBase = new Perlin(0.020999999716877937, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
+            //ModuleBase moduleBase = new Perlin(0.020999999716877937, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
+            ModuleBase moduleBase = new Perlin(0.025, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
+
             moduleBase = new ScaleBias(0.5, 0.5, moduleBase);
             NoiseDebugUI.StoreNoiseRender(moduleBase, "elev base");
             float elevScaling = 1f;

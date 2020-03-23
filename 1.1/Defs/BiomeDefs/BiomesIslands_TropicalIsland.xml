@@ -2,14 +2,17 @@
 <Defs>
   
   <BiomeDef>    <!-- TropicalIsland -->
-    <defName>BiomesIslands_TropicalIsland_NoBeach</defName>
+    <defName>BiomesIslands_TropicalIsland</defName>
     <label>tropical island</label>
     <description>Despite the heat and constant humidity, the sandy beaches and plentiful resources make these islands superb for a tropical getaway. Few animals here are a threat to humans, making the environment reasonably safe.</description>
-    <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
+    <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_IslandHot</workerClass>
 	
 	<modExtensions>
 		<li Class="BiomesIslands.IslandMap">
 			<isIsland>true</isIsland>
+		</li>
+		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
+			<allowBeach>false</allowBeach>
 		</li>
 	</modExtensions>
 	
@@ -94,18 +97,6 @@
       </li>
     </terrainsByFertility>
     <terrainPatchMakers>
-      <li>
-        <perlinFrequency>0.02</perlinFrequency>
-        <minFertility>3.0</minFertility>
-        <maxFertility>10.0</maxFertility>
-        <thresholds>
-		  <li>
-            <terrain>Sand</terrain>
-            <min>0.3</min>
-            <max>999</max>
-          </li>
-        </thresholds>
-      </li>
 	  <li>
 		<perlinFrequency>0.035</perlinFrequency>
 		<minFertility>5.0</minFertility>
@@ -127,6 +118,31 @@
 			</li>
 		</thresholds>
 	  </li>
+      <li>
+        <perlinFrequency>0.02</perlinFrequency>
+        <minFertility>2.0</minFertility>
+        <maxFertility>8.0</maxFertility>
+        <thresholds>
+		<!--
+		  <li>
+            <terrain>Ice</terrain>
+            <min>-999</min>
+            <max>-0.4</max>
+          </li>
+		  -->
+		  <li>
+            <terrain>Soil</terrain>
+            <min>-0.2</min>
+            <max>0.1</max>
+          </li>
+		  <li>
+            <terrain>Sand</terrain>
+            <min>0.35</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+	  
     </terrainPatchMakers>
     <baseWeatherCommonalities>
 		<Clear>18</Clear>

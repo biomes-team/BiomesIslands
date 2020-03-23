@@ -1,24 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <GenStepDef>
-    <defName>BiomesIslands_GenAtoll</defName>
-    <order>230</order>
-    <genStep Class="BiomesIslands.GenSteps.GenStep_Atoll" />
-  </GenStepDef>
-  
   
   <BiomeDef>    <!-- Atoll -->
-    <defName>BiomesIslands_Atoll_NoBeach</defName>
+    <defName>BiomesIslands_Atoll</defName>
     <label>atoll</label>
     <description>Formed by living corals growing upward from the subsiding of a volcano, these islands are often semicircular with a shallow lagoon in the middle. While the lagoon is beautiful, its size offers little space for building. With abundant wild food, relatively small and rare predators, and warm winters, surviving can be as pleasant as a tropical breeze.</description>
-    <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
+    <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_IslandHot</workerClass>
 	
 	<modExtensions>
 		<li Class="BiomesIslands.IslandMap">
 			<isIsland>true</isIsland>
 			<hasHilliness>false</hasHilliness>
 			<hasScatterables>false</hasScatterables>
+		</li>
+		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
+			<allowBeach>false</allowBeach>
 		</li>
 	</modExtensions>
     
@@ -167,10 +163,7 @@
 		<Tortoise>0.5</Tortoise>
 		<BiomesIslands_SeaTurtle>0.3</BiomesIslands_SeaTurtle>
 		<BiomesIslands_MarineIguana>0.4</BiomesIslands_MarineIguana>
-		
-		
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
-
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
