@@ -142,7 +142,7 @@
     <race>
       <herdAnimal>true</herdAnimal>
       <predator>true</predator>
-      <maxPreyBodySize>0.40</maxPreyBodySize>
+      <maxPreyBodySize>0.20</maxPreyBodySize>
       <baseBodySize>0.45</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
       <baseHungerRate>0.5</baseHungerRate>
