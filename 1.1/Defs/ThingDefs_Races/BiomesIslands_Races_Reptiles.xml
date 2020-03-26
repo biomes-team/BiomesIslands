@@ -4,7 +4,7 @@
  <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_Gigantaconda</defName>
     <label>gigantaconda</label>
-    <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey can crush it to death. They can even kill elephants.</description>
+    <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey can crush it to death.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>420</MarketValue>
@@ -428,7 +428,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_GreenGecko</defName>
     <label>green gecko</label>
-    <description>Geckos are small lizards belonging to the infraorder Gekkota, found in warm climates. They range from 1.6 to 60 cm. Most geckos cannot blink, but they often lick their eyes to keep them clean and moist.</description>
+    <description>Tiny lizards known mostly for licking their own eyeballs and shedding their tails. Their unique feet allow them to cling to even smooth walls.</description>
     <statBases>
       <MoveSpeed>1.2</MoveSpeed>
       <MarketValue>200</MarketValue>

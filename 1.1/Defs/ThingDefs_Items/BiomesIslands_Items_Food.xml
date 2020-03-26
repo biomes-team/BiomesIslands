@@ -350,7 +350,7 @@
 	<comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-        <hatcherPawn>BiomesIslands_GreenGecko</hatcherPawn>
+        <hatcherPawn>BiomesIslands_Megamantis</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
