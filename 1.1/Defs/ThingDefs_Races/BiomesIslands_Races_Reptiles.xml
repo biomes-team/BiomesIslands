@@ -470,7 +470,7 @@
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.75</wildness>
-      <lifeExpectancy>180</lifeExpectancy>
+      <lifeExpectancy>15</lifeExpectancy>
       <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
       <lifeStageAges>
