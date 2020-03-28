@@ -498,7 +498,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsFlamingo/BiomesIslandsFlamingo</texPath>
+          <texPath>Things/Pawn/Animal/BiomesIslandsFlamingo/BiomesIslandsFlamingoChick</texPath>
           <drawSize>1.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
