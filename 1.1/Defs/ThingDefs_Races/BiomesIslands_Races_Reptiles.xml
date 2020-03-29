@@ -134,23 +134,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-  
-  
-  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseInsect">
-    <statBases>
-      <ToxicSensitivity>0</ToxicSensitivity>
-      <ComfyTemperatureMax>60</ComfyTemperatureMax>
-    </statBases>
-    <race>
-      <fleshType>Insectoid</fleshType>
-      <bloodDef>Filth_BloodInsect</bloodDef>
-      <meatColor>(160,168,139)</meatColor>
-      <meatMarketValue>0.5</meatMarketValue>
-      <foodType>OmnivoreAnimal, AnimalProduct</foodType>
-      <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
-      <manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
-    </race>
-  </ThingDef>
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_SeaTurtle</defName>
