@@ -12,5 +12,16 @@
     <label>front right scythe</label>
     <labelShort>scythe</labelShort>
   </BodyPartGroupDef>
+  
+  <BodyPartDef>
+    <defName>SharkTail</defName>
+    <label>tail</label>
+      <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+      <skinCovered>true</skinCovered>
+      <tags>
+          <li>MovingLimbCore</li>
+      </tags>
+</BodyPartDef>
 
 </Defs>
