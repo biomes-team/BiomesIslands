@@ -12,6 +12,12 @@
             <MeatAmount>10</MeatAmount>
             <LeatherAmount>20</LeatherAmount>
         </statBases>
+		<modExtensions>
+			<!-- This makes sharks stay in the water -->
+			<li Class="Swimming.AquaticExtension">
+			<aquatic>true</aquatic>
+			</li>
+		</modExtensions>
         <tools>
             <li>
                 <label>teeth</label>
