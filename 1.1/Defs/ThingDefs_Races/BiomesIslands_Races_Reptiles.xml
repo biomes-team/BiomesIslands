@@ -110,6 +110,10 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
           <drawSize>2.2</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.25, 0.25)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -120,6 +124,10 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
           <drawSize>2.8</drawSize>
+          <shadowData>
+            <volume>(0.35, 0.35, 0.35)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -130,6 +138,10 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
           <drawSize>3.6</drawSize>
+          <shadowData>
+            <volume>(0.45, 0.45, 0.45)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
