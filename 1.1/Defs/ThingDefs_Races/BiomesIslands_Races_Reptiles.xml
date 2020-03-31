@@ -4,7 +4,7 @@
  <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_Gigantaconda</defName>
     <label>gigantaconda</label>
-    <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey can crush it to death.</description>
+    <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey and crush it to death.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>420</MarketValue>
