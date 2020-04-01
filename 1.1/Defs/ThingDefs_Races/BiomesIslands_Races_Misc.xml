@@ -195,6 +195,7 @@
     <description>Tiny amphibians that spend their whole lives in trees. Helpless but well hidden and highly poisonous, they are only rarely caught by predators.</description>
     <statBases>
       <MoveSpeed>4.3</MoveSpeed>
+      <SwimSpeed>5</SwimSpeed>
       <MarketValue>45</MarketValue>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>

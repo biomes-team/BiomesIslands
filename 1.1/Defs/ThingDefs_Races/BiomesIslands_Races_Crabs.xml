@@ -7,6 +7,7 @@
     <description>A mongrel crab species that can survive on most rimworlds in warm waters. It moves in large packs, which can be a threat to smaller islands because of their ravenous hunger. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
     <statBases>
       <MoveSpeed>3.5</MoveSpeed>
+      <SwimSpeed>6</SwimSpeed>
       <MarketValue>110</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
@@ -106,6 +107,7 @@
     <description>A crab species known for hiding inside seashells. Despite their name, they are highly social, living in colonies of hundreds of crabs. Their hard shells make them very tough for their size.</description>
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>
+      <SwimSpeed>4</SwimSpeed>
       <MarketValue>110</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>55</ComfyTemperatureMax>

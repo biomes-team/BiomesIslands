@@ -136,6 +136,7 @@
     <description>Noisy birds that eat anything small enough to fit down their gullets.They live in large colonies, and will happily prey on and swallow whole any animal they can.</description>
     <statBases>
       <MoveSpeed>3.6</MoveSpeed>
+      <SwimSpeed>5</SwimSpeed>
       <MarketValue>95</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
     </statBases>
@@ -409,6 +410,7 @@
     <description>Wading birds that get their color from the krill they eat by filtering food out of the water with their beaks. They thrive anywhere with warm, shallow water.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
+      <SwimSpeed>6</SwimSpeed>
       <MarketValue>230</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>

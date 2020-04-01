@@ -7,6 +7,7 @@
     <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey and crush it to death.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
+      <SwimSpeed>8</SwimSpeed>
       <MarketValue>420</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -153,6 +154,7 @@
     <description>This heavily armored sea-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.</description>
     <statBases>
       <MoveSpeed>1.0</MoveSpeed>
+      <SwimSpeed>5</SwimSpeed>
       <MarketValue>400</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
@@ -282,6 +284,7 @@
     <description>These large lizards normally feed on plant matter. However, when angered, their tough hide and sharp claws make them quite dangerous.\n\nResting iguanas hold their heads high, giving them an amusing 'proud' look. But they're not proud; they're just trying to see predators so they don't get eaten.</description>
     <statBases>
       <MoveSpeed>3.2</MoveSpeed>
+      <SwimSpeed>4</SwimSpeed>
       <MarketValue>120</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -426,6 +429,7 @@
     <description>Tiny lizards known mostly for licking their own eyeballs and shedding their tails. Their unique feet allow them to cling to even smooth walls.</description>
     <statBases>
       <MoveSpeed>1.2</MoveSpeed>
+      <SwimSpeed>1.2</SwimSpeed>
       <MarketValue>200</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
