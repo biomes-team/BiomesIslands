@@ -410,10 +410,6 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/BiomesIslandsMarineIguana</texPath>
           <drawSize>1.7</drawSize>
-          <shadowData>
-            <volume>(0.25, 0.3, 0.25)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/Dessicated_BiomesIslandsMarineIguana</texPath>
@@ -530,10 +526,6 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/BiomesIslandsGreenGecko</texPath>
           <drawSize>1.2</drawSize>
-          <shadowData>
-            <volume>(0.45, 0.45, 0.45)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
