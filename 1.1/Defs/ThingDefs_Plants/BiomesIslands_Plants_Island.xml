@@ -156,30 +156,29 @@
     </statBases>
     <pathCost>20</pathCost>
     <graphicData>
-	  <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Plant/Fern/FloweringFern</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <texPath>Things/Plant/Fern/Floweringfern</texPath>
     </graphicData>
-    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
     <plant>
+      <sowTags>
+        <li>Decorative</li>
+      </sowTags>
       <fertilitySensitivity>0.7</fertilitySensitivity>
       <growDays>3</growDays>
-      <maxMeshCount>4</maxMeshCount>
       <visualSizeRange>1.2~1.5</visualSizeRange>
       <topWindExposure>0.2</topWindExposure>
       <wildClusterRadius>9</wildClusterRadius>
       <wildClusterWeight>10</wildClusterWeight>
           <wildOrder>1</wildOrder>
           <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+      <purpose>Beauty</purpose>
     </plant>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
         <glowColor>(128,54,10,0)</glowColor>
-      </li>
-      <li Class="CompProperties_Schedule">
-        <!-- Match plant growing times -->
-        <startTime>0.8</startTime>
-        <endTime>0.25</endTime>
       </li>
     </comps>
   </ThingDef>
