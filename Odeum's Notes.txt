@@ -48,7 +48,7 @@ Coconut        10
 Orange         48
 Banana         70
 Devils Claw    40
-Pineapple      15
+Pineapple      5
 
                Nutrients
 Coconut        0.25

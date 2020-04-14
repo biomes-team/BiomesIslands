@@ -113,7 +113,6 @@
     <statBases>
       <MarketValue>4.2</MarketValue>
       <Mass>0.06</Mass>
-      <Nutrition>0.25</Nutrition>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -123,7 +122,6 @@
     </comps>
     <ingestible>
       <preferability>RawTasty</preferability>
-      <specialThoughtDirect>BiomesIslands_Pineapple</specialThoughtDirect>
       <foodType>VegetableOrFruit</foodType>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
     </ingestible>
