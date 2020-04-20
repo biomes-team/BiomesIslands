@@ -13,7 +13,7 @@
             <LeatherAmount>20</LeatherAmount>
         </statBases>
 		<modExtensions>
-			<!-- This makes sharks stay in the water -->
+			<!-- This makes things stay in the water -->
 			<li Class="Swimming.AquaticExtension">
 			<aquatic>true</aquatic>
 			</li>
