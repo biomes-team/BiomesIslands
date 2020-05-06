@@ -26,7 +26,7 @@
       <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
     </graphicData>
     <statBases>
-      <Beauty>1</Beauty>
+      <Beauty>2</Beauty>
       <MarketValue>15</MarketValue>
     </statBases>
     <building>
@@ -60,6 +60,7 @@
       <color>(250,180,147)</color>
     </graphicData>
     <statBases>
+        <Beauty>1.35</Beauty>
       <Mass>1.0</Mass>
     </statBases>
     <stuffProps>
@@ -71,6 +72,9 @@
       <statFactors>
         <MaxHitPoints>1.2</MaxHitPoints>
       </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
       <commonality>0</commonality>
     </stuffProps>
   </ThingDef>
