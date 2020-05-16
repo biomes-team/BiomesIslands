@@ -5,10 +5,13 @@ using System.Text;
 using RimWorld.Planet;
 using RimWorld;
 using Verse;
+using Verse.Noise;
+using UnityEngine;
+using BiomesIslands.BiomeWorkersvariables;
 
 namespace BiomesIslands.BiomeWorkers
 {
-    public class BiomeWorker_IslandTemperate : BiomeWorker
+    public class BiomeWorker_IslandTemperate : Variables
     {
         public override float GetScore(Tile tile, int tileID)
         {
@@ -29,10 +32,16 @@ namespace BiomesIslands.BiomeWorkers
             {
                 return 0f;
             }
-
-
-            return 10f;
-
+            if (PerlinNoise == null)
+            { // if we have never come across it yet, initialise it
+                PerlinNoise = new Perlin(0.1, 60, 0.6, 8, Rand.Range(0, int.MaxValue), QualityMode.Low);
+            }
+            float PerlinNoiseValue = PerlinNoise.GetValue(Find.WorldGrid.GetTileCenter(tileID));
+            if (PerlinNoiseValue < 0.4f)
+            {
+                return 0f;
+            }
+            return (MEAN_ELEVATION + tile.elevation) + (Mathf.Pow((10 * PerlinNoiseValue), 10));
         }
     }
 }

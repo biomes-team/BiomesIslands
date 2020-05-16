@@ -297,6 +297,7 @@
   <ItemGroup>
     <Compile Include="BiomesIslands.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandTemperate.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_IslandVariables.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandWarm.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandCold.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandHot.cs" />
