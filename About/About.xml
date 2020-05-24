@@ -16,8 +16,7 @@
 	<li>
         <packageId>BiomesTeam.BiomesCore</packageId>
         <displayName>Biomes! Core</displayName>
-        <!--<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>-->
-        <downloadUrl>placeholder</downloadUrl>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2038000893</steamWorkshopUrl>
 
     </li>
 </modDependencies>

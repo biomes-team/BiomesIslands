@@ -13,4 +13,11 @@ namespace BiomesIslands
         //public bool hasRuins = true;
         public bool hasScatterables = true;
     }
+
+    public class OasisMap : DefModExtension
+    {
+        public bool isFlatMap = false;
+        public bool isOasis = false;
+    }
+
 }
