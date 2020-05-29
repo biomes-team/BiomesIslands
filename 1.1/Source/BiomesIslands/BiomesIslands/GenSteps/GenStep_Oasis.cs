@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using HarmonyLib;
 using RimWorld;
 using RimWorld.BaseGen;
+using UnityEngine;
 using Verse;
-
+using Verse.AI;
+using Verse.Noise;
 
 namespace BiomesIslands.GenSteps
 {
-    public class GenStep_Oasis : GenStep
+    public class GenStep_Oasis : GenStep_Terrain
     {
         public override int SeedPart
         {
@@ -38,13 +41,15 @@ namespace BiomesIslands.GenSteps
             {
                 return;
             }
-
+            var rivermaker = AccessTools.Method("GenStep_Terrain:GenerateRiver").Invoke(this, new object[] { map });
+            RiverMaker RiverMakerCasted = rivermaker as RiverMaker;
+            RiverMakerCasted?.ValidatePassage(map);
             MapGenFloatGrid fertility = MapGenerator.Fertility;
 
             // make ellipse centered on the map's center. Smaller maps get smaller ellipses
             IntRange NoiseRange = new IntRange(-40, 40);
-            NoiseRange.min = (int)(0 - 0.15 * map.Size.x);
-            NoiseRange.max = (int)(0.15 * map.Size.x);
+            NoiseRange.min = (int)(0 - 0.10 * map.Size.x);
+            NoiseRange.max = (int)(0.10 * map.Size.x);
 
             IntVec3 mapCenter = map.Center;
             int x = NoiseRange.RandomInRange;
@@ -213,7 +218,7 @@ namespace BiomesIslands.GenSteps
         /// </summary>
         private TerrainDef TerrainFrom(IntVec3 c, Map map, float elevation, float fertility, bool preferSolid)
         {
-            //TerrainDef terrainDef = null;
+            TerrainDef terrainDef = null;
 
             //if (terrainDef == null && preferSolid)
             //{
@@ -224,10 +229,10 @@ namespace BiomesIslands.GenSteps
             //{
             //    return terrainDef2;
             //}
-            //if (terrainDef != null && terrainDef.IsRiver)
-            //{
-            //    return terrainDef;
-            //}
+            if (terrainDef != null && terrainDef.IsRiver)
+            {
+                return terrainDef;
+            }
             //if (terrainDef2 != null)
             //{
             //    return terrainDef2;
