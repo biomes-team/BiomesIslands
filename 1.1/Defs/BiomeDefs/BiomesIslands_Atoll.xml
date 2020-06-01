@@ -16,6 +16,9 @@
 		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
 			<allowBeach>false</allowBeach>
 		</li>
+		 <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlantBiome">
+			<spawnFertilityMultiplier>0.25</spawnFertilityMultiplier>
+		</li>
 	</modExtensions>
     
 	<canAutoChoose>false</canAutoChoose>
@@ -25,7 +28,7 @@
     <plantDensity>0.85</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
-    <texture>World/Biomes/Atoll</texture>
+    <texture>World/Biomes/Ocean</texture>
     <forageability>0.1</forageability>
     <foragedFood>RawAgave</foragedFood>
     <wildPlantRegrowDays>15</wildPlantRegrowDays>
@@ -150,6 +153,9 @@
 		<BiomesIslands_DevilsClawTree>0.4</BiomesIslands_DevilsClawTree>
 		<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
 		<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
+		<BiomesIslands_Bayhops>0.2</BiomesIslands_Bayhops>
+		
+		
 		<BiomesIslands_Kelp>0.1</BiomesIslands_Kelp>
 		
 		

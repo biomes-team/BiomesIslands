@@ -216,6 +216,45 @@
       </li>
     </comps>
   </ThingDef>
+  
+  
+	<ThingDef ParentName="PlantBase">
+		<defName>BiomesIslands_Bayhops</defName>
+		<label>bayhops</label>
+		<description>A medicinal plant native to tropical beaches. Highly salt resistant.</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>20</pathCost>
+		<graphicData>
+				<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Plant/Pomoea/Pomoea</texPath>
+		</graphicData>
+		<selectable>true</selectable>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_SandPlant">
+				<allowOnSand>true</allowOnSand>
+			</li>
+		</modExtensions>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>MedicineHerbal</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<harvestMinGrowth>0.90</harvestMinGrowth>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>0.4</fertilitySensitivity>
+			<growDays>10</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>1.2~1.5</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>20</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
 
 
 </Defs>
