@@ -306,8 +306,10 @@
     <Compile Include="GenSteps\GenStep_Island.cs" />
     <Compile Include="GenSteps\GenStep_IslandHills.cs" />
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
-    <Compile Include="GenSteps\GenStep_RemoveHills.cs" />
-    <Compile Include="IslandMap.cs" />
+    <Compile Include="..\..\..\..\..\BiomesCore\1.1\Source\BiomesCore\BiomesCore\GenStep_ValleyPatch.cs">
+      <Link>Patches\GenStep_ValleyPatch.cs</Link>
+    </Compile>
+    <Compile Include="ModExtensions.cs" />
     <Compile Include="Patches\GenStep_IslandScatterables.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />
     <Compile Include="Patches\Patches_Debug.cs" />

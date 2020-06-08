@@ -33,11 +33,11 @@ namespace BiomesIslands.GenSteps
         public override void Generate(Map map, GenStepParams parms)
         {
 
-            if (!map.Biome.HasModExtension<OasisMap>())
+            if (!map.Biome.HasModExtension<ValleyMap>())
             {
                 return;
             }
-            if (!map.Biome.GetModExtension<OasisMap>().isOasis)
+            if (!map.Biome.GetModExtension<ValleyMap>().isOasis)
             {
                 return;
             }

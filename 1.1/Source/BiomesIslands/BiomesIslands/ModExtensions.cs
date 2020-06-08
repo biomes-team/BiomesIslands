@@ -14,9 +14,12 @@ namespace BiomesIslands
         public bool hasScatterables = true;
     }
 
-    public class OasisMap : DefModExtension
+    public class ValleyMap : DefModExtension
     {
-        public bool isFlatMap = false;
+        public float minHillEncroachment = 1;
+        public float maxHillEncroachment = 1;
+        public float minHillEdgeMultiplier = 1;
+        public float maxHillEdgeMultiplier = 1;
         public bool isOasis = false;
     }
 
