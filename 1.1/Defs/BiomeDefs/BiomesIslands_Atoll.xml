@@ -8,7 +8,7 @@
     <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_IslandHot</workerClass>
 	
 	<modExtensions>
-		<li Class="BiomesCore.IslandMap">
+        <li Class="BiomesCore_BiomeControl.BiomesMap">
 			<isIsland>true</isIsland>
 			<hasHilliness>false</hasHilliness>
 			<hasScatterables>false</hasScatterables>

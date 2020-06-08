@@ -42,6 +42,9 @@
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="BiomesCore">
+      <HintPath>..\..\..\..\..\BiomesCore\1.1\Assemblies\BiomesCore.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -309,7 +312,6 @@
     <Compile Include="..\..\..\..\..\BiomesCore\1.1\Source\BiomesCore\BiomesCore\GenStep_ValleyPatch.cs">
       <Link>Patches\GenStep_ValleyPatch.cs</Link>
     </Compile>
-    <Compile Include="ModExtensions.cs" />
     <Compile Include="Patches\GenStep_IslandScatterables.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />
     <Compile Include="Patches\Patches_Debug.cs" />

@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using BiomesCore_BiomeControl;
+using HarmonyLib;
 using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
@@ -16,12 +17,12 @@ namespace BiomesIslands.Patches
     {
         static void Postfix(int tileID, ref Tile __result)
         {
-            if (!__result.biome.HasModExtension<IslandMap>())
+            if (!__result.biome.HasModExtension<BiomesMap>())
             {
                 return;
             }
 
-            if (!__result.biome.GetModExtension<IslandMap>().hasHilliness)
+            if (!__result.biome.GetModExtension<BiomesMap>().hasHilliness)
             {
                 return;
             }

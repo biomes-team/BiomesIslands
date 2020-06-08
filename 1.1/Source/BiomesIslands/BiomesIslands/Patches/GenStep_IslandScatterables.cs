@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using BiomesCore_BiomeControl;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -57,9 +58,9 @@ namespace BiomesIslands.Patches
 
         static bool AllowedInWaterBiome(GenStep_Scatterer step, Map map)
         {
-            if (map.Biome.HasModExtension<IslandMap>())
+            if (map.Biome.HasModExtension<BiomesMap>())
             {
-                if (map.Biome.GetModExtension<IslandMap>().hasScatterables)
+                if (map.Biome.GetModExtension<BiomesMap>().hasScatterables)
                 {
                     return true;
                 }

@@ -8,6 +8,7 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse.Noise;
 using UnityEngine;
+using BiomesCore_BiomeControl;
 
 namespace BiomesIslands.GenSteps
 {
@@ -40,11 +41,11 @@ namespace BiomesIslands.GenSteps
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            if (!map.Biome.HasModExtension<IslandMap>())
+            if (!map.Biome.HasModExtension<BiomesMap>())
             {
                 return;
             }
-            if (!map.Biome.GetModExtension<IslandMap>().hasHilliness)
+            if (!map.Biome.GetModExtension<BiomesMap>().hasHilliness)
             {
                 return;
             }

@@ -6,6 +6,7 @@ using System.Text;
 using RimWorld;
 using Verse;
 using UnityEngine;
+using BiomesCore_BiomeControl;
 
 namespace BiomesIslands.Patches
 {
@@ -19,9 +20,9 @@ namespace BiomesIslands.Patches
         {
             if (__instance.thingDef == ThingDefOf.SteamGeyser)
             {
-                if (map.Biome.HasModExtension<IslandMap>())
+                if (map.Biome.HasModExtension<BiomesMap>())
                 {
-                    if (map.Biome.GetModExtension<IslandMap>().hasScatterables && __instance.allowInWaterBiome == false)
+                    if (map.Biome.GetModExtension<BiomesMap>().hasScatterables && __instance.allowInWaterBiome == false)
                     {
                         bool seaSpawns = __instance.allowInWaterBiome;
                         FloatRange range = __instance.countPer10kCellsRange;

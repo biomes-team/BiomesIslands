@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BiomesCore_BiomeControl;
 using HarmonyLib;
 using RimWorld;
 using RimWorld.BaseGen;
@@ -33,11 +34,11 @@ namespace BiomesIslands.GenSteps
         public override void Generate(Map map, GenStepParams parms)
         {
 
-            if (!map.Biome.HasModExtension<ValleyMap>())
+            if (!map.Biome.HasModExtension<BiomesMap>())
             {
                 return;
             }
-            if (!map.Biome.GetModExtension<ValleyMap>().isOasis)
+            if (!map.Biome.GetModExtension<BiomesMap>().isOasis)
             {
                 return;
             }
@@ -83,7 +84,7 @@ namespace BiomesIslands.GenSteps
 
             Makelandmass(shape, ref fertility, map);
 
-            if (map.Biome.GetModExtension<IslandMap>().hasHilliness)
+            if (map.Biome.GetModExtension<BiomesMap>().hasHilliness)
             {
                 GenStep_IslandHills islandHills = new GenStep_IslandHills();
                 islandHills.Generate(map, parms);
