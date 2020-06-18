@@ -304,14 +304,13 @@
     <Compile Include="BiomeWorkers\BiomeWorker_IslandWarm.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandCold.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandHot.cs" />
+    <Compile Include="GenSteps\GenStep_Oasis2.cs" />
     <Compile Include="WorldMap.cs" />
     <Compile Include="GenSteps\GenStep_Oasis.cs" />
     <Compile Include="GenSteps\GenStep_Island.cs" />
     <Compile Include="GenSteps\GenStep_IslandHills.cs" />
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
-    <Compile Include="..\..\..\..\..\BiomesCore\1.1\Source\BiomesCore\BiomesCore\GenStep_ValleyPatch.cs">
-      <Link>Patches\GenStep_ValleyPatch.cs</Link>
-    </Compile>
+
     <Compile Include="Patches\GenStep_IslandScatterables.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />
     <Compile Include="Patches\Patches_Debug.cs" />
