@@ -1,4 +1,6 @@
-﻿using BiomesCore_BiomeControl;
+﻿
+using BiomesCore.DefModExtensions;
+using BiomesKit;
 using HarmonyLib;
 using RimWorld.Planet;
 using System;

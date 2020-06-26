@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using BiomesCore_BiomeControl;
+using BiomesCore.DefModExtensions;
+using BiomesKit;
 using RimWorld;
 using RimWorld.BaseGen;
 using Verse;

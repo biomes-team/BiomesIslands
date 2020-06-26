@@ -7,8 +7,9 @@ using Verse;
 using RimWorld;
 using RimWorld.Planet;
 using Verse.Noise;
+using BiomesKit;
 using UnityEngine;
-using BiomesCore_BiomeControl;
+using BiomesCore.DefModExtensions;
 
 namespace BiomesIslands.GenSteps
 {

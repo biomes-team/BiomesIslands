@@ -6,7 +6,8 @@ using System.Text;
 using RimWorld;
 using Verse;
 using UnityEngine;
-using BiomesCore_BiomeControl;
+using BiomesKit;
+using BiomesCore.DefModExtensions;
 
 namespace BiomesIslands.Patches
 {
