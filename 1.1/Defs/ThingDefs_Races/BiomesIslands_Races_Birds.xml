@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!-- Missing lifeStageAges so you can define them with modExtensions... otherwise they add together -->
+  <ThingDef ParentName="AnimalThingBase" Name="Biomes_BirdThingBase" Abstract="True">
+    <race>
+      <body>Bird</body>
+      <leatherDef>Leather_Bird</leatherDef>
+      <gestationPeriodDays>24</gestationPeriodDays>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <uiIconScale>1.2</uiIconScale>
+  </ThingDef>
+
 <!--====================	Small Birds		=====================-->
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_KiwiBird</defName>
@@ -130,13 +143,73 @@
     </lifeStages>
   </PawnKindDef>
   
+  <!-- Copied from LifeStages.xml, added modExtensions -->
+  <LifeStageDef ParentName="AnimalBaby">
+    <defName>BiomesIslands_SeagullBabyTiny</defName>
+    <bodySizeFactor>0.1</bodySizeFactor>
+    <foodMaxFactor>4</foodMaxFactor>
+    <modExtensions>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagullFlying</texPath>
+          <!-- Winspan takes 50% more graphical space -->
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </modExtensions>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>BiomesIslands_SeagullJuvenile</defName>
+    <label>juvenile</label>
+    <voxPitch>1.2</voxPitch>
+    <bodySizeFactor>0.5</bodySizeFactor>
+    <foodMaxFactor>1.5</foodMaxFactor>
+    <healthScaleFactor>0.6</healthScaleFactor>
+    <hungerRateFactor>0.75</hungerRateFactor>
+    <marketValueFactor>0.75</marketValueFactor>
+    <meleeDamageFactor>0.75</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.9</MoveSpeed>
+    </statFactors>
+    <modExtensions>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagullFlying</texPath>
+          <!-- Winspan takes 50% more graphical space -->
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </modExtensions>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>BiomesIslands_SeagullAdult</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
+    <modExtensions>
+      <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+        <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagullFlying</texPath>
+          <!-- Winspan takes 50% more graphical space -->
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </modExtensions>
+  </LifeStageDef>
   
-  <ThingDef ParentName="BigBirdThingBase">
+  <ThingDef ParentName="Biomes_BirdThingBase">
     <defName>BiomesIslands_Seagull</defName>
     <label>seagull</label>
     <description>Noisy birds that eat anything small enough to fit down their gullets.They live in large colonies, and will happily prey on and swallow whole any animal they can.</description>
     <statBases>
-      <BiomesCore_WaterfowlFlySpeed>50</BiomesCore_WaterfowlFlySpeed>
+      <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed>
       <SwimSpeed>5</SwimSpeed>
       <MarketValue>95</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -154,6 +227,20 @@
       <lifeExpectancy>11</lifeExpectancy>
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.013</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>BiomesIslands_SeagullBabyTiny</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>BiomesIslands_SeagullJuvenile</def>
+          <minAge>0.22</minAge>
+        </li>
+        <li>
+          <def>BiomesIslands_SeagullAdult</def>
+          <minAge>0.45</minAge>
+        </li>
+      </lifeStageAges>
     </race>
     <comps>
       <li Class="CompProperties_EggLayer">
@@ -260,7 +347,7 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
           <drawSize>1.2</drawSize>
-        </dessicatedBodyGraphicData> 
+        </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
