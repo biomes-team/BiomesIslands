@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BiomesCore_FishThingBase" ADogSaidBody="Tail">
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_WhiteShark</defName>
         <label>great white shark</label>
         <description>A large species of mackarel shark. Feared for their power and sharp teeth, they live mainly in warm waters and prefer to hunt large prey.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>8</SwimSpeed>
-            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <MarketValue>1500</MarketValue>
             <MeatAmount>10</MeatAmount>
             <LeatherAmount>20</LeatherAmount>
@@ -42,10 +41,10 @@
             <gestationPeriodDays>360</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.95</wildness>
-      <nuzzleMtbHours>275</nuzzleMtbHours>
+            <nuzzleMtbHours>275</nuzzleMtbHours>
             <petness>0.01</petness>
             <lifeExpectancy>35</lifeExpectancy>
-      <trainability>Intermediate</trainability>
+            <trainability>Intermediate</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
             <meatLabel>shark meat</meatLabel>
@@ -112,7 +111,7 @@
 	<!-- Snails -->
 	
 	
-    <ThingDef ParentName="BiomesCore_SnailThingBase" ADogSaidBody="Tail">
+    <ThingDef ParentName="BiomesCore_WaterAnimal" ADogSaidBody="Tail">
         <defName>BiomesIslands_BlueSeaSnail</defName>
         <label>blue sea snail</label>
         <description>A diminutive aquatic mollusk. Food for fish and otters.</description>
@@ -124,27 +123,9 @@
             <MeatAmount>10</MeatAmount>
             <LeatherAmount>20</LeatherAmount>
         </statBases>
-        <tools>
-            <li>
-                <label>teeth</label>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>4</power>
-                <cooldownTime>0.5</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                            <def>Stun</def>
-                            <amount>38</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-            </li>
-        </tools>
         <race>
             <herdAnimal>false</herdAnimal>
+            <!-- False -->
             <body>Shark</body>
             <baseHungerRate>0.3</baseHungerRate>
             <baseBodySize>0.1</baseBodySize>
@@ -159,6 +140,7 @@
 			<trainability>Simple</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <!-- False -->
             <meatLabel>shark meat</meatLabel>
             <lifeStageAges>
                 <li>
@@ -174,6 +156,7 @@
                     <minAge>0.8</minAge>
                 </li>
             </lifeStageAges>
+            <!-- False? -->
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
