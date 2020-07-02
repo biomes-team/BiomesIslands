@@ -5,7 +5,7 @@
     <defName>BiomesIslands_Atoll</defName>
     <label>atoll</label>
     <description>Formed by living corals growing upward from the subsiding of a volcano, these islands are often semicircular with a shallow lagoon in the middle. While the lagoon is beautiful, its size offers little space for building. With abundant wild food, relatively small and rare predators, and warm winters, surviving can be as pleasant as a tropical breeze.</description>
-    <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_IslandHot</workerClass>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
@@ -19,6 +19,15 @@
 		 <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlantBiome">
 			<spawnFertilityMultiplier>0.25</spawnFertilityMultiplier>
 		</li>
+        <li Class="BiomesKit.BiomesKitControls">
+			<usePerlin>true</usePerlin>
+			<perlinCulling>0.5</perlinCulling>
+            <allowOnWater>true</allowOnWater>
+			<minTemperature>15</minTemperature>
+			<minRainfall>600</minRainfall>
+			<frequency>5</frequency>
+			<materialPath>World/MapGraphics/Atoll</materialPath>
+        </li>
 	</modExtensions>
     
 	<canAutoChoose>false</canAutoChoose>

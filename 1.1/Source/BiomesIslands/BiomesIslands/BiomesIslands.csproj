@@ -304,7 +304,6 @@
     <Compile Include="BiomeWorkers\BiomeWorker_IslandWarm.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandCold.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandHot.cs" />
-    <Compile Include="WorldMap.cs" />
     <Compile Include="GenSteps\GenStep_Oasis.cs" />
     <Compile Include="GenSteps\GenStep_Island.cs" />
     <Compile Include="GenSteps\GenStep_IslandHills.cs" />
