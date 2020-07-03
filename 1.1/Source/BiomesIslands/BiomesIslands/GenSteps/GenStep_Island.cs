@@ -76,17 +76,6 @@ namespace BiomesIslands.GenSteps
             }
 
             Makelandmass(shape, ref fertility, map);
-
-            if (map.Biome.GetModExtension<BiomesMap>().hasHilliness)
-            {
-                GenStep_IslandHills islandHills = new GenStep_IslandHills();
-                islandHills.Generate(map, parms);
-            }
-
-            SetNewTerrains(map);
-
-            GenStep_OceanRockChunks genStep = new GenStep_OceanRockChunks();
-            genStep.Generate(map, parms);
         }
 
 
@@ -122,24 +111,6 @@ namespace BiomesIslands.GenSteps
             return dist;
         }
 
-
-        /// <summary>
-        /// Assigns terrains to the finished fertility bump map, using the terrainsByFertility list from BiomeDef in xml
-        /// </summary>
-        private void SetNewTerrains(Map map)
-        {
-            TerrainGrid terrainGrid = map.terrainGrid;
-            MapGenFloatGrid elevation = MapGenerator.Elevation;
-            MapGenFloatGrid fertility = MapGenerator.Fertility;
-
-            foreach (IntVec3 current in map.AllCells)
-            {
-                TerrainDef terrainDef;
-                terrainDef = this.TerrainFrom(current, map, elevation[current], fertility[current], false);
-                terrainGrid.SetTerrain(current, terrainDef);
-            }
-
-        }
 
         /// <summary>
         /// Makes the landmass shape on the map's fertility grid. 
@@ -203,69 +174,6 @@ namespace BiomesIslands.GenSteps
                     }
                 }
             }
-        }
-
-
-        /// <summary>
-        /// Finds the actual terrain types. 
-        /// Copied from Vanilla, probably needs heavy cleanup
-        /// </summary>
-        private TerrainDef TerrainFrom(IntVec3 c, Map map, float elevation, float fertility, bool preferSolid)
-        {
-            //TerrainDef terrainDef = null;
-
-            //if (terrainDef == null && preferSolid)
-            //{
-            //    return GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
-            //}
-            //TerrainDef terrainDef2 = BeachMaker.BeachTerrainAt(c, map.Biome);
-            //if (terrainDef2 == TerrainDefOf.WaterOceanDeep)
-            //{
-            //    return terrainDef2;
-            //}
-            //if (terrainDef != null && terrainDef.IsRiver)
-            //{
-            //    return terrainDef;
-            //}
-            //if (terrainDef2 != null)
-            //{
-            //    return terrainDef2;
-            //}
-            //if (terrainDef != null)
-            //{
-            //    return terrainDef;
-            //}
-
-
-            // prevents stone terrain from spawning all over the water
-            elevation = Math.Min(elevation, fertility - 1.5f);
-
-            if (elevation > 0.45f && elevation < 0.53f)
-            {
-                return TerrainDefOf.Gravel;
-            }
-            if (elevation >= 0.53f)
-            {
-                return GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
-            }
-
-            TerrainDef terrainDef2;
-            for (int i = 0; i < map.Biome.terrainPatchMakers.Count; i++)
-            {
-                terrainDef2 = map.Biome.terrainPatchMakers[i].TerrainAt(c, map, fertility);
-                if (terrainDef2 != null)
-                {
-                    return terrainDef2;
-                }
-            }
-            
-            terrainDef2 = TerrainThreshold.TerrainAtValue(map.Biome.terrainsByFertility, fertility);
-            if (terrainDef2 != null)
-            {
-                return terrainDef2;
-            }
-
-            return TerrainDefOf.Sand;
         }
 
     }

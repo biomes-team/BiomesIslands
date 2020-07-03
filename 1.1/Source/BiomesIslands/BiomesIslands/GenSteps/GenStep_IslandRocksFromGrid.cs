@@ -8,8 +8,9 @@ using BiomesCore.DefModExtensions;
 
 namespace BiomesIslands.GenSteps
 {
-    // from GenStep_ElevationFertility
-    public class GenStep_IslandHills : GenStep
+    // from GenStep_RocksFromGrid
+    // this makes hills actually spawn on islands
+    public class GenStep_IslandRocksFromGrid : GenStep
     {
         private class RoofThreshold
         {
@@ -34,7 +35,6 @@ namespace BiomesIslands.GenSteps
             }
         }
 
-
         public override void Generate(Map map, GenStepParams parms)
         {
             if (!map.Biome.HasModExtension<BiomesMap>())
@@ -45,23 +45,26 @@ namespace BiomesIslands.GenSteps
             {
                 return;
             }
-            ElevationGrid(map);
 
             map.regionAndRoomUpdater.Enabled = false;
             float roofThreshhold = 0.7f;
-            List<GenStep_IslandHills.RoofThreshold> list = new List<GenStep_IslandHills.RoofThreshold>();
-            list.Add(new GenStep_IslandHills.RoofThreshold
+            List<GenStep_IslandRocksFromGrid.RoofThreshold> list = new List<GenStep_IslandRocksFromGrid.RoofThreshold>();
+            list.Add(new GenStep_IslandRocksFromGrid.RoofThreshold
             {
                 roofDef = RoofDefOf.RoofRockThick,
                 minGridVal = roofThreshhold * 1.14f
             });
-            list.Add(new GenStep_IslandHills.RoofThreshold
+            list.Add(new GenStep_IslandRocksFromGrid.RoofThreshold
             {
                 roofDef = RoofDefOf.RoofRockThin,
                 minGridVal = roofThreshhold * 1.04f
             });
+
+
             MapGenFloatGrid elevation = MapGenerator.Elevation;
             MapGenFloatGrid caves = MapGenerator.Caves;
+
+
             foreach (IntVec3 current in map.AllCells)
             {
                 float curElev = elevation[current];
@@ -82,6 +85,7 @@ namespace BiomesIslands.GenSteps
                     }
                 }
             }
+
             BoolGrid visited = new BoolGrid(map);
             List<IntVec3> toRemove = new List<IntVec3>();
             foreach (IntVec3 current2 in map.AllCells)
@@ -106,6 +110,7 @@ namespace BiomesIslands.GenSteps
                     }
                 }
             }
+
             GenStep_ScatterLumpsMineable genStep_ScatterLumpsMineable = new GenStep_ScatterLumpsMineable();
             genStep_ScatterLumpsMineable.maxValue = this.maxMineableValue;
 
@@ -132,8 +137,13 @@ namespace BiomesIslands.GenSteps
             // This scales the amount of available ore for islands
             oreTuning *= 0.8f;
 
+            Log.Message("Island hills-06: before genning minables");
+
             genStep_ScatterLumpsMineable.countPer10kCellsRange = new FloatRange(oreTuning, oreTuning);
             genStep_ScatterLumpsMineable.Generate(map, parms);
+
+            Log.Message("Island hills-07: mineables genned");
+
             map.regionAndRoomUpdater.Enabled = true;
         }
 
@@ -141,7 +151,6 @@ namespace BiomesIslands.GenSteps
 
         private void ElevationGrid(Map map)
         {
-            //ModuleBase moduleBase = new Perlin(0.020999999716877937, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
             ModuleBase moduleBase = new Perlin(0.025, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
 
             moduleBase = new ScaleBias(0.5, 0.5, moduleBase);
@@ -167,7 +176,7 @@ namespace BiomesIslands.GenSteps
             }
 
             elevScaling *= elevScaling;
-
+                
             //elevScaling *= 1.2f;
 
             moduleBase = new Multiply(moduleBase, new Const((double)elevScaling));
@@ -178,18 +187,11 @@ namespace BiomesIslands.GenSteps
 
             foreach (IntVec3 current in map.AllCells)
             {
-                //elevation[current] = moduleBase.GetValue(current);
-
-                //elevation[current] = hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter) * moduleBase.GetValue(current);     // round 1
-                //elevation[current] = hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter) + moduleBase.GetValue(current) - 1f;  // rouund 2
-                //elevation[current] = (1 + hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter)) * moduleBase.GetValue(current) - 0.5f;     // round 3
-
-                elevation[current] = (1 + islandHillTuning * Mathf.Min(fertility[current], islandHillCenter)) * moduleBase.GetValue(current) - 0.5f;     // round 5
-
-                //elevation[current] = (1 + hillTuning * Mathf.Min(fertility[current] - hillSetback, hillCenter)) * moduleBase.GetValue(current) - 0.5f;     // round 5
-
+                elevation[current] = (1 + islandHillTuning * Mathf.Min(fertility[current], islandHillCenter)) * moduleBase.GetValue(current) - 0.5f;
 
             }
+
+
         }
 
 

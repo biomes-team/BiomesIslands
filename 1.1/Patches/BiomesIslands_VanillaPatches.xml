@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+<!--
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
 		<value>
 			<li>BiomesIslands_GenIsland</li>
 		</value>
 	</Operation>
+-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
+		<value>
+			<li>BiomesIslands_GenOceanRockChunks</li>
+			<li>BiomesIslands_GenIslandRocksFromGrid</li>
+		</value>
+	</Operation>
 	
+<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
+		<value>
+			<li>BiomesIslands_GenIslandRocksFromGrid</li>
+		</value>
+	</Operation>
+	
+	-->	
+
+
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
 		<value>

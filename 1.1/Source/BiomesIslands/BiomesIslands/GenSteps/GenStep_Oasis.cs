@@ -81,7 +81,7 @@ namespace BiomesIslands.GenSteps
 
             if (map.Biome.GetModExtension<BiomesMap>().hasHilliness)
             {
-                GenStep_IslandHills islandHills = new GenStep_IslandHills();
+                GenStep_IslandElevation islandHills = new GenStep_IslandElevation();
                 islandHills.Generate(map, parms);
             }
 

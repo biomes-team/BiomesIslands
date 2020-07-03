@@ -5,10 +5,10 @@ using System.Text;
 using Verse;
 using RimWorld;
 using Verse.Noise;
+using BiomesCore.DefModExtensions;
 
 namespace BiomesIslands.GenSteps
 {
-
     public class GenStep_OceanRockChunks : GenStep
     {
         private ModuleBase freqFactorNoise;
@@ -29,6 +29,16 @@ namespace BiomesIslands.GenSteps
 
         public override void Generate(Map map, GenStepParams parms)
         {
+            if (!map.Biome.HasModExtension<BiomesMap>())
+            {
+                return;
+            }
+            if (!map.Biome.GetModExtension<BiomesMap>().isIsland)
+            {
+                return;
+            }
+
+
             this.freqFactorNoise = new Perlin(0.014999999664723873, 2.0, 0.5, 6, Rand.Range(0, 999999), QualityMode.Medium);
             this.freqFactorNoise = new ScaleBias(1.0, 1.0, this.freqFactorNoise);
             NoiseDebugUI.StoreNoiseRender(this.freqFactorNoise, "rock_chunks_freq_factor");
