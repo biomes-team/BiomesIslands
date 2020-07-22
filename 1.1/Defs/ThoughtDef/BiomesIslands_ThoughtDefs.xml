@@ -27,5 +27,18 @@
     </stages>
   </ThoughtDef>
 
+<ThoughtDef>
+    <defName>BiomesIslands_Crab</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Crab delicacy</label>
+        <description>I can't believe we can get real crab on this planet. It really made my day.</description>
+        <baseMoodEffect>+2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 
 </Defs>

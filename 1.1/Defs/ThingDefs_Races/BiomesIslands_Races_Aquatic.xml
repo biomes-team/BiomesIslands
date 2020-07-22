@@ -113,7 +113,7 @@
 	
     <ThingDef ParentName="BiomesCore_WaterAnimal" ADogSaidBody="Tail">
         <defName>BiomesIslands_BlueSeaSnail</defName>
-        <label>blue sea snail</label>
+        <label>sea snail</label>
         <description>A diminutive aquatic mollusk. Food for fish and otters.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
@@ -128,7 +128,7 @@
             <!-- False -->
             <body>Shark</body>
             <baseHungerRate>0.3</baseHungerRate>
-            <baseBodySize>0.1</baseBodySize>
+            <baseBodySize>0.15</baseBodySize>
             <baseHealthScale>0.4</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>360</gestationPeriodDays>
@@ -140,8 +140,8 @@
 			<trainability>Simple</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
-            <!-- False -->
-            <meatLabel>shark meat</meatLabel>
+            <meatLabel>snail meat</meatLabel>
+			<meatColor>(62,133,215)</meatColor>
             <lifeStageAges>
                 <li>
                     <def>AnimalBaby</def>

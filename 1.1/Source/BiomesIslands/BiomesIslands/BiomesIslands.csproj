@@ -305,10 +305,10 @@
     <Compile Include="BiomeWorkers\BiomeWorker_IslandCold.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandHot.cs" />
     <Compile Include="GenSteps\GenStep_IslandRocksFromGrid.cs" />
-    <Compile Include="GenSteps\GenStep_Oasis.cs" />
     <Compile Include="GenSteps\GenStep_Island.cs" />
     <Compile Include="GenSteps\GenStep_IslandElevation.cs" />
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
+    <Compile Include="GenSteps\GenStep_Oasis.cs" />
     <Compile Include="Patches\GenStep_ElevationFertility.cs" />
     <Compile Include="Patches\GenStep_IslandScatterables.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />

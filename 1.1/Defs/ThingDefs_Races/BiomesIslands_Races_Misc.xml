@@ -6,7 +6,7 @@
   <ThingDef ParentName="BaseInsect">
     <defName>BiomesIslands_Megamantis</defName>
     <label>megamantis</label>
-    <description>A large, genetically-engineered mantis. Probably escaped from some lab run by a rogue scientist, it has become an apex predator on the tropical islands where it makes its home.</description>
+    <description>A large, genetically-engineered mantis. Spliced with insectoid DNA by a rogue scientist, this species has become an apex predator on the tropical islands where it makes its home.</description>
     <statBases>
       <MoveSpeed>3.75</MoveSpeed>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>

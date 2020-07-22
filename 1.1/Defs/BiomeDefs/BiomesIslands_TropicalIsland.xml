@@ -18,7 +18,6 @@
         <li Class="BiomesKit.BiomesKitControls">
 			<randomizeHilliness>True</randomizeHilliness>
 			<usePerlin>True</usePerlin>
-			<perlinCulling>0.5</perlinCulling>
             <allowOnWater>True</allowOnWater>
 			<minTemperature>15</minTemperature>
 			<minRainfall>600</minRainfall>

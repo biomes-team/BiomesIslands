@@ -136,7 +136,6 @@
     <plant>
       <fertilitySensitivity>0.7</fertilitySensitivity>
       <growDays>3</growDays>
-      <maxMeshCount>4</maxMeshCount>
       <visualSizeRange>1.2~1.5</visualSizeRange>
       <topWindExposure>0.2</topWindExposure>
       <wildClusterRadius>8</wildClusterRadius>
@@ -163,7 +162,6 @@
     <plant>
       <fertilitySensitivity>0.7</fertilitySensitivity>
       <growDays>3</growDays>
-      <maxMeshCount>4</maxMeshCount>
       <visualSizeRange>1.2~1.5</visualSizeRange>
       <topWindExposure>0.2</topWindExposure>
       <wildClusterRadius>8</wildClusterRadius>
@@ -246,12 +244,40 @@
 			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.4</fertilitySensitivity>
 			<growDays>10</growDays>
-			<maxMeshCount>4</maxMeshCount>
-			<visualSizeRange>1.2~1.5</visualSizeRange>
+			<visualSizeRange>0.7~0.9</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
 			<wildClusterWeight>20</wildClusterWeight>
 			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+  
+  
+	<ThingDef ParentName="PlantBase">
+		<defName>BiomesIslands_Lavender</defName>
+		<label>lavender</label>
+		<description>A purple flower known for its pleasing scent.</description>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>20</pathCost>
+		<graphicData>
+				<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Plant/Lavender</texPath>
+		</graphicData>
+		<selectable>true</selectable>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>0.4</fertilitySensitivity>
+			<growDays>10</growDays>
+			<visualSizeRange>0.7~0.95</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>30</wildClusterWeight>
+			<wildOrder>2</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>

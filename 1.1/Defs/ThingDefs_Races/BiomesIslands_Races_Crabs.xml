@@ -1,107 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BiomesCore_CrabThingBase">
-    <defName>BiomesIslands_RimCrab</defName>
-    <label>rimcrab</label>
-    <description>A mongrel crab species that can survive on most rimworlds in warm waters. It moves in large packs, which can be a threat to smaller islands because of their ravenous hunger. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
-    <statBases>
-      <MoveSpeed>3.5</MoveSpeed>
-      <SwimSpeed>6</SwimSpeed>
-      <MarketValue>110</MarketValue>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
-    </statBases>
-    <race>
-      <herdAnimal>true</herdAnimal>
-      <baseBodySize>0.25</baseBodySize>
-	  <baseHealthScale>0.6</baseHealthScale>
-	  <baseHungerRate>0.30</baseHungerRate>
-      <lifeExpectancy>9</lifeExpectancy>
-      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
-	  <wildness>0.10</wildness>
-    </race>
-    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>BiomesIslands_EggRimCrabFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>2</eggFertilizationCountMax>
-        <eggLayIntervalDays>15</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>1</min>
-          <max>3</max>
-        </eggCountRange>
-      </li>
-    </comps>
-    <tools>
-		<li>
-			<label>claw</label>
-			<capacities>
-				<li>Cut</li>
-			</capacities>
-			<power>9</power>
-			<cooldownTime>2.2</cooldownTime>
-			<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
+		<defName>BiomesIslands_RimCrab</defName>
+		<label>rimcrab</label>
+		<description>A mongrel crab species that can survive on most rimworlds in warm waters. It moves in large packs, which can be a threat to smaller islands because of their ravenous hunger. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
+		<statBases>
+			<MoveSpeed>3.5</MoveSpeed>
+			<SwimSpeed>6</SwimSpeed>
+			<MarketValue>110</MarketValue>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.25</baseBodySize>
+			<baseHealthScale>0.6</baseHealthScale>
+			<baseHungerRate>0.30</baseHungerRate>
+			<lifeExpectancy>9</lifeExpectancy>
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<wildness>0.10</wildness>
+            <meatLabel>crab meat</meatLabel>
+			<meatColor>(251,172,202)</meatColor>
+		</race>
+		<comps>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BiomesIslands_EggRimCrabFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>2</eggFertilizationCountMax>
+			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>
+			<min>1</min>
+			<max>3</max>
+			</eggCountRange>
 		</li>
-		<li>
-			<label>head</label>
-			<capacities>
-				<li>Blunt</li>
-			</capacities>
-			<power>4</power>
-			<cooldownTime>1.65</cooldownTime>
-			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		</li>
-	</tools>
-  </ThingDef>
+		</comps>
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
 
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BiomesIslands_RimCrab</defName>
-    <label>rimcrab</label>
-    <race>BiomesIslands_RimCrab</race>
-	<combatPower>50</combatPower>
-	<ecoSystemWeight>0.35</ecoSystemWeight>
-
-	<wildGroupSize>
-      <min>4</min>
-      <max>15</max>
-    </wildGroupSize>
-	<lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
-          <drawSize>0.9</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
-          <drawSize>0.9</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
-          <drawSize>1.25</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
-          <drawSize>1.25</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
-          <drawSize>1.6</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
-          <drawSize>1.6</drawSize>
-        </dessicatedBodyGraphicData> 
-      </li>
-    </lifeStages>
-  </PawnKindDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BiomesIslands_RimCrab</defName>
+		<label>rimcrab</label>
+		<race>BiomesIslands_RimCrab</race>
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<wildGroupSize>
+			<min>4</min>
+			<max>15</max>
+		</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
+					<drawSize>1.25</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData> 
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 
   <ThingDef ParentName="BiomesCore_CrabThingBase">
     <defName>BiomesIslands_HermitCrab</defName>
@@ -126,6 +127,7 @@
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
 	  <wildness>0.10</wildness>
+      <useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
     </race>
     <comps>
       <li Class="CompProperties_EggLayer">

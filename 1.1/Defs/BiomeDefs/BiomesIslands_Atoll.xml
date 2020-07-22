@@ -21,7 +21,6 @@
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
 			<usePerlin>true</usePerlin>
-			<perlinCulling>0.5</perlinCulling>
             <allowOnWater>true</allowOnWater>
 			<minTemperature>15</minTemperature>
 			<minRainfall>600</minRainfall>
@@ -166,6 +165,7 @@
 		
 		
 		<BiomesIslands_Kelp>0.1</BiomesIslands_Kelp>
+		<BiomesIslands_SeaSponge>0.05</BiomesIslands_SeaSponge>
 		
 		
 		<Plant_Grass>2.0</Plant_Grass>
