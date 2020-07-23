@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!--
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
-		<value>
-			<li>BiomesIslands_GenIsland</li>
-		</value>
-	</Operation>
--->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
@@ -17,23 +9,83 @@
 		</value>
 	</Operation>
 	
-<!--
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
-		<value>
-			<li>BiomesIslands_GenIslandRocksFromGrid</li>
-		</value>
-	</Operation>
-	
-	-->	
-
-
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
 		<value>
 			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_BorealIsland</li>
+			<li>BiomesIslands_DesertIsland</li>
 		</value>
 	</Operation>
 	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "Alphabeavers"]/allowedBiomes</xpath>
+		<value>
+			<li>BiomesIslands_TundraIsland</li>
+			<li>BiomesIslands_DesertIsland</li>
+		</value>
+	</Operation>
+
+<!-- Royalty -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+			<li Class="PatchOperationAdd"> 
+			<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
+				<value>
+					<li>BiomesIslands_Atoll</li>
+					<li>BiomesIslands_BorealIsland</li>
+					<li>BiomesIslands_DesertIsland</li>
+					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_TundraIsland</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			<xpath>Defs</xpath>
+				<value>
+				  <TerrainDef ParentName="FineTileStoneBase">
+					<defName>BiomesIslands_FineTileCoral</defName>
+					<label>fine coral tile</label>
+					<color>(250,180,147)</color>
+					<costList>
+					  <BiomesIslands_BlocksCoral>20</BiomesIslands_BlocksCoral>
+					</costList>
+				  </TerrainDef>
+
+				</value>
+			</li>
+			
+			
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	
+<!-- Anima trees (Royalty) 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
+		<value>
+			<li>BiomesIslands_Atoll</li>
+			<li>BiomesIslands_BorealIsland</li>
+			<li>BiomesIslands_DesertIsland</li>
+			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TundraIsland</li>
+		</value>
+		</match>
+	</Operation>
+	
+	-->
 </Patch>

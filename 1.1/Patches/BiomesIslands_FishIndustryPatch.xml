@@ -20,6 +20,8 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_BorealIsland</li>
+					<li>BiomesIslands_TundraIsland</li>
 				</value>
 			</li>
 			
@@ -28,23 +30,31 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_BorealIsland</li>
+					<li>BiomesIslands_TundraIsland</li>
 				</value>
 			</li>
 			
-			<!--
+
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishBlueblade"]/naturalBiomes</xpath>
 				<value>
-					<li></li>
+					<li>BiomesIslands_Atoll</li>
+					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_DesertIsland</li>
+					<li>BiomesIslands_BorealIsland</li>
+					<li>BiomesIslands_TundraIsland</li>
+
 				</value>
 			</li>
-			-->
+
 			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishTailteeth"]/naturalBiomes</xpath>
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_DesertIsland</li>
 				</value>
 			</li>
 				
