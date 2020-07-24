@@ -37,6 +37,7 @@
 		<match Class="PatchOperationSequence">
 		<success>Always</success>
 			<operations>
+			<!--
 			<li Class="PatchOperationAdd"> 
 			<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
 				<value>
@@ -47,6 +48,7 @@
 					<li>BiomesIslands_TundraIsland</li>
 				</value>
 			</li>
+			-->
 			
 			<li Class="PatchOperationAdd"> 
 			<xpath>Defs</xpath>
