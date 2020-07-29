@@ -44,10 +44,10 @@
             <nuzzleMtbHours>275</nuzzleMtbHours>
             <petness>0.01</petness>
             <lifeExpectancy>35</lifeExpectancy>
-            <trainability>Intermediate</trainability>
+            <trainability>Simple</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
-            <meatLabel>shark meat</meatLabel>
+            <meatLabel>fish meat</meatLabel>
             <lifeStageAges>
                 <li>
                     <def>AnimalBaby</def>
@@ -107,6 +107,112 @@
         </lifeStages>
     </PawnKindDef>
 	
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
+        <defName>BiomesIslands_Tuna</defName>
+        <label>tuna</label>
+        <description>A large carnivorous fish. Will eat anything they can swallow whole. Fortunately, they are not large enough to swallow people.</description>
+        <statBases>
+            <MoveSpeed>0</MoveSpeed>
+            <SwimSpeed>8</SwimSpeed>
+            <MarketValue>1500</MarketValue>
+            <MeatAmount>10</MeatAmount>
+            <LeatherAmount>20</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>teeth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>0.5</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>38</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <predator>true</predator>
+            <body>Shark</body>
+            <baseHungerRate>0.7</baseHungerRate>
+            <baseBodySize>2</baseBodySize>
+            <baseHealthScale>3.0</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <gestationPeriodDays>360</gestationPeriodDays>
+            <packAnimal>false</packAnimal>
+            <wildness>0.95</wildness>
+            <nuzzleMtbHours>275</nuzzleMtbHours>
+            <petness>0.01</petness>
+            <lifeExpectancy>35</lifeExpectancy>
+            <trainability>Simple</trainability>
+            <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.4</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.8</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>BiomesIslands_Tuna</defName>
+        <label>white shark</label>
+        <race>BiomesIslands_WhiteShark</race>
+        <combatPower>200</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <drawSize>2.65</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <drawSize>2.65</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <drawSize>3.2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <drawSize>3.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
 	
 	<!-- Snails -->
 	
