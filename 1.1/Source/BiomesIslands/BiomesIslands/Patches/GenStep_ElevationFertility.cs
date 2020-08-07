@@ -25,7 +25,6 @@ namespace BiomesIslands.Patches
                 return;
             }
 
-            Log.Message("Running island maker");
             (new GenSteps.GenStep_Island()).Generate(map, parms);
 
             (new GenSteps.GenStep_IslandElevation()).Generate(map, parms);

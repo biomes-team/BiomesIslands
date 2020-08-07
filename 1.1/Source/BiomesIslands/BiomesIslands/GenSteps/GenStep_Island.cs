@@ -40,7 +40,6 @@ namespace BiomesIslands.GenSteps
             else
             {
                 int islandType = Rand.Range(0, 3);
-                Log.Message("Island selection " + islandType);
                 switch (islandType)
                 {
                     case 0:
@@ -50,7 +49,6 @@ namespace BiomesIslands.GenSteps
                         (new GenStep_IslandRough()).Generate(map, parms);
                         break;
                     case 2:
-                        Log.Message("Making crescent");
                         (new GenStep_IslandCrescent()).Generate(map, parms);
                         break;
                     default:

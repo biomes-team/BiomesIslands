@@ -137,12 +137,8 @@ namespace BiomesIslands.GenSteps
             // This scales the amount of available ore for islands
             oreTuning *= 0.8f;
 
-            Log.Message("Island hills-06: before genning minables");
-
             genStep_ScatterLumpsMineable.countPer10kCellsRange = new FloatRange(oreTuning, oreTuning);
             genStep_ScatterLumpsMineable.Generate(map, parms);
-
-            Log.Message("Island hills-07: mineables genned");
 
             map.regionAndRoomUpdater.Enabled = true;
         }
