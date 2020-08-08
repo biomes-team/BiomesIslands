@@ -8,6 +8,9 @@ using Verse;
 
 namespace BiomesIslands.GenSteps
 {
+    /// <summary>
+    /// The original island generator. Suitable for atolls.
+    /// </summary>
     public class GenStep_IslandSmooth : GenStep
     {
         public override int SeedPart
