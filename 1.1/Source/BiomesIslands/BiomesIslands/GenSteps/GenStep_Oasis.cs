@@ -26,7 +26,7 @@ namespace BiomesIslands.GenSteps
         float beachSize = Rand.Range(30f, 50f);
         float distanceVariance = Rand.Range(1.0f, 1.5f);
         float perlinVariance = 5f;
-        bool isIsland = false;
+        bool isIsland;
         List<int> tmpNeighbors = new List<int>();
         int i = 0;
         public override void Generate(Map map, GenStepParams parms)
@@ -51,14 +51,13 @@ namespace BiomesIslands.GenSteps
             grid.GetTileNeighbors(tileID, tmpNeighbors);
             for (int count = tmpNeighbors.Count; i < count; i++)
             {
-                isIsland = true;
                 if (grid[tmpNeighbors[i]].biome != BiomeDefOf.Ocean)
                 {
                     isIsland = false;
                 }
             }
             Rot4 rot4 = Find.World.CoastDirectionAt(map.Tile);
-            if (isIsland == true)
+            if (isIsland != false)
             {
                 oasisSize = Rand.Range(20f, 30f);
                 perlinVariance = 4f;

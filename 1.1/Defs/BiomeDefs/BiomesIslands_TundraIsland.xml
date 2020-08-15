@@ -22,7 +22,7 @@
 			<maxTemperature>0</maxTemperature>
 			<minTemperature>-19</minTemperature>
 			<maxRainfall>600</maxRainfall>
-			<frequency>5</frequency>
+			<frequency>50</frequency>
 			<materialPath>World/MapGraphics/TundraIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>

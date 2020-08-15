@@ -177,8 +177,8 @@
 
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>BiomesIslands_Tuna</defName>
-        <label>white shark</label>
-        <race>BiomesIslands_WhiteShark</race>
+        <label>tuna</label>
+        <race>BiomesIslands_Tuna</race>
         <combatPower>200</combatPower>
         <lifeStages>
             <li>

@@ -21,7 +21,7 @@
 			<minTemperature>-10</minTemperature>
 			<maxTemperature>2</maxTemperature>
 			<minRainfall>600</minRainfall>
-			<frequency>5</frequency>
+			<frequency>50</frequency>
 			<materialPath>World/MapGraphics/BorealIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>

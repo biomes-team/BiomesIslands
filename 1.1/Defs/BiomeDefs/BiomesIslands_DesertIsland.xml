@@ -20,7 +20,7 @@
             <allowOnWater>true</allowOnWater>
 			<minTemperature>0</minTemperature>
 			<maxRainfall>600</maxRainfall>
-			<frequency>5</frequency>
+			<frequency>50</frequency>
 			<materialPath>World/MapGraphics/DesertIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
