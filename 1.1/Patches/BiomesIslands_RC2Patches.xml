@@ -56,60 +56,6 @@
 					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
 			   </value> 
 			 </li> 
-			 
-			 <li Class="PatchOperationAdd"> 
-			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildPlants</xpath> 
-			   <value> 
-					<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
-					<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
-					<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
-					<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
-					<RC2_PlantCarrot>0.07</RC2_PlantCarrot>
-					<RC2_PlantOnion>0.16</RC2_PlantOnion>
-					<RC2_PlantJuniper>0.25</RC2_PlantJuniper>
-					<RC2_PlantSugarMapleTree>0.035</RC2_PlantSugarMapleTree>
-					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
-					<RC2_PlantBarley>0.2</RC2_PlantBarley>
-					<RC2_PlantMushroom>0.16</RC2_PlantMushroom>
-			   </value> 
-			 </li>  
-			 
-			 <li Class="PatchOperationAdd"> 
-			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_DesertIsland"]/wildPlants</xpath> 
-			   <value> 
-					<RC2_PlantSorghum>0.0000000000000001</RC2_PlantSorghum>
-					<RC2_PlantChickpeas>0.0000000000000001</RC2_PlantChickpeas>
-					<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
-					<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
-					<RC2_PlantAgave>0.0000000000000001</RC2_PlantAgave>
-					<RC2_PlantOnion>0.2</RC2_PlantOnion>
-					<RC2_PlantBarley>0.2</RC2_PlantBarley>
-					<RC2_PlantCactusFruit>0.3</RC2_PlantCactusFruit>
-					<RC2_PlantOrangeTree>0.05</RC2_PlantOrangeTree>
-					<RC2_PlantFlax>0.2</RC2_PlantFlax>
-					<RC2_PlantFigTree>0.03</RC2_PlantFigTree>
-					<RC2_PlantPomegranateTree>0.03</RC2_PlantPomegranateTree>
-					<RC2_PlantCoffee>0.1</RC2_PlantCoffee>
-					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
-			   </value> 
-			 </li>  
-			 
-			 <li Class="PatchOperationAdd"> 
-			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildPlants</xpath> 
-			   <value> 
-					<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
-					<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
-					<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
-					<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
-					<RC2_PlantCarrot>0.07</RC2_PlantCarrot>
-					<RC2_PlantOnion>0.07</RC2_PlantOnion>
-					<RC2_PlantJuniper>0.1</RC2_PlantJuniper>
-					<RC2_PlantSugarMapleTree>0.015</RC2_PlantSugarMapleTree>
-					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
-					<RC2_PlantBarley>0.1</RC2_PlantBarley>
-					<RC2_PlantMushroom>0.07</RC2_PlantMushroom>
-			   </value> 
-			 </li> 
 			
 		 </operations> 
 		</match>

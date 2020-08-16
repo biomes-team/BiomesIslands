@@ -4,10 +4,9 @@
  <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_Gigantaconda</defName>
     <label>gigantaconda</label>
-    <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey and crush it to death.</description>
+    <description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey can crush it to death.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
-      <SwimSpeed>8</SwimSpeed>
       <MarketValue>420</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -111,10 +110,6 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
           <drawSize>2.2</drawSize>
-          <shadowData>
-            <volume>(0.25, 0.25, 0.25)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -125,10 +120,6 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
           <drawSize>2.8</drawSize>
-          <shadowData>
-            <volume>(0.35, 0.35, 0.35)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -139,10 +130,6 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
           <drawSize>3.6</drawSize>
-          <shadowData>
-            <volume>(0.45, 0.45, 0.45)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -154,7 +141,6 @@
     <description>This heavily armored sea-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.</description>
     <statBases>
       <MoveSpeed>1.0</MoveSpeed>
-      <SwimSpeed>5</SwimSpeed>
       <MarketValue>400</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
@@ -283,99 +269,98 @@
     <label>marine iguana</label>
     <description>These large lizards normally feed on plant matter. However, when angered, their tough hide and sharp claws make them quite dangerous.\n\nResting iguanas hold their heads high, giving them an amusing 'proud' look. But they're not proud; they're just trying to see predators so they don't get eaten.</description>
     <statBases>
-		<MoveSpeed>3.2</MoveSpeed>
-		<SwimSpeed>4</SwimSpeed>
-		<MarketValue>120</MarketValue>
-		<ComfyTemperatureMin>0</ComfyTemperatureMin>
-		<ComfyTemperatureMax>60</ComfyTemperatureMax>
-	</statBases>
+      <MoveSpeed>3.2</MoveSpeed>
+      <MarketValue>120</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+    </statBases>
     <tools>
-		<li>
-			<label>left claw</label>
-			<capacities>
-				<li>Scratch</li>
-			</capacities>
-			<power>10</power>
-			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
-		</li>
-		<li>
-			<label>right claw</label>
-			<capacities>
-				<li>Scratch</li>
-			</capacities>
-			<power>10</power>
-			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
-		</li>
-		<li>
-			<capacities>
-				<li>Bite</li>
-			</capacities>
-			<power>12</power>
-			<cooldownTime>2.6</cooldownTime>
-			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			<chanceFactor>0.8</chanceFactor>
-		</li>
-		<li>
-			<label>head</label>
-			<capacities>
-				<li>Blunt</li>
-			</capacities>
-			<power>7</power>
-			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>0.2</chanceFactor>
-		</li>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.8</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
     </tools>
     <comps>
-		<li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BiomesIslands_EggMarineIguanaFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>15</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>
-				<min>3</min>
-				<max>6</max>
-			</eggCountRange>
-		</li>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BiomesIslands_EggMarineIguanaFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>3</min>
+          <max>6</max>
+        </eggCountRange>
+      </li>
     </comps>
     <race>
 			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
 			<baseBodySize>0.20</baseBodySize>
-		<baseHealthScale>0.65</baseHealthScale>
+      <baseHealthScale>0.65</baseHealthScale>
 			<baseHungerRate>0.30</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
-		<leatherDef>Leather_Lizard</leatherDef>
-		<wildness>0.6</wildness>
-		<trainability>Intermediate</trainability>
-			<petness>0.13</petness>
-		<lifeExpectancy>12</lifeExpectancy>
-		<lifeStageAges>
-			<li>
-				<def>AnimalBaby</def>
-				<minAge>0</minAge>
-			</li>
-			<li>
-				<def>AnimalJuvenile</def>
-				<minAge>0.09</minAge>
-			</li>
-			<li>
-				<def>AnimalAdult</def>
-				<minAge>0.25</minAge>
-				<soundWounded>Pawn_Iguana_Wounded</soundWounded>
-				<soundDeath>Pawn_Iguana_Death</soundDeath>
-				<soundCall>Pawn_Iguana_Call</soundCall>
-				<soundAngry>Pawn_Iguana_Angry</soundAngry>
-			</li>
-		</lifeStageAges>
-		<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-		<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-		<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <leatherDef>Leather_Lizard</leatherDef>
+      <wildness>0.6</wildness>
+      <trainability>Intermediate</trainability>
+      <petness>0.13</petness>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.09</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-		<li>AnimalUncommon</li>
+      <li>AnimalUncommon</li>
     </tradeTags>
   </ThingDef>
   
@@ -399,21 +384,25 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/BiomesIslandsMarineIguana</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.45</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/Dessicated_BiomesIslandsMarineIguana</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.45</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/BiomesIslandsMarineIguana</texPath>
           <drawSize>1.7</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/Dessicated_BiomesIslandsMarineIguana</texPath>
-          <drawSize>1.7</drawSize>
+          <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -425,7 +414,6 @@
     <description>Tiny lizards known mostly for licking their own eyeballs and shedding their tails. Their unique feet allow them to cling to even smooth walls.</description>
     <statBases>
       <MoveSpeed>1.2</MoveSpeed>
-      <SwimSpeed>1.2</SwimSpeed>
       <MarketValue>200</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
@@ -526,6 +514,10 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/BiomesIslandsGreenGecko</texPath>
           <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.45, 0.45, 0.45)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>

@@ -33,31 +33,6 @@ Woodland
 						</li>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/BiomeDef[defName="BiomesIslands_DesertIsland"]</xpath>
-					<value>
-						<li Class="CompCamo.CompCamoDefs">
-						<CamoType>Desert</CamoType>
-						</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/BiomeDef[defName="BiomesIslands_BorealIsland"]</xpath>
-					<value>
-						<li Class="CompCamo.CompCamoDefs">
-						<CamoType>Woodland</CamoType>
-						</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TundraIsland"]</xpath>
-					<value>
-						<li Class="CompCamo.CompCamoDefs">
-						<CamoType>Arctic</CamoType>
-						</li>
-					</value>
-				</li>
 			</operations>
 		</match>
 	</Operation>

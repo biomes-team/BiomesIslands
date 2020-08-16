@@ -2,9 +2,9 @@
 <Defs>
 <!--================== Plant products ==================-->
   
-    <ThingDef ParentName="BiomesCore_FruitBase">
+    <ThingDef ParentName="PlantFoodRawBase">
     <defName>BiomesIslands_Bananas</defName>
-    <label>banana</label>
+    <label>bananas</label>
     <description>Long yellow fruit with a thick peel and creamy flesh.</description>
     <graphicData>
       <texPath>Things/Item/Crops/Bananas</texPath>
@@ -26,9 +26,9 @@
     </ingestible>
   </ThingDef>
   
-    <ThingDef ParentName="BiomesCore_VegBase">
+    <ThingDef ParentName="PlantFoodRawBase">
     <defName>BiomesIslands_Devilsclaw</defName>
-    <label>devil's claw leaf</label>
+    <label>devil's claw leaves</label>
     <description>Edible leaves from the devil's claw tree. A healthy leafy green!</description>
     <graphicData>
       <texPath>Things/Item/Crops/DevilsClaw</texPath>
@@ -49,9 +49,9 @@
     </ingestible>
   </ThingDef>
   
-  <ThingDef ParentName="BiomesCore_FruitBase">
+  <ThingDef ParentName="PlantFoodRawBase">
     <defName>BiomesIslands_Oranges</defName>
-    <label>orange</label>
+    <label>oranges</label>
     <description>Round, orange and with a sweet juice.</description>
     <graphicData>
       <texPath>Things/Item/Crops/Oranges</texPath>
@@ -73,37 +73,12 @@
     </ingestible>
   </ThingDef>
   
-  
-    <ThingDef ParentName="BiomesCore_FruitBase">
-    <defName>BiomesIslands_Pineapples</defName>
-    <label>pineapple</label>
-    <description>Big round fruit with a hard shell and a milky center</description>
-    <graphicData>
-      <texPath>Things/Item/Crops/Sliced Pineapple</texPath>
-    </graphicData>
-    <statBases>
-      <MarketValue>4.2</MarketValue>
-      <Mass>0.06</Mass>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>14</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-    <ingestible>
-      <preferability>RawTasty</preferability>
-      <foodType>VegetableOrFruit</foodType>
-      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-    </ingestible>
-  </ThingDef>
-  
   <!--================== Big fruits ==================-->
   
   
-  <ThingDef ParentName="BiomesCore_FruitBase">
+  <ThingDef ParentName="PlantFoodRawBase">
     <defName>BiomesIslands_Coconuts</defName>
-    <label>coconut</label>
+    <label>coconuts</label>
     <description>Big round fruit with a hard shell and a milky center</description>
     <graphicData>
       <texPath>Things/Item/Crops/Coconut</texPath>
@@ -121,6 +96,34 @@
     </comps>
     <ingestible>
       <preferability>RawTasty</preferability>
+      <specialThoughtDirect>BiomesIslands_Coconut</specialThoughtDirect>
+      <foodType>VegetableOrFruit</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+  
+  
+    <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BiomesIslands_Pineapples</defName>
+    <label>pineapples</label>
+    <description>Big round fruit with a hard shell and a milky center</description>
+    <graphicData>
+      <texPath>Things/Item/Crops/Sliced Pineapple</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.2</MarketValue>
+      <Mass>0.06</Mass>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <specialThoughtDirect>BiomesIslands_Pineapple</specialThoughtDirect>
       <foodType>VegetableOrFruit</foodType>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
     </ingestible>

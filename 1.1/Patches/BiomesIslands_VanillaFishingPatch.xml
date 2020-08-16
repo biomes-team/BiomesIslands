@@ -8,23 +8,10 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeCold"]/biomes</xpath>
-				<value>
-					<li>BiomesIslands_TundraIsland</li>	
-					<li>BiomesIslands_BorealIsland</li>					
-				</value>
-			</li>
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeHot"]/biomes</xpath>
 				<value>
 					<li>BiomesIslands_Atoll</li>	
 					<li>BiomesIslands_TropicalIsland</li>					
-				</value>
-			</li>
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeHot"]/biomes</xpath>
-				<value>
-					<li>BiomesIslands_DesertIsland</li>					
 				</value>
 			</li>
 		</operations>

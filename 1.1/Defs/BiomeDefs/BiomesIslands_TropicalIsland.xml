@@ -5,26 +5,15 @@
     <defName>BiomesIslands_TropicalIsland</defName>
     <label>tropical island</label>
     <description>Despite the heat and constant humidity, the sandy beaches and plentiful resources make these islands superb for a tropical getaway. Few animals here are a threat to humans, making the environment reasonably safe.</description>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+    <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_IslandHot</workerClass>
 	
 	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+		<li Class="BiomesIslands.IslandMap">
 			<isIsland>true</isIsland>
-			<hasScatterables>true</hasScatterables>
 		</li>
 		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
 			<allowBeach>false</allowBeach>
 		</li>
-        <li Class="BiomesKit.BiomesKitControls">
-			<randomizeHilliness>True</randomizeHilliness>
-			<usePerlin>True</usePerlin>
-            <allowOnWater>True</allowOnWater>
-			<minTemperature>15</minTemperature>
-			<minRainfall>600</minRainfall>
-			<frequency>50</frequency>
-			<materialPath>World/MapGraphics/TropicalIsland</materialPath>
-			<materialLayer>3509</materialLayer>
-        </li>
 	</modExtensions>
 	
     <canAutoChoose>false</canAutoChoose>
@@ -34,7 +23,7 @@
     <plantDensity>0.9</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>2</movementDifficulty>
-    <texture>World/Biomes/Ocean</texture>
+    <texture>World/Biomes/TropicalRainforest</texture>
     <forageability>1</forageability>
 		<foragedFood>RawBerries</foragedFood>
     <wildPlantRegrowDays>15</wildPlantRegrowDays>
@@ -166,11 +155,9 @@
 		<SnowHard>4</SnowHard>
 	</baseWeatherCommonalities>
     <wildPlants>
-		<BiomesIslands_CoconutPalm>0.3</BiomesIslands_CoconutPalm>
-		<BiomesIslands_OrangeTree>0.2</BiomesIslands_OrangeTree>
-        <BiomesIslands_BananaPlant>0.3</BiomesIslands_BananaPlant>
-		<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
-		<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
+		<BiomesIslands_CoconutPalm>0.2</BiomesIslands_CoconutPalm>
+		<BiomesIslands_OrangeTree>0.1</BiomesIslands_OrangeTree>
+        <BiomesIslands_BananaPlant>0.2</BiomesIslands_BananaPlant>
 		
 		<Plant_Grass>3.0</Plant_Grass>
 		<Plant_TallGrass>2.0</Plant_TallGrass>

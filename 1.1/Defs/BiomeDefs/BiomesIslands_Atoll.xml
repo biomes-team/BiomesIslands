@@ -5,10 +5,10 @@
     <defName>BiomesIslands_Atoll</defName>
     <label>atoll</label>
     <description>Formed by living corals growing upward from the subsiding of a volcano, these islands are often semicircular with a shallow lagoon in the middle. While the lagoon is beautiful, its size offers little space for building. With abundant wild food, relatively small and rare predators, and warm winters, surviving can be as pleasant as a tropical breeze.</description>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+    <workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_IslandHot</workerClass>
 	
 	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+		<li Class="BiomesIslands.IslandMap">
 			<isIsland>true</isIsland>
 			<hasHilliness>false</hasHilliness>
 			<hasScatterables>false</hasScatterables>
@@ -16,17 +16,6 @@
 		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
 			<allowBeach>false</allowBeach>
 		</li>
-		 <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlantBiome">
-			<spawnFertilityMultiplier>0.25</spawnFertilityMultiplier>
-		</li>
-        <li Class="BiomesKit.BiomesKitControls">
-			<usePerlin>true</usePerlin>
-            <allowOnWater>true</allowOnWater>
-			<minTemperature>15</minTemperature>
-			<minRainfall>600</minRainfall>
-			<frequency>5</frequency>
-			<materialPath>World/MapGraphics/Atoll</materialPath>
-        </li>
 	</modExtensions>
     
 	<canAutoChoose>false</canAutoChoose>
@@ -36,7 +25,7 @@
     <plantDensity>0.85</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
-    <texture>World/Biomes/Ocean</texture>
+    <texture>World/Biomes/Atoll</texture>
     <forageability>0.1</forageability>
     <foragedFood>RawAgave</foragedFood>
     <wildPlantRegrowDays>15</wildPlantRegrowDays>
@@ -86,11 +75,11 @@
       <li>
         <terrain>WaterOceanDeep</terrain>
         <min>-999</min>
-        <max>0.65</max>
+        <max>0.35</max>
       </li>
       <li>
         <terrain>WaterOceanShallow</terrain>
-        <min>0.65</min>
+        <min>0.35</min>
         <max>1.0</max>
       </li>
       <li>
@@ -157,20 +146,11 @@
       <SnowHard>3</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-		<BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
-		<BiomesIslands_DevilsClawTree>0.4</BiomesIslands_DevilsClawTree>
-		<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
-		<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
-		<BiomesIslands_Bayhops>0.2</BiomesIslands_Bayhops>
-		
-		
-		<BiomesIslands_Kelp>0.1</BiomesIslands_Kelp>
-		<BiomesIslands_SeaSponge>0.05</BiomesIslands_SeaSponge>
-		
-		
 		<Plant_Grass>2.0</Plant_Grass>
 		<Plant_ShrubLow>1.0</Plant_ShrubLow>
-		<Plant_TreePalm>1.0</Plant_TreePalm>
+		<BiomesIslands_CoconutPalm>0.3</BiomesIslands_CoconutPalm>
+		<BiomesIslands_DevilsClawTree>0.3</BiomesIslands_DevilsClawTree>
+		<Plant_TreePalm>0.8</Plant_TreePalm>
 	
     </wildPlants>
     <wildAnimals>
@@ -179,9 +159,10 @@
 		<BiomesIslands_Flamingo>0.9</BiomesIslands_Flamingo>
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
 		<BiomesIslands_HermitCrab>0.5</BiomesIslands_HermitCrab>
+		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
 		<Tortoise>0.5</Tortoise>
 		<BiomesIslands_SeaTurtle>0.3</BiomesIslands_SeaTurtle>
-		<BiomesIslands_MarineIguana>0.6</BiomesIslands_MarineIguana>
+		<BiomesIslands_MarineIguana>0.4</BiomesIslands_MarineIguana>
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
     </wildAnimals>
     <allowedPackAnimals>

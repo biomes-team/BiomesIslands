@@ -18,7 +18,6 @@
       <smoothedThing>BiomesIslands_SmoothedCoral</smoothedThing>
     </building>
   </ThingDef>
-  
   <ThingDef ParentName="BiomesIslands_CoralRockBase">
     <defName>BiomesIslands_SmoothedCoral</defName>
     <label>smoothed coral</label>
@@ -27,7 +26,7 @@
       <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
     </graphicData>
     <statBases>
-      <Beauty>2</Beauty>
+      <Beauty>1</Beauty>
       <MarketValue>15</MarketValue>
     </statBases>
     <building>
@@ -38,7 +37,6 @@
     <saveCompressible>false</saveCompressible>
     <repairEffect>Repair</repairEffect>
   </ThingDef>
-  
   <ThingDef ParentName="ChunkRockBase">
     <defName>BiomesIslands_ChunkCoral</defName>
     <label>coral chunk</label>
@@ -54,7 +52,6 @@
       <BiomesIslands_BlocksCoral>20</BiomesIslands_BlocksCoral>
     </butcherProducts>
   </ThingDef>
-  
   <ThingDef ParentName="StoneBlocksBase">
     <defName>BiomesIslands_BlocksCoral</defName>
     <label>coral blocks</label>
@@ -63,7 +60,6 @@
       <color>(250,180,147)</color>
     </graphicData>
     <statBases>
-        <Beauty>1.35</Beauty>
       <Mass>1.0</Mass>
     </statBases>
     <stuffProps>
@@ -75,13 +71,9 @@
       <statFactors>
         <MaxHitPoints>1.2</MaxHitPoints>
       </statFactors>
-      <statOffsets>
-        <Beauty>1</Beauty>
-      </statOffsets>
       <commonality>0</commonality>
     </stuffProps>
   </ThingDef>
-  
   <RecipeDef ParentName="MakeStoneBlocksBase">
     <defName>BiomesIslands_Make_StoneBlocksCoral</defName>
     <label>make coral blocks</label>
@@ -105,7 +97,6 @@
       <BiomesIslands_BlocksCoral>20</BiomesIslands_BlocksCoral>
     </products>
   </RecipeDef>
-  
   <TerrainDef ParentName="TileStoneBase">
     <defName>BiomesIslands_TileCoral</defName>
     <label>coral tile</label>
@@ -114,7 +105,6 @@
       <BiomesIslands_BlocksCoral>4</BiomesIslands_BlocksCoral>
     </costList>
   </TerrainDef>
-  
   <TerrainDef ParentName="FlagstoneBase">
     <defName>BiomesIslands_FlagstoneCoral</defName>
     <label>coral flagstone</label>
@@ -123,5 +113,4 @@
       <BiomesIslands_BlocksCoral>4</BiomesIslands_BlocksCoral>
     </costList>
   </TerrainDef>
-  
 </Defs>

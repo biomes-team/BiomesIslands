@@ -8,9 +8,11 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Animal/Mantis_Call</clipFolderPath>
+            <clipFolderPath>Animal/mantis</clipFolderPath>
           </li>
         </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
         <distRange>0~50</distRange>
       </li>
     </subSounds>
