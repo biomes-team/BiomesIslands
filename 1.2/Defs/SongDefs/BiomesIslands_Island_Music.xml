@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <SongDef>
+    <clipPath>BIOMES_ISLAND</clipPath>
+    <allowedTimeOfDay>Day</allowedTimeOfDay>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BiomesIslands_Atoll</li>
+                <li>BiomesIslands_TropicalIsland</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+  
+  <SongDef>
+    <clipPath>Biomes_SunsetDrift</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+            <biomeDefNameRestrictions>
+                <li>BiomesIslands_Atoll</li>
+                <li>BiomesIslands_TropicalIsland</li>
+            </biomeDefNameRestrictions>
+        </li>
+    </modExtensions>
+  </SongDef>
+</Defs>

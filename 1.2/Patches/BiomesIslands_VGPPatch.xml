@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="BiomesIslands_CoconutPalm" or defName="BiomesIslands_BananaPlant" or d="BiomesIslands_OrangeTree" or defName="BiomesIslands_Pineappleplant"]/plant</xpath>
+				<value>	
+					<wildBiomes>
+						<TropicalRainforest>0.01</TropicalRainforest>    		
+					</wildBiomes>	
+				</value>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="PlantBananaTree" or defName="WildBananaTree" or defName="Rawbanana" or defName="PlantorangeTree" or defName="WildorangeTree" or defName="Raworange" or defName="Plantpineapple" or defName="WildPlantpineapple" or defName="Rawpineapple" or defName="Coconuttree" or defName="WildCoconuttree" or defName="RawCoconut"]</xpath>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

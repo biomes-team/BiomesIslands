@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[1.0, 1.1] RimCuisine 2 Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations> 
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildPlants</xpath> 
+			   <value> 
+					<RC2_PlantCucumber>0.0000000000000001</RC2_PlantCucumber>
+					<RC2_PlantYam>0.001</RC2_PlantYam>
+					<RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant>
+					<RC2_PlantPepper>0.02</RC2_PlantPepper>
+					<RC2_PlantSoybean>0.0000000000000001</RC2_PlantSoybean>
+					<RC2_PlantMelon>0.0000000000000001</RC2_PlantMelon>
+					<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+					<RC2_PlantPineapple>0.02</RC2_PlantPineapple>
+					<RC2_PlantTea>0.0000000000000001</RC2_PlantTea>
+					<RC2_PlantQuinoa>0.0000000000000001</RC2_PlantQuinoa>
+					<RC2_PlantOnion>0.0000000000000001</RC2_PlantOnion>
+					<RC2_PlantMushroom>0.0000000000000001</RC2_PlantMushroom>
+					<RC2_PlantPlumTree>0.03</RC2_PlantPlumTree>
+					<RC2_PlantBreadfruitTree>0.03</RC2_PlantBreadfruitTree>
+					<RC2_PlantDurianTree>0.01</RC2_PlantDurianTree>
+					<RC2_PlantBananaTree>0.02</RC2_PlantBananaTree>
+					<Plant_TreeCocoa>0.011</Plant_TreeCocoa>
+					<RC2_PlantSugarcane>0.03</RC2_PlantSugarcane>
+					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+			   </value> 
+			 </li> 
+			
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_TropicalIsland"]/wildPlants</xpath> 
+			   <value> 
+					<RC2_PlantCucumber>0.0000000000000001</RC2_PlantCucumber>
+					<RC2_PlantYam>0.0000000000000001</RC2_PlantYam>
+					<RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant>
+					<RC2_PlantPepper>0.0015</RC2_PlantPepper>
+					<RC2_PlantSoybean>0.0000000000000001</RC2_PlantSoybean>
+					<RC2_PlantMelon>0.02</RC2_PlantMelon>
+					<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+					<RC2_PlantPineapple>0.0000000000000001</RC2_PlantPineapple>
+					<RC2_PlantTea>0.001</RC2_PlantTea>
+					<RC2_PlantQuinoa>0.02</RC2_PlantQuinoa>
+					<RC2_PlantOnion>0.03</RC2_PlantOnion>
+					<RC2_PlantMushroom>0.05</RC2_PlantMushroom>
+					<RC2_PlantPlumTree>0.0000000000000001</RC2_PlantPlumTree>
+					<RC2_PlantBreadfruitTree>0.03</RC2_PlantBreadfruitTree>
+					<RC2_PlantDurianTree>0.01</RC2_PlantDurianTree>
+					<RC2_PlantBananaTree>0.02</RC2_PlantBananaTree>
+					<Plant_TreeCocoa>0.0000000000000001</Plant_TreeCocoa>
+					<RC2_PlantSugarcane>0.03</RC2_PlantSugarcane>
+					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+			   </value> 
+			 </li> 
+			 
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildPlants</xpath> 
+			   <value> 
+					<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
+					<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
+					<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+					<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+					<RC2_PlantCarrot>0.07</RC2_PlantCarrot>
+					<RC2_PlantOnion>0.16</RC2_PlantOnion>
+					<RC2_PlantJuniper>0.25</RC2_PlantJuniper>
+					<RC2_PlantSugarMapleTree>0.035</RC2_PlantSugarMapleTree>
+					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+					<RC2_PlantBarley>0.2</RC2_PlantBarley>
+					<RC2_PlantMushroom>0.16</RC2_PlantMushroom>
+			   </value> 
+			 </li>  
+			 
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_DesertIsland"]/wildPlants</xpath> 
+			   <value> 
+					<RC2_PlantSorghum>0.0000000000000001</RC2_PlantSorghum>
+					<RC2_PlantChickpeas>0.0000000000000001</RC2_PlantChickpeas>
+					<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+					<RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin>
+					<RC2_PlantAgave>0.0000000000000001</RC2_PlantAgave>
+					<RC2_PlantOnion>0.2</RC2_PlantOnion>
+					<RC2_PlantBarley>0.2</RC2_PlantBarley>
+					<RC2_PlantCactusFruit>0.3</RC2_PlantCactusFruit>
+					<RC2_PlantOrangeTree>0.05</RC2_PlantOrangeTree>
+					<RC2_PlantFlax>0.2</RC2_PlantFlax>
+					<RC2_PlantFigTree>0.03</RC2_PlantFigTree>
+					<RC2_PlantPomegranateTree>0.03</RC2_PlantPomegranateTree>
+					<RC2_PlantCoffee>0.1</RC2_PlantCoffee>
+					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+			   </value> 
+			 </li>  
+			 
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildPlants</xpath> 
+			   <value> 
+					<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
+					<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
+					<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
+					<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
+					<RC2_PlantCarrot>0.07</RC2_PlantCarrot>
+					<RC2_PlantOnion>0.07</RC2_PlantOnion>
+					<RC2_PlantJuniper>0.1</RC2_PlantJuniper>
+					<RC2_PlantSugarMapleTree>0.015</RC2_PlantSugarMapleTree>
+					<RC2_PlantBeeTree>0.01</RC2_PlantBeeTree>
+					<RC2_PlantBarley>0.1</RC2_PlantBarley>
+					<RC2_PlantMushroom>0.07</RC2_PlantMushroom>
+			   </value> 
+			 </li> 
+			
+		 </operations> 
+		</match>
+	 </Operation> 
+
+
+</Patch>
+
