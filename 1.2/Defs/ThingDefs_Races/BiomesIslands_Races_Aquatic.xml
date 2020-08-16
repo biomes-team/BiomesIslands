@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!-- Copied from LifeStages.xml, added modExtensions -->
+    <LifeStageDef ParentName="AnimalBaby">
+        <defName>BiomesIslands_WhiteSharkBabyTiny</defName>
+        <bodySizeFactor>0.1</bodySizeFactor>
+        <foodMaxFactor>4</foodMaxFactor>
+        <statFactors>
+            <MoveSpeed>0.5</MoveSpeed>
+            <SwimSpeed>0.5</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhiteSubmerged</texPath>
+                <drawSize>1</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_WhiteSharkJuvenile</defName>
+        <label>juvenile</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <meleeDamageFactor>0.75</meleeDamageFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+            <SwimSpeed>0.9</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhiteSubmerged</texPath>
+                <drawSize>2.65</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_WhiteSharkAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhiteSubmerged</texPath>
+                <drawSize>3.2</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_WhiteShark</defName>
         <label>great white shark</label>
@@ -50,15 +113,15 @@
             <meatLabel>fish meat</meatLabel>
             <lifeStageAges>
                 <li>
-                    <def>AnimalBaby</def>
+                    <def>BiomesIslands_WhiteSharkBabyTiny</def>
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>AnimalJuvenile</def>
+                    <def>BiomesIslands_WhiteSharkJuvenile</def>
                     <minAge>0.4</minAge>
                 </li>
                 <li>
-                    <def>AnimalAdult</def>
+                    <def>BiomesIslands_WhiteSharkAdult</def>
                     <minAge>0.8</minAge>
                 </li>
             </lifeStageAges>
@@ -76,31 +139,31 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhite</texPath>
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhite</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhite</texPath>
                     <drawSize>2.65</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhite</texPath>
                     <drawSize>2.65</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhite</texPath>
                     <drawSize>3.2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsGreatWhiteShark/BiomesIslandsGreatWhite</texPath>
                     <drawSize>3.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -183,31 +246,31 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
                     <drawSize>2.65</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
                     <drawSize>2.65</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
                     <drawSize>3.2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsShark/BiomesIslandsShark</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
                     <drawSize>3.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>

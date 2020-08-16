@@ -148,6 +148,10 @@
     <defName>BiomesIslands_SeagullBabyTiny</defName>
     <bodySizeFactor>0.1</bodySizeFactor>
     <foodMaxFactor>4</foodMaxFactor>
+    <statFactors>
+      <MoveSpeed>0.5</MoveSpeed>
+      <BiomesCore_FlySpeed>0.5</BiomesCore_FlySpeed>
+    </statFactors>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
@@ -172,6 +176,7 @@
     <meleeDamageFactor>0.75</meleeDamageFactor>
     <statFactors>
       <MoveSpeed>0.9</MoveSpeed>
+      <BiomesCore_FlySpeed>0.9</BiomesCore_FlySpeed>
     </statFactors>
     <modExtensions>
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
