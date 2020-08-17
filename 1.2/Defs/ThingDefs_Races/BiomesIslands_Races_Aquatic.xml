@@ -342,6 +342,69 @@
 
     <!-- Tuna -->
 
+    <!-- Copied from LifeStages.xml, added modExtensions -->
+    <LifeStageDef ParentName="AnimalBaby">
+        <defName>BiomesIslands_TunaBabyTiny</defName>
+        <bodySizeFactor>0.1</bodySizeFactor>
+        <foodMaxFactor>4</foodMaxFactor>
+        <statFactors>
+            <MoveSpeed>0.5</MoveSpeed>
+            <SwimSpeed>0.5</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTunaSubmerged</texPath>
+                <drawSize>0.75</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_TunaJuvenile</defName>
+        <label>juvenile</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <meleeDamageFactor>0.75</meleeDamageFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+            <SwimSpeed>0.9</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTunaSubmerged</texPath>
+                <drawSize>2</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_TunaAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTunaSubmerged</texPath>
+                <drawSize>2.5</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_Tuna</defName>
         <label>tuna</label>
@@ -398,15 +461,15 @@
             </litterSizeCurve>
             <lifeStageAges>
                 <li>
-                    <def>AnimalBaby</def>
+                    <def>BiomesIslands_TunaBabyTiny</def>
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>AnimalJuvenile</def>
+                    <def>BiomesIslands_TunaJuvenile</def>
                     <minAge>0.2</minAge>
                 </li>
                 <li>
-                    <def>AnimalAdult</def>
+                    <def>BiomesIslands_TunaAdult</def>
                     <minAge>0.45</minAge>
                 </li>
             </lifeStageAges>
