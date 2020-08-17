@@ -354,7 +354,7 @@
   
   <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggHermitCrabFertilized</defName>
-	<label>rimcrab egg (fert.)</label>
+	<label>hermit crab egg (fert.)</label>
 	<description>A fertilized hermit crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<color>(95,125,140)</color>
@@ -367,6 +367,44 @@
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>9</hatcherDaystoHatch>
         <hatcherPawn>BiomesIslands_HermitCrab</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggTunaFertilized</defName>
+	<label>tuna egg (fert.)</label>
+	<description>A fertilized tuna egg. If all goes well, it should hatch into a baby tuna. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(180,50,10)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>35.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Tuna</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggRedSnapperFertilized</defName>
+	<label>red snapper egg (fert.)</label>
+	<description>A fertilized red snapper egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(220,150,90)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>35.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_RedSnapper</hatcherPawn>
       </li>
     </comps>
   </ThingDef>

@@ -441,7 +441,6 @@
             <baseBodySize>2</baseBodySize>
             <baseHealthScale>1.5</baseHealthScale>
             <foodType>CarnivoreAnimal</foodType>
-            <gestationPeriodDays>35</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.75</wildness>
             <nuzzleMtbHours>60</nuzzleMtbHours>
@@ -608,4 +607,174 @@
             </li>
         </lifeStages>
     </PawnKindDef>
+	
+	
+	<!-- Red Snapper -->
+
+    <!-- Copied from LifeStages.xml, added modExtensions -->
+    <LifeStageDef ParentName="AnimalBaby">
+        <defName>BiomesIslands_RedSnapperBabyTiny</defName>
+        <bodySizeFactor>0.1</bodySizeFactor>
+        <foodMaxFactor>4</foodMaxFactor>
+        <statFactors>
+            <MoveSpeed>0.5</MoveSpeed>
+            <SwimSpeed>0.5</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapperSubmerged</texPath>
+                <drawSize>0.5</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_RedSnapperJuvenile</defName>
+        <label>juvenile</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <meleeDamageFactor>0.75</meleeDamageFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+            <SwimSpeed>0.9</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapperSubmerged</texPath>
+                <drawSize>1.2</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_RedSnapperAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapperSubmerged</texPath>
+                <drawSize>1.6</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
+        <defName>BiomesIslands_RedSnapper</defName>
+        <label>red snapper</label>
+        <description>A carnivorous fish. Will eat anything they can swallow whole. Fortunately, they are not large enough to swallow people.</description>
+        <statBases>
+            <MoveSpeed>0</MoveSpeed>
+            <SwimSpeed>6</SwimSpeed>
+            <MarketValue>300</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>teeth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>8</power>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                        <def>Stun</def>
+                        <amount>12</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <predator>true</predator>
+            <body>Fish</body>
+            <baseHungerRate>0.85</baseHungerRate>
+            <baseBodySize>1.3</baseBodySize>
+            <baseHealthScale>1.5</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <packAnimal>false</packAnimal>
+            <wildness>0.65</wildness>
+            <nuzzleMtbHours>60</nuzzleMtbHours>
+            <petness>0.1</petness>
+            <lifeExpectancy>15</lifeExpectancy>
+            <trainability>Simple</trainability>
+            <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+            <lifeStageAges>
+                <li>
+                    <def>BiomesIslands_RedSnapperBabyTiny</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_RedSnapperJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_RedSnapperAdult</def>
+                    <minAge>0.45</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>BiomesIslands_RedSnapper</defName>
+        <label>red snapper</label>
+        <race>BiomesIslands_RedSnapper</race>
+        <combatPower>40</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapper</texPath>
+                    <drawSize>0.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapper</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapper</texPath>
+                    <drawSize>1.2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapper</texPath>
+                    <drawSize>1.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapper</texPath>
+                    <drawSize>1.6</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsRedSnapper/BiomesIslandsRedSnapper</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+	
 </Defs>

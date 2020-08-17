@@ -194,10 +194,15 @@
 		<BiomesIslands_RimCrab>0.5</BiomesIslands_RimCrab>
 		<BiomesIslands_HermitCrab>0.6</BiomesIslands_HermitCrab>
 		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
-		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
         <BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
 	    <BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
 		<BiomesIslands_Treefrog>0.9</BiomesIslands_Treefrog>
+		
+		<BiomesIslands_Tuna>.02</BiomesIslands_Tuna>
+		<BiomesIslands_RedSnapper>0.05</BiomesIslands_RedSnapper>
+		<BiomesIslands_Hammerhead>0.05</BiomesIslands_Hammerhead>
+	    <BiomesIslands_WhiteShark>0.01</BiomesIslands_WhiteShark>
+		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 		<BiomesIslands_Megamantis>0.1</BiomesIslands_Megamantis>
 	</wildAnimals>
 	<allowedPackAnimals>

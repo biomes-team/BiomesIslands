@@ -182,7 +182,12 @@
 		<Tortoise>0.5</Tortoise>
 		<BiomesIslands_SeaTurtle>0.3</BiomesIslands_SeaTurtle>
 		<BiomesIslands_MarineIguana>0.6</BiomesIslands_MarineIguana>
+		
+		<BiomesIslands_RedSnapper>0.07</BiomesIslands_RedSnapper>
+		<BiomesIslands_Tuna>0.03</BiomesIslands_Tuna>
+		<BiomesIslands_Hammerhead>0.08</BiomesIslands_Hammerhead>
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
+	    <BiomesIslands_WhiteShark>0.05</BiomesIslands_WhiteShark>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
