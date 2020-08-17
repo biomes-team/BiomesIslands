@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!-- Great White Shark -->
+
     <!-- Copied from LifeStages.xml, added modExtensions -->
     <LifeStageDef ParentName="AnimalBaby">
         <defName>BiomesIslands_WhiteSharkBabyTiny</defName>
@@ -71,8 +73,6 @@
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>8</SwimSpeed>
             <MarketValue>1500</MarketValue>
-            <MeatAmount>10</MeatAmount>
-            <LeatherAmount>20</LeatherAmount>
         </statBases>
         <tools>
             <li>
@@ -80,14 +80,14 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>4</power>
-                <cooldownTime>0.5</cooldownTime>
+                <power>22</power>
+                <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>38</amount>
+                            <amount>28</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -169,6 +169,8 @@
             </li>
         </lifeStages>
     </PawnKindDef>
+
+    <!-- Hammerhead Shark -->
 	
     <!-- Copied from LifeStages.xml, added modExtensions -->
     <LifeStageDef ParentName="AnimalBaby">
@@ -184,7 +186,7 @@
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
                 <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerheadSubmerged</texPath>
-                <drawSize>1</drawSize>
+                <drawSize>0.75</drawSize>
             </bodyGraphicData>
         </li>
         </modExtensions>
@@ -209,7 +211,7 @@
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
                 <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerheadSubmerged</texPath>
-                <drawSize>2.65</drawSize>
+                <drawSize>2</drawSize>
             </bodyGraphicData>
         </li>
         </modExtensions>
@@ -227,7 +229,7 @@
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
                 <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerheadSubmerged</texPath>
-                <drawSize>3.2</drawSize>
+                <drawSize>2.5</drawSize>
             </bodyGraphicData>
         </li>
         </modExtensions>
@@ -241,8 +243,6 @@
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>7</SwimSpeed>
             <MarketValue>750</MarketValue>
-            <MeatAmount>7</MeatAmount>
-            <LeatherAmount>12</LeatherAmount>
         </statBases>
         <tools>
             <li>
@@ -250,14 +250,14 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>3</power>
-                <cooldownTime>0.5</cooldownTime>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>25</amount>
+                            <amount>18</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -269,7 +269,7 @@
             <body>Shark</body>
             <baseHungerRate>0.7</baseHungerRate>
             <baseBodySize>2</baseBodySize>
-            <baseHealthScale>3.0</baseHealthScale>
+            <baseHealthScale>2.0</baseHealthScale>
             <foodType>CarnivoreAnimal</foodType>
             <gestationPeriodDays>360</gestationPeriodDays>
             <packAnimal>false</packAnimal>
@@ -310,35 +310,37 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerhead</texPath>
-                    <drawSize>1</drawSize>
+                    <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerhead</texPath>
-                    <drawSize>1</drawSize>
+                    <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerhead</texPath>
-                    <drawSize>2.65</drawSize>
+                    <drawSize>2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerhead</texPath>
-                    <drawSize>2.65</drawSize>
+                    <drawSize>2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerhead</texPath>
-                    <drawSize>3.2</drawSize>
+                    <drawSize>2.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsHammerhead/BiomesIslandsHammerhead</texPath>
-                    <drawSize>3.2</drawSize>
+                    <drawSize>2.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
     </PawnKindDef>
+
+    <!-- Tuna -->
 
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_Tuna</defName>
@@ -346,10 +348,8 @@
         <description>A large carnivorous fish. Will eat anything they can swallow whole. Fortunately, they are not large enough to swallow people.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
-            <SwimSpeed>8</SwimSpeed>
-            <MarketValue>1500</MarketValue>
-            <MeatAmount>10</MeatAmount>
-            <LeatherAmount>20</LeatherAmount>
+            <SwimSpeed>6</SwimSpeed>
+            <MarketValue>300</MarketValue>
         </statBases>
         <tools>
             <li>
@@ -357,37 +357,45 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>4</power>
-                <cooldownTime>0.5</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <power>12</power>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
-                            <def>Stun</def>
-                            <amount>38</amount>
+                        <def>Stun</def>
+                        <amount>18</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
         </tools>
         <race>
             <herdAnimal>false</herdAnimal>
             <predator>true</predator>
-            <body>Shark</body>
-            <baseHungerRate>0.7</baseHungerRate>
+            <body>Fish</body>
+            <baseHungerRate>0.85</baseHungerRate>
             <baseBodySize>2</baseBodySize>
-            <baseHealthScale>3.0</baseHealthScale>
+            <baseHealthScale>1.5</baseHealthScale>
             <foodType>CarnivoreAnimal</foodType>
-            <gestationPeriodDays>360</gestationPeriodDays>
+            <gestationPeriodDays>35</gestationPeriodDays>
             <packAnimal>false</packAnimal>
-            <wildness>0.95</wildness>
-            <nuzzleMtbHours>275</nuzzleMtbHours>
-            <petness>0.01</petness>
-            <lifeExpectancy>35</lifeExpectancy>
+            <wildness>0.75</wildness>
+            <nuzzleMtbHours>60</nuzzleMtbHours>
+            <petness>0.1</petness>
+            <lifeExpectancy>20</lifeExpectancy>
             <trainability>Simple</trainability>
-            <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
+            <manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <litterSizeCurve>
+                <points>
+                <li>(0.5, 0)</li>
+                <li>(1, 1)</li>
+                <li>(2, 1.7)</li>
+                <li>(3, 0.7)</li>
+                <li>(5, 0)</li>
+                </points>
+            </litterSizeCurve>
             <lifeStageAges>
                 <li>
                     <def>AnimalBaby</def>
@@ -395,11 +403,11 @@
                 </li>
                 <li>
                     <def>AnimalJuvenile</def>
-                    <minAge>0.4</minAge>
+                    <minAge>0.2</minAge>
                 </li>
                 <li>
                     <def>AnimalAdult</def>
-                    <minAge>0.8</minAge>
+                    <minAge>0.45</minAge>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -412,43 +420,42 @@
         <defName>BiomesIslands_Tuna</defName>
         <label>tuna</label>
         <race>BiomesIslands_Tuna</race>
-        <combatPower>200</combatPower>
+        <combatPower>60</combatPower>
         <lifeStages>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
-                    <drawSize>1</drawSize>
+                    <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
-                    <drawSize>1</drawSize>
+                    <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
-                    <drawSize>2.65</drawSize>
+                    <drawSize>2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
-                    <drawSize>2.65</drawSize>
+                    <drawSize>2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
-                    <drawSize>3.2</drawSize>
+                    <drawSize>2.4</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsTuna/BiomesIslandsTuna</texPath>
-                    <drawSize>3.2</drawSize>
+                    <drawSize>2.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
     </PawnKindDef>
 	
 	<!-- Snails -->
-	
 	
     <ThingDef ParentName="BiomesCore_WaterAnimal" ADogSaidBody="Tail">
         <defName>BiomesIslands_BlueSeaSnail</defName>
@@ -459,8 +466,6 @@
             <SwimSpeed>8</SwimSpeed>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <MarketValue>1500</MarketValue>
-            <MeatAmount>10</MeatAmount>
-            <LeatherAmount>20</LeatherAmount>
         </statBases>
         <race>
             <herdAnimal>false</herdAnimal>
