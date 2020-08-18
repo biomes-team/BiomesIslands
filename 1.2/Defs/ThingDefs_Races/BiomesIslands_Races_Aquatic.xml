@@ -433,6 +433,15 @@
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
         </tools>
+		<comps>
+		  <li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BiomesIslands_EggTunaFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>2~5</eggCountRange>
+		  </li>
+		</comps>
         <race>
             <herdAnimal>false</herdAnimal>
             <predator>true</predator>
@@ -529,6 +538,14 @@
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <MarketValue>1500</MarketValue>
         </statBases>
+		<comps>
+		  <li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BiomesIslands_EggRedSnapperFertilized</eggFertilizedDef>
+			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~4</eggCountRange>
+		  </li>
+		</comps>
         <race>
             <herdAnimal>false</herdAnimal>
             <!-- False -->

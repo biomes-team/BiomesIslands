@@ -131,6 +131,7 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
+	<!-- land plants -->
       <Plant_Grass>7.0</Plant_Grass>
       <Plant_Dandelion>0.8</Plant_Dandelion>
       <Plant_Bush>0.7</Plant_Bush>
@@ -139,8 +140,11 @@
       <Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
       <Plant_TreeDrago>0.20</Plant_TreeDrago>
       <Plant_Berry>0.10</Plant_Berry>
+	<!-- water plants -->
+		<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
     </wildPlants>
     <wildAnimals>
+<!-- land grazers -->
       <Donkey>0.2</Donkey>
       <GuineaPig>0.017</GuineaPig>
       <Horse>0.1</Horse>
@@ -158,12 +162,18 @@
       <Boomalope>0.5</Boomalope>
 	  <Megasloth>0.1</Megasloth>
 	  
+<!-- land predators -->
+      <Cougar>0.15</Cougar>
+      <Fox_Fennec>0.15</Fox_Fennec>
+	  
+<!-- aquatic grazers -->
+	<BiomesIslands_EmberBlenny>1.0</BiomesIslands_EmberBlenny>
+	<BiomesIslands_OliveGoby>0.5</BiomesIslands_OliveGoby>
+<!-- aquatic predators -->
 	  <BiomesIslands_RedSnapper>0.03</BiomesIslands_RedSnapper>
 	  <BiomesIslands_Tuna>0.05</BiomesIslands_Tuna>
 	  <BiomesIslands_Hammerhead>0.03</BiomesIslands_Hammerhead>
 	  <BiomesIslands_WhiteShark>0.04</BiomesIslands_WhiteShark>
-      <Cougar>0.15</Cougar>
-      <Fox_Fennec>0.15</Fox_Fennec>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

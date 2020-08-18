@@ -154,6 +154,7 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
+	<!-- land plants -->
       <Plant_Grass>3.6</Plant_Grass>
       <Plant_Moss>0.5</Plant_Moss>
       <Plant_Bush>0.3</Plant_Bush>
@@ -163,8 +164,11 @@
       <Plant_TreeBirch>0.08</Plant_TreeBirch>
       <Plant_Berry>0.07</Plant_Berry>
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
+	<!-- water plants -->
+		<BiomesIslands_Kelp>2.0</BiomesIslands_Kelp>
     </wildPlants>
     <wildAnimals>
+	<!-- land grazers -->
       <Hare>2</Hare>
       <Snowhare>2</Snowhare>
       <Caribou>2</Caribou>
@@ -172,9 +176,7 @@
       <Muffalo>2</Muffalo>
       <Ibex>2</Ibex>
       <Megasloth>0.2</Megasloth>
-	  
-	  <BiomesIslands_Tuna>0.08</BiomesIslands_Tuna>
-	  <BiomesIslands_WhiteShark>0.01</BiomesIslands_WhiteShark>
+	<!-- land predators -->
       <Fox_Arctic>0.07</Fox_Arctic>
       <Wolf_Arctic>0.07</Wolf_Arctic>
       <Wolf_Timber>0.07</Wolf_Timber>
@@ -182,6 +184,14 @@
       <Warg>0.07</Warg>
       <Bear_Polar>0.07</Bear_Polar>
       <Bear_Grizzly>0.07</Bear_Grizzly>
+	  
+	<!-- aquatic grazers -->
+	  <BiomesIslands_IcyTetra>2</BiomesIslands_IcyTetra>
+	  <BiomesIslands_EmberBlenny>1.5</BiomesIslands_EmberBlenny>
+	<!-- aquatic predators -->
+	  <BiomesIslands_Tuna>0.08</BiomesIslands_Tuna>
+	  <BiomesIslands_WhiteShark>0.01</BiomesIslands_WhiteShark>
+	  
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

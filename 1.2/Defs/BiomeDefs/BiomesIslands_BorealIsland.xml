@@ -163,6 +163,7 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
+	<!-- land plants -->
       <Plant_Grass>8.0</Plant_Grass>
       <Plant_Brambles>2.0</Plant_Brambles>
       <Plant_Moss>4.0</Plant_Moss>
@@ -173,8 +174,11 @@
       <Plant_Berry>0.16</Plant_Berry>
       <Plant_HealrootWild>0.16</Plant_HealrootWild>
       <BiomesIslands_Lavender>1</BiomesIslands_Lavender>
+	  <!-- water plants -->
+		<BiomesIslands_Kelp>5.0</BiomesIslands_Kelp>
     </wildPlants>
     <wildAnimals>
+	<!-- land grazers -->
       <Yak>0.12</Yak>
       <Horse>0.15</Horse>
       <Squirrel>1</Squirrel>
@@ -190,8 +194,7 @@
       <Deer>0.5</Deer>
       <Megasloth>0.1</Megasloth>
 	  
-	  <BiomesIslands_Tuna>0.05</BiomesIslands_Tuna>
-	  <BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
+	<!-- land predators -->
       <Fox_Red>0.07</Fox_Red>
       <Fox_Arctic>0.07</Fox_Arctic>
       <Bear_Grizzly>0.07</Bear_Grizzly>
@@ -200,6 +203,15 @@
       <Cougar>0.07</Cougar>
       <Lynx>0.07</Lynx>
       <Warg>0.07</Warg>
+	  
+	<!-- aquatic grazers -->
+	  <BiomesIslands_IcyTetra>2</BiomesIslands_IcyTetra>
+	  <BiomesIslands_EmberBlenny>0.5</BiomesIslands_EmberBlenny>
+	  <BiomesIslands_OrchidDottyback>0.3</BiomesIslands_OrchidDottyback>
+	  <BiomesIslands_OliveGoby>1.0</BiomesIslands_OliveGoby>
+	<!-- aquatic predators -->
+	  <BiomesIslands_Tuna>0.05</BiomesIslands_Tuna>
+	  <BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
