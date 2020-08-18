@@ -526,7 +526,71 @@
         </lifeStages>
     </PawnKindDef>
 	
+	
 	<!-- Snails -->
+
+	<LifeStageDef ParentName="AnimalBaby">
+        <defName>BiomesIslands_BlueSeaSnailTiny</defName>
+        <bodySizeFactor>0.1</bodySizeFactor>
+        <foodMaxFactor>4</foodMaxFactor>
+        <statFactors>
+            <MoveSpeed>0.5</MoveSpeed>
+            <SwimSpeed>0.5</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBlueSeaSnail/BiomesIslandsBlueSeaSnailSubmerged</texPath>
+                <drawSize>0.45</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_BlueSeaSnailJuvenile</defName>
+        <label>juvenile</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <meleeDamageFactor>0.75</meleeDamageFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+            <SwimSpeed>0.9</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBlueSeaSnail/BiomesIslandsBlueSeaSnailSubmerged</texPath>
+                <drawSize>0.75</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_BlueSeaSnailAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBlueSeaSnail/BiomesIslandsBlueSeaSnailSubmerged</texPath>
+                <drawSize>0.85</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
 	
     <ThingDef ParentName="BiomesCore_WaterAnimal" ADogSaidBody="Tail">
         <defName>BiomesIslands_BlueSeaSnail</defName>
@@ -540,7 +604,7 @@
         </statBases>
 		<comps>
 		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BiomesIslands_EggRedSnapperFertilized</eggFertilizedDef>
+			<eggFertilizedDef>BiomesIslands_BlueSeaSnailFertilized</eggFertilizedDef>
 			<eggLayIntervalDays>15</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>1~4</eggCountRange>
@@ -548,8 +612,7 @@
 		</comps>
         <race>
             <herdAnimal>false</herdAnimal>
-            <!-- False -->
-            <body>Shark</body>
+            <body>BiomesCore_Snail</body>
             <baseHungerRate>0.3</baseHungerRate>
             <baseBodySize>0.15</baseBodySize>
             <baseHealthScale>0.4</baseHealthScale>
@@ -567,22 +630,21 @@
 			<meatColor>(62,133,215)</meatColor>
             <lifeStageAges>
                 <li>
-                    <def>AnimalBaby</def>
+                    <def>BiomesIslands_BlueSeaSnailTiny</def>
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>AnimalJuvenile</def>
+                    <def>BiomesIslands_BlueSeaSnailJuvenile</def>
                     <minAge>0.4</minAge>
                 </li>
                 <li>
-                    <def>AnimalAdult</def>
+                    <def>BiomesIslands_BlueSeaSnailAdult</def>
                     <minAge>0.8</minAge>
                 </li>
             </lifeStageAges>
-            <!-- False? -->
-            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
         </race>
     </ThingDef>
 
@@ -624,6 +686,7 @@
             </li>
         </lifeStages>
     </PawnKindDef>
+	
 	
 	
 	<!-- Red Snapper -->

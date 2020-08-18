@@ -409,4 +409,23 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_BlueSeaSnailFertilized</defName>
+	<label>blue sea snail egg (fert.)</label>
+	<description>A fertilized red snapper egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(247,254,238)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>20.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_BlueSeaSnail</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
 </Defs>
