@@ -17,11 +17,12 @@
         <li Class="BiomesKit.BiomesKitControls">
 			<randomizeHilliness>True</randomizeHilliness>
 			<usePerlin>true</usePerlin>
+			<perlinCulling>0.80</perlinCulling>
             <allowOnWater>true</allowOnWater>
 			<minTemperature>-10</minTemperature>
 			<maxTemperature>2</maxTemperature>
 			<minRainfall>600</minRainfall>
-			<frequency>25</frequency>
+			<frequency>20</frequency>
 			<materialPath>World/MapGraphics/BorealIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
@@ -81,11 +82,11 @@
       <li>
         <terrain>WaterOceanDeep</terrain>
         <min>-999</min>
-        <max>0.35</max>
+        <max>0.65</max>
       </li>
       <li>
         <terrain>WaterOceanShallow</terrain>
-        <min>0.35</min>
+        <min>0.65</min>
         <max>1.0</max>
       </li>
       <li>
