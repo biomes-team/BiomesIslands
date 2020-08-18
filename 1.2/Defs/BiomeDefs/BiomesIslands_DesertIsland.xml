@@ -167,8 +167,8 @@
       <Fox_Fennec>0.15</Fox_Fennec>
 	  
 <!-- aquatic grazers -->
-	<BiomesIslands_EmberBlenny>1.0</BiomesIslands_EmberBlenny>
-	<BiomesIslands_OliveGoby>0.5</BiomesIslands_OliveGoby>
+	  <BiomesIslands_Sardine>1.5</BiomesIslands_Sardine>
+
 <!-- aquatic predators -->
 	  <BiomesIslands_RedSnapper>0.03</BiomesIslands_RedSnapper>
 	  <BiomesIslands_Tuna>0.05</BiomesIslands_Tuna>

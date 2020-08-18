@@ -3,14 +3,13 @@
 
  
   <!--================== Baitfish Eggs ==================-->
-  
   <ThingDef ParentName="EggFertBase">
-	<defName>EggIcyTetraFertilized</defName>
+	<defName>EggSardineFertilized</defName>
 	<label>icy tetra egg (fert.)</label>
 	<description>A fertilized icy tetra egg. If all goes well, it should hatch into a fish. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
-		<color>(236,217,184)</color>
-		<drawSize>1.1</drawSize>
+		<color>(90,80,70)</color>
+		<drawSize>0.9</drawSize>
 	</graphicData>
 	<statBases>
 		<MarketValue>10.0</MarketValue>
@@ -18,67 +17,9 @@
 	<comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-        <hatcherPawn>BiomesIslands_IcyTetra</hatcherPawn>
+        <hatcherPawn>BiomesIslands_Sardine</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
   
-<ThingDef ParentName="EggFertBase">
-	<defName>EggEmberBlennyFertilized</defName>
-	<label>ember blenny (fert.)</label>
-	<description>A fertilized ember blenny egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
-	<graphicData>
-		<color>(236,217,184)</color>
-		<drawSize>1.1</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>10.0</MarketValue>
-	</statBases>
-	<comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-        <hatcherPawn>BiomesIslands_EmberBlenny</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>
-  
-  <ThingDef ParentName="EggFertBase">
-	<defName>EggOrchidDottybackFertilized</defName>
-	<label>orchid dottyback (fert.)</label>
-	<description>A fertilized orchid dottyback egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
-	<graphicData>
-		<color>(236,217,184)</color>
-		<drawSize>1.1</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>10.0</MarketValue>
-	</statBases>
-	<comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-        <hatcherPawn>BiomesIslands_OrchidDottyback</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>
-  
-  
-  <ThingDef ParentName="EggFertBase">
-	<defName>EggOliveGobyFertilized</defName>
-	<label>olive goby (fert.)</label>
-	<description>A fertilized olive goby egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
-	<graphicData>
-		<color>(236,217,184)</color>
-		<drawSize>1.1</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>10.0</MarketValue>
-	</statBases>
-	<comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-        <hatcherPawn>BiomesIslands_OliveGoby</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>
-
 </Defs>

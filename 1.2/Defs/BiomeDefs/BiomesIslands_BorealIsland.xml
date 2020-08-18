@@ -205,10 +205,8 @@
       <Warg>0.07</Warg>
 	  
 	<!-- aquatic grazers -->
-	  <BiomesIslands_IcyTetra>2</BiomesIslands_IcyTetra>
-	  <BiomesIslands_EmberBlenny>0.5</BiomesIslands_EmberBlenny>
-	  <BiomesIslands_OrchidDottyback>0.3</BiomesIslands_OrchidDottyback>
-	  <BiomesIslands_OliveGoby>1.0</BiomesIslands_OliveGoby>
+	  <BiomesIslands_Sardine>2.5</BiomesIslands_Sardine>
+
 	<!-- aquatic predators -->
 	  <BiomesIslands_Tuna>0.05</BiomesIslands_Tuna>
 	  <BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>

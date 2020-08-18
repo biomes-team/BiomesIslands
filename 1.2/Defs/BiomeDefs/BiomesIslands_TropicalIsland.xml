@@ -208,9 +208,7 @@
 		<BiomesIslands_Megamantis>0.1</BiomesIslands_Megamantis>
 		
 	<!-- aquatic grazers -->
-	
-		<BiomesIslands_OrchidDottyback>1.0</BiomesIslands_OrchidDottyback>
-		<BiomesIslands_OliveGoby>1.5</BiomesIslands_OliveGoby>
+		<BiomesIslands_Sardine>2.5</BiomesIslands_Sardine>
 	<!-- aquatic predators -->
 		<BiomesIslands_Tuna>.02</BiomesIslands_Tuna>
 		<BiomesIslands_RedSnapper>0.05</BiomesIslands_RedSnapper>

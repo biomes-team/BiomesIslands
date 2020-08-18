@@ -93,62 +93,62 @@
 		<wildGroupSize>5~15</wildGroupSize>
 	</PawnKindDef>
 	
-	<!-- ================ Icy Tetra ================ -->
+	
+	<!-- ================ Sardine ================ -->
+	
 		
 	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
-        <defName>BiomesIslands_IcyTetraBabyTiny</defName>
+        <defName>BiomesIslands_SardineBabyTiny</defName>
         <modExtensions>
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
                 <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.2</drawSize>
-				<color>(170,190,200)</color>
+				<color>(160,180,180)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
     </LifeStageDef>
 	
 	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
-		<defName>BiomesIslands_IcyTetraJuvenile</defName>
+		<defName>BiomesIslands_SardineJuvenile</defName>
         <modExtensions>
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
                 <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.4</drawSize>
-				<color>(170,190,200)</color>
+				<color>(160,180,180)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
     </LifeStageDef>
 	
 	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
-        <defName>BiomesIslands_IcyTetraAdult</defName>
+        <defName>BiomesIslands_SardineAdult</defName>
         <modExtensions>
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
                 <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.6</drawSize>
-				<color>(170,190,200)</color>
+				<color>(160,180,180)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
     </LifeStageDef>
 	
-	
-	
     <ThingDef ParentName="BiomesIslands_BaitfishBase" >
-        <defName>BiomesIslands_IcyTetra</defName>
-        <label>icy tetra</label>
+        <defName>BiomesIslands_Sardine</defName>
+        <label>sardine</label>
         <statBases>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
-			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
         </statBases>
 		<comps>
 		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>EggIcyTetraFertilized</eggFertilizedDef>
+			<eggFertilizedDef>EggSardineFertilized</eggFertilizedDef>
 			<eggFertilizationCountMax>1</eggFertilizationCountMax>
 			<eggLayIntervalDays>12</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -162,31 +162,32 @@
             <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
             <lifeStageAges>
                 <li>
-                    <def>BiomesIslands_IcyTetraBabyTiny</def>
+                    <def>BiomesIslands_SardineBabyTiny</def>
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>BiomesIslands_IcyTetraJuvenile</def>
+                    <def>BiomesIslands_SardineJuvenile</def>
                     <minAge>0.1</minAge>
                 </li>
                 <li>
-                    <def>BiomesIslands_IcyTetraAdult</def>
+                    <def>BiomesIslands_SardineAdult</def>
                     <minAge>0.25</minAge>
                 </li>
             </lifeStageAges>
         </race>
     </ThingDef>
 
+    
     <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
-        <defName>BiomesIslands_IcyTetra</defName>
-        <label>icy tetra</label>
-        <race>BiomesIslands_IcyTetra</race>
+        <defName>BiomesIslands_Sardine</defName>
+        <label>sardine</label>
+        <race>BiomesIslands_Sardine</race>
         <lifeStages>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
-					<color>(170,190,200)</color>
+					<color>(160,180,180)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
@@ -197,7 +198,7 @@
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
-					<color>(170,190,200)</color>
+					<color>(160,180,180)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
@@ -208,7 +209,7 @@
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
-					<color>(170,190,200)</color>
+					<color>(160,180,180)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
@@ -219,397 +220,4 @@
     
 	</PawnKindDef>
 
-
-	<!-- ================ Ember Blenny ================ -->
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
-        <defName>BiomesIslands_EmberBlennyBabyTiny</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.2</drawSize>
-				<color>(80,30,30)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
-		<defName>BiomesIslands_EmberBlennyJuvenile</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.4</drawSize>
-				<color>(80,30,30)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
-        <defName>BiomesIslands_EmberBlennyAdult</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.6</drawSize>
-				<color>(80,30,30)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	
-	
-    <ThingDef ParentName="BiomesIslands_BaitfishBase" >
-        <defName>BiomesIslands_EmberBlenny</defName>
-        <label>ember blenny</label>
-        <statBases>
-			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
-			<ComfyTemperatureMax>45</ComfyTemperatureMax>
-        </statBases>
-		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>EggEmberBlennyFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>12</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>2~5</eggCountRange>
-		  </li>
-		</comps>
-        <race>
-            <wildness>0.55</wildness>
-            <lifeExpectancy>3</lifeExpectancy>
-            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
-            <lifeStageAges>
-                <li>
-                    <def>BiomesIslands_EmberBlennyBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_EmberBlennyJuvenile</def>
-                    <minAge>0.1</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_EmberBlennyAdult</def>
-                    <minAge>0.25</minAge>
-                </li>
-            </lifeStageAges>
-        </race>
-    </ThingDef>
-
-    <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
-        <defName>BiomesIslands_EmberBlenny</defName>
-        <label>ember blenny</label>
-        <race>BiomesIslands_EmberBlenny</race>
-		<wildGroupSize>5~15</wildGroupSize>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.2</drawSize>
-					<color>(80,30,30)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.2</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.4</drawSize>
-					<color>(80,30,30)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.4</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.6</drawSize>
-					<color>(80,30,30)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.6</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    
-	</PawnKindDef>
-	
-<!-- ================ Orchid Dottyback ================ -->
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
-        <defName>BiomesIslands_OrchidDottybackBabyTiny</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.2</drawSize>
-				<color>(210,40,170)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
-		<defName>BiomesIslands_OrchidDottybackJuvenile</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.4</drawSize>
-				<color>(210,40,170)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
-        <defName>BiomesIslands_OrchidDottybackAdult</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.6</drawSize>
-				<color>(210,40,170)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	
-	
-    <ThingDef ParentName="BiomesIslands_BaitfishBase" >
-        <defName>BiomesIslands_OrchidDottyback</defName>
-        <label>orchid dottyback</label>
-        <statBases>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<ComfyTemperatureMax>65</ComfyTemperatureMax>
-        </statBases>
-		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>EggOrchidDottybackFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>12</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>2~5</eggCountRange>
-		  </li>
-		</comps>
-        <race>
-            <wildness>0.55</wildness>
-            <lifeExpectancy>3</lifeExpectancy>
-            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
-            <lifeStageAges>
-                <li>
-                    <def>BiomesIslands_OrchidDottybackBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_OrchidDottybackJuvenile</def>
-                    <minAge>0.1</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_OrchidDottybackAdult</def>
-                    <minAge>0.25</minAge>
-                </li>
-            </lifeStageAges>
-        </race>
-    </ThingDef>
-
-    <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
-        <defName>BiomesIslands_OrchidDottyback</defName>
-        <label>orchid dottyback</label>
-        <race>BiomesIslands_OrchidDottyback</race>
-		<wildGroupSize>5~15</wildGroupSize>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.2</drawSize>
-					<color>(210,40,170)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.2</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.4</drawSize>
-					<color>(210,40,170)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.4</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.6</drawSize>
-					<color>(210,40,170)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.6</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    
-	</PawnKindDef>
-	
-<!-- ================ Olive Goby ================ -->
-	
-	
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
-        <defName>BiomesIslands_OliveGobyBabyTiny</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.2</drawSize>
-				<color>(70,80,10)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
-		<defName>BiomesIslands_OliveGobyJuvenile</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.4</drawSize>
-				<color>(70,80,10)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
-        <defName>BiomesIslands_OliveGobyAdult</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.6</drawSize>
-				<color>(70,80,10)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	
-	
-    <ThingDef ParentName="BiomesIslands_BaitfishBase" >
-        <defName>BiomesIslands_OliveGoby</defName>
-        <label>olive goby</label>
-        <statBases>
-			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
-			<ComfyTemperatureMax>45</ComfyTemperatureMax>
-        </statBases>
-		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>EggOliveGobyFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>12</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>2~5</eggCountRange>
-		  </li>
-		</comps>
-        <race>
-            <wildness>0.55</wildness>
-            <lifeExpectancy>3</lifeExpectancy>
-            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
-            <lifeStageAges>
-                <li>
-                    <def>BiomesIslands_OliveGobyBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_OliveGobyJuvenile</def>
-                    <minAge>0.1</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_OliveGobyAdult</def>
-                    <minAge>0.25</minAge>
-                </li>
-            </lifeStageAges>
-        </race>
-    </ThingDef>
-
-    <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
-        <defName>BiomesIslands_OliveGoby</defName>
-        <label>olive goby</label>
-        <race>BiomesIslands_OliveGoby</race>
-		<wildGroupSize>5~15</wildGroupSize>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.2</drawSize>
-					<color>(70,80,10)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.2</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.4</drawSize>
-					<color>(70,80,10)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.4</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.6</drawSize>
-					<color>(70,80,10)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.6</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 </Defs>

@@ -186,8 +186,8 @@
       <Bear_Grizzly>0.07</Bear_Grizzly>
 	  
 	<!-- aquatic grazers -->
-	  <BiomesIslands_IcyTetra>2</BiomesIslands_IcyTetra>
-	  <BiomesIslands_EmberBlenny>1.5</BiomesIslands_EmberBlenny>
+	  <BiomesIslands_Sardine>3.0</BiomesIslands_Sardine>
+	  
 	<!-- aquatic predators -->
 	  <BiomesIslands_Tuna>0.08</BiomesIslands_Tuna>
 	  <BiomesIslands_WhiteShark>0.01</BiomesIslands_WhiteShark>
