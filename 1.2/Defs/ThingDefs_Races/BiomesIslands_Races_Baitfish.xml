@@ -101,7 +101,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.2</drawSize>
 				<color>(170,190,200)</color>
             </bodyGraphicData>
@@ -115,7 +115,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.4</drawSize>
 				<color>(170,190,200)</color>
             </bodyGraphicData>
@@ -129,7 +129,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.6</drawSize>
 				<color>(170,190,200)</color>
             </bodyGraphicData>
@@ -184,34 +184,34 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
 					<color>(170,190,200)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
 					<color>(170,190,200)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
 					<color>(170,190,200)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -228,7 +228,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.2</drawSize>
 				<color>(80,30,30)</color>
             </bodyGraphicData>
@@ -242,7 +242,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.4</drawSize>
 				<color>(80,30,30)</color>
             </bodyGraphicData>
@@ -256,7 +256,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.6</drawSize>
 				<color>(80,30,30)</color>
             </bodyGraphicData>
@@ -312,34 +312,34 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
 					<color>(80,30,30)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
 					<color>(80,30,30)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
 					<color>(80,30,30)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -355,7 +355,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.2</drawSize>
 				<color>(210,40,170)</color>
             </bodyGraphicData>
@@ -369,7 +369,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.4</drawSize>
 				<color>(210,40,170)</color>
             </bodyGraphicData>
@@ -383,7 +383,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.6</drawSize>
 				<color>(210,40,170)</color>
             </bodyGraphicData>
@@ -439,34 +439,34 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
 					<color>(210,40,170)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
 					<color>(210,40,170)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
 					<color>(210,40,170)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -484,7 +484,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.2</drawSize>
 				<color>(70,80,10)</color>
             </bodyGraphicData>
@@ -498,7 +498,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.4</drawSize>
 				<color>(70,80,10)</color>
             </bodyGraphicData>
@@ -512,7 +512,7 @@
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
                 <drawSize>0.6</drawSize>
 				<color>(70,80,10)</color>
             </bodyGraphicData>
@@ -568,34 +568,34 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
 					<color>(70,80,10)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
 					<color>(70,80,10)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
 					<color>(70,80,10)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitfish/BiomesIslandsBaitfish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
                     <drawSize>0.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
