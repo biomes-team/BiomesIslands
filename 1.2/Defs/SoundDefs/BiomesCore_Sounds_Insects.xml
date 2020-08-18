@@ -8,7 +8,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Animal/Mantis_Call</clipFolderPath>
+            <clipFolderPath>Animals/Mantis_Call</clipFolderPath>
           </li>
         </grains>
         <distRange>0~50</distRange>
