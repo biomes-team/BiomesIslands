@@ -21,7 +21,7 @@
             <allowOnWater>True</allowOnWater>
 			<minTemperature>15</minTemperature>
 			<minRainfall>600</minRainfall>
-			<frequency>50</frequency>
+			<frequency>25</frequency>
 			<materialPath>World/MapGraphics/TropicalIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
