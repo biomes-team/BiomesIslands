@@ -31,8 +31,8 @@
     <canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
-    <animalDensity>2.5</animalDensity>
-    <plantDensity>0.9</plantDensity>
+    <animalDensity>5.4</animalDensity>
+    <plantDensity>0.8</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>2</movementDifficulty>
     <texture>World/Biomes/Ocean</texture>
@@ -187,8 +187,8 @@
 		<Plant_Berry>0.05</Plant_Berry>
 		<Plant_Rafflesia>0.0008</Plant_Rafflesia>
 	<!-- water plants -->
-		<BiomesIslands_Kelp>2.5</BiomesIslands_Kelp>
-		<BiomesIslands_SeaSponge>0.1</BiomesIslands_SeaSponge>
+		<BiomesIslands_Kelp>6</BiomesIslands_Kelp>
+		<BiomesIslands_SeaSponge>0.25</BiomesIslands_SeaSponge>
 	</wildPlants>
     <wildAnimals>
 	<!-- land grazers -->
@@ -209,13 +209,13 @@
 		<BiomesIslands_Megamantis>0.1</BiomesIslands_Megamantis>
 		
 	<!-- aquatic grazers -->
-		<BiomesIslands_Sardine>2.5</BiomesIslands_Sardine>
-		<BiomesIslands_BlueSeaSnail>0.5</BiomesIslands_BlueSeaSnail>
+		<BiomesIslands_Sardine>3.5</BiomesIslands_Sardine>
+		<BiomesIslands_BlueSeaSnail>0.75</BiomesIslands_BlueSeaSnail>
 	<!-- aquatic predators -->
-		<BiomesIslands_Tuna>.02</BiomesIslands_Tuna>
-		<BiomesIslands_RedSnapper>0.05</BiomesIslands_RedSnapper>
-		<BiomesIslands_Hammerhead>0.05</BiomesIslands_Hammerhead>
-	    <BiomesIslands_WhiteShark>0.01</BiomesIslands_WhiteShark>
+		<BiomesIslands_Tuna>0.2</BiomesIslands_Tuna>
+		<BiomesIslands_RedSnapper>0.08</BiomesIslands_RedSnapper>
+		<BiomesIslands_Hammerhead>0.08</BiomesIslands_Hammerhead>
+	    <BiomesIslands_WhiteShark>0.06</BiomesIslands_WhiteShark>
 	</wildAnimals>
 	<allowedPackAnimals>
 		<li>Muffalo</li>

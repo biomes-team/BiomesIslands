@@ -32,7 +32,7 @@
     <canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
-    <animalDensity>1.1</animalDensity>
+    <animalDensity>1.8</animalDensity>
     <plantDensity>0.19</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>2</movementDifficulty>
@@ -166,7 +166,7 @@
       <Plant_Berry>0.07</Plant_Berry>
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
 	<!-- water plants -->
-		<BiomesIslands_Kelp>2.0</BiomesIslands_Kelp>
+		<BiomesIslands_Kelp>3.0</BiomesIslands_Kelp>
     </wildPlants>
     <wildAnimals>
 	<!-- land grazers -->
@@ -177,6 +177,7 @@
       <Muffalo>2</Muffalo>
       <Ibex>2</Ibex>
       <Megasloth>0.2</Megasloth>
+      <BiomesIslands_Seagull>2</BiomesIslands_Seagull>
 	<!-- land predators -->
       <Fox_Arctic>0.07</Fox_Arctic>
       <Wolf_Arctic>0.07</Wolf_Arctic>
@@ -186,12 +187,13 @@
       <Bear_Polar>0.07</Bear_Polar>
       <Bear_Grizzly>0.07</Bear_Grizzly>
 	  
+    <!-- Water animals have ~50% higher stats relative to other islands to keep water pops up -->
 	<!-- aquatic grazers -->
-	  <BiomesIslands_Sardine>3.0</BiomesIslands_Sardine>
+	  <BiomesIslands_Sardine>5.0</BiomesIslands_Sardine>
 	  
 	<!-- aquatic predators -->
-	  <BiomesIslands_Tuna>0.08</BiomesIslands_Tuna>
-	  <BiomesIslands_WhiteShark>0.01</BiomesIslands_WhiteShark>
+	  <BiomesIslands_Tuna>0.45</BiomesIslands_Tuna>
+	  <BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
 	  
     </wildAnimals>
     <allowedPackAnimals>

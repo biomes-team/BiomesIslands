@@ -31,8 +31,8 @@
     <canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
-    <animalDensity>2.5</animalDensity>
-    <plantDensity>0.65</plantDensity>
+    <animalDensity>3.2</animalDensity>
+    <plantDensity>0.5</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>2</movementDifficulty>
     <texture>World/Biomes/Ocean</texture>
@@ -176,10 +176,10 @@
       <Plant_HealrootWild>0.16</Plant_HealrootWild>
       <BiomesIslands_Lavender>1</BiomesIslands_Lavender>
 	  <!-- water plants -->
-		<BiomesIslands_Kelp>5.0</BiomesIslands_Kelp>
+		<BiomesIslands_Kelp>4.0</BiomesIslands_Kelp>
     </wildPlants>
     <wildAnimals>
-	<!-- land grazers -->
+    <!-- land grazers -->
       <Yak>0.12</Yak>
       <Horse>0.15</Horse>
       <Squirrel>1</Squirrel>
@@ -194,8 +194,9 @@
       <Turkey>0.5</Turkey>
       <Deer>0.5</Deer>
       <Megasloth>0.1</Megasloth>
+      <BiomesIslands_Seagull>1</BiomesIslands_Seagull>
 	  
-	<!-- land predators -->
+	  <!-- land predators -->
       <Fox_Red>0.07</Fox_Red>
       <Fox_Arctic>0.07</Fox_Arctic>
       <Bear_Grizzly>0.07</Bear_Grizzly>
@@ -205,12 +206,12 @@
       <Lynx>0.07</Lynx>
       <Warg>0.07</Warg>
 	  
-	<!-- aquatic grazers -->
-	  <BiomesIslands_Sardine>2.5</BiomesIslands_Sardine>
+    <!-- aquatic grazers -->
+      <BiomesIslands_Sardine>3.5</BiomesIslands_Sardine>
 
-	<!-- aquatic predators -->
-	  <BiomesIslands_Tuna>0.05</BiomesIslands_Tuna>
-	  <BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
+    <!-- aquatic predators -->
+      <BiomesIslands_Tuna>0.3</BiomesIslands_Tuna>
+      <BiomesIslands_WhiteShark>0.18</BiomesIslands_WhiteShark>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

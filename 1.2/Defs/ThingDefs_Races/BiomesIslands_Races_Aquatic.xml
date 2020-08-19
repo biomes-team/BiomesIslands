@@ -72,6 +72,7 @@
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>8</SwimSpeed>
+            <ComfyTemperatureMin>-15</ComfyTemperatureMin>
             <MarketValue>1500</MarketValue>
         </statBases>
         <tools>
@@ -242,6 +243,7 @@
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>7</SwimSpeed>
+            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
             <MarketValue>750</MarketValue>
         </statBases>
         <tools>
@@ -412,6 +414,7 @@
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>6</SwimSpeed>
+            <ComfyTemperatureMin>10</ComfyTemperatureMin>
             <MarketValue>300</MarketValue>
         </statBases>
         <tools>
@@ -761,6 +764,7 @@
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>6</SwimSpeed>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>300</MarketValue>
         </statBases>
         <tools>
