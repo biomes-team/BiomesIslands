@@ -218,6 +218,7 @@
       <SwimSpeed>5</SwimSpeed>
       <MarketValue>95</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
     </statBases>
     <race>
       <herdAnimal>true</herdAnimal>
@@ -370,8 +371,8 @@
       <MoveSpeed>2.8</MoveSpeed>
       <MarketValue>300</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
-	  <LeatherAmount>25</LeatherAmount>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <LeatherAmount>25</LeatherAmount>
     </statBases>
     <race>
       <herdAnimal>false</herdAnimal>
@@ -518,7 +519,7 @@
       <SwimSpeed>6</SwimSpeed>
       <MarketValue>230</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
-      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
     <race>
       <herdAnimal>true</herdAnimal>
