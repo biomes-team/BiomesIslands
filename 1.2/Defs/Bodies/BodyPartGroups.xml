@@ -23,5 +23,16 @@
 			<li>MovingLimbCore</li>
 		</tags>
 	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>FishTail</defName>
+		<label>tail</label>
+		<hitPoints>15</hitPoints>
+		<permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
 
 </Defs>

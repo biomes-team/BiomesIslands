@@ -9,7 +9,7 @@
       <depth>Outside</depth>
       <parts>
         <li>
-          <def>Tail</def>
+          <def>FishTail</def>
           <height>Bottom</height>
           <coverage>0.1</coverage>
         </li>
