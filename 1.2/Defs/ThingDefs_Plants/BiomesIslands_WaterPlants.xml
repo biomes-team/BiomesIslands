@@ -19,13 +19,13 @@
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>false</allowInDeepWater>
+            <allowInDeepWater>true</allowInDeepWater>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
     <plant>
-		<fertilityMin>0.5</fertilityMin>
+		<fertilityMin>0.3</fertilityMin>
 		<fertilitySensitivity>1</fertilitySensitivity>
 		<growDays>3</growDays>
 		<maxMeshCount>4</maxMeshCount>
