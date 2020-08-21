@@ -44,6 +44,11 @@
     </Reference>
     <Reference Include="BiomesCore">
       <HintPath>..\..\..\..\BiomesCore\1.2\Assemblies\BiomesCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Swimming">
+      <HintPath>..\..\..\..\BiomesCore\1.2\Assemblies\Swimming.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -313,6 +318,7 @@
     <Compile Include="GenSteps\GenStep_IslandElevation.cs" />
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
     <Compile Include="GenSteps\GenStep_Oasis.cs" />
+    <Compile Include="Incidents\Incident_AquaticArrival.cs" />
     <Compile Include="Patches\GenStep_ElevationFertility.cs" />
     <Compile Include="Patches\GenStep_IslandScatterables.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />

@@ -22,5 +22,14 @@ namespace BiomesIslands
         public static void Log(string message) => Verse.Log.Message(PrefixMessage(message));
 
         private static string PrefixMessage(string message) => $"[{Name} v{Version}] {message}";
+
+        public static bool IsAquatic(this PawnKindDef kind)
+        {
+            if (kind.race.HasModExtension<Swimming.AquaticExtension>())
+            {
+                return kind.race.GetModExtension<Swimming.AquaticExtension>().aquatic;
+            }
+            return false;
+        }
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =========================== Good ============================-->
+
+  <IncidentDef>
+    <defName>AquaticArrival</defName>
+    <label>aquatic arrival</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_TropicalIsland</li>
+      <li>BiomesIslands_TundraIsland</li>
+    </allowedBiomes>
+    <workerClass>BiomesIslands.Incidents.Incident_AquaticArrival</workerClass>
+    <baseChance>1.0</baseChance>
+    <letterLabel>Aquatic migration: {0} and {1}</letterLabel>
+    <letterText>A group of {0} has come to the island to feed along with a smaller group of {1} predators.\n\n</letterText>
+    <letterDef>NeutralEvent</letterDef>
+  </IncidentDef>
+</Defs>
