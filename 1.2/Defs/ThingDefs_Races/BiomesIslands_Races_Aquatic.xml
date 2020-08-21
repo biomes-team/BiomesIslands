@@ -619,6 +619,7 @@
 		</comps>
         <race>
             <herdAnimal>false</herdAnimal>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
             <body>BiomesCore_Snail</body>
             <baseHungerRate>0.3</baseHungerRate>
             <baseBodySize>0.15</baseBodySize>
