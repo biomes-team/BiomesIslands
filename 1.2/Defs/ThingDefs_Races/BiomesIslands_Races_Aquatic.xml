@@ -607,7 +607,7 @@
             <SwimSpeed>8</SwimSpeed>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <ComfyTemperatureMax>45</ComfyTemperatureMax>
-            <MarketValue>1500</MarketValue>
+            <MarketValue>100</MarketValue>
         </statBases>
 		<comps>
 		  <li Class="CompProperties_EggLayer">
@@ -617,6 +617,18 @@
 			<eggCountRange>1~4</eggCountRange>
 		  </li>
 		</comps>
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                <li>Blunt</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            </li>
+        </tools>
         <race>
             <herdAnimal>false</herdAnimal>
             <herdMigrationAllowed>false</herdMigrationAllowed>
