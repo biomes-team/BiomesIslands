@@ -17,7 +17,7 @@
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<herdMigrationAllowed>true</herdMigrationAllowed>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>0.25</baseBodySize>
 			<baseHealthScale>0.6</baseHealthScale>
 			<baseHungerRate>0.30</baseHungerRate>
