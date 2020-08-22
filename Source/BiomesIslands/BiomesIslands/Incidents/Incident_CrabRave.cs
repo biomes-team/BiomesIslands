@@ -37,6 +37,7 @@ namespace BiomesIslands.Incidents
 				IntVec3 loc = CellFinder.RandomClosewalkCellNear(start, map, 10);
 				GenSpawn.Spawn(newThing, loc, map, rot);
 			}
+			Find.MusicManagerPlay.ForceStartSong(DefDatabase<SongDef>.GetNamed("Biomes_LobsterRave"), false);
 			string letterText = string.Format(def.letterText, crabKind.GetLabelPlural(), crabKind.label).CapitalizeFirst();
 			SendStandardLetter(def.letterLabel, letterText, def.letterDef, parms, crabs[0]);
 			return true;
@@ -96,6 +97,7 @@ namespace BiomesIslands.Incidents
 				Pawn spawnedCrab = ((Pawn)GenSpawn.Spawn(PawnGenerator.GeneratePawn(crab), loc, map));
 				spawnedCrab.needs.food.CurLevelPercentage = 1f;
 			}
+			Find.MusicManagerPlay.ForceStartSong(DefDatabase<SongDef>.GetNamed("Biomes_LobsterRave"), false);
 			SendStandardLetter(def.letterLabel, def.letterText, def.letterDef, parms, new TargetInfo(result, map));
 			return true;
 		}

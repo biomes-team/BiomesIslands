@@ -317,7 +317,6 @@
     <Compile Include="GenSteps\GenStep_Island.cs" />
     <Compile Include="GenSteps\GenStep_IslandElevation.cs" />
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
-    <Compile Include="GenSteps\GenStep_Oasis.cs" />
     <Compile Include="Incidents\Incident_AquaticArrival.cs" />
     <Compile Include="Incidents\Incident_CrabRave.cs" />
     <Compile Include="Patches\GenStep_ElevationFertility.cs" />
