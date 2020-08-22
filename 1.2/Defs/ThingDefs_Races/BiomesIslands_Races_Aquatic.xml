@@ -284,7 +284,7 @@
             <trainability>Simple</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
-            <meatLabel>fish meat</meatLabel>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
             <lifeStageAges>
                 <li>
                     <def>BiomesIslands_HammerheadBabyTiny</def>
@@ -464,6 +464,7 @@
             <trainability>Simple</trainability>
             <manhunterOnDamageChance>0</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
             <litterSizeCurve>
                 <points>
                 <li>(0.5, 0)</li>
@@ -820,6 +821,7 @@
             <trainability>Simple</trainability>
             <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
             <lifeStageAges>
                 <li>
                     <def>BiomesIslands_RedSnapperBabyTiny</def>
