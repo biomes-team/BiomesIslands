@@ -62,11 +62,11 @@ namespace BiomesIslands.Incidents
 
 	class Incident_RavenousCrabs : IncidentWorker
     {
-		protected static readonly FloatRange CountPerColonistRange = new FloatRange(1f, 1.5f);
+		protected static readonly FloatRange CountPerColonistRange = new FloatRange(2f, 3f);
 
-		protected const int MinCount = 1;
+		protected const int MinCount = 2;
 
-		protected const int MaxCount = 10;
+		protected const int MaxCount = 20;
 
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
