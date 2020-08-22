@@ -23,4 +23,49 @@
     <letterText>A group of {0} has come to the island to feed along with a smaller group of {1} predators.\n\n</letterText>
     <letterDef>NeutralEvent</letterDef>
   </IncidentDef>
+
+  <IncidentDef>
+    <defName>CrabMigration</defName>
+    <label>crab migration</label>
+    <category>Misc</category>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_TropicalIsland</li>
+    </allowedBiomes>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BiomesIslands.Incidents.Incident_CrabMigration</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Crab Migration</letterLabel>
+    <letterText>A group of {0} migrating to your island have just arrived.\n\n</letterText>
+    <letterDef>NeutralEvent</letterDef>
+  </IncidentDef>
+  
+  <!-- =========================== Bad ============================-->
+
+  <IncidentDef>
+    <defName>RevenousCrabs</defName>
+    <label>ravenous crabs</label>
+    <category>Misc</category>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_TropicalIsland</li>
+    </allowedBiomes>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BiomesIslands.Incidents.Incident_RavenousCrabs</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Ravenous Crabs!</letterLabel>
+    <letterText>A group of hungry, island scouring crabs as just arrived.\n\nTry to eliminate them before they eat last food source in the region.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+  </IncidentDef>
+ 
 </Defs>

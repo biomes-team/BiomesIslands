@@ -14,19 +14,10 @@ namespace BiomesIslands.Incidents
 
 		public const float MinTotalBodySize = 4f;
 
-		public bool IsIslandBiome(Map map)
-		{
-			if (map.Biome.HasModExtension<BiomesCore.DefModExtensions.BiomesMap>())
-            {
-				return map.Biome.GetModExtension<BiomesCore.DefModExtensions.BiomesMap>().isIsland;
-			}
-			return false;
-		}
-
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-			return IsIslandBiome(map) && TryFindPreyAnimalKind(map.Tile, out PawnKindDef _) && TryFindPredatorAnimalKind(map.Tile, out PawnKindDef _);
+			return TryFindPreyAnimalKind(map.Tile, out PawnKindDef _) && TryFindPredatorAnimalKind(map.Tile, out PawnKindDef _);
 		}
 
 		protected override bool TryExecuteWorker(IncidentParms parms)

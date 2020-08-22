@@ -8,6 +8,7 @@
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<SwimSpeed>6</SwimSpeed>
+			<HungerRateMultiplier>3</HungerRateMultiplier>
 			<MarketValue>110</MarketValue>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
@@ -16,6 +17,7 @@
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>true</herdMigrationAllowed>
 			<baseBodySize>0.25</baseBodySize>
 			<baseHealthScale>0.6</baseHealthScale>
 			<baseHungerRate>0.30</baseHungerRate>
@@ -368,7 +370,7 @@
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<wildness>0.10</wildness>
-            <meatLabel>crab meat</meatLabel>
+			<meatLabel>crab meat</meatLabel>
 			<meatColor>(251,172,202)</meatColor>
 		</race>
 		<comps>
