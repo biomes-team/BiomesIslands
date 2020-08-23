@@ -165,8 +165,8 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BiomesIslands_FiddlerCrab</defName>
-		<label>rimcrab</label>
-		<race>BiomesIslands_RimCrab</race>
+		<label>fiddler crab</label>
+		<race>BiomesIslands_FiddlerCrab</race>
 		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.35</ecoSystemWeight>
 		<wildGroupSize>
