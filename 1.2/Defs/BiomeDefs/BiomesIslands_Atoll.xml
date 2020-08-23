@@ -186,8 +186,9 @@
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 		
 	<!-- aquatic grazers -->
-		<BiomesIslands_Sardine>3.4</BiomesIslands_Sardine>
+		<BiomesIslands_Sardine>1.4</BiomesIslands_Sardine>
 		<BiomesIslands_BlueSeaSnail>0.6</BiomesIslands_BlueSeaSnail>
+		<BiomesIslands_LimepeelAngelfish>2.0</BiomesIslands_LimepeelAngelfish>
 	<!-- aquatic predators -->
 		<BiomesIslands_RedSnapper>0.18</BiomesIslands_RedSnapper>
 		<BiomesIslands_Tuna>0.22</BiomesIslands_Tuna>

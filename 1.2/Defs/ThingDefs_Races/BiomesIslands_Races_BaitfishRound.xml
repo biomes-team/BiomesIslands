@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- ================ Baitfish Base ================ -->
-    <LifeStageDef ParentName="AnimalBaby" Abstract="true" Name="BiomesIslands_BaitfishBabyTinyBase">
+<!-- ================ BaitfishRound Base ================ -->
+    <LifeStageDef ParentName="AnimalBaby" Abstract="true" Name="BiomesIslands_BaitfishRoundBabyTinyBase">
         <bodySizeFactor>0.1</bodySizeFactor>
         <foodMaxFactor>4</foodMaxFactor>
         <statFactors>
@@ -11,8 +11,8 @@
         </statFactors>
     </LifeStageDef>
 
-    <LifeStageDef Name="BiomesIslands_BaitfishJuvenileBase" Abstract="true">
-        <defName>BiomesIslands_BaitfishJuvenileBase</defName>
+    <LifeStageDef Name="BiomesIslands_BaitfishRoundJuvenileBase" Abstract="true">
+        <defName>BiomesIslands_BaitfishRoundJuvenileBase</defName>
 		<label>juvenile</label>
         <voxPitch>1.2</voxPitch>
         <bodySizeFactor>0.5</bodySizeFactor>
@@ -27,8 +27,8 @@
         </statFactors>
     </LifeStageDef>
 
-    <LifeStageDef Name="BiomesIslands_BaitfishAdultBase" Abstract="true">
-		<defName>BiomesIslands_BaitfishAdultBase</defName>
+    <LifeStageDef Name="BiomesIslands_BaitfishRoundAdultBase" Abstract="true">
+		<defName>BiomesIslands_BaitfishRoundAdultBase</defName>
         <label>adult</label>
         <visible>false</visible>
         <reproductive>true</reproductive>
@@ -37,8 +37,8 @@
        
     </LifeStageDef>
 
-    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail" Anstract="true" Name="BiomesIslands_BaitfishBase">
-	<defName>BiomesIslands_BaitfishBase</defName>
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail" Anstract="true" Name="BiomesIslands_BaitfishRoundBase">
+	<defName>BiomesIslands_BaitfishRoundBase</defName>
 	<label>fish</label>
         <description>A small schooling fish.</description>
         <statBases>
@@ -87,72 +87,72 @@
         </race>
     </ThingDef>
 
-    <PawnKindDef ParentName="AnimalKindBase" Abstract="true" Name="BiomesIslands_BaseBaitfish">
+    <PawnKindDef ParentName="AnimalKindBase" Abstract="true" Name="BiomesIslands_BaseBaitfishRound">
         <combatPower>15</combatPower>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
-		<wildGroupSize>5~15</wildGroupSize>
+		<wildGroupSize>3~8</wildGroupSize>
 	</PawnKindDef>
 	
 	
-	<!-- ================ Sardine ================ -->
+	<!-- ================ Limepeel Angelfish ================ -->
 	
 		
-	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
-        <defName>BiomesIslands_SardineBabyTiny</defName>
+	<LifeStageDef ParentName="BiomesIslands_BaitfishRoundBabyTinyBase" >
+        <defName>BiomesIslands_LimepeelAnglfishBabyTiny</defName>
         <modExtensions>
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRoundSubmerged</texPath>
                 <drawSize>0.3</drawSize>
-				<color>(160,180,180)</color>
+				<color>(150,220,30)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
     </LifeStageDef>
 	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
-		<defName>BiomesIslands_SardineJuvenile</defName>
+	<LifeStageDef ParentName="BiomesIslands_BaitfishRoundJuvenileBase" >
+		<defName>BiomesIslands_LimepeelAnglfishJuvenile</defName>
         <modExtensions>
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRoundSubmerged</texPath>
                 <drawSize>0.5</drawSize>
-				<color>(160,180,180)</color>
+				<color>(150,220,30)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
     </LifeStageDef>
 	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
-        <defName>BiomesIslands_SardineAdult</defName>
+	<LifeStageDef ParentName="BiomesIslands_BaitfishRoundAdultBase">
+        <defName>BiomesIslands_LimepeelAnglfishAdult</defName>
         <modExtensions>
         <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
             <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
             <bodyGraphicData>
-                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFishSubmerged</texPath>
-                <drawSize>0.7</drawSize>
-				<color>(160,180,180)</color>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRoundSubmerged</texPath>
+                <drawSize>0.8</drawSize>
+				<color>(150,220,30)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
     </LifeStageDef>
 	
-    <ThingDef ParentName="BiomesIslands_BaitfishBase" >
-        <defName>BiomesIslands_Sardine</defName>
-        <label>sardine</label>
+    <ThingDef ParentName="BiomesIslands_BaitfishRoundBase" >
+        <defName>BiomesIslands_LimepeelAngelfish</defName>
+        <label>limepeel angelfish</label>
         <statBases>
-			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
-			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
         </statBases>
 		<comps>
 		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>EggSardineFertilized</eggFertilizedDef>
+			<eggFertilizedDef>EggLimepeelAngelfishFertilized</eggFertilizedDef>
 			<eggFertilizationCountMax>1</eggFertilizationCountMax>
 			<eggLayIntervalDays>12</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>2~5</eggCountRange>
+			<eggCountRange>2~4</eggCountRange>
 		  </li>
 		</comps>
         <race>
@@ -162,15 +162,15 @@
             <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
             <lifeStageAges>
                 <li>
-                    <def>BiomesIslands_SardineBabyTiny</def>
+                    <def>BiomesIslands_LimepeelAnglfishBabyTiny</def>
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>BiomesIslands_SardineJuvenile</def>
+                    <def>BiomesIslands_LimepeelAnglfishJuvenile</def>
                     <minAge>0.1</minAge>
                 </li>
                 <li>
-                    <def>BiomesIslands_SardineAdult</def>
+                    <def>BiomesIslands_LimepeelAnglfishAdult</def>
                     <minAge>0.25</minAge>
                 </li>
             </lifeStageAges>
@@ -178,42 +178,42 @@
     </ThingDef>
 
     
-    <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
-        <defName>BiomesIslands_Sardine</defName>
-        <label>sardine</label>
-        <race>BiomesIslands_Sardine</race>
+    <PawnKindDef ParentName="BiomesIslands_BaseBaitfishRound">
+        <defName>BiomesIslands_LimepeelAngelfish</defName>
+        <label>limepeel angelfish</label>
+        <race>BiomesIslands_LimepeelAngelfish</race>
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
                     <drawSize>0.3</drawSize>
-					<color>(160,180,180)</color>
+					<color>(150,220,30)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
                     <drawSize>0.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
                     <drawSize>0.5</drawSize>
-					<color>(160,180,180)</color>
+					<color>(150,220,30)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
                     <drawSize>0.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.7</drawSize>
-					<color>(160,180,180)</color>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.8</drawSize>
+					<color>(150,220,30)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFish/BiomesIslandsBaitFish</texPath>
-                    <drawSize>0.7</drawSize>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
