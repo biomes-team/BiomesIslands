@@ -22,4 +22,47 @@
     </stuffProps>
   </ThingDef>
   
+  <ThingDef ParentName="LeatherBase">
+    <defName>BiomesIslands_Leather_Sharkskin</defName>
+    <label>sharkskin</label>
+    <description>Sharkskin. Tough, but insulates poorly.</description>
+    <graphicData>
+      <color>(90,110,120)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.6</MarketValue>
+      <StuffPower_Armor_Sharp>1.25</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(90,110,120)</color>
+      <commonality>0.02</commonality>
+	  <statFactors>
+        <Beauty>1.0</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>BiomesIslands_Leather_Fishskin</defName>
+    <label>fishskin</label>
+    <description>Leather from a fish. It doesn't protect very well.</description>
+    <graphicData>
+      <color>(160,190,170)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>21.8</MarketValue>
+      <StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(160,190,170)</color>
+      <commonality>0.06</commonality>
+	  <statFactors>
+        <Beauty>1.0</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
 </Defs>

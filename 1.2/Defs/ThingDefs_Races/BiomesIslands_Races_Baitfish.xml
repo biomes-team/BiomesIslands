@@ -69,6 +69,8 @@
             <herdAnimal>true</herdAnimal>
             <predator>false</predator>
             <body>Fish</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
             <baseHungerRate>0.15</baseHungerRate>
             <baseBodySize>0.12</baseBodySize>
             <baseHealthScale>0.20</baseHealthScale>
@@ -219,5 +221,135 @@
         </lifeStages>
     
 	</PawnKindDef>
+
+
+
+
+	<!-- ================ Limepeel Angelfish ================ -->
+	
+		
+	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
+        <defName>BiomesIslands_LimepeelAnglfishBabyTiny</defName>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRoundSubmerged</texPath>
+                <drawSize>0.3</drawSize>
+				<color>(150,220,30)</color>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+	
+	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
+		<defName>BiomesIslands_LimepeelAnglfishJuvenile</defName>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRoundSubmerged</texPath>
+                <drawSize>0.5</drawSize>
+				<color>(150,220,30)</color>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+	
+	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
+        <defName>BiomesIslands_LimepeelAnglfishAdult</defName>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRoundSubmerged</texPath>
+                <drawSize>0.8</drawSize>
+				<color>(150,220,30)</color>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+	
+    <ThingDef ParentName="BiomesIslands_BaitfishBase" >
+        <defName>BiomesIslands_LimepeelAngelfish</defName>
+        <label>limepeel angelfish</label>
+        <statBases>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+        </statBases>
+		<comps>
+		  <li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>EggLimepeelAngelfishFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>12</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>2~4</eggCountRange>
+		  </li>
+		</comps>
+        <race>
+            <wildness>0.55</wildness>
+            <lifeExpectancy>3</lifeExpectancy>
+            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+            <lifeStageAges>
+                <li>
+                    <def>BiomesIslands_LimepeelAnglfishBabyTiny</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_LimepeelAnglfishJuvenile</def>
+                    <minAge>0.1</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_LimepeelAnglfishAdult</def>
+                    <minAge>0.25</minAge>
+                </li>
+            </lifeStageAges>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
+        <defName>BiomesIslands_LimepeelAngelfish</defName>
+        <label>limepeel angelfish</label>
+        <race>BiomesIslands_LimepeelAngelfish</race>
+		<wildGroupSize>3~8</wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.3</drawSize>
+					<color>(150,220,30)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.5</drawSize>
+					<color>(150,220,30)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.8</drawSize>
+					<color>(150,220,30)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsBaitFishRound/BiomesIslandsBaitFishRound</texPath>
+                    <drawSize>0.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    
+	</PawnKindDef>
+
 
 </Defs>

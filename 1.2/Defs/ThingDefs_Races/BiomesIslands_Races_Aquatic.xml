@@ -99,6 +99,7 @@
             <herdAnimal>false</herdAnimal>
             <predator>true</predator>
             <body>Shark</body>
+			<leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef>
             <baseHungerRate>0.7</baseHungerRate>
             <baseBodySize>2</baseBodySize>
             <baseHealthScale>3.0</baseHealthScale>
@@ -271,8 +272,9 @@
             <herdAnimal>false</herdAnimal>
             <predator>true</predator>
             <body>Shark</body>
+			<leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef>
             <baseHungerRate>0.7</baseHungerRate>
-            <baseBodySize>2</baseBodySize>
+            <baseBodySize>1.5</baseBodySize>
             <baseHealthScale>2.0</baseHealthScale>
             <foodType>CarnivoreAnimal</foodType>
             <gestationPeriodDays>360</gestationPeriodDays>
@@ -452,6 +454,7 @@
             <herdAnimal>false</herdAnimal>
             <predator>true</predator>
             <body>Fish</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
             <baseHungerRate>0.85</baseHungerRate>
             <baseBodySize>2</baseBodySize>
             <baseHealthScale>1.5</baseHealthScale>
@@ -609,6 +612,7 @@
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <ComfyTemperatureMax>45</ComfyTemperatureMax>
             <MarketValue>100</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
         </statBases>
 		<comps>
 		  <li Class="CompProperties_EggLayer">
@@ -809,6 +813,7 @@
             <herdAnimal>false</herdAnimal>
             <predator>true</predator>
             <body>Fish</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
             <baseHungerRate>0.85</baseHungerRate>
             <baseBodySize>1.3</baseBodySize>
             <baseHealthScale>1.5</baseHealthScale>
