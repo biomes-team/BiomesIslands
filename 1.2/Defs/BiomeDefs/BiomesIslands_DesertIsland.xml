@@ -172,6 +172,7 @@
   <!-- aquatic grazers -->
 	    <BiomesIslands_Sardine>3.5</BiomesIslands_Sardine>
 		<BiomesIslands_LimepeelAngelfish>1.5</BiomesIslands_LimepeelAngelfish>
+		<BiomesIslands_Trout>0.15</BiomesIslands_Trout>
 
   <!-- aquatic predators -->
       <BiomesIslands_RedSnapper>0.3</BiomesIslands_RedSnapper>

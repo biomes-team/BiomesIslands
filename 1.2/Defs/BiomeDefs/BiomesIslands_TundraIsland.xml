@@ -189,7 +189,8 @@
 	  
     <!-- Water animals have ~50% higher stats relative to other islands to keep water pops up -->
 	<!-- aquatic grazers -->
-	  <BiomesIslands_Sardine>5.0</BiomesIslands_Sardine>
+	  <BiomesIslands_Sardine>3.0</BiomesIslands_Sardine>
+	  <BiomesIslands_Trout>2.0</BiomesIslands_Trout>
 	  
 	<!-- aquatic predators -->
 	  <BiomesIslands_Tuna>0.45</BiomesIslands_Tuna>

@@ -886,4 +886,192 @@
         </lifeStages>
     </PawnKindDef>
 	
+	
+	<!-- Trout -->
+	
+    <!-- Copied from LifeStages.xml, added modExtensions -->
+    <LifeStageDef ParentName="AnimalBaby">
+        <defName>BiomesIslands_TroutBabyTiny</defName>
+        <bodySizeFactor>0.1</bodySizeFactor>
+        <foodMaxFactor>4</foodMaxFactor>
+        <statFactors>
+            <MoveSpeed>0.5</MoveSpeed>
+            <SwimSpeed>0.5</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTroutSubmerged</texPath>
+                <drawSize>0.5</drawSize>
+				<color>(180,170,160)</color>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_TroutJuvenile</defName>
+        <label>juvenile</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <meleeDamageFactor>0.75</meleeDamageFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+            <SwimSpeed>0.9</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTroutSubmerged</texPath>
+                <drawSize>1.2</drawSize>
+				<color>(180,170,160)</color>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_TroutAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTroutSubmerged</texPath>
+                <drawSize>1.6</drawSize>
+				<color>(180,170,160)</color>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
+        <defName>BiomesIslands_Trout</defName>
+        <label>trout</label>
+        <description>A large herbivorous fish.</description>
+        <statBases>
+            <MoveSpeed>0</MoveSpeed>
+            <SwimSpeed>4</SwimSpeed>
+            <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+            <ComfyTemperatureMax>45</ComfyTemperatureMax>
+            <MarketValue>120</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>teeth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>7</power>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                        <def>Stun</def>
+                        <amount>9</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+                <cooldownTime>2.2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+        </tools>
+		<comps>
+		  <li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BiomesIslands_EggTroutFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~3</eggCountRange>
+		  </li>
+		</comps>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <body>Fish</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+            <baseHungerRate>0.50</baseHungerRate>
+            <baseBodySize>0.9</baseBodySize>
+            <baseHealthScale>0.9</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <packAnimal>false</packAnimal>
+            <wildness>0.70</wildness>
+            <nuzzleMtbHours>60</nuzzleMtbHours>
+            <petness>0.1</petness>
+            <lifeExpectancy>15</lifeExpectancy>
+            <trainability>Simple</trainability>
+            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
+            <lifeStageAges>
+                <li>
+                    <def>BiomesIslands_TroutBabyTiny</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_TroutJuvenile</def>
+                    <minAge>0.30</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_TroutAdult</def>
+                    <minAge>0.55</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>BiomesIslands_Trout</defName>
+        <label>trout</label>
+        <race>BiomesIslands_Trout</race>
+        <combatPower>80</combatPower>
+		<wildGroupSize>2~5</wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTrout</texPath>
+                    <drawSize>0.5</drawSize>
+					<color>(180,170,160)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTrout</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTrout</texPath>
+                    <drawSize>1.2</drawSize>
+					<color>(180,170,160)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTrout</texPath>
+                    <drawSize>1.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTrout</texPath>
+                    <drawSize>1.6</drawSize>
+					<color>(180,170,160)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/BiomesIslandsTrout/BiomesIslandsTrout</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+	
 </Defs>

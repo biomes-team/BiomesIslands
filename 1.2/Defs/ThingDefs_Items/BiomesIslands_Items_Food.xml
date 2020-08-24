@@ -447,4 +447,23 @@
     </comps>
   </ThingDef>
   
+  
+   <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggTroutFertilized</defName>
+	<label>trout egg (fert.)</label>
+	<description>A fertilized trout egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(250,110,90)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>28.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Trout</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
 </Defs>
