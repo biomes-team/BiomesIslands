@@ -110,7 +110,7 @@
             <nuzzleMtbHours>275</nuzzleMtbHours>
             <petness>0.01</petness>
             <lifeExpectancy>35</lifeExpectancy>
-            <trainability>Simple</trainability>
+            <trainability>Intermediate</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
             <meatLabel>fish meat</meatLabel>
@@ -283,7 +283,7 @@
             <nuzzleMtbHours>275</nuzzleMtbHours>
             <petness>0.01</petness>
             <lifeExpectancy>35</lifeExpectancy>
-            <trainability>Simple</trainability>
+            <trainability>Intermediate</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
@@ -648,7 +648,7 @@
 			<nuzzleMtbHours>275</nuzzleMtbHours>
             <petness>0.01</petness>
             <lifeExpectancy>35</lifeExpectancy>
-			<trainability>Simple</trainability>
+			<trainability>None</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
             <meatLabel>snail meat</meatLabel>
