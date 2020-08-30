@@ -2,17 +2,17 @@
 <Defs>
 
 <ThingDef ParentName="PlantBase">
-    <defName>BiomesIslands_Kelp</defName>
+	<defName>BiomesIslands_Kelp</defName>
     <label>kelp</label>
     <description>An aquatic plant</description>
     <statBases>
-      <MaxHitPoints>90</MaxHitPoints>
-      <Nutrition>0.2</Nutrition>
+		<MaxHitPoints>90</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
     </statBases>
     <pathCost>20</pathCost>
     <graphicData>
-	  <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>BiomesIslands_Things/Plant/Kelp/Kelp</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Kelp/Kelp</texPath>
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
@@ -32,8 +32,8 @@
 		<visualSizeRange>1.2~1.5</visualSizeRange>
 		<topWindExposure>0.2</topWindExposure>
 		<wildClusterRadius>8</wildClusterRadius>
-		<wildClusterWeight>20</wildClusterWeight>
-        <wildOrder>1</wildOrder>
+		<wildClusterWeight>50</wildClusterWeight>
+		<wildOrder>2</wildOrder>
         <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>
   </ThingDef>
