@@ -16,7 +16,7 @@
     <rotatable>false</rotatable>
 	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
     <graphicData>
-      <texPath>Things/Building/AnimalBed/AquaticSleepingSpot</texPath>
+      <texPath>BiomesIslands_Things/Building/AnimalBed/AquaticSleepingSpot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>0.80</uiIconScale>
@@ -53,9 +53,9 @@
     <passability>PassThroughOnly</passability>
     <canOverlapZones>false</canOverlapZones>
     <graphicData>
-      <texPath>Things/Building/AnimalBed/AquaticKelpBed</texPath>
+      <texPath>BiomesIslands_Things/Building/AnimalBed/AquaticKelpBed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.2</drawSize>
+      <drawSize>1.3</drawSize>
     </graphicData>
     <!--<castEdgeShadows>true</castEdgeShadows>-->
     <stuffCategories>

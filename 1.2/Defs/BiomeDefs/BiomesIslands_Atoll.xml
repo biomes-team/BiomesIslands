@@ -26,7 +26,7 @@
 			<minTemperature>15</minTemperature>
 			<minRainfall>600</minRainfall>
 			<frequency>20</frequency>
-			<materialPath>World/MapGraphics/Atoll</materialPath>
+			<materialPath>BiomesIslands_World/MapGraphics/Atoll</materialPath>
         </li>
 	</modExtensions>
     

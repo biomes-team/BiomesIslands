@@ -105,11 +105,11 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/BiomesIslandsGigantaconda</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Gigantaconda</texPath>
           <drawSize>2.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Dessicated_Gigantaconda</texPath>
           <drawSize>2.2</drawSize>
           <shadowData>
             <volume>(0.25, 0.25, 0.25)</volume>
@@ -119,11 +119,11 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/BiomesIslandsGigantaconda</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Gigantaconda</texPath>
           <drawSize>2.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Dessicated_Gigantaconda</texPath>
           <drawSize>2.8</drawSize>
           <shadowData>
             <volume>(0.35, 0.35, 0.35)</volume>
@@ -133,11 +133,11 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/BiomesIslandsGigantaconda</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Gigantaconda</texPath>
           <drawSize>3.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGigantaconda/Dessicated_BiomesIslandsGigantaconda</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Dessicated_Gigantaconda</texPath>
           <drawSize>3.6</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
@@ -240,27 +240,27 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenSeaTurtle/BiomesIslandsGreenSeaTurtle</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
           <drawSize>1.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenSeaTurtle/Dessicated_BiomesIslandsGreenSeaTurtle</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
           <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenSeaTurtle/BiomesIslandsGreenSeaTurtle</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
           <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenSeaTurtle/Dessicated_BiomesIslandsGreenSeaTurtle</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenSeaTurtle/BiomesIslandsGreenSeaTurtle</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
           <drawSize>2.2</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
@@ -268,7 +268,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenSeaTurtle/Dessicated_BiomesIslandsGreenSeaTurtle</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
           <drawSize>2.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -388,31 +388,31 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/BiomesIslandsMarineIguana</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguana</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/Dessicated_Iguana</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_Iguana</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/BiomesIslandsMarineIguana</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguana</texPath>
           <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/Dessicated_BiomesIslandsMarineIguana</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_MarineIguana</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/BiomesIslandsMarineIguana</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguana</texPath>
           <drawSize>1.7</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsMarineIguana/Dessicated_BiomesIslandsMarineIguana</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_MarineIguana</texPath>
           <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -504,31 +504,31 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/BiomesIslandsGreenGecko</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenGecko/GreenGecko</texPath>
           <drawSize>0.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenGecko/Dessicated_GreenGecko_east</texPath>
           <drawSize>0.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/BiomesIslandsGreenGecko</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenGecko/GreenGecko</texPath>
           <drawSize>0.7</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenGecko/Dessicated_GreenGecko_east</texPath>
           <drawSize>0.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/BiomesIslandsGreenGecko</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenGecko/GreenGecko</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGreenGecko/Dessicated_BiomesIslandsGreenGecko_east</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenGecko/Dessicated_GreenGecko_east</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>

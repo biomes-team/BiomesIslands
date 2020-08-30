@@ -24,7 +24,7 @@
 			<minTemperature>-19</minTemperature>
 			<maxRainfall>600</maxRainfall>
 			<frequency>20</frequency>
-			<materialPath>World/MapGraphics/TundraIsland</materialPath>
+			<materialPath>BiomesIslands_World/MapGraphics/TundraIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
 	</modExtensions>

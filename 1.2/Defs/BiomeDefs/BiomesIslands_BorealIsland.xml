@@ -23,7 +23,7 @@
 			<maxTemperature>2</maxTemperature>
 			<minRainfall>600</minRainfall>
 			<frequency>20</frequency>
-			<materialPath>World/MapGraphics/BorealIsland</materialPath>
+			<materialPath>BiomesIslands_World/MapGraphics/BorealIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
 	</modExtensions>

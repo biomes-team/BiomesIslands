@@ -74,31 +74,31 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsBlueCrab/BiomesIslandsBlueCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueCrab/BlueCrab</texPath>
 					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsBlueCrab/Dessicated_BiomesIslandsBlueCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueCrab/Dessicated_BlueCrab</texPath>
 					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsBlueCrab/BiomesIslandsBlueCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueCrab/BlueCrab</texPath>
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsBlueCrab/Dessicated_BiomesIslandsBlueCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueCrab/Dessicated_BlueCrab</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsBlueCrab/BiomesIslandsBlueCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueCrab/BlueCrab</texPath>
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsBlueCrab/Dessicated_BiomesIslandsBlueCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueCrab/Dessicated_BlueCrab</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData> 
 			</li>
@@ -176,55 +176,55 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/BiomesIslandsFiddlerCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/FiddlerCrab</texPath>
 					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/BiomesIslandsFiddlerCrabFemale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/FiddlerCrabFemale</texPath>
 					<drawSize>0.9</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/Dessicated_BiomesIslandsFiddlerCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrab</texPath>
 					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/Dessicated_BiomesIslandsFiddlerCrabFemale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrabFemale</texPath>
 					<drawSize>0.9</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/BiomesIslandsFiddlerCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/FiddlerCrab</texPath>
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/BiomesIslandsFiddlerCrabFemale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/FiddlerCrabFemale</texPath>
 					<drawSize>1.25</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/Dessicated_BiomesIslandsFiddlerCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrab</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/Dessicated_BiomesIslandsFiddlerCrabFemale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrabFemale</texPath>
 					<drawSize>1.25</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/BiomesIslandsFiddlerCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/FiddlerCrab</texPath>
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/BiomesIslandsFiddlerCrabFemale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/FiddlerCrabFemale</texPath>
 					<drawSize>1.6</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/Dessicated_BiomesIslandsFiddlerCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrab</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData> 
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsFiddlerCrab/Dessicated_BiomesIslandsFiddlerCrabFemale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrabFemale</texPath>
 					<drawSize>1.6</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
@@ -304,39 +304,39 @@
     </wildGroupSize>
     <alternateGraphicChance>0.8</alternateGraphicChance>
     <alternateGraphics>
-      <li><texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrab1</texPath></li>
-      <li><texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrab2</texPath></li>
-      <li><texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrab3</texPath></li>
-      <li><texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrab4</texPath></li>
+      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab1</texPath></li>
+      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab2</texPath></li>
+      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab3</texPath></li>
+      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab4</texPath></li>
     </alternateGraphics>
 	<lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrab</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
           <drawSize>0.4</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/Dessicated_BiomesIslandsHermitCrab</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
           <drawSize>0.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrab</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
           <drawSize>0.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/Dessicated_BiomesIslandsHermitCrab</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
           <drawSize>0.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/BiomesIslandsHermitCrab</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsHermitCrab/Dessicated_BiomesIslandsHermitCrab</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
           <drawSize>0.8</drawSize>
         </dessicatedBodyGraphicData> 
       </li>
@@ -420,31 +420,31 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/RimCrab</texPath>
 					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
 					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/RimCrab</texPath>
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/BiomesIslandsRimCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/RimCrab</texPath>
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/BiomesIslandsRimCrab/Dessicated_BiomesIslandsRimCrab</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData> 
 			</li>

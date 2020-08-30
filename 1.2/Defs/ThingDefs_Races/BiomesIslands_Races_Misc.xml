@@ -149,7 +149,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGiantMantis/BiomesIslandsGiantMantis</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GiantMantis/GiantMantis</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.2)</volume>
@@ -157,13 +157,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGiantMantis/Dessicated_BiomesIslandsGiantMantis</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GiantMantis/Dessicated_GiantMantis</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGiantMantis/BiomesIslandsGiantMantis</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GiantMantis/GiantMantis</texPath>
           <drawSize>2.75</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.35)</volume>
@@ -171,13 +171,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGiantMantis/Dessicated_BiomesIslandsGiantMantis</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GiantMantis/Dessicated_GiantMantis</texPath>
           <drawSize>2.75</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGiantMantis/BiomesIslandsGiantMantis</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GiantMantis/GiantMantis</texPath>
           <drawSize>3</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.5)</volume>
@@ -185,7 +185,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsGiantMantis/Dessicated_BiomesIslandsGiantMantis</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GiantMantis/Dessicated_GiantMantis</texPath>
           <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
       </li>

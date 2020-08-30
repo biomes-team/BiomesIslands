@@ -7,7 +7,7 @@
     <label>banana</label>
     <description>Long yellow fruit with a thick peel and creamy flesh.</description>
     <graphicData>
-      <texPath>Things/Item/Crops/Bananas</texPath>
+      <texPath>BiomesIslands_Things/Item/Crops/Bananas</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.2</MarketValue>
@@ -31,7 +31,7 @@
     <label>devil's claw leaf</label>
     <description>Edible leaves from the devil's claw tree. A healthy leafy green!</description>
     <graphicData>
-      <texPath>Things/Item/Crops/DevilsClaw</texPath>
+      <texPath>BiomesIslands_Things/Item/Crops/DevilsClaw</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.2</MarketValue>
@@ -54,7 +54,7 @@
     <label>orange</label>
     <description>Round, orange and with a sweet juice.</description>
     <graphicData>
-      <texPath>Things/Item/Crops/Oranges</texPath>
+      <texPath>BiomesIslands_Things/Item/Crops/Oranges</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.2</MarketValue>
@@ -79,7 +79,7 @@
     <label>pineapple</label>
     <description>Big round fruit with a hard shell and a milky center</description>
     <graphicData>
-      <texPath>Things/Item/Crops/Sliced Pineapple</texPath>
+      <texPath>BiomesIslands_Things/Item/Crops/Sliced Pineapple</texPath>
     </graphicData>
     <statBases>
       <MarketValue>4.2</MarketValue>
@@ -106,7 +106,7 @@
     <label>coconut</label>
     <description>Big round fruit with a hard shell and a milky center</description>
     <graphicData>
-      <texPath>Things/Item/Crops/Coconut</texPath>
+      <texPath>BiomesIslands_Things/Item/Crops/Coconut</texPath>
     </graphicData>
     <statBases>
       <MarketValue>4.2</MarketValue>

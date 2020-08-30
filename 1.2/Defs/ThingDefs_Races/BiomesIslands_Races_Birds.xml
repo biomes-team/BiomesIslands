@@ -112,31 +112,31 @@
       <li>
 	  <label>kiwi chick</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/BiomesIslandsKiwi</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Kiwi</texPath>
           <drawSize>0.45</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
           <drawSize>0.45</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/BiomesIslandsKiwi</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Kiwi</texPath>
           <drawSize>0.75</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
           <drawSize>0.75</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/BiomesIslandsKiwi</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Kiwi</texPath>
           <drawSize>0.85</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
           <drawSize>0.85</drawSize>
         </dessicatedBodyGraphicData> 
       </li>
@@ -156,7 +156,7 @@
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagullFlying</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
           <!-- Winspan takes 50% more graphical space -->
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
@@ -182,7 +182,7 @@
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagullFlying</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
           <!-- Winspan takes 50% more graphical space -->
           <drawSize>1.5</drawSize>
         </bodyGraphicData>
@@ -201,7 +201,7 @@
       <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagullFlying</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
           <!-- Winspan takes 50% more graphical space -->
           <drawSize>1.8</drawSize>
         </bodyGraphicData>
@@ -327,31 +327,31 @@
       <li>
 	  <label>seagull chick</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagull</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/Seagull</texPath>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
           <drawSize>0.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagull</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/Seagull</texPath>
           <drawSize>1.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
           <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsSeagull/BiomesIslandsSeagull</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/Seagull</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsKiwi/Dessicated_BiomesIslandsKiwi</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -466,7 +466,7 @@
       <li>
 	  <label>dodo chick</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/OmegaDodo</texPath>
           <drawSize>1.2</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -474,13 +474,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/Dessicated_OmegaDodo</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
+		  <texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/OmegaDodo</texPath>
           <drawSize>1.6</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
@@ -488,13 +488,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/Dessicated_OmegaDodo</texPath>
           <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/BiomesIslandsOmegaDodo</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/OmegaDodo</texPath>
           <drawSize>1.9</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
@@ -502,7 +502,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsOmegaDodo/Dessicated_BiomesIslandsOmegaDodo</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/Dessicated_OmegaDodo</texPath>
           <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData> 
       </li>
@@ -606,7 +606,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsFlamingo/BiomesIslandsFlamingoChick</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Flamingo/FlamingoChick</texPath>
           <drawSize>1.0</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -614,13 +614,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
           <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsFlamingo/BiomesIslandsFlamingo</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Flamingo/Flamingo</texPath>
           <drawSize>1.3</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
@@ -628,13 +628,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
           <drawSize>1.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/BiomesIslandsFlamingo/BiomesIslandsFlamingo</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Flamingo/Flamingo</texPath>
           <drawSize>1.6</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
@@ -642,7 +642,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
           <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>

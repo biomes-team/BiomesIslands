@@ -22,7 +22,7 @@
 			<minTemperature>0</minTemperature>
 			<maxRainfall>600</maxRainfall>
 			<frequency>20</frequency>
-			<materialPath>World/MapGraphics/DesertIsland</materialPath>
+			<materialPath>BiomesIslands_World/MapGraphics/DesertIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
 	</modExtensions>
