@@ -614,7 +614,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+          <texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
           <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -628,7 +628,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+          <texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
           <drawSize>1.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -642,7 +642,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+          <texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
           <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
