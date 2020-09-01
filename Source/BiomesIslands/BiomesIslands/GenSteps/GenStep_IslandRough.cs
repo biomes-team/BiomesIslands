@@ -29,12 +29,18 @@ namespace BiomesIslands.GenSteps
 
             // adjusts the size of the final island. Smaller numbers = bigger island
             // 2 = island hits the edges of the map
-            float sizeAdj = Rand.Range(2.5f, 3.3f);
+            float sizeAdj = Rand.Range(2.5f, 2.9f);
 
             foreach (IntVec3 current in map.AllCells)
             {
                 float distance = (float)Math.Sqrt(Math.Pow(current.x - mapCenter.x, 2) + Math.Pow(current.z - mapCenter.z, 2));
-                fertility[current] += Math.Max(0, 20 * (1f - (sizeAdj * distance / mapSize)) + 5f * noise.GetValue(current));
+                float addition = 25 * (1f - (sizeAdj * distance / mapSize)) + 5f * noise.GetValue(current);
+                if (addition < 2f)
+                {
+                    addition = 0.4f * addition + 1.2f;
+                }
+                fertility[current] += Math.Max(0, addition);
+
             }
         }
     }
