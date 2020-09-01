@@ -24,24 +24,19 @@ namespace BiomesIslands.GenSteps
         public override void Generate(Map map, GenStepParams parms)
         {
             IntVec3 mapCenter = map.Center;
-
             MapGenFloatGrid fertility = MapGenerator.Fertility;
-
             float mapSize = map.Size.x;
 
+            // how far the circles are from the center of the map
             IntRange NoiseRange = new IntRange(10, 50);
 
-            //NoiseRange.min = (int)(0.05 * map.Size.x);
-            //NoiseRange.max = (int)(0.12 * map.Size.x);
-            NoiseRange.min = (int)(0.04 * map.Size.x);
-            NoiseRange.max = (int)(0.10 * map.Size.x);
+            NoiseRange.min = (int)(0.06 * map.Size.x);
+            NoiseRange.max = (int)(0.12 * map.Size.x);
 
             int x = NoiseRange.RandomInRange;
             int z = NoiseRange.RandomInRange;
 
             IntVec3 mainCenter = mapCenter;
-            //mainCenter.x += x;
-            //mainCenter.z += z;
 
             IntVec3 cutoutCenter = mapCenter;
             if (Rand.Bool)
@@ -55,11 +50,12 @@ namespace BiomesIslands.GenSteps
             cutoutCenter.x -= x;
             cutoutCenter.z -= z;
 
-
             ModuleBase noise = new Perlin(Rand.Range(0.015f, 0.028f), 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
             ModuleBase cutoutNoise = new Perlin(Rand.Range(0.015f, 0.028f), 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
 
             float sizeAdj = Rand.Range(2.8f, 3.8f);
+
+            float multiplier = 2.8f;
 
             foreach (IntVec3 current in map.AllCells)
             {
@@ -72,11 +68,20 @@ namespace BiomesIslands.GenSteps
                 // Adds the cutout
                 addition -= Math.Max(0, 20 * (1f - (sizeAdj * cutoutDist / mapSize)));
 
-                // Shallowize the lagoon
-                addition = Math.Max(0, addition) + Math.Min(0.2f, Math.Max(0, 0.5f - (mainDist / mapSize)));
+                // scale the crescent so that hills show up
+                addition *= multiplier;
 
+                // spread out the edges to make beaches exist
+                if (addition < 2f)
+                {
+                    addition = 0.2f * addition + 1.6f;
+                }
+
+                addition = Math.Max(0, addition);
                 fertility[current] += addition;
             }
+
+            
         }
     }
 }
