@@ -30,8 +30,9 @@
       <color>(90,110,120)</color>
     </graphicData>
     <statBases>
-      <MarketValue>3.6</MarketValue>
+      <MarketValue>5.6</MarketValue>
       <StuffPower_Armor_Sharp>1.25</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
