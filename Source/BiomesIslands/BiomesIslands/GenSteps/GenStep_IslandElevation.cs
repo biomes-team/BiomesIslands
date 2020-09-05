@@ -5,7 +5,7 @@ using RimWorld.Planet;
 using Verse.Noise;
 using UnityEngine;
 using BiomesCore.DefModExtensions;
-using MapDesigner;
+//using MapDesigner;
 
 namespace BiomesIslands.GenSteps
 {
@@ -57,11 +57,11 @@ namespace BiomesIslands.GenSteps
         {
             float freq = 0.025f;
             float lacun = 2.0f;
-            if(ModsConfig.IsActive("zylle.MapDesigner"))
-            {
-                freq = 1.2f * LoadedModManager.GetMod<MapDesigner_Mod>().GetSettings<MapDesignerSettings>().hillSize;
-                lacun = LoadedModManager.GetMod<MapDesigner_Mod>().GetSettings<MapDesignerSettings>().hillSmoothness;
-            }
+            //if(ModsConfig.IsActive("zylle.MapDesigner"))
+            //{
+            //    freq = 1.2f * LoadedModManager.GetMod<MapDesigner_Mod>().GetSettings<MapDesignerSettings>().hillSize;
+            //    lacun = LoadedModManager.GetMod<MapDesigner_Mod>().GetSettings<MapDesignerSettings>().hillSmoothness;
+            //}
 
 
             ModuleBase moduleBase = new Perlin(freq, lacun, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
