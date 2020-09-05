@@ -34,12 +34,11 @@
         <reproductive>true</reproductive>
         <milkable>true</milkable>
         <shearable>true</shearable>
-       
     </LifeStageDef>
 
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail" Anstract="true" Name="BiomesIslands_BaitfishBase">
-	<defName>BiomesIslands_BaitfishBase</defName>
-	<label>fish</label>
+		<defName>BiomesIslands_BaitfishBase</defName>
+		<label>fish</label>
         <description>A small schooling fish.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
@@ -144,6 +143,7 @@
     <ThingDef ParentName="BiomesIslands_BaitfishBase" >
         <defName>BiomesIslands_Sardine</defName>
         <label>sardine</label>
+        <description>A small schooling fish.</description>
         <statBases>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>55</ComfyTemperatureMax>
@@ -183,6 +183,7 @@
     <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
         <defName>BiomesIslands_Sardine</defName>
         <label>sardine</label>
+        <description>A small schooling fish.</description>
         <race>BiomesIslands_Sardine</race>
         <lifeStages>
             <li>

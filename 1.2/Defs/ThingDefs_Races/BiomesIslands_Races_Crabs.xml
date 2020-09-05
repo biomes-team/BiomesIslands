@@ -63,8 +63,8 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BiomesIslands_BlueCrab</defName>
-		<label>rimcrab</label>
-		<race>BiomesIslands_RimCrab</race>
+		<label>blue crab</label>
+		<race>BiomesIslands_BlueCrab</race>
 		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.35</ecoSystemWeight>
 		<wildGroupSize>
