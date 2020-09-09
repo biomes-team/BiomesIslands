@@ -209,6 +209,7 @@
     <!-- aquatic grazers -->
       <BiomesIslands_Sardine>2.5</BiomesIslands_Sardine>
 	  <BiomesIslands_Trout>1.5</BiomesIslands_Trout>
+	  <BiomesIslands_Whale>0.05</BiomesIslands_Whale>
 
     <!-- aquatic predators -->
       <BiomesIslands_Tuna>0.3</BiomesIslands_Tuna>

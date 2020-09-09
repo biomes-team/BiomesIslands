@@ -34,5 +34,27 @@
 			<li>MovingLimbCore</li>
 		</tags>
 	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>WhaleTail</defName>
+		<label>tail</label>
+		<hitPoints>15</hitPoints>
+		<permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Blowhole</defName>
+		<label>blowhole</label>
+		<hitPoints>15</hitPoints>
+		<permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BreathingPathway</li>
+		</tags>
+	</BodyPartDef>
 
 </Defs>

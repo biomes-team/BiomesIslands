@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Whale -->
+
+    <!-- Copied from LifeStages.xml, added modExtensions -->
+    <LifeStageDef ParentName="AnimalBaby">
+        <defName>BiomesIslands_WhaleBabyTiny</defName>
+        <bodySizeFactor>0.1</bodySizeFactor>
+        <foodMaxFactor>4</foodMaxFactor>
+        <statFactors>
+            <MoveSpeed>0.6</MoveSpeed>
+            <SwimSpeed>0.6</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+                <drawSize>2.0</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_WhaleJuvenile</defName>
+        <label>juvenile</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <meleeDamageFactor>0.75</meleeDamageFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+            <SwimSpeed>0.9</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+                <drawSize>4.0</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_WhaleAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+                <drawSize>4.8</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
+        <defName>BiomesIslands_Whale</defName>
+        <label>whale</label>
+        <description>A whale.</description>
+        <statBases>
+            <MoveSpeed>0</MoveSpeed>
+            <SwimSpeed>7</SwimSpeed>
+            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+            <ComfyTemperatureMax>45</ComfyTemperatureMax>
+            <MarketValue>1800</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>teeth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>22</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>28</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>true</predator>
+            <body>Whale</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+            <baseHungerRate>2.7</baseHungerRate>
+            <baseBodySize>4</baseBodySize>
+            <baseHealthScale>5.0</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <gestationPeriodDays>360</gestationPeriodDays>
+            <packAnimal>false</packAnimal>
+            <wildness>0.95</wildness>
+            <nuzzleMtbHours>275</nuzzleMtbHours>
+            <petness>0.01</petness>
+            <lifeExpectancy>65</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.7</manhunterOnDamageChance>
+            <meatLabel>whale blubber</meatLabel>
+            <lifeStageAges>
+                <li>
+                    <def>BiomesIslands_WhaleBabyTiny</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_WhaleJuvenile</def>
+                    <minAge>1.8</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_WhaleAdult</def>
+                    <minAge>3.5</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>BiomesIslands_Whale</defName>
+        <label>whale</label>
+        <race>BiomesIslands_Whale</race>
+        <combatPower>250</combatPower>
+		<wildGroupSize>2~6</wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <drawSize>2.0</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <drawSize>2.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <drawSize>4.0</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <drawSize>4.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <drawSize>4.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <drawSize>4.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+  
+</Defs>
