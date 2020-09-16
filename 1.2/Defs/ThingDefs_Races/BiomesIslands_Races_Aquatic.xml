@@ -139,6 +139,7 @@
         <label>white shark</label>
         <race>BiomesIslands_WhiteShark</race>
         <combatPower>200</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -312,6 +313,7 @@
         <label>hammerhead</label>
         <race>BiomesIslands_Hammerhead</race>
         <combatPower>150</combatPower>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -501,7 +503,8 @@
         <defName>BiomesIslands_Tuna</defName>
         <label>tuna</label>
         <race>BiomesIslands_Tuna</race>
-        <combatPower>60</combatPower>
+        <combatPower>120</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -678,6 +681,7 @@
         <label>blue sea snail</label>
         <race>BiomesIslands_BlueSeaSnail</race>
         <combatPower>38</combatPower>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -852,6 +856,7 @@
         <label>red snapper</label>
         <race>BiomesIslands_RedSnapper</race>
         <combatPower>40</combatPower>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -1037,6 +1042,7 @@
         <race>BiomesIslands_Trout</race>
         <combatPower>80</combatPower>
 		<wildGroupSize>2~5</wildGroupSize>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
             <li>
                 <bodyGraphicData>

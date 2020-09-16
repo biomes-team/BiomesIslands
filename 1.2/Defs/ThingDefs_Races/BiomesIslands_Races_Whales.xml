@@ -139,6 +139,7 @@
         <label>whale</label>
         <race>BiomesIslands_Whale</race>
         <combatPower>250</combatPower>
+		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>2~6</wildGroupSize>
         <lifeStages>
             <li>
