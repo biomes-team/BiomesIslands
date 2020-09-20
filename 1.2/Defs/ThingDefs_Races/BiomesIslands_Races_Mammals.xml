@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================== Shetland Pony ================== -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BiomesIslands_ShetlandPony</defName>
+    <label>shetland pony</label>
+    <description>A large hoofed mammal with a shaggy coat, a long mane, and a long tail. Shetland ponies are smaller than horses, but better adapted for cold climates.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>550</MarketValue>
+      <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+    </statBases>
+    <uiIconScale>1.1</uiIconScale>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.7</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.7</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <body>QuadrupedAnimalWithHooves</body>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <baseHungerRate>0.85</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+      <gestationPeriodDays>23</gestationPeriodDays>
+      <wildness>0.6</wildness>
+      <petness>0.5</petness>
+      <trainability>Advanced</trainability>
+      <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+      <meatLabel>horse meat</meatLabel>
+      <packAnimal>true</packAnimal>
+      <lifeExpectancy>27</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Horse_Wounded</soundWounded>
+          <soundDeath>Pawn_Horse_Death</soundDeath>
+          <soundCall>Pawn_Horse_Call</soundCall>
+          <soundAngry>Pawn_Horse_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalFarm</li>
+    </tradeTags>
+  </ThingDef>
+ 
+ <PawnKindDef Name="BiomesIslands_ShetlandPony" ParentName="AnimalKindBase">
+    <defName>BiomesIslands_ShetlandPony</defName>
+    <label>shetland pony</label>
+    <labelMale>shetland pony stallion</labelMale>
+    <labelFemale>shetland pony mare</labelFemale>
+    <race>Horse</race>
+    <combatPower>90</combatPower>
+    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <wildGroupSize>3~6</wildGroupSize>
+    <!-- <alternateGraphicChance>0.8</alternateGraphicChance> -->
+    <!-- <alternateGraphics> -->
+      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse1</texPath></li> -->
+      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse2</texPath></li> -->
+      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse3</texPath></li> -->
+      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse4</texPath></li> -->
+      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse5</texPath></li> -->
+      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse6</texPath></li> -->
+    <!-- </alternateGraphics> -->
+    <lifeStages>
+      <li>
+        <label>foal</label>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony</texPath>
+          <drawSize>1.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony</texPath>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Horse/Dessicated_Horse</texPath>
+          <drawSize>1.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

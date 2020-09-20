@@ -182,6 +182,7 @@
     <!-- land grazers -->
       <Yak>0.12</Yak>
       <Horse>0.15</Horse>
+	  <BiomesIslands_ShetlandPony>1</BiomesIslands_ShetlandPony>
       <Squirrel>1</Squirrel>
       <Hare>1</Hare>
       <Rat>1</Rat>

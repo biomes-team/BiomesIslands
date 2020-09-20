@@ -177,7 +177,9 @@
       <Muffalo>2</Muffalo>
       <Ibex>2</Ibex>
       <Megasloth>0.2</Megasloth>
+	  <BiomesIslands_ShetlandPony>0.5</BiomesIslands_ShetlandPony>
       <BiomesIslands_Seagull>2</BiomesIslands_Seagull>
+	  
 	<!-- land predators -->
       <Fox_Arctic>0.07</Fox_Arctic>
       <Wolf_Arctic>0.07</Wolf_Arctic>
