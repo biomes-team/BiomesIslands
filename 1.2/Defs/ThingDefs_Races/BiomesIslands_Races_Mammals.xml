@@ -105,7 +105,7 @@
     <labelFemale>shetland pony mare</labelFemale>
     <race>Horse</race>
     <combatPower>90</combatPower>
-    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <ecoSystemWeight>0.9</ecoSystemWeight>
     <wildGroupSize>3~6</wildGroupSize>
     <!-- <alternateGraphicChance>0.8</alternateGraphicChance> -->
     <!-- <alternateGraphics> -->

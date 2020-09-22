@@ -318,7 +318,7 @@
     <label>seagull</label>
     <race>BiomesIslands_Seagull</race>
 	<combatPower>45</combatPower>
-	<ecoSystemWeight>0.40</ecoSystemWeight>
+	<ecoSystemWeight>0.25</ecoSystemWeight>
 	<wildGroupSize>
       <min>6</min>
       <max>11</max>
@@ -461,7 +461,7 @@
     <label>omegadodo</label>
     <race>BiomesIslands_OmegaDodo</race>
 	<combatPower>38</combatPower>
-	<ecoSystemWeight>0.28</ecoSystemWeight>
+	<ecoSystemWeight>0.75</ecoSystemWeight>
 	<lifeStages>
       <li>
 	  <label>dodo chick</label>
@@ -599,6 +599,7 @@
     <defName>BiomesIslands_Flamingo</defName>
     <label>flamingo</label>
     <race>BiomesIslands_Flamingo</race>
+	<ecoSystemWeight>0.45</ecoSystemWeight>
 	<wildGroupSize>
       <min>4</min>
       <max>8</max>

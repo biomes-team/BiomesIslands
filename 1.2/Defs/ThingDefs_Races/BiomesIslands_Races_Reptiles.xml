@@ -236,7 +236,7 @@
     <label>sea turtle</label>
     <race>BiomesIslands_SeaTurtle</race>
     <combatPower>60</combatPower>
-    <ecoSystemWeight>0.70</ecoSystemWeight>
+    <ecoSystemWeight>0.60</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -342,15 +342,15 @@
 		</li>
     </comps>
     <race>
-			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
-			<baseBodySize>0.20</baseBodySize>
+		<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+		<baseBodySize>0.20</baseBodySize>
 		<baseHealthScale>0.65</baseHealthScale>
-			<baseHungerRate>0.30</baseHungerRate>
-			<foodType>OmnivoreRoughAnimal</foodType>
+		<baseHungerRate>0.30</baseHungerRate>
+		<foodType>OmnivoreRoughAnimal</foodType>
 		<leatherDef>Leather_Lizard</leatherDef>
 		<wildness>0.6</wildness>
 		<trainability>Intermediate</trainability>
-			<petness>0.13</petness>
+		<petness>0.13</petness>
 		<lifeExpectancy>12</lifeExpectancy>
 		<lifeStageAges>
 			<li>
@@ -384,7 +384,7 @@
     <label>marine iguana</label>
     <race>BiomesIslands_MarineIguana</race>
     <combatPower>44</combatPower>
-    <ecoSystemWeight>0.40</ecoSystemWeight>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -500,7 +500,7 @@
     <label>green gecko</label>
     <race>BiomesIslands_GreenGecko</race>
     <combatPower>60</combatPower>
-    <ecoSystemWeight>0.70</ecoSystemWeight>
+    <ecoSystemWeight>0.20</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

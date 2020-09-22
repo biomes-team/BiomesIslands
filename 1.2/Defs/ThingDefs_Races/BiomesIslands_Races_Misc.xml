@@ -141,7 +141,7 @@
     <race>BiomesIslands_Megamantis</race>
     <combatPower>160</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
 	<wildGroupSize>
       <min>2</min>
       <max>3</max>
