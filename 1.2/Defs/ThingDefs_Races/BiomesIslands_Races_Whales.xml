@@ -113,7 +113,8 @@
             <trainability>Advanced</trainability>
             <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.7</manhunterOnDamageChance>
-            <meatLabel>whale blubber</meatLabel>
+            <meatLabel>blubber</meatLabel>
+			<meatColor>(255,210,210)</meatColor>
             <lifeStageAges>
                 <li>
                     <def>BiomesIslands_WhaleBabyTiny</def>
