@@ -44,7 +44,7 @@
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
     <diseaseMtbDays>80</diseaseMtbDays>
-		<diseases>
+	<diseases>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
         <commonality>100</commonality>
@@ -162,7 +162,8 @@
       <Plant_Astragalus>0.1</Plant_Astragalus>
       <Plant_Dandelion>0.1</Plant_Dandelion>
       <Plant_TreePine>0.08</Plant_TreePine>
-      <Plant_TreeBirch>0.08</Plant_TreeBirch>
+      <Plant_TreeBirch>0.01</Plant_TreeBirch>
+	  <BiomesIslands_TwistedTree>0.10</BiomesIslands_TwistedTree>
       <Plant_Berry>0.07</Plant_Berry>
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
 	<!-- water plants -->
