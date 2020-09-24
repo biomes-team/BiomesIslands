@@ -21,8 +21,8 @@
 			<perlinCulling>0.80</perlinCulling>
             <allowOnWater>true</allowOnWater>
 			<maxTemperature>0</maxTemperature>
-			<minTemperature>-19</minTemperature>
-			<maxRainfall>600</maxRainfall>
+			<minTemperature>-22</minTemperature>
+			<maxRainfall>1000</maxRainfall>
 			<frequency>20</frequency>
 			<materialPath>BiomesIslands_World/MapGraphics/TundraIsland</materialPath>
 			<materialLayer>3509</materialLayer>

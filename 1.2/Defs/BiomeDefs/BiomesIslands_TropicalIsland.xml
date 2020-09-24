@@ -44,7 +44,7 @@
 			<li>Ambient_DayInsects_Jungle</li>
 		</soundsAmbient>
     <diseaseMtbDays>40</diseaseMtbDays>
-		<diseases>
+	<diseases>
 		  <li>
 			<diseaseInc>Disease_Malaria</diseaseInc>
 			<commonality>160</commonality>

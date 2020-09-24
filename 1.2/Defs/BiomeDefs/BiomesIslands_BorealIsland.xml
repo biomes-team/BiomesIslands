@@ -20,8 +20,8 @@
 			<perlinCulling>0.80</perlinCulling>
             <allowOnWater>true</allowOnWater>
 			<minTemperature>-10</minTemperature>
-			<maxTemperature>2</maxTemperature>
-			<minRainfall>600</minRainfall>
+			<maxTemperature>5</maxTemperature>
+			<minRainfall>400</minRainfall>
 			<frequency>20</frequency>
 			<materialPath>BiomesIslands_World/MapGraphics/BorealIsland</materialPath>
 			<materialLayer>3509</materialLayer>

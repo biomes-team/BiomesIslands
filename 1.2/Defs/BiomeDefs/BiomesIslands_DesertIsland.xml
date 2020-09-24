@@ -19,7 +19,7 @@
 			<usePerlin>true</usePerlin>
 			<perlinCulling>0.80</perlinCulling>
             <allowOnWater>true</allowOnWater>
-			<minTemperature>0</minTemperature>
+			<minTemperature>5</minTemperature>
 			<maxRainfall>600</maxRainfall>
 			<frequency>20</frequency>
 			<materialPath>BiomesIslands_World/MapGraphics/DesertIsland</materialPath>

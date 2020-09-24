@@ -18,11 +18,11 @@
 			<randomizeHilliness>True</randomizeHilliness>
 			<usePerlin>true</usePerlin>
             <allowOnWater>true</allowOnWater>
-			<minTemperature>2</minTemperature>
-			<maxTemperature>15</maxTemperature>
+			<minTemperature>0</minTemperature>
+			<maxTemperature>18</maxTemperature>
 			<minRainfall>600</minRainfall>
-			<frequency>5</frequency>
-			<materialPath>World/MapGraphics/TemperateIsland</materialPath>
+			<frequency>20</frequency>
+			<materialPath>BiomesIslands_World/MapGraphics/TemperateIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
 	</modExtensions>
@@ -42,7 +42,7 @@
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
     <diseaseMtbDays>50</diseaseMtbDays>
-		<diseases>
+	<diseases>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
         <commonality>100</commonality>
@@ -135,13 +135,6 @@
         <minFertility>2.0</minFertility>
         <maxFertility>8.0</maxFertility>
         <thresholds>
-		<!--
-		  <li>
-            <terrain>Ice</terrain>
-            <min>-999</min>
-            <max>-0.4</max>
-          </li>
-		  -->
 		  <li>
             <terrain>Soil</terrain>
             <min>-0.2</min>
@@ -167,17 +160,27 @@
 		<SnowHard>4</SnowHard>
 	</baseWeatherCommonalities>
     <wildPlants>
-      <Plant_Grass>5.0</Plant_Grass>
-      <Plant_TallGrass>2.0</Plant_TallGrass>
-      <Plant_Brambles>1.0</Plant_Brambles>
-      <Plant_Dandelion>0.5</Plant_Dandelion>
-      <Plant_Bush>0.6</Plant_Bush>
-      <Plant_TreeOak>0.5</Plant_TreeOak>
-      <Plant_TreePoplar>0.5</Plant_TreePoplar>
-      <Plant_Berry>0.05</Plant_Berry>
-      <Plant_HealrootWild>0.05</Plant_HealrootWild>
+	<!-- land plants -->
+		<Plant_Grass>5.0</Plant_Grass>
+		<Plant_TallGrass>2.0</Plant_TallGrass>
+		<Plant_Brambles>1.0</Plant_Brambles>
+		<Plant_Dandelion>0.5</Plant_Dandelion>
+		<Plant_Bush>0.6</Plant_Bush>
+		<Plant_TreeOak>0.5</Plant_TreeOak>
+		<Plant_TreePoplar>0.5</Plant_TreePoplar>
+		<Plant_Berry>0.05</Plant_Berry>
+		<Plant_HealrootWild>0.05</Plant_HealrootWild>
+		<BiomesIslands_OrangeTree>0.3</BiomesIslands_OrangeTree>
+		<BiomesIslands_Fern>0.8</BiomesIslands_Fern>
+		<BiomesIslands_FloweringFern>0.1</BiomesIslands_FloweringFern>
+		<BiomesIslands_Lavender>0.1</BiomesIslands_Lavender>
+		
+	  <!-- water plants -->
+	  	<BiomesIslands_Kelp>8</BiomesIslands_Kelp>
+		<BiomesIslands_SeaSponge>0.2</BiomesIslands_SeaSponge>
     </wildPlants>
     <wildAnimals>
+	<!-- land grazers -->
       <Donkey>0.20</Donkey>
       <GuineaPig>0.45</GuineaPig>
       <Yak>0.06</Yak>
@@ -199,12 +202,28 @@
       <Gazelle>0.3</Gazelle>
       <Megasloth>0.2</Megasloth>
       <Rhinoceros>0.1</Rhinoceros>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
+	  <BiomesIslands_Seagull>0.6</BiomesIslands_Seagull>
+	  
+	  <!-- land predators -->
+	  <Bear_Grizzly>0.07</Bear_Grizzly>
       <Wolf_Timber>0.07</Wolf_Timber>
       <Fox_Red>0.07</Fox_Red>
       <Cougar>0.07</Cougar>
       <Lynx>0.07</Lynx>
       <Warg>0.07</Warg>
+	  <BiomesIslands_Megamantis>0.05</BiomesIslands_Megamantis>
+	  
+	  <!-- water grazers -->
+		<BiomesIslands_Sardine>2.8</BiomesIslands_Sardine>
+		<BiomesIslands_BlueSeaSnail>0.4</BiomesIslands_BlueSeaSnail>
+		<BiomesIslands_LimepeelAngelfish>0.5</BiomesIslands_LimepeelAngelfish>
+		<BiomesIslands_Trout>1.5</BiomesIslands_Trout>
+		
+	  <!-- water predators -->
+		<BiomesIslands_Tuna>0.2</BiomesIslands_Tuna>
+		<BiomesIslands_WhiteShark>0.05</BiomesIslands_WhiteShark>
+		<BiomesIslands_RedSnapper>0.15</BiomesIslands_RedSnapper>
+
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
