@@ -51,7 +51,7 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>1.5</power>
+                <power>1.4</power>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
@@ -62,7 +62,19 @@
                 </surpriseAttack>
                 <cooldownTime>1</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
             </li>
+			<li>
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>1.5</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.4</chanceFactor>
+			</li>
         </tools>
         <race>
             <herdAnimal>true</herdAnimal>
