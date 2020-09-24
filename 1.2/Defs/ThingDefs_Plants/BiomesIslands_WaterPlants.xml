@@ -33,7 +33,7 @@
 		<topWindExposure>0.2</topWindExposure>
 		<wildClusterRadius>8</wildClusterRadius>
 		<wildClusterWeight>50</wildClusterWeight>
-		<wildOrder>2</wildOrder>
+		<wildOrder>1</wildOrder>
         <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>
   </ThingDef>
@@ -72,6 +72,8 @@
 		<topWindExposure>0.2</topWindExposure>
 		<wildClusterRadius>8</wildClusterRadius>
 		<wildClusterWeight>20</wildClusterWeight>
+		<!-- <wildClusterRadius>4</wildClusterRadius> -->
+		<!-- <wildClusterWeight>300</wildClusterWeight> -->
         <wildOrder>1</wildOrder>
         <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>
