@@ -272,6 +272,7 @@
 			<fertilityMin>0.1</fertilityMin>
 			<fertilitySensitivity>0.4</fertilitySensitivity>
 			<growDays>10</growDays>
+			<immatureGraphicPath>BiomesIslands_Things/Plant/Pomoea/Pomoea_flowerless</immatureGraphicPath>
 			<visualSizeRange>0.7~0.9</visualSizeRange>
 			<topWindExposure>0.2</topWindExposure>
 			<wildClusterRadius>8</wildClusterRadius>
