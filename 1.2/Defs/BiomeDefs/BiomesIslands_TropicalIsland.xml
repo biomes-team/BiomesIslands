@@ -202,7 +202,8 @@
 		<BiomesIslands_OmegaDodo>0.3</BiomesIslands_OmegaDodo>
         <BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
 	    <BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
-		
+		<BiomesIslands_SeaTurtle>0.5</BiomesIslands_SeaTurtle>
+
 	<!-- land predators -->
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 		<BiomesIslands_Megamantis>0.1</BiomesIslands_Megamantis>

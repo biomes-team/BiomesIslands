@@ -43,7 +43,7 @@
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
     <diseaseMtbDays>50</diseaseMtbDays>
-		<diseases>
+	<diseases>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
         <commonality>100</commonality>
@@ -196,7 +196,9 @@
       <Deer>0.5</Deer>
       <Megasloth>0.1</Megasloth>
       <BiomesIslands_Seagull>1</BiomesIslands_Seagull>
-	  
+	  <BiomesIslands_OmegaDodo>0.5</BiomesIslands_OmegaDodo>
+	  <BiomesIslands_BlueCrab>0.5</BiomesIslands_BlueCrab>
+	  <BiomesIslands_SeaTurtle>0.05</BiomesIslands_SeaTurtle>
 	  <!-- land predators -->
       <Fox_Red>0.07</Fox_Red>
       <Fox_Arctic>0.07</Fox_Arctic>
