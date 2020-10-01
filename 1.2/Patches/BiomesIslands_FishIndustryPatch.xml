@@ -13,6 +13,7 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_TemperateIsland</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -22,6 +23,7 @@
 					<li>BiomesIslands_TropicalIsland</li>
 					<li>BiomesIslands_BorealIsland</li>
 					<li>BiomesIslands_TundraIsland</li>
+					<li>BiomesIslands_TemperateIsland</li>
 				</value>
 			</li>
 			
@@ -32,6 +34,7 @@
 					<li>BiomesIslands_TropicalIsland</li>
 					<li>BiomesIslands_BorealIsland</li>
 					<li>BiomesIslands_TundraIsland</li>
+					<li>BiomesIslands_TemperateIsland</li>
 				</value>
 			</li>
 			
@@ -44,7 +47,7 @@
 					<li>BiomesIslands_DesertIsland</li>
 					<li>BiomesIslands_BorealIsland</li>
 					<li>BiomesIslands_TundraIsland</li>
-
+					<li>BiomesIslands_TemperateIsland</li>
 				</value>
 			</li>
 
@@ -55,6 +58,7 @@
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
 					<li>BiomesIslands_DesertIsland</li>
+					<li>BiomesIslands_TemperateIsland</li>
 				</value>
 			</li>
 				

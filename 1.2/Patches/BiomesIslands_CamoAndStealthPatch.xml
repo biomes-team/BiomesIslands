@@ -58,6 +58,15 @@ Woodland
 						</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TemperateIsland"]</xpath>
+					<value>
+						<li Class="CompCamo.CompCamoDefs">
+						<CamoType>Woodland</CamoType>
+						</li>
+					</value>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>

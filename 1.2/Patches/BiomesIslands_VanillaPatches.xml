@@ -14,6 +14,7 @@
 		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
 		<value>
 			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TemperateIsland</li>
 			<li>BiomesIslands_BorealIsland</li>
 			<li>BiomesIslands_DesertIsland</li>
 		</value>
