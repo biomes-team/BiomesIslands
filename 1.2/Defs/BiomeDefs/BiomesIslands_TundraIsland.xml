@@ -156,16 +156,17 @@
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- land plants -->
-      <Plant_Grass>3.6</Plant_Grass>
-      <Plant_Moss>0.5</Plant_Moss>
-      <Plant_Bush>0.3</Plant_Bush>
-      <Plant_Astragalus>0.1</Plant_Astragalus>
-      <Plant_Dandelion>0.1</Plant_Dandelion>
-      <Plant_TreePine>0.08</Plant_TreePine>
-      <Plant_TreeBirch>0.01</Plant_TreeBirch>
-	  <BiomesIslands_TwistedTree>0.10</BiomesIslands_TwistedTree>
-      <Plant_Berry>0.07</Plant_Berry>
-      <Plant_HealrootWild>0.05</Plant_HealrootWild>
+		<Plant_Grass>3.6</Plant_Grass>
+		<Plant_Moss>0.5</Plant_Moss>
+		<Plant_Bush>0.3</Plant_Bush>
+		<Plant_Astragalus>0.1</Plant_Astragalus>
+		<Plant_Dandelion>0.1</Plant_Dandelion>
+		<Plant_TreePine>0.08</Plant_TreePine>
+		<Plant_TreeBirch>0.01</Plant_TreeBirch>
+		<BiomesIslands_TwistedTree>0.10</BiomesIslands_TwistedTree>
+		<Plant_Berry>0.07</Plant_Berry>
+		<Plant_HealrootWild>0.05</Plant_HealrootWild>
+		<BiomesIslands_PurpleSaxifrage>0.5</BiomesIslands_PurpleSaxifrage>
 	<!-- water plants -->
 		<BiomesIslands_Kelp>3.0</BiomesIslands_Kelp>
     </wildPlants>
