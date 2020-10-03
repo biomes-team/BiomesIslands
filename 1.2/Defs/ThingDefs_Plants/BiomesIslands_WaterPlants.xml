@@ -78,4 +78,42 @@
         <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>
   </ThingDef>
+  
+  
+<ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_GlowPlankton</defName>
+    <label>bioluminescent plankton</label>
+    <description>A short lived plankton that emits a soft glow</description>
+    <selectable>true</selectable>
+    <statBases>
+		<MaxHitPoints>90</MaxHitPoints>
+		<Nutrition>0.03</Nutrition>
+		<Beauty>5 </Beauty>
+    </statBases>
+    <pathCost>20</pathCost>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/GlowPlankton</texPath>
+		<shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+            <allowInFreshWater>false</allowInFreshWater>
+            <allowInSaltWater>true</allowInSaltWater>
+            <allowInShallowWater>true</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <!-- <hideAtSnowDepth>0.5</hideAtSnowDepth> -->
+    <plant>
+		<fertilityMin>0.05</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+        <growMinGlow>0</growMinGlow>
+		<growDays>0.5</growDays>
+		<visualSizeRange>0.8~1.5</visualSizeRange>
+		<lifespanDaysPerGrowDays>2.0</lifespanDaysPerGrowDays>
+    </plant>
+  </ThingDef>
+
 </Defs>

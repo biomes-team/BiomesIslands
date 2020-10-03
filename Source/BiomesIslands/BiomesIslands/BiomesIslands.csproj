@@ -237,6 +237,7 @@
     <Compile Include="GenSteps\GenStep_OceanRockChunks.cs" />
     <Compile Include="Incidents\Incident_AquaticArrival.cs" />
     <Compile Include="Incidents\Incident_CrabRave.cs" />
+    <Compile Include="Incidents\Incident_GlowTide.cs" />
     <Compile Include="Patches\GenStep_ElevationFertility.cs" />
     <Compile Include="Patches\GenStep_IslandScatterables.cs" />
     <Compile Include="Patches\GenStep_Scatterer_SteamGeysers.cs" />

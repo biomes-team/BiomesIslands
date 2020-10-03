@@ -45,6 +45,32 @@
     <letterDef>NeutralEvent</letterDef>
   </IncidentDef>
   
+  <IncidentDef>
+    <defName>GlowTide</defName>
+    <label>bioluminescent tide</label>
+    <category>Misc</category>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_TropicalIsland</li>
+      <li>BiomesIslands_TundraIsland</li>
+      <li>BiomesIslands_TemperateIsland</li>
+    </allowedBiomes>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BiomesIslands.Incidents.Incident_GlowTide</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <letterLabel>Bioluminescent Tide</letterLabel>
+    <letterDef>PositiveEvent</letterDef>
+    <tale>GlowTide</tale>
+    <durationDays>0.8~1.5</durationDays>
+    <gameCondition>GlowTide</gameCondition>
+  </IncidentDef>
+
+
   <!-- =========================== Bad ============================-->
 
   <IncidentDef>

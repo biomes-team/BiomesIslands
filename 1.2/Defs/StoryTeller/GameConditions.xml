@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GameConditionDef>
+    <defName>GlowTide</defName>
+    <conditionClass>BiomesIslands.Incidents.GameCondition_GlowTide</conditionClass>
+    <label>bioluminescent tide</label>
+    <description>A beautiful tide is lighting up the sea.</description>
+    <endMessage>The tide is passing.</endMessage>
+    <letterText>A glowing tide is passing your island. \n\nIt will pass in a day or two.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <exclusiveConditions>
+      <li>Aurora</li>
+	  <li>ToxicFallout</li>
+    </exclusiveConditions>
+  </GameConditionDef>
+
+ 
+</Defs>

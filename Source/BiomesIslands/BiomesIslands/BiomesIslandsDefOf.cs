@@ -11,5 +11,6 @@ namespace BiomesIslands
     public static class BiomesIslandsDefOf
     {
         public static ThingDef BiomesIslands_CoralRock;
+        public static ThingDef BiomesIslands_GlowPlankton;
     }
 }
