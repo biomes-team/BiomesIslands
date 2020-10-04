@@ -84,7 +84,6 @@
 	<defName>BiomesIslands_GlowPlankton</defName>
     <label>bioluminescent plankton</label>
     <description>A short lived plankton that emits a soft glow</description>
-    <selectable>true</selectable>
     <statBases>
 		<MaxHitPoints>90</MaxHitPoints>
 		<Nutrition>0.03</Nutrition>
@@ -111,7 +110,10 @@
 		<fertilitySensitivity>0.3</fertilitySensitivity>
         <growMinGlow>0</growMinGlow>
 		<growDays>0.5</growDays>
-		<visualSizeRange>0.8~1.5</visualSizeRange>
+		<visualSizeRange>0.8~2.5</visualSizeRange> 
+		<!-- <visualSizeRange>0.8~1.5</visualSizeRange>  -->
+		<!-- <visualSizeRange>0.8~2.9</visualSizeRange> -->
+		<maxMeshCount>4</maxMeshCount>
 		<lifespanDaysPerGrowDays>2.0</lifespanDaysPerGrowDays>
     </plant>
   </ThingDef>
