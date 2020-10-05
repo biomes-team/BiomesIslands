@@ -108,6 +108,11 @@
 		<perlinFrequency>0.035</perlinFrequency>
 		<minFertility>5.0</minFertility>
 		<thresholds>
+		  <li>
+            <terrain>SoilRich</terrain>
+            <min>-999</min>
+            <max>-0.55</max>
+          </li>
           <li>
             <terrain>SoilRich</terrain>
             <min>0.73</min>
