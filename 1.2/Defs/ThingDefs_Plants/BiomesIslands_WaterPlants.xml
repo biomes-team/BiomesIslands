@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- For fish to eat -->
+
 <ThingDef ParentName="PlantBase">
 	<defName>BiomesIslands_Kelp</defName>
     <label>kelp</label>
@@ -80,6 +82,80 @@
   </ThingDef>
   
   
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_SeaGrass</defName>
+    <label>seagrass</label>
+    <description>An aquatic plant</description>
+    <statBases>
+		<MaxHitPoints>85</MaxHitPoints>
+		<Nutrition>0.1</Nutrition>
+    </statBases>
+    <!-- <pathCost>20</pathCost> -->
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/SeaGrass</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+            <allowInFreshWater>false</allowInFreshWater>
+            <allowInSaltWater>true</allowInSaltWater>
+            <allowInShallowWater>true</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.05</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>2.5</growDays>
+		<maxMeshCount>9</maxMeshCount>
+		<visualSizeRange>0.4~0.8</visualSizeRange>
+		<wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+  
+    <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_Seaweed</defName>
+    <label>seaweed</label>
+    <description>An aquatic plant</description>
+    <statBases>
+		<MaxHitPoints>90</MaxHitPoints>
+		<Nutrition>0.15</Nutrition>
+    </statBases>
+    <pathCost>10</pathCost>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Seaweed</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+            <allowInFreshWater>false</allowInFreshWater>
+            <allowInSaltWater>true</allowInSaltWater>
+            <allowInShallowWater>true</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.05</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>2.5</growDays>
+		<maxMeshCount>4</maxMeshCount>
+		<visualSizeRange>0.7~1.3</visualSizeRange>
+		<!-- <topWindExposure>0.2</topWindExposure> -->
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>150</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+        <!-- <wildEqualLocalDistribution>false</wildEqualLocalDistribution> -->
+    </plant>
+  </ThingDef>
+  
+  
+  
+ <!-- Special -->
+ 
 <ThingDef ParentName="PlantBase">
 	<defName>BiomesIslands_GlowPlankton</defName>
     <label>bioluminescent plankton</label>
