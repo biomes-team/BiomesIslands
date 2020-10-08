@@ -149,6 +149,7 @@
 		<BiomesIslands_Kelp>1.5</BiomesIslands_Kelp>
 		<BiomesIslands_SeaGrass>4.0</BiomesIslands_SeaGrass>
 		<BiomesIslands_Seaweed>4.0</BiomesIslands_Seaweed>
+		<BiomesIslands_GreenAlgae>0.3</BiomesIslands_GreenAlgae>
     </wildPlants>
     <wildAnimals>
   <!-- land grazers -->

@@ -192,8 +192,9 @@
 	<!-- water plants -->
 		<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
 		<BiomesIslands_SeaSponge>0.02</BiomesIslands_SeaSponge>
-		<BiomesIslands_SeaGrass>5.0</BiomesIslands_SeaGrass>
-		<BiomesIslands_Seaweed>1.0</BiomesIslands_Seaweed>
+		<BiomesIslands_SeaGrass>7.0</BiomesIslands_SeaGrass>
+		<BiomesIslands_Seaweed>2.0</BiomesIslands_Seaweed>
+		<BiomesIslands_GreenAlgae>1</BiomesIslands_GreenAlgae>
 	</wildPlants>
     <wildAnimals>
 	<!-- land grazers -->

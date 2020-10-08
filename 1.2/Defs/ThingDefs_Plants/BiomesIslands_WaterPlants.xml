@@ -152,6 +152,45 @@
     </plant>
   </ThingDef>
   
+   
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_GreenAlgae</defName>
+    <label>green algae</label>
+    <description>An greenish algae that grows in warm water.</description>
+    <statBases>
+		<MaxHitPoints>95</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
+		<Beauty>-1</Beauty>
+    </statBases>
+    <!-- <pathCost>20</pathCost> -->
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/GreenAlgae</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+            <allowInFreshWater>true</allowInFreshWater>
+            <allowInSaltWater>true</allowInSaltWater>
+            <allowInShallowWater>true</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.15</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>3.5</growDays>
+		<maxMeshCount>9</maxMeshCount>
+		<visualSizeRange>0.3~0.5</visualSizeRange>
+		<wildClusterRadius>4</wildClusterRadius>
+		<wildClusterWeight>350</wildClusterWeight>
+		<wildOrder>2</wildOrder>
+    </plant>
+  </ThingDef>
+  
+  
   
   
  <!-- Special -->
@@ -163,7 +202,7 @@
     <statBases>
 		<MaxHitPoints>90</MaxHitPoints>
 		<Nutrition>0.03</Nutrition>
-		<Beauty>5 </Beauty>
+		<Beauty>7</Beauty>
     </statBases>
     <pathCost>20</pathCost>
     <graphicData>

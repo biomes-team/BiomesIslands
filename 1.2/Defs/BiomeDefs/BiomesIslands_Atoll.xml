@@ -17,7 +17,7 @@
 			<allowBeach>false</allowBeach>
 		</li>
 		 <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlantBiome">
-			<spawnFertilityMultiplier>0.25</spawnFertilityMultiplier>
+			<spawnFertilityMultiplier>1.0</spawnFertilityMultiplier>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
 			<usePerlin>true</usePerlin>
@@ -169,8 +169,13 @@
 		<Plant_ShrubLow>1.0</Plant_ShrubLow>
 		<Plant_TreePalm>1.0</Plant_TreePalm>
 	<!-- water plants -->
+
 		<BiomesIslands_Kelp>1.5</BiomesIslands_Kelp>
-		<BiomesIslands_SeaSponge>0.05</BiomesIslands_SeaSponge>
+		<BiomesIslands_SeaSponge>0.10</BiomesIslands_SeaSponge>
+		<BiomesIslands_SeaGrass>4.0</BiomesIslands_SeaGrass>
+		<BiomesIslands_Seaweed>0.8</BiomesIslands_Seaweed>
+		<BiomesIslands_GreenAlgae>0.1</BiomesIslands_GreenAlgae>
+		
     </wildPlants>
     <wildAnimals>
 	<!-- land grazers -->
