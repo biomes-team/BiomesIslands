@@ -103,19 +103,19 @@
     <label>shetland pony</label>
     <labelMale>shetland pony stallion</labelMale>
     <labelFemale>shetland pony mare</labelFemale>
-    <race>Horse</race>
+    <race>BiomesIslands_ShetlandPony</race>
     <combatPower>90</combatPower>
     <ecoSystemWeight>0.9</ecoSystemWeight>
     <wildGroupSize>3~6</wildGroupSize>
-    <!-- <alternateGraphicChance>0.8</alternateGraphicChance> -->
-    <!-- <alternateGraphics> -->
-      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse1</texPath></li> -->
-      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse2</texPath></li> -->
-      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse3</texPath></li> -->
-      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse4</texPath></li> -->
-      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse5</texPath></li> -->
-      <!-- <li><texPath>Things/Pawn/Animal/Horse/Horse6</texPath></li> -->
-    <!-- </alternateGraphics> -->
+    <alternateGraphicChance>0.75</alternateGraphicChance>
+    <alternateGraphics>
+      <li><texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony1</texPath></li>
+      <li><texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony2</texPath></li>
+      <li><texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony3</texPath></li>
+      <!-- <li><texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony4</texPath></li> -->
+      <!-- <li><texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony5</texPath></li> -->
+      <!-- <li><texPath>BiomesIslands_Things/Pawn/Animal/ShetlandPony/ShetlandPony6</texPath></li> -->
+    </alternateGraphics>
     <lifeStages>
       <li>
         <label>foal</label>
