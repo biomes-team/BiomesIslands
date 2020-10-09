@@ -183,13 +183,85 @@
 		<fertilitySensitivity>0.3</fertilitySensitivity>
 		<growDays>3.5</growDays>
 		<maxMeshCount>9</maxMeshCount>
-		<visualSizeRange>0.3~0.5</visualSizeRange>
+		<visualSizeRange>0.4~0.65</visualSizeRange>
 		<wildClusterRadius>4</wildClusterRadius>
 		<wildClusterWeight>350</wildClusterWeight>
 		<wildOrder>2</wildOrder>
     </plant>
   </ThingDef>
   
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_WhiteAlgae</defName>
+    <label>brown algae</label>
+    <description>A brown algae that grows in cold water.</description>
+    <statBases>
+		<MaxHitPoints>95</MaxHitPoints>
+		<Nutrition>0.15</Nutrition>
+		<Beauty>-1</Beauty>
+    </statBases>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/WhiteAlgae</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+            <allowInFreshWater>false</allowInFreshWater>
+            <allowInSaltWater>true</allowInSaltWater>
+            <allowInShallowWater>true</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.10</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>3.5</growDays>
+		<maxMeshCount>9</maxMeshCount>
+		<visualSizeRange>0.2~0.3</visualSizeRange>
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>200</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_Murkweed</defName>
+    <label>murkweed</label>
+    <description>An aquatic plant that prefers cold, deep water</description>
+    <statBases>
+		<MaxHitPoints>95</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
+    </statBases>
+    <!-- <pathCost>20</pathCost> -->
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Murkweed</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+            <allowInFreshWater>false</allowInFreshWater>
+            <allowInSaltWater>true</allowInSaltWater>
+            <allowInShallowWater>false</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.15</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>3.5</growDays>
+		<!-- <maxMeshCount>9</maxMeshCount> -->
+		<visualSizeRange>0.8~1.1</visualSizeRange>
+		<wildClusterRadius>10</wildClusterRadius>
+		<wildClusterWeight>50</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
   
   
   

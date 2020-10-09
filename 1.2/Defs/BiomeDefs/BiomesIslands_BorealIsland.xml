@@ -168,20 +168,22 @@
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- land plants -->
-      <Plant_Grass>8.0</Plant_Grass>
-      <Plant_Brambles>2.0</Plant_Brambles>
-      <Plant_Moss>4.0</Plant_Moss>
-      <Plant_Bush>3.0</Plant_Bush>
-      <Plant_TreePine>5.0</Plant_TreePine>
-      <Plant_TreeBirch>1.5</Plant_TreeBirch>
-      <Plant_TreePoplar>1.2</Plant_TreePoplar>
-      <Plant_Berry>0.16</Plant_Berry>
-      <Plant_HealrootWild>0.16</Plant_HealrootWild>
-      <BiomesIslands_Lavender>1</BiomesIslands_Lavender>
+		<Plant_Grass>8.0</Plant_Grass>
+		<Plant_Brambles>2.0</Plant_Brambles>
+		<Plant_Moss>4.0</Plant_Moss>
+		<Plant_Bush>3.0</Plant_Bush>
+		<Plant_TreePine>5.0</Plant_TreePine>
+		<Plant_TreeBirch>1.5</Plant_TreeBirch>
+		<Plant_TreePoplar>1.2</Plant_TreePoplar>
+		<Plant_Berry>0.16</Plant_Berry>
+		<Plant_HealrootWild>0.16</Plant_HealrootWild>
+		<BiomesIslands_Lavender>1</BiomesIslands_Lavender>
 	  <!-- water plants -->
 		<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
 		<BiomesIslands_SeaGrass>2.0</BiomesIslands_SeaGrass>
 		<BiomesIslands_Seaweed>5.0</BiomesIslands_Seaweed>
+		<BiomesIslands_Murkweed>1.2</BiomesIslands_Murkweed>
+		<BiomesIslands_WhiteAlgae>2.0</BiomesIslands_WhiteAlgae>
     </wildPlants>
     <wildAnimals>
     <!-- land grazers -->
