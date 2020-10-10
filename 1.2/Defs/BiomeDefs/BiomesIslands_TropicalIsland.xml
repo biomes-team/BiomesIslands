@@ -138,13 +138,6 @@
         <minFertility>2.0</minFertility>
         <maxFertility>8.0</maxFertility>
         <thresholds>
-		<!--
-		  <li>
-            <terrain>Ice</terrain>
-            <min>-999</min>
-            <max>-0.4</max>
-          </li>
-		  -->
 		  <li>
             <terrain>Soil</terrain>
             <min>-0.2</min>
@@ -193,8 +186,9 @@
 		<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
 		<BiomesIslands_SeaSponge>0.02</BiomesIslands_SeaSponge>
 		<BiomesIslands_SeaGrass>7.0</BiomesIslands_SeaGrass>
-		<BiomesIslands_Seaweed>2.0</BiomesIslands_Seaweed>
+		<BiomesIslands_Seaweed>1.0</BiomesIslands_Seaweed>
 		<BiomesIslands_GreenAlgae>1</BiomesIslands_GreenAlgae>
+		<BiomesIslands_Sargassum>0.05</BiomesIslands_Sargassum>
 	</wildPlants>
     <wildAnimals>
 	<!-- land grazers -->

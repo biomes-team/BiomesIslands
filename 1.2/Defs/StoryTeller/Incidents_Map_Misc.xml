@@ -61,8 +61,8 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>BiomesIslands.Incidents.Incident_GlowTide</workerClass>
-    <baseChance>0.2</baseChance>
-    <minRefireDays>40</minRefireDays>
+    <baseChance>0.25</baseChance>
+    <minRefireDays>30</minRefireDays>
     <letterLabel>Bioluminescent Tide</letterLabel>
     <letterDef>PositiveEvent</letterDef>
     <tale>GlowTide</tale>

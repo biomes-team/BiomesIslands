@@ -191,6 +191,48 @@
   </ThingDef>
   
   
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_Sargassum</defName>
+    <label>sargassum seaweed</label>
+    <description>A brownish seaweed</description>
+    <statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
+		<!-- <Beauty>-1</Beauty> -->
+    </statBases>
+    <pathCost>10</pathCost>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Sargassum</texPath>
+		<!-- <color>(140,100,50)</color> -->
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+            <allowInFreshWater>false</allowInFreshWater>
+            <allowInSaltWater>true</allowInSaltWater>
+            <allowInShallowWater>true</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <selectable>true</selectable>
+    <plant>
+		<fertilityMin>0.10</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>4.0</growDays>
+		<!-- <maxMeshCount>9</maxMeshCount> -->
+		<visualSizeRange>1.5~2.5</visualSizeRange>
+		<wildClusterRadius>4</wildClusterRadius>
+		<wildClusterWeight>300</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+		<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+    </plant>
+  </ThingDef>
+  
+  
+  
   <ThingDef ParentName="PlantBase">
 	<defName>BiomesIslands_WhiteAlgae</defName>
     <label>brown algae</label>
@@ -298,8 +340,6 @@
         <growMinGlow>0</growMinGlow>
 		<growDays>0.5</growDays>
 		<visualSizeRange>0.8~2.5</visualSizeRange> 
-		<!-- <visualSizeRange>0.8~1.5</visualSizeRange>  -->
-		<!-- <visualSizeRange>0.8~2.9</visualSizeRange> -->
 		<maxMeshCount>4</maxMeshCount>
 		<lifespanDaysPerGrowDays>2.0</lifespanDaysPerGrowDays>
     </plant>
