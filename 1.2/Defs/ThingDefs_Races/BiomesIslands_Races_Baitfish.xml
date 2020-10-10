@@ -79,7 +79,7 @@
         <race>
             <herdAnimal>true</herdAnimal>
             <predator>false</predator>
-            <body>Fish</body>
+            <body>Biomes_FishBody</body>
 			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
             <baseHungerRate>0.15</baseHungerRate>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <BodyDef>
-    <defName>Fish</defName>
+    <defName>Biomes_FishBody</defName>
     <label>fish</label>
     <corePart>
       <def>Body</def>

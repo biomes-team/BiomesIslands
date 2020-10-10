@@ -110,7 +110,7 @@
         <race>
             <herdAnimal>true</herdAnimal>
             <predator>true</predator>
-            <body>Whale</body>
+            <body>Biomes_WhaleBody</body>
 			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
             <baseHungerRate>2.7</baseHungerRate>
             <baseBodySize>4</baseBodySize>
