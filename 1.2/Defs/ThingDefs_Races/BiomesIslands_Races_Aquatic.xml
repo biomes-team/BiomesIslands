@@ -1140,4 +1140,191 @@
         </lifeStages>
     </PawnKindDef>
 	
+	
+	<!-- Manta Ray -->
+	    <LifeStageDef ParentName="AnimalBaby">
+        <defName>BiomesIslands_MantaRayBabyTiny</defName>
+        <bodySizeFactor>0.1</bodySizeFactor>
+        <foodMaxFactor>4</foodMaxFactor>
+        <statFactors>
+            <MoveSpeed>0.5</MoveSpeed>
+            <SwimSpeed>0.5</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
+                <drawSize>1</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_MantaRayJuvenile</defName>
+        <label>juvenile</label>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <meleeDamageFactor>0.75</meleeDamageFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+            <SwimSpeed>0.9</SwimSpeed>
+        </statFactors>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
+                <drawSize>2.65</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>BiomesIslands_MantaRayAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <modExtensions>
+        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
+            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
+            <bodyGraphicData>
+                <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
+                <drawSize>3.2</drawSize>
+            </bodyGraphicData>
+        </li>
+        </modExtensions>
+    </LifeStageDef>
+
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
+        <defName>BiomesIslands_MantaRay</defName>
+        <label>manta ray</label>
+        <description>Manta ray. Closely related to sharks.</description>
+        <statBases>
+            <MoveSpeed>0</MoveSpeed>
+            <SwimSpeed>8</SwimSpeed>
+            <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+            <ComfyTemperatureMax>55</ComfyTemperatureMax>
+            <MarketValue>1500</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>teeth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>22</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.8</chanceFactor>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>28</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+			<li>
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+			<!-- <maxPreyBodySize>0.8</maxPreyBodySize> -->
+            <body>Biomes_MantaBody</body>
+			<leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef>
+            <baseHungerRate>0.8</baseHungerRate>
+            <baseBodySize>2</baseBodySize>
+            <baseHealthScale>3.0</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <gestationPeriodDays>50</gestationPeriodDays>
+            <wildness>0.70</wildness>
+            <nuzzleMtbHours>275</nuzzleMtbHours>
+            <petness>0.01</petness>
+            <lifeExpectancy>32</lifeExpectancy>
+            <trainability>Intermediate</trainability>
+            <manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.6</manhunterOnDamageChance>
+            <meatLabel>fish meat</meatLabel>
+
+            <lifeStageAges>
+                <li>
+                    <def>BiomesIslands_MantaRayBabyTiny</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_MantaRayJuvenile</def>
+                    <minAge>0.4</minAge>
+                </li>
+                <li>
+                    <def>BiomesIslands_MantaRayAdult</def>
+                    <minAge>0.8</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>BiomesIslands_MantaRay</defName>
+        <label>manta ray</label>
+        <race>BiomesIslands_MantaRay</race>
+        <combatPower>200</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <drawSize>2.65</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <drawSize>2.65</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <drawSize>3.2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <drawSize>3.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
 </Defs>

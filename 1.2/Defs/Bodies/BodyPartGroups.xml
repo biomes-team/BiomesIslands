@@ -56,5 +56,26 @@
 			<li>BreathingPathway</li>
 		</tags>
 	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>FishGills</defName>
+		<label>gills</label>
+		<hitPoints>15</hitPoints>
+		<permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BreathingPathway</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>MantaFin</defName>
+		<label>fin</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
 
 </Defs>
