@@ -160,6 +160,7 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhite</texPath>
+					<color>(100,60,70)</color>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -170,6 +171,7 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhite</texPath>
+					<color>(100,60,70)</color>
                     <drawSize>2.65</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -179,7 +181,7 @@
                     <drawSize>3.2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhite</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>3.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -345,7 +347,7 @@
                     <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/Hammerhead</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -355,7 +357,7 @@
                     <drawSize>2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/Hammerhead</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -365,7 +367,7 @@
                     <drawSize>2.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/Hammerhead</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>2.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -548,7 +550,7 @@
                     <drawSize>0.75</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Tuna/Tuna</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>0.75</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -558,7 +560,7 @@
                     <drawSize>2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Tuna/Tuna</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -568,7 +570,7 @@
                     <drawSize>2.4</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Tuna/Tuna</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>2.4</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -908,11 +910,11 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapper</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/Dessicated_RedSnapper</texPath>
                     <drawSize>0.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapper</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>0.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -922,7 +924,7 @@
                     <drawSize>1.2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapper</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>1.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -932,7 +934,7 @@
                     <drawSize>1.6</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapper</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>1.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -1111,7 +1113,7 @@
 					<color>(180,170,160)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Trout/Trout</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>0.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -1122,7 +1124,7 @@
 					<color>(180,170,160)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Trout/Trout</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>1.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -1133,7 +1135,7 @@
 					<color>(180,170,160)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Trout/Trout</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
                     <drawSize>1.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
