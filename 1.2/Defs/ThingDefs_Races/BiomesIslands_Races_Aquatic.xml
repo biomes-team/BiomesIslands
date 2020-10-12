@@ -1302,7 +1302,7 @@
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/Dessicated_MantaRay</texPath>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -1312,7 +1312,7 @@
                     <drawSize>2.65</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/Dessicated_MantaRay</texPath>
                     <drawSize>2.65</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -1322,7 +1322,7 @@
                     <drawSize>3.2</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRay</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/Dessicated_MantaRay</texPath>
                     <drawSize>3.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
