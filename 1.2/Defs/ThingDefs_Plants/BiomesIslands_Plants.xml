@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_CoconutPalm</defName>
-		<label>coconut tree</label>
+		<label>coral coconut tree</label>
 		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces coconuts.</description>
 		<graphicData>
 			<texPath>BiomesIslands_Things/Plant/CoconutPalm/CoconutPalm</texPath>
@@ -23,7 +23,7 @@
 	
 	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_BananaPlant</defName>
-		<label>banana plant</label>
+		<label>sugar banana plant</label>
 		<description>A large flowering herb often mistaken for a tree. Produces bananas.</description>
 		<graphicData>
 			<texPath>BiomesIslands_Things/Plant/Bananaplant/BananaPlant</texPath>
@@ -62,7 +62,7 @@
 	
 	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_OrangeTree</defName>
-		<label>orange tree</label>
+		<label>blood orange tree</label>
 		<description>The orange tree is a tree, which can reach 10 m in height, provided with branches with few weak spines. Produces sweet oranges.</description>
 		<graphicData>
 			<texPath>BiomesIslands_Things/Plant/OrangeTree/OrangeFruitTree</texPath>
@@ -81,7 +81,7 @@
 	
 	<ThingDef ParentName="PlantBase">
 		<defName>BiomesIslands_Pineappleplant</defName>
-		<label>pineapple</label>
+		<label>spineapple plant</label>
 		<description>A tall fruiting herb. It produces only a single fruit before dying, but leaves offspring behind to take it's place.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
