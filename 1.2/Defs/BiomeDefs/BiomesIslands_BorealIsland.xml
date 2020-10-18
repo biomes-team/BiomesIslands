@@ -14,9 +14,6 @@
 		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
 			<allowBeach>false</allowBeach>
 		</li>
-		<li Class="BiomesCore.DefModExtensions.Biomes_WaterPlantBiome">
-			<spawnFertilityMultiplier>1.0</spawnFertilityMultiplier>
-		</li>
         <li Class="BiomesKit.BiomesKitControls">
 			<randomizeHilliness>True</randomizeHilliness>
 			<usePerlin>true</usePerlin>
@@ -41,7 +38,7 @@
     <texture>World/Biomes/Ocean</texture>
     <forageability>1</forageability>
 		<foragedFood>RawBerries</foragedFood>
-    <wildPlantRegrowDays>15</wildPlantRegrowDays>
+    <wildPlantRegrowDays>5</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>

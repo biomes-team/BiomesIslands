@@ -15,9 +15,6 @@
 		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
 			<allowBeach>false</allowBeach>
 		</li>
-		<li Class="BiomesCore.DefModExtensions.Biomes_WaterPlantBiome">
-			<spawnFertilityMultiplier>1.0</spawnFertilityMultiplier>
-		</li>
         <li Class="BiomesKit.BiomesKitControls">
 			<randomizeHilliness>True</randomizeHilliness>
 			<usePerlin>true</usePerlin>
@@ -41,7 +38,7 @@
     <texture>World/Biomes/Ocean</texture>
     <forageability>1</forageability>
 		<foragedFood>RawBerries</foragedFood>
-    <wildPlantRegrowDays>15</wildPlantRegrowDays>
+    <wildPlantRegrowDays>5</wildPlantRegrowDays>
     <soundsAmbient>
 			<li>Ambient_NightInsects_Jungle</li>
 			<li>Ambient_DayInsects_Jungle</li>
@@ -183,12 +180,12 @@
 		<Plant_Berry>0.05</Plant_Berry>
 		<Plant_Rafflesia>0.0008</Plant_Rafflesia>
 	<!-- water plants -->
-		<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
+		<BiomesIslands_Kelp>0.15</BiomesIslands_Kelp>
 		<BiomesIslands_SeaSponge>0.02</BiomesIslands_SeaSponge>
-		<BiomesIslands_SeaGrass>7.0</BiomesIslands_SeaGrass>
-		<BiomesIslands_Seaweed>1.0</BiomesIslands_Seaweed>
-		<BiomesIslands_GreenAlgae>1</BiomesIslands_GreenAlgae>
-		<BiomesIslands_Sargassum>0.05</BiomesIslands_Sargassum>
+		<BiomesIslands_SeaGrass>3.0</BiomesIslands_SeaGrass>
+		<BiomesIslands_Seaweed>2.0</BiomesIslands_Seaweed>
+		<BiomesIslands_GreenAlgae>3</BiomesIslands_GreenAlgae>
+		<BiomesIslands_Sargassum>0.15</BiomesIslands_Sargassum>
 	</wildPlants>
     <wildAnimals>
 	<!-- land grazers -->
