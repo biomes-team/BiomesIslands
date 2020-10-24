@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using RimWorld;
+using Verse.Sound;
 
 namespace BiomesIslands.Incidents
 {
@@ -19,6 +20,17 @@ namespace BiomesIslands.Incidents
             }
             Map map = (Map)parms.target;
             return map.mapTemperature.SeasonalTemp >= 5f && map.mapTemperature.SeasonalTemp <= 50f;
+        }
+
+
+        protected override bool TryExecuteWorker(IncidentParms parms)
+        {
+            if (base.TryExecuteWorker(parms))
+            {
+                SoundDefOf.PsychicSootheGlobal.PlayOneShotOnCamera((Map)parms.target);
+                return true;
+            }
+            return false;
         }
     }
 
