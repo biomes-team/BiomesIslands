@@ -38,7 +38,7 @@
     <texture>World/Biomes/Ocean</texture>
     <forageability>1</forageability>
 		<foragedFood>RawBerries</foragedFood>
-    <wildPlantRegrowDays>5</wildPlantRegrowDays>
+    <wildPlantRegrowDays>12</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
