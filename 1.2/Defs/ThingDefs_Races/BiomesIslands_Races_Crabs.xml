@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<!-- Small Crabs -->
 	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_BlueCrab</defName>
 		<label>blue crab</label>
@@ -442,6 +442,105 @@
 				<dessicatedBodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
 					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData> 
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+<!-- Large Crabs -->
+<ThingDef ParentName="BiomesCore_CrabThingBase">
+		<defName>BiomesIslands_ClutterCrab</defName>
+		<label>clutter crab</label>
+		<description>An unusually large and intelligent crab. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
+		<statBases>
+			<MoveSpeed>3.8</MoveSpeed>
+			<SwimSpeed>3.2</SwimSpeed>
+			<MarketValue>410</MarketValue>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+			<baseHungerRate>0.55</baseHungerRate>
+			<lifeExpectancy>11</lifeExpectancy>
+			<manhunterOnTameFailChance>0.85</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.45</manhunterOnDamageChance>
+			<wildness>0.65</wildness>
+			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
+			<trainability>Advanced</trainability>
+		</race>
+		<comps>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BiomesIslands_EggClutterCrabFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>
+			<min>1</min>
+			<max>2</max>
+			</eggCountRange>
+		</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BiomesIslands_ClutterCrab</defName>
+		<label>clutter crab</label>
+		<race>BiomesIslands_ClutterCrab</race>
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.30</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/ClutterCrab/ClutterCrab</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/ClutterCrab/ClutterCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/ClutterCrab/ClutterCrab</texPath>
+					<drawSize>2.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData> 
 			</li>
 		</lifeStages>

@@ -389,6 +389,26 @@
     </comps>
   </ThingDef>
   
+    
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggClutterCrabFertilized</defName>
+	<label>clutter crab egg (fert.)</label>
+	<description>A fertilized clutter crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(95,125,140)</color>
+		<drawSize>1.1</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>55.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>12</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_ClutterCrab</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
   
     <!--================== Fish Food ==================-->
   <ThingDef ParentName="OrganicProductBase">
