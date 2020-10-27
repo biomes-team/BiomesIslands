@@ -510,8 +510,8 @@
 		<defName>BiomesIslands_ClutterCrab</defName>
 		<label>clutter crab</label>
 		<race>BiomesIslands_ClutterCrab</race>
-		<combatPower>50</combatPower>
-		<ecoSystemWeight>0.30</ecoSystemWeight>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

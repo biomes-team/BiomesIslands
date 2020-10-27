@@ -190,8 +190,8 @@
         <eggLayIntervalDays>30</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>
-          <min>5</min>
-          <max>10</max>
+          <min>2</min>
+          <max>6</max>
         </eggCountRange>
       </li>
     </comps>
@@ -276,6 +276,139 @@
   </PawnKindDef>
   
   
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BiomesIslands_LeatherbackTurtle</defName>
+    <label>leatherback turtle</label>
+    <description>This sea-dwelling reptile is known for its huge size and soft shell.</description>
+    <statBases>
+      <MoveSpeed>1.0</MoveSpeed>
+      <SwimSpeed>5</SwimSpeed>
+      <MarketValue>450</MarketValue>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.150</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>55</ComfyTemperatureMax>
+    </statBases>
+    <tools>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BiomesIslands_EggLeatherbackTurtleFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>3</min>
+          <max>7</max>
+        </eggCountRange>
+      </li>
+    </comps>
+    <race>
+      <body>TurtleLike</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHungerRate>0.90</baseHungerRate>
+      <baseHealthScale>1.8</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+      <wildness>0.55</wildness>
+      <lifeExpectancy>210</lifeExpectancy>
+      <herdAnimal>true</herdAnimal>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.65</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>1.3</minAge>
+          <soundWounded>Pawn_Tortoise_Wounded</soundWounded>
+          <soundDeath>Pawn_Tortoise_Death</soundDeath>
+          <soundCall>Pawn_Tortoise_Call</soundCall>
+          <soundAngry>Pawn_Tortoise_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BiomesIslands_LeatherbackTurtle</defName>
+    <label>leatherback turtle</label>
+    <race>BiomesIslands_LeatherbackTurtle</race>
+    <combatPower>90</combatPower>
+    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <wildGroupSize>1~3</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/LeatherbackTurtle/LeatherbackTurtle</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/LeatherbackTurtle/LeatherbackTurtle</texPath>
+          <drawSize>2.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/LeatherbackTurtle/LeatherbackTurtle</texPath>
+          <drawSize>3.5</drawSize>
+          <shadowData>
+            <volume>(0.45, 0.45, 0.45)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
+          <drawSize>3.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+    
   
     <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_MarineIguana</defName>

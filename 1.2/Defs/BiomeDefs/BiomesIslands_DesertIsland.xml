@@ -153,7 +153,7 @@
     </wildPlants>
     <wildAnimals>
   <!-- land grazers -->
-		<Donkey>0.2</Donkey>
+		<Donkey>0.1</Donkey>
 		<GuineaPig>0.017</GuineaPig>
 		<Horse>0.1</Horse>
 		<Bison>0.1</Bison>
@@ -164,7 +164,7 @@
 		<Ostrich>0.7</Ostrich>
 		<Dromedary>0.7</Dromedary>
 		<Boomrat>0.5</Boomrat>
-		<Elephant>0.5</Elephant>
+		<Elephant>0.4</Elephant>
 		<Rhinoceros>0.5</Rhinoceros>
 		<Boomalope>0.5</Boomalope>
 	    <Megasloth>0.1</Megasloth>
@@ -174,6 +174,7 @@
 		<BiomesIslands_HermitCrab>0.2</BiomesIslands_HermitCrab>
 		<BiomesIslands_SeaTurtle>0.5</BiomesIslands_SeaTurtle>
 		<BiomesIslands_MarineIguana>0.7</BiomesIslands_MarineIguana>
+		<BiomesIslands_LeatherbackTurtle>0.3</BiomesIslands_LeatherbackTurtle>
 	  
   <!-- land predators -->
       <Cougar>0.15</Cougar>

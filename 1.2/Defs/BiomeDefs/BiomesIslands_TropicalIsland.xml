@@ -200,6 +200,7 @@
         <BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
 	    <BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
 		<BiomesIslands_SeaTurtle>0.5</BiomesIslands_SeaTurtle>
+		<BiomesIslands_LeatherbackTurtle>0.8</BiomesIslands_LeatherbackTurtle>
 
 	<!-- land predators -->
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
