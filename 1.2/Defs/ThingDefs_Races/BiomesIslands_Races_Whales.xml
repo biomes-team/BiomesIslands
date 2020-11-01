@@ -161,7 +161,7 @@
                     <drawSize>2.0</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
                     <drawSize>2.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -171,7 +171,7 @@
                     <drawSize>4.0</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
                     <drawSize>4.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -181,7 +181,7 @@
                     <drawSize>4.8</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
                     <drawSize>4.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -357,7 +357,7 @@
                     <drawSize>1.7</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
                     <drawSize>1.7</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -367,7 +367,7 @@
                     <drawSize>3.0</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
                     <drawSize>3.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -377,7 +377,7 @@
                     <drawSize>3.8</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
                     <drawSize>3.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
