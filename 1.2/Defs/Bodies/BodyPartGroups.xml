@@ -58,8 +58,8 @@
 	</BodyPartDef>
 	
 	<BodyPartDef>
-		<defName>FishGills</defName>
-		<label>gills</label>
+		<defName>BiomesIslands_FishGill</defName>
+		<label>gill</label>
 		<hitPoints>15</hitPoints>
 		<permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
 		<skinCovered>true</skinCovered>
@@ -68,14 +68,44 @@
 		</tags>
 	</BodyPartDef>
 	
-	<BodyPartDef>
-		<defName>MantaFin</defName>
+	<BodyPartGroupDef>
+		<defName>BiomesIslands_Fins</defName>
 		<label>fin</label>
-		<hitPoints>20</hitPoints>
-		<skinCovered>true</skinCovered>
-		<tags>
-			<li>MovingLimbCore</li>
-		</tags>
-	</BodyPartDef>
+		<listOrder>10</listOrder>
+	</BodyPartGroupDef>
+
+  <BodyPartDef>
+    <defName>BiomesIslands_Fin</defName>
+    <label>fin</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+	<BodyPartGroupDef>
+		<defName>BiomesIslands_FrontLeftFin</defName>
+		<label>front left fin</label>
+		<labelShort>fin</labelShort>
+	</BodyPartGroupDef>
+  
+	<BodyPartGroupDef>
+		<defName>BiomesIslands_FrontRightFin</defName>
+		<label>front right fin</label>
+		<labelShort>fin</labelShort>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>BiomesIslands_RearLeftFin</defName>
+		<label>rear left fin</label>
+		<labelShort>fin</labelShort>
+	</BodyPartGroupDef>
+  
+	<BodyPartGroupDef>
+		<defName>BiomesIslands_RearRightFin</defName>
+		<label>rear right fin</label>
+		<labelShort>fin</labelShort>
+	</BodyPartGroupDef>
 
 </Defs>

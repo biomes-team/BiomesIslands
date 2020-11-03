@@ -59,13 +59,13 @@
         </li>
 		
 		<li>
-          <def>MantaFin</def>
+          <def>BiomesIslands_Fin</def>
           <customLabel>left fin</customLabel>
           <coverage>0.20</coverage>
           <depth>Outside</depth>
         </li>
 		<li>
-          <def>MantaFin</def>
+          <def>BiomesIslands_Fin</def>
           <customLabel>right fin</customLabel>
           <coverage>0.20</coverage>
           <depth>Outside</depth>

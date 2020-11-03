@@ -29,14 +29,14 @@
           <depth>Inside</depth>
         </li>
         <li>
-          <def>Lung</def>
-          <customLabel>left lung</customLabel>
+          <def>BiomesIslands_FishGill</def>
+          <customLabel>left gill</customLabel>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
         <li>
-          <def>Lung</def>
-          <customLabel>right lung</customLabel>
+          <def>BiomesIslands_FishGill</def>
+          <customLabel>right gill</customLabel>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
@@ -58,55 +58,72 @@
           <depth>Inside</depth>
         </li>
         <li>
-          <def>Neck</def>
-          <coverage>0.4</coverage>
-          <height>Top</height>
-          <parts>
-            <li>
-              <def>Head</def>
-              <coverage>0.85</coverage>
-              <groups>
-                <li>HeadAttackTool</li>
-              </groups>
-              <parts>
-                <li>
-                  <def>Skull</def>
-                  <coverage>0.40</coverage>
-                  <depth>Inside</depth>
-                  <parts>
-                    <li>
-                      <def>Brain</def>
-                      <coverage>0.35</coverage>
-                      <depth>Inside</depth>
-                    </li>
-                  </parts>
+			<def>Head</def>
+			<coverage>0.85</coverage>
+			<groups>
+				<li>HeadAttackTool</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Skull</def>
+					<coverage>0.40</coverage>
+					<depth>Inside</depth>
+					<parts>
+						<li>
+							<def>Brain</def>
+							<coverage>0.35</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
                 </li>
                 <li>
-                  <def>Eye</def>
-                  <customLabel>left eye</customLabel>
-                  <coverage>0.05</coverage>
+					<def>Eye</def>
+					<customLabel>left eye</customLabel>
+					<coverage>0.05</coverage>
                 </li>
                 <li>
-                  <def>Eye</def>
-                  <customLabel>right eye</customLabel>
-                  <coverage>0.05</coverage>
+					<def>Eye</def>
+					<customLabel>right eye</customLabel>
+					<coverage>0.05</coverage>
                 </li>
                 <li>
-                  <def>Nose</def>
-                  <coverage>0.15</coverage>
+					<def>Nose</def>
+					<coverage>0.15</coverage>
                 </li>
                 <li>
-                  <def>AnimalJaw</def>
-                  <coverage>0.2</coverage>
-                  <groups>
-                    <li>Teeth</li>
-                  </groups>
+					<def>AnimalJaw</def>
+					<coverage>0.2</coverage>
+					<groups>
+						<li>Teeth</li>
+					</groups>
                 </li>
               </parts>
             </li>
-          </parts>
+        <li>
+			<def>BiomesIslands_Fin</def>
+			<customLabel>front left fin</customLabel>
+			<coverage>0.07</coverage>
+			<height>Bottom</height>
         </li>
-      </parts>
+        <li>
+			<def>BiomesIslands_Fin</def>
+			<customLabel>front right fin</customLabel>
+			<coverage>0.07</coverage>
+			<height>Bottom</height>
+        </li>
+        <li>
+			<def>BiomesIslands_Fin</def>
+			<customLabel>rear left fin</customLabel>
+			<coverage>0.07</coverage>
+			<height>Bottom</height>
+        </li>
+        <li>
+			<def>BiomesIslands_Fin</def>
+			<customLabel>rear right fin</customLabel>
+			<coverage>0.07</coverage>
+			<height>Bottom</height>
+        </li>
+		</parts>
     </corePart>
   </BodyDef>
 </Defs>
