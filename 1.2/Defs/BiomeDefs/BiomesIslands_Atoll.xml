@@ -160,19 +160,20 @@
 		<BiomesIslands_DevilsClawTree>0.4</BiomesIslands_DevilsClawTree>
 		<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
 		<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
-		<BiomesIslands_Bayhops>0.2</BiomesIslands_Bayhops>
-		
 		<Plant_Grass>2.0</Plant_Grass>
 		<Plant_ShrubLow>1.0</Plant_ShrubLow>
 		<Plant_TreePalm>1.0</Plant_TreePalm>
+		
+	<!-- sand plants -->
+		<BiomesIslands_Bayhops>5</BiomesIslands_Bayhops>
 	<!-- water plants -->
 
-		<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
+		<BiomesIslands_Kelp>0.25</BiomesIslands_Kelp>
 		<BiomesIslands_SeaSponge>0.15</BiomesIslands_SeaSponge>
-		<BiomesIslands_SeaGrass>8.0</BiomesIslands_SeaGrass>
-		<BiomesIslands_Seaweed>0.8</BiomesIslands_Seaweed>
+		<BiomesIslands_SeaGrass>1.0</BiomesIslands_SeaGrass>
+		<BiomesIslands_Seaweed>0.4</BiomesIslands_Seaweed>
 		<BiomesIslands_GreenAlgae>0.1</BiomesIslands_GreenAlgae>
-		<BiomesIslands_Sargassum>0.5</BiomesIslands_Sargassum>
+		<BiomesIslands_Sargassum>0.25</BiomesIslands_Sargassum>
 		
     </wildPlants>
     <wildAnimals>
@@ -184,8 +185,6 @@
 		<Tortoise>0.5</Tortoise>
 		<BiomesIslands_SeaTurtle>0.3</BiomesIslands_SeaTurtle>
 		<BiomesIslands_MarineIguana>0.6</BiomesIslands_MarineIguana>
-		<BiomesIslands_LeatherbackTurtle>0.5</BiomesIslands_LeatherbackTurtle>
-		
 	<!-- land predators -->
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 		
