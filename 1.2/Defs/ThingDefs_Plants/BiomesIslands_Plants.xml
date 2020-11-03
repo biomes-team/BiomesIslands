@@ -121,12 +121,12 @@
 <!--====================	Other Trees		=====================-->
 
   <ThingDef ParentName="TreeBase">
-    <defName>BiomesIslands_TwistedTree</defName>
-    <label>twisted tree</label>
-    <description>A tree that has been stunted due to growing in a cold, harsh climate.</description>
+    <defName>BiomesIslands_WindsweptTree</defName>
+    <label>windswept birch</label>
+    <description>A birch that has been stunted and deformed due to growing in a cold, harsh climate.</description>
     <graphicData>
-      <texPath>BiomesIslands_Things/Plant/TwistedTree</texPath>
-      <!-- <graphicClass>Graphic_Random</graphicClass> -->
+      <texPath>BiomesIslands_Things/Plant/WindsweptTree/Birch</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
         <shadowData>
           <volume>(0.15, 0.3, 0.15)</volume>
           <offset>(0,0,-0.38)</offset>
@@ -139,7 +139,7 @@
     <ingestible />
     <plant>
       <growDays>20</growDays>
-      <visualSizeRange>1.3~3.0</visualSizeRange>
+      <visualSizeRange>1.3~2.5</visualSizeRange>
       <harvestWork>800</harvestWork>
       <harvestYield>18</harvestYield>
     </plant>
