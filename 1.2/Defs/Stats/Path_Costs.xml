@@ -16,7 +16,7 @@
     <label>path cost for flying</label>
     <description>The pathing addition for flying</description>
     <category>BasicsNonPawn</category>
-    <defaultBaseValue>1</defaultBaseValue>
+    <defaultBaseValue>0.8</defaultBaseValue>
     <hideAtValue>1</hideAtValue>
     <toStringStyle>FloatOne</toStringStyle>
     <applyFactorsIfNegative>false</applyFactorsIfNegative>
