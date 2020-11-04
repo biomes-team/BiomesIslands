@@ -102,50 +102,40 @@
       </li>
     </terrainsByFertility>
     <terrainPatchMakers>
-	  <li>
-		<perlinFrequency>0.035</perlinFrequency>
-		<minFertility>5.0</minFertility>
+	   <li>
+		<perlinFrequency>0.020</perlinFrequency>
+		<minFertility>3.0</minFertility>
 		<thresholds>
           <li>
             <terrain>MossyTerrain</terrain>
             <min>0.0</min>
-            <max>0.32</max>
-          </li>
-          <li>
-            <terrain>SoilRich</terrain>
-            <min>0.32</min>
             <max>0.52</max>
           </li>
           <li>
             <terrain>Marsh</terrain>
             <min>0.52</min>
-            <max>0.76</max>
+            <max>0.85</max>
           </li>
           <li>
             <terrain>WaterShallow</terrain>
-            <min>0.76</min>
-            <max>0.98</max>
-          </li>
-          <li>
-            <terrain>WaterDeep</terrain>
-            <min>0.98</min>
+            <min>0.85</min>
             <max>999</max>
           </li>
+
         </thresholds>
 	  </li>
       <li>
-        <perlinFrequency>0.02</perlinFrequency>
-        <minFertility>2.0</minFertility>
-        <maxFertility>8.0</maxFertility>
+        <perlinFrequency>0.035</perlinFrequency>
+        <minFertility>3.0</minFertility>
         <thresholds>
-		  <li>
-            <terrain>Soil</terrain>
-            <min>-0.2</min>
-            <max>0.1</max>
+		<li>
+            <terrain>MossyTerrain</terrain>
+            <min>-999</min>
+            <max>-.5</max>
           </li>
 		  <li>
-            <terrain>MossyTerrain</terrain>
-            <min>0.35</min>
+            <terrain>SoilRich</terrain>
+            <min>0.55</min>
             <max>999</max>
           </li>
         </thresholds>

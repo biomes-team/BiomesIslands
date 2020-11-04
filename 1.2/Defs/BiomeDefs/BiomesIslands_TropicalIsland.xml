@@ -111,7 +111,7 @@
     <terrainPatchMakers>
 	  <li>
 		<perlinFrequency>0.035</perlinFrequency>
-		<minFertility>5.0</minFertility>
+		<minFertility>3.0</minFertility>
 		<thresholds>
 			<li>
 				<terrain>Marsh</terrain>
@@ -135,11 +135,11 @@
         <minFertility>2.0</minFertility>
         <maxFertility>8.0</maxFertility>
         <thresholds>
-		  <li>
-            <terrain>Soil</terrain>
-            <min>-0.2</min>
-            <max>0.1</max>
-          </li>
+		  <!-- <li> -->
+            <!-- <terrain>Soil</terrain> -->
+            <!-- <min>-0.2</min> -->
+            <!-- <max>0.1</max> -->
+          <!-- </li> -->
 		  <li>
             <terrain>Sand</terrain>
             <min>0.35</min>

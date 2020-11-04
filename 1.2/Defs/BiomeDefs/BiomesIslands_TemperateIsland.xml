@@ -105,8 +105,8 @@
     </terrainsByFertility>
     <terrainPatchMakers>
 	  <li>
-		<perlinFrequency>0.035</perlinFrequency>
-		<minFertility>5.0</minFertility>
+		<perlinFrequency>0.030</perlinFrequency>
+		<minFertility>3.0</minFertility>
 		<thresholds>
 		  <li>
             <terrain>SoilRich</terrain>
@@ -137,7 +137,7 @@
 	  </li>
       <li>
         <perlinFrequency>0.02</perlinFrequency>
-        <minFertility>2.0</minFertility>
+        <minFertility>1.5</minFertility>
         <maxFertility>8.0</maxFertility>
         <thresholds>
 		  <li>
@@ -157,7 +157,7 @@
     <baseWeatherCommonalities>
 		<Clear>18</Clear>
 		<Fog>1</Fog>
-		<Rain>8</Rain>
+		<Rain>3</Rain>
 		<DryThunderstorm>0.3</DryThunderstorm>
 		<RainyThunderstorm>1.7</RainyThunderstorm>
 		<FoggyRain>1</FoggyRain>
