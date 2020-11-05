@@ -6,6 +6,9 @@
       <SwimSpeed>6</SwimSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
     </statBases>
+	<race>
+      <nameGenerator>Biomes_NamerAquatic</nameGenerator>
+	</race>
     <modExtensions>
       <!-- This makes things stay in the water -->
       <li Class="Swimming.AquaticExtension">
@@ -20,6 +23,9 @@
       <SwimSpeed>6</SwimSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
     </statBases>
+	<race>
+      <nameGenerator>Biomes_NamerAquatic</nameGenerator>
+	</race>
     <modExtensions>
       <!-- This makes things stay in the water -->
       <li Class="Swimming.AquaticExtension">
@@ -27,6 +33,7 @@
         <saltWaterOnly>true</saltWaterOnly>
       </li>
     </modExtensions>
+	
   </ThingDef>
 
   <ThingDef ParentName="AnimalThingBase" Name="BiomesCore_FreshWaterAnimal" Abstract="true">
@@ -35,6 +42,9 @@
       <SwimSpeed>6</SwimSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
     </statBases>
+	<race>
+      <nameGenerator>Biomes_NamerAquatic</nameGenerator>
+	</race>
     <modExtensions>
       <!-- This makes things stay in the water -->
       <li Class="Swimming.AquaticExtension">
