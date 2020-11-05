@@ -17,11 +17,12 @@
         <li Class="BiomesKit.BiomesKitControls">
 			<randomizeHilliness>True</randomizeHilliness>
 			<usePerlin>true</usePerlin>
+			<perlinCulling>0.80</perlinCulling>
             <allowOnWater>true</allowOnWater>
 			<minTemperature>0</minTemperature>
 			<maxTemperature>18</maxTemperature>
 			<minRainfall>600</minRainfall>
-			<frequency>20</frequency>
+			<frequency>25</frequency>
 			<materialPath>BiomesIslands_World/MapGraphics/TemperateIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
