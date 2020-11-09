@@ -290,6 +290,7 @@
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
+			<Beauty>8</Beauty>
 		</statBases>
 		<pathCost>20</pathCost>
 		<graphicData>
@@ -316,7 +317,7 @@
     <label>purple saxifrage</label>
     <description>A small, delicate flower adapted for cold climates</description>
     <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
+      <MaxHitPoints>65</MaxHitPoints>
       <Beauty>3</Beauty>
       <Nutrition>0.15</Nutrition>
     </statBases>
