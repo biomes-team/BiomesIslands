@@ -1,10 +1,10 @@
-		prediction:		Your test
+		prediction:			test:
 5x5		7				7
 6x6		8				9
 7x7		14				14
 8x8		15				16
 9x9		23				21
-avg		13,4			13,4
+avg		13,4				13,4
 
 
 		Cell per plant
