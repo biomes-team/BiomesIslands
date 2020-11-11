@@ -153,7 +153,7 @@
     <label>sea turtle</label>
     <description>This heavily armored sea-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.</description>
     <statBases>
-      <MoveSpeed>1.0</MoveSpeed>
+      <MoveSpeed>2.0</MoveSpeed>
       <SwimSpeed>5</SwimSpeed>
       <MarketValue>400</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
@@ -167,7 +167,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>11</power>
+        <power>19</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
       </li>
@@ -180,7 +180,7 @@
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
+        <chanceFactor>0.01</chanceFactor>
       </li>
     </tools>
     <comps>
@@ -197,11 +197,11 @@
     </comps>
     <race>
       <body>TurtleLike</body>
-      <baseBodySize>1</baseBodySize>
-      <baseHungerRate>0.33</baseHungerRate>
-      <baseHealthScale>0.8</baseHealthScale>
+      <baseBodySize>3</baseBodySize>
+      <baseHungerRate>1</baseHungerRate>
+      <baseHealthScale>3.5</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
-      <leatherDef>Leather_Lizard</leatherDef>
+      <leatherDef>BiomesCore_GreenChitin</leatherDef>
       <wildness>0.75</wildness>
       <lifeExpectancy>180</lifeExpectancy>
       <lifeStageAges>
@@ -241,16 +241,6 @@
       <li>
         <bodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
-          <drawSize>1.0</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
-          <drawSize>1.0</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
           <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -261,7 +251,17 @@
       <li>
         <bodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
-          <drawSize>2.2</drawSize>
+          <drawSize>2,25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
+          <drawSize>3</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>
@@ -269,7 +269,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
-          <drawSize>2.2</drawSize>
+          <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
