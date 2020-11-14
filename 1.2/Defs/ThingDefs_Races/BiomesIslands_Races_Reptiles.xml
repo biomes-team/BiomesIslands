@@ -148,14 +148,15 @@
     </lifeStages>
   </PawnKindDef>
 
+
   <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_SeaTurtle</defName>
     <label>sea turtle</label>
     <description>This heavily armored sea-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.</description>
     <statBases>
-      <MoveSpeed>2.0</MoveSpeed>
+      <MoveSpeed>2.5</MoveSpeed>
       <SwimSpeed>5</SwimSpeed>
-      <MarketValue>400</MarketValue>
+      <MarketValue>750</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -168,7 +169,7 @@
           <li>Bite</li>
         </capacities>
         <power>19</power>
-        <cooldownTime>2.6</cooldownTime>
+        <cooldownTime>2.4</cooldownTime>
         <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
       </li>
       <li>
@@ -203,7 +204,9 @@
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>BiomesCore_GreenChitin</leatherDef>
       <wildness>0.75</wildness>
-      <lifeExpectancy>180</lifeExpectancy>
+	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+      <lifeExpectancy>140</lifeExpectancy>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -235,8 +238,8 @@
     <defName>BiomesIslands_SeaTurtle</defName>
     <label>sea turtle</label>
     <race>BiomesIslands_SeaTurtle</race>
-    <combatPower>60</combatPower>
-    <ecoSystemWeight>0.60</ecoSystemWeight>
+    <combatPower>290</combatPower>
+    <ecoSystemWeight>1.50</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -251,17 +254,17 @@
       <li>
         <bodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
-          <drawSize>2,25</drawSize>
+          <drawSize>2.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
-          <drawSize>2.25</drawSize>
+          <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtle</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>4</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>
@@ -269,12 +272,11 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
-  
   
 
   <ThingDef ParentName="AnimalThingBase">
