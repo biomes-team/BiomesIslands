@@ -191,6 +191,7 @@
 	  <BiomesIslands_OmegaDodo>0.5</BiomesIslands_OmegaDodo>
 	  <BiomesIslands_BlueCrab>0.5</BiomesIslands_BlueCrab>
 	  <BiomesIslands_SeaTurtle>0.05</BiomesIslands_SeaTurtle>
+	  <BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
 	  <!-- land predators -->
       <Fox_Red>0.07</Fox_Red>
       <Fox_Arctic>0.07</Fox_Arctic>
