@@ -62,6 +62,7 @@
       <baseHungerRate>0.85</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
+	  <useMeatFrom>Rat</useMeatFrom>
       <gestationPeriodDays>23</gestationPeriodDays>
       <wildness>0.6</wildness>
       <petness>0.5</petness>

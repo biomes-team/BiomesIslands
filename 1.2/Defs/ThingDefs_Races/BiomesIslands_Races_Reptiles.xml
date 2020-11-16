@@ -724,6 +724,7 @@
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.75</wildness>
+	  <useMeatFrom>Tortoise</useMeatFrom>
       <lifeExpectancy>120</lifeExpectancy>
       <lifeStageAges>
         <li>
