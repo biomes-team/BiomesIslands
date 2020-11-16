@@ -370,7 +370,7 @@
     <statBases>
       <MoveSpeed>2.8</MoveSpeed>
       <MarketValue>300</MarketValue>
-      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
       <LeatherAmount>25</LeatherAmount>
     </statBases>
