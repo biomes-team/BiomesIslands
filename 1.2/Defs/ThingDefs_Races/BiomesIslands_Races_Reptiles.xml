@@ -784,8 +784,8 @@
           <texPath>BiomesIslands_Things/Pawn/Animal/GalapagosTortoise/GalapagosTortoise</texPath>
           <drawSize>2.0</drawSize>
           <shadowData>
-            <volume>(0.45, 0.45, 0.45)</volume>
-            <offset>(0,0,0)</offset>
+            <volume>(0.7, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.2)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
