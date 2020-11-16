@@ -298,6 +298,26 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="EggFertBase">
+    <defName>BiomesIslands_EggGalapagosTortoiseFertilized</defName>
+    <label>galapagos tortoise egg (fert.)</label>
+    <description>A fertilized tortoise egg. If all goes well, it should hatch into a baby tortoise. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+      <color>(226,222,207)</color>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>33.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_GalapagosTortoise</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
   
   <!--================== Misc land eggs ==================-->
   

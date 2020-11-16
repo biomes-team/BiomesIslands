@@ -17,6 +17,74 @@
   </SoundDef>
 
 
+<SoundDef>
+    <defName>BiomesPawn_TortoiseBig_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/Tortoise/Tortoise_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>12~12</volumeRange>      
+        <pitchRange>0.8082353~.914706</pitchRange>      
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 
+  <SoundDef>
+    <defName>BiomesPawn_TortoiseBig_Angry</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/Tortoise/Tortoise_Angry</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>24.39024~24.39024</volumeRange>      
+        <!-- <pitchRange>0.9311765~1.091765</pitchRange>       --> 
+        <pitchRange>.8311765~1.0591765</pitchRange>      
+        <distRange>0~70</distRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BiomesPawn_TortoiseBig_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/Tortoise/Tortoise_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>31.26829~31.26829</volumeRange>      
+        <pitchRange>1.304706~1.396471</pitchRange>      
+        <distRange>0~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BiomesPawn_TortoiseBig_Wounded</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/Tortoise/Tortoise_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>23~23</volumeRange>      
+        <pitchRange>1.106471~0.9</pitchRange>      
+        <distRange>0~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 
 </Defs>
