@@ -120,10 +120,10 @@
   
   <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggBlueCrabFertilized</defName>
-	<label>rimcrab egg (fert.)</label>
+	<label>blue crab egg (fert.)</label>
 	<description>A fertilized blue crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
-		<color>(95,125,140)</color>
+		<color>(140,181,201)</color>
 		<drawSize>0.9</drawSize>
 	</graphicData>
 	<statBases>
@@ -139,10 +139,10 @@
   
   <ThingDef ParentName="EggFertBase">
 	<defName>BiomesIslands_EggFiddlerCrabFertilized</defName>
-	<label>rimcrab egg (fert.)</label>
+	<label>fiddler crab egg (fert.)</label>
 	<description>A fertilized fiddler crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
-		<color>(95,125,140)</color>
+		<color>(201,171,140)</color>
 		<drawSize>0.9</drawSize>
 	</graphicData>
 	<statBases>
@@ -161,7 +161,7 @@
 	<label>hermit crab egg (fert.)</label>
 	<description>A fertilized hermit crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
-		<color>(95,125,140)</color>
+		<color>(212,75,75)</color>
 		<drawSize>0.9</drawSize>
 	</graphicData>
 	<statBases>
@@ -180,7 +180,7 @@
 	<label>clutter crab egg (fert.)</label>
 	<description>A fertilized clutter crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
-		<color>(95,125,140)</color>
+		<color>(177,224,224)</color>
 		<drawSize>1.1</drawSize>
 	</graphicData>
 	<statBases>
