@@ -68,7 +68,7 @@
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_Whale</defName>
         <label>whale</label>
-        <description>A whale.</description>
+        <description>A large seaborn mammal that holds it's breath for hours when diving.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>7</SwimSpeed>
@@ -320,7 +320,7 @@
             <trainability>Intermediate</trainability>
             <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.6</manhunterOnDamageChance>
-            <meatLabel>blubber</meatLabel>
+			<useMeatFrom>BiomesIslands_Whale</useMeatFrom>
 			<meatColor>(255,210,210)</meatColor>	
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
             <lifeStageAges>
