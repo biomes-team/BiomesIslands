@@ -8,7 +8,7 @@
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<SwimSpeed>6</SwimSpeed>
-			<HungerRateMultiplier>3</HungerRateMultiplier>
+			<!-- <HungerRateMultiplier>3</HungerRateMultiplier> -->
 			<MarketValue>110</MarketValue>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
@@ -24,7 +24,7 @@
 			<lifeExpectancy>9</lifeExpectancy>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
-			<wildness>0.10</wildness>
+			<wildness>0.20</wildness>
 			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
@@ -126,7 +126,7 @@
 			<lifeExpectancy>9</lifeExpectancy>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
-			<wildness>0.10</wildness>
+			<wildness>0.30</wildness>
 			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
@@ -365,7 +365,7 @@
 			<lifeExpectancy>9</lifeExpectancy>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
-			<wildness>0.10</wildness>
+			<wildness>0.25</wildness>
 			<meatLabel>crab meat</meatLabel>
 			<meatColor>(251,172,202)</meatColor>
 		</race>

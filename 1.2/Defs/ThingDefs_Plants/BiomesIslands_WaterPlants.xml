@@ -322,7 +322,8 @@
     <graphicData>
 		<graphicClass>Graphic_Random</graphicClass>
 		<texPath>BiomesIslands_Things/Plant/GlowPlankton</texPath>
-		<shaderType>MoteGlow</shaderType>
+		<!-- <shaderType>MoteGlow</shaderType> -->
+		<shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">

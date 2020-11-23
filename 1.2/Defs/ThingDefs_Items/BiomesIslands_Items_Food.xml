@@ -76,13 +76,13 @@
   
     <ThingDef ParentName="BiomesCore_FruitBase">
     <defName>BiomesIslands_Pineapples</defName>
-    <label>spineapples</label>
-    <description>Big round fruit with a hard shell and a milky center</description>
+    <label>spineapple slices</label>
+    <description>Big round fruit slices with the spiny exterior removed, revealing a sweet milky center.</description>
     <graphicData>
-      <texPath>BiomesIslands_Things/Item/Crops/Sliced Pineapple</texPath>
+      <texPath>BiomesIslands_Things/Item/Crops/Spineapples</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>4.2</MarketValue>
+      <MarketValue>3.0</MarketValue>
       <Mass>0.06</Mass>
     </statBases>
     <comps>
