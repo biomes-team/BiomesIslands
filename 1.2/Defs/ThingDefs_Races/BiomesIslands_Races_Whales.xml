@@ -321,7 +321,6 @@
             <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.6</manhunterOnDamageChance>
 			<useMeatFrom>BiomesIslands_Whale</useMeatFrom>
-			<meatColor>(255,210,210)</meatColor>	
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
             <lifeStageAges>
                 <li>
