@@ -65,5 +65,27 @@
       </statFactors>
     </stuffProps>
   </ThingDef>
+
+<ThingDef ParentName="LeatherBase">
+    <defName>BiomesIslands_Leather_Whaleskin</defName>
+    <label>whaleskin</label>
+    <description>Leather from a whale. It doesn't protect very well.</description>
+    <graphicData>
+      <color>(160,190,170)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+      <StuffPower_Armor_Sharp>1.29</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(160,190,170)</color>
+      <commonality>0.06</commonality>
+	  <statFactors>
+        <Beauty>1.2</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
   
 </Defs>
