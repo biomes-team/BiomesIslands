@@ -111,7 +111,7 @@
             <herdAnimal>true</herdAnimal>
             <predator>true</predator>
             <body>Biomes_WhaleBody</body>
-			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
             <baseHungerRate>2.7</baseHungerRate>
             <baseBodySize>4</baseBodySize>
             <baseHealthScale>5.0</baseHealthScale>
@@ -306,7 +306,7 @@
             <herdAnimal>true</herdAnimal>
             <predator>false</predator>
             <body>Biomes_WhaleBody</body>
-			<leatherDef>Leather_Plain</leatherDef>
+			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
             <baseHungerRate>2.7</baseHungerRate>
             <baseBodySize>3.2</baseBodySize>
             <baseHealthScale>4.0</baseHealthScale>
