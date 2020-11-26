@@ -1209,7 +1209,7 @@
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_MantaRay</defName>
         <label>manta ray</label>
-        <description>Manta ray. Closely related to sharks.</description>
+        <description>Manta ray, closely related to sharks, can be found in warm, subtropical and tropical waters. Migrates across open oceans, singly or in groups.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>8</SwimSpeed>
