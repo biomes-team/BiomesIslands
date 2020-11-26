@@ -68,7 +68,7 @@
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_Whale</defName>
         <label>whale</label>
-        <description>A large seaborn mammal that holds it's breath for hours when diving.</description>
+        <description>Whales live in the seas, they look like large fishes, but they are actually mammals. They breathe air before diving and can endure hours without returning to the surface, they produce milk for the baby whales. They can be found usually in groups.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>7</SwimSpeed>
