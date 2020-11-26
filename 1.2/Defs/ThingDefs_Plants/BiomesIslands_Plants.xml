@@ -229,11 +229,12 @@
       <fertilitySensitivity>0.7</fertilitySensitivity>
       <growDays>3</growDays>
       <visualSizeRange>1.2~1.5</visualSizeRange>
+      <growMinGlow>0.3</growMinGlow>
       <topWindExposure>0.2</topWindExposure>
       <wildClusterRadius>9</wildClusterRadius>
       <wildClusterWeight>10</wildClusterWeight>
-          <wildOrder>1</wildOrder>
-          <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+      <wildOrder>1</wildOrder>
+      <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
       <purpose>Beauty</purpose>
     </plant>
     <comps>
