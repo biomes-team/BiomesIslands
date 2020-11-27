@@ -71,7 +71,7 @@
     <label>whaleskin</label>
     <description>Leather from a whale. Durable in combat, but doesn't provide much insulation.</description>
     <graphicData>
-      <color>(50,50,80)</color>
+      <color>(50,50,70)</color>
     </graphicData>
     <statBases>
       <MarketValue>4.0</MarketValue>
@@ -80,7 +80,7 @@
       <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
-      <color>(50,50,80)</color>
+      <color>(50,50,70)</color>
       <commonality>0.015</commonality>
 	  <statFactors>
         <Beauty>1.5</Beauty>

@@ -255,7 +255,7 @@
     <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
         <defName>BiomesIslands_BoomWhale</defName>
         <label>boomwhale</label>
-        <description>A whale that explodes. Somewhat smaller and dumber than its unmodified cousins.</description>
+        <description>A whale that explodes. Related to both whales and boomalopes, it is somewhat smaller and dumber than its unmodified cousins.</description>
         <statBases>
             <MoveSpeed>0</MoveSpeed>
             <SwimSpeed>7.5</SwimSpeed>
@@ -306,7 +306,7 @@
             <herdAnimal>true</herdAnimal>
             <predator>false</predator>
             <body>Biomes_WhaleBody</body>
-			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
+			<leatherDef>Leather_Plain</leatherDef>
             <baseHungerRate>2.7</baseHungerRate>
             <baseBodySize>3.2</baseBodySize>
             <baseHealthScale>4.0</baseHealthScale>
