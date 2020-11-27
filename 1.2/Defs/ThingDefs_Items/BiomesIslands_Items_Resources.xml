@@ -69,21 +69,21 @@
 <ThingDef ParentName="LeatherBase">
     <defName>BiomesIslands_Leather_Whaleskin</defName>
     <label>whaleskin</label>
-    <description>Leather from a whale. It doesn't protect very well.</description>
+    <description>Leather from a whale. Durable in combat, but doesn't provide much insulation.</description>
     <graphicData>
-      <color>(160,190,170)</color>
+      <color>(50,50,80)</color>
     </graphicData>
     <statBases>
-      <MarketValue>2.1</MarketValue>
+      <MarketValue>4.0</MarketValue>
       <StuffPower_Armor_Sharp>1.29</StuffPower_Armor_Sharp>
       <StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
-      <color>(160,190,170)</color>
-      <commonality>0.06</commonality>
+      <color>(50,50,80)</color>
+      <commonality>0.015</commonality>
 	  <statFactors>
-        <Beauty>1.2</Beauty>
+        <Beauty>1.5</Beauty>
       </statFactors>
     </stuffProps>
   </ThingDef>
