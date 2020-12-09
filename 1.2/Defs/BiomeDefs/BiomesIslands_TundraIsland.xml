@@ -16,10 +16,11 @@
 			<allowBeach>false</allowBeach>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
-			<randomizeHilliness>True</randomizeHilliness>
+			<setHills>Random</setHills>
 			<usePerlin>true</usePerlin>
 			<perlinCulling>0.80</perlinCulling>
             <allowOnWater>true</allowOnWater>
+            <allowOnLand>False</allowOnLand>
 			<maxTemperature>0</maxTemperature>
 			<minTemperature>-22</minTemperature>
 			<maxRainfall>1000</maxRainfall>
