@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "BiomesIslands_ClutterCrab"]/race/packAnimal</xpath>
+	<success>Always</success>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName = "BiomesIslands_ClutterCrab"]/race</xpath>
+      <value>
+        <packAnimal>true</packAnimal>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>
