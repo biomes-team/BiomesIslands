@@ -471,6 +471,7 @@
 			<wildness>0.65</wildness>
 			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 			<trainability>Advanced</trainability>
+			<packAnimal>true</packAnimal>
 		</race>
 		<comps>
 		<li Class="CompProperties_EggLayer">
