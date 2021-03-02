@@ -3,7 +3,7 @@
 
 <Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>RimBees</li>
+			<li>MagicalMenagerie</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -70,7 +70,6 @@
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildAnimals</xpath>
 				<value>
-					<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
 					<MM_CeryneianHind>0.005</MM_CeryneianHind>
 					<MM_Chimera>0.001</MM_Chimera>
 					<MM_ErymanthianBoar>0.05</MM_ErymanthianBoar>
