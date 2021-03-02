@@ -526,7 +526,7 @@
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_Iguana</texPath>
+          <texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_MarineIguana</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>

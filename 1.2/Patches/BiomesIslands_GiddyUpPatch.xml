@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-up! Core</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "BiomesCore_WaterAnimal"]/comps</xpath>
+				<value>
+					<li Class="GiddyUpCore.CompProperties_Mount">
+						<isException>true</isException>
+					</li>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
