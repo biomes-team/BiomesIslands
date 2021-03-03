@@ -25,12 +25,28 @@ namespace BiomesIslands.Incidents
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
-            if (base.TryExecuteWorker(parms))
-            {
-                SoundDefOf.PsychicSootheGlobal.PlayOneShotOnCamera((Map)parms.target);
-                return true;
-            }
-            return false;
+            Map map = (Map)parms.target;
+            GameConditionManager gameConditionManager = parms.target.GameConditionManager;
+            //GameCondition_GlowTide gameCondition_glowTide = (GameCondition_GlowTide)GameConditionMaker.MakeCondition(duration: Mathf.RoundToInt(def.durationDays.RandomInRange * 600000f), def: def.gameCondition);
+            GameCondition_GlowTide gameCondition_glowTide = (GameCondition_GlowTide)GameConditionMaker.MakeCondition(BiomesIslandsDefOf.GlowTide, 600000);
+
+            gameConditionManager.RegisterCondition(gameCondition_glowTide);
+            parms.letterHyperlinkThingDefs = gameCondition_glowTide.def.letterHyperlinks;
+            //SendStandardLetter(def.letterLabel, def.letterText, def.letterDef, parms, new TargetInfo(gameCondition_glowTide.startingSpawn, map));
+            SendStandardLetter(def.letterLabel, BiomesIslandsDefOf.GlowTide.letterText, def.letterDef, parms, new TargetInfo(gameCondition_glowTide.startingSpawn, map));
+            SoundDefOf.PsychicSootheGlobal.PlayOneShotOnCamera((Map)parms.target);
+            return true;
+
+            //SendStandardLetter(def.letterLabel, gameCondition_glowTide.LetterText, def.letterDef, parms, LookTargets.Invalid);
+            //return true;
+
+
+            //if (base.TryExecuteWorker(parms))
+            //{
+            //    SoundDefOf.PsychicSootheGlobal.PlayOneShotOnCamera((Map)parms.target);
+            //    return true;
+            //}
+            //return false;
         }
     }
 
@@ -42,43 +58,29 @@ namespace BiomesIslands.Incidents
 
         private List<IntVec3> validSpawns = new List<IntVec3>();
 
-        private int curGeneration;
+        private int curGeneration = 0;
 
         private List<CircleData> circleList = new List<CircleData> ();
 
         private int genLifespan = 4;
 
-
-        // direction the tide is approaching from
-        //private Rot4 tideDir;
-
-        private float pctRemaining
-        {
-            get
-            {
-               return (float)TicksLeft / (float)Duration;
-            }
-        }
+        public IntVec3 startingSpawn = IntVec3.Invalid;
 
         public override void Init()
         {
             base.Init();
-            //tideDir = Rot4.Random;
 
             SpawnInitialPlants();
         }
 
         public override void GameConditionTick()
         {
-            // spawn plants
-            //List<Map> affectedMaps = base.AffectedMaps;
-            
             if (TicksPassed % 128 == 0)
             {
                 SpawnOnTick();
             }
 
-            if(TicksPassed % 2560 == 0)
+            if (TicksPassed % 2560 == 0)
             {
                 ExpandValidZone();
             }
@@ -86,12 +88,11 @@ namespace BiomesIslands.Incidents
         }
 
 
-
         private void SpawnInitialPlants()
         {
             Map map = base.SingleMap;
             curGeneration = 0;
-            radRange = new IntRange(map.Size.x / 15, map.Size.x / 7);
+            radRange = new IntRange(map.Size.x / 14, map.Size.x / 8);
 
             //radRange.min = Math.Max(radRange.min, 10);
             //radRange.max = Math.Min(radRange.max, 50);
@@ -105,19 +106,26 @@ namespace BiomesIslands.Incidents
 
             circleList.Add(initCircle);
 
-            //validSpawns = GenRadial.RadialCellsAround(initialSpawn, radRange.RandomInRange, true).ToList();
-            UpdateValidSpawns();
+            startingSpawn = initialSpawn;
 
+            //startingSpawn = new IntVec2(initialSpawn.x, initialSpawn.z)
+
+            UpdateValidSpawns();
         }
+
 
         private void SpawnOnTick()
         {
             Map map = base.SingleMap;
 
             // spawn count should be proportional to valid spawn cells
-            int spawnCount = validSpawns.Count() / 200;
+            //int spawnCount = validSpawns.Count() / 200;
+            //int spawnCount = validSpawns.Count() / 500;
+            int spawnCount = validSpawns.Count() / 1200;
+            spawnCount = Math.Max(spawnCount, 2);
 
-            for(int j = 0; j < spawnCount; j++)
+
+            for (int j = 0; j < spawnCount; j++)
             {
                 IntVec3 spawnSpot = CellFinderLoose.RandomCellWith((IntVec3 c) => c.GetFirstBuilding(map) == null
                     && PlantUtility.CanEverPlantAt_NewTemp(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, c, map)
@@ -128,18 +136,13 @@ namespace BiomesIslands.Incidents
                     if (spawnSpot.InBounds(map))
                     {
                         GenSpawn.Spawn(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, spawnSpot, map, WipeMode.Vanish);
-
                     }
                 }
             }
-
-            //PlantUtility.CanEverPlantAt_NewTemp(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, c, map)
-
         }
 
         private void ExpandValidZone()
         {
-            //Log.Message(String.Format("----- EXPANDING BLOOM. Generation: {0}", curGeneration));
 
             List<IntVec3> newGenCells = validSpawns;
 
@@ -150,30 +153,22 @@ namespace BiomesIslands.Incidents
                 {
                     newGenCells = newGenCells.Except(GenRadial.RadialCellsAround(c.center, c.radius, true)).ToList();
                 }
-                else 
+                else if(curGeneration == 0)
                 {
                     newGenCells = newGenCells.Except(GenRadial.RadialCellsAround(c.center, c.radius / 2, true)).ToList();
                 }
-                //Log.Message(String.Format("Testing circle, gen {0}. cells remaining: {1}", c.generation, newGenCells.Count));
             }
 
             curGeneration++;
 
-            int newCount = 0;   //for testing only
-
-            //Log.Message("valid new cells: " + newGenCells.Count());
-            //while(newGenCells.Count >= radRange.min * radRange.min / 4)
             while (newGenCells.Count >= 4)
-
             {
                 IntVec3 center = newGenCells.RandomElement();
                 CircleData newCircle = new CircleData(center, radRange.RandomInRange, curGeneration);
 
                 newGenCells = newGenCells.Except(GenRadial.RadialCellsAround(newCircle.center, newCircle.radius, true)).ToList();
                 circleList.Add(newCircle);
-                newCount++;
             }
-            //Log.Message(String.Format("Added {0} new spawn spots", newCount));
 
             UpdateValidSpawns();
         }
@@ -187,9 +182,6 @@ namespace BiomesIslands.Incidents
                 if (c.generation >= curGeneration - genLifespan)
                 {
                     result.AddRange(GenRadial.RadialCellsAround(c.center, c.radius, true));
-
-                    // TODO: Test if this line is useful
-                    // removing it may result in a more natural "flow"
                     result = result.Distinct().ToList();
                 }
             }
@@ -197,28 +189,66 @@ namespace BiomesIslands.Incidents
             result = result.Where(c => c.InBounds(map)).ToList();
             validSpawns = result.Where(c => PlantUtility.CanEverPlantAt_NewTemp(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, c, map)).ToList();
 
-            //Log.Message(String.Format("Spawns updated. {0} valid tiles"));
-
-        }
-
-
-        private class CircleData
-        {
-            public IntVec3 center;
-            public int radius;
-
-            // spawn time?
-            public int generation;
-
-            public CircleData(IntVec3 c, int r, int g)
+            if(validSpawns.Count() == 0)
             {
-                center = c;
-                radius = r;
-                generation = g;
+                base.End();
             }
         }
+
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref curGeneration, "curGeneration", 0);
+            Scribe_Collections.Look(ref circleList, "circleList", LookMode.Deep);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit) 
+            {
+                UpdateValidSpawns();
+            }
+        }
+
+
+        private int GetNextCirID()
+        {
+            return circleList.Count + 1;
+        }
+
+
+       
     }
 
+    public class CircleData : IExposable/*, ILoadReferenceable*/
+    {
+        //public int cirID = 0;
+        public IntVec3 center;
+        public int radius;
+        public int generation;
 
+        //public CircleData(IntVec3 c, int r, int g, int cid)
+
+        public CircleData() { }
+        public CircleData(IntVec3 cent, int rad, int gen)
+        {
+            center = cent;
+            radius = rad;
+            generation = gen;
+            //cirID = cid;
+        }
+
+        public virtual void ExposeData()
+        {
+
+            //Scribe_Values.Look(ref cirID, "cirID", -1);
+
+            Scribe_Values.Look<IntVec3>(ref center, "cent");
+            Scribe_Values.Look(ref radius, "rad", 0);
+            Scribe_Values.Look(ref generation, "gen", 0);
+        }
+
+        //public string GetUniqueLoadID()
+        //{
+        //    return "GlowCircle_" + cirID;
+        //}
+    }
 
 }

@@ -66,7 +66,7 @@
     <letterLabel>Bioluminescent Tide</letterLabel>
     <letterDef>PositiveEvent</letterDef>
     <tale>GlowTide</tale>
-    <durationDays>0.8~1.5</durationDays>
+    <durationDays>10</durationDays>
     <gameCondition>GlowTide</gameCondition>
   </IncidentDef>
 

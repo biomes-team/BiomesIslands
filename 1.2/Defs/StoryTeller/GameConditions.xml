@@ -6,7 +6,7 @@
     <label>bioluminescent tide</label>
     <description>Beautiful glowing plankton are lighting up the sea.</description>
     <endMessage>The tide is passing.</endMessage>
-    <letterText>Shifting currents bring a mass of glowing plankton to your island.\n\nIt will pass in a day or two.</letterText>
+    <letterText>Shifting currents bring a bloom of glowing plankton to your island.\n\nIt will pass in a few days.</letterText>
     <letterDef>PositiveEvent</letterDef>
     <exclusiveConditions>
       <li>Aurora</li>

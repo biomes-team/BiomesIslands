@@ -12,5 +12,6 @@ namespace BiomesIslands
     {
         public static ThingDef BiomesIslands_CoralRock;
         public static ThingDef BiomesIslands_GlowPlankton;
+        public static GameConditionDef GlowTide;
     }
 }
