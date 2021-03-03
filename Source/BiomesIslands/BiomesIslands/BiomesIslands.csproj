@@ -246,6 +246,7 @@
     <Compile Include="Patches\WorldGenStepTerrain_IslandHillliness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BiomesIslandsDefOf.cs" />
+    <Compile Include="Incidents\ThoughtWorker_GlowTide.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

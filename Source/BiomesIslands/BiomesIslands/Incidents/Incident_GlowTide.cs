@@ -27,7 +27,7 @@ namespace BiomesIslands.Incidents
         {
             Map map = (Map)parms.target;
             GameConditionManager gameConditionManager = parms.target.GameConditionManager;
-            GameCondition_GlowTide gameCondition_glowTide = (GameCondition_GlowTide)GameConditionMaker.MakeCondition(BiomesIslandsDefOf.GlowTide, 600000);
+            GameCondition_GlowTide gameCondition_glowTide = (GameCondition_GlowTide)GameConditionMaker.MakeCondition(BiomesIslandsDefOf.GlowTide, 127000);
 
             gameConditionManager.RegisterCondition(gameCondition_glowTide);
             parms.letterHyperlinkThingDefs = gameCondition_glowTide.def.letterHyperlinks;
@@ -56,7 +56,7 @@ namespace BiomesIslands.Incidents
         public override void Init()
         {
             base.Init();
-            suppressEndMessage = true;
+            //suppressEndMessage = true;
             SpawnInitialPlants();
         }
 
@@ -176,10 +176,10 @@ namespace BiomesIslands.Incidents
             result = result.Where(c => c.InBounds(map)).ToList();
             validSpawns = result.Where(c => PlantUtility.CanEverPlantAt_NewTemp(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, c, map)).ToList();
 
-            if(validSpawns.Count() == 0)
-            {
-                base.End();
-            }
+            //if(validSpawns.Count() == 0)
+            //{
+            //    base.End();
+            //}
         }
 
 

@@ -53,5 +53,18 @@
     </stages>
   </ThoughtDef>
 
-
+  <ThoughtDef>
+    <defName>BMT_GlowTide</defName>
+    <workerClass>BiomesIslands.Incidents.ThoughtWorker_GlowTide</workerClass>
+    <!-- <workerClass>ThoughtWorker_GameCondition</workerClass> -->
+    <gameCondition>GlowTide</gameCondition>
+    <stages>
+      <li>
+        <label>ooooh.... the ocean is glowing!</label>
+        <description>The sea is full of stars</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
 </Defs>
