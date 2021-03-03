@@ -27,26 +27,13 @@ namespace BiomesIslands.Incidents
         {
             Map map = (Map)parms.target;
             GameConditionManager gameConditionManager = parms.target.GameConditionManager;
-            //GameCondition_GlowTide gameCondition_glowTide = (GameCondition_GlowTide)GameConditionMaker.MakeCondition(duration: Mathf.RoundToInt(def.durationDays.RandomInRange * 600000f), def: def.gameCondition);
             GameCondition_GlowTide gameCondition_glowTide = (GameCondition_GlowTide)GameConditionMaker.MakeCondition(BiomesIslandsDefOf.GlowTide, 600000);
 
             gameConditionManager.RegisterCondition(gameCondition_glowTide);
             parms.letterHyperlinkThingDefs = gameCondition_glowTide.def.letterHyperlinks;
-            //SendStandardLetter(def.letterLabel, def.letterText, def.letterDef, parms, new TargetInfo(gameCondition_glowTide.startingSpawn, map));
             SendStandardLetter(def.letterLabel, BiomesIslandsDefOf.GlowTide.letterText, def.letterDef, parms, new TargetInfo(gameCondition_glowTide.startingSpawn, map));
             SoundDefOf.PsychicSootheGlobal.PlayOneShotOnCamera((Map)parms.target);
             return true;
-
-            //SendStandardLetter(def.letterLabel, gameCondition_glowTide.LetterText, def.letterDef, parms, LookTargets.Invalid);
-            //return true;
-
-
-            //if (base.TryExecuteWorker(parms))
-            //{
-            //    SoundDefOf.PsychicSootheGlobal.PlayOneShotOnCamera((Map)parms.target);
-            //    return true;
-            //}
-            //return false;
         }
     }
 
@@ -69,7 +56,7 @@ namespace BiomesIslands.Incidents
         public override void Init()
         {
             base.Init();
-
+            suppressEndMessage = true;
             SpawnInitialPlants();
         }
 
@@ -217,14 +204,11 @@ namespace BiomesIslands.Incidents
        
     }
 
-    public class CircleData : IExposable/*, ILoadReferenceable*/
+    public class CircleData : IExposable
     {
-        //public int cirID = 0;
         public IntVec3 center;
         public int radius;
         public int generation;
-
-        //public CircleData(IntVec3 c, int r, int g, int cid)
 
         public CircleData() { }
         public CircleData(IntVec3 cent, int rad, int gen)
@@ -232,23 +216,15 @@ namespace BiomesIslands.Incidents
             center = cent;
             radius = rad;
             generation = gen;
-            //cirID = cid;
         }
 
         public virtual void ExposeData()
         {
-
-            //Scribe_Values.Look(ref cirID, "cirID", -1);
-
             Scribe_Values.Look<IntVec3>(ref center, "cent");
             Scribe_Values.Look(ref radius, "rad", 0);
             Scribe_Values.Look(ref generation, "gen", 0);
         }
 
-        //public string GetUniqueLoadID()
-        //{
-        //    return "GlowCircle_" + cirID;
-        //}
     }
 
 }
