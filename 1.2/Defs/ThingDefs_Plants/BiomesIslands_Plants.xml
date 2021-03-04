@@ -247,6 +247,7 @@
   
   
 	<ThingDef ParentName="PlantBase">
+<thingClass>BiomesCore.DerivedClasses.BMT_Plant</thingClass>
 		<defName>BiomesIslands_Bayhops</defName>
 		<label>bayhops</label>
 		<description>A medicinal plant native to tropical beaches. Highly salt resistant.</description>
@@ -261,7 +262,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_SandPlant">
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 				<allowOnSand>true</allowOnSand>
 			</li>
 		</modExtensions>

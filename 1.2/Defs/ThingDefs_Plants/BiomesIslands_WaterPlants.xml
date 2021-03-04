@@ -17,7 +17,7 @@
 		<texPath>BiomesIslands_Things/Plant/Kelp/Kelp</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
@@ -55,7 +55,7 @@
 	  <texPath>BiomesIslands_Things/Plant/SeaSponge</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
@@ -96,7 +96,7 @@
 		<texPath>BiomesIslands_Things/Plant/SeaGrass</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
@@ -129,7 +129,7 @@
 		<texPath>BiomesIslands_Things/Plant/Seaweed</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
@@ -169,7 +169,7 @@
 		<texPath>BiomesIslands_Things/Plant/GreenAlgae</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>true</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
@@ -208,7 +208,7 @@
 		<!-- <color>(140,100,50)</color> -->
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
@@ -247,7 +247,7 @@
 		<texPath>BiomesIslands_Things/Plant/WhiteAlgae</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
@@ -284,7 +284,7 @@
 		<texPath>BiomesIslands_Things/Plant/Murkweed</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>false</allowInShallowWater>
@@ -312,6 +312,7 @@
 <ThingDef ParentName="PlantBase">
 	<defName>BiomesIslands_GlowPlankton</defName>
     <label>bioluminescent plankton</label>
+    <thingClass>BiomesCore.DerivedClasses.BMT_Plant</thingClass>
     <description>A short lived plankton that emits a soft glow</description>
     <statBases>
 		<MaxHitPoints>90</MaxHitPoints>
@@ -326,19 +327,22 @@
 		<shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_WaterPlant">
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
             <allowInFreshWater>false</allowInFreshWater>
             <allowInSaltWater>true</allowInSaltWater>
             <allowInShallowWater>true</allowInShallowWater>
             <allowInDeepWater>true</allowInDeepWater>
             <allowOnLand>false</allowOnLand>
+			<needsRest>false</needsRest>
         </li>
     </modExtensions>
     <!-- <hideAtSnowDepth>0.5</hideAtSnowDepth> -->
     <plant>
+
 		<fertilityMin>0.05</fertilityMin>
 		<fertilitySensitivity>0.3</fertilitySensitivity>
-        <growMinGlow>0</growMinGlow>
+		<growMinGlow>0</growMinGlow>
+		<growOptimalGlow>0</growOptimalGlow>
 		<growDays>0.5</growDays>
 		<visualSizeRange>0.8~2.5</visualSizeRange> 
 		<maxMeshCount>4</maxMeshCount>
