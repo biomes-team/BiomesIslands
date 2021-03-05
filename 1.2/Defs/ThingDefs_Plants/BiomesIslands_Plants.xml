@@ -263,7 +263,11 @@
 		<selectable>true</selectable>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+<<<<<<< Updated upstream
 				<allowOnSand>true</allowOnSand>
+=======
+				<allowOffSand>false</allowOffSand>
+>>>>>>> Stashed changes
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
