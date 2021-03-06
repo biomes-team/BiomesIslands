@@ -212,7 +212,7 @@
   <ThingDef ParentName="Biomes_BirdThingBase">
     <defName>BiomesIslands_Seagull</defName>
     <label>seagull</label>
-    <description>Noisy birds that eat anything small enough to fit down their gullets.They live in large colonies, and will happily prey on and swallow whole any animal they can.</description>
+    <description>Noisy birds that eat anything small enough to fit down their gullets. They live in large colonies, and will happily prey on and swallow whole any animal they can.</description>
     <statBases>
       <BiomesCore_FlySpeed>20</BiomesCore_FlySpeed>
       <SwimSpeed>5</SwimSpeed>
