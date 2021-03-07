@@ -312,7 +312,7 @@
 <ThingDef ParentName="PlantBase">
 	<defName>BiomesIslands_GlowPlankton</defName>
     <label>bioluminescent plankton</label>
-    <thingClass>BMT_Derived_Classes.BMT_Plant</thingClass>
+    <thingClass>BiomesCore.DerivedClasses.BMT_Plant</thingClass>
     <description>A short lived plankton that emits a soft glow</description>
     <statBases>
 		<MaxHitPoints>90</MaxHitPoints>

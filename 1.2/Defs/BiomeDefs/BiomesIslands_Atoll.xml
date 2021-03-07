@@ -12,8 +12,6 @@
 			<isIsland>true</isIsland>
 			<hasHilliness>false</hasHilliness>
 			<hasScatterables>false</hasScatterables>
-		</li>
-		<li Class="BiomesCore.DefModExtensions.Biomes_NoBeach">
 			<allowBeach>false</allowBeach>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
