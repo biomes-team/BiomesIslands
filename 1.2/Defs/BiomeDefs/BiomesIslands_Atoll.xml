@@ -10,6 +10,9 @@
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isIsland>true</isIsland>
+			<islandShapes>
+				<li>Smooth</li>
+			</islandShapes>
 			<hasHilliness>false</hasHilliness>
 			<hasScatterables>false</hasScatterables>
 			<allowBeach>false</allowBeach>
