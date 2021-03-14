@@ -10,7 +10,7 @@
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isIsland>True</isIsland>
-			<hasHilliness>true</hasHilliness>
+			<addIslandHills>true</addIslandHills>
 			<allowBeach>false</allowBeach>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">

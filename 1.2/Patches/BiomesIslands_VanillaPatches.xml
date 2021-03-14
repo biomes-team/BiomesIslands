@@ -2,15 +2,6 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
-		<value>
-			<li>BiomesIslands_GenOceanRockChunks</li>
-			<li>BiomesIslands_GenIslandRocksFromGrid</li>
-		</value>
-	</Operation>
-	
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
 		<value>
 			<li>BiomesIslands_TropicalIsland</li>

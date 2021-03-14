@@ -13,7 +13,7 @@
 			<islandShapes>
 				<li>Smooth</li>
 			</islandShapes>
-			<hasHilliness>false</hasHilliness>
+			<addIslandHills>false</addIslandHills>
 			<hasScatterables>false</hasScatterables>
 			<allowBeach>false</allowBeach>
 		</li>
