@@ -98,12 +98,12 @@
 	</Operation>
 
     <!-- Change water fertility -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/TerrainDef[@Name = "WaterBase"]/fertility</xpath>
-		<value>
-			<fertility>0.8</fertility>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>/Defs/TerrainDef[@Name = "WaterBase"]/fertility</xpath> -->
+		<!-- <value> -->
+			<!-- <fertility>0.8</fertility> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
@@ -121,19 +121,19 @@
         </operations>
 	</Operation>
 
-    <Operation Class="PatchOperationSequence">
-        <success>Always</success>
-        <operations>
-            <li Class="PatchOperationTest">
-                <xpath>/Defs/TerrainDef[@Name = "WaterChestDeepBase"]/fertility</xpath>
-                <success>Invert</success>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/TerrainDef[@Name = "WaterChestDeepBase"]</xpath>
-                <value>
-                    <fertility>0.5</fertility>
-                </value>
-            </li>
-        </operations>
-	</Operation>
+    <!-- <Operation Class="PatchOperationSequence"> -->
+        <!-- <success>Always</success> -->
+        <!-- <operations> -->
+            <!-- <li Class="PatchOperationTest"> -->
+                <!-- <xpath>/Defs/TerrainDef[@Name = "WaterChestDeepBase"]/fertility</xpath> -->
+                <!-- <success>Invert</success> -->
+            <!-- </li> -->
+            <!-- <li Class="PatchOperationAdd"> -->
+                <!-- <xpath>/Defs/TerrainDef[@Name = "WaterChestDeepBase"]</xpath> -->
+                <!-- <value> -->
+                    <!-- <fertility>0.5</fertility> -->
+                <!-- </value> -->
+            <!-- </li> -->
+        <!-- </operations> -->
+	<!-- </Operation> -->
 </Patch>
