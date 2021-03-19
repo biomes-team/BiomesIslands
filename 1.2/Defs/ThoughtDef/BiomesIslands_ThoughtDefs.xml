@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThoughtDef>
-    <defName>BiomesIslands_Coconut</defName>
-    <durationDays>0.5</durationDays>
-    <stackLimit>1</stackLimit>
-    <stages>
-      <li>
-        <label>Big coconut</label>
-        <description>I ate a whole coconut. I'm stuffed!</description>
-        <baseMoodEffect>+1</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
 
 <ThoughtDef>
     <defName>BiomesIslands_Pineapple</defName>

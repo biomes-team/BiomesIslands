@@ -99,31 +99,7 @@
   </ThingDef>
   
   <!--================== Big fruits ==================-->
-  
-  
-  <ThingDef ParentName="BiomesCore_FruitBase">
-    <defName>BiomesIslands_Coconuts</defName>
-    <label>coral coconuts</label>
-    <description>Big round fruit with a hard shell and a milky center</description>
-    <graphicData>
-      <texPath>BiomesIslands_Things/Item/Crops/Coconut</texPath>
-    </graphicData>
-    <statBases>
-      <MarketValue>4.2</MarketValue>
-      <Mass>0.06</Mass>
-      <Nutrition>0.25</Nutrition>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>25</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-    <ingestible>
-      <preferability>RawTasty</preferability>
-      <foodType>VegetableOrFruit</foodType>
-    </ingestible>
-  </ThingDef>
+
   
   <!--================== Animal products ==================-->
 

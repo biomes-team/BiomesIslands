@@ -3,23 +3,7 @@
 
 <!--====================	Fruit Trees		=====================-->
 
-	<ThingDef ParentName="BiomesCore_FruitTreeBase">
-		<defName>BiomesIslands_CoconutPalm</defName>
-		<label>coral coconut tree</label>
-		<description>A tropical tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces coconuts.</description>
-		<graphicData>
-			<texPath>BiomesIslands_Things/Plant/CoconutPalm/CoconutPalm</texPath>
-		</graphicData>
-		<plant>
-			<fertilityMin>0.5</fertilityMin>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
-			<growDays>20</growDays>
-			<immatureGraphicPath>BiomesIslands_Things/Plant/CoconutPalm/CoconutPalm_immature</immatureGraphicPath>
-			<harvestYield>10</harvestYield>
-			<harvestWork>400</harvestWork>
-			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
-		</plant>
-	</ThingDef>
+	
 	
 	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_BananaPlant</defName>
