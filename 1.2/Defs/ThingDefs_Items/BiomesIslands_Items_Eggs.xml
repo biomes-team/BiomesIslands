@@ -234,7 +234,7 @@
 	<comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>10</hatcherDaystoHatch>
-        <hatcherPawn>BiomesIslands_SeaTurtle</hatcherPawn>
+        <hatcherPawn>BiomesIslands_LeatherbackTurtle</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
