@@ -224,6 +224,7 @@
       <baseHealthScale>0.29</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
+	  <useMeatFrom>Rat</useMeatFrom>
       <wildness>0</wildness>
       <trainability>Simple</trainability>
       <petness>0.75</petness>
