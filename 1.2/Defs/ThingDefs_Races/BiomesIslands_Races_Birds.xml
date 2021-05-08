@@ -157,8 +157,7 @@
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
-          <!-- Winspan takes 50% more graphical space -->
-          <drawSize>1.2</drawSize>
+          <drawSize>0.8</drawSize>
         </bodyGraphicData>
       </li>
     </modExtensions>
@@ -183,8 +182,7 @@
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
-          <!-- Winspan takes 50% more graphical space -->
-          <drawSize>1.5</drawSize>
+          <drawSize>1.0</drawSize>
         </bodyGraphicData>
       </li>
     </modExtensions>
@@ -202,8 +200,7 @@
         <pawnSpeedStat>BiomesCore_FlySpeed</pawnSpeedStat>
         <bodyGraphicData>
           <texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
-          <!-- Winspan takes 50% more graphical space -->
-          <drawSize>1.8</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
       </li>
     </modExtensions>
