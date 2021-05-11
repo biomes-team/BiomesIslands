@@ -151,7 +151,7 @@
     <baseWeatherCommonalities>
 		<Clear>18</Clear>
 		<Fog>1</Fog>
-		<Rain>8</Rain>
+		<Rain>4</Rain>
 		<DryThunderstorm>0.3</DryThunderstorm>
 		<RainyThunderstorm>1.7</RainyThunderstorm>
 		<FoggyRain>1</FoggyRain>
