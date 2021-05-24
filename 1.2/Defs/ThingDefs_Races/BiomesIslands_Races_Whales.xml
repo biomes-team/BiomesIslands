@@ -139,6 +139,10 @@
                 <li>
                     <def>BiomesIslands_WhaleAdult</def>
                     <minAge>3.5</minAge>
+
+					<soundCall>BiomesPawn_Whale_Call</soundCall>
+					<soundAngry>BiomesPawn_Whale_Angry</soundAngry>
+
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -334,6 +338,9 @@
                 <li>
                     <def>BiomesIslands_BoomWhaleAdult</def>
                     <minAge>3.0</minAge>
+
+					<soundCall>BiomesPawn_Whale_Call</soundCall>
+					<soundAngry>BiomesPawn_Whale_Angry</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
