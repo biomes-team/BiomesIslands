@@ -311,4 +311,162 @@
   </PawnKindDef>
 
 
+<!-- ================== Sea Otter ================== -->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BMT_SeaOtter</defName>
+    <label>sea otter</label>
+    <description>A smart, medium-sized marine mammal.</description>
+    <statBases>
+      <MoveSpeed>4.6</MoveSpeed>
+	  <SwimSpeed>6</SwimSpeed>
+      <MarketValue>250</MarketValue>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8.7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8.7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>13.0</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <petness>1</petness>
+      <baseBodySize>0.75</baseBodySize>
+      <baseHungerRate>0.4</baseHungerRate>
+      <baseHealthScale>1.0</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+      <gestationPeriodDays>26</gestationPeriodDays>
+      <trainability>Advanced</trainability>
+      <wildness>0.20</wildness>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <!-- <manhunterOnDamageChance>0</manhunterOnDamageChance> -->
+      <!-- <manhunterOnTameFailChance>0</manhunterOnTameFailChance> -->
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(3, 0.7)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <!-- <soundWounded>Pawn_Dog_Injured</soundWounded> -->
+          <!-- <soundDeath>Pawn_Dog_Death</soundDeath> -->
+          <!-- <soundCall>Pawn_Dog_Call</soundCall> -->
+          <!-- <soundAngry>Pawn_Dog_Angry</soundAngry> -->
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalPet</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BMT_SeaOtter</defName>
+    <label>sea otter</label>
+    <race>BMT_SeaOtter</race>
+    <combatPower>70</combatPower>
+    <ecoSystemWeight>0.6</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/SeaOtter/SeaOtter</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/SeaOtter/Dessicated_SeaOtter</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/SeaOtter/SeaOtter</texPath>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/SeaOtter/Dessicated_SeaOtter</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/SeaOtter/SeaOtter</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BiomesIslands_Things/Pawn/Animal/SeaOtter/Dessicated_SeaOtter</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+
+
+
+
+
 </Defs>
