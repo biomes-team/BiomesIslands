@@ -400,10 +400,10 @@
         <li>
           <def>AnimalAdult</def>
           <minAge>0.5</minAge>
-          <!-- <soundWounded>Pawn_Dog_Injured</soundWounded> -->
-          <!-- <soundDeath>Pawn_Dog_Death</soundDeath> -->
-          <!-- <soundCall>Pawn_Dog_Call</soundCall> -->
-          <!-- <soundAngry>Pawn_Dog_Angry</soundAngry> -->
+          <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
+          <soundDeath>Pawn_Boomrat_Death</soundDeath>
+          <soundCall>Pawn_Boomrat_Call</soundCall>
+          <soundAngry>Pawn_Boomrat_Angry</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
