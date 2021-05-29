@@ -176,6 +176,7 @@
 		<BiomesIslands_LeatherbackTurtle>0.3</BiomesIslands_LeatherbackTurtle>
 		<BiomesIslands_PhoebaniaRat>0.1</BiomesIslands_PhoebaniaRat>
 		<BiomesIslands_GalapagosTortoise>0.5</BiomesIslands_GalapagosTortoise>
+		<BMT_SeaOtter>0.01</BMT_SeaOtter>
 	  
   <!-- land predators -->
       <Cougar>0.1</Cougar>
