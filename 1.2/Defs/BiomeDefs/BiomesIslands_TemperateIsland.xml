@@ -221,9 +221,9 @@
 	  
 	  <!-- land predators -->
 		<Bear_Grizzly>0.07</Bear_Grizzly>
-		<Wolf_Timber>0.07</Wolf_Timber>
+		<Wolf_Timber>0.05</Wolf_Timber>
 		<Fox_Red>0.07</Fox_Red>
-		<Cougar>0.07</Cougar>
+		<Cougar>0.05</Cougar>
 		<Lynx>0.07</Lynx>
 		<Warg>0.07</Warg>
 		<BiomesIslands_Megamantis>0.05</BiomesIslands_Megamantis>

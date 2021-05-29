@@ -178,8 +178,9 @@
 		<BiomesIslands_GalapagosTortoise>0.5</BiomesIslands_GalapagosTortoise>
 	  
   <!-- land predators -->
-      <Cougar>0.15</Cougar>
+      <Cougar>0.1</Cougar>
       <Fox_Fennec>0.15</Fox_Fennec>
+	  <BMT_KomodoDragon>0.05</BMT_KomodoDragon>
 	  
     <!-- Water animals have ~50% higher stats relative to other islands to keep water pops up -->
   <!-- aquatic grazers -->
