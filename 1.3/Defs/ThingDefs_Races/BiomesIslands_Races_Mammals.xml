@@ -226,7 +226,7 @@
       <leatherDef>Leather_Light</leatherDef>
 	  <useMeatFrom>Rat</useMeatFrom>
       <wildness>0</wildness>
-      <trainability>Simple</trainability>
+      <trainability>Intermediate</trainability>
       <petness>0.75</petness>
 	  <nameOnTameChance>0.5</nameOnTameChance>
 	  <nuzzleMtbHours>12</nuzzleMtbHours>

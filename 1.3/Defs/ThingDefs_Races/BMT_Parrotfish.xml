@@ -132,7 +132,7 @@
             <nuzzleMtbHours>60</nuzzleMtbHours>
             <petness>0.1</petness>
             <lifeExpectancy>15</lifeExpectancy>
-            <trainability>Simple</trainability>
+            <trainability>None</trainability>
             <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>

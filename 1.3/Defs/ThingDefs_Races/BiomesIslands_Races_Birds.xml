@@ -32,8 +32,22 @@
 		<baseHungerRate>0.4</baseHungerRate>
 		<foodType>VegetarianRoughAnimal</foodType>
       <wildness>0.45</wildness>
-      <trainability>Simple</trainability>
-      <lifeExpectancy>15</lifeExpectancy>
+      <trainability>None</trainability>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBabyTiny</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.12</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+        </li>
+      </lifeStageAges>
       <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <nuzzleMtbHours>48</nuzzleMtbHours>
@@ -226,7 +240,7 @@
       <baseHungerRate>0.5</baseHungerRate>
       <foodType>OmnivoreRoughAnimal</foodType>
       <wildness>0.45</wildness>
-      <trainability>Simple</trainability>
+      <trainability>Intermediate</trainability>
       <lifeExpectancy>11</lifeExpectancy>
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.013</manhunterOnDamageChance>
@@ -378,8 +392,22 @@
 		<baseHungerRate>0.70</baseHungerRate>
 		<foodType>VegetarianRoughAnimal</foodType>
       <wildness>0.50</wildness>
-      <trainability>Simple</trainability>
+      <trainability>None</trainability>
       <lifeExpectancy>40</lifeExpectancy>
+	  <lifeStageAges>
+        <li>
+          <def>AnimalBabyTiny</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.45</minAge>
+        </li>
+      </lifeStageAges>
       <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
 	  <nuzzleMtbHours>10</nuzzleMtbHours>
