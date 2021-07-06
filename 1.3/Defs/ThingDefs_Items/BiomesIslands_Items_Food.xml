@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--================== Plant products ==================-->
+  
+    <ThingDef ParentName="BiomesCore_FruitBase">
+    <defName>BiomesIslands_Bananas</defName>
+    <label>sugar bananas</label>
+    <description>Long yellow fruit with a thick peel and creamy flesh.</description>
+    <graphicData>
+      <texPath>BiomesIslands_Things/Item/Crops/Bananas</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+    <ThingDef ParentName="BiomesCore_VegBase">
+    <defName>BiomesIslands_Devilsclaw</defName>
+    <label>devil's claw leaves</label>
+    <description>Edible leaves from the devil's claw tree. A healthy leafy green!</description>
+    <graphicData>
+      <texPath>BiomesIslands_Things/Item/Crops/DevilsClaw</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="BiomesCore_FruitBase">
+    <defName>BiomesIslands_Oranges</defName>
+    <label>blood oranges</label>
+    <description>Round, orange and with a sweet juice.</description>
+    <graphicData>
+      <texPath>BiomesIslands_Things/Item/Crops/Oranges</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  
+  
+    <ThingDef ParentName="BiomesCore_FruitBase">
+    <defName>BiomesIslands_Pineapples</defName>
+    <label>spineapple slices</label>
+    <description>Big round fruit slices with the spiny exterior removed, revealing a sweet milky center.</description>
+    <graphicData>
+      <texPath>BiomesIslands_Things/Item/Crops/Spineapples</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.0</MarketValue>
+      <Mass>0.06</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>VegetableOrFruit</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+  
+  <!--================== Big fruits ==================-->
+
+  
+  <!--================== Animal products ==================-->
+
+
+    <!--================== Fish Food ==================-->
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>BiomesIslands_FishFood</defName>
+    <label>fish food</label>
+    <description>Fish food made from mixed meat and plant sources. Less efficient than kibble, but won't deteriorate in water. Humans can eat it, but they really, really don't like it.</description>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Resource/Kibble</texPath>
+	  <color>(230,150,60)</color>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.015</Mass>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <foodType>Kibble</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteKibble</tasteThought>
+      <optimalityOffsetHumanlikes>-30</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>15</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients" />
+    </comps>
+  </ThingDef>
+  
+    <RecipeDef>
+    <defName>BiomesIslands_MakeFishFood</defName>
+    <label>make fish food</label>
+    <description>Make fish food by combining raw meat and plants.</description>
+    <jobString>Making fish food.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>1.2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+	<recipeUsers>
+		<li>ButcherSpot</li>
+		<li>TableButcher</li>
+	</recipeUsers>
+    <products>
+      <BiomesIslands_FishFood>45</BiomesIslands_FishFood>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <thingDefs>
+        <li>Hay</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Foods</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>InsectJelly</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+
+</Defs>

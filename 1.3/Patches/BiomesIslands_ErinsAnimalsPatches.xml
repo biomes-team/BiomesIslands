@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Erin's Mountain Animals -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Mountain Animals</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
+				<value>
+					<Snow_leopard>0.02</Snow_leopard>
+					<Pika>0.07</Pika>
+					<Pallas_cat>0.05</Pallas_cat>
+					<Argali>0.3</Argali>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildAnimals</xpath>
+				<value>
+					<Snow_leopard>0.05</Snow_leopard>
+					<Pika>0.07</Pika>
+					<Pallas_cat>0.06</Pallas_cat>
+					<Argali>0.1</Argali>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+<!-- Erin's Fox Squirrel -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Fox Squirrel</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.05</FoxSquirrel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TemperateIsland"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.12</FoxSquirrel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.12</FoxSquirrel>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+
+<!--Erin's Critter Collection-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Critter Collection</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
+				<value>
+					<Fisher>0.1</Fisher>
+					<Armadillo>0.1</Armadillo>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TropicalIsland"]/wildAnimals</xpath>
+				<value>
+					<Gartersnake>0.1</Gartersnake>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TemperateIsland"]/wildAnimals</xpath>
+				<value>
+					<Greyfox>0.3</Greyfox>
+					<Hedgehog>0.2</Hedgehog>
+					<Fisher>0.3</Fisher>
+					<Gartersnake>0.1</Gartersnake>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_DesertIsland"]/wildAnimals</xpath>
+				<value>
+					<Armadillo>0.3</Armadillo>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
+				<value>
+					<Greyfox>0.3</Greyfox>
+					<Hedgehog>0.1</Hedgehog>
+					<Fisher>0.3</Fisher>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildAnimals</xpath>
+				<value>
+					<Greyfox>0.1</Greyfox>
+					<Fisher>0.1</Fisher>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Forest Critters-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Forest Critters</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
+				<value>
+					<frog>0.2</frog>
+                    <Redpanda>0.1</Redpanda>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TropicalIsland"]/wildAnimals</xpath>
+				<value>
+					<frog>0.6</frog>
+                    <Redpanda>0.1</Redpanda>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TemperateIsland"]/wildAnimals</xpath>
+				<value>
+					<Redpanda>0.2</Redpanda>
+					<frog>0.3</frog>
+					<beaver>0.3</beaver>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
+				<value>
+					<Redpanda>0.1</Redpanda>
+					<frog>0.2</frog>
+					<beaver>0.3</beaver>
+					<ptarmigan>0.3</ptarmigan>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildAnimals</xpath>
+				<value>
+					<ptarmigan>0.4</ptarmigan>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

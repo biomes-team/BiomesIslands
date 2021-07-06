@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dinosauria</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="TyrannosaurusRex"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.005</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.005</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.005</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Yutyrannus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.005</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.03</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.004</BiomesIslands_TemperateIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Carnotaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.01</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.006</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.002</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.005</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.003</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Allosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.001</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.01</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.003</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.002</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Spinosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.001</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Baryonyx"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_DesertIsland>0.001</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.001</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.001</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.001</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Ankylosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.02</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.02</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.001</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Minmi"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.005</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.05</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.005</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.05</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.03</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Magyarosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.05</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.03</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.005</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.01</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Utahraptor"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.003</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.04</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.001</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Dakotaraptor"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.03</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.05</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.015</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.015</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Dilophosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.04</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.03</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Velociraptor"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_DesertIsland>0.025</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.015</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Gallimimus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.05</BiomesIslands_TundraIsland>
+						<BiomesIslands_DesertIsland>0.1</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.1</BiomesIslands_TemperateIsland>
+						<BiomesIslands_Atoll>0.05</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Gigantoraptor"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_DesertIsland>0.02</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.05</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Iguanodon"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_DesertIsland>0.02</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.03</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.01</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Parasaur"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.03</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.06</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.02</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Corythosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.01</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.06</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Deinocheirus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.003</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.01</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.015</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Therizinosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.02</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Stygimoloch"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.01</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.01</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.01</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.1</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Dryosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.02</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.01</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.02</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Stegosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_BorealIsland>0.02</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.02</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.01</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Triceratops"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Protoceratops"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.03</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.03</BiomesIslands_BorealIsland>
+						<BiomesIslands_TemperateIsland>0.02</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.02</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.05</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Quetzalcoatlus"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.006</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.006</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.006</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.006</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.006</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.006</BiomesIslands_Atoll>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Pteranodon"]/race/wildBiomes</xpath>
+					<value>
+						<BiomesIslands_TundraIsland>0.01</BiomesIslands_TundraIsland>
+						<BiomesIslands_BorealIsland>0.01</BiomesIslands_BorealIsland>
+						<BiomesIslands_DesertIsland>0.01</BiomesIslands_DesertIsland>
+						<BiomesIslands_TemperateIsland>0.01</BiomesIslands_TemperateIsland>
+						<BiomesIslands_TropicalIsland>0.01</BiomesIslands_TropicalIsland>
+						<BiomesIslands_Atoll>0.01</BiomesIslands_Atoll>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
