@@ -1,31 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <BiomeDef>    <!-- temperateIsland -->
-    <defName>BiomesIslands_TemperateIsland</defName>
+  <BiomeDef Name="BiomesIslands_TemperateIslandBase" Abstract="True">    <!-- temperateIsland -->
+    <defName>BiomesIslands_TemperateIslandBase</defName>
     <label>temperate island</label>
     <description>Like the temperate forest, but on an island.</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	
-	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<isIsland>true</isIsland>
-			<allowBeach>false</allowBeach>
-		</li>
-        <li Class="BiomesKit.BiomesKitControls">
-			<setHills>Random</setHills>
-			<usePerlin>true</usePerlin>
-			<perlinCulling>0.80</perlinCulling>
-            <allowOnWater>true</allowOnWater>
-            <allowOnLand>False</allowOnLand>
-			<minTemperature>0</minTemperature>
-			<maxTemperature>18</maxTemperature>
-			<minRainfall>600</minRainfall>
-			<frequency>25</frequency>
-			<materialPath>BiomesIslands_World/MapGraphics/TemperateIsland</materialPath>
-			<materialLayer>3509</materialLayer>
-        </li>
-	</modExtensions>
 	
     <canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
@@ -248,5 +229,63 @@
       <li>Muffalo</li>
       <li>Alpaca</li>
     </allowedPackAnimals>
+  </BiomeDef>
+  
+  <BiomeDef ParentName="BiomesIslands_TemperateIslandBase">
+    <defName>BiomesIslands_TemperateIsland</defName>
+    <label>tundra island</label>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+	<modExtensions>
+        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<isIsland>true</isIsland>
+			<hasScatterables>true</hasScatterables>
+			<allowBeach>false</allowBeach>
+			<islandShapes>
+				<li>Smooth</li>
+				<li>Rough</li>
+				<li>Crescent</li>
+				<li>Pair</li>
+			</islandShapes>
+		</li>
+        <li Class="BiomesKit.BiomesKitControls">
+			<setHills>Random</setHills>
+			<usePerlin>true</usePerlin>
+			<perlinCulling>0.80</perlinCulling>
+            <allowOnWater>true</allowOnWater>
+            <allowOnLand>False</allowOnLand>
+			<minTemperature>0</minTemperature>
+			<maxTemperature>18</maxTemperature>
+			<minRainfall>600</minRainfall>
+			<frequency>25</frequency>
+			<materialPath>BiomesIslands_World/MapGraphics/TemperateIsland</materialPath>
+			<materialLayer>3509</materialLayer>
+        </li>
+	</modExtensions>
+  </BiomeDef>
+  
+  <BiomeDef ParentName="BiomesIslands_TemperateIslandBase">
+    <defName>BiomesIslands_TemperateArchipelago</defName>
+    <label>temperate Archipelago</label>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+	<modExtensions>
+        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<isIsland>true</isIsland>
+			<hasScatterables>true</hasScatterables>
+			<allowBeach>false</allowBeach>
+			<islandShapes>
+				<li>Cluster</li>
+			</islandShapes>
+		</li>
+        <li Class="BiomesKit.BiomesKitControls">
+			<spawnOnBiomes>
+				<li>BiomesIslands_TemperateIsland</li>
+			</spawnOnBiomes>
+            <allowOnWater>True</allowOnWater>
+			<frequency>70</frequency>
+			<biomePriority>2</biomePriority>
+			<materialPath>BiomesIslands_World/MapGraphics/TemperateArchipelago</materialPath>
+			<materialLayer>3509</materialLayer>
+        </li>
+	</modExtensions>
   </BiomeDef>
 </Defs>

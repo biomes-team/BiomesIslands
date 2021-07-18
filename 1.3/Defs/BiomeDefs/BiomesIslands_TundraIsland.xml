@@ -1,32 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-  <BiomeDef>    <!-- tundraIsland -->
-    <defName>BiomesIslands_TundraIsland</defName>
+    
+  <BiomeDef Name="BiomesIslands_TundraIslandBase" Abstract="True">    <!-- tundraIsland -->
+    <defName>BiomesIslands_TundraIslandBase</defName>
     <label>tundra island</label>
     <description>Like the tundra but on an island.</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	
-	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<isIsland>True</isIsland>
-			<addIslandHills>true</addIslandHills>
-			<allowBeach>false</allowBeach>
-		</li>
-        <li Class="BiomesKit.BiomesKitControls">
-			<setHills>Random</setHills>
-			<usePerlin>true</usePerlin>
-			<perlinCulling>0.80</perlinCulling>
-            <allowOnWater>true</allowOnWater>
-            <allowOnLand>False</allowOnLand>
-			<maxTemperature>0</maxTemperature>
-			<minTemperature>-22</minTemperature>
-			<maxRainfall>1000</maxRainfall>
-			<frequency>20</frequency>
-			<materialPath>BiomesIslands_World/MapGraphics/TundraIsland</materialPath>
-			<materialLayer>3509</materialLayer>
-        </li>
-	</modExtensions>
 	
     <canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
@@ -209,5 +189,63 @@
       <li>Muffalo</li>
       <li>Alpaca</li>
     </allowedPackAnimals>
+  </BiomeDef>
+  
+  <BiomeDef ParentName="BiomesIslands_TundraIslandBase">
+    <defName>BiomesIslands_TundraIsland</defName>
+    <label>tundra island</label>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+	<modExtensions>
+        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<isIsland>true</isIsland>
+			<hasScatterables>true</hasScatterables>
+			<allowBeach>false</allowBeach>
+			<islandShapes>
+				<li>Smooth</li>
+				<li>Rough</li>
+				<li>Crescent</li>
+				<li>Pair</li>
+			</islandShapes>
+		</li>
+        <li Class="BiomesKit.BiomesKitControls">
+			<setHills>Random</setHills>
+			<usePerlin>true</usePerlin>
+			<perlinCulling>0.80</perlinCulling>
+            <allowOnWater>true</allowOnWater>
+            <allowOnLand>False</allowOnLand>
+			<maxTemperature>0</maxTemperature>
+			<minTemperature>-22</minTemperature>
+			<maxRainfall>1000</maxRainfall>
+			<frequency>20</frequency>
+			<materialPath>BiomesIslands_World/MapGraphics/TundraIsland</materialPath>
+			<materialLayer>3509</materialLayer>
+        </li>
+	</modExtensions>
+  </BiomeDef>
+  
+  <BiomeDef ParentName="BiomesIslands_TundraIslandBase">
+    <defName>BiomesIslands_TundraArchipelago</defName>
+    <label>tundra Archipelago</label>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+	<modExtensions>
+        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<isIsland>true</isIsland>
+			<hasScatterables>true</hasScatterables>
+			<allowBeach>false</allowBeach>
+			<islandShapes>
+				<li>Cluster</li>
+			</islandShapes>
+		</li>
+        <li Class="BiomesKit.BiomesKitControls">
+			<spawnOnBiomes>
+				<li>BiomesIslands_TundraIsland</li>
+			</spawnOnBiomes>
+            <allowOnWater>True</allowOnWater>
+			<frequency>70</frequency>
+			<biomePriority>2</biomePriority>
+			<materialPath>BiomesIslands_World/MapGraphics/TundraArchipelago</materialPath>
+			<materialLayer>3509</materialLayer>
+        </li>
+	</modExtensions>
   </BiomeDef>
 </Defs>

@@ -212,13 +212,15 @@
   <BiomeDef ParentName="BiomesIslands_TropicalIslandBase">
     <defName>BiomesIslands_TropicalIsland</defName>
     <label>tropical Island</label>
-    <description>Despite the heat and constant humidity, the sandy beaches and plentiful resources make these islands superb for a tropical getaway. Few animals here are a threat to humans, making the environment reasonably safe.</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
 			<isIsland>true</isIsland>
 			<hasScatterables>true</hasScatterables>
 			<allowBeach>false</allowBeach>
+			<islandShapes>
+				<li>Broken</li>
+			</islandShapes>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
 			<setHills>Random</setHills>
@@ -239,7 +241,6 @@
   <BiomeDef ParentName="BiomesIslands_TropicalIslandBase">
     <defName>BiomesIslands_TropicalArchipelago</defName>
     <label>tropical Archipelago</label>
-    <description>Despite the heat and constant humidity, the sandy beaches and plentiful resources make these islands superb for a tropical getaway. Few animals here are a threat to humans, making the environment reasonably safe.</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
