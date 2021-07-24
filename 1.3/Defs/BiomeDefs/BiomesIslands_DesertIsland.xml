@@ -191,7 +191,7 @@
   
   <BiomeDef ParentName="BiomesIslands_DesertIslandBase">
     <defName>BiomesIslands_DesertIsland</defName>
-    <label>tundra island</label>
+    <label>desert island</label>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
