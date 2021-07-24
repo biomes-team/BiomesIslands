@@ -25,8 +25,17 @@ Woodland
 						</li>
 					</value>
 				</li>
+				
 				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TropicalIsland"]</xpath>
+					<value>
+						<li Class="CompCamo.CompCamoDefs">
+						<CamoType>Jungle</CamoType>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TropicalArchipelago"]</xpath>
 					<value>
 						<li Class="CompCamo.CompCamoDefs">
 						<CamoType>Jungle</CamoType>
@@ -41,7 +50,15 @@ Woodland
 						<CamoType>Desert</CamoType>
 						</li>
 					</value>
+				</li><li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_DesertArchipelago"]</xpath>
+					<value>
+						<li Class="CompCamo.CompCamoDefs">
+						<CamoType>Desert</CamoType>
+						</li>
+					</value>
 				</li>
+
 				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/BiomeDef[defName="BiomesIslands_BorealIsland"]</xpath>
 					<value>
@@ -51,6 +68,15 @@ Woodland
 					</value>
 				</li>
 				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_BorealArchipelago"]</xpath>
+					<value>
+						<li Class="CompCamo.CompCamoDefs">
+						<CamoType>Woodland</CamoType>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TundraIsland"]</xpath>
 					<value>
 						<li Class="CompCamo.CompCamoDefs">
@@ -59,7 +85,24 @@ Woodland
 					</value>
 				</li>
 				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TundraArchipelago"]</xpath>
+					<value>
+						<li Class="CompCamo.CompCamoDefs">
+						<CamoType>Arctic</CamoType>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TemperateIsland"]</xpath>
+					<value>
+						<li Class="CompCamo.CompCamoDefs">
+						<CamoType>Woodland</CamoType>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_TemperateArchipelago"]</xpath>
 					<value>
 						<li Class="CompCamo.CompCamoDefs">
 						<CamoType>Woodland</CamoType>

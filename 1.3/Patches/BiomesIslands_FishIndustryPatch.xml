@@ -13,7 +13,9 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_TropicalArchipelago</li>
 					<li>BiomesIslands_TemperateIsland</li>
+					<li>BiomesIslands_TemperateArchipelago</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -21,9 +23,13 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_TropicalArchipelago</li>
 					<li>BiomesIslands_BorealIsland</li>
+					<li>BiomesIslands_BorealArchipelago</li>
 					<li>BiomesIslands_TundraIsland</li>
+					<li>BiomesIslands_TundraArchipelago</li>
 					<li>BiomesIslands_TemperateIsland</li>
+					<li>BiomesIslands_TemperateArchipelago</li>
 				</value>
 			</li>
 			
@@ -32,9 +38,13 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_TropicalArchipelago</li>
 					<li>BiomesIslands_BorealIsland</li>
+					<li>BiomesIslands_BorealArchipelago</li>
 					<li>BiomesIslands_TundraIsland</li>
+					<li>BiomesIslands_TundraArchipelago</li>
 					<li>BiomesIslands_TemperateIsland</li>
+					<li>BiomesIslands_TemperateArchipelago</li>
 				</value>
 			</li>
 			
@@ -44,10 +54,15 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_TropicalArchipelago</li>
 					<li>BiomesIslands_DesertIsland</li>
+					<li>BiomesIslands_DesertArchipelago</li>
 					<li>BiomesIslands_BorealIsland</li>
+					<li>BiomesIslands_BorealArchipelago</li>
 					<li>BiomesIslands_TundraIsland</li>
+					<li>BiomesIslands_TundraArchipelago</li>
 					<li>BiomesIslands_TemperateIsland</li>
+					<li>BiomesIslands_TemperateArchipelago</li>
 				</value>
 			</li>
 
@@ -57,8 +72,11 @@
 				<value>
 					<li>BiomesIslands_Atoll</li>
 					<li>BiomesIslands_TropicalIsland</li>
+					<li>BiomesIslands_TropicalArchipelago</li>
 					<li>BiomesIslands_DesertIsland</li>
+					<li>BiomesIslands_DesertArchipelago</li>
 					<li>BiomesIslands_TemperateIsland</li>
+					<li>BiomesIslands_TemperateArchipelago</li>
 				</value>
 			</li>
 				

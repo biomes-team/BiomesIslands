@@ -5,9 +5,13 @@
 		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
 		<value>
 			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TropicalArchipelago</li>
 			<li>BiomesIslands_TemperateIsland</li>
+			<li>BiomesIslands_TemperateArchipelago</li>
 			<li>BiomesIslands_BorealIsland</li>
+			<li>BiomesIslands_BorealArchipelago</li>
 			<li>BiomesIslands_DesertIsland</li>
+			<li>BiomesIslands_DesertArchipelago</li>
 		</value>
 	</Operation>
 	
@@ -16,7 +20,9 @@
 		<xpath>Defs/IncidentDef[defName = "Alphabeavers"]/allowedBiomes</xpath>
 		<value>
 			<li>BiomesIslands_TundraIsland</li>
+			<li>BiomesIslands_TundraArchipelago</li>
 			<li>BiomesIslands_DesertIsland</li>
+			<li>BiomesIslands_DesertArchipelago</li>
 		</value>
 	</Operation>
 
@@ -29,19 +35,6 @@
 		<match Class="PatchOperationSequence">
 		<success>Always</success>
 			<operations>
-			<!--
-			<li Class="PatchOperationAdd"> 
-			<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
-				<value>
-					<li>BiomesIslands_Atoll</li>
-					<li>BiomesIslands_BorealIsland</li>
-					<li>BiomesIslands_DesertIsland</li>
-					<li>BiomesIslands_TropicalIsland</li>
-					<li>BiomesIslands_TundraIsland</li>
-				</value>
-			</li>
-			-->
-			
 			<li Class="PatchOperationAdd"> 
 			<xpath>Defs</xpath>
 				<value>
@@ -61,25 +54,4 @@
 			</operations>
 		</match>
 	</Operation>
-	
-	
-	
-<!-- Anima trees (Royalty) 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Royalty</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-		<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
-		<value>
-			<li>BiomesIslands_Atoll</li>
-			<li>BiomesIslands_BorealIsland</li>
-			<li>BiomesIslands_DesertIsland</li>
-			<li>BiomesIslands_TropicalIsland</li>
-			<li>BiomesIslands_TundraIsland</li>
-		</value>
-		</match>
-	</Operation>
-	
-	-->
 </Patch>
