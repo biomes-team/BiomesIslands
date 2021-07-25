@@ -7,9 +7,13 @@
             <biomeDefNameRestrictions>
                 <li>BiomesIslands_Atoll</li>
                 <li>BiomesIslands_BorealIsland</li>
+                <li>BiomesIslands_BorealArchipelago</li>
                 <li>BiomesIslands_DesertIsland</li>
+                <li>BiomesIslands_DesertArchipelago</li>
                 <li>BiomesIslands_TundraIsland</li>
+                <li>BiomesIslands_TundraArchipelago</li>
                 <li>BiomesIslands_TropicalIsland</li>
+                <li>BiomesIslands_TropicalArchipelago</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
@@ -23,6 +27,7 @@
             <biomeDefNameRestrictions>
                 <li>BiomesIslands_Atoll</li>
                 <li>BiomesIslands_TropicalIsland</li>
+                <li>BiomesIslands_TropicalArchipelago</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
@@ -35,6 +40,7 @@
             <biomeDefNameRestrictions>
                 <li>BiomesIslands_Atoll</li>
                 <li>BiomesIslands_TropicalIsland</li>
+                <li>BiomesIslands_TropicalArchipelago</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
@@ -48,6 +54,7 @@
             <biomeDefNameRestrictions>
                 <li>BiomesIslands_Atoll</li>
                 <li>BiomesIslands_TropicalIsland</li>
+                <li>BiomesIslands_TropicalArchipelago</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
@@ -61,9 +68,13 @@
             <biomeDefNameRestrictions>
                 <li>BiomesIslands_Atoll</li>
                 <li>BiomesIslands_BorealIsland</li>
+                <li>BiomesIslands_BorealArchipelago</li>
                 <li>BiomesIslands_DesertIsland</li>
+                <li>BiomesIslands_DesertArchipelago</li>
                 <li>BiomesIslands_TundraIsland</li>
+                <li>BiomesIslands_TundraArchipelago</li>
                 <li>BiomesIslands_TropicalIsland</li>
+                <li>BiomesIslands_TropicalArchipelago</li>
             </biomeDefNameRestrictions>
         </li>
     </modExtensions>
