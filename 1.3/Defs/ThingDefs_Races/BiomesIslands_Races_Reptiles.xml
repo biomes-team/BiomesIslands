@@ -65,6 +65,7 @@
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.88</wildness>
+		<roamMtbDays>2.5</roamMtbDays>
       <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <nameOnTameChance>1</nameOnTameChance>
@@ -162,7 +163,6 @@
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
-      <FilthRate>10</FilthRate>
     </statBases>
     <tools>
       <li>
@@ -294,7 +294,6 @@
       <ArmorRating_Sharp>0.150</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>55</ComfyTemperatureMax>
-      <FilthRate>10</FilthRate>
     </statBases>
     <tools>
       <li>

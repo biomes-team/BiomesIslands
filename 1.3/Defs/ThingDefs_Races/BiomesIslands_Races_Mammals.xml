@@ -67,6 +67,7 @@
 	  <useMeatFrom>Horse</useMeatFrom>
       <gestationPeriodDays>23</gestationPeriodDays>
       <wildness>0.6</wildness>
+		<roamMtbDays>2</roamMtbDays>
       <petness>0.5</petness>
       <trainability>None</trainability>
       <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
