@@ -14,6 +14,7 @@
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -25,6 +26,7 @@
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<wildness>0.20</wildness>
+			<roamMtbDays>3</roamMtbDays>
 			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
@@ -117,6 +119,7 @@
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
 			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -127,6 +130,7 @@
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<wildness>0.30</wildness>
+			<roamMtbDays>3</roamMtbDays>
 			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
@@ -356,6 +360,7 @@
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
 			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -366,6 +371,7 @@
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<wildness>0.25</wildness>
+			<roamMtbDays>3</roamMtbDays>
 			<meatLabel>crab meat</meatLabel>
 			<meatColor>(251,172,202)</meatColor>
 		</race>

@@ -377,13 +377,15 @@
 <ThingDef ParentName="BigBirdThingBase">
     <defName>BiomesIslands_OmegaDodo</defName>
     <label>omegadodo</label>
-    <description>The last dodo you'll ever want or need! Having been brought back from extinction by Urbworld scientists, this species of dodo has been genetically engineered to be far larger than the rest of its kind for the purposes of giving meat.</description>
+    <description>The last dodo you'll ever want or need! Having been brought back from extinction by Urbworld scientists, this species of dodo has been genetically engineered to be far larger than the rest of its kind for the purposes of giving meat.\n\nWhen in a caravan, people can ride omegadodos to increase the caravan's speed.</description>
     <statBases>
-      <MoveSpeed>2.8</MoveSpeed>
-      <MarketValue>300</MarketValue>
+      <MoveSpeed>4.8</MoveSpeed>
+      <MarketValue>400</MarketValue>
       <ComfyTemperatureMin>-55</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
       <LeatherAmount>25</LeatherAmount>
+	  <FilthRate>12</FilthRate>
+      <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
     </statBases>
     <race>
       <herdAnimal>false</herdAnimal>

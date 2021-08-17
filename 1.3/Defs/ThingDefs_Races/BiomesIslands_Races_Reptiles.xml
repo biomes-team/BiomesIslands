@@ -11,6 +11,7 @@
       <MarketValue>420</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <FilthRate>8</FilthRate>
     </statBases>
     <tools>
       <li>
@@ -161,6 +162,7 @@
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <FilthRate>10</FilthRate>
     </statBases>
     <tools>
       <li>
@@ -207,6 +209,7 @@
 	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <lifeExpectancy>140</lifeExpectancy>
+      <meatLabel>sea turtle meat</meatLabel>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -291,6 +294,7 @@
       <ArmorRating_Sharp>0.150</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>55</ComfyTemperatureMax>
+      <FilthRate>10</FilthRate>
     </statBases>
     <tools>
       <li>
@@ -336,6 +340,7 @@
       <wildness>0.55</wildness>
       <lifeExpectancy>210</lifeExpectancy>
       <herdAnimal>true</herdAnimal>
+      <useMeatFrom>BiomesIslands_SeaTurtle</useMeatFrom>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
       <lifeStageAges>

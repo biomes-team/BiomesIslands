@@ -5,12 +5,14 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BiomesIslands_ShetlandPony</defName>
     <label>shetland pony</label>
-    <description>A large hoofed mammal with a shaggy coat, a long mane, and a long tail. Shetland ponies are smaller than horses, but better adapted for cold climates.</description>
+    <description>A large hoofed mammal with a shaggy coat, a long mane, and a long tail. Shetland ponies are smaller than horses, but better adapted for cold climates.\n\nWhen in a caravan, people can ride shetland ponies to increase the caravan's speed.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <MarketValue>550</MarketValue>
       <ComfyTemperatureMin>-65</ComfyTemperatureMin>
       <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <FilthRate>14</FilthRate>
+      <CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
     </statBases>
     <uiIconScale>1.1</uiIconScale>
     <tools>
@@ -66,7 +68,7 @@
       <gestationPeriodDays>23</gestationPeriodDays>
       <wildness>0.6</wildness>
       <petness>0.5</petness>
-      <trainability>Advanced</trainability>
+      <trainability>None</trainability>
       <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
       <meatLabel>horse meat</meatLabel>
       <packAnimal>true</packAnimal>
@@ -102,6 +104,7 @@
  <PawnKindDef Name="BiomesIslands_ShetlandPony" ParentName="AnimalKindBase">
     <defName>BiomesIslands_ShetlandPony</defName>
     <label>shetland pony</label>
+	<labelPlural>shetland ponies</labelPlural>
     <labelMale>shetland pony stallion</labelMale>
     <labelFemale>shetland pony mare</labelFemale>
     <race>BiomesIslands_ShetlandPony</race>
