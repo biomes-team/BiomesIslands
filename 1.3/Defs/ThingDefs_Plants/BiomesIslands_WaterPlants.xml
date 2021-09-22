@@ -23,7 +23,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -62,7 +63,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>false</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -104,7 +106,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -138,7 +141,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -179,7 +183,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -219,7 +224,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -259,7 +265,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -297,7 +304,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>false</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -341,7 +349,8 @@
             <allowInSalty>true</allowInSalty>
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
-            <allowOnLand>false</allowOnLand>
+            <allowOnLand>false</allowOnLand> 
+			<allowInDry>false</allowInDry>
 			<needsRest>false</needsRest>
         </li>
     </modExtensions>
