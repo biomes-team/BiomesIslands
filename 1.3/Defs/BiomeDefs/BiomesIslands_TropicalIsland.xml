@@ -219,10 +219,7 @@
 			<hasScatterables>true</hasScatterables>
 			<allowBeach>false</allowBeach>
 			<islandShapes>
-				<li>Smooth</li>
 				<li>Rough</li>
-				<li>Crescent</li>
-				<li>Pair</li>
 			</islandShapes>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">

@@ -18,10 +18,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -56,10 +56,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>false</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>false</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -97,10 +97,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -130,10 +130,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -170,10 +170,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>true</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>true</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -209,10 +209,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -248,10 +248,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -285,10 +285,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>false</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>false</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
         </li>
     </modExtensions>
@@ -328,10 +328,10 @@
     </graphicData>
     <modExtensions>
         <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInFreshWater>false</allowInFreshWater>
-            <allowInSaltWater>true</allowInSaltWater>
-            <allowInShallowWater>true</allowInShallowWater>
-            <allowInDeepWater>true</allowInDeepWater>
+            <allowInFresh>false</allowInFresh>
+            <allowInSalty>true</allowInSalty>
+            <allowInShallow>true</allowInShallow>
+            <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
 			<needsRest>false</needsRest>
         </li>
