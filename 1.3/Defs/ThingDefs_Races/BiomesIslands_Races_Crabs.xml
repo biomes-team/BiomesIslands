@@ -33,7 +33,7 @@
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BiomesIslands_EggBlueCrabFertilized</eggFertilizedDef>
 			<eggFertilizationCountMax>2</eggFertilizationCountMax>
-			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggLayIntervalDays>9</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>
 			<min>1</min>
@@ -137,7 +137,7 @@
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BiomesIslands_EggFiddlerCrabFertilized</eggFertilizedDef>
 			<eggFertilizationCountMax>2</eggFertilizationCountMax>
-			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggLayIntervalDays>11</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>
 			<min>1</min>
@@ -265,7 +265,7 @@
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>BiomesIslands_EggHermitCrabFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>2</eggFertilizationCountMax>
-        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggLayIntervalDays>9.5</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>
           <min>1</min>
@@ -379,7 +379,7 @@
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BiomesIslands_EggRimCrabFertilized</eggFertilizedDef>
 			<eggFertilizationCountMax>2</eggFertilizationCountMax>
-			<eggLayIntervalDays>15</eggLayIntervalDays>
+			<eggLayIntervalDays>11</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>
 			<min>1</min>

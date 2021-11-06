@@ -116,7 +116,7 @@
             <baseBodySize>2</baseBodySize>
             <baseHealthScale>3.0</baseHealthScale>
             <foodType>CarnivoreAnimal</foodType>
-            <gestationPeriodDays>360</gestationPeriodDays>
+            <gestationPeriodDays>30</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.95</wildness>
             <nuzzleMtbHours>275</nuzzleMtbHours>
@@ -304,7 +304,7 @@
             <baseBodySize>1.5</baseBodySize>
             <baseHealthScale>2.0</baseHealthScale>
             <foodType>CarnivoreAnimal</foodType>
-            <gestationPeriodDays>360</gestationPeriodDays>
+            <gestationPeriodDays>30</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.95</wildness>
             <nuzzleMtbHours>275</nuzzleMtbHours>
@@ -683,7 +683,6 @@
             <baseBodySize>0.15</baseBodySize>
             <baseHealthScale>0.4</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
-            <gestationPeriodDays>360</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.5</wildness>
 			<nuzzleMtbHours>275</nuzzleMtbHours>
@@ -1258,7 +1257,7 @@
             <baseBodySize>2</baseBodySize>
             <baseHealthScale>3.0</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
-            <gestationPeriodDays>50</gestationPeriodDays>
+            <gestationPeriodDays>20</gestationPeriodDays>
             <wildness>0.70</wildness>
             <nuzzleMtbHours>275</nuzzleMtbHours>
             <petness>0.01</petness>
