@@ -909,7 +909,7 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/Dessicated_RedSnapper</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapper</texPath>
                     <drawSize>0.5</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
