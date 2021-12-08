@@ -119,6 +119,7 @@
     </graphicData>
     <statBases>
       <Beauty>2</Beauty>
+        <BeautyOutdoors>2</BeautyOutdoors>
       <Nutrition>1.25</Nutrition>
     </statBases>
     <ingestible />
@@ -277,6 +278,7 @@
 			<MaxHitPoints>90</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
 			<Beauty>8</Beauty>
+			<BeautyOutdoors>8</BeautyOutdoors>
 		</statBases>
 		<pathCost>20</pathCost>
 		<graphicData>
@@ -305,6 +307,7 @@
     <statBases>
       <MaxHitPoints>65</MaxHitPoints>
       <Beauty>3</Beauty>
+        <BeautyOutdoors>3</BeautyOutdoors>
       <Nutrition>0.15</Nutrition>
     </statBases>
     <graphicData>
