@@ -247,7 +247,9 @@
 		<selectable>true</selectable>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-				<allowInSandy>true</allowInSandy>
+				<terrainTags>
+					<li>Sandy</li>
+				</terrainTags>
 			</li>
 		</modExtensions>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
