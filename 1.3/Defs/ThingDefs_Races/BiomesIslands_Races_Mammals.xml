@@ -376,7 +376,7 @@
       <baseHealthScale>1.0</baseHealthScale>
       <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
-      <gestationPeriodDays>26</gestationPeriodDays>
+      <gestationPeriodDays>8</gestationPeriodDays>
       <trainability>Advanced</trainability>
       <wildness>0.20</wildness>
       <nuzzleMtbHours>12</nuzzleMtbHours>
