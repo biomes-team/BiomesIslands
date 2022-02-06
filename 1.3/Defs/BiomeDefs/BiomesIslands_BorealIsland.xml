@@ -185,7 +185,9 @@
       <Warg>0.07</Warg>
 	  
     <!-- aquatic grazers -->
-      <BiomesIslands_Sardine>2.5</BiomesIslands_Sardine>
+      <BiomesIslands_Sardine>1.8</BiomesIslands_Sardine>
+		<BMT_Obsidianfin>0.7</BMT_Obsidianfin>
+	  
 	  <BiomesIslands_Trout>1.5</BiomesIslands_Trout>
 	  <BiomesIslands_Whale>0.05</BiomesIslands_Whale>
 

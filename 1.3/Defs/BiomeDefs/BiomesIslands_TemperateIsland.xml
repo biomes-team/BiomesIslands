@@ -212,9 +212,13 @@
 		<BiomesIslands_Megamantis>0.05</BiomesIslands_Megamantis>
 	  
 	  <!-- water grazers -->
-		<BiomesIslands_Sardine>2.8</BiomesIslands_Sardine>
-		<BiomesIslands_BlueSeaSnail>0.4</BiomesIslands_BlueSeaSnail>
+		<BiomesIslands_Sardine>1.0</BiomesIslands_Sardine>
+		<BMT_SunfinAngelfish>0.3</BMT_SunfinAngelfish>
+		<BMT_OrangepeelAngelfish>0.5</BMT_OrangepeelAngelfish>
 		<BiomesIslands_LimepeelAngelfish>0.5</BiomesIslands_LimepeelAngelfish>
+		<BMT_Muckfrill>1.0</BMT_Muckfrill>
+		<BiomesIslands_BlueSeaSnail>0.4</BiomesIslands_BlueSeaSnail>
+		
 		<BMT_GreenEel>0.5</BMT_GreenEel>
 		<BiomesIslands_Trout>1.5</BiomesIslands_Trout>
 		<BiomesIslands_MantaRay>0.08</BiomesIslands_MantaRay>

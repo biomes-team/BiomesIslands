@@ -192,9 +192,13 @@
 		<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 		
 	<!-- aquatic grazers -->
-		<BiomesIslands_Sardine>1.4</BiomesIslands_Sardine>
+		<BiomesIslands_Sardine>0.6</BiomesIslands_Sardine>
+		<BMT_SunfinAngelfish>0.8</BMT_SunfinAngelfish>
+		<BMT_OrchidBasslet>0.3</BMT_OrchidBasslet>
+		<BMT_OrangepeelAngelfish>0.5</BMT_OrangepeelAngelfish>
+		<BiomesIslands_LimepeelAngelfish>1.2</BiomesIslands_LimepeelAngelfish>
 		<BiomesIslands_BlueSeaSnail>0.6</BiomesIslands_BlueSeaSnail>
-		<BiomesIslands_LimepeelAngelfish>2.0</BiomesIslands_LimepeelAngelfish>
+		
 		<BMT_GreenEel>1.0</BMT_GreenEel>
 		<BMT_Parrotfish>0.7</BMT_Parrotfish>
 		<BiomesIslands_MantaRay>0.1</BiomesIslands_MantaRay>
