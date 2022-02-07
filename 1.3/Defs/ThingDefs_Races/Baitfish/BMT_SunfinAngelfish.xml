@@ -12,7 +12,7 @@
             <bodyGraphicData>
                 <texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
                 <drawSize>0.35</drawSize>
-				<color>(245,232,65)</color>
+				<color>(253,240,0)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
@@ -26,7 +26,7 @@
             <bodyGraphicData>
                 <texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
                 <drawSize>0.6</drawSize>
-				<color>(245,232,65)</color>
+				<color>(253,240,0)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
@@ -40,7 +40,7 @@
             <bodyGraphicData>
                 <texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
                 <drawSize>0.95</drawSize>
-				<color>(245,232,65)</color>
+				<color>(253,240,0)</color>
             </bodyGraphicData>
         </li>
         </modExtensions>
@@ -95,7 +95,7 @@
                 <bodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
                     <drawSize>0.35</drawSize>
-					<color>(245,232,65)</color>
+					<color>(253,240,0)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
@@ -106,7 +106,7 @@
                 <bodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
                     <drawSize>0.6</drawSize>
-					<color>(245,232,65)</color>
+					<color>(253,240,0)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
@@ -117,7 +117,7 @@
                 <bodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
                     <drawSize>0.95</drawSize>
-					<color>(245,232,65)</color>
+					<color>(253,240,0)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
