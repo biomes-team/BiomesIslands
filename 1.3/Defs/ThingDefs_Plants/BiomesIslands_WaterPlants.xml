@@ -349,7 +349,7 @@
     </modExtensions>
     <!-- <hideAtSnowDepth>0.5</hideAtSnowDepth> -->
     <plant>
-		<fertilityMin>0.05</fertilityMin>
+		<fertilityMin>0.15</fertilityMin>
 		<fertilitySensitivity>0.3</fertilitySensitivity>
 		<growMinGlow>0</growMinGlow>
 		<growOptimalGlow>0</growOptimalGlow>
