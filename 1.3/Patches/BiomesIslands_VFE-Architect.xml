@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Islands</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Furniture Expanded - Architect</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<TerrainDef ParentName="StoneBridgeBase">
+								<defName>VFEArch_BridgeCoral</defName>
+								<label>coral bridge</label>
+								<color>(250,180,147)</color>
+								<costList>
+									<BiomesIslands_BlocksCoral>12</BiomesIslands_BlocksCoral>
+								</costList>
+								<uiIconPath>Icon/StoneBridgeCoral_MenuIcon</uiIconPath>
+							</TerrainDef>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<TerrainDef ParentName="CobblestoneBase">
+								<defName>VFEArch_CobblestoneFloorCoral</defName>
+								<label>coral cobblestone floor</label>
+								<color>(250,180,147)</color>
+								<costList>
+									<BiomesIslands_BlocksCoral>4</BiomesIslands_BlocksCoral>
+								</costList>
+							</TerrainDef>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<TerrainDef ParentName="StoneSlabsBase">
+								<defName>VFEArch_SlabsCoral</defName>
+								<label>coral slabs</label>
+								<color>(250,180,147)</color>
+								<costList>
+									<BiomesIslands_BlocksCoral>8</BiomesIslands_BlocksCoral>
+								</costList>
+							</TerrainDef>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<TerrainDef ParentName="PolishedStoneFloorBase">
+								<defName>VFEArch_PolishedStoneFloorCoral</defName>
+								<label>polished coral stone floor</label>
+								<color>(250,180,147)</color>
+								<costList>
+									<BiomesIslands_BlocksCoral>12</BiomesIslands_BlocksCoral>
+								</costList>
+							</TerrainDef>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>
