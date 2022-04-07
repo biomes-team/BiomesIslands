@@ -1,6 +1,13 @@
-<?xml version='1.0' encoding='utf8'?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-  <Operation Class="PatchOperationAdd">
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>PokéWorld</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd"> 
     <xpath>/Defs/BiomeDef[defName="BiomesIslands_BorealIsland"]/wildAnimals</xpath>
     <value>
       <PW_Bulbasaur>0.0938</PW_Bulbasaur>
@@ -422,9 +429,8 @@
       <PW_Dusknoir>0.0039</PW_Dusknoir>
       <PW_Froslass>0.0156</PW_Froslass>
     </value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
+</li>
+				<li Class="PatchOperationAdd"> 
     <xpath>/Defs/BiomeDef[defName="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
     <value>
       <PW_Bulbasaur>0.0625</PW_Bulbasaur>
@@ -846,9 +852,11 @@
       <PW_Dusknoir>0.0039</PW_Dusknoir>
       <PW_Froslass>0.0156</PW_Froslass>
     </value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
+
+
+</li>
+				<li Class="PatchOperationAdd"> 
+ 
     <xpath>/Defs/BiomeDef[defName="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
     <value>
       <PW_Bulbasaur>0.1875</PW_Bulbasaur>
@@ -1270,9 +1278,10 @@
       <PW_Dusknoir>0.0078</PW_Dusknoir>
       <PW_Froslass>0.0078</PW_Froslass>
     </value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
+
+
+</li>
+				<li Class="PatchOperationAdd"> 
     <xpath>/Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
     <value>
       <PW_Bulbasaur>0.1250</PW_Bulbasaur>
@@ -1694,9 +1703,10 @@
       <PW_Dusknoir>0.0078</PW_Dusknoir>
       <PW_Froslass>0.0078</PW_Froslass>
     </value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
+
+
+</li>
+				<li Class="PatchOperationAdd"> 
     <xpath>/Defs/BiomeDef[defName="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
     <value>
       <PW_Bulbasaur>0.3750</PW_Bulbasaur>
@@ -2118,9 +2128,10 @@
       <PW_Dusknoir>0.0078</PW_Dusknoir>
       <PW_Froslass>0.0078</PW_Froslass>
     </value>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
+
+
+</li>
+				<li Class="PatchOperationAdd"> 
     <xpath>/Defs/BiomeDef[defName="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
     <value>
       <PW_Bulbasaur>0.1250</PW_Bulbasaur>
@@ -2542,5 +2553,12 @@
       <PW_Dusknoir>0.0078</PW_Dusknoir>
       <PW_Froslass>0.0078</PW_Froslass>
     </value>
-  </Operation>
+
+
+</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
 </Patch>

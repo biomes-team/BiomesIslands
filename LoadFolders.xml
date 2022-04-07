@@ -12,6 +12,5 @@
 	<v1.3>
 		<li>\</li>
 		<li>1.3</li>
-        <li IfModActive="Gargamiel.PokeWorld">PokeWorldPatch</li>
 	 </v1.3>
 </loadFolders>
