@@ -14,6 +14,14 @@
 						</sowTags>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BiomesIslands_Bayhops"]/plant</xpath>
+					<value>
+						<sowTags>
+							<li>VCE_Sandy</li>
+						</sowTags>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
