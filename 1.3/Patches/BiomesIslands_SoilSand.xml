@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+			<operations>
+				<!--Soil-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Soil"]/statBases</xpath>
+					<value>
+						<pathCostDigging>1</pathCostDigging>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="Soil"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostDigging</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<!--MossyTerrain-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="MossyTerrain"]/statBases</xpath>
+					<value>
+						<pathCostDigging>1</pathCostDigging>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="MossyTerrain"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostDigging</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<!--MarshyTerrain-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="MarshyTerrain"]/statBases</xpath>
+					<value>
+						<pathCostDigging>1</pathCostDigging>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="MarshyTerrain"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostDigging</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<!--SoilRich-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="SoilRich"]/statBases</xpath>
+					<value>
+						<pathCostDigging>1</pathCostDigging>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="SoilRich"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostDigging</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<!--Gravel-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Gravel"]/statBases</xpath>
+					<value>
+						<pathCostDigging>1</pathCostDigging>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="Gravel"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostDigging</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<!--Mud-->
+				<!--<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Mud"]/statBases</xpath>
+					<value>
+						<pathCostDigging>4</pathCostDigging>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Mud"]</xpath>
+					<value>
+						<tags>
+							<li>Mudy</li>
+						</tags>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="Mud"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostDigging</terrainPathCostStat>
+						</li>
+					</value>
+				</li>-->
+				<!-- Sand Drilliing -->
+				<!--Sand-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Sand"]/statBases</xpath>
+					<value>
+						<pathCostSandDrilling>1</pathCostSandDrilling>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/TerrainDef[defName="Sand"]/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="Sand"]</xpath>
+						<value>
+							<tags>
+								<li>Sandy</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="Sand"]/tags</xpath>
+						<value>
+							<li>Sandy</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="Sand"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>SandDrillingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostSandDrilling</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<!--SoftSand-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="SoftSand"]/statBases</xpath>
+					<value>
+						<pathCostSandDrilling>1</pathCostSandDrilling>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/TerrainDef[defName="SoftSand"]/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="SoftSand"]</xpath>
+						<value>
+							<tags>
+								<li>Sandy</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="SoftSand"]/tags</xpath>
+						<value>
+							<li>Sandy</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="SoftSand"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>SandDrillingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostSandDrilling</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+			</operations>
+	</Operation>
+</Patch>

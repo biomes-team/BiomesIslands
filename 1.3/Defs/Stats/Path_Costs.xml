@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <StatDef>
     <defName>pathCostSwimming</defName>
     <label>path cost for swimming</label>
@@ -10,7 +11,7 @@
     <toStringStyle>FloatOne</toStringStyle>
     <applyFactorsIfNegative>false</applyFactorsIfNegative>
   </StatDef>
-  
+
   <StatDef>
     <defName>BiomesCore_pathCostFly</defName>
     <label>path cost for flying</label>
@@ -21,4 +22,27 @@
     <toStringStyle>FloatOne</toStringStyle>
     <applyFactorsIfNegative>false</applyFactorsIfNegative>
   </StatDef>
+
+  <StatDef>
+    <defName>pathCostDigging</defName>
+    <label>path cost for digging</label>
+    <description>The pathing addition for digging</description>
+    <category>BasicsNonPawn</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <hideAtValue>1</hideAtValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <applyFactorsIfNegative>false</applyFactorsIfNegative>
+  </StatDef>
+
+  <StatDef>
+    <defName>pathCostSandDrilling</defName>
+    <label>path cost for sand drilling</label>
+    <description>The pathing addition for sand drilling</description>
+    <category>BasicsNonPawn</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <hideAtValue>1</hideAtValue>
+    <toStringStyle>FloatOne</toStringStyle>
+    <applyFactorsIfNegative>false</applyFactorsIfNegative>
+  </StatDef>
+
 </Defs>
