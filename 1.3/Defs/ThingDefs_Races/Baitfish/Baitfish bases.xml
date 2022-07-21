@@ -36,7 +36,7 @@
         <shearable>true</shearable>
     </LifeStageDef>
 
-    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail" Anstract="true" Name="BiomesIslands_BaitfishBase">
+    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail" Abstract="true" Name="BiomesIslands_BaitfishBase">
 		<defName>BiomesIslands_BaitfishBase</defName>
 		<label>fish</label>
         <description>A small schooling fish.</description>
