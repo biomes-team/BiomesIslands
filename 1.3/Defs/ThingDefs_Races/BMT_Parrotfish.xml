@@ -161,6 +161,7 @@
         <label>parrotfish</label>
         <race>BMT_Parrotfish</race>
         <combatPower>80</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
 		<wildGroupSize>1~3</wildGroupSize>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>

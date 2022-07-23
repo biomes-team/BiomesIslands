@@ -147,6 +147,7 @@
         <label>green eel</label>
         <race>BMT_GreenEel</race>
         <combatPower>55</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
             <li>
