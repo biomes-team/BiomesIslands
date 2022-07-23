@@ -38,10 +38,10 @@
     <stuffProps>
       <color>(160,190,170)</color>
       <commonality>0.06</commonality>
+      <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+      </statFactors>
     </stuffProps>
-    <statFactors>
-      <MaxHitPoints>1.0</MaxHitPoints>
-    </statFactors>
   </ThingDef>
 
   <ThingDef ParentName="LeatherBase">

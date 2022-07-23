@@ -160,7 +160,7 @@
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhite</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<color>(100,60,70)</color>
                     <drawSize>1</drawSize>
                 </dessicatedBodyGraphicData>
@@ -171,7 +171,7 @@
                     <drawSize>2.65</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhite</texPath>
+                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<color>(100,60,70)</color>
                     <drawSize>2.65</drawSize>
                 </dessicatedBodyGraphicData>
