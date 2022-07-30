@@ -156,7 +156,6 @@
         <label>whale</label>
         <race>BiomesIslands_Whale</race>
         <combatPower>250</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>2~6</wildGroupSize>
         <lifeStages>
@@ -356,7 +355,6 @@
         <race>BiomesIslands_BoomWhale</race>
         <combatPower>250</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
-        <canArriveManhunter>false</canArriveManhunter>
 		<wildGroupSize>3~6</wildGroupSize>
         <lifeStages>
             <li>

@@ -102,8 +102,7 @@
 
     <PawnKindDef ParentName="AnimalKindBase" Abstract="true" Name="BiomesIslands_BaseBaitfish">
         <combatPower>15</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>0.10</ecoSystemWeight>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
 		<wildGroupSize>5~15</wildGroupSize>
 	</PawnKindDef>
 	

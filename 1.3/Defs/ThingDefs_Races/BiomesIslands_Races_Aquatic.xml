@@ -151,7 +151,6 @@
         <label>white shark</label>
         <race>BiomesIslands_WhiteShark</race>
         <combatPower>200</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
             <li>
@@ -340,7 +339,6 @@
         <label>hammerhead</label>
         <race>BiomesIslands_Hammerhead</race>
         <combatPower>150</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.4</ecoSystemWeight>
         <lifeStages>
             <li>
@@ -544,7 +542,6 @@
         <label>tuna</label>
         <race>BiomesIslands_Tuna</race>
         <combatPower>120</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
             <li>
@@ -721,7 +718,6 @@
         <label>blue sea snail</label>
         <race>BiomesIslands_BlueSeaSnail</race>
         <combatPower>38</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
         <lifeStages>
             <li>
@@ -909,7 +905,6 @@
         <label>red snapper</label>
         <race>BiomesIslands_RedSnapper</race>
         <combatPower>40</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.4</ecoSystemWeight>
         <lifeStages>
             <li>
@@ -1107,7 +1102,6 @@
         <label>trout</label>
         <race>BiomesIslands_Trout</race>
         <combatPower>80</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
 		<wildGroupSize>2~5</wildGroupSize>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
         <lifeStages>
@@ -1299,7 +1293,6 @@
         <race>BiomesIslands_MantaRay</race>
         <combatPower>200</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
-        <canArriveManhunter>false</canArriveManhunter>
 		<wildGroupSize>3~6</wildGroupSize>
         <lifeStages>
             <li>
