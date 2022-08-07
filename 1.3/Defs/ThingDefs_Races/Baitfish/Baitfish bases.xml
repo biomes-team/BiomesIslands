@@ -98,6 +98,9 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
         </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase" Abstract="true" Name="BiomesIslands_BaseBaitfish">
