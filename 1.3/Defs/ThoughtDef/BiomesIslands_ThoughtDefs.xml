@@ -54,5 +54,20 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
+  <ThoughtDef>
+    <defName>AteRawFish</defName>
+    <thoughtClass>Thought_FoodEaten</thoughtClass>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate raw fish</label>
+        <description>I had to eat raw fish. We should be cooking that kind of food before eating it or atleast add some rice.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </Defs>
