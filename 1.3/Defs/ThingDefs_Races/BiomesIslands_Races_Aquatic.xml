@@ -679,6 +679,7 @@
             <herdAnimal>false</herdAnimal>
             <herdMigrationAllowed>false</herdMigrationAllowed>
             <body>BiomesCore_Snail</body>
+            <leatherDef>BMT_Leather_Gastropoda</leatherDef>
             <baseHungerRate>0.3</baseHungerRate>
             <baseBodySize>0.15</baseBodySize>
             <baseHealthScale>0.4</baseHealthScale>
