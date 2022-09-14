@@ -121,7 +121,7 @@
             <trainability>Intermediate</trainability>
             <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
-            <meatLabel>fish meat</meatLabel>
+            <useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
             <lifeStageAges>
                 <li>
                     <def>BMT_GreenEelBaby</def>
