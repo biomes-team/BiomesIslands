@@ -98,6 +98,12 @@
 						<li>Beach</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Mud" or defName="Marsh" or defName="WaterDeep" or defName="WaterMovingChestDeep" or defName="WaterShallow" or defName="WaterMovingShallow"]/tags</xpath>
+					<value>
+						<li>WaterFront</li>
+					</value>
+				</li>
 			</operations>
 	</Operation>
 </Patch>
