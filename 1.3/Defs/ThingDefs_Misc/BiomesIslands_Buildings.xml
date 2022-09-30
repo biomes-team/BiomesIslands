@@ -97,8 +97,9 @@
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Things/Building/Linked/Fence</texPath>
-      <graphicClass>Graphic_Appearances</graphicClass>
+      <texPath>BiomesIslands_Things/Building/FishFence/Fishfence</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
       <linkType>Asymmetric</linkType>
       <linkFlags>
         <li>Fences</li>
@@ -128,13 +129,7 @@
         <rect>(0.35,0.1,0.3,0.7)</rect>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Linked/Fence_MenuIcon</uiIconPath>
-    <uiIconPathsStuff>
-      <li>
-        <appearance>Metal</appearance>
-        <iconPath>Things/Building/Linked/FenceMetal_MenuIcon</iconPath>
-      </li>
-    </uiIconPathsStuff>
+    <uiIconPath>BiomesIslands_Things/Building/FishFence/Fishfence_icon</uiIconPath>
     <statBases>
       <MaxHitPoints>40</MaxHitPoints>
       <WorkToBuild>70</WorkToBuild>
@@ -161,9 +156,7 @@
     <canOverlapZones>false</canOverlapZones>
     <fertility>0</fertility>
     <stuffCategories>
-      <li>Metallic</li>
       <li>Woody</li>
-      <li>Stony</li>
     </stuffCategories>
     <building>
       <isInert>true</isInert>
@@ -172,12 +165,11 @@
       <ai_chillDestination>false</ai_chillDestination>
       <ai_neverTrashThis>true</ai_neverTrashThis>
       <relatedBuildCommands>
-        <li>PenMarker</li>
-        <li>FenceGate</li>
+        <li>BMT_AquaticFenceGate</li>
       </relatedBuildCommands>
       <blueprintGraphicData>
-        <texPath>Things/Building/Linked/Fence_Blueprint</texPath>
-        <graphicClass>Graphic_Appearances</graphicClass>
+        <texPath>BiomesIslands_Things/Building/FishFence/Fishfence_Blueprint</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
       </blueprintGraphicData>
     </building>
   </ThingDef>
@@ -192,8 +184,9 @@
       <DoorOpenSpeed>1.15</DoorOpenSpeed>
     </statBases>
     <graphicData>
-      <texPath>Things/Building/Door/FenceGate_Mover</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>BiomesIslands_Things/Building/FishFence/Fishgate_Mover</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
       <shadowData>
         <volume>(0.3, 0.5, 0.3)</volume>
       </shadowData>
@@ -202,7 +195,7 @@
         <enabled>false</enabled>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Door/FenceGate_MenuIcon</uiIconPath>
+    <uiIconPath>BiomesIslands_Things/Building/FishFence/Fishgate_icon</uiIconPath>
     <costStuffCount>25</costStuffCount>
     <holdsRoof>false</holdsRoof>
     <staticSunShadowHeight>0</staticSunShadowHeight> <!-- disable static shadow -->
@@ -215,11 +208,10 @@
     <building>
       <ai_chillDestination>false</ai_chillDestination>
       <relatedBuildCommands>
-        <li>Fence</li>
-        <li>PenMarker</li>
+        <li>BMT_AquaticFence</li>
       </relatedBuildCommands>
       <blueprintGraphicData>
-        <texPath>Things/Building/Door/FenceGate_Blueprint</texPath>
+        <texPath>BiomesIslands_Things/Building/FishFence/Fishgate_Blueprint</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
       </blueprintGraphicData>
       <soundDoorOpenManual>Door_FenceGateManual</soundDoorOpenManual>
