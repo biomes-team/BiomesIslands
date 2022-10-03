@@ -10,13 +10,23 @@
 		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/changeable</xpath>
 		<success>Always</success>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationConditional">
+	  <xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
+		<success>Always</success>
+		<value>
+			<li>Bridgeable</li>
+		</value>
+	  </match>
+	  <nomatch Class="PatchOperationAdd">
 		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]</xpath>
 		<value>
 			<affordances>
 			  <li>Bridgeable</li>
 			</affordances>
 		</value>
+	  </nomatch>
 	</Operation>
 	<!-- =================BridgeSupport================= -->
 
