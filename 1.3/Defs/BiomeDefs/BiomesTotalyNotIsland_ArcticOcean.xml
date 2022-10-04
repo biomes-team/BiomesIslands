@@ -106,9 +106,11 @@
 			</spawnOnBiomes>
 			<allowOnWater>True</allowOnWater>
 			<frequency>100</frequency>
-			<biomePriority>2</biomePriority>
+			<biomePriority>10</biomePriority>
 			<minTemperature>-99</minTemperature>
 			<maxTemperature>-15</maxTemperature>
+			<!-- <materialPath>BiomesIslands_World/MapGraphics/ArcticOcean</materialPath> -->
+			<!-- <materialLayer>3509</materialLayer> -->
 		</li>
 	</modExtensions>
   </BiomeDef>
