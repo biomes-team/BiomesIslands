@@ -18,7 +18,7 @@
 	<hasBedrock>false</hasBedrock>
 	<impassable>false</impassable>
 	<animalDensity>0.5</animalDensity>
-	<plantDensity>0.5</plantDensity>
+	<plantDensity>0.1</plantDensity>
 	<wildPlantRegrowDays>12</wildPlantRegrowDays>
 	<!-- === -->
 	<!-- <canBuildBase>false</canBuildBase> -->
@@ -92,7 +92,7 @@
 	<!-- ======================================== -->
 	<modExtensions>
 		<li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<!-- <isIsland>true</isIsland> -->
+			<isIsland>true</isIsland>
 			<!-- <islandShapes> -->
 				<!-- <li>Smooth</li> -->
 			<!-- </islandShapes> -->
@@ -104,8 +104,11 @@
 			<spawnOnBiomes>
 				<li>Ocean</li>
 			</spawnOnBiomes>
+			<usePerlin>true</usePerlin>
+			<perlinCulling>0.0</perlinCulling>
 			<allowOnWater>True</allowOnWater>
-			<frequency>100</frequency>
+			<allowOnLand>False</allowOnLand>
+			<frequency>0</frequency>
 			<biomePriority>10</biomePriority>
 			<minTemperature>-99</minTemperature>
 			<maxTemperature>-15</maxTemperature>
