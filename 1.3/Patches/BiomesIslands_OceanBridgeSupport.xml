@@ -14,7 +14,7 @@
 	  <xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
 	  <match Class="PatchOperationAdd">
 		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
-		<success>Always</success>
+		<!-- <success>Always</success> -->
 		<value>
 			<li>Bridgeable</li>
 		</value>
