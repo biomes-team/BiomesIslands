@@ -18,7 +18,7 @@
 	<hasBedrock>false</hasBedrock>
 	<impassable>false</impassable>
 	<animalDensity>0.5</animalDensity>
-	<plantDensity>0.05</plantDensity>
+	<plantDensity>0.5</plantDensity>
 	<wildPlantRegrowDays>12</wildPlantRegrowDays>
 	<!-- === -->
 	<!-- <canBuildBase>false</canBuildBase> -->
