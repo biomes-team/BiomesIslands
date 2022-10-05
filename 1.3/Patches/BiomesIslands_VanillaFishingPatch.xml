@@ -14,6 +14,8 @@
 					<li>BiomesIslands_TundraArchipelago</li>
 					<li>BiomesIslands_BorealIsland</li>
 					<li>BiomesIslands_BorealArchipelago</li>
+					<!-- Oceans -->
+					<!-- <li>WVC_ArcticOcean</li> -->
 				</value>
 			</li>
 			<li Class="PatchOperationAdd"> 
@@ -24,6 +26,9 @@
 					<li>BiomesIslands_TropicalArchipelago</li>
 					<li>BiomesIslands_TemperateIsland</li>
 					<li>BiomesIslands_TemperateArchipelago</li>
+					<!-- Oceans -->
+					<li>Lake</li>
+					<li>Ocean</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd"> 

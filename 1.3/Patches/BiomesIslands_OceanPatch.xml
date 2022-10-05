@@ -26,7 +26,7 @@
 			<!-- <hasVirtualPlants>false</hasVirtualPlants> -->
 			<hasBedrock>false</hasBedrock>
 			<animalDensity>1.5</animalDensity>
-			<plantDensity>0.5</plantDensity>
+			<plantDensity>0.25</plantDensity>
 			<wildPlantRegrowDays>12</wildPlantRegrowDays>
 			<!-- === -->
 			<isExtremeBiome>true</isExtremeBiome>
@@ -84,18 +84,15 @@
 			</baseWeatherCommonalities>
 			<!-- ======================================== -->
 			<wildPlants>
-		
-				<!-- sand plants -->
-				<BiomesIslands_Bayhops>0.1</BiomesIslands_Bayhops>
 				<!-- water plants -->
-
 				<BiomesIslands_Kelp>0.25</BiomesIslands_Kelp>
 				<BiomesIslands_SeaSponge>0.15</BiomesIslands_SeaSponge>
 				<BiomesIslands_SeaGrass>1.0</BiomesIslands_SeaGrass>
 				<BiomesIslands_Seaweed>0.4</BiomesIslands_Seaweed>
 				<BiomesIslands_GreenAlgae>0.1</BiomesIslands_GreenAlgae>
 				<BiomesIslands_Sargassum>0.25</BiomesIslands_Sargassum>
-				
+				<BiomesIslands_Murkweed>0.05</BiomesIslands_Murkweed>
+				<BiomesIslands_WhiteAlgae>0.05</BiomesIslands_WhiteAlgae>
 			</wildPlants>
 			<wildAnimals>
 				<!-- aquatic grazers -->
