@@ -42,6 +42,8 @@
       <li>BiomesIslands_DesertArchipelago</li>
       <li>BiomesIslands_TropicalIsland</li>
       <li>BiomesIslands_TropicalArchipelago</li>
+      <li>Ocean</li>
+      <li>Lake</li>
     </allowedBiomes>
     <targetTags>
       <li>Map_PlayerHome</li>
@@ -101,6 +103,8 @@
       <li>BiomesIslands_DesertArchipelago</li>
       <li>BiomesIslands_TropicalIsland</li>
       <li>BiomesIslands_TropicalArchipelago</li>
+      <li>Ocean</li>
+      <li>Lake</li>
     </allowedBiomes>
     <targetTags>
       <li>Map_PlayerHome</li>
