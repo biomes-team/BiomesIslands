@@ -20,7 +20,6 @@
       <li>BiomesIslands_TropicalArchipelago</li>
       <li>BiomesIslands_TundraIsland</li>
       <li>BiomesIslands_TundraArchipelago</li>
-      <li>WVC_ArcticOcean</li>
       <li>Ocean</li>
       <li>Lake</li>
     </allowedBiomes>
@@ -71,7 +70,6 @@
       <li>BiomesIslands_TundraArchipelago</li>
       <li>BiomesIslands_TemperateIsland</li>
       <li>BiomesIslands_TemperateArchipelago</li>
-      <li>WVC_ArcticOcean</li>
       <li>Ocean</li>
       <li>Lake</li>
     </allowedBiomes>
