@@ -17,6 +17,7 @@
 		<!-- <success>Always</success> -->
 		<value>
 			<li>Bridgeable</li>
+			<li>BiomesCore_FreshWater_Bridgeable</li>
 		</value>
 	  </match>
 	  <nomatch Class="PatchOperationAdd">
@@ -24,6 +25,7 @@
 		<value>
 			<affordances>
 			  <li>Bridgeable</li>
+			  <li>BiomesCore_FreshWater_Bridgeable</li>
 			</affordances>
 		</value>
 	  </nomatch>

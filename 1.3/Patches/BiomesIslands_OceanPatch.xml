@@ -25,7 +25,7 @@
 			<allowFarmingCamps>false</allowFarmingCamps>
 			<!-- <hasVirtualPlants>false</hasVirtualPlants> -->
 			<hasBedrock>false</hasBedrock>
-			<animalDensity>1.5</animalDensity>
+			<animalDensity>0.5</animalDensity>
 			<plantDensity>0.75</plantDensity>
 			<wildPlantRegrowDays>12</wildPlantRegrowDays>
 			<!-- === -->
@@ -112,8 +112,8 @@
 				<BiomesIslands_Hammerhead>0.65</BiomesIslands_Hammerhead>
 				<BiomesIslands_WhiteShark>0.62</BiomesIslands_WhiteShark>
 				<!-- Whales -->
-				<BiomesIslands_Whale>2.5</BiomesIslands_Whale>
-				<BiomesIslands_BoomWhale>1.0</BiomesIslands_BoomWhale>
+				<BiomesIslands_Whale>1.2</BiomesIslands_Whale>
+				<BiomesIslands_BoomWhale>0.7</BiomesIslands_BoomWhale>
 			</wildAnimals>
 			<!-- ======================================== -->
 			<modExtensions>
