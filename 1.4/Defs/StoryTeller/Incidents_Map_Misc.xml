@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =========================== Good ============================-->
+
+  <IncidentDef>
+    <defName>AquaticArrival</defName>
+    <label>aquatic arrival</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_BorealArchipelago</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_DesertArchipelago</li>
+      <li>BiomesIslands_TropicalIsland</li>
+      <li>BiomesIslands_TropicalArchipelago</li>
+      <li>BiomesIslands_TundraIsland</li>
+      <li>BiomesIslands_TundraArchipelago</li>
+      <li>Ocean</li>
+      <li>Lake</li>
+    </allowedBiomes>
+    <workerClass>BiomesIslands.Incidents.Incident_AquaticArrival</workerClass>
+    <baseChance>1.0</baseChance>
+    <letterLabel>Aquatic migration: {0} and {1}</letterLabel>
+    <letterText>A group of {0} has come to the island to feed along with a smaller group of {1} predators.\n\n</letterText>
+    <letterDef>NeutralEvent</letterDef>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>CrabMigration</defName>
+    <label>crab migration</label>
+    <category>Misc</category>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_BorealArchipelago</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_DesertArchipelago</li>
+      <li>BiomesIslands_TropicalIsland</li>
+      <li>BiomesIslands_TropicalArchipelago</li>
+      <li>Ocean</li>
+      <li>Lake</li>
+    </allowedBiomes>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BiomesIslands.Incidents.Incident_CrabMigration</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Crab Migration</letterLabel>
+    <letterText>A group of {0} migrating to your island have just arrived.\n\n</letterText>
+    <letterDef>NeutralEvent</letterDef>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>GlowTide</defName>
+    <label>bioluminescent tide</label>
+    <category>Misc</category>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_BorealArchipelago</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_DesertArchipelago</li>
+      <li>BiomesIslands_TropicalIsland</li>
+      <li>BiomesIslands_TropicalArchipelago</li>
+      <li>BiomesIslands_TundraIsland</li>
+      <li>BiomesIslands_TundraArchipelago</li>
+      <li>BiomesIslands_TemperateIsland</li>
+      <li>BiomesIslands_TemperateArchipelago</li>
+      <li>Ocean</li>
+      <li>Lake</li>
+    </allowedBiomes>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BiomesIslands.Incidents.Incident_GlowTide</workerClass>
+    <baseChance>0.25</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Bioluminescent Tide</letterLabel>
+    <letterDef>PositiveEvent</letterDef>
+    <tale>GlowTide</tale>
+    <durationDays>10</durationDays>
+    <gameCondition>GlowTide</gameCondition>
+  </IncidentDef>
+
+
+  <!-- =========================== Bad ============================-->
+
+  <IncidentDef>
+    <defName>RevenousCrabs</defName>
+    <label>ravenous crabs</label>
+    <category>Misc</category>
+    <allowedBiomes>
+      <li>BiomesIslands_Atoll</li>
+      <li>BiomesIslands_BorealIsland</li>
+      <li>BiomesIslands_BorealArchipelago</li>
+      <li>BiomesIslands_DesertIsland</li>
+      <li>BiomesIslands_DesertArchipelago</li>
+      <li>BiomesIslands_TropicalIsland</li>
+      <li>BiomesIslands_TropicalArchipelago</li>
+      <li>Ocean</li>
+      <li>Lake</li>
+    </allowedBiomes>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BiomesIslands.Incidents.Incident_RavenousCrabs</workerClass>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Ravenous Crabs!</letterLabel>
+    <letterText>A group of hungry, island scouring crabs as just arrived.\n\nTry to eliminate them before they eat every last bit of food in the region.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+  </IncidentDef>
+ 
+</Defs>

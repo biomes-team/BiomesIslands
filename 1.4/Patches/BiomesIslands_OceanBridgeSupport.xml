@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- =================BridgeSupport================= -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/passability</xpath>
+		<success>Always</success>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/changeable</xpath>
+		<success>Always</success>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+	  <xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
+		<!-- <success>Always</success> -->
+		<value>
+			<li>Bridgeable</li>
+			<li>BiomesCore_FreshWater_Bridgeable</li>
+		</value>
+	  </match>
+	  <nomatch Class="PatchOperationAdd">
+		<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]</xpath>
+		<value>
+			<affordances>
+			  <li>Bridgeable</li>
+			  <li>BiomesCore_FreshWater_Bridgeable</li>
+			</affordances>
+		</value>
+	  </nomatch>
+	</Operation>
+	<!-- =================BridgeSupport================= -->
+
+</Patch>

@@ -1,13 +1,4 @@
-﻿using HarmonyLib;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
-
-namespace BiomesIslands.Patches
+﻿namespace BiomesIslands.Patches
 {
     // Put debug stuff here. Comment it out when you're done, but don't delete it so it's still there if we need to use it again
 
