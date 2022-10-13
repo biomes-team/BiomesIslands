@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--================== Fish Eggs ==================-->
+ 
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggTunaFertilized</defName>
+	<label>tuna egg (fert.)</label>
+	<description>A fertilized tuna egg. If all goes well, it should hatch into a baby tuna. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(180,50,10)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>35.0</MarketValue>
+        <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Tuna</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggRedSnapperFertilized</defName>
+	<label>red snapper egg (fert.)</label>
+	<description>A fertilized red snapper egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(220,150,90)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>35.0</MarketValue>
+        <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>9</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_RedSnapper</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_EggTroutFertilized</defName>
+	<label>trout egg (fert.)</label>
+	<description>A fertilized trout egg. If all goes well, it should hatch into a baby fish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(250,110,90)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>28.0</MarketValue>
+        <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Trout</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!--================== Baitfish Eggs ==================-->
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>EggSardineFertilized</defName>
+	<label>sardine egg (fert.)</label>
+	<description>A fertilized sardine egg. If all goes well, it should hatch into a fish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(90,80,70)</color>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>10.0</MarketValue>
+        <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_Sardine</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>EggLimepeelAngelfishFertilized</defName>
+	<label>limepeel angelfish egg (fert.)</label>
+	<description>A fertilized limepeel angelfish egg. If all goes well, it should hatch into a fish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(230,220,220)</color>
+		<drawSize>0.8</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>10.0</MarketValue>
+        <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_LimepeelAngelfish</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!--================== Other aquatic animals ==================-->
+  
+   <ThingDef ParentName="EggFertBase">
+	<defName>BiomesIslands_BlueSeaSnailFertilized</defName>
+	<label>blue sea snail egg (fert.)</label>
+	<description>A fertilized blue sea snail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(247,254,238)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>20.0</MarketValue>
+        <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>8</hatcherDaystoHatch>
+        <hatcherPawn>BiomesIslands_BlueSeaSnail</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

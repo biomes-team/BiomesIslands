@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- For fish to eat -->
+
+<ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_Kelp</defName>
+    <label>kelp</label>
+    <description>An aquatic plant</description>
+    <statBases>
+		<MaxHitPoints>90</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
+    </statBases>
+    <pathCost>20</pathCost>
+    <graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Kelp/Kelp</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.3</fertilityMin>
+		<fertilitySensitivity>1</fertilitySensitivity>
+		<growDays>3</growDays>
+		<maxMeshCount>4</maxMeshCount>
+		<visualSizeRange>1.2~1.5</visualSizeRange>
+		<topWindExposure>0.2</topWindExposure>
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>50</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+        <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+    </plant>
+  </ThingDef>
+
+
+<ThingDef ParentName="PlantBase">
+    <defName>BiomesIslands_SeaSponge</defName>
+    <label>sea sponge</label>
+    <description>An aquatic plant</description>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <pathCost>20</pathCost>
+    <graphicData>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <texPath>BiomesIslands_Things/Plant/SeaSponge</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <selectable>true</selectable>
+    <plant>
+		<maxMeshCount>1</maxMeshCount>
+		<fertilityMin>0.5</fertilityMin>
+		<fertilitySensitivity>1</fertilitySensitivity>
+		<growDays>3</growDays>
+		<visualSizeRange>1.4~1.8</visualSizeRange>
+		<topWindExposure>0.2</topWindExposure>
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>20</wildClusterWeight>
+		<!-- <wildClusterRadius>4</wildClusterRadius> -->
+		<!-- <wildClusterWeight>300</wildClusterWeight> -->
+        <wildOrder>1</wildOrder>
+        <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+    </plant>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_SeaGrass</defName>
+    <label>seagrass</label>
+    <description>An aquatic plant</description>
+    <statBases>
+		<MaxHitPoints>85</MaxHitPoints>
+		<Nutrition>0.1</Nutrition>
+    </statBases>
+    <!-- <pathCost>20</pathCost> -->
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/SeaGrass</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.05</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>2.5</growDays>
+		<maxMeshCount>9</maxMeshCount>
+		<visualSizeRange>0.4~0.8</visualSizeRange>
+		<wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+  
+    <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_Seaweed</defName>
+    <label>seaweed</label>
+    <description>An aquatic plant</description>
+    <statBases>
+		<MaxHitPoints>90</MaxHitPoints>
+		<Nutrition>0.15</Nutrition>
+    </statBases>
+    <pathCost>10</pathCost>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Seaweed</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.05</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>2.5</growDays>
+		<maxMeshCount>4</maxMeshCount>
+		<visualSizeRange>0.7~1.3</visualSizeRange>
+		<!-- <topWindExposure>0.2</topWindExposure> -->
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>150</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+        <!-- <wildEqualLocalDistribution>false</wildEqualLocalDistribution> -->
+    </plant>
+  </ThingDef>
+  
+   
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_GreenAlgae</defName>
+    <label>green algae</label>
+    <description>An greenish algae that grows in warm water.</description>
+    <statBases>
+		<MaxHitPoints>95</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
+		<Beauty>-1</Beauty>
+        <BeautyOutdoors>-1</BeautyOutdoors>
+    </statBases>
+    <!-- <pathCost>20</pathCost> -->
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/GreenAlgae</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Fresh</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.15</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>3.5</growDays>
+		<maxMeshCount>9</maxMeshCount>
+		<visualSizeRange>0.4~0.65</visualSizeRange>
+		<wildClusterRadius>4</wildClusterRadius>
+		<wildClusterWeight>350</wildClusterWeight>
+		<wildOrder>2</wildOrder>
+    </plant>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_Sargassum</defName>
+    <label>sargassum seaweed</label>
+    <description>A brownish seaweed</description>
+    <statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
+		<!-- <Beauty>-1</Beauty> -->
+    </statBases>
+    <pathCost>10</pathCost>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Sargassum</texPath>
+		<!-- <color>(140,100,50)</color> -->
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <selectable>true</selectable>
+    <plant>
+		<fertilityMin>0.10</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>4.0</growDays>
+		<!-- <maxMeshCount>9</maxMeshCount> -->
+		<visualSizeRange>1.5~2.5</visualSizeRange>
+		<wildClusterRadius>4</wildClusterRadius>
+		<wildClusterWeight>300</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+		<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+    </plant>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_WhiteAlgae</defName>
+    <label>brown algae</label>
+    <description>A brown algae that grows in cold water.</description>
+    <statBases>
+		<MaxHitPoints>95</MaxHitPoints>
+		<Nutrition>0.15</Nutrition>
+		<Beauty>-1</Beauty>
+        <BeautyOutdoors>-1</BeautyOutdoors>
+    </statBases>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/WhiteAlgae</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.10</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>3.5</growDays>
+		<maxMeshCount>9</maxMeshCount>
+		<visualSizeRange>0.2~0.3</visualSizeRange>
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>200</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_Murkweed</defName>
+    <label>murkweed</label>
+    <description>An aquatic plant that prefers cold, deep water</description>
+    <statBases>
+		<MaxHitPoints>95</MaxHitPoints>
+		<Nutrition>0.2</Nutrition>
+    </statBases>
+    <!-- <pathCost>20</pathCost> -->
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/Murkweed</texPath>
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <plant>
+		<fertilityMin>0.15</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growDays>3.5</growDays>
+		<!-- <maxMeshCount>9</maxMeshCount> -->
+		<visualSizeRange>0.8~1.1</visualSizeRange>
+		<wildClusterRadius>10</wildClusterRadius>
+		<wildClusterWeight>50</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+  
+  
+  
+ <!-- Special -->
+ 
+<ThingDef ParentName="PlantBase">
+	<defName>BiomesIslands_GlowPlankton</defName>
+    <label>bioluminescent plankton</label>
+    <thingClass>BiomesCore.DerivedClasses.BMT_Plant</thingClass>
+    <description>A short lived plankton that emits a soft glow</description>
+    <statBases>
+		<MaxHitPoints>90</MaxHitPoints>
+		<Nutrition>0.03</Nutrition>
+		<Beauty>7</Beauty>
+        <BeautyOutdoors>7</BeautyOutdoors>
+    </statBases>
+    <pathCost>20</pathCost>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BiomesIslands_Things/Plant/GlowPlankton</texPath>
+		<shaderType>MoteGlow</shaderType>
+		<!-- <shaderType>TransparentPostLight</shaderType> -->
+    </graphicData>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Salty</li>
+				<li>Shallow</li>
+				<li>Deep</li>
+			</terrainTags>
+			<needsRest>false</needsRest>
+        </li>
+    </modExtensions>
+    <!-- <hideAtSnowDepth>0.5</hideAtSnowDepth> -->
+    <plant>
+		<fertilityMin>0.15</fertilityMin>
+		<fertilitySensitivity>0.3</fertilitySensitivity>
+		<growMinGlow>0</growMinGlow>
+		<growOptimalGlow>0</growOptimalGlow>
+		<growDays>0.5</growDays>
+		<visualSizeRange>0.8~2.5</visualSizeRange> 
+		<maxMeshCount>4</maxMeshCount>
+		<lifespanDaysPerGrowDays>2.0</lifespanDaysPerGrowDays>
+    </plant>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Soil"
+						or defName="MossyTerrain"
+						or defName="MarshyTerrain"
+						or defName="SoilRich"
+						or defName="Gravel"]/statBases</xpath>
+					<value>
+						<pathCostDigging>1</pathCostDigging>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="Soil"
+						or defName="MossyTerrain"
+						or defName="MarshyTerrain"
+						or defName="SoilRich"
+						or defName="Gravel"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>DiggingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostDigging</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Sand" or defName="SoftSand"]/statBases</xpath>
+					<value>
+						<pathCostSandDrilling>1</pathCostSandDrilling>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/TerrainDef[defName="Sand" or defName="SoftSand"]</xpath>
+					<value>
+						<li Class="TerrainMovement.TerrainMovementStatDef">
+							<pawnSpeedStat>SandDrillingSpeed</pawnSpeedStat>
+							<terrainPathCostStat>pathCostSandDrilling</terrainPathCostStat>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/TerrainDef[defName="Sand"]/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="Sand"]</xpath>
+						<value>
+							<tags>
+								<li>Sandy</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="Sand"]/tags</xpath>
+						<value>
+							<li>Sandy</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/TerrainDef[defName="SoftSand"]/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="SoftSand"]</xpath>
+						<value>
+							<tags>
+								<li>Sandy</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="SoftSand"]/tags</xpath>
+						<value>
+							<li>Sandy</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/TerrainDef[defName="BiomesCore_WaterShallowLagoon"]/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="BiomesCore_WaterShallowLagoon"]</xpath>
+						<value>
+							<tags />
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/TerrainDef[defName="WaterOceanShallow"]/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
+						<value>
+							<tags />
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Sand" or defName="WaterOceanShallow" or defName="BiomesCore_WaterShallowLagoon"]/tags</xpath>
+					<value>
+						<li>Beach</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Mud" or defName="Marsh" or defName="WaterDeep" or defName="WaterMovingChestDeep" or defName="WaterShallow" or defName="WaterMovingShallow"]/tags</xpath>
+					<value>
+						<li>WaterFront</li>
+					</value>
+				</li>
+			</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Erin's Mountain Animals -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Mountain Animals</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
+				<value>
+					<Snow_leopard>0.02</Snow_leopard>
+					<Pika>0.07</Pika>
+					<Pallas_cat>0.05</Pallas_cat>
+					<Argali>0.3</Argali>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealArchipelago"]/wildAnimals</xpath>
+				<value>
+					<Snow_leopard>0.02</Snow_leopard>
+					<Pika>0.07</Pika>
+					<Pallas_cat>0.05</Pallas_cat>
+					<Argali>0.3</Argali>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildAnimals</xpath>
+				<value>
+					<Snow_leopard>0.05</Snow_leopard>
+					<Pika>0.07</Pika>
+					<Pallas_cat>0.06</Pallas_cat>
+					<Argali>0.1</Argali>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraArchipelago"]/wildAnimals</xpath>
+				<value>
+					<Snow_leopard>0.05</Snow_leopard>
+					<Pika>0.07</Pika>
+					<Pallas_cat>0.06</Pallas_cat>
+					<Argali>0.1</Argali>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+<!-- Erin's Fox Squirrel -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Fox Squirrel</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.05</FoxSquirrel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TemperateIsland"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.12</FoxSquirrel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TemperateArchipelago"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.12</FoxSquirrel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.12</FoxSquirrel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealArchipelago"]/wildAnimals</xpath>
+				<value>
+					<FoxSquirrel>0.12</FoxSquirrel>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Remove this shit, buddy -->
+
+  <BiomeDef>
+	<defName>WVC_ArcticOcean</defName>
+	<label>arctic ocean</label>
+	<description>Open ocean. Great for fish. Not so great for you.</description>
+	<!-- <workerClass>BiomeWorker_Ocean</workerClass> -->
+	<workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+	<allowRoads>false</allowRoads>
+	<allowRivers>false</allowRivers>
+	<texture>World/Biomes/Ocean</texture>
+	<movementDifficulty>10</movementDifficulty>
+	<forageability>0</forageability>
+	<settlementSelectionWeight>0.0</settlementSelectionWeight>
+	<allowFarmingCamps>false</allowFarmingCamps>
+	<hasVirtualPlants>false</hasVirtualPlants>
+	<hasBedrock>false</hasBedrock>
+	<impassable>false</impassable>
+	<animalDensity>0.5</animalDensity>
+	<plantDensity>0.1</plantDensity>
+	<wildPlantRegrowDays>12</wildPlantRegrowDays>
+	<!-- === -->
+	<!-- <canBuildBase>false</canBuildBase> -->
+	<canBuildBase>true</canBuildBase>
+	<isExtremeBiome>true</isExtremeBiome>
+	<soundsAmbient>
+	  <li>Ambient_Wind_Desolate</li>
+	</soundsAmbient>
+	<diseaseMtbDays>90</diseaseMtbDays>
+	<diseases>
+	  <li>
+		<diseaseInc>Disease_Flu</diseaseInc>
+		<commonality>10</commonality>
+	  </li>
+	  <li>
+		<diseaseInc>Disease_Plague</diseaseInc>
+		<commonality>10</commonality>
+	  </li>
+	  <li>
+		<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+		<commonality>30</commonality>
+	  </li>
+	  <li>
+		<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+		<commonality>30</commonality>
+	  </li>
+	  
+	  <li>
+		<diseaseInc>Disease_AnimalFlu</diseaseInc>
+		<commonality>10</commonality>
+	  </li>
+	  <li>
+		<diseaseInc>Disease_AnimalPlague</diseaseInc>
+		<commonality>10</commonality>
+	  </li>
+	</diseases>
+	<terrainsByFertility>
+	  <li>
+		<terrain>WaterOceanDeep</terrain>
+		<min>-999</min>
+		<max>999</max>
+	  </li>
+	</terrainsByFertility>
+	<baseWeatherCommonalities>
+	  <Clear>12</Clear>
+	  <Fog>4</Fog>
+	  <Rain>2</Rain>
+	  <FoggyRain>2</FoggyRain>
+	  <RainyThunderstorm>2</RainyThunderstorm>
+	  <SnowGentle>8</SnowGentle>
+	  <SnowHard>8</SnowHard>
+	</baseWeatherCommonalities>
+	<!-- ======================================== -->
+	<wildPlants>
+		<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
+		<BiomesIslands_SeaGrass>0.5</BiomesIslands_SeaGrass>
+		<BiomesIslands_Seaweed>9.0</BiomesIslands_Seaweed>
+		<BiomesIslands_Murkweed>2.0</BiomesIslands_Murkweed>
+		<BiomesIslands_WhiteAlgae>1.0</BiomesIslands_WhiteAlgae>
+	</wildPlants>
+	<wildAnimals>
+		<!-- aquatic grazers -->
+		<BiomesIslands_Sardine>1.5</BiomesIslands_Sardine>
+		<BMT_Obsidianfin>1.5</BMT_Obsidianfin>
+		<BiomesIslands_Trout>2.0</BiomesIslands_Trout>
+		<BiomesIslands_Whale>0.5</BiomesIslands_Whale>
+		<!-- aquatic predators -->
+		<BiomesIslands_Tuna>0.45</BiomesIslands_Tuna>
+		<BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
+	</wildAnimals>
+	<!-- ======================================== -->
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<isIsland>true</isIsland>
+			<islandShapes>
+				<li>Smooth</li>
+			</islandShapes>
+			<addIslandHills>false</addIslandHills>
+			<hasScatterables>false</hasScatterables>
+			<allowBeach>false</allowBeach>
+		</li>
+		<li Class="BiomesKit.BiomesKitControls">
+			<spawnOnBiomes>
+				<li>Ocean</li>
+			</spawnOnBiomes>
+			<!-- <usePerlin>true</usePerlin> -->
+			<!-- <perlinCulling>0.0</perlinCulling> -->
+			<allowOnWater>True</allowOnWater>
+			<allowOnLand>False</allowOnLand>
+			<frequency>0</frequency>
+			<biomePriority>10</biomePriority>
+			<minTemperature>-99</minTemperature>
+			<maxTemperature>-15</maxTemperature>
+			<!-- <materialPath>BiomesIslands_World/MapGraphics/ArcticOcean</materialPath> -->
+			<!-- <materialLayer>3509</materialLayer> -->
+		</li>
+	</modExtensions>
+  </BiomeDef>
+
+</Defs>

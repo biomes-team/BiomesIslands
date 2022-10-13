@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Islands</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Factions Expanded - Classical</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<TerrainDef ParentName="VFEC_MosaicsStoneBase">
+								<defName>VFEC_MosaicsCoral</defName>
+								<label>coral mosaics</label>
+								<color>(250,180,147)</color>
+								<costList>
+									<BiomesIslands_BlocksCoral>10</BiomesIslands_BlocksCoral>
+								</costList>
+							</TerrainDef>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>
