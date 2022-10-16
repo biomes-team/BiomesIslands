@@ -4,7 +4,7 @@
 <!-- desert -->
 <Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Vanilla Animals Expanded — Desert</li>
+		<li>Vanilla Animals Expanded</li>
 	</mods>
 	<match Class="PatchOperationSequence">
 		<success>Always</success>
@@ -46,18 +46,6 @@
 				<AEXP_Lion>0.2</AEXP_Lion>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- tundra -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Tundra</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
 			<value>
@@ -92,18 +80,6 @@
 				<AEXP_Porcupine>0.3</AEXP_Porcupine>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- australia -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Australia</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
 			<value>
@@ -177,18 +153,6 @@
 				<AEXP_Platypus>0.1</AEXP_Platypus>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- extreme desert -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Extreme Desert</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TropicalIsland"]/wildAnimals</xpath>
 			<value>
@@ -217,18 +181,6 @@
 				<AEXP_Megascorpion>0.2</AEXP_Megascorpion>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- ice sheet -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Ice Sheet</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_TundraIsland"]/wildAnimals</xpath>
 			<value>
@@ -245,18 +197,6 @@
 				<AEXP_Walrus>0.03</AEXP_Walrus>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- tropical rainforest -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Tropical Rainforest</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
 			<value>
@@ -285,18 +225,6 @@
 				<AEXP_Tiger>0.05</AEXP_Tiger>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- arid shrubland -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Arid Shrubland</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
 			<value>
@@ -338,18 +266,6 @@
 				<AEXP_Cheetah>0.3</AEXP_Cheetah>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- boreal forest -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Boreal Forest</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_BorealIsland"]/wildAnimals</xpath>
 			<value>
@@ -382,18 +298,6 @@
 				<AEXP_BlackBear>0.04</AEXP_BlackBear>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- tropical swamp -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Tropical Swamp</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
 			<value>
@@ -428,18 +332,6 @@
 				<AEXP_Alligator>0.03</AEXP_Alligator>
 			</value>
 		</li>
-		</operations>
-	</match>
-</Operation>
-
-<!-- temperate forest -->
-<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Animals Expanded — Temperate Forest</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 		<li Class="PatchOperationAdd"> 
 			<xpath>/Defs/BiomeDef[defName = "BiomesIslands_Atoll"]/wildAnimals</xpath>
 			<value>
@@ -503,6 +395,4 @@
 	</match>
 </Operation>
 
-	
 </Patch>
-
