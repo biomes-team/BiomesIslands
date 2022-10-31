@@ -23,8 +23,17 @@
 			<!-- <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> -->
 		<!-- </value> -->
 	<!-- </Operation> -->
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>/Defs/GenStepDef[@Name="ConditionCauserGenStepBase"]/genStep</xpath> -->
+		<!-- <success>Always</success> -->
+		<!-- <value> -->
+			<!-- <genStep Class="BMT.GenStep_ConditionCauser"> -->
+			  <!-- <nearMapCenter>true</nearMapCenter> -->
+			<!-- </genStep> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/GenStepDef[@Name="ConditionCauserGenStepBase"]/genStep</xpath>
+		<xpath>/Defs/GenStepDef/genStep</xpath>
 		<success>Always</success>
 		<value>
 			<genStep Class="BMT.GenStep_ConditionCauser">
