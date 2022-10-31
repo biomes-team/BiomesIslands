@@ -33,7 +33,7 @@
 		<!-- </value> -->
 	<!-- </Operation> -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/GenStepDef/genStep</xpath>
+		<xpath>/Defs/GenStepDef/genStep[@Class="GenStep_ConditionCauser"]</xpath>
 		<success>Always</success>
 		<value>
 			<genStep Class="BMT.GenStep_ConditionCauser">
