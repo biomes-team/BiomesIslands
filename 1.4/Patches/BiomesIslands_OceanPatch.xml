@@ -41,6 +41,15 @@
 			</genStep>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GenStepDef/genStep[@Class="GenStep_EscapeShip"]</xpath>
+		<!-- <success>Always</success> -->
+		<value>
+			<genStep Class="BMT.GenStep_EscapeShip">
+			  <nearMapCenter>true</nearMapCenter>
+			</genStep>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName="Ocean" or defName="Lake"]</xpath>
