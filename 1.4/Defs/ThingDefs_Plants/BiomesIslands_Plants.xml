@@ -166,6 +166,8 @@
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
+	  <Beauty>5</Beauty>
+      <BeautyOutdoors>3</BeautyOutdoors>	  
     </statBases>
     <pathCost>20</pathCost>
     <graphicData>
@@ -180,8 +182,8 @@
       <topWindExposure>0.2</topWindExposure>
       <wildClusterRadius>8</wildClusterRadius>
       <wildClusterWeight>20</wildClusterWeight>
-          <wildOrder>1</wildOrder>
-          <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+      <wildOrder>1</wildOrder>
+      <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>
     <comps>
       <li Class="CompProperties_Glower">
@@ -199,6 +201,8 @@
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
+	  <Beauty>5</Beauty>
+      <BeautyOutdoors>3</BeautyOutdoors>
     </statBases>
     <pathCost>20</pathCost>
     <graphicData>
