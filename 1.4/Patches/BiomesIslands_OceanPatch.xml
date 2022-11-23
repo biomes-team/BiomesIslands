@@ -56,7 +56,7 @@
 		<value>
 			<movementDifficulty>10</movementDifficulty>
 			<forageability>0</forageability>
-			<settlementSelectionWeight>0.01</settlementSelectionWeight>
+			<settlementSelectionWeight>0.0</settlementSelectionWeight>
 			<allowFarmingCamps>false</allowFarmingCamps>
 			<!-- <hasVirtualPlants>false</hasVirtualPlants> -->
 			<hasBedrock>false</hasBedrock>
