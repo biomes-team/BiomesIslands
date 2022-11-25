@@ -57,7 +57,9 @@
 			<movementDifficulty>10</movementDifficulty>
 			<forageability>0</forageability>
 			<settlementSelectionWeight>0.0</settlementSelectionWeight>
+			<campSelectionWeight>0.0</campSelectionWeight>
 			<allowFarmingCamps>false</allowFarmingCamps>
+			<canAutoChoose>false</canAutoChoose>
 			<!-- <hasVirtualPlants>false</hasVirtualPlants> -->
 			<hasBedrock>false</hasBedrock>
 			<animalDensity>0.5</animalDensity>
