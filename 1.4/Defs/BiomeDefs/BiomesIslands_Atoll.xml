@@ -27,6 +27,11 @@
 			<frequency>20</frequency>
 			<materialPath>BiomesIslands_World/MapGraphics/Atoll</materialPath>
         </li>
+        <li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+            <isWaterCovered>true</isWaterCovered>
+            <allowLandforms>false</allowLandforms>
+            <allowBiomeTransitions>false</allowBiomeTransitions>
+        </li>
 	</modExtensions>
     
 	<canAutoChoose>false</canAutoChoose>

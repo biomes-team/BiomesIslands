@@ -221,6 +221,11 @@
 			<materialPath>BiomesIslands_World/MapGraphics/TundraIsland</materialPath>
 			<materialLayer>3509</materialLayer>
         </li>
+        <li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+            <isWaterCovered>true</isWaterCovered>
+            <allowLandforms>false</allowLandforms>
+            <allowBiomeTransitions>false</allowBiomeTransitions>
+        </li>
 	</modExtensions>
   </BiomeDef>
   
