@@ -6,7 +6,7 @@
         
         <label>boreal coast</label>
 
-        <biomeLabel operation="appendPar">boreal coast</biomeLabel>
+        <biomeLabel operation="appendPar">coast</biomeLabel>
         <biomeDescription operation="appendLine">A boreal coast borders this tile.</biomeDescription>
         
         <worldTileConditions>

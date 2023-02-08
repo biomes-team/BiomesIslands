@@ -6,7 +6,7 @@
         
         <label>tundra coast</label>
 
-        <biomeLabel operation="appendPar">tundra coast</biomeLabel>
+        <biomeLabel operation="appendPar">coast</biomeLabel>
         <biomeDescription operation="appendLine">A tundra coast borders this tile.</biomeDescription>
         
         <worldTileConditions>

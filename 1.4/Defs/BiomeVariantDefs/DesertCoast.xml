@@ -6,7 +6,7 @@
         
         <label>desert coast</label>
 
-        <biomeLabel operation="appendPar">desert coast</biomeLabel>
+        <biomeLabel operation="appendPar">coast</biomeLabel>
         <biomeDescription operation="appendLine">A desert coast borders this tile.</biomeDescription>
         
         <worldTileConditions>
