@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-Up 2 (temporary beta)</li>
+			<li>Giddy-Up 2</li>
+		</mods>
+
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[@Name="BiomesCore_WaterAnimal"]</xpath>
+			<value>
+				<li Class="GiddyUp.NotMountable"/>
+			</value>
+		</match>
+	</Operation>
+</Patch>
