@@ -5,17 +5,16 @@
         <defName>BiomesIslands_TemperateCoast</defName>
         
         <label>temperate coast</label>
-        <description>A temperate coast borders this tile.</description>
 
-        <labelDisplayMode>AppendPara</labelDisplayMode>
-        <descriptionDisplayMode>Append</descriptionDisplayMode>
+        <biomeLabel operation="appendPar">temperate coast</biomeLabel>
+        <biomeDescription operation="appendLine">A temperate coast borders this tile.</biomeDescription>
         
         <worldTileConditions>
             <coast>Ocean</coast>
-            <biome>
-                <li>TemperateForest</li>
-                <li>TemperateSwamp</li>
-            </biome>
+            <anyOf>
+                <biome>TemperateForest</biome>
+                <biome>TemperateSwamp</biome>
+            </anyOf>
         </worldTileConditions>
 
         <layers>

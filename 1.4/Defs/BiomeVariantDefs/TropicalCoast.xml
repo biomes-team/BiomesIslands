@@ -5,17 +5,16 @@
         <defName>BiomesIslands_TropicalCoast</defName>
         
         <label>tropical coast</label>
-        <description>A tropical coast borders this tile.</description>
 
-        <labelDisplayMode>AppendPara</labelDisplayMode>
-        <descriptionDisplayMode>Append</descriptionDisplayMode>
+        <biomeLabel operation="appendPar">tropical coast</biomeLabel>
+        <biomeDescription operation="appendLine">A tropical coast borders this tile.</biomeDescription>
         
         <worldTileConditions>
             <coast>Ocean</coast>
-            <biome>
-                <li>TropicalRainforest</li>
-                <li>TropicalSwamp</li>
-            </biome>
+            <anyOf>
+                <biome>TropicalRainforest</biome>
+                <biome>TropicalSwamp</biome>
+            </anyOf>
         </worldTileConditions>
 
         <layers>

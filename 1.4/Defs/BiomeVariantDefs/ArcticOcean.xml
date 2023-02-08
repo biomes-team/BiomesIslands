@@ -5,16 +5,15 @@
         <defName>BiomesIslands_ArcticOcean</defName>
         
         <label>arctic ocean</label>
-        <description>Open ocean. The arctic variety. Great for fish. Not so great for you.</description>
 
-        <labelDisplayMode>Replace</labelDisplayMode>
-        <descriptionDisplayMode>Replace</descriptionDisplayMode>
+        <biomeLabel>arctic ocean</biomeLabel>
+        <biomeDescription>Open ocean. The arctic variety. Great for fish. Not so great for you.</biomeDescription>
         
         <worldTileConditions>
-            <biome>
-                <li>Ocean</li>
-            </biome>
-            <temperature>-99~-15</temperature>
+            <biome>Ocean</biome>
+            <temperature>
+                <max>-15</max>
+            </temperature>
         </worldTileConditions>
 
         <layers>

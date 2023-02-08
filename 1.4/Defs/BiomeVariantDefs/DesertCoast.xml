@@ -5,18 +5,17 @@
         <defName>BiomesIslands_DesertCoast</defName>
         
         <label>desert coast</label>
-        <description>A desert coast borders this tile.</description>
 
-        <labelDisplayMode>AppendPara</labelDisplayMode>
-        <descriptionDisplayMode>Append</descriptionDisplayMode>
+        <biomeLabel operation="appendPar">desert coast</biomeLabel>
+        <biomeDescription operation="appendLine">A desert coast borders this tile.</biomeDescription>
         
         <worldTileConditions>
             <coast>Ocean</coast>
-            <biome>
-                <li>AridShrubland</li>
-                <li>Desert</li>
-                <li>ExtremeDesert</li>
-            </biome>
+            <anyOf>
+                <biome>AridShrubland</biome>
+                <biome>Desert</biome>
+                <biome>ExtremeDesert</biome>
+            </anyOf>
         </worldTileConditions>
 
         <layers>

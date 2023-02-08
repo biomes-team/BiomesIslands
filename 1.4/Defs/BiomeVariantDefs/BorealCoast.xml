@@ -5,17 +5,16 @@
         <defName>BiomesIslands_BorealCoast</defName>
         
         <label>boreal coast</label>
-        <description>A boreal coast borders this tile.</description>
 
-        <labelDisplayMode>AppendPara</labelDisplayMode>
-        <descriptionDisplayMode>Append</descriptionDisplayMode>
+        <biomeLabel operation="appendPar">boreal coast</biomeLabel>
+        <biomeDescription operation="appendLine">A boreal coast borders this tile.</biomeDescription>
         
         <worldTileConditions>
             <coast>Ocean</coast>
-            <biome>
-                <li>BorealForest</li>
-                <li>ColdBog</li>
-            </biome>
+            <anyOf>
+                <biome>BorealForest</biome>
+                <biome>ColdBog</biome>
+            </anyOf>
         </worldTileConditions>
 
         <layers>

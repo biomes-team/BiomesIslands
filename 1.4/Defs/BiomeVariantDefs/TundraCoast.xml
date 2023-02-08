@@ -5,16 +5,15 @@
         <defName>BiomesIslands_TundraCoast</defName>
         
         <label>tundra coast</label>
-        <description>A tundra coast borders this tile.</description>
 
-        <labelDisplayMode>AppendPara</labelDisplayMode>
-        <descriptionDisplayMode>Append</descriptionDisplayMode>
+        <biomeLabel operation="appendPar">tundra coast</biomeLabel>
+        <biomeDescription operation="appendLine">A tundra coast borders this tile.</biomeDescription>
         
         <worldTileConditions>
             <coast>Ocean</coast>
-            <biome>
-                <li>Tundra</li>
-            </biome>
+            <anyOf>
+                <biome>Tundra</biome>
+            </anyOf>
         </worldTileConditions>
 
         <layers>
