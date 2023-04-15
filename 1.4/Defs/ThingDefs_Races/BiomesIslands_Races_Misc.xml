@@ -42,7 +42,7 @@
         </capacities>
         <power>11</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftScythe</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>BMT_FrontLeftScythe</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -59,7 +59,7 @@
         </capacities>
         <power>11</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightScythe</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>BMT_FrontRightScythe</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -94,7 +94,7 @@
       </li>
     </comps>
     <race>
-      <body>MantisLike</body>
+      <body>BMT_MantisLike</body>
       <predator>true</predator>
       <herdAnimal>false</herdAnimal>
       <maxPreyBodySize>2.3</maxPreyBodySize>
@@ -123,7 +123,7 @@
           <minAge>0.4</minAge>
           <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
           <soundDeath>Pawn_Megascarab_Death</soundDeath>
-          <soundCall>Pawn_Mantis_Call</soundCall>
+          <soundCall>BMT_Pawn_Mantis_Call</soundCall>
           <soundAngry>Pawn_Megascarab_Angry</soundAngry>
         </li>
       </lifeStageAges>

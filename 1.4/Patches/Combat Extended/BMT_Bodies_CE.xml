@@ -63,31 +63,6 @@
                         <li>CoveredByNaturalArmor</li>
                     </value>
                 </li>
-
-                <!--+++++++++ Insectoid +++++++++-->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/BodyDef[defName="MantisLike"]//*[
-                    def="Shell" or
-                    def="Pronotum" or
-                    def="InsectLeg"]
-                    </xpath>
-                    <value>
-                        <groups>
-                        </groups>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/BodyDef[defName="MantisLike"]//*[
-                    def="Shell" or
-                    def="Pronotum" or
-                    def="InsectLeg" or
-                    def="InsectHead" or
-                    def="InsectMouth"]/groups
-                    </xpath>
-                    <value>
-                        <li>CoveredByNaturalArmor</li>
-                    </value>
-                </li>
             </operations>
         </match>
     </Operation>
