@@ -3,7 +3,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>BMT_FishMeat</defName>
     <label>fish meat</label>
-    <description>Meat from fish like creatures.</description>
+    <description>Meat from fish-like creatures.</description>
     <graphicData>
       <texPath>BiomesIslands_Things/Item/Meat/MeatFish</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
