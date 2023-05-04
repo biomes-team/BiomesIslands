@@ -45,7 +45,7 @@
     <defName>BiomesIslands_AquaticKelpBed</defName>
     <thingClass>Building_Bed</thingClass>
     <label>kelp bed</label>
-    <description>A bed of artifial kelp. Great for aquatic animals like fish.</description>
+    <description>A bed of artificial kelp. Great for aquatic animals like fish.</description>
     <rotatable>false</rotatable>
 	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
     <fillPercent>0.15</fillPercent>
