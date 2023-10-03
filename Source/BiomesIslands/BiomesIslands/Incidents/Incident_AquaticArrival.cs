@@ -1,6 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using System.Linq;
+using PathfindingFramework;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -52,14 +53,19 @@ namespace BiomesIslands.Incidents
 			return true;
 		}
 
+		private static bool IsAquatic(PawnKindDef animalKind)
+		{
+			return PathfindingFramework.Cache.Global.MovementExtensionCache.GetMovementDef(animalKind) ==
+			       MovementDefOf.PF_Aquatic;
+		}
 		protected bool TryFindPreyAnimalKind(int tile, out PawnKindDef animalKind)
 		{
-			return DefDatabase<PawnKindDef>.AllDefs.Where((PawnKindDef k) => k.IsAquatic() && k.RaceProps.CanDoHerdMigration && k.RaceProps.foodType == FoodTypeFlags.VegetarianRoughAnimal && Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, k.race)).TryRandomElementByWeight((PawnKindDef x) => Mathf.Lerp(0.2f, 1f, x.RaceProps.wildness), out animalKind);
+			return DefDatabase<PawnKindDef>.AllDefs.Where(k => IsAquatic(k) && k.RaceProps.CanDoHerdMigration && k.RaceProps.foodType == FoodTypeFlags.VegetarianRoughAnimal && Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, k.race)).TryRandomElementByWeight((PawnKindDef x) => Mathf.Lerp(0.2f, 1f, x.RaceProps.wildness), out animalKind);
 		}
 
 		protected bool TryFindPredatorAnimalKind(int tile, out PawnKindDef animalKind)
 		{
-			return DefDatabase<PawnKindDef>.AllDefs.Where((PawnKindDef k) => k.IsAquatic() && k.RaceProps.foodType == FoodTypeFlags.CarnivoreAnimal && Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, k.race)).TryRandomElementByWeight((PawnKindDef x) => Mathf.Lerp(0.2f, 1f, x.RaceProps.wildness), out animalKind);
+			return DefDatabase<PawnKindDef>.AllDefs.Where(k => IsAquatic(k) && k.RaceProps.foodType == FoodTypeFlags.CarnivoreAnimal && Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, k.race)).TryRandomElementByWeight((PawnKindDef x) => Mathf.Lerp(0.2f, 1f, x.RaceProps.wildness), out animalKind);
 		}
 
 		protected List<Pawn> GenerateAnimals(PawnKindDef animalKind, int tile, IntRange minRange)

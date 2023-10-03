@@ -2,8 +2,7 @@
 <Defs>
 	<ThingDef ParentName="AnimalThingBase" Name="BiomesCore_WaterAnimal" Abstract="true">
 		<statBases>
-			  <MoveSpeed>0</MoveSpeed>
-			  <SwimSpeed>6</SwimSpeed>
+			  <MoveSpeed>6</MoveSpeed>
 			  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 		</statBases>
 		<race>
@@ -12,10 +11,9 @@
 		<comps>
 		</comps>
 		<modExtensions>
-			  <!-- This makes things stay in the water -->
-			  <li Class="Swimming.AquaticExtension">
-					<aquatic>true</aquatic>
-			  </li>
+				<li Class="PathfindingFramework.MovementExtension">
+					<movementDef>PF_Aquatic</movementDef>
+				</li>
 		</modExtensions>
 		</ThingDef>
 
@@ -23,24 +21,11 @@
 		<race>
 			<nameGenerator>Biomes_NamerAquatic</nameGenerator>
 		</race>
-		<modExtensions>
-			  <!-- This makes things stay in the water -->
-			  <li Class="Swimming.AquaticExtension">
-					<saltWaterOnly>true</saltWaterOnly>
-			  </li>
-		</modExtensions>
-
 	</ThingDef>
 
-  <ThingDef ParentName="BiomesCore_WaterAnimal" Name="BiomesCore_FreshWaterAnimal" Abstract="true">
-	<race>
-      <nameGenerator>Biomes_NamerAquatic</nameGenerator>
-	</race>
-    <modExtensions>
-      <!-- This makes things stay in the water -->
-      <li Class="Swimming.AquaticExtension">
-        <freshWaterOnly>true</freshWaterOnly>
-      </li>
-    </modExtensions>
-  </ThingDef>
+	<ThingDef ParentName="BiomesCore_WaterAnimal" Name="BiomesCore_FreshWaterAnimal" Abstract="true">
+		<race>
+		<nameGenerator>Biomes_NamerAquatic</nameGenerator>
+		</race>
+	</ThingDef>
 </Defs>

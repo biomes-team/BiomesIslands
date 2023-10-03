@@ -1,73 +1,71 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- ================ Baitfish Base ================ -->
-    <LifeStageDef ParentName="AnimalBaby" Abstract="true" Name="BiomesIslands_BaitfishBabyTinyBase">
-        <bodySizeFactor>0.1</bodySizeFactor>
-        <foodMaxFactor>4</foodMaxFactor>
-        <statFactors>
-            <MoveSpeed>0.4</MoveSpeed>
-            <SwimSpeed>0.4</SwimSpeed>
-        </statFactors>
-    </LifeStageDef>
+	<!-- ================ Baitfish Base ================ -->
+	<LifeStageDef ParentName="AnimalBaby" Abstract="true" Name="BiomesIslands_BaitfishBabyTinyBase">
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.4</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
 
-    <LifeStageDef Name="BiomesIslands_BaitfishJuvenileBase" Abstract="true">
-        <defName>BiomesIslands_BaitfishJuvenileBase</defName>
+	<LifeStageDef Name="BiomesIslands_BaitfishJuvenileBase" Abstract="true">
+		<defName>BiomesIslands_BaitfishJuvenileBase</defName>
 		<label>juvenile</label>
-        <voxPitch>1.2</voxPitch>
-        <bodySizeFactor>0.5</bodySizeFactor>
-        <foodMaxFactor>1.5</foodMaxFactor>
-        <healthScaleFactor>0.6</healthScaleFactor>
-        <hungerRateFactor>0.75</hungerRateFactor>
-        <marketValueFactor>0.75</marketValueFactor>
-        <meleeDamageFactor>0.75</meleeDamageFactor>
-        <statFactors>
-            <MoveSpeed>0.9</MoveSpeed>
-            <SwimSpeed>0.9</SwimSpeed>
-        </statFactors>
-    </LifeStageDef>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
 
-    <LifeStageDef Name="BiomesIslands_BaitfishAdultBase" Abstract="true">
+	<LifeStageDef Name="BiomesIslands_BaitfishAdultBase" Abstract="true">
 		<defName>BiomesIslands_BaitfishAdultBase</defName>
-        <label>adult</label>
-        <visible>false</visible>
-        <reproductive>true</reproductive>
-        <milkable>true</milkable>
-        <shearable>true</shearable>
-    </LifeStageDef>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
 
-    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail" Abstract="true" Name="BiomesIslands_BaitfishBase">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail" Abstract="true"
+	          Name="BiomesIslands_BaitfishBase">
 		<defName>BiomesIslands_BaitfishBase</defName>
 		<label>fish</label>
-        <description>A small schooling fish.</description>
-        <statBases>
-            <MoveSpeed>0</MoveSpeed>
-            <SwimSpeed>5</SwimSpeed>
-            <MarketValue>15</MarketValue>
-        </statBases>
-        <tools>
-            <li>
-                <label>teeth</label>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>1.4</power>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                        <def>Stun</def>
-                        <amount>3</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-                <cooldownTime>1</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<description>A small schooling fish.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>1.4</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.5</chanceFactor>
-            </li>
+			</li>
 			<li>
 				<label>head</label>
 				<capacities>
-				  <li>Blunt</li>
+					<li>Blunt</li>
 				</capacities>
 				<power>1.5</power>
 				<cooldownTime>1</cooldownTime>
@@ -75,40 +73,49 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.4</chanceFactor>
 			</li>
-        </tools>
-        <race>
-            <herdAnimal>true</herdAnimal>
-            <predator>false</predator>
-            <body>Biomes_FishBody</body>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>false</predator>
+			<body>Biomes_FishBody</body>
 			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
-            <baseHungerRate>0.15</baseHungerRate>
-            <baseBodySize>0.12</baseBodySize>
-            <baseHealthScale>0.20</baseHealthScale>
-            <foodType>VegetarianRoughAnimal</foodType>
-            <packAnimal>false</packAnimal>
-            <wildness>0.55</wildness>
-            <nuzzleMtbHours>50</nuzzleMtbHours>
-            <petness>0.05</petness>
-            <lifeExpectancy>3</lifeExpectancy>
-            <trainability>None</trainability>
-            <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<baseHungerRate>0.15</baseHungerRate>
+			<baseBodySize>0.12</baseBodySize>
+			<baseHealthScale>0.20</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<packAnimal>false</packAnimal>
+			<wildness>0.55</wildness>
+			<nuzzleMtbHours>50</nuzzleMtbHours>
+			<petness>0.05</petness>
+			<lifeExpectancy>3</lifeExpectancy>
+			<trainability>None</trainability>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-        </race>
-        <!--tradeTags>
-            <li>AnimalUncommon</li>
-        </tradeTags-->
-    </ThingDef>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.25</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
 
-    <PawnKindDef ParentName="AnimalKindBase" Abstract="true" Name="BiomesIslands_BaseBaitfish">
-        <combatPower>15</combatPower>
+	<PawnKindDef ParentName="AnimalKindBase" Abstract="true" Name="BiomesIslands_BaseBaitfish">
+		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
 		<wildGroupSize>5~15</wildGroupSize>
 	</PawnKindDef>
-	
-	
 
 </Defs>

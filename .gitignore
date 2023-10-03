@@ -355,7 +355,3 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-
-# Localized install script
-install.sh
-copyswimmingkit.sh

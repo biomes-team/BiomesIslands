@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- Small Crabs -->
+	<!-- Small Crabs -->
 	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_BlueCrab</defName>
 		<label>blue crab</label>
 		<description>A medium sized crab species related to the rimcrab. It is native to cold and temperate islands.</description>
 		<statBases>
-			<MoveSpeed>3.5</MoveSpeed>
-			<SwimSpeed>6</SwimSpeed>
 			<!-- <HungerRateMultiplier>3</HungerRateMultiplier> -->
 			<MarketValue>110</MarketValue>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
@@ -30,16 +28,16 @@
 			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
-		<li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BiomesIslands_EggBlueCrabFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>2</eggFertilizationCountMax>
-			<eggLayIntervalDays>9</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>
-			<min>1</min>
-			<max>3</max>
-			</eggCountRange>
-		</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BiomesIslands_EggBlueCrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>9</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>3</max>
+				</eggCountRange>
+			</li>
 		</comps>
 		<tools>
 			<li>
@@ -102,7 +100,7 @@
 				<dessicatedBodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/BlueCrab/Dessicated_BlueCrab</texPath>
 					<drawSize>1.6</drawSize>
-				</dessicatedBodyGraphicData> 
+				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
@@ -112,8 +110,6 @@
 		<label>fiddler crab</label>
 		<description>A crab species native to tropical islands. Male fiddlers have an oversized claw on one side.</description>
 		<statBases>
-			<MoveSpeed>3.5</MoveSpeed>
-			<SwimSpeed>6</SwimSpeed>
 			<MarketValue>110</MarketValue>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
@@ -134,16 +130,16 @@
 			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
-		<li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BiomesIslands_EggFiddlerCrabFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>2</eggFertilizationCountMax>
-			<eggLayIntervalDays>11</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>
-			<min>1</min>
-			<max>3</max>
-			</eggCountRange>
-		</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BiomesIslands_EggFiddlerCrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>11</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>3</max>
+				</eggCountRange>
+			</li>
 		</comps>
 		<tools>
 			<li>
@@ -226,7 +222,7 @@
 				<dessicatedBodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrab</texPath>
 					<drawSize>1.6</drawSize>
-				</dessicatedBodyGraphicData> 
+				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/FiddlerCrab/Dessicated_FiddlerCrabFemale</texPath>
 					<drawSize>1.6</drawSize>
@@ -235,126 +231,129 @@
 		</lifeStages>
 	</PawnKindDef>
 
-  <ThingDef ParentName="BiomesCore_CrabThingBase">
-    <defName>BiomesIslands_HermitCrab</defName>
-    <label>hermit crab</label>
-    <description>A crab species known for hiding inside seashells. Despite their name, they are highly social, living in colonies of hundreds of crabs. Their hard shells make them very tough for their size.</description>
-    <statBases>
-      <MoveSpeed>2.5</MoveSpeed>
-      <SwimSpeed>4</SwimSpeed>
-      <MarketValue>110</MarketValue>
-      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>55</ComfyTemperatureMax>
-	  <PainShockThreshold>0.5</PainShockThreshold>
-    </statBases>
-    <race>
-	  <herdAnimal>true</herdAnimal>
-	  <herdMigrationAllowed>true</herdMigrationAllowed>
-      <baseBodySize>0.15</baseBodySize>
-	  <baseHealthScale>1</baseHealthScale>
-	  <baseHungerRate>0.25</baseHungerRate>
-      <lifeExpectancy>9</lifeExpectancy>
-      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-	  <wildness>0.10</wildness>
-      <useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
-    </race>
-    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>BiomesIslands_EggHermitCrabFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>2</eggFertilizationCountMax>
-        <eggLayIntervalDays>9.5</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>1</min>
-          <max>3</max>
-        </eggCountRange>
-      </li>
-    </comps>
-    <tools>
-		<li>
-			<label>claw</label>
-			<capacities>
-				<li>Cut</li>
-			</capacities>
-			<power>8</power>
-			<cooldownTime>2.2</cooldownTime>
-			<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
-		</li>
-		<li>
-			<label>head</label>
-			<capacities>
-				<li>Blunt</li>
-			</capacities>
-			<power>3</power>
-			<cooldownTime>1.65</cooldownTime>
-			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		</li>
-	</tools>
-  </ThingDef>
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
+		<defName>BiomesIslands_HermitCrab</defName>
+		<label>hermit crab</label>
+		<description>A crab species known for hiding inside seashells. Despite their name, they are highly social, living in colonies of hundreds of crabs. Their hard shells make them very tough for their size.</description>
+		<statBases>
+			<MarketValue>110</MarketValue>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<PainShockThreshold>0.5</PainShockThreshold>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>true</herdMigrationAllowed>
+			<baseBodySize>0.15</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.25</baseHungerRate>
+			<lifeExpectancy>9</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+			<wildness>0.10</wildness>
+			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BiomesIslands_EggHermitCrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>9.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>3</max>
+				</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
 
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BiomesIslands_HermitCrab</defName>
-    <label>hermitcrab</label>
-    <race>BiomesIslands_HermitCrab</race>
-	<combatPower>50</combatPower>
-	<ecoSystemWeight>0.25</ecoSystemWeight>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BiomesIslands_HermitCrab</defName>
+		<label>hermitcrab</label>
+		<race>BiomesIslands_HermitCrab</race>
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
 
-	<wildGroupSize>
-      <min>12</min>
-      <max>30</max>
-    </wildGroupSize>
-    <alternateGraphicChance>0.8</alternateGraphicChance>
-    <alternateGraphics>
-      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab1</texPath></li>
-      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab2</texPath></li>
-      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab3</texPath></li>
-      <li><texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab4</texPath></li>
-    </alternateGraphics>
-	<lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
-          <drawSize>0.4</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-		  <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
-          <drawSize>0.4</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-		  <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
-          <drawSize>0.6</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
-          <drawSize>0.6</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
-          <drawSize>0.8</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
-          <drawSize>0.8</drawSize>
-        </dessicatedBodyGraphicData> 
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  
-  
+		<wildGroupSize>
+			<min>12</min>
+			<max>30</max>
+		</wildGroupSize>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab1</texPath>
+			</li>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab2</texPath>
+			</li>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab3</texPath>
+			</li>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab4</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
+					<drawSize>0.4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
+					<drawSize>0.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
 	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_RimCrab</defName>
 		<label>rimcrab</label>
 		<description>A mongrel crab species that can survive on most rimworlds in warm waters. It moves in large packs, which can be a threat to smaller islands because of their ravenous hunger. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
 		<statBases>
-			<MoveSpeed>3.5</MoveSpeed>
-			<SwimSpeed>6</SwimSpeed>
 			<MarketValue>110</MarketValue>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
@@ -376,16 +375,16 @@
 			<meatColor>(251,172,202)</meatColor>
 		</race>
 		<comps>
-		<li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BiomesIslands_EggRimCrabFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>2</eggFertilizationCountMax>
-			<eggLayIntervalDays>11</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>
-			<min>1</min>
-			<max>3</max>
-			</eggCountRange>
-		</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BiomesIslands_EggRimCrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>11</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>3</max>
+				</eggCountRange>
+			</li>
 		</comps>
 		<tools>
 			<li>
@@ -448,19 +447,17 @@
 				<dessicatedBodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
 					<drawSize>1.6</drawSize>
-				</dessicatedBodyGraphicData> 
+				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
 
-<!-- Large Crabs -->
-<ThingDef ParentName="BiomesCore_CrabThingBase">
+	<!-- Large Crabs -->
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_ClutterCrab</defName>
 		<label>clutter crab</label>
 		<description>An unusually large and intelligent crab. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
 		<statBases>
-			<MoveSpeed>3.8</MoveSpeed>
-			<SwimSpeed>3.2</SwimSpeed>
 			<MarketValue>410</MarketValue>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
@@ -480,16 +477,16 @@
 			<packAnimal>true</packAnimal>
 		</race>
 		<comps>
-		<li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BiomesIslands_EggClutterCrabFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>15</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>
-			<min>1</min>
-			<max>2</max>
-			</eggCountRange>
-		</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BiomesIslands_EggClutterCrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>2</max>
+				</eggCountRange>
+			</li>
 		</comps>
 		<tools>
 			<li>
@@ -548,7 +545,7 @@
 				<dessicatedBodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
 					<drawSize>2.0</drawSize>
-				</dessicatedBodyGraphicData> 
+				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

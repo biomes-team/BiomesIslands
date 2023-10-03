@@ -1,136 +1,86 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-	<!-- ================ Sardine ================ -->
-	
-		
-	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
-        <defName>BiomesIslands_SardineBabyTiny</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-                <drawSize>0.3</drawSize>
-				<color>(160,180,180)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
-		<defName>BiomesIslands_SardineJuvenile</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-                <drawSize>0.5</drawSize>
-				<color>(160,180,180)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
-        <defName>BiomesIslands_SardineAdult</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-                <drawSize>0.7</drawSize>
-				<color>(160,180,180)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-    <ThingDef ParentName="BiomesIslands_BaitfishBase" >
-        <defName>BiomesIslands_Sardine</defName>
-        <label>sardine</label>
-        <description>A small schooling fish.</description>
-        <statBases>
+	<ThingDef ParentName="BiomesIslands_BaitfishBase">
+		<defName>BiomesIslands_Sardine</defName>
+		<label>sardine</label>
+		<description>A small schooling fish.</description>
+		<statBases>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>55</ComfyTemperatureMax>
-        </statBases>
+		</statBases>
 		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>EggSardineFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>12</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>2~5</eggCountRange>
-		  </li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>EggSardineFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>12</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>2~5</eggCountRange>
+			</li>
 		</comps>
-        <race>
-            <wildness>0.55</wildness>
-            <lifeExpectancy>3</lifeExpectancy>
-            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
-            <lifeStageAges>
-                <li>
-                    <def>BiomesIslands_SardineBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_SardineJuvenile</def>
-                    <minAge>0.1</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_SardineAdult</def>
-                    <minAge>0.25</minAge>
-                </li>
-            </lifeStageAges>
-        </race>
-    </ThingDef>
+		<race>
+			<wildness>0.55</wildness>
+			<lifeExpectancy>3</lifeExpectancy>
+			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+		</race>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_ChestWater</li>
+					<li>PF_DeepWater</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
+					<color>(160,180,180)</color>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
-    
-    <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
-        <defName>BiomesIslands_Sardine</defName>
-        <label>sardine</label>
-        <description>A small schooling fish.</description>
-        <race>BiomesIslands_Sardine</race>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
-                    <drawSize>0.3</drawSize>
+
+	<PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
+		<defName>BiomesIslands_Sardine</defName>
+		<label>sardine</label>
+		<description>A small schooling fish.</description>
+		<race>BiomesIslands_Sardine</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
+					<drawSize>0.3</drawSize>
 					<color>(160,180,180)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>0.3</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
-                    <drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
+					<drawSize>0.5</drawSize>
 					<color>(160,180,180)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>0.5</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
-                    <drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
+					<drawSize>0.7</drawSize>
 					<color>(160,180,180)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>0.7</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
 	</PawnKindDef>
-
-
 
 
 </Defs>
