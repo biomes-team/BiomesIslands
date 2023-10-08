@@ -231,7 +231,7 @@
 		</race>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Flying</movementDef>
+				<movementDef>PF_Movement_Flying</movementDef>
 			</li>
 			<li Class="PathfindingFramework.LocomotionExtension">
 				<locomotionUrgencies>

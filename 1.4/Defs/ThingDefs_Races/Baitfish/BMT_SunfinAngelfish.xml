@@ -27,8 +27,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>

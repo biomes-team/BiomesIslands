@@ -12,7 +12,7 @@
 		</comps>
 		<modExtensions>
 				<li Class="PathfindingFramework.MovementExtension">
-					<movementDef>PF_Aquatic</movementDef>
+					<movementDef>PF_Movement_Aquatic</movementDef>
 				</li>
 		</modExtensions>
 		</ThingDef>

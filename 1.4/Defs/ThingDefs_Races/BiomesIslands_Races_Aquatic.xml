@@ -117,8 +117,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath>
@@ -286,8 +286,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/HammerheadSubmerged</texPath>
@@ -470,8 +470,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/TunaSubmerged</texPath>
@@ -627,8 +627,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnailSubmerged</texPath>
@@ -794,8 +794,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
@@ -969,8 +969,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
@@ -1141,8 +1141,8 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_ChestWater</li>
-					<li>PF_DeepWater</li>
+					<li>PF_TerrainTag_ChestWater</li>
+					<li>PF_TerrainTag_DeepWater</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>

@@ -56,7 +56,7 @@ namespace BiomesIslands.Incidents
 		private static bool IsAquatic(PawnKindDef animalKind)
 		{
 			return PathfindingFramework.Cache.Global.MovementExtensionCache.GetMovementDef(animalKind) ==
-			       MovementDefOf.PF_Aquatic;
+			       MovementDefOf.PF_Movement_Aquatic;
 		}
 		protected bool TryFindPreyAnimalKind(int tile, out PawnKindDef animalKind)
 		{
