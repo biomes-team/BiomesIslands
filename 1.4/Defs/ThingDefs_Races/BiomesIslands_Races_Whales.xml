@@ -125,8 +125,8 @@
 			</li>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_TerrainTag_ChestWater</li>
-					<li>PF_TerrainTag_DeepWater</li>
+					<li>PF_Movement_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
@@ -307,8 +307,8 @@
 			</li>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_TerrainTag_ChestWater</li>
-					<li>PF_TerrainTag_DeepWater</li>
+					<li>PF_Movement_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhaleSubmerged</texPath>
