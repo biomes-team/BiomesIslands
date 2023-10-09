@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BiomesIslands</RootNamespace>
     <AssemblyName>BiomesIslands</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -71,6 +71,7 @@
     <Compile Include="Incidents\Incident_AquaticArrival.cs" />
     <Compile Include="Incidents\Incident_CrabRave.cs" />
     <Compile Include="Incidents\Incident_GlowTide.cs" />
+    <Compile Include="MovementDefOf.cs" />
     <Compile Include="Patches\Patches_Debug.cs" />
     <Compile Include="Patches\World_AddNaturalRockTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
