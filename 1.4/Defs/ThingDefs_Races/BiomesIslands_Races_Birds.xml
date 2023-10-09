@@ -238,9 +238,7 @@
 					<li>Jog</li>
 					<li>Sprint</li>
 				</locomotionUrgencies>
-				<statOffsets>
-					<MoveSpeed>5</MoveSpeed>
-				</statOffsets>
+				<moveSpeedMultiplier>4</moveSpeedMultiplier>
 				<graphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
 				</graphicData>
