@@ -27,13 +27,13 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
-					<li>PF_Movement_WaterChest</li>
+					<li>PF_TerrainTag_WaterChest</li>
 					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
-				<bodyGraphicData>
+				<graphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
 					<color>(253,240,0)</color>
-				</bodyGraphicData>
+				</graphicData>
 			</li>
 		</modExtensions>
 	</ThingDef>
