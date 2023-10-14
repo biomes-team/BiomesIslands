@@ -240,7 +240,7 @@
 		</tradeTags>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
+				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -376,7 +376,7 @@
 		</tradeTags>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
+				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
