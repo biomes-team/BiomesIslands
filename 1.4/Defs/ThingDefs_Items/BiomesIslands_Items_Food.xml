@@ -21,7 +21,6 @@
     </comps>
     <ingestible>
       <preferability>RawTasty</preferability>
-      <tasteThought></tasteThought>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>

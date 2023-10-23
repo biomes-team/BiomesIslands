@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Missing lifeStageAges so you can define them with modExtensions... otherwise they add together -->
 	<ThingDef ParentName="AnimalThingBase" Name="Biomes_BirdThingBase" Abstract="True">
 		<race>
 			<body>Bird</body>
