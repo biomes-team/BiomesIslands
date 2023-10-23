@@ -118,7 +118,7 @@
 					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
 				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/HerbEel</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/HerbEelSubmerged</texPath>
 				</graphicData>
 			</li>
 		</modExtensions>
