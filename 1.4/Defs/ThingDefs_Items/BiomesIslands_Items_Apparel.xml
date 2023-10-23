@@ -27,10 +27,9 @@
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.5</MoveSpeed>
-      <SwimSpeed>5</SwimSpeed>
     </equippedStatOffsets>
     <thingCategories Inherit="False">
-      <li>VAE_BootsAndGloves</li>
+      <li>Apparel</li>
     </thingCategories>
     <apparel>
       <bodyPartGroups>
@@ -52,11 +51,11 @@
       </recipeUsers>
     </recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <modExtensions>
+      <li Class="PathfindingFramework.MovementExtension">
+        <movementDef>PF_Movement_Amphibious</movementDef>
+      </li>
+    </modExtensions>
+
   </ThingDef>
-  <!-- Boots and Gloves -->
-  <ThingCategoryDef>
-    <defName>VAE_BootsAndGloves</defName>
-    <label>handwear and footwear</label>
-    <parent>Apparel</parent>
-  </ThingCategoryDef>
 </Defs>

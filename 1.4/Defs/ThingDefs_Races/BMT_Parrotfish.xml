@@ -1,107 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-   
-   
-       <!-- Copied from LifeStages.xml, added modExtensions -->
-    <LifeStageDef ParentName="AnimalBaby">
-        <defName>BMT_ParrotfishBabyTiny</defName>
-        <bodySizeFactor>0.1</bodySizeFactor>
-        <foodMaxFactor>4</foodMaxFactor>
-        <statFactors>
-            <MoveSpeed>0.5</MoveSpeed>
-            <SwimSpeed>0.5</SwimSpeed>
-        </statFactors>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
-                <drawSize>0.5</drawSize>
-				<color>(180,170,160)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
 
-    <LifeStageDef>
-        <defName>BMT_ParrotfishJuvenile</defName>
-        <label>juvenile</label>
-        <voxPitch>1.2</voxPitch>
-        <bodySizeFactor>0.5</bodySizeFactor>
-        <foodMaxFactor>1.5</foodMaxFactor>
-        <healthScaleFactor>0.6</healthScaleFactor>
-        <hungerRateFactor>0.75</hungerRateFactor>
-        <marketValueFactor>0.75</marketValueFactor>
-        <meleeDamageFactor>0.75</meleeDamageFactor>
-        <statFactors>
-            <MoveSpeed>0.9</MoveSpeed>
-            <SwimSpeed>0.9</SwimSpeed>
-        </statFactors>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
-                <drawSize>1.2</drawSize>
-				<color>(180,170,160)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
 
-    <LifeStageDef>
-        <defName>BMT_ParrotfishAdult</defName>
-        <label>adult</label>
-        <visible>false</visible>
-        <reproductive>true</reproductive>
-        <milkable>true</milkable>
-        <shearable>true</shearable>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
-                <drawSize>1.6</drawSize>
-				<color>(180,170,160)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
+	<!-- Copied from LifeStages.xml, added modExtensions -->
+	<LifeStageDef ParentName="AnimalBaby">
+		<defName>BMT_ParrotfishBabyTiny</defName>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.5</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
 
-    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
-        <defName>BMT_Parrotfish</defName>
-        <label>parrotfish</label>
-        <description>A large herbivorous fish, found in warm waters.</description>
-        <statBases>
-            <MoveSpeed>0</MoveSpeed>
-            <SwimSpeed>4</SwimSpeed>
-            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-            <ComfyTemperatureMax>65</ComfyTemperatureMax>
-            <MarketValue>120</MarketValue>
-        </statBases>
-        <tools>
-            <li>
-                <label>teeth</label>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>8</power>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                        <def>Stun</def>
-                        <amount>8</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-                <cooldownTime>2.2</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+	<LifeStageDef>
+		<defName>BMT_ParrotfishJuvenile</defName>
+		<label>juvenile</label>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef>
+		<defName>BMT_ParrotfishAdult</defName>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
+
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
+		<defName>BMT_Parrotfish</defName>
+		<label>parrotfish</label>
+		<description>A large herbivorous fish, found in warm waters.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>65</ComfyTemperatureMax>
+			<MarketValue>120</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-            </li>
+			</li>
 			<li>
 				<label>head</label>
 				<capacities>
-				  <li>Blunt</li>
+					<li>Blunt</li>
 				</capacities>
 				<power>7</power>
 				<cooldownTime>2.2</cooldownTime>
@@ -109,98 +76,111 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.1</chanceFactor>
 			</li>
-        </tools>
+		</tools>
 		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BMT_EggParrotfishFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>15</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>1~3</eggCountRange>
-		  </li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggParrotfishFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~3</eggCountRange>
+			</li>
 		</comps>
-        <race>
-            <herdAnimal>true</herdAnimal>
-            <body>Biomes_FishBody</body>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>Biomes_FishBody</body>
 			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
-            <baseHungerRate>0.50</baseHungerRate>
-            <baseBodySize>0.9</baseBodySize>
-            <baseHealthScale>0.9</baseHealthScale>
-            <foodType>VegetarianRoughAnimal</foodType>
-            <packAnimal>false</packAnimal>
-            <wildness>0.70</wildness>
-            <nuzzleMtbHours>60</nuzzleMtbHours>
-            <petness>0.1</petness>
-            <lifeExpectancy>15</lifeExpectancy>
-            <trainability>None</trainability>
-            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<baseHungerRate>0.50</baseHungerRate>
+			<baseBodySize>0.9</baseBodySize>
+			<baseHealthScale>0.9</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<packAnimal>false</packAnimal>
+			<wildness>0.70</wildness>
+			<nuzzleMtbHours>60</nuzzleMtbHours>
+			<petness>0.1</petness>
+			<lifeExpectancy>15</lifeExpectancy>
+			<trainability>None</trainability>
+			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
-            <lifeStageAges>
-                <li>
-                    <def>BMT_ParrotfishBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BMT_ParrotfishJuvenile</def>
-                    <minAge>0.30</minAge>
-                </li>
-                <li>
-                    <def>BMT_ParrotfishAdult</def>
-                    <minAge>0.55</minAge>
-                </li>
-            </lifeStageAges>
-            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-        </race>
-    </ThingDef>
+			<lifeStageAges>
+				<li>
+					<def>BMT_ParrotfishBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_ParrotfishJuvenile</def>
+					<minAge>0.30</minAge>
+				</li>
+				<li>
+					<def>BMT_ParrotfishAdult</def>
+					<minAge>0.55</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<graphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
+					<color>(180,170,160)</color>
+				</graphicData>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
-    <PawnKindDef ParentName="AnimalKindBase">
-        <defName>BMT_Parrotfish</defName>
-        <label>parrotfish</label>
-        <race>BMT_Parrotfish</race>
-        <combatPower>80</combatPower>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Parrotfish</defName>
+		<label>parrotfish</label>
+		<race>BMT_Parrotfish</race>
+		<combatPower>80</combatPower>
 		<wildGroupSize>1~3</wildGroupSize>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
-                    <drawSize>0.5</drawSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
+					<drawSize>0.5</drawSize>
 					<color>(180,170,160)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>0.5</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
-                    <drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
+					<drawSize>1.2</drawSize>
 					<color>(180,170,160)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>1.2</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
-                    <drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Parrotfish/Parrotfish</texPath>
+					<drawSize>1.6</drawSize>
 					<color>(180,170,160)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>1.6</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    </PawnKindDef>
-	
-	
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggParrotfishFertilized</defName>
 		<label>parrotfish egg (fert.)</label>
@@ -214,12 +194,12 @@
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_Hatcher">
-			<hatcherDaystoHatch>8</hatcherDaystoHatch>
-			<hatcherPawn>BMT_Parrotfish</hatcherPawn>
-		  </li>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Parrotfish</hatcherPawn>
+			</li>
 		</comps>
-	  </ThingDef>
-  
-  
+	</ThingDef>
+
+
 </Defs>

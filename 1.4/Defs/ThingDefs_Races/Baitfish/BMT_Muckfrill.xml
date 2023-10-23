@@ -1,158 +1,110 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-	<!-- ================ muckfrill ================ -->
-	
-		
-	<LifeStageDef ParentName="BiomesIslands_BaitfishBabyTinyBase" >
-        <defName>BMT_MuckfrillBabyTiny</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-                <drawSize>0.35</drawSize>
-				<color>(146,128,56)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishJuvenileBase" >
-		<defName>BMT_MuckfrillJuvenile</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-                <drawSize>0.6</drawSize>
-				<color>(146,128,56)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-	<LifeStageDef ParentName="BiomesIslands_BaitfishAdultBase">
-        <defName>BMT_MuckfrillAdult</defName>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-                <drawSize>0.85</drawSize>
-				<color>(146,128,56)</color>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
-	
-    <ThingDef ParentName="BiomesIslands_BaitfishBase" >
-        <defName>BMT_Muckfrill</defName>
-        <label>muckfrill</label>
-        <description>A small schooling fish.</description>
-        <statBases>
+	<ThingDef ParentName="BiomesIslands_BaitfishBase">
+		<defName>BMT_Muckfrill</defName>
+		<label>muckfrill</label>
+		<description>A small schooling fish.</description>
+		<statBases>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>65</ComfyTemperatureMax>
-        </statBases>
+		</statBases>
 		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BMT_EggMuckfrillFertilized</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>12</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>2~5</eggCountRange>
-		  </li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggMuckfrillFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>12</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>2~5</eggCountRange>
+			</li>
 		</comps>
-        <race>
-            <wildness>0.4</wildness>
-            <lifeExpectancy>3</lifeExpectancy>
-            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+		<race>
+			<wildness>0.4</wildness>
+			<lifeExpectancy>3</lifeExpectancy>
+			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 			<baseBodySize>0.20</baseBodySize>
-            <lifeStageAges>
-                <li>
-                    <def>BMT_MuckfrillBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BMT_MuckfrillJuvenile</def>
-                    <minAge>0.1</minAge>
-                </li>
-                <li>
-                    <def>BMT_MuckfrillAdult</def>
-                    <minAge>0.25</minAge>
-                </li>
-            </lifeStageAges>
-        </race>
-    </ThingDef>
+		</race>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<graphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
+					<color>(146,128,56)</color>
+				</graphicData>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
-    
-    <PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
-        <defName>BMT_Muckfrill</defName>
-        <label>muckfrill</label>
-        <description>A small schooling fish.</description>
-        <race>BMT_Muckfrill</race>
+
+	<PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
+		<defName>BMT_Muckfrill</defName>
+		<label>muckfrill</label>
+		<description>A small schooling fish.</description>
+		<race>BMT_Muckfrill</race>
 		<wildGroupSize>2~7</wildGroupSize>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
-                    <drawSize>0.35</drawSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
+					<drawSize>0.35</drawSize>
 					<color>(146,128,56)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>0.35</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
-                    <drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.35</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
+					<drawSize>0.6</drawSize>
 					<color>(146,128,56)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>0.6</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
-                    <drawSize>0.85</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFish</texPath>
+					<drawSize>0.85</drawSize>
 					<color>(146,128,56)</color>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
-                    <drawSize>0.85</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
 	</PawnKindDef>
 
 
-  <ThingDef ParentName="EggFertBase">
-	<defName>BMT_EggMuckfrillFertilized</defName>
-	<label>muckfrill egg (fert.)</label>
-	<description>A fertilized muckfrill egg. If all goes well, it should hatch into a fish. It can be eaten raw, but it's much better cooked.</description>
-	<graphicData>
-		<color>(200,200,150)</color>
-		<drawSize>0.8</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>10.0</MarketValue>
-        <DeteriorationRate>0</DeteriorationRate>
-	</statBases>
-	<comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-        <hatcherPawn>BMT_Muckfrill</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>
-  
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggMuckfrillFertilized</defName>
+		<label>muckfrill egg (fert.)</label>
+		<description>A fertilized muckfrill egg. If all goes well, it should hatch into a fish. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(200,200,150)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Muckfrill</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 
 </Defs>

@@ -1,104 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- Whale -->
+	<!-- Whale -->
 
-    <!-- Copied from LifeStages.xml, added modExtensions -->
-    <LifeStageDef ParentName="AnimalBaby">
-        <defName>BiomesIslands_WhaleBabyTiny</defName>
-        <bodySizeFactor>0.1</bodySizeFactor>
-        <foodMaxFactor>4</foodMaxFactor>
-        <statFactors>
-            <MoveSpeed>0.6</MoveSpeed>
-            <SwimSpeed>0.6</SwimSpeed>
-        </statFactors>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
-                <drawSize>2.0</drawSize>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
+	<!-- Copied from LifeStages.xml, added modExtensions -->
+	<LifeStageDef ParentName="AnimalBaby">
+		<defName>BiomesIslands_WhaleBabyTiny</defName>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.6</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
 
-    <LifeStageDef>
-        <defName>BiomesIslands_WhaleJuvenile</defName>
-        <label>juvenile</label>
-        <voxPitch>1.2</voxPitch>
-        <bodySizeFactor>0.5</bodySizeFactor>
-        <foodMaxFactor>1.5</foodMaxFactor>
-        <healthScaleFactor>0.6</healthScaleFactor>
-        <hungerRateFactor>0.75</hungerRateFactor>
-        <marketValueFactor>0.75</marketValueFactor>
-        <meleeDamageFactor>0.75</meleeDamageFactor>
-        <statFactors>
-            <MoveSpeed>0.9</MoveSpeed>
-            <SwimSpeed>0.9</SwimSpeed>
-        </statFactors>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
-                <drawSize>4.0</drawSize>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
+	<LifeStageDef>
+		<defName>BiomesIslands_WhaleJuvenile</defName>
+		<label>juvenile</label>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
 
-    <LifeStageDef>
-        <defName>BiomesIslands_WhaleAdult</defName>
-        <label>adult</label>
-        <visible>false</visible>
-        <reproductive>true</reproductive>
-        <milkable>true</milkable>
-        <shearable>true</shearable>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
-                <drawSize>4.8</drawSize>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
+	<LifeStageDef>
+		<defName>BiomesIslands_WhaleAdult</defName>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
 
-    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
-        <defName>BiomesIslands_Whale</defName>
-        <label>whale</label>
-        <description>Whales live in the seas, they look like large fishes, but they are actually mammals. They breathe air before diving and can endure hours without returning to the surface, they produce milk for the baby whales. They can be found usually in groups.</description>
-        <statBases>
-            <MoveSpeed>0</MoveSpeed>
-            <SwimSpeed>7</SwimSpeed>
-            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
-            <ComfyTemperatureMax>45</ComfyTemperatureMax>
-            <MarketValue>1800</MarketValue>
-        </statBases>
-        <tools>
-            <li>
-                <label>teeth</label>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>22</power>
-                <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
+		<defName>BiomesIslands_Whale</defName>
+		<label>whale</label>
+		<description>Whales live in the seas, they look like large fishes, but they are actually mammals. They breathe air before diving and can endure hours without returning to the surface, they produce milk for the baby whales. They can be found usually in groups.</description>
+		<statBases>
+			<MoveSpeed>7</MoveSpeed>
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>1800</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.6</chanceFactor>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                            <def>Stun</def>
-                            <amount>28</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-            </li>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>28</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
 			<li>
 				<label>head</label>
 				<capacities>
-				  <li>Blunt</li>
+					<li>Blunt</li>
 				</capacities>
 				<power>22</power>
 				<cooldownTime>2</cooldownTime>
@@ -106,198 +76,183 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.3</chanceFactor>
 			</li>
-        </tools>
-        <race>
-            <herdAnimal>true</herdAnimal>
-            <predator>true</predator>
-            <body>Biomes_WhaleBody</body>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<body>Biomes_WhaleBody</body>
 			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
-            <baseHungerRate>2.7</baseHungerRate>
-            <baseBodySize>4</baseBodySize>
-            <baseHealthScale>5.0</baseHealthScale>
-            <foodType>OmnivoreRoughAnimal</foodType>
-            <gestationPeriodDays>360</gestationPeriodDays>
-            <packAnimal>false</packAnimal>
-            <wildness>0.95</wildness>
-            <nuzzleMtbHours>275</nuzzleMtbHours>
-            <petness>0.01</petness>
-            <lifeExpectancy>65</lifeExpectancy>
-            <trainability>Advanced</trainability>
-            <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>0.7</manhunterOnDamageChance>
-            <meatLabel>blubber</meatLabel>
+			<baseHungerRate>2.7</baseHungerRate>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>5.0</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<gestationPeriodDays>360</gestationPeriodDays>
+			<packAnimal>false</packAnimal>
+			<wildness>0.95</wildness>
+			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<petness>0.01</petness>
+			<lifeExpectancy>65</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.7</manhunterOnDamageChance>
+			<meatLabel>blubber</meatLabel>
 			<meatColor>(255,210,210)</meatColor>
-            <lifeStageAges>
-                <li>
-                    <def>BiomesIslands_WhaleBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_WhaleJuvenile</def>
-                    <minAge>1.8</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_WhaleAdult</def>
-                    <minAge>3.5</minAge>
+			<lifeStageAges>
+				<li>
+					<def>BiomesIslands_WhaleBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhaleJuvenile</def>
+					<minAge>1.8</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhaleAdult</def>
+					<minAge>3.5</minAge>
 
 					<soundCall>BiomesPawn_Whale_Call</soundCall>
 					<soundAngry>BiomesPawn_Whale_Angry</soundAngry>
 
-                </li>
-            </lifeStageAges>
-            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-        </race>
-    </ThingDef>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<graphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+				</graphicData>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
-    <PawnKindDef ParentName="AnimalKindBase">
-        <defName>BiomesIslands_Whale</defName>
-        <label>whale</label>
-        <race>BiomesIslands_Whale</race>
-        <combatPower>250</combatPower>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BiomesIslands_Whale</defName>
+		<label>whale</label>
+		<race>BiomesIslands_Whale</race>
+		<combatPower>250</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>2~6</wildGroupSize>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
-                    <drawSize>2.0</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
-                    <drawSize>2.0</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
-                    <drawSize>4.0</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
-                    <drawSize>4.0</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
-                    <drawSize>4.8</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
-                    <drawSize>4.8</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    </PawnKindDef>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+					<drawSize>2.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+					<drawSize>4.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
+					<drawSize>4.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 
-        
+
 	<!-- BoomWhale -->
-    <LifeStageDef ParentName="AnimalBaby">
-        <defName>BiomesIslands_BoomWhaleBabyTiny</defName>
-        <bodySizeFactor>0.1</bodySizeFactor>
-        <foodMaxFactor>4</foodMaxFactor>
-        <statFactors>
-            <MoveSpeed>0.6</MoveSpeed>
-            <SwimSpeed>0.6</SwimSpeed>
-        </statFactors>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhaleSubmerged</texPath>
-                <drawSize>1.7</drawSize>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
+	<LifeStageDef ParentName="AnimalBaby">
+		<defName>BiomesIslands_BoomWhaleBabyTiny</defName>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.6</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
 
-    <LifeStageDef>
-        <defName>BiomesIslands_BoomWhaleJuvenile</defName>
-        <label>juvenile</label>
-        <voxPitch>1.2</voxPitch>
-        <bodySizeFactor>0.5</bodySizeFactor>
-        <foodMaxFactor>1.5</foodMaxFactor>
-        <healthScaleFactor>0.6</healthScaleFactor>
-        <hungerRateFactor>0.75</hungerRateFactor>
-        <marketValueFactor>0.75</marketValueFactor>
-        <meleeDamageFactor>0.75</meleeDamageFactor>
-        <statFactors>
-            <MoveSpeed>0.9</MoveSpeed>
-            <SwimSpeed>0.9</SwimSpeed>
-        </statFactors>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhaleSubmerged</texPath>
-                <drawSize>2.8</drawSize>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
+	<LifeStageDef>
+		<defName>BiomesIslands_BoomWhaleJuvenile</defName>
+		<label>juvenile</label>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
 
-    <LifeStageDef>
-        <defName>BiomesIslands_BoomWhaleAdult</defName>
-        <label>adult</label>
-        <visible>false</visible>
-        <reproductive>true</reproductive>
-        <milkable>true</milkable>
-        <shearable>true</shearable>
-        <modExtensions>
-        <li Class="TerrainMovement.TerrainMovementPawnKindGraphics">
-            <pawnSpeedStat>SwimSpeed</pawnSpeedStat>
-            <bodyGraphicData>
-                <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhaleSubmerged</texPath>
-                <drawSize>3.5</drawSize>
-            </bodyGraphicData>
-        </li>
-        </modExtensions>
-    </LifeStageDef>
+	<LifeStageDef>
+		<defName>BiomesIslands_BoomWhaleAdult</defName>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
 
-    <ThingDef ParentName="BiomesCore_SaltWaterAnimal"  ADogSaidBody="Tail">
-        <defName>BiomesIslands_BoomWhale</defName>
-        <label>boomwhale</label>
-        <description>A whale that explodes. Related to both whales and boomalopes, it is somewhat smaller and dumber than its unmodified cousins.</description>
-        <statBases>
-            <MoveSpeed>0</MoveSpeed>
-            <SwimSpeed>7.5</SwimSpeed>
-            <ComfyTemperatureMin>-45</ComfyTemperatureMin>
-            <ComfyTemperatureMax>65</ComfyTemperatureMax>
-            <MarketValue>1800</MarketValue>
-        </statBases>
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
+		<defName>BiomesIslands_BoomWhale</defName>
+		<label>boomwhale</label>
+		<description>A whale that explodes. Related to both whales and boomalopes, it is somewhat smaller and dumber than its unmodified cousins.</description>
+		<statBases>
+			<MoveSpeed>7.5</MoveSpeed>
+			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
+			<ComfyTemperatureMax>65</ComfyTemperatureMax>
+			<MarketValue>1800</MarketValue>
+		</statBases>
 		<comps>
-		  <li Class="CompProperties_Milkable">
-			<milkDef>Chemfuel</milkDef>
-			<milkIntervalDays>4</milkIntervalDays>
-			<milkAmount>55</milkAmount>
-			<milkFemaleOnly>false</milkFemaleOnly>
-		  </li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>4</milkIntervalDays>
+				<milkAmount>55</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
 		</comps>
-        <tools>
-            <li>
-                <label>teeth</label>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>18</power>
-                <cooldownTime>2.2</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.6</chanceFactor>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                            <def>Stun</def>
-                            <amount>20</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-            </li>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
 			<li>
 				<label>head</label>
 				<capacities>
-				  <li>Blunt</li>
+					<li>Blunt</li>
 				</capacities>
 				<power>18</power>
 				<cooldownTime>2</cooldownTime>
@@ -305,90 +260,105 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.3</chanceFactor>
 			</li>
-        </tools>
-        <race>
-            <herdAnimal>true</herdAnimal>
-            <predator>false</predator>
-            <body>Biomes_WhaleBody</body>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>false</predator>
+			<body>Biomes_WhaleBody</body>
 			<leatherDef>Leather_Plain</leatherDef>
-            <baseHungerRate>2.7</baseHungerRate>
-            <baseBodySize>3.2</baseBodySize>
-            <baseHealthScale>4.0</baseHealthScale>
-            <foodType>OmnivoreRoughAnimal</foodType>
-            <gestationPeriodDays>270</gestationPeriodDays>
-            <packAnimal>false</packAnimal>
-            <wildness>0.85</wildness>
-            <nuzzleMtbHours>275</nuzzleMtbHours>
-            <petness>0.01</petness>
-            <lifeExpectancy>45</lifeExpectancy>
-            <trainability>Intermediate</trainability>
-            <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>0.6</manhunterOnDamageChance>
+			<baseHungerRate>2.7</baseHungerRate>
+			<baseBodySize>3.2</baseBodySize>
+			<baseHealthScale>4.0</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<gestationPeriodDays>270</gestationPeriodDays>
+			<packAnimal>false</packAnimal>
+			<wildness>0.85</wildness>
+			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<petness>0.01</petness>
+			<lifeExpectancy>45</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.6</manhunterOnDamageChance>
 			<useMeatFrom>BiomesIslands_Whale</useMeatFrom>
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
-            <lifeStageAges>
-                <li>
-                    <def>BiomesIslands_BoomWhaleBabyTiny</def>
-                    <minAge>0</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_BoomWhaleJuvenile</def>
-                    <minAge>1.2</minAge>
-                </li>
-                <li>
-                    <def>BiomesIslands_BoomWhaleAdult</def>
-                    <minAge>3.0</minAge>
+			<lifeStageAges>
+				<li>
+					<def>BiomesIslands_BoomWhaleBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_BoomWhaleJuvenile</def>
+					<minAge>1.2</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_BoomWhaleAdult</def>
+					<minAge>3.0</minAge>
 
 					<soundCall>BiomesPawn_Whale_Call</soundCall>
 					<soundAngry>BiomesPawn_Whale_Angry</soundAngry>
-                </li>
-            </lifeStageAges>
-            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-        </race>
-    </ThingDef>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<graphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhaleSubmerged</texPath>
+				</graphicData>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
-    <PawnKindDef ParentName="AnimalKindBase">
-        <defName>BiomesIslands_BoomWhale</defName>
-        <label>boomwhale</label>
-        <race>BiomesIslands_BoomWhale</race>
-        <combatPower>250</combatPower>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BiomesIslands_BoomWhale</defName>
+		<label>boomwhale</label>
+		<race>BiomesIslands_BoomWhale</race>
+		<combatPower>250</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
-                    <drawSize>1.7</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
-                    <drawSize>1.7</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
-                    <drawSize>3.0</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
-                    <drawSize>3.0</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
-                    <drawSize>3.8</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
-                    <drawSize>3.8</drawSize>
-                </dessicatedBodyGraphicData>
-            </li>
-        </lifeStages>
-    </PawnKindDef>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+					<drawSize>1.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+					<drawSize>3.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>3.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+					<drawSize>3.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>3.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 
-  
+
 </Defs>

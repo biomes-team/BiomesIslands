@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BiomesIslands</RootNamespace>
     <AssemblyName>BiomesIslands</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -45,12 +45,8 @@
       <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\..\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Swimming">
-      <HintPath>..\..\..\1.3\Assemblies\Swimming.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="TerrainMovementKit">
-      <HintPath>..\..\..\1.3\Assemblies\TerrainMovementKit.dll</HintPath>
+    <Reference Include="PathfindingFramework">
+      <HintPath>..\..\..\..\Pathfinding-Framework\1.4\Core\Assemblies\PathfindingFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -75,6 +71,7 @@
     <Compile Include="Incidents\Incident_AquaticArrival.cs" />
     <Compile Include="Incidents\Incident_CrabRave.cs" />
     <Compile Include="Incidents\Incident_GlowTide.cs" />
+    <Compile Include="MovementDefOf.cs" />
     <Compile Include="Patches\Patches_Debug.cs" />
     <Compile Include="Patches\World_AddNaturalRockTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
