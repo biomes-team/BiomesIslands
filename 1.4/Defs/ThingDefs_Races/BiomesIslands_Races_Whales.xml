@@ -125,6 +125,7 @@
 			</li>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
 					<li>PF_TerrainTag_WaterChest</li>
 					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
@@ -307,6 +308,7 @@
 			</li>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
 					<li>PF_TerrainTag_WaterChest</li>
 					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
