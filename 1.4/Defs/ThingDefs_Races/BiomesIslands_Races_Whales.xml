@@ -123,16 +123,6 @@
 			<li Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
-				</graphicData>
-			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -175,6 +165,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 
@@ -306,16 +308,6 @@
 			<li Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhaleSubmerged</texPath>
-				</graphicData>
-			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -358,6 +350,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhaleSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 

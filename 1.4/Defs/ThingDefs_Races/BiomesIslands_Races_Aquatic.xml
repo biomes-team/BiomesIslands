@@ -114,18 +114,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -168,6 +156,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Hammerhead Shark -->
@@ -284,18 +284,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/HammerheadSubmerged</texPath>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -336,6 +324,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/HammerheadSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Tuna -->
@@ -469,18 +469,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/TunaSubmerged</texPath>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -521,6 +509,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/TunaSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 
@@ -627,18 +627,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnailSubmerged</texPath>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -679,6 +667,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnailSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 
@@ -795,18 +795,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -847,6 +835,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 
@@ -971,19 +971,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
-					<color>(180,170,160)</color>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -1028,6 +1015,19 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
+					<color>(180,170,160)</color>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 
@@ -1144,18 +1144,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -1197,6 +1185,18 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 </Defs>

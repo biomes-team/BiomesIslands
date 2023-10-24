@@ -23,19 +23,6 @@
 			<manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
 			<baseBodySize>0.15</baseBodySize>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
-					<color>(242,146,38)</color>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BiomesIslands_BaseBaitfish">
@@ -78,9 +65,20 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
+					<color>(242,146,38)</color>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggOrangepeelAngelfishFertilized</defName>

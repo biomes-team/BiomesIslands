@@ -232,15 +232,12 @@
 			<li Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Flying</movementDef>
 			</li>
-			<li Class="PathfindingFramework.LocomotionExtension">
+			<li Class="PathfindingFramework.LocomotionMovementExtension">
 				<locomotionUrgencies>
 					<li>Jog</li>
 					<li>Sprint</li>
 				</locomotionUrgencies>
 				<moveSpeedMultiplier>4</moveSpeedMultiplier>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
-				</graphicData>
 			</li>
 		</modExtensions>
 		<comps>
@@ -351,6 +348,17 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.LocomotionGraphicExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 

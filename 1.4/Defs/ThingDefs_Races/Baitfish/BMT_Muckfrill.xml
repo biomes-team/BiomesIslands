@@ -25,19 +25,6 @@
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 			<baseBodySize>0.20</baseBodySize>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<graphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-					<color>(146,128,56)</color>
-				</graphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 
@@ -82,7 +69,19 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
+					<color>(146,128,56)</color>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 
