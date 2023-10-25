@@ -150,7 +150,7 @@
     <plant>
       <fertilitySensitivity>0.7</fertilitySensitivity>
       <growDays>3</growDays>
-      <visualSizeRange>1.2~1.5</visualSizeRange>
+      <visualSizeRange>1.5~1.9</visualSizeRange>
       <topWindExposure>0.2</topWindExposure>
       <wildClusterRadius>8</wildClusterRadius>
       <wildClusterWeight>20</wildClusterWeight>
