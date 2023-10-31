@@ -4,7 +4,7 @@
   <BiomeDef Name="BiomesIslands_TropicalIslandBase" Abstract="True">    <!-- TropicalIsland -->
     <defName>BiomesIslands_TropicalIslandBase</defName>
     <label>tropical island</label>
-    <description>Despite the heat and constant humidity, the sandy beaches and plentiful resources make these islands superb for a tropical getaway. Few animals here are a threat to humans, making the environment reasonably safe.</description>
+    <description>Lush rainforests teem with life under the humid embrace of the tropics. Vibrant flora and fauna make for a vibrant, though occasionally challenging, ecosystem. Caution is advised; for beauty here often conceals lurking dangers.</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	
 	

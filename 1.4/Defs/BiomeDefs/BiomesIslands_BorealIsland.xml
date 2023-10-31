@@ -4,7 +4,7 @@
     <BiomeDef Name="BiomesIslands_BorealIslandBase" Abstract="True">    <!-- borealIsland -->
     <defName>BiomesIslands_BorealIsland</defName>
     <label>boreal island</label>
-    <description>Like the boreal forest, but on an island.</description>
+    <description>Blanketed with coniferous forests and kissed by cold winds, boreal islands offer solitude amid nature. Though winters are long and harsh, the land is rich with game, and the trees provide ample shelter and resources.</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	
 	

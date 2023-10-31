@@ -4,7 +4,7 @@
   <BiomeDef>    <!-- Atoll -->
     <defName>BiomesIslands_Atoll</defName>
     <label>atoll</label>
-    <description>Formed by living corals growing upward from the subsiding of a volcano, these islands are often semicircular with a shallow lagoon in the middle. While the lagoon is beautiful, its size offers little space for building. With abundant wild food, relatively small and rare predators, and warm winters, surviving can be as pleasant as a tropical breeze.</description>
+    <description>Surrounded by coral reefs, atolls emerge as remnants of sinking volcanic islands. Their central lagoons, while picturesque, provide limited construction space. Yet, abundant wild food and scarce predators under the embrace of a warm climate make life here comfortably paradisiacal.</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	
 	<modExtensions>
