@@ -32,6 +32,15 @@
             <allowLandforms>false</allowLandforms>
             <allowBiomeTransitions>false</allowBiomeTransitions>
         </li>
+		<!--
+		Stop coral from spawning in other biomes when Alpha Biomes is installed.
+		Based on code from Leon The Hero's mod "Biomes! Islands + Alpha Biomes Coral Compatibility Patch".
+		-->
+		<li Class="VFECore.BiomeExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<uniqueRockTypes>
+				<li>BiomesIslands_CoralRock</li>
+			</uniqueRockTypes>
+		</li>
 	</modExtensions>
     
 	<canAutoChoose>false</canAutoChoose>
