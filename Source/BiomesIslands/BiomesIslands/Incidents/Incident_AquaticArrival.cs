@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using PathfindingFramework;
 using PathfindingFramework.Patches;
 using RimWorld;
 using UnityEngine;
@@ -23,28 +24,33 @@ namespace BiomesIslands.Incidents
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-			if (!RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 start, map, CellFinder.EdgeRoadChance_Animal))
-			{
-				return false;
-			}
+			
 			if (!TryFindPreyAnimalKind(map.Tile, out PawnKindDef animalPreyKind) || !TryFindPredatorAnimalKind(map.Tile, out PawnKindDef animalPredatorKind))
 			{
 				return false;
 			}
+
+			if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 start, map, CellFinder.EdgeRoadChance_Animal, false, null, animalPreyKind))
+			{
+				return false;
+			}
+
 			Rot4 rot = Rot4.FromAngleFlat((map.Center - start).AngleFlat);
 			List<Pawn> prey = GenerateAnimals(animalPreyKind, map.Tile, AnimalsPreyMin);
-			for (int i = 0; i < prey.Count; i++)
+			
+			// Spawn the first pawn in the chosen tile. It will be used to choose the locations of the others.
+			Pawn preyPawn = GenSpawn.Spawn(prey[0], start, map) as Pawn;
+			for (int preyIndex = 1; preyIndex < prey.Count; ++preyIndex)
 			{
-				Pawn newThing = prey[i];
-				IntVec3 loc = CellFinder.RandomClosewalkCellNear(start, map, 10);
-				GenSpawn.Spawn(newThing, loc, map, rot);
+				LocationFinding.TryRandomClosewalkCellNear(preyPawn, 10, out IntVec3 closeLocation);
+				GenSpawn.Spawn(prey[preyIndex], closeLocation, map, rot);
 			}
+
 			List<Pawn> predator = GenerateAnimals(animalPredatorKind, map.Tile, AnimalsPredatorMin);
-			for (int i = 0; i < predator.Count; i++)
+			for (int predatorIndex = 0; predatorIndex < predator.Count; predatorIndex++)
 			{
-				Pawn newThing = predator[i];
-				IntVec3 loc = CellFinder.RandomClosewalkCellNear(start, map, 10);
-				GenSpawn.Spawn(newThing, loc, map, rot);
+				LocationFinding.TryRandomClosewalkCellNear(preyPawn, 10, out IntVec3 closeLocation);
+				GenSpawn.Spawn(predator[predatorIndex], closeLocation, map, rot);
 			}
 			string str = string.Format(def.letterText, animalPreyKind.GetLabelPlural(), animalPredatorKind.label).CapitalizeFirst();
 			string str2 = string.Format(def.letterLabel, animalPreyKind.GetLabelPlural().CapitalizeFirst(), animalPredatorKind.GetLabelPlural().CapitalizeFirst());

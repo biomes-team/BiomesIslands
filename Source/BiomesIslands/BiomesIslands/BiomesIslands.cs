@@ -1,26 +1,25 @@
 ﻿using HarmonyLib;
 using System;
-using System.Reflection;
 using Verse;
 
 namespace BiomesIslands
 {
-    [StaticConstructorOnStartup]
-    public static class BiomesIslands
-    {
-        public const string Id = "rimworld.biomes.islands";
-        public const string Name = "Biomes! Islands";
-        public static string Version = (Attribute.GetCustomAttribute(Assembly.GetExecutingAssembly(), typeof(AssemblyInformationalVersionAttribute)) as AssemblyInformationalVersionAttribute).InformationalVersion;
-    
-        static BiomesIslands()
-        {
-            new Harmony(Id).PatchAll();
-            //HarmonyInstance.Create(Id).PatchAll();
-            Log("Initialized");
-        }
+	[StaticConstructorOnStartup]
+	public static class BiomesIslands
+	{
+		public const string Id = "rimworld.biomes.islands";
+		public const string Name = "Biomes! Islands";
+		private static readonly Version Version = typeof(BiomesIslands).Assembly.GetName().Version;
 
-        public static void Log(string message) => Verse.Log.Message(PrefixMessage(message));
+		static BiomesIslands()
+		{
+			new Harmony(Id).PatchAll();
+			//HarmonyInstance.Create(Id).PatchAll();
+			Log("Initialized");
+		}
 
-        private static string PrefixMessage(string message) => $"[{Name} v{Version}] {message}";
-    }
+		public static void Log(string message) => Verse.Log.Message(PrefixMessage(message));
+
+		private static string PrefixMessage(string message) => $"[{Name} v{Version}] {message}";
+	}
 }
