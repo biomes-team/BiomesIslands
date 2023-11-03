@@ -53,7 +53,8 @@
 		<drawSize>1.0</drawSize>
 	</graphicData>
 	<statBases>
-		<MarketValue>50.0</MarketValue>
+		<MarketValue>19.0</MarketValue>
+		<Nutrition>0.5</Nutrition>
 	</statBases>
   </ThingDef>
   
@@ -66,7 +67,8 @@
 		<drawSize>1.0</drawSize>
 	</graphicData>
 	<statBases>
-		<MarketValue>50.0</MarketValue>
+		<MarketValue>19.0</MarketValue>
+		<Nutrition>0.5</Nutrition>
 	</statBases>
 	<comps>
       <li Class="CompProperties_Hatcher">
