@@ -70,11 +70,11 @@
       <li>
         <terrain>WaterOceanDeep</terrain>
         <min>-999</min>
-        <max>0.65</max>
+        <max>0.40</max>
       </li>
       <li>
         <terrain>WaterOceanShallow</terrain>
-        <min>0.65</min>
+        <min>0.40</min>
         <max>1.0</max>
       </li>
       <li>
