@@ -212,6 +212,7 @@
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 			<lifeExpectancy>140</lifeExpectancy>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<meatLabel>sea turtle meat</meatLabel>
 			<lifeStageAges>
 				<li>
@@ -357,7 +358,7 @@
 			<leatherDef>Leather_Plain</leatherDef>
 			<wildness>0.55</wildness>
 			<lifeExpectancy>210</lifeExpectancy>
-			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<useMeatFrom>BiomesIslands_SeaTurtle</useMeatFrom>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
