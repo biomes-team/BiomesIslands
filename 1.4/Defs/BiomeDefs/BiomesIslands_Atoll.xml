@@ -172,8 +172,8 @@
     </baseWeatherCommonalities>
     <wildPlants>
 	<!-- land plants -->
-		<BiomesIslands_CoconutPalm>0.4</BiomesIslands_CoconutPalm>
-		<BiomesIslands_DevilsClawTree>0.4</BiomesIslands_DevilsClawTree>
+		<BiomesIslands_CoconutPalm>0.07</BiomesIslands_CoconutPalm>
+		<BiomesIslands_DevilsClawTree>0.05</BiomesIslands_DevilsClawTree>
 		<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
 		<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
 		<Plant_Grass>2.0</Plant_Grass>

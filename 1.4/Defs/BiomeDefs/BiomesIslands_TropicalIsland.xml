@@ -141,9 +141,9 @@
 	</baseWeatherCommonalities>
     <wildPlants>
 	<!-- land plants -->
-		<BiomesIslands_CoconutPalm>0.3</BiomesIslands_CoconutPalm>
-		<BiomesIslands_OrangeTree>0.2</BiomesIslands_OrangeTree>
-        <BiomesIslands_BananaPlant>0.3</BiomesIslands_BananaPlant>
+		<BiomesIslands_CoconutPalm>0.07</BiomesIslands_CoconutPalm>
+		<BiomesIslands_OrangeTree>0.05</BiomesIslands_OrangeTree>
+        <BiomesIslands_BananaPlant>0.05</BiomesIslands_BananaPlant>
 		<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
 		<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
 		
