@@ -233,6 +233,17 @@
       <li>Muffalo</li>
       <li>Alpaca</li>
     </allowedPackAnimals>
+
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Boomalope>0.1</Boomalope>
+			<Boomrat>0.3</Boomrat>
+			<Megascarab>0.4</Megascarab>
+			<Raccoon>0.4</Raccoon>
+			<Rat>1</Rat>
+			<Toxalope>0.2</Toxalope>
+			<Warg>0.05</Warg>
+			<WasteRat>0.3</WasteRat>
+		</pollutionWildAnimals>
   </BiomeDef>
   
   <BiomeDef ParentName="BiomesIslands_TemperateIslandBase">

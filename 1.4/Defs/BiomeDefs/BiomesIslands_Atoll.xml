@@ -226,5 +226,13 @@
       <li>Muffalo</li>
       <li>Dromedary</li>
     </allowedPackAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Boomalope>0.2</Boomalope>
+			<Boomrat>0.2</Boomrat>
+			<Megascarab>0.2</Megascarab>
+			<Rat>0.2</Rat>
+			<Toxalope>0.1</Toxalope>
+			<WasteRat>1</WasteRat>
+		</pollutionWildAnimals>
   </BiomeDef>
 </Defs>

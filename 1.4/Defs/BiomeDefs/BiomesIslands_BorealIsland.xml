@@ -199,6 +199,15 @@
       <li>Muffalo</li>
       <li>Alpaca</li>
     </allowedPackAnimals>
+
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Raccoon>0.25</Raccoon>
+			<Warg>0.05</Warg>
+			<Megascarab>0.2</Megascarab>
+			<Rat>0.2</Rat>
+			<Toxalope>0.1</Toxalope>
+			<WasteRat>1</WasteRat>
+		</pollutionWildAnimals>
   </BiomeDef>
   
   <BiomeDef ParentName="BiomesIslands_BorealIslandBase">

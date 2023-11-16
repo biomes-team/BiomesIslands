@@ -190,6 +190,11 @@
       <li>Muffalo</li>
       <li>Alpaca</li>
     </allowedPackAnimals>
+	  <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		  <Megascarab>0.2</Megascarab>
+		  <WasteRat>1</WasteRat>
+		  <Warg>0.05</Warg>
+	  </pollutionWildAnimals>
   </BiomeDef>
   
   <BiomeDef ParentName="BiomesIslands_TundraIslandBase">

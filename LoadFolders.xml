@@ -16,5 +16,11 @@
 	<v1.4>
 		<li>\</li>
 		<li>1.4</li>
+		<li IfModActive="sarg.alphaanimals">1.4/Mods/AlphaAnimals</li>
+		<li IfModActive="sarg.magicalmenagerie">1.4/Mods/AlphaMythology</li>
+		<li IfModActive="EL.KenshiFauna">1.4/Mods/KenshiFauna</li>
+		<li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">1.4/Mods/ReGrowthExtinctAnimals</li>
+		<li IfModActive="VanillaExpanded.VAEWaste">1.4/Mods/VanillaAnimalsExpandedWaste</li>
+		<li IfModActive="VanillaExpanded.VARME">1.4/Mods/VanillaArmourExpanded</li>
 	</v1.4>
 </loadFolders>

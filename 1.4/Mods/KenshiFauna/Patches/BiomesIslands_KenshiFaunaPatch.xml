@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Bloodspider"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_TropicalArchipelago>0.05</BiomesIslands_TropicalArchipelago>
+			<BiomesIslands_TropicalIsland>0.05</BiomesIslands_TropicalIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Bonedog"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_DesertArchipelago>0.1</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.1</BiomesIslands_DesertIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Bull"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_DesertArchipelago>0.1</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.1</BiomesIslands_DesertIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_ElephantTurtle"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_TropicalArchipelago>0.2</BiomesIslands_TropicalArchipelago>
+			<BiomesIslands_TropicalIsland>0.2</BiomesIslands_TropicalIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Garru"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_DesertArchipelago>0.05</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.05</BiomesIslands_DesertIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_GiantBlindCrab"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_TropicalArchipelago>0.05</BiomesIslands_TropicalArchipelago>
+			<BiomesIslands_TropicalIsland>0.05</BiomesIslands_TropicalIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Goat"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_DesertArchipelago>0.1</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.1</BiomesIslands_DesertIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Gorillo"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_TemperateIsland>0.1</BiomesIslands_TemperateIsland>
+			<BiomesIslands_TemperateArchipelago>0.1</BiomesIslands_TemperateArchipelago>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Gutter"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_Atoll>0.2</BiomesIslands_Atoll>
+			<BiomesIslands_DesertArchipelago>0.15</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.15</BiomesIslands_DesertIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Landbat"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_TemperateIsland>0.1</BiomesIslands_TemperateIsland>
+			<BiomesIslands_TemperateArchipelago>0.1</BiomesIslands_TemperateArchipelago>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_SandSkimmer"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_DesertArchipelago>0.2</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.2</BiomesIslands_DesertIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_Skinspider"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_Atoll>0.05</BiomesIslands_Atoll>
+			<BiomesIslands_DesertArchipelago>0.05</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.05</BiomesIslands_DesertIsland>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="KenshiFauna_WaterRaptor"]/race/wildBiomes</xpath>
+		<value>
+			<BiomesIslands_TemperateIsland>0.05</BiomesIslands_TemperateIsland>
+			<BiomesIslands_TemperateArchipelago>0.05</BiomesIslands_TemperateArchipelago>
+			<BiomesIslands_TropicalArchipelago>0.1</BiomesIslands_TropicalArchipelago>
+			<BiomesIslands_TropicalIsland>0.1</BiomesIslands_TropicalIsland>
+		</value>
+	</Operation>
+	
+</Patch>
+

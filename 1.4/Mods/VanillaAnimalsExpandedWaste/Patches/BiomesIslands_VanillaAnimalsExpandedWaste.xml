@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll" or @Name="BiomesIslands_DesertIslandBase"]/pollutionWildAnimals</xpath>
+		<value>
+			<VAEWaste_Toxiguana>1</VAEWaste_Toxiguana>
+			<VAEWaste_Toxlion>0.5</VAEWaste_Toxlion>
+			<VAEWaste_Toxscorpion>0.5</VAEWaste_Toxscorpion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/pollutionWildAnimals</xpath>
+		<value>
+			<VAEWaste_Wasteffalo>0.5</VAEWaste_Wasteffalo>
+			<VAEWaste_Toxbear>0.07</VAEWaste_Toxbear>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/pollutionWildAnimals</xpath>
+		<value>
+			<VAEWaste_Toxafox>0.07</VAEWaste_Toxafox>
+			<VAEWaste_Wasteboar>0.5</VAEWaste_Wasteboar>
+			<VAEWaste_Wastedeer>0.5</VAEWaste_Wastedeer>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/pollutionWildAnimals</xpath>
+		<value>
+			<VAEWaste_Hydra>0.15</VAEWaste_Hydra>
+			<VAEWaste_Megatardi>0.5</VAEWaste_Megatardi>
+			<VAEWaste_Pestigator>0.15</VAEWaste_Pestigator>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/pollutionWildAnimals</xpath>
+
+		<value>
+			<VAEWaste_Wasteffalo>2</VAEWaste_Wasteffalo>
+			<VAEWaste_Toxbear>0.07</VAEWaste_Toxbear>
+		</value>
+	</Operation>
+
+</Patch>
+
