@@ -68,9 +68,9 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="KenshiFauna_Gutter"]/race/wildBiomes</xpath>
 		<value>
-			<BiomesIslands_Atoll>0.2</BiomesIslands_Atoll>
-			<BiomesIslands_DesertArchipelago>0.15</BiomesIslands_DesertArchipelago>
-			<BiomesIslands_DesertIsland>0.15</BiomesIslands_DesertIsland>
+			<BiomesIslands_Atoll>0.05</BiomesIslands_Atoll>
+			<BiomesIslands_DesertArchipelago>0.02</BiomesIslands_DesertArchipelago>
+			<BiomesIslands_DesertIsland>0.02</BiomesIslands_DesertIsland>
 		</value>
 	</Operation>
 
