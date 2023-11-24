@@ -46,7 +46,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="PathfindingFramework">
-      <HintPath>..\..\..\..\Pathfinding-Framework\1.4\Core\Assemblies\PathfindingFramework.dll</HintPath>
+      <HintPath>..\..\..\..\Pathfinding-Framework\1.4\Assemblies\PathfindingFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -69,11 +69,10 @@
     <Compile Include="BiomeWorkers\BiomeWorker_IslandCold.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_IslandHot.cs" />
     <Compile Include="Incidents\Incident_AquaticArrival.cs" />
-    <Compile Include="Incidents\Incident_CrabRave.cs" />
+    <Compile Include="Incidents\Incident_CrabMigration.cs" />
+    <Compile Include="Incidents\Incident_RavenousCrabs.cs" />
     <Compile Include="Incidents\Incident_GlowTide.cs" />
-    <Compile Include="MovementDefOf.cs" />
-    <Compile Include="Patches\Patches_Debug.cs" />
-    <Compile Include="Patches\World_AddNaturalRockTypes.cs" />
+    <Compile Include="Patches\World_NaturalRockTypesIn_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BiomesIslandsDefOf.cs" />
     <Compile Include="Incidents\ThoughtWorker_GlowTide.cs" />

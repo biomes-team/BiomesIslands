@@ -20,13 +20,11 @@
       <li>BiomesIslands_TropicalArchipelago</li>
       <li>BiomesIslands_TundraIsland</li>
       <li>BiomesIslands_TundraArchipelago</li>
-      <li>Ocean</li>
-      <li>Lake</li>
     </allowedBiomes>
     <workerClass>BiomesIslands.Incidents.Incident_AquaticArrival</workerClass>
     <baseChance>1.0</baseChance>
     <letterLabel>Aquatic migration: {0} and {1}</letterLabel>
-    <letterText>A group of {0} has come to the island to feed along with a smaller group of {1} predators.\n\n</letterText>
+    <letterText>A group of {0} has come to the island to feed along with a smaller group of {1} predators.</letterText>
     <letterDef>NeutralEvent</letterDef>
   </IncidentDef>
 
@@ -42,8 +40,6 @@
       <li>BiomesIslands_DesertArchipelago</li>
       <li>BiomesIslands_TropicalIsland</li>
       <li>BiomesIslands_TropicalArchipelago</li>
-      <li>Ocean</li>
-      <li>Lake</li>
     </allowedBiomes>
     <targetTags>
       <li>Map_PlayerHome</li>
@@ -51,8 +47,8 @@
     <workerClass>BiomesIslands.Incidents.Incident_CrabMigration</workerClass>
     <baseChance>0.5</baseChance>
     <minRefireDays>30</minRefireDays>
-    <letterLabel>Crab Migration</letterLabel>
-    <letterText>A group of {0} migrating to your island have just arrived.\n\n</letterText>
+    <letterLabel>Crab migration: {0}</letterLabel>
+    <letterText>A group of {0} migrating to your island have just arrived.</letterText>
     <letterDef>NeutralEvent</letterDef>
   </IncidentDef>
   
@@ -72,8 +68,6 @@
       <li>BiomesIslands_TundraArchipelago</li>
       <li>BiomesIslands_TemperateIsland</li>
       <li>BiomesIslands_TemperateArchipelago</li>
-      <li>Ocean</li>
-      <li>Lake</li>
     </allowedBiomes>
     <targetTags>
       <li>Map_PlayerHome</li>
@@ -81,13 +75,12 @@
     <workerClass>BiomesIslands.Incidents.Incident_GlowTide</workerClass>
     <baseChance>0.25</baseChance>
     <minRefireDays>30</minRefireDays>
-    <letterLabel>Bioluminescent Tide</letterLabel>
+    <letterLabel>Bioluminescent tide</letterLabel>
     <letterDef>PositiveEvent</letterDef>
     <tale>GlowTide</tale>
-    <durationDays>10</durationDays>
+    <durationDays>1.5~3.5</durationDays>
     <gameCondition>GlowTide</gameCondition>
   </IncidentDef>
-
 
   <!-- =========================== Bad ============================-->
 
@@ -103,8 +96,6 @@
       <li>BiomesIslands_DesertArchipelago</li>
       <li>BiomesIslands_TropicalIsland</li>
       <li>BiomesIslands_TropicalArchipelago</li>
-      <li>Ocean</li>
-      <li>Lake</li>
     </allowedBiomes>
     <targetTags>
       <li>Map_PlayerHome</li>
@@ -112,7 +103,7 @@
     <workerClass>BiomesIslands.Incidents.Incident_RavenousCrabs</workerClass>
     <baseChance>0.5</baseChance>
     <minRefireDays>30</minRefireDays>
-    <letterLabel>Ravenous Crabs!</letterLabel>
+    <letterLabel>Ravenous crabs!</letterLabel>
     <letterText>A group of hungry, island scouring crabs as just arrived.\n\nTry to eliminate them before they eat every last bit of food in the region.</letterText>
     <letterDef>ThreatSmall</letterDef>
   </IncidentDef>

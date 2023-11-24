@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using PathfindingFramework;
 using PathfindingFramework.Patches;
 using RimWorld;
+using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 
@@ -10,51 +10,63 @@ namespace BiomesIslands.Incidents
 {
 	public class Incident_AquaticArrival : IncidentWorker
 	{
-		public static readonly IntRange AnimalsPreyMin = new IntRange(3, 5);
-		public static readonly IntRange AnimalsPredatorMin = new IntRange(1, 2);
-
-		public const float MinTotalBodySize = 4f;
+		private static readonly IntRange AnimalsPreyMin = new IntRange(3, 5);
+		private static readonly IntRange AnimalsPredatorMin = new IntRange(1, 2);
 
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
-			Map map = (Map)parms.target;
-			return TryFindPreyAnimalKind(map.Tile, out PawnKindDef _) && TryFindPredatorAnimalKind(map.Tile, out PawnKindDef _);
+			Map map = (Map) parms.target;
+
+			return
+				// It is possible to find a prey and predator animal pair...
+				TryFindPreyPredatorPair(map.Tile, out PawnKindDef preyKindDef, out PawnKindDef _) &&
+				//... and a place for them to spawn.
+				LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal, false, null,
+					preyKindDef)
+				;
 		}
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
-			Map map = (Map)parms.target;
-			
-			if (!TryFindPreyAnimalKind(map.Tile, out PawnKindDef animalPreyKind) || !TryFindPredatorAnimalKind(map.Tile, out PawnKindDef animalPredatorKind))
+			const int preySpawnRadius = 8;
+			const int predatorSpawnRadius = 12;
+			Map map = (Map) parms.target;
+
+			if (!TryFindPreyPredatorPair(map.Tile, out PawnKindDef preyKindDef, out PawnKindDef predatorKindDef))
 			{
 				return false;
 			}
 
-			if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 start, map, CellFinder.EdgeRoadChance_Animal, false, null, animalPreyKind))
+			if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 start, map, CellFinder.EdgeRoadChance_Animal, false,
+				    null, preyKindDef))
 			{
 				return false;
 			}
 
 			Rot4 rot = Rot4.FromAngleFlat((map.Center - start).AngleFlat);
-			List<Pawn> prey = GenerateAnimals(animalPreyKind, map.Tile, AnimalsPreyMin);
-			
-			// Spawn the first pawn in the chosen tile. It will be used to choose the locations of the others.
+			List<Pawn> prey = GenerateAnimals(preyKindDef, map.Tile, AnimalsPreyMin);
+
+			// Spawn one of the prey animals first. It will be used to choose the location of other prey.
 			Pawn preyPawn = GenSpawn.Spawn(prey[0], start, map) as Pawn;
 			for (int preyIndex = 1; preyIndex < prey.Count; ++preyIndex)
 			{
-				LocationFinding.TryRandomClosewalkCellNear(preyPawn, 10, out IntVec3 closeLocation);
+				LocationFinding.TryRandomClosewalkCellNear(preyPawn, preySpawnRadius, out IntVec3 closeLocation);
 				GenSpawn.Spawn(prey[preyIndex], closeLocation, map, rot);
 			}
 
-			List<Pawn> predator = GenerateAnimals(animalPredatorKind, map.Tile, AnimalsPredatorMin);
+			List<Pawn> predator = GenerateAnimals(predatorKindDef, map.Tile, AnimalsPredatorMin);
 			for (int predatorIndex = 0; predatorIndex < predator.Count; predatorIndex++)
 			{
-				LocationFinding.TryRandomClosewalkCellNear(preyPawn, 10, out IntVec3 closeLocation);
+				LocationFinding.TryRandomClosewalkCellNear(preyPawn, predatorSpawnRadius, out IntVec3 closeLocation);
 				GenSpawn.Spawn(predator[predatorIndex], closeLocation, map, rot);
 			}
-			string str = string.Format(def.letterText, animalPreyKind.GetLabelPlural(), animalPredatorKind.label).CapitalizeFirst();
-			string str2 = string.Format(def.letterLabel, animalPreyKind.GetLabelPlural().CapitalizeFirst(), animalPredatorKind.GetLabelPlural().CapitalizeFirst());
-			SendStandardLetter(str2, str, def.letterDef, parms, prey[0]);
+
+			string preyText = preyKindDef.GetLabelPlural().CapitalizeFirst();
+			string predatorText = preyKindDef.GetLabelPlural().CapitalizeFirst();
+			string letterLabel = string.Format(def.letterLabel, preyText, predatorText);
+			string letterText = string.Format(def.letterText, preyText, predatorText);
+			SendStandardLetter(letterLabel, letterText, def.letterDef, parms, preyPawn);
+
 			return true;
 		}
 
@@ -63,25 +75,63 @@ namespace BiomesIslands.Incidents
 			return animalKind.race.MovementDef() == MovementDefOf.PF_Movement_Aquatic;
 		}
 
-		protected bool TryFindPreyAnimalKind(int tile, out PawnKindDef animalKind)
+		private static float AnimalWeight(PawnKindDef pawnKindDef)
 		{
-			return DefDatabase<PawnKindDef>.AllDefs.Where(k => IsAquatic(k) && k.RaceProps.CanDoHerdMigration && k.RaceProps.foodType == FoodTypeFlags.VegetarianRoughAnimal && Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, k.race)).TryRandomElementByWeight((PawnKindDef x) => Mathf.Lerp(0.2f, 1f, x.RaceProps.wildness), out animalKind);
+			return Mathf.Lerp(0.2F, 1.0F, pawnKindDef.RaceProps.wildness);
 		}
 
-		protected bool TryFindPredatorAnimalKind(int tile, out PawnKindDef animalKind)
+		private static bool TryFindPreyPredatorPair(int tile, out PawnKindDef preyKindDef, out PawnKindDef predatorKindDef)
 		{
-			return DefDatabase<PawnKindDef>.AllDefs.Where(k => IsAquatic(k) && k.RaceProps.foodType == FoodTypeFlags.CarnivoreAnimal && Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, k.race)).TryRandomElementByWeight((PawnKindDef x) => Mathf.Lerp(0.2f, 1f, x.RaceProps.wildness), out animalKind);
+			preyKindDef = null;
+			predatorKindDef = null;
+
+			List<PawnKindDef> pawnKindDefs = DefDatabase<PawnKindDef>.AllDefsListForReading;
+			List<PawnKindDef> preyKindDefs = new List<PawnKindDef>();
+			List<PawnKindDef> predatorKindDefs = new List<PawnKindDef>();
+
+			TileTemperaturesComp tileTemperatures = Find.World.tileTemperatures;
+			for (int pawnKindIndex = 0; pawnKindIndex < pawnKindDefs.Count; ++pawnKindIndex)
+			{
+				PawnKindDef pawnKindDef = pawnKindDefs[pawnKindIndex];
+				if (!IsAquatic(pawnKindDef) ||
+				    !tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, pawnKindDef.race))
+				{
+					// Allow only aquatic creatures that can spawn with this season and temperature are allowed.
+					continue;
+				}
+
+				// Filter each aquatic animal into their list.
+				switch (pawnKindDef.RaceProps.foodType)
+				{
+					case FoodTypeFlags.VegetarianRoughAnimal:
+						preyKindDefs.Add(pawnKindDef);
+						break;
+					case FoodTypeFlags.CarnivoreAnimal:
+						predatorKindDefs.Add(pawnKindDef);
+						break;
+				}
+			}
+
+			if (preyKindDefs.Count == 0 || predatorKindDefs.Count == 0)
+			{
+				return false;
+			}
+
+			return preyKindDefs.TryRandomElementByWeight(AnimalWeight, out preyKindDef) &&
+			       predatorKindDefs.TryRandomElementByWeight(AnimalWeight, out predatorKindDef);
 		}
 
-		protected List<Pawn> GenerateAnimals(PawnKindDef animalKind, int tile, IntRange minRange)
+		private static List<Pawn> GenerateAnimals(PawnKindDef animalKind, int tile, IntRange minRange)
 		{
 			int randomInRange = Mathf.Max(minRange.RandomInRange, Mathf.CeilToInt(4f / animalKind.RaceProps.baseBodySize));
 			List<Pawn> list = new List<Pawn>();
 			for (int i = 0; i < randomInRange; i++)
 			{
-				Pawn item = PawnGenerator.GeneratePawn(new PawnGenerationRequest(animalKind, null, PawnGenerationContext.NonPlayer, tile));
+				Pawn item = PawnGenerator.GeneratePawn(new PawnGenerationRequest(animalKind, null,
+					PawnGenerationContext.NonPlayer, tile));
 				list.Add(item);
 			}
+
 			return list;
 		}
 	}
