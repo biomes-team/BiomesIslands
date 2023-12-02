@@ -1,5 +1,7 @@
 ﻿using HarmonyLib;
 using System;
+using BiomesCore.Planet;
+using BiomesIslands.Planet;
 using Verse;
 
 namespace BiomesIslands
@@ -15,6 +17,9 @@ namespace BiomesIslands
 		{
 			new Harmony(Id).PatchAll();
 			//HarmonyInstance.Create(Id).PatchAll();
+			// Register WorldGenInfos in Biomes! Core.
+			WorldGenInfoHandler.Register<WorldGenInfo_IslandPresence>();
+			WorldGenInfoHandler.Register<WorldGenInfo_VolcanicActivity>();
 			Log("Initialized");
 		}
 

@@ -1,204 +1,201 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-    <BiomeDef Name="BiomesIslands_BorealIslandBase" Abstract="True">    <!-- borealIsland -->
-    <defName>BiomesIslands_BorealIsland</defName>
-    <label>boreal island</label>
-    <description>Blanketed with coniferous forests and kissed by cold winds, boreal islands offer solitude amid nature. Though winters are long and harsh, the land is rich with game, and the trees provide ample shelter and resources.</description>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
-	
-	
-    <canAutoChoose>false</canAutoChoose>
-    <allowRoads>false</allowRoads>
-    <allowRivers>false</allowRivers>
-    <animalDensity>3.2</animalDensity>
-    <plantDensity>0.5</plantDensity>
-    <settlementSelectionWeight>0.01</settlementSelectionWeight>
-    <movementDifficulty>2</movementDifficulty>
-    <texture>World/Biomes/Ocean</texture>
-    <forageability>1</forageability>
-		<foragedFood>RawBerries</foragedFood>
-    <wildPlantRegrowDays>12</wildPlantRegrowDays>
-    <soundsAmbient>
-      <li>Ambient_NightInsects_Standard</li>
-    </soundsAmbient>
-    <diseaseMtbDays>50</diseaseMtbDays>
-	<diseases>
-      <li>
-        <diseaseInc>Disease_Flu</diseaseInc>
-        <commonality>100</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_Plague</diseaseInc>
-        <commonality>100</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_GutWorms</diseaseInc>
-        <commonality>50</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
-        <commonality>30</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
-        <commonality>30</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_MuscleParasites</diseaseInc>
-        <commonality>50</commonality>
-      </li>
-      
-      <li>
-        <diseaseInc>Disease_AnimalFlu</diseaseInc>
-        <commonality>100</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_AnimalPlague</diseaseInc>
-        <commonality>100</commonality>
-      </li>
-    </diseases>
-    <terrainsByFertility>
-      <li>
-        <terrain>WaterOceanDeep</terrain>
-        <min>-999</min>
-        <max>0.40</max>
-      </li>
-      <li>
-        <terrain>WaterOceanShallow</terrain>
-        <min>0.40</min>
-        <max>1.0</max>
-      </li>
-      <li>
-        <terrain>BiomesCore_Pebbles</terrain>
-        <min>1.0</min>
-        <max>3.0</max>
-      </li>
-      <li>
-        <terrain>Soil</terrain>
-        <min>3.0</min>
-        <max>999</max>
-      </li>
-    </terrainsByFertility>
-    <terrainPatchMakers>
-	  <li>
-		<perlinFrequency>0.022</perlinFrequency>
-		<minFertility>3.0</minFertility>
-		<thresholds>
-          <li>
-            <terrain>MossyTerrain</terrain>
-            <min>0.0</min>
-            <max>0.48</max>
-          </li>
-          <li>
-            <terrain>Marsh</terrain>
-            <min>0.48</min>
-            <max>0.80</max>
-          </li>
-          <li>
-            <terrain>WaterShallow</terrain>
-            <min>0.80</min>
-            <max>1.05</max>
-          </li>
-          <li>
-            <terrain>WaterDeep</terrain>
-            <min>1.05</min>
-            <max>999</max>
-          </li>
-        </thresholds>
-	  </li>
-	  <li>
-		<perlinFrequency>0.030</perlinFrequency>
-		<minFertility>3.0</minFertility>
-		<thresholds>
-          
-          <li>
-            <terrain>SoilRich</terrain>
-            <min>0.50</min>
-            <max>999</max>
-          </li>
-          
-        </thresholds>
-	  </li>
-    </terrainPatchMakers>
-    <baseWeatherCommonalities>
-      <Clear>18</Clear>
-      <Fog>1</Fog>
-      <Rain>2</Rain>
-      <DryThunderstorm>1</DryThunderstorm>
-      <RainyThunderstorm>1</RainyThunderstorm>
-      <FoggyRain>1</FoggyRain>
-      <SnowGentle>4</SnowGentle>
-      <SnowHard>4</SnowHard>
-    </baseWeatherCommonalities>
-    <wildPlants>
-	<!-- land plants -->
-		<Plant_Grass>8.0</Plant_Grass>
-		<Plant_Brambles>2.0</Plant_Brambles>
-		<Plant_Moss>4.0</Plant_Moss>
-		<Plant_Bush>3.0</Plant_Bush>
-		<Plant_TreePine>5.0</Plant_TreePine>
-		<Plant_TreeBirch>1.5</Plant_TreeBirch>
-		<Plant_TreePoplar>1.2</Plant_TreePoplar>
-		<Plant_Berry>0.16</Plant_Berry>
-		<Plant_HealrootWild>0.16</Plant_HealrootWild>
-		<BiomesIslands_Lavender>1</BiomesIslands_Lavender>
-	  <!-- water plants -->
-		<BiomesIslands_Kelp>0.7</BiomesIslands_Kelp>
-		<BiomesIslands_SeaGrass>1.5</BiomesIslands_SeaGrass>
-		<BiomesIslands_Seaweed>6.0</BiomesIslands_Seaweed>
-		<BiomesIslands_Murkweed>1.2</BiomesIslands_Murkweed>
-		<BiomesIslands_WhiteAlgae>0.5</BiomesIslands_WhiteAlgae>
-    </wildPlants>
-    <wildAnimals>
-    <!-- land grazers -->
-      <Yak>0.12</Yak>
-      <Horse>0.15</Horse>
-	  <BiomesIslands_ShetlandPony>1</BiomesIslands_ShetlandPony>
-      <Squirrel>1</Squirrel>
-      <Hare>1</Hare>
-      <Rat>1</Rat>
-      <Elk>0.5</Elk>
-      <Caribou>0.5</Caribou>
-      <Muffalo>0.5</Muffalo>
-      <WildBoar>0.5</WildBoar>
-      <Ibex>0.5</Ibex>
-      <Raccoon>0.5</Raccoon>
-      <Turkey>0.5</Turkey>
-      <Deer>0.5</Deer>
-      <Megasloth>0.1</Megasloth>
-      <BiomesIslands_Seagull>1</BiomesIslands_Seagull>
-	  <BiomesIslands_OmegaDodo>0.5</BiomesIslands_OmegaDodo>
-	  <BiomesIslands_BlueCrab>0.5</BiomesIslands_BlueCrab>
-	  <BiomesIslands_SeaTurtle>0.05</BiomesIslands_SeaTurtle>
-	  <BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
-	  <BMT_SeaOtter>0.5</BMT_SeaOtter>
-	  
-	  <!-- land predators -->
-      <Fox_Red>0.07</Fox_Red>
-      <Fox_Arctic>0.07</Fox_Arctic>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Wolf_Arctic>0.07</Wolf_Arctic>
-      <Cougar>0.07</Cougar>
-      <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
-	  
-    <!-- aquatic grazers -->
-      <BiomesIslands_Sardine>1.8</BiomesIslands_Sardine>
-		<BMT_Obsidianfin>0.7</BMT_Obsidianfin>
-	  
-	  <BiomesIslands_Trout>1.5</BiomesIslands_Trout>
-	  <BiomesIslands_Whale>0.05</BiomesIslands_Whale>
 
-    <!-- aquatic predators -->
-      <BiomesIslands_Tuna>0.3</BiomesIslands_Tuna>
-      <BiomesIslands_WhiteShark>0.18</BiomesIslands_WhiteShark>
-    </wildAnimals>
-    <allowedPackAnimals>
-      <li>Muffalo</li>
-      <li>Alpaca</li>
-    </allowedPackAnimals>
+	<BiomeDef Name="BiomesIslands_BorealIslandBase" Abstract="True">    <!-- borealIsland -->
+		<defName>BiomesIslands_BorealIsland</defName>
+		<label>boreal island</label>
+		<description>Blanketed with coniferous forests and kissed by cold winds, boreal islands offer solitude amid nature. Though winters are long and harsh, the land is rich with game, and the trees provide ample shelter and resources.</description>
+		<canAutoChoose>false</canAutoChoose>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<animalDensity>3.2</animalDensity>
+		<plantDensity>0.5</plantDensity>
+		<settlementSelectionWeight>0.01</settlementSelectionWeight>
+		<movementDifficulty>2</movementDifficulty>
+		<texture>World/Biomes/Ocean</texture>
+		<forageability>1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>12</wildPlantRegrowDays>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<diseaseMtbDays>50</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>WaterOceanDeep</terrain>
+				<min>-999</min>
+				<max>0.40</max>
+			</li>
+			<li>
+				<terrain>WaterOceanShallow</terrain>
+				<min>0.40</min>
+				<max>1.0</max>
+			</li>
+			<li>
+				<terrain>BiomesCore_Pebbles</terrain>
+				<min>1.0</min>
+				<max>3.0</max>
+			</li>
+			<li>
+				<terrain>Soil</terrain>
+				<min>3.0</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.022</perlinFrequency>
+				<minFertility>3.0</minFertility>
+				<thresholds>
+					<li>
+						<terrain>MossyTerrain</terrain>
+						<min>0.0</min>
+						<max>0.48</max>
+					</li>
+					<li>
+						<terrain>Marsh</terrain>
+						<min>0.48</min>
+						<max>0.80</max>
+					</li>
+					<li>
+						<terrain>WaterShallow</terrain>
+						<min>0.80</min>
+						<max>1.05</max>
+					</li>
+					<li>
+						<terrain>WaterDeep</terrain>
+						<min>1.05</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.030</perlinFrequency>
+				<minFertility>3.0</minFertility>
+				<thresholds>
+
+					<li>
+						<terrain>SoilRich</terrain>
+						<min>0.50</min>
+						<max>999</max>
+					</li>
+
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<!-- land plants -->
+			<Plant_Grass>8.0</Plant_Grass>
+			<Plant_Brambles>2.0</Plant_Brambles>
+			<Plant_Moss>4.0</Plant_Moss>
+			<Plant_Bush>3.0</Plant_Bush>
+			<Plant_TreePine>5.0</Plant_TreePine>
+			<Plant_TreeBirch>1.5</Plant_TreeBirch>
+			<Plant_TreePoplar>1.2</Plant_TreePoplar>
+			<Plant_Berry>0.16</Plant_Berry>
+			<Plant_HealrootWild>0.16</Plant_HealrootWild>
+			<BiomesIslands_Lavender>1</BiomesIslands_Lavender>
+			<!-- water plants -->
+			<BiomesIslands_Kelp>0.7</BiomesIslands_Kelp>
+			<BiomesIslands_SeaGrass>1.5</BiomesIslands_SeaGrass>
+			<BiomesIslands_Seaweed>6.0</BiomesIslands_Seaweed>
+			<BiomesIslands_Murkweed>1.2</BiomesIslands_Murkweed>
+			<BiomesIslands_WhiteAlgae>0.5</BiomesIslands_WhiteAlgae>
+		</wildPlants>
+		<wildAnimals>
+			<!-- land grazers -->
+			<Yak>0.12</Yak>
+			<Horse>0.15</Horse>
+			<BiomesIslands_ShetlandPony>1</BiomesIslands_ShetlandPony>
+			<Squirrel>1</Squirrel>
+			<Hare>1</Hare>
+			<Rat>1</Rat>
+			<Elk>0.5</Elk>
+			<Caribou>0.5</Caribou>
+			<Muffalo>0.5</Muffalo>
+			<WildBoar>0.5</WildBoar>
+			<Ibex>0.5</Ibex>
+			<Raccoon>0.5</Raccoon>
+			<Turkey>0.5</Turkey>
+			<Deer>0.5</Deer>
+			<Megasloth>0.1</Megasloth>
+			<BiomesIslands_Seagull>1</BiomesIslands_Seagull>
+			<BiomesIslands_OmegaDodo>0.5</BiomesIslands_OmegaDodo>
+			<BiomesIslands_BlueCrab>0.5</BiomesIslands_BlueCrab>
+			<BiomesIslands_SeaTurtle>0.05</BiomesIslands_SeaTurtle>
+			<BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
+			<BMT_SeaOtter>0.5</BMT_SeaOtter>
+
+			<!-- land predators -->
+			<Fox_Red>0.07</Fox_Red>
+			<Fox_Arctic>0.07</Fox_Arctic>
+			<Bear_Grizzly>0.07</Bear_Grizzly>
+			<Wolf_Timber>0.07</Wolf_Timber>
+			<Wolf_Arctic>0.07</Wolf_Arctic>
+			<Cougar>0.07</Cougar>
+			<Lynx>0.07</Lynx>
+			<Warg>0.07</Warg>
+
+			<!-- aquatic grazers -->
+			<BiomesIslands_Sardine>1.8</BiomesIslands_Sardine>
+			<BMT_Obsidianfin>0.7</BMT_Obsidianfin>
+
+			<BiomesIslands_Trout>1.5</BiomesIslands_Trout>
+			<BiomesIslands_Whale>0.05</BiomesIslands_Whale>
+
+			<!-- aquatic predators -->
+			<BiomesIslands_Tuna>0.3</BiomesIslands_Tuna>
+			<BiomesIslands_WhiteShark>0.18</BiomesIslands_WhiteShark>
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Alpaca</li>
+		</allowedPackAnimals>
 
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 			<Raccoon>0.25</Raccoon>
@@ -208,68 +205,54 @@
 			<Toxalope>0.1</Toxalope>
 			<WasteRat>1</WasteRat>
 		</pollutionWildAnimals>
-  </BiomeDef>
-  
-  <BiomeDef ParentName="BiomesIslands_BorealIslandBase">
-    <defName>BiomesIslands_BorealIsland</defName>
-    <label>boreal island</label>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
-	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<isIsland>true</isIsland>
-			<hasScatterables>true</hasScatterables>
-			<allowBeach>false</allowBeach>
-			<islandShapes>
-				<li>Smooth</li>
-				<li>Rough</li>
-				<li>Crescent</li>
-				<li>Pair</li>
-			</islandShapes>
-		</li>
-        <li Class="BiomesKit.BiomesKitControls">
-			<setHills>Random</setHills>
-			<usePerlin>true</usePerlin>
-			<perlinCulling>0.80</perlinCulling>
-            <allowOnWater>true</allowOnWater>
-            <allowOnLand>False</allowOnLand>
-			<minTemperature>-10</minTemperature>
-			<maxTemperature>5</maxTemperature>
-			<minRainfall>400</minRainfall>
-			<frequency>20</frequency>
-			<materialPath>BiomesIslands_World/MapGraphics/BorealIsland</materialPath>
-			<materialLayer>3509</materialLayer>
-        </li>
-        <li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
-            <isWaterCovered>true</isWaterCovered>
-            <allowLandforms>false</allowLandforms>
-            <allowBiomeTransitions>false</allowBiomeTransitions>
-        </li>
-	</modExtensions>
-  </BiomeDef>
-  
-  <BiomeDef ParentName="BiomesIslands_BorealIslandBase">
-    <defName>BiomesIslands_BorealArchipelago</defName>
-    <label>boreal Archipelago</label>
-    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
-	<modExtensions>
-        <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<isIsland>true</isIsland>
-			<hasScatterables>true</hasScatterables>
-			<allowBeach>false</allowBeach>
-			<islandShapes>
-				<li>Cluster</li>
-			</islandShapes>
-		</li>
-        <li Class="BiomesKit.BiomesKitControls">
-			<spawnOnBiomes>
-				<li>BiomesIslands_BorealIsland</li>
-			</spawnOnBiomes>
-            <allowOnWater>True</allowOnWater>
-			<frequency>70</frequency>
-			<biomePriority>2</biomePriority>
-			<materialPath>BiomesIslands_World/MapGraphics/BorealArchipelago</materialPath>
-			<materialLayer>3509</materialLayer>
-        </li>
-	</modExtensions>
-  </BiomeDef>
+	</BiomeDef>
+
+	<BiomeDef ParentName="BiomesIslands_BorealIslandBase">
+		<defName>BiomesIslands_BorealIsland</defName>
+		<label>boreal island</label>
+		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_BorealIsland</workerClass>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.BiomesMap">
+				<isIsland>true</isIsland>
+				<hasScatterables>true</hasScatterables>
+				<allowBeach>false</allowBeach>
+				<islandShapes>
+					<li>Smooth</li>
+					<li>Rough</li>
+					<li>Crescent</li>
+					<li>Pair</li>
+				</islandShapes>
+			</li>
+			<li Class="BiomesKit.BiomesKitControls">
+				<!-- ToDo -->
+				<materialPath>BiomesIslands_World/MapGraphics/BorealIsland</materialPath>
+				<materialLayer>3509</materialLayer>
+			</li>
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<isWaterCovered>true</isWaterCovered>
+				<allowLandforms>false</allowLandforms>
+				<allowBiomeTransitions>false</allowBiomeTransitions>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+
+	<BiomeDef ParentName="BiomesIslands_BorealIslandBase">
+		<defName>BiomesIslands_BorealArchipelago</defName>
+		<label>boreal Archipelago</label>
+		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_BorealArchipelago</workerClass>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.BiomesMap">
+				<isIsland>true</isIsland>
+				<hasScatterables>true</hasScatterables>
+				<allowBeach>false</allowBeach>
+				<islandShapes>
+					<li>Cluster</li>
+				</islandShapes>
+			</li>
+			<li Class="BiomesKit.BiomesKitControls">
+				<materialPath>BiomesIslands_World/MapGraphics/BorealArchipelago</materialPath>
+				<materialLayer>3509</materialLayer>
+			</li>
+		</modExtensions>
+	</BiomeDef>
 </Defs>

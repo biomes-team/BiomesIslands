@@ -49,6 +49,10 @@
       <HintPath>..\..\..\..\Pathfinding-Framework\1.4\Assemblies\PathfindingFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="BiomesCore">
+      <HintPath>..\..\..\..\BiomesCore\1.4\Assemblies\BiomesCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -63,16 +67,27 @@
     </Reference></ItemGroup>
   <ItemGroup>
     <Compile Include="BiomesIslands.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_IslandTemperate.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_IslandVariables.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_IslandWarm.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_IslandCold.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_IslandHot.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorkerUtil.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Atoll.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_BorealArchipelago.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_BorealIsland.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_DesertArchipelago.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_DesertIsland.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Island.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TemperateArchipelago.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TemperateIsland.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TropicalArchipelago.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TropicalIsland.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TundraArchipelago.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TundraIsland.cs" />
+    <Compile Include="HotSwappableAttribute.cs" />
     <Compile Include="Incidents\Incident_AquaticArrival.cs" />
     <Compile Include="Incidents\Incident_CrabMigration.cs" />
     <Compile Include="Incidents\Incident_RavenousCrabs.cs" />
     <Compile Include="Incidents\Incident_GlowTide.cs" />
     <Compile Include="Patches\World_NaturalRockTypesIn_Patch.cs" />
+    <Compile Include="Planet\WorldGenInfo_IslandPresence.cs" />
+    <Compile Include="Planet\WorldGenInfo_VolcanicActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BiomesIslandsDefOf.cs" />
     <Compile Include="Incidents\ThoughtWorker_GlowTide.cs" />
