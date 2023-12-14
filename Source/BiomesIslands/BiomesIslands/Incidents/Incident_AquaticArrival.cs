@@ -62,7 +62,7 @@ namespace BiomesIslands.Incidents
 			}
 
 			string preyText = preyKindDef.GetLabelPlural().CapitalizeFirst();
-			string predatorText = preyKindDef.GetLabelPlural().CapitalizeFirst();
+			string predatorText = predatorKindDef.GetLabelPlural().CapitalizeFirst();
 			string letterLabel = string.Format(def.letterLabel, preyText, predatorText);
 			string letterText = string.Format(def.letterText, preyText, predatorText);
 			SendStandardLetter(letterLabel, letterText, def.letterDef, parms, preyPawn);
