@@ -192,8 +192,8 @@
 			<Iguana>1</Iguana>
 			<Megascarab>0.8</Megascarab>
 			<Rat>0.2</Rat>
-			<Toxalope>0.05</Toxalope>
-			<WasteRat>0.5</WasteRat>
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.05</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.5</WasteRat>
 		</pollutionWildAnimals>
 	</BiomeDef>
 

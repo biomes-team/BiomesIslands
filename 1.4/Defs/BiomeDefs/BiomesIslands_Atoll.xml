@@ -224,8 +224,8 @@
 			<Boomrat>0.2</Boomrat>
 			<Megascarab>0.2</Megascarab>
 			<Rat>0.2</Rat>
-			<Toxalope>0.1</Toxalope>
-			<WasteRat>1</WasteRat>
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.1</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
 		</pollutionWildAnimals>
 	</BiomeDef>
 </Defs>

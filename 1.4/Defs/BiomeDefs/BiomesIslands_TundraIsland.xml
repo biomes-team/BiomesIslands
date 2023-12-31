@@ -189,7 +189,7 @@
 		</allowedPackAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 			<Megascarab>0.2</Megascarab>
-			<WasteRat>1</WasteRat>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
 			<Warg>0.05</Warg>
 		</pollutionWildAnimals>
 	</BiomeDef>
