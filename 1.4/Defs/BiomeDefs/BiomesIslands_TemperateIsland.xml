@@ -240,9 +240,9 @@
 			<Megascarab>0.4</Megascarab>
 			<Raccoon>0.4</Raccoon>
 			<Rat>1</Rat>
-			<Toxalope>0.2</Toxalope>
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.2</Toxalope>
 			<Warg>0.05</Warg>
-			<WasteRat>0.3</WasteRat>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.3</WasteRat>
 		</pollutionWildAnimals>
   </BiomeDef>
   
