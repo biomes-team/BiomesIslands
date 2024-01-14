@@ -179,5 +179,19 @@
     </building>
   </ThingDef>
 
+  <!-- Walls buildable over water-->
+
+  <ThingDef ParentName="Wall">
+    <defName>BMT_AquaticWall</defName>
+    <label>aquatic wall</label>
+    <description>An impassable wall. Capable of holding up a roof. Made to be built on the water</description>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>BMT_DeepWaterBridgeable</terrainAffordanceNeeded>
+    <statBases>
+      <WorkToBuild>270</WorkToBuild>
+    </statBases>
+    <costStuffCount>10</costStuffCount>
+  </ThingDef>
+
 
 </Defs>
