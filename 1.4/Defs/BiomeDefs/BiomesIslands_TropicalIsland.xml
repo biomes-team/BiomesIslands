@@ -166,6 +166,7 @@
 		</wildPlants>
 		<wildAnimals>
 			<!-- land grazers -->
+			<BMT_BananaSlug>0.8</BMT_BananaSlug>
 			<BiomesIslands_Seagull>0.5</BiomesIslands_Seagull>
 			<Monkey>1</Monkey>
 			<BiomesIslands_Flamingo>0.7</BiomesIslands_Flamingo>
@@ -200,6 +201,7 @@
 			<!-- aquatic predators -->
 			<BiomesIslands_Tuna>0.2</BiomesIslands_Tuna>
 			<BiomesIslands_RedSnapper>0.08</BiomesIslands_RedSnapper>
+			<BMT_Swordfish>0.08</BMT_Swordfish>
 			<BiomesIslands_Hammerhead>0.08</BiomesIslands_Hammerhead>
 			<BiomesIslands_WhiteShark>0.06</BiomesIslands_WhiteShark>
 		</wildAnimals>

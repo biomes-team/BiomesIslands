@@ -180,6 +180,7 @@
 			<BiomesIslands_Whale>0.5</BiomesIslands_Whale>
 			<!-- aquatic predators -->
 			<BiomesIslands_Tuna>0.45</BiomesIslands_Tuna>
+			<BMT_Swordfish>0.08</BMT_Swordfish>
 			<BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
 
 		</wildAnimals>
