@@ -86,7 +86,7 @@
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>5.0</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<gestationPeriodDays>360</gestationPeriodDays>
+			<gestationPeriodDays>25</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
 			<wildness>0.95</wildness>
 			<nuzzleMtbHours>275</nuzzleMtbHours>
@@ -272,7 +272,7 @@
 			<baseBodySize>3.2</baseBodySize>
 			<baseHealthScale>4.0</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<gestationPeriodDays>270</gestationPeriodDays>
+			<gestationPeriodDays>36</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
 			<wildness>0.85</wildness>
 			<nuzzleMtbHours>275</nuzzleMtbHours>

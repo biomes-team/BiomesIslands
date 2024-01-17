@@ -10,7 +10,7 @@
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Dolphin</defName>
 		<label>dolphin</label>
-		<description>A large species of dolphin.</description>
+		<description>A generalized hybrid of many species of oceanic dolphin. They use echolocation to both communicate and find food.</description>
 		<statBases>
 			<MoveSpeed>8</MoveSpeed>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
