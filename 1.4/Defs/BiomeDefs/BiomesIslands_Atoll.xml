@@ -199,6 +199,7 @@
 			<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 
 			<!-- aquatic grazers -->
+			<BMT_Sunfish>0.1</BMT_Sunfish>
 			<BiomesIslands_Sardine>0.6</BiomesIslands_Sardine>
 			<BMT_SunfinAngelfish>0.8</BMT_SunfinAngelfish>
 			<BMT_OrchidBasslet>0.3</BMT_OrchidBasslet>
