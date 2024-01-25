@@ -209,6 +209,7 @@
 			<BiomesIslands_Megamantis>0.05</BiomesIslands_Megamantis>
 
 			<!-- water grazers -->
+			<BMT_Sunfish>0.1</BMT_Sunfish>
 			<BiomesIslands_Sardine>1.0</BiomesIslands_Sardine>
 			<BMT_SunfinAngelfish>0.3</BMT_SunfinAngelfish>
 			<BMT_OrangepeelAngelfish>0.5</BMT_OrangepeelAngelfish>
@@ -221,6 +222,7 @@
 			<BiomesIslands_MantaRay>0.08</BiomesIslands_MantaRay>
 
 			<!-- water predators -->
+			<BMT_Lionfish>0.2</BMT_Lionfish>
 			<BiomesIslands_Tuna>0.2</BiomesIslands_Tuna>
 			<BMT_Swordfish>0.06</BMT_Swordfish>
 			<BiomesIslands_WhiteShark>0.05</BiomesIslands_WhiteShark>

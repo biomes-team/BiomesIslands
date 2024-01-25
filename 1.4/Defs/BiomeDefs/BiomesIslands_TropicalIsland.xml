@@ -187,6 +187,7 @@
 			<BMT_KomodoDragon>0.05</BMT_KomodoDragon>
 
 			<!-- aquatic grazers -->
+			<BMT_Sunfish>0.1</BMT_Sunfish>
 			<BiomesIslands_Sardine>0.5</BiomesIslands_Sardine>
 			<BMT_SunfinAngelfish>0.5</BMT_SunfinAngelfish>
 			<BiomesIslands_LimepeelAngelfish>1.0</BiomesIslands_LimepeelAngelfish>
@@ -199,6 +200,7 @@
 			<BiomesIslands_BoomWhale>0.1</BiomesIslands_BoomWhale>
 			<BiomesIslands_MantaRay>0.03</BiomesIslands_MantaRay>
 			<!-- aquatic predators -->
+			<BMT_Lionfish>0.2</BMT_Lionfish>
 			<BiomesIslands_Tuna>0.2</BiomesIslands_Tuna>
 			<BiomesIslands_RedSnapper>0.08</BiomesIslands_RedSnapper>
 			<BMT_Swordfish>0.08</BMT_Swordfish>

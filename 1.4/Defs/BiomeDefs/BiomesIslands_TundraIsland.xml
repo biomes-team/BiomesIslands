@@ -174,6 +174,7 @@
 
 			<!-- Water animals have ~50% higher stats relative to other islands to keep water pops up -->
 			<!-- aquatic grazers -->
+			<BMT_Sunfish>0.1</BMT_Sunfish>
 			<BiomesIslands_Sardine>1.5</BiomesIslands_Sardine>
 			<BMT_Obsidianfin>1.5</BMT_Obsidianfin>
 			<BiomesIslands_Trout>2.0</BiomesIslands_Trout>

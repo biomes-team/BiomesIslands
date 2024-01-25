@@ -53,7 +53,8 @@
 			<predator>true</predator>
 			<body>Biomes_SharkBody</body>
 			<!-- <leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef> -->
-			<leatherDef>Leather_Light</leatherDef>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<!-- <useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom> -->
 			<baseHungerRate>0.7</baseHungerRate>
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>2.6</baseHealthScale>
@@ -130,18 +131,18 @@
 			</li>
 		</lifeStages>
 		<!-- TO-DO: Replace the sub shark with a dolphin or remove this part. -->
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li Class="PathfindingFramework.TerrainTagGraphicExtension"> -->
+				<!-- <terrainTags> -->
+					<!-- <li>PF_TerrainTag_WaterShallow</li> -->
+					<!-- <li>PF_TerrainTag_WaterChest</li> -->
+					<!-- <li>PF_TerrainTag_WaterDeep</li> -->
+				<!-- </terrainTags> -->
+				<!-- <bodyGraphicData> -->
+					<!-- <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath> -->
+				<!-- </bodyGraphicData> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 	</PawnKindDef>
 
 </Defs>
