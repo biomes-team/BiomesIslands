@@ -71,4 +71,22 @@
     </subSounds>
   </SoundDef>
 
+  <SoundDef>
+    <defName>Pawn_Kiwi_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Animals\Kiwi\Biomes_Kiwi_Call\Biomes_Kiwi_Call_01.ogg</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>20~28</volumeRange>
+        <pitchRange>0.9770588~1.137647</pitchRange>
+        <distRange>0~50.40025</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
 </Defs>

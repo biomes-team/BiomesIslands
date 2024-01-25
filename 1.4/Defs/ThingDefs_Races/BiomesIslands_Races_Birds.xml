@@ -37,14 +37,26 @@
 				<li>
 					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
+					<soundWounded>Pawn_Kiwi_Call</soundWounded>
+					<soundDeath>Pawn_Kiwi_Call</soundDeath>
+					<soundCall>Pawn_Kiwi_Call</soundCall>
+					<soundAngry>Pawn_Kiwi_Call</soundAngry>
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
 					<minAge>0.12</minAge>
+					<soundWounded>Pawn_Kiwi_Call</soundWounded>
+					<soundDeath>Pawn_Kiwi_Call</soundDeath>
+					<soundCall>Pawn_Kiwi_Call</soundCall>
+					<soundAngry>Pawn_Kiwi_Call</soundAngry>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.2</minAge>
+					<soundWounded>Pawn_Kiwi_Call</soundWounded>
+					<soundDeath>Pawn_Kiwi_Call</soundDeath>
+					<soundCall>Pawn_Kiwi_Call</soundCall>
+					<soundAngry>Pawn_Kiwi_Call</soundAngry>
 				</li>
 			</lifeStageAges>
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>

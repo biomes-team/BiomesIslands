@@ -80,7 +80,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
-			<body>Biomes_WhaleBody</body>
+			<body>Biomes_OrcaphibianBody</body>
 			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
