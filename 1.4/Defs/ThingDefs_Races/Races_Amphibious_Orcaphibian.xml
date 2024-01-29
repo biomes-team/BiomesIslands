@@ -136,7 +136,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Orcaphibian/Orcaphibian</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibian</texPath>
 					<drawSize>2.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -146,7 +146,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Orcaphibian/Orcaphibian</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibian</texPath>
 					<drawSize>4.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -156,7 +156,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Orcaphibian/Orcaphibian</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibian</texPath>
 					<drawSize>4.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -173,7 +173,7 @@
 					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
 				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Orcaphibian/OrcaphibianSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibianSubmerged</texPath>
 				</bodyGraphicData>
 			</li>
 		</modExtensions>

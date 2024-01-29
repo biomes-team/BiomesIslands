@@ -43,7 +43,7 @@
 				</capacities>
 				<power>17</power>
 				<cooldownTime>2</cooldownTime>
-				<chanceFactor>0.2</chanceFactor>
+				<!-- <chanceFactor>0.2</chanceFactor> -->
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.1</chanceFactor>

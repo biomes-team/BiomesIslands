@@ -107,7 +107,7 @@
 		<label>banana slug egg (fert.)</label>
 		<description>A fertilized banana slug egg. If all goes well, it should hatch into a baby banana slug. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath>
+			<!-- <texPath>BMT_Caverns/Things/Item/Eggs/BeanBugEggs</texPath> -->
 			<color>(255,188,190)</color>
 			<drawSize>1</drawSize>
 		</graphicData>
