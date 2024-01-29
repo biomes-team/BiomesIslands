@@ -1,0 +1,12 @@
+All of these should generate only within a fairly narrow tile depth/height range. Should require fairly shallow depth.
+
+Coastal Shallows:
+Generates only on tiles next to coasts, but on the ocean side. Map is roughly 90% water, mostly shallow, with the coast itself generating along one narrow strip along the appropriate side. 
+Should be able to generate with bits of sand or sections of rock in the water. Plants and animals should be based on whatever general temperature range it generates near, if possible. 
+
+Sandbars: 
+Generates within a few world tiles of the coast. Map is mostly shallow water with a few deep sections along the edges. Only solid terrain should be the occasional bit of sand. Palm trees should rarely grow here on the sand. Otherwise all plants and animals are aquatic or amphibious, barring seagulls and the like. 
+
+Iceberg/Ice Floe:
+Generates only in cold ocean areas. Essentially an island of pure ice, no land plants. Should generate ice walls instead of stone. There is a texture for basic ice walls somewhere. I'll find it eventually. Animals should be the likes of walrus, seals, orcaphibian, and other cold water animals. Only plants should be aquatic ones.
+be 
