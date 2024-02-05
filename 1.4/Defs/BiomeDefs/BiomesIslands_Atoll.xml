@@ -42,6 +42,7 @@
 		<animalDensity>4.5</animalDensity>
 		<plantDensity>0.85</plantDensity>
 		<settlementSelectionWeight>0.01</settlementSelectionWeight>
+		<campSelectionWeight>0.4</campSelectionWeight>
 		<movementDifficulty>1.5</movementDifficulty>
 		<texture>World/Biomes/Ocean</texture>
 		<forageability>0.1</forageability>

@@ -11,6 +11,8 @@
 		<animalDensity>1.8</animalDensity>
 		<plantDensity>0.19</plantDensity>
 		<settlementSelectionWeight>0.01</settlementSelectionWeight>
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<campSelectionWeight>0.1</campSelectionWeight>
 		<movementDifficulty>2</movementDifficulty>
 		<texture>World/Biomes/Ocean</texture>
 		<forageability>0.5</forageability>

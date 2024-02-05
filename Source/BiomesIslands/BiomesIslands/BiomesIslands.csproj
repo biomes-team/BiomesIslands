@@ -85,6 +85,7 @@
     <Compile Include="Incidents\Incident_CrabMigration.cs" />
     <Compile Include="Incidents\Incident_RavenousCrabs.cs" />
     <Compile Include="Incidents\Incident_GlowTide.cs" />
+    <Compile Include="Patches\QuestGen\QuestNode_Root_WorkSite_PotentialSiteTiles_Patch.cs" />
     <Compile Include="Patches\World_NaturalRockTypesIn_Patch.cs" />
     <Compile Include="Planet\WorldGenInfo_IslandPresence.cs" />
     <Compile Include="Planet\WorldGenInfo_VolcanicActivity.cs" />
