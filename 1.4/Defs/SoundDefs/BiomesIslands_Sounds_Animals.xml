@@ -78,7 +78,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Animals\Kiwi\Biomes_Kiwi_Call\Biomes_Kiwi_Call_01.ogg</clipFolderPath>
+            <clipFolderPath>Animals/Kiwi/Biomes_Kiwi_Call</clipFolderPath>
           </li>
         </grains>
         <volumeRange>20~28</volumeRange>
