@@ -15,10 +15,8 @@
 				<addIslandHills>false</addIslandHills>
 				<hasScatterables>false</hasScatterables>
 				<allowBeach>false</allowBeach>
-			</li>
-			<li Class="BiomesKit.BiomesKitControls">
-				<materialPath>BiomesIslands_World/MapGraphics/Atoll</materialPath>
-				<materialLayer>3509</materialLayer>
+				<useOceanMaterial>true</useOceanMaterial>
+				<overlayTexturePath>BiomesIslands_World/MapGraphics/Atoll</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
 				<isWaterCovered>true</isWaterCovered>

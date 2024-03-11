@@ -261,10 +261,8 @@
 					<li>Crescent</li>
 					<li>Pair</li>
 				</islandShapes>
-			</li>
-			<li Class="BiomesKit.BiomesKitControls">
-				<materialPath>BiomesIslands_World/MapGraphics/TemperateIsland</materialPath>
-				<materialLayer>3509</materialLayer>
+				<useOceanMaterial>true</useOceanMaterial>
+				<overlayTexturePath>BiomesIslands_World/MapGraphics/TemperateIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
 				<isWaterCovered>true</isWaterCovered>
@@ -286,10 +284,8 @@
 				<islandShapes>
 					<li>Cluster</li>
 				</islandShapes>
-			</li>
-			<li Class="BiomesKit.BiomesKitControls">
-				<materialPath>BiomesIslands_World/MapGraphics/TemperateArchipelago</materialPath>
-				<materialLayer>3509</materialLayer>
+				<useOceanMaterial>true</useOceanMaterial>
+				<overlayTexturePath>BiomesIslands_World/MapGraphics/TemperateArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>
 	</BiomeDef>

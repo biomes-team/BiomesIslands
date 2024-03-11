@@ -217,10 +217,8 @@
 					<li>Crescent</li>
 					<li>Pair</li>
 				</islandShapes>
-			</li>
-			<li Class="BiomesKit.BiomesKitControls">
-				<materialPath>BiomesIslands_World/MapGraphics/DesertIsland</materialPath>
-				<materialLayer>3509</materialLayer>
+				<useOceanMaterial>true</useOceanMaterial>
+				<overlayTexturePath>BiomesIslands_World/MapGraphics/DesertIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
 				<isWaterCovered>true</isWaterCovered>
@@ -242,10 +240,8 @@
 				<islandShapes>
 					<li>Cluster</li>
 				</islandShapes>
-			</li>
-			<li Class="BiomesKit.BiomesKitControls">
-				<materialPath>BiomesIslands_World/MapGraphics/DesertArchipelago</materialPath>
-				<materialLayer>3509</materialLayer>
+				<useOceanMaterial>true</useOceanMaterial>
+				<overlayTexturePath>BiomesIslands_World/MapGraphics/DesertArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>
 	</BiomeDef>
