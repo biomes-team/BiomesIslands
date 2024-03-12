@@ -1,3 +1,4 @@
+using BiomesCore.WorldMap;
 using RimWorld.Planet;
 
 namespace BiomesIslands.BiomeWorkers

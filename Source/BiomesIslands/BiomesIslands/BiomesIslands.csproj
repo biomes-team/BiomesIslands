@@ -67,7 +67,6 @@
     </Reference></ItemGroup>
   <ItemGroup>
     <Compile Include="BiomesIslands.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorkerUtil.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_Atoll.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_BorealArchipelago.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_BorealIsland.cs" />

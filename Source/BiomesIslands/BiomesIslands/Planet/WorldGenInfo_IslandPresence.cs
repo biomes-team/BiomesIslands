@@ -1,4 +1,5 @@
 using BiomesCore.Planet;
+using BiomesCore.WorldMap;
 using BiomesIslands.BiomeWorkers;
 using RimWorld.Planet;
 using UnityEngine;
