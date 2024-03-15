@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>BMT_AquaticKelpBed</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>kelp bed</label>
+		<description>A bed of artificial kelp. Great for aquatic animals like fish.</description>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>14</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>BiomesIslands_Things/Building/AnimalBed/AquaticKelpBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<!--<castEdgeShadows>true</castEdgeShadows>-->
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<!--<bed_maxBodySize>0.55</bed_maxBodySize>-->
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>350</WorkToBuild>
+			<Mass>3</Mass>
+			<BedRestEffectiveness>0.93</BedRestEffectiveness>
+			<Comfort>0.60</Comfort>
+			<ImmunityGainSpeedFactor>1.06</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+		</comps>
+		<uiIconScale>0.75</uiIconScale>
+	</ThingDef>
+
+	<!-- Fence -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>BMT_AquaticFence</defName>
+		<label>aquatic fence</label>
+		<description>A fence made of posts joined by crossbars used for building pens for certain kinds of animals. Some kinds of animals can get past fences. Predators will not hunt creatures on the other side of a fence, but may still wander inside.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>BiomesIslands_Things/Building/FishFence/Fishfence</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>Asymmetric</linkType>
+			<linkFlags>
+				<li>Fences</li>
+			</linkFlags>
+			<asymmetricLink>
+				<linkFlags>
+					<li>Wall</li>
+					<li>Rock</li>
+				</linkFlags>
+				<linkToDoors>true</linkToDoors>
+				<drawDoorBorderEast>
+					<color>(0,0,0)</color>
+					<size>(0.04, 0.77)</size>
+					<offset>(0.5, 0, -0.08)</offset>
+				</drawDoorBorderEast>
+				<drawDoorBorderWest>
+					<color>(0,0,0)</color>
+					<size>(0.04, 0.77)</size>
+					<offset>(-0.5, 0, -0.08)</offset>
+				</drawDoorBorderWest>
+			</asymmetricLink>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.35,0.1,0.3,0.7)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>BiomesIslands_Things/Building/FishFence/Fishfence_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>70</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costStuffCount>1</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>80</pathCost>
+		<blockWind>false</blockWind>
+		<fillPercent>0.25</fillPercent>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<placeWorkers Inherit="False">
+			<li>BiomesCore.PlaceWorker_Aquatic</li>
+		</placeWorkers>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded Inherit="False"/>
+		<designationCategory>Structure</designationCategory>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<building>
+			<isInert>true</isInert>
+			<isFence>true</isFence>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+			<relatedBuildCommands>
+				<li>BMT_AquaticFenceGate</li>
+			</relatedBuildCommands>
+			<blueprintGraphicData>
+				<texPath>BiomesIslands_Things/Building/FishFence/Fishfence_Blueprint</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>BMT_AquaticFenceGate</defName>
+		<label>aquatic fence gate</label>
+		<description>A simple gate made of posts and crossbars. It blocks some animals like a fence. Handlers can lead animals in and out of the pen through these gates.</description>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<DoorOpenSpeed>1.15</DoorOpenSpeed>
+		</statBases>
+		<graphicData>
+			<texPath>BiomesIslands_Things/Building/FishFence/Fishgate_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<!--  no damage marks because they don't move with the door -->
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>BiomesIslands_Things/Building/FishFence/Fishgate_icon</uiIconPath>
+		<costStuffCount>25</costStuffCount>
+		<holdsRoof>false</holdsRoof>
+		<staticSunShadowHeight>0</staticSunShadowHeight> <!-- disable static shadow -->
+		<blockWind>false</blockWind>
+		<placeWorkers Inherit="False">
+			<li>BiomesCore.PlaceWorker_Aquatic</li>
+		</placeWorkers>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded Inherit="False"/>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<relatedBuildCommands>
+				<li>BMT_AquaticFence</li>
+			</relatedBuildCommands>
+			<blueprintGraphicData>
+				<texPath>BiomesIslands_Things/Building/FishFence/Fishgate_Blueprint</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+			<soundDoorOpenManual>Door_FenceGateManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_FenceGateManual</soundDoorCloseManual>
+		</building>
+	</ThingDef>
+
+	<!-- Walls buildable over water-->
+
+	<ThingDef ParentName="Wall">
+		<defName>BMT_AquaticWall</defName>
+		<label>aquatic wall</label>
+		<description>An impassable wall. Capable of holding up a roof. Made to be built on the water.</description>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>BMT_DeepWaterBridgeable</terrainAffordanceNeeded>
+		<statBases>
+			<WorkToBuild>270</WorkToBuild>
+		</statBases>
+		<costStuffCount>10</costStuffCount>
+	</ThingDef>
+
+</Defs>

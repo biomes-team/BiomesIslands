@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_DesertCoast</defName>
+
+		<label>desert coast</label>
+
+		<biomeLabel operation="appendPar">coast</biomeLabel>
+		<biomeDescription operation="appendLine">A desert coast borders this tile.</biomeDescription>
+
+		<worldTileConditions>
+			<coast>Ocean</coast>
+			<anyOf>
+				<biome>AridShrubland</biome>
+				<biome>Desert</biome>
+				<biome>ExtremeDesert</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<layers>
+			<li>
+
+				<!-- use the operation "add" to append entries to the wildPlants of the main biome -->
+				<wildPlants operation="add">
+
+					<!-- land plants -->
+					<BMT_CoconutPalm>0.03</BMT_CoconutPalm>
+
+					<!-- water plants -->
+					<BMT_Kelp>1.5</BMT_Kelp>
+					<BMT_SeaGrass>4.0</BMT_SeaGrass>
+					<BMT_Seaweed>4.0</BMT_Seaweed>
+					<BMT_GreenAlgae>0.3</BMT_GreenAlgae>
+					<BMT_Murkweed>0.1</BMT_Murkweed>
+					<BMT_WhiteAlgae>0.8</BMT_WhiteAlgae>
+					<BMT_Sargassum>1.5</BMT_Sargassum>
+
+				</wildPlants>
+
+				<!-- use the operation "add" to append entries to the wildAnimals of the main biome -->
+				<wildAnimals operation="add">
+
+					<!-- land grazers -->
+					<BMT_ClutterCrab>0.4</BMT_ClutterCrab>
+					<BMT_Seagull>1.3</BMT_Seagull>
+					<BMT_FiddlerCrab>0.8</BMT_FiddlerCrab>
+					<BMT_HermitCrab>0.2</BMT_HermitCrab>
+					<BMT_SeaTurtle>0.5</BMT_SeaTurtle>
+					<BMT_MarineIguana>0.7</BMT_MarineIguana>
+					<BMT_LeatherbackTurtle>0.3</BMT_LeatherbackTurtle>
+					<BMT_PhoebaniaRat>0.1</BMT_PhoebaniaRat>
+					<BMT_GalapagosTortoise>0.5</BMT_GalapagosTortoise>
+					<BMT_SeaOtter>0.01</BMT_SeaOtter>
+
+					<!-- land predators -->
+					<BMT_KomodoDragon>0.05</BMT_KomodoDragon>
+
+					<!-- aquatic grazers -->
+					<BMT_Sardine>1.5</BMT_Sardine>
+					<BMT_SunfinAngelfish>1.0</BMT_SunfinAngelfish>
+					<BMT_OrchidBasslet>1.0</BMT_OrchidBasslet>
+					<BMT_LimepeelAngelfish>1.5</BMT_LimepeelAngelfish>
+					<BMT_GreenEel>1.0</BMT_GreenEel>
+					<BMT_Trout>0.15</BMT_Trout>
+					<BMT_BoomWhale>1.0</BMT_BoomWhale>
+					<BMT_Parrotfish>1.5</BMT_Parrotfish>
+					<BMT_MantaRay>0.05</BMT_MantaRay>
+
+					<!-- aquatic predators -->
+					<BMT_RedSnapper>0.3</BMT_RedSnapper>
+					<BMT_Tuna>0.45</BMT_Tuna>
+					<BMT_Hammerhead>0.2</BMT_Hammerhead>
+					<BMT_WhiteShark>0.158</BMT_WhiteShark>
+
+				</wildAnimals>
+
+			</li>
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

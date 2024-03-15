@@ -23,4 +23,9 @@
 		<li IfModActive="VanillaExpanded.VAEWaste">1.4/Mods/VanillaAnimalsExpandedWaste</li>
 		<li IfModActive="VanillaExpanded.VARME">1.4/Mods/VanillaArmourExpanded</li>
 	</v1.4>
+	<v1.5>
+		<li>\</li>
+		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/DLC/Royalty</li>
+	</v1.5>
 </loadFolders>

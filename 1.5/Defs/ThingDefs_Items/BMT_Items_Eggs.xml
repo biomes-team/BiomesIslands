@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!--================== Bird eggs ==================-->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggKiwiFertilized</defName>
+		<label>kiwi egg (fert.)</label>
+		<description>A fertilized kiwi egg. If all goes well, it should hatch into a baby kiwi. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_KiwiBird</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggSeagullFertilized</defName>
+		<label>seagull egg (fert.)</label>
+		<description>A fertilized seagull egg. If all goes well, it should hatch into a baby seagull. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>28.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Seagull</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggOmegaDodoUnfertilized</defName>
+		<label>omegadodo egg (unfert.)</label>
+		<description>An unfertilized omegadodo egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(128,128,128)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19.0</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggOmegaDodoFertilized</defName>
+		<label>omegadodo egg (fert.)</label>
+		<description>A fertilized omegadodo egg. If all goes well, it should hatch into a baby omegadodo. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(128,128,128)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19.0</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_OmegaDodo</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<!--================== Crab eggs ==================-->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggRimCrabFertilized</defName>
+		<label>rimcrab egg (fert.)</label>
+		<description>A fertilized rimcrab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(95,125,140)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>35.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9</hatcherDaystoHatch>
+				<hatcherPawn>BMT_RimCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggBlueCrabFertilized</defName>
+		<label>blue crab egg (fert.)</label>
+		<description>A fertilized blue crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(140,181,201)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>35.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9</hatcherDaystoHatch>
+				<hatcherPawn>BMT_BlueCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggFiddlerCrabFertilized</defName>
+		<label>fiddler crab egg (fert.)</label>
+		<description>A fertilized fiddler crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(201,171,140)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>35.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9</hatcherDaystoHatch>
+				<hatcherPawn>BMT_FiddlerCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggHermitCrabFertilized</defName>
+		<label>hermit crab egg (fert.)</label>
+		<description>A fertilized hermit crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(212,75,75)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>35.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9</hatcherDaystoHatch>
+				<hatcherPawn>BMT_HermitCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggClutterCrabFertilized</defName>
+		<label>clutter crab egg (fert.)</label>
+		<description>A fertilized clutter crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(177,224,224)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>55.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12</hatcherDaystoHatch>
+				<hatcherPawn>BMT_ClutterCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<!--================== Reptile eggs ==================-->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggGigantacondaFertilized</defName>
+		<label>gigantaconda egg (fert.)</label>
+		<description>A fertilized gigantaconda egg. If all goes well, it should hatch into a baby gigantaconda. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(220,230,180)</color>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>88.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>11</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Gigantaconda</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggSeaTurtleFertilized</defName>
+		<label>sea turtle egg (fert.)</label>
+		<description>A fertilized sea turtle egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>35.0</MarketValue>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>BMT_SeaTurtle</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggLeatherbackTurtleFertilized</defName>
+		<label>leatherback turtle egg (fert.)</label>
+		<description>A fertilized sea turtle egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>40.0</MarketValue>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>BMT_LeatherbackTurtle</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggMarineIguanaFertilized</defName>
+		<label>marine iguana egg (fert.)</label>
+		<description>A fertilized marine iguana egg. If all goes well, it should hatch into a baby iguana. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_MarineIguana</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggGreenGeckoFertilized</defName>
+		<label>green gecko egg (fert.)</label>
+		<description>A fertilized marine iguana egg. If all goes well, it should hatch into a gecko. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_GreenGecko</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggGalapagosTortoiseFertilized</defName>
+		<label>galapagos tortoise egg (fert.)</label>
+		<description>A fertilized galapagos tortoise egg. If all goes well, it should hatch into a baby tortoise. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(226,222,207)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>33.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_GalapagosTortoise</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<!--================== Misc land eggs ==================-->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggMegamantisFertilized</defName>
+		<label>megamantis egg (fert.)</label>
+		<description>A fertilized megamantis egg. If all goes well, it should hatch into a baby megamantis. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Megamantis</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggKomodoDragonFertilized</defName>
+		<label>komodo dragon egg (fert.)</label>
+		<description>A fertilized komodo dragon egg. If all goes well, it should hatch into a baby koodo dragon. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(206,222,236)</color>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_KomodoDragon</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

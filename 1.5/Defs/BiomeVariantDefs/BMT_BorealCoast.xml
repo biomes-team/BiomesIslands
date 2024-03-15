@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_BorealCoast</defName>
+
+		<label>boreal coast</label>
+
+		<biomeLabel operation="appendPar">coast</biomeLabel>
+		<biomeDescription operation="appendLine">A boreal coast borders this tile.</biomeDescription>
+
+		<worldTileConditions>
+			<coast>Ocean</coast>
+			<anyOf>
+				<biome>BorealForest</biome>
+				<biome>ColdBog</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<layers>
+			<li>
+
+				<!-- use the operation "add" to append entries to the wildPlants of the main biome -->
+				<wildPlants operation="add">
+
+					<!-- land plants -->
+					<BMT_Lavender>1</BMT_Lavender>
+
+					<!-- water plants -->
+					<BMT_Kelp>0.7</BMT_Kelp>
+					<BMT_SeaGrass>1.5</BMT_SeaGrass>
+					<BMT_Seaweed>6.0</BMT_Seaweed>
+					<BMT_Murkweed>1.2</BMT_Murkweed>
+					<BMT_WhiteAlgae>0.5</BMT_WhiteAlgae>
+
+				</wildPlants>
+
+				<!-- use the operation "add" to append entries to the wildAnimals of the main biome -->
+				<wildAnimals operation="add">
+
+					<!-- land grazers -->
+					<BMT_ShetlandPony>1</BMT_ShetlandPony>
+					<BMT_Seagull>1</BMT_Seagull>
+					<BMT_OmegaDodo>0.5</BMT_OmegaDodo>
+					<BMT_BlueCrab>0.5</BMT_BlueCrab>
+					<BMT_SeaTurtle>0.05</BMT_SeaTurtle>
+					<BMT_PhoebaniaRat>0.05</BMT_PhoebaniaRat>
+					<BMT_SeaOtter>0.5</BMT_SeaOtter>
+
+					<!-- aquatic grazers -->
+					<BMT_Sardine>1.8</BMT_Sardine>
+					<BMT_Obsidianfin>0.7</BMT_Obsidianfin>
+					<BMT_Trout>1.5</BMT_Trout>
+					<BMT_Whale>0.05</BMT_Whale>
+
+					<!-- aquatic predators -->
+					<BMT_Tuna>0.3</BMT_Tuna>
+					<BMT_WhiteShark>0.18</BMT_WhiteShark>
+
+				</wildAnimals>
+
+			</li>
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

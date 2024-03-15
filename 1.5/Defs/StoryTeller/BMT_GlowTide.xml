@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GameConditionDef>
+		<defName>BMT_GlowTide</defName>
+		<conditionClass>BiomesIslands.Incidents.GameCondition_GlowTide</conditionClass>
+		<label>bioluminescent tide</label>
+		<description>Beautiful glowing plankton are lighting up the sea.</description>
+		<endMessage>The tide is passing.</endMessage>
+		<letterText>Shifting currents bring a bloom of glowing plankton to your island.\n\nIt will pass in a few days.
+		</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<exclusiveConditions>
+			<li>Aurora</li>
+			<li>ToxicFallout</li>
+		</exclusiveConditions>
+	</GameConditionDef>
+
+	<IncidentDef>
+		<defName>BMT_GlowTide</defName>
+		<label>bioluminescent tide</label>
+		<category>Misc</category>
+		<allowedBiomes>
+			<li>BMT_Atoll</li>
+			<li>BMT_BorealIsland</li>
+			<li>BMT_BorealArchipelago</li>
+			<li>BMT_DesertIsland</li>
+			<li>BMT_DesertArchipelago</li>
+			<li>BMT_TropicalIsland</li>
+			<li>BMT_TropicalArchipelago</li>
+			<li>BMT_TundraIsland</li>
+			<li>BMT_TundraArchipelago</li>
+			<li>BMT_TemperateIsland</li>
+			<li>BMT_TemperateArchipelago</li>
+		</allowedBiomes>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>BiomesIslands.Incidents.Incident_GlowTide</workerClass>
+		<baseChance>0.25</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<letterLabel>Bioluminescent tide</letterLabel>
+		<letterDef>PositiveEvent</letterDef>
+		<tale>BMT_GlowTide</tale>
+		<durationDays>1.5~3.5</durationDays>
+		<gameCondition>BMT_GlowTide</gameCondition>
+	</IncidentDef>
+
+
+	<TaleDef>
+		<defName>BMT_GlowTide</defName>
+		<label>bioluminescent tide</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Volatile</type>
+		<baseInterest>10</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->the time an eerie tide washed over [PAWN_nameDef]'s [Community]</li>
+				<li>tale_noun->the time [PAWN_nameDef]'s [Community] was surrounded by glowing plankton</li>
+				<li>tale_noun->the time the water around [PAWN_nameDef]'s [Community] was filled with bioluminescence</li>
+				<li>tale_noun->[PAWN_nameDef]'s [Community] illuminated by soft organic light</li>
+				<li>image->the water illuminated in [Color]s [circumstance_phrase]</li>
+				<li>image->a tide of [Color] lights [circumstance_phrase]</li>
+				<li>image->dancing [Color] lights [circumstance_group]</li>
+				<li>image->an entrancing pattern of lights [circumstance_phrase]</li>
+				<li>circumstance_phrase->next to a [TerrainFeature]</li>
+				<li>circumstance_phrase->surrounding a [TerrainFeature]</li>
+				<li>circumstance_phrase->illuminating a [TerrainFeature]</li>
+				<li>circumstance_phrase->floating next to a [Community]</li>
+				<li>circumstance_phrase->filling the water next to a [Community]</li>
+				<li>circumstance_phrase->with a [AdjectiveFriendly] expression</li>
+				<li>desc_sentence->Nearby, [PAWN_nameDef] plays [Game] with a [AdjectiveFriendly] look.</li>
+				<li>desc_sentence->[PAWN_nameDef] watches with awe on [PAWN_possessive] face.</li>
+				<li>desc_sentence->[Quantity_adjphrase] [PersonJob]s watch from the shore.</li>
+				<li>desc_sentence->[PAWN_nameDef] sits near a [TerrainFeature], gazing at the ocean.</li>
+				<li>desc_sentence->[Quantity_adjphrase] [Animal]s swim peacefully.</li>
+				<li>desc_sentence->There is no [Enemy] in sight.</li>
+				<li>desc_sentence->The moon rises over a [TerrainFeature].</li>
+				<li>action->gazing in amazement</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+
+</Defs>

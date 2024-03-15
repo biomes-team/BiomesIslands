@@ -44,7 +44,7 @@ namespace BiomesIslands.Incidents
 				GenSpawn.Spawn(newThing, closeLocation, map, rot);
 			}
 
-			Find.MusicManagerPlay.ForceStartSong(BiomesIslandsDefOf.Biomes_LobsterRave, false);
+			Find.MusicManagerPlay.ForcePlaySong(BiomesIslandsDefOf.Biomes_LobsterRave, false);
 
 			string crabText = crabKindDef.GetLabelPlural().CapitalizeFirst();
 			string letterLabel = string.Format(def.letterLabel, crabText);

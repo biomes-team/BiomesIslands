@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================ Baitfish Base ================ -->
+	<LifeStageDef ParentName="AnimalBaby" Abstract="true" Name="BMT_BaitfishBabyTinyBase">
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.4</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef Name="BMT_BaitfishJuvenileBase" Abstract="true">
+		<defName>BMT_BaitfishJuvenileBase</defName>
+		<label>juvenile</label>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef Name="BMT_BaitfishAdultBase" Abstract="true">
+		<defName>BMT_BaitfishAdultBase</defName>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
+
+	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail" Abstract="true"
+	          Name="BMT_BaitfishBase">
+		<defName>BMT_BaitfishBase</defName>
+		<label>fish</label>
+		<description>A small schooling fish.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>1.4</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1.5</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.4</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>false</predator>
+			<body>BMT_FishBody</body>
+			<leatherDef>BMT_Leather_Fishskin</leatherDef>
+			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<baseHungerRate>0.15</baseHungerRate>
+			<baseBodySize>0.12</baseBodySize>
+			<baseHealthScale>0.20</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<packAnimal>false</packAnimal>
+			<wildness>0.55</wildness>
+			<nuzzleMtbHours>50</nuzzleMtbHours>
+			<petness>0.05</petness>
+			<lifeExpectancy>3</lifeExpectancy>
+			<trainability>None</trainability>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.25</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase" Abstract="true" Name="BMT_BaseBaitfish">
+		<combatPower>15</combatPower>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<wildGroupSize>5~15</wildGroupSize>
+	</PawnKindDef>
+
+</Defs>

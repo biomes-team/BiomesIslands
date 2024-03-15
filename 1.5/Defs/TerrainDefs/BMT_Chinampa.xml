@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="BMT_Chinampa_Base">
+		<defName>BMT_Chinampa_Coral</defName>
+		<label>coral chinampa</label>
+		<costList>
+			<BMT_ChunkCoral>1</BMT_ChunkCoral>
+		</costList>
+	</TerrainDef>
+	
+</Defs>

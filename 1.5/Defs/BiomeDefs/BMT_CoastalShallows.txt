@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef>
+		<defName>BMT_CoastalShallows</defName>
+		<label>coastal shallows</label>
+		<description>Shallow water is suitable for both fish and you.</description>
+		<!-- ToDo: Replace workerClass. Generates only on tiles next to coasts, but on the ocean side. -->
+		<workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+		<canAutoChoose>false</canAutoChoose>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<animalDensity>2.5</animalDensity>
+		<plantDensity>0.65</plantDensity>
+		<settlementSelectionWeight>0.01</settlementSelectionWeight>
+		<movementDifficulty>2</movementDifficulty>
+		<texture>World/Biomes/Ocean</texture>
+		<forageability>1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>12</wildPlantRegrowDays>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<diseaseMtbDays>50</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Malaria</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>WaterOceanShallow</terrain>
+				<min>-999</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.030</perlinFrequency>
+				<minFertility>3.0</minFertility>
+				<thresholds>
+					<li>
+						<terrain>WaterOceanDeep</terrain>
+						<min>1.06</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.02</perlinFrequency>
+				<minFertility>1.5</minFertility>
+				<maxFertility>8.0</maxFertility>
+				<thresholds>
+					<!-- <li> -->
+						<!-- <terrain>Soil</terrain> -->
+						<!-- <min>-0.2</min> -->
+						<!-- <max>0.1</max> -->
+					<!-- </li> -->
+					<li>
+						<terrain>Sand</terrain>
+						<min>0.35</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>3</Rain>
+			<DryThunderstorm>0.3</DryThunderstorm>
+			<RainyThunderstorm>1.7</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<!-- land plants -->
+			<Plant_Grass>5.0</Plant_Grass>
+			<Plant_TallGrass>2.0</Plant_TallGrass>
+			<Plant_Brambles>1.0</Plant_Brambles>
+			<Plant_Dandelion>0.5</Plant_Dandelion>
+			<Plant_Bush>0.6</Plant_Bush>
+			<Plant_TreeOak>0.6</Plant_TreeOak>
+			<Plant_TreePoplar>0.6</Plant_TreePoplar>
+			<Plant_Berry>0.05</Plant_Berry>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<BMT_OrangeTree>0.05</BMT_OrangeTree>
+			<BMT_Fern>0.8</BMT_Fern>
+			<BMT_FloweringFern>0.1</BMT_FloweringFern>
+			<BMT_Lavender>0.1</BMT_Lavender>
+
+			<!-- water plants -->
+			<BMT_SeaGrass>7.0</BMT_SeaGrass>
+			<BMT_Seaweed>2</BMT_Seaweed>
+			<BMT_Kelp>0.7</BMT_Kelp>
+			<BMT_SeaSponge>0.05</BMT_SeaSponge>
+			<BMT_GreenAlgae>0.3</BMT_GreenAlgae>
+			<BMT_Sargassum>0.1</BMT_Sargassum>
+		</wildPlants>
+		<wildAnimals>
+			<!-- land grazers -->
+			<Donkey>0.20</Donkey>
+			<GuineaPig>0.45</GuineaPig>
+			<!-- <Yak>0.06</Yak> -->
+			<Bison>0.07</Bison>
+			<Horse>0.20</Horse>
+			<Hare>1.0</Hare>
+			<Squirrel>1.0</Squirrel>
+			<Rat>1.0</Rat>
+			<Deer>0.5</Deer>
+			<WildBoar>0.5</WildBoar>
+			<Turkey>0.5</Turkey>
+			<Raccoon>0.5</Raccoon>
+			<Ibex>0.5</Ibex>
+			<Muffalo>0.5</Muffalo>
+			<Alpaca>0.5</Alpaca>
+			<Boomalope>0.4</Boomalope>
+			<Boomrat>0.4</Boomrat>
+			<Tortoise>0.3</Tortoise>
+			<Gazelle>0.3</Gazelle>
+			<BMT_PhoebaniaRat>0.1</BMT_PhoebaniaRat>
+			<BMT_SeaOtter>0.08</BMT_SeaOtter>
+
+			<!-- <Megasloth>0.2</Megasloth> -->
+			<Rhinoceros>0.1</Rhinoceros>
+			<BMT_Seagull>0.6</BMT_Seagull>
+			<BMT_BlueCrab>0.2</BMT_BlueCrab>
+			<BMT_SeaTurtle>0.5</BMT_SeaTurtle>
+			<BMT_GreenGecko>0.4</BMT_GreenGecko>
+
+			<BMT_LeatherbackTurtle>0.3</BMT_LeatherbackTurtle>
+
+			<!-- land predators -->
+			<Bear_Grizzly>0.07</Bear_Grizzly>
+			<Wolf_Timber>0.05</Wolf_Timber>
+			<Fox_Red>0.07</Fox_Red>
+			<Cougar>0.05</Cougar>
+			<Lynx>0.07</Lynx>
+			<Warg>0.07</Warg>
+			<BMT_Megamantis>0.05</BMT_Megamantis>
+
+			<!-- water grazers -->
+			<BMT_Sunfish>0.1</BMT_Sunfish>
+			<BMT_Sardine>1.0</BMT_Sardine>
+			<BMT_SunfinAngelfish>0.3</BMT_SunfinAngelfish>
+			<BMT_OrangepeelAngelfish>0.5</BMT_OrangepeelAngelfish>
+			<BMT_LimepeelAngelfish>0.5</BMT_LimepeelAngelfish>
+			<BMT_Muckfrill>1.0</BMT_Muckfrill>
+			<BMT_BlueSeaSnail>0.4</BMT_BlueSeaSnail>
+
+			<BMT_GreenEel>0.5</BMT_GreenEel>
+			<BMT_Trout>1.5</BMT_Trout>
+			<BMT_MantaRay>0.08</BMT_MantaRay>
+
+			<!-- water predators -->
+			<BMT_Lionfish>0.2</BMT_Lionfish>
+			<BMT_Tuna>0.2</BMT_Tuna>
+			<BMT_Swordfish>0.06</BMT_Swordfish>
+			<BMT_WhiteShark>0.05</BMT_WhiteShark>
+			<BMT_RedSnapper>0.15</BMT_RedSnapper>
+
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Alpaca</li>
+		</allowedPackAnimals>
+
+		<pollutionWildAnimals>
+			<Boomalope>0.1</Boomalope>
+			<Boomrat>0.3</Boomrat>
+			<Megascarab>0.4</Megascarab>
+			<Raccoon>0.4</Raccoon>
+			<Rat>1</Rat>
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.2</Toxalope>
+			<Warg>0.05</Warg>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.3</WasteRat>
+		</pollutionWildAnimals>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.BiomesMap">
+				<isIsland>true</isIsland>
+				<hasScatterables>true</hasScatterables>
+				<allowBeach>false</allowBeach>
+				<islandShapes>
+					<li>Smooth</li>
+					<li>Rough</li>
+					<li>Crescent</li>
+					<li>Pair</li>
+				</islandShapes>
+			</li>
+			<li Class="BiomesKit.BiomesKitControls">
+				<materialPath>BiomesIslands_World/MapGraphics/Placeholder</materialPath>
+				<frequency>5</frequency>
+				<materialLayer>3509</materialLayer>
+				<allowOnWater>true</allowOnWater>
+				<allowOnLand>false</allowOnLand>
+			</li>
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<isWaterCovered>true</isWaterCovered>
+				<allowLandforms>false</allowLandforms>
+				<allowBiomeTransitions>false</allowBiomeTransitions>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+
+</Defs>

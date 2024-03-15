@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<SongDef>
+		<clipPath>Biomes_BeachNomad</clipPath>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+				<biomeDefNameRestrictions>
+					<li>BMT_Atoll</li>
+					<li>BMT_BorealIsland</li>
+					<li>BMT_BorealArchipelago</li>
+					<li>BMT_DesertIsland</li>
+					<li>BMT_DesertArchipelago</li>
+					<li>BMT_TundraIsland</li>
+					<li>BMT_TundraArchipelago</li>
+					<li>BMT_TropicalIsland</li>
+					<li>BMT_TropicalArchipelago</li>
+				</biomeDefNameRestrictions>
+			</li>
+		</modExtensions>
+	</SongDef>
+
+	<SongDef>
+		<clipPath>Biomes_Island</clipPath>
+		<allowedTimeOfDay>Day</allowedTimeOfDay>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+				<biomeDefNameRestrictions>
+					<li>BMT_Atoll</li>
+					<li>BMT_TropicalIsland</li>
+					<li>BMT_TropicalArchipelago</li>
+				</biomeDefNameRestrictions>
+			</li>
+		</modExtensions>
+	</SongDef>
+
+	<SongDef>
+		<clipPath>Biomes_Isolate</clipPath>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+				<biomeDefNameRestrictions>
+					<li>BMT_Atoll</li>
+					<li>BMT_TropicalIsland</li>
+					<li>BMT_TropicalArchipelago</li>
+				</biomeDefNameRestrictions>
+			</li>
+		</modExtensions>
+	</SongDef>
+
+	<SongDef>
+		<clipPath>Biomes_LobsterRave</clipPath>
+		<allowedTimeOfDay>Day</allowedTimeOfDay>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+				<biomeDefNameRestrictions>
+					<li>BMT_Atoll</li>
+					<li>BMT_TropicalIsland</li>
+					<li>BMT_TropicalArchipelago</li>
+				</biomeDefNameRestrictions>
+			</li>
+		</modExtensions>
+	</SongDef>
+
+	<SongDef>
+		<clipPath>Biomes_SunsetDrift</clipPath>
+		<allowedTimeOfDay>Night</allowedTimeOfDay>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Song_MapRestrictions">
+				<biomeDefNameRestrictions>
+					<li>BMT_Atoll</li>
+					<li>BMT_BorealIsland</li>
+					<li>BMT_BorealArchipelago</li>
+					<li>BMT_DesertIsland</li>
+					<li>BMT_DesertArchipelago</li>
+					<li>BMT_TundraIsland</li>
+					<li>BMT_TundraArchipelago</li>
+					<li>BMT_TropicalIsland</li>
+					<li>BMT_TropicalArchipelago</li>
+				</biomeDefNameRestrictions>
+			</li>
+		</modExtensions>
+	</SongDef>
+</Defs>

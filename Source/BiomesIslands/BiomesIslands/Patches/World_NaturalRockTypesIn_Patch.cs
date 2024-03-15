@@ -14,17 +14,17 @@ namespace BiomesIslands.Patches
 	{
 		public static IEnumerable<ThingDef> Postfix(IEnumerable<ThingDef> values, int tile, World __instance)
 		{
-			if (__instance.grid[tile].biome == BiomesIslandsDefOf.BiomesIslands_Atoll)
+			if (__instance.grid[tile].biome == BiomesIslandsDefOf.BMT_Atoll)
 			{
 				// Atolls must only have coral rock.
-				yield return BiomesIslandsDefOf.BiomesIslands_CoralRock;
+				yield return BiomesIslandsDefOf.BMT_CoralRock;
 			}
 			else
 			{
 				// Other biomes must not contain coral rock.
 				foreach (ThingDef rockType in values)
 				{
-					if (rockType != BiomesIslandsDefOf.BiomesIslands_CoralRock)
+					if (rockType != BiomesIslandsDefOf.BMT_CoralRock)
 					{
 						yield return rockType;
 					}
