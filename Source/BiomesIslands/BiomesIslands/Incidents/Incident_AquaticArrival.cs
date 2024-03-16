@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using PathfindingFramework;
+using PathfindingFramework.ExtensionMethodCaches;
 using PathfindingFramework.Patches;
 using RimWorld;
 using RimWorld.Planet;
