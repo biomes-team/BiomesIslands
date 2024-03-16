@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TerrainDef[defName="WaterDeep" or defName="WaterOceanDeep"]/fertility</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TerrainDef[defName="WaterDeep" or defName="WaterOceanDeep"]</xpath>
+			<value>
+				<fertility>0.3</fertility>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>
