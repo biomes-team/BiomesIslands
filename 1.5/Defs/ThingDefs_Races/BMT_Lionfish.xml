@@ -52,10 +52,10 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>BMT_FishBody</body>
-			<!-- <leatherDef>BMT_Leather_Sharkskin</leatherDef> -->
-			<leatherDef>BMT_Leather_Fishskin</leatherDef>
-			<!-- <useMeatFrom>BMT_WhiteShark</useMeatFrom> -->
+			<body>Biomes_FishBody</body>
+			<!-- <leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef> -->
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<!-- <useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom> -->
 			<baseHungerRate>0.7</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
 			<baseHealthScale>0.3</baseHealthScale>
@@ -73,15 +73,15 @@
 			<specificMeatDef>BMT_FishMeat</specificMeatDef>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WhiteSharkBabyTiny</def>
+					<def>BiomesIslands_WhiteSharkBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WhiteSharkJuvenile</def>
+					<def>BiomesIslands_WhiteSharkJuvenile</def>
 					<minAge>0.4</minAge>
 				</li>
 				<li>
-					<def>BMT_WhiteSharkAdult</def>
+					<def>BiomesIslands_WhiteSharkAdult</def>
 					<minAge>0.8</minAge>
 				</li>
 			</lifeStageAges>

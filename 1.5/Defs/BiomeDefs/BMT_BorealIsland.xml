@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<BiomeDef Name="BMT_BorealIslandBase" Abstract="True">
+	<BiomeDef Name="BiomesIslands_BorealIslandBase" Abstract="True">
 		<label>boreal island</label>
 		<description>Blanketed with coniferous forests and kissed by cold winds, boreal islands offer solitude amid nature. Though winters are long and harsh, the land is rich with game, and the trees provide ample shelter and resources.</description>
 		<canAutoChoose>false</canAutoChoose>
@@ -67,7 +67,7 @@
 				<max>1.0</max>
 			</li>
 			<li>
-				<terrain>BMT_Pebbles</terrain>
+				<terrain>BiomesCore_Pebbles</terrain>
 				<min>1.0</min>
 				<max>3.0</max>
 			</li>
@@ -139,19 +139,19 @@
 			<Plant_TreePoplar>1.2</Plant_TreePoplar>
 			<Plant_Berry>0.16</Plant_Berry>
 			<Plant_HealrootWild>0.16</Plant_HealrootWild>
-			<BMT_Lavender>1</BMT_Lavender>
+			<BiomesIslands_Lavender>1</BiomesIslands_Lavender>
 			<!-- water plants -->
-			<BMT_Kelp>0.7</BMT_Kelp>
-			<BMT_SeaGrass>1.5</BMT_SeaGrass>
-			<BMT_Seaweed>6.0</BMT_Seaweed>
-			<BMT_Murkweed>1.2</BMT_Murkweed>
-			<BMT_WhiteAlgae>0.5</BMT_WhiteAlgae>
+			<BiomesIslands_Kelp>0.7</BiomesIslands_Kelp>
+			<BiomesIslands_SeaGrass>1.5</BiomesIslands_SeaGrass>
+			<BiomesIslands_Seaweed>6.0</BiomesIslands_Seaweed>
+			<BiomesIslands_Murkweed>1.2</BiomesIslands_Murkweed>
+			<BiomesIslands_WhiteAlgae>0.5</BiomesIslands_WhiteAlgae>
 		</wildPlants>
 		<wildAnimals>
 			<!-- land grazers -->
 			<Yak>0.12</Yak>
 			<Horse>0.15</Horse>
-			<BMT_ShetlandPony>1</BMT_ShetlandPony>
+			<BiomesIslands_ShetlandPony>1</BiomesIslands_ShetlandPony>
 			<Squirrel>1</Squirrel>
 			<Hare>1</Hare>
 			<Rat>1</Rat>
@@ -164,11 +164,11 @@
 			<Turkey>0.5</Turkey>
 			<Deer>0.5</Deer>
 			<Megasloth>0.1</Megasloth>
-			<BMT_Seagull>1</BMT_Seagull>
-			<BMT_OmegaDodo>0.5</BMT_OmegaDodo>
-			<BMT_BlueCrab>0.5</BMT_BlueCrab>
-			<BMT_SeaTurtle>0.05</BMT_SeaTurtle>
-			<BMT_PhoebaniaRat>0.05</BMT_PhoebaniaRat>
+			<BiomesIslands_Seagull>1</BiomesIslands_Seagull>
+			<BiomesIslands_OmegaDodo>0.5</BiomesIslands_OmegaDodo>
+			<BiomesIslands_BlueCrab>0.5</BiomesIslands_BlueCrab>
+			<BiomesIslands_SeaTurtle>0.05</BiomesIslands_SeaTurtle>
+			<BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
 			<BMT_SeaOtter>0.5</BMT_SeaOtter>
 
 			<!-- land predators -->
@@ -183,17 +183,17 @@
 
 			<!-- aquatic grazers -->
 			<BMT_Sunfish>0.1</BMT_Sunfish>
-			<BMT_Sardine>1.8</BMT_Sardine>
+			<BiomesIslands_Sardine>1.8</BiomesIslands_Sardine>
 			<BMT_Obsidianfin>0.7</BMT_Obsidianfin>
 
-			<BMT_Trout>1.5</BMT_Trout>
-			<BMT_Whale>0.05</BMT_Whale>
+			<BiomesIslands_Trout>1.5</BiomesIslands_Trout>
+			<BiomesIslands_Whale>0.05</BiomesIslands_Whale>
 
 			<!-- aquatic predators -->
 			<BMT_Dolphin>0.3</BMT_Dolphin>
 			<BMT_Swordfish>0.09</BMT_Swordfish>
-			<BMT_Tuna>0.3</BMT_Tuna>
-			<BMT_WhiteShark>0.18</BMT_WhiteShark>
+			<BiomesIslands_Tuna>0.3</BiomesIslands_Tuna>
+			<BiomesIslands_WhiteShark>0.18</BiomesIslands_WhiteShark>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
@@ -210,8 +210,8 @@
 		</pollutionWildAnimals>
 	</BiomeDef>
 
-	<BiomeDef ParentName="BMT_BorealIslandBase">
-		<defName>BMT_BorealIsland</defName>
+	<BiomeDef ParentName="BiomesIslands_BorealIslandBase">
+		<defName>BiomesIslands_BorealIsland</defName>
 		<label>boreal island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_BorealIsland</workerClass>
 		<modExtensions>
@@ -236,8 +236,8 @@
 		</modExtensions>
 	</BiomeDef>
 
-	<BiomeDef ParentName="BMT_BorealIslandBase">
-		<defName>BMT_BorealArchipelago</defName>
+	<BiomeDef ParentName="BiomesIslands_BorealIslandBase">
+		<defName>BiomesIslands_BorealArchipelago</defName>
 		<label>boreal Archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_BorealArchipelago</workerClass>
 		<modExtensions>

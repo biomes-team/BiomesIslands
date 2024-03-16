@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_BaitfishBase">
-		<defName>BMT_Sardine</defName>
+		<defName>BiomesIslands_Sardine</defName>
 		<label>sardine</label>
 		<description>A small schooling fish.</description>
 		<statBases>
@@ -11,7 +11,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggSardineFertilized</eggFertilizedDef>
+				<eggFertilizedDef>EggSardineFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>12</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -27,10 +27,10 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="BMT_BaseBaitfish">
-		<defName>BMT_Sardine</defName>
+		<defName>BiomesIslands_Sardine</defName>
 		<label>sardine</label>
 		<description>A small schooling fish.</description>
-		<race>BMT_Sardine</race>
+		<race>BiomesIslands_Sardine</race>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

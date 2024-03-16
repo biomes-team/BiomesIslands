@@ -4,7 +4,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_WhiteSharkBabyTiny</defName>
+		<defName>BiomesIslands_WhiteSharkBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -13,7 +13,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_WhiteSharkJuvenile</defName>
+		<defName>BiomesIslands_WhiteSharkJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -28,7 +28,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_WhiteSharkAdult</defName>
+		<defName>BiomesIslands_WhiteSharkAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -37,7 +37,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_WhiteShark</defName>
+		<defName>BiomesIslands_WhiteShark</defName>
 		<label>great white shark</label>
 		<description>A large species of mackarel shark. Feared for their power and sharp teeth, they live mainly in warm waters and prefer to hunt large prey.</description>
 		<statBases>
@@ -80,8 +80,8 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>BMT_SharkBody</body>
-			<leatherDef>BMT_Leather_Sharkskin</leatherDef>
+			<body>Biomes_SharkBody</body>
+			<leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef>
 			<baseHungerRate>0.7</baseHungerRate>
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>3.0</baseHealthScale>
@@ -98,15 +98,15 @@
 			<specificMeatDef>BMT_FishMeat</specificMeatDef>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WhiteSharkBabyTiny</def>
+					<def>BiomesIslands_WhiteSharkBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WhiteSharkJuvenile</def>
+					<def>BiomesIslands_WhiteSharkJuvenile</def>
 					<minAge>0.4</minAge>
 				</li>
 				<li>
-					<def>BMT_WhiteSharkAdult</def>
+					<def>BiomesIslands_WhiteSharkAdult</def>
 					<minAge>0.8</minAge>
 				</li>
 			</lifeStageAges>
@@ -117,9 +117,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_WhiteShark</defName>
+		<defName>BiomesIslands_WhiteShark</defName>
 		<label>white shark</label>
-		<race>BMT_WhiteShark</race>
+		<race>BiomesIslands_WhiteShark</race>
 		<combatPower>200</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
@@ -174,7 +174,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_HammerheadBabyTiny</defName>
+		<defName>BiomesIslands_HammerheadBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -183,7 +183,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_HammerheadJuvenile</defName>
+		<defName>BiomesIslands_HammerheadJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -198,7 +198,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_HammerheadAdult</defName>
+		<defName>BiomesIslands_HammerheadAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -207,7 +207,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_Hammerhead</defName>
+		<defName>BiomesIslands_Hammerhead</defName>
 		<label>hammerhead shark</label>
 		<description>A large species of sphyrnidae shark. Recognized by the unique and striking head they have, they live mainly near coastal regions feeding on medium size prey.</description>
 		<statBases>
@@ -250,8 +250,8 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>BMT_SharkBody</body>
-			<leatherDef>BMT_Leather_Sharkskin</leatherDef>
+			<body>Biomes_SharkBody</body>
+			<leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef>
 			<baseHungerRate>0.7</baseHungerRate>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>2.0</baseHealthScale>
@@ -265,18 +265,18 @@
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
-					<def>BMT_HammerheadBabyTiny</def>
+					<def>BiomesIslands_HammerheadBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_HammerheadJuvenile</def>
+					<def>BiomesIslands_HammerheadJuvenile</def>
 					<minAge>0.4</minAge>
 				</li>
 				<li>
-					<def>BMT_HammerheadAdult</def>
+					<def>BiomesIslands_HammerheadAdult</def>
 					<minAge>0.8</minAge>
 				</li>
 			</lifeStageAges>
@@ -287,9 +287,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Hammerhead</defName>
+		<defName>BiomesIslands_Hammerhead</defName>
 		<label>hammerhead</label>
-		<race>BMT_Hammerhead</race>
+		<race>BiomesIslands_Hammerhead</race>
 		<combatPower>150</combatPower>
 		<ecoSystemWeight>0.4</ecoSystemWeight>
 		<lifeStages>
@@ -342,7 +342,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_TunaBabyTiny</defName>
+		<defName>BiomesIslands_TunaBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -351,7 +351,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_TunaJuvenile</defName>
+		<defName>BiomesIslands_TunaJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -366,7 +366,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_TunaAdult</defName>
+		<defName>BiomesIslands_TunaAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -375,7 +375,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_Tuna</defName>
+		<defName>BiomesIslands_Tuna</defName>
 		<label>tuna</label>
 		<description>A large carnivorous fish. Will eat anything they can swallow whole. Fortunately, they are not large enough to swallow people.</description>
 		<statBases>
@@ -417,7 +417,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggTunaFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggTunaFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -427,8 +427,8 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>BMT_FishBody</body>
-			<leatherDef>BMT_Leather_Fishskin</leatherDef>
+			<body>Biomes_FishBody</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<baseHungerRate>0.85</baseHungerRate>
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
@@ -441,7 +441,7 @@
 			<trainability>Intermediate</trainability>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -453,15 +453,15 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>BMT_TunaBabyTiny</def>
+					<def>BiomesIslands_TunaBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_TunaJuvenile</def>
+					<def>BiomesIslands_TunaJuvenile</def>
 					<minAge>0.2</minAge>
 				</li>
 				<li>
-					<def>BMT_TunaAdult</def>
+					<def>BiomesIslands_TunaAdult</def>
 					<minAge>0.45</minAge>
 				</li>
 			</lifeStageAges>
@@ -472,9 +472,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Tuna</defName>
+		<defName>BiomesIslands_Tuna</defName>
 		<label>tuna</label>
-		<race>BMT_Tuna</race>
+		<race>BiomesIslands_Tuna</race>
 		<combatPower>120</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
@@ -527,7 +527,7 @@
 	<!-- Snails -->
 
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_BlueSeaSnailTiny</defName>
+		<defName>BiomesIslands_BlueSeaSnailTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -536,7 +536,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_BlueSeaSnailJuvenile</defName>
+		<defName>BiomesIslands_BlueSeaSnailJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -551,7 +551,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_BlueSeaSnailAdult</defName>
+		<defName>BiomesIslands_BlueSeaSnailAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -560,7 +560,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_WaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_BlueSeaSnail</defName>
+		<defName>BiomesIslands_BlueSeaSnail</defName>
 		<label>sea snail</label>
 		<description>A diminutive aquatic mollusk. Food for fish and otters.</description>
 		<statBases>
@@ -572,7 +572,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_BlueSeaSnailFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_BlueSeaSnailFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~4</eggCountRange>
@@ -593,7 +593,7 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<body>BMT_Snail</body>
+			<body>BiomesCore_Snail</body>
 			<leatherDef>BMT_Leather_Gastropoda</leatherDef>
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseBodySize>0.15</baseBodySize>
@@ -611,15 +611,15 @@
 			<meatColor>(62,133,215)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_BlueSeaSnailTiny</def>
+					<def>BiomesIslands_BlueSeaSnailTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_BlueSeaSnailJuvenile</def>
+					<def>BiomesIslands_BlueSeaSnailJuvenile</def>
 					<minAge>0.4</minAge>
 				</li>
 				<li>
-					<def>BMT_BlueSeaSnailAdult</def>
+					<def>BiomesIslands_BlueSeaSnailAdult</def>
 					<minAge>0.8</minAge>
 				</li>
 			</lifeStageAges>
@@ -630,9 +630,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_BlueSeaSnail</defName>
+		<defName>BiomesIslands_BlueSeaSnail</defName>
 		<label>blue sea snail</label>
-		<race>BMT_BlueSeaSnail</race>
+		<race>BiomesIslands_BlueSeaSnail</race>
 		<combatPower>38</combatPower>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
 		<lifeStages>
@@ -686,7 +686,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_RedSnapperBabyTiny</defName>
+		<defName>BiomesIslands_RedSnapperBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -695,7 +695,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_RedSnapperJuvenile</defName>
+		<defName>BiomesIslands_RedSnapperJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -710,7 +710,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_RedSnapperAdult</defName>
+		<defName>BiomesIslands_RedSnapperAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -719,7 +719,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_RedSnapper</defName>
+		<defName>BiomesIslands_RedSnapper</defName>
 		<label>red snapper</label>
 		<description>A carnivorous fish. Will eat anything they can swallow whole. Fortunately, they are not large enough to swallow people.</description>
 		<statBases>
@@ -762,8 +762,8 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>BMT_FishBody</body>
-			<leatherDef>BMT_Leather_Fishskin</leatherDef>
+			<body>Biomes_FishBody</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<baseHungerRate>0.85</baseHungerRate>
 			<baseBodySize>1.3</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
@@ -776,18 +776,18 @@
 			<trainability>Intermediate</trainability>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
-					<def>BMT_RedSnapperBabyTiny</def>
+					<def>BiomesIslands_RedSnapperBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_RedSnapperJuvenile</def>
+					<def>BiomesIslands_RedSnapperJuvenile</def>
 					<minAge>0.2</minAge>
 				</li>
 				<li>
-					<def>BMT_RedSnapperAdult</def>
+					<def>BiomesIslands_RedSnapperAdult</def>
 					<minAge>0.45</minAge>
 				</li>
 			</lifeStageAges>
@@ -798,9 +798,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_RedSnapper</defName>
+		<defName>BiomesIslands_RedSnapper</defName>
 		<label>red snapper</label>
-		<race>BMT_RedSnapper</race>
+		<race>BiomesIslands_RedSnapper</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>0.4</ecoSystemWeight>
 		<lifeStages>
@@ -854,7 +854,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_TroutBabyTiny</defName>
+		<defName>BiomesIslands_TroutBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -863,7 +863,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_TroutJuvenile</defName>
+		<defName>BiomesIslands_TroutJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -878,7 +878,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_TroutAdult</defName>
+		<defName>BiomesIslands_TroutAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -887,7 +887,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_Trout</defName>
+		<defName>BiomesIslands_Trout</defName>
 		<label>trout</label>
 		<description>A large herbivorous fish.</description>
 		<statBases>
@@ -929,7 +929,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggTroutFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggTroutFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -938,8 +938,8 @@
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<body>BMT_FishBody</body>
-			<leatherDef>BMT_Leather_Fishskin</leatherDef>
+			<body>Biomes_FishBody</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<baseHungerRate>0.50</baseHungerRate>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.9</baseHealthScale>
@@ -952,18 +952,18 @@
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
-					<def>BMT_TroutBabyTiny</def>
+					<def>BiomesIslands_TroutBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_TroutJuvenile</def>
+					<def>BiomesIslands_TroutJuvenile</def>
 					<minAge>0.30</minAge>
 				</li>
 				<li>
-					<def>BMT_TroutAdult</def>
+					<def>BiomesIslands_TroutAdult</def>
 					<minAge>0.55</minAge>
 				</li>
 			</lifeStageAges>
@@ -974,9 +974,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Trout</defName>
+		<defName>BiomesIslands_Trout</defName>
 		<label>trout</label>
-		<race>BMT_Trout</race>
+		<race>BiomesIslands_Trout</race>
 		<combatPower>80</combatPower>
 		<wildGroupSize>2~5</wildGroupSize>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
@@ -1033,7 +1033,7 @@
 
 	<!-- Manta Ray -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_MantaRayBabyTiny</defName>
+		<defName>BiomesIslands_MantaRayBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -1042,7 +1042,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_MantaRayJuvenile</defName>
+		<defName>BiomesIslands_MantaRayJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -1057,7 +1057,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_MantaRayAdult</defName>
+		<defName>BiomesIslands_MantaRayAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -1066,7 +1066,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_MantaRay</defName>
+		<defName>BiomesIslands_MantaRay</defName>
 		<label>manta ray</label>
 		<description>Manta ray, closely related to sharks, can be found in warm, subtropical and tropical waters. Migrates across open oceans, singly or in groups.</description>
 		<statBases>
@@ -1110,8 +1110,8 @@
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
 			<!-- <maxPreyBodySize>0.8</maxPreyBodySize> -->
-			<body>BMT_MantaBody</body>
-			<leatherDef>BMT_Leather_Sharkskin</leatherDef>
+			<body>Biomes_MantaBody</body>
+			<leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef>
 			<baseHungerRate>0.8</baseHungerRate>
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>3.0</baseHealthScale>
@@ -1124,19 +1124,19 @@
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.6</manhunterOnDamageChance>
-			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
 
 			<lifeStageAges>
 				<li>
-					<def>BMT_MantaRayBabyTiny</def>
+					<def>BiomesIslands_MantaRayBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_MantaRayJuvenile</def>
+					<def>BiomesIslands_MantaRayJuvenile</def>
 					<minAge>0.4</minAge>
 				</li>
 				<li>
-					<def>BMT_MantaRayAdult</def>
+					<def>BiomesIslands_MantaRayAdult</def>
 					<minAge>0.8</minAge>
 				</li>
 			</lifeStageAges>
@@ -1147,9 +1147,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_MantaRay</defName>
+		<defName>BiomesIslands_MantaRay</defName>
 		<label>manta ray</label>
-		<race>BMT_MantaRay</race>
+		<race>BiomesIslands_MantaRay</race>
 		<combatPower>200</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>

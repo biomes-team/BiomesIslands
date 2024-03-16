@@ -3,7 +3,7 @@
 
 
 	<SoundDef>
-		<defName>BMT_Whale_Call</defName>
+		<defName>BiomesIslands_Whale_Call</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>
@@ -19,7 +19,7 @@
 	</SoundDef>
 
 	<SoundDef>
-		<defName>BMT_Whale_Angry</defName>
+		<defName>BiomesIslands_Whale_Angry</defName>
 		<context>MapOnly</context>
 		<subSounds>
 			<li>

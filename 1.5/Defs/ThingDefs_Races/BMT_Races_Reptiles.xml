@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_Gigantaconda</defName>
+		<defName>BiomesIslands_Gigantaconda</defName>
 		<label>gigantaconda</label>
 		<description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey and crush it to death.</description>
 		<statBases>
@@ -44,7 +44,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggGigantacondaFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggGigantacondaFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>22.0</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -103,9 +103,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Gigantaconda</defName>
+		<defName>BiomesIslands_Gigantaconda</defName>
 		<label>gigantaconda</label>
-		<race>BMT_Gigantaconda</race>
+		<race>BiomesIslands_Gigantaconda</race>
 		<combatPower>165</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>
@@ -155,7 +155,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_SeaTurtle</defName>
+		<defName>BiomesIslands_SeaTurtle</defName>
 		<label>sea turtle</label>
 		<description>This heavily armored sea-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.</description>
 		<statBases>
@@ -190,7 +190,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggSeaTurtleFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggSeaTurtleFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>30</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -206,7 +206,7 @@
 			<baseHungerRate>1</baseHungerRate>
 			<baseHealthScale>3.5</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<leatherDef>BMT_GreenChitin</leatherDef>
+			<leatherDef>BiomesCore_GreenChitin</leatherDef>
 			<wildness>0.75</wildness>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
@@ -246,9 +246,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_SeaTurtle</defName>
+		<defName>BiomesIslands_SeaTurtle</defName>
 		<label>sea turtle</label>
-		<race>BMT_SeaTurtle</race>
+		<race>BiomesIslands_SeaTurtle</race>
 		<combatPower>290</combatPower>
 		<ecoSystemWeight>1.50</ecoSystemWeight>
 		<lifeStages>
@@ -303,7 +303,7 @@
 
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_LeatherbackTurtle</defName>
+		<defName>BiomesIslands_LeatherbackTurtle</defName>
 		<label>leatherback turtle</label>
 		<description>This sea-dwelling reptile is known for its huge size and soft shell.</description>
 		<statBases>
@@ -338,7 +338,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggLeatherbackTurtleFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggLeatherbackTurtleFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>30</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -358,7 +358,7 @@
 			<wildness>0.55</wildness>
 			<lifeExpectancy>210</lifeExpectancy>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<useMeatFrom>BMT_SeaTurtle</useMeatFrom>
+			<useMeatFrom>BiomesIslands_SeaTurtle</useMeatFrom>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<lifeStageAges>
@@ -394,9 +394,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_LeatherbackTurtle</defName>
+		<defName>BiomesIslands_LeatherbackTurtle</defName>
 		<label>leatherback turtle</label>
-		<race>BMT_LeatherbackTurtle</race>
+		<race>BiomesIslands_LeatherbackTurtle</race>
 		<combatPower>90</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<wildGroupSize>1~3</wildGroupSize>
@@ -451,7 +451,7 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_MarineIguana</defName>
+		<defName>BiomesIslands_MarineIguana</defName>
 		<label>marine iguana</label>
 		<description>These large lizards normally feed on plant matter. However, when angered, their tough hide and sharp claws make them quite dangerous.\n\nResting iguanas hold their heads high, giving them an amusing 'proud' look. But they're not proud; they're just trying to see predators so they don't get eaten.</description>
 		<statBases>
@@ -502,7 +502,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggMarineIguanaFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggMarineIguanaFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -556,9 +556,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_MarineIguana</defName>
+		<defName>BiomesIslands_MarineIguana</defName>
 		<label>marine iguana</label>
-		<race>BMT_MarineIguana</race>
+		<race>BiomesIslands_MarineIguana</race>
 		<combatPower>44</combatPower>
 		<ecoSystemWeight>0.35</ecoSystemWeight>
 		<lifeStages>
@@ -609,7 +609,7 @@
 
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_GreenGecko</defName>
+		<defName>BiomesIslands_GreenGecko</defName>
 		<label>green gecko</label>
 		<description>Tiny lizards known mostly for licking their own eyeballs and shedding their tails. Their unique feet allow them to cling to even smooth walls.</description>
 		<statBases>
@@ -635,7 +635,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggGreenGeckoFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggGreenGeckoFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>30</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.6</eggProgressUnfertilizedMax>
@@ -684,9 +684,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_GreenGecko</defName>
+		<defName>BiomesIslands_GreenGecko</defName>
 		<label>green gecko</label>
-		<race>BMT_GreenGecko</race>
+		<race>BiomesIslands_GreenGecko</race>
 		<combatPower>60</combatPower>
 		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
@@ -725,7 +725,7 @@
 
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_GalapagosTortoise</defName>
+		<defName>BiomesIslands_GalapagosTortoise</defName>
 		<label>galapagos tortoise</label>
 		<description>This heavily armored island-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.</description>
 		<statBases>
@@ -761,7 +761,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggGalapagosTortoiseFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggGalapagosTortoiseFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>30</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -806,9 +806,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_GalapagosTortoise</defName>
+		<defName>BiomesIslands_GalapagosTortoise</defName>
 		<label>galapagos tortoise</label>
-		<race>BMT_GalapagosTortoise</race>
+		<race>BiomesIslands_GalapagosTortoise</race>
 		<combatPower>70</combatPower>
 		<ecoSystemWeight>0.75</ecoSystemWeight>
 		<lifeStages>

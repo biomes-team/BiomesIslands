@@ -3,7 +3,7 @@
 
 	<!-- ================== Shetland Pony ================== -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_ShetlandPony</defName>
+		<defName>BiomesIslands_ShetlandPony</defName>
 		<label>shetland pony</label>
 		<description>A large hoofed mammal with a shaggy coat, a long mane, and a long tail. Shetland ponies are smaller than horses, but better adapted for cold climates.\n\nWhen in a caravan, people can ride shetland ponies to increase the caravan's speed.</description>
 		<statBases>
@@ -102,13 +102,13 @@
 		</tradeTags>
 	</ThingDef>
 
-	<PawnKindDef Name="BMT_ShetlandPony" ParentName="AnimalKindBase">
-		<defName>BMT_ShetlandPony</defName>
+	<PawnKindDef Name="BiomesIslands_ShetlandPony" ParentName="AnimalKindBase">
+		<defName>BiomesIslands_ShetlandPony</defName>
 		<label>shetland pony</label>
 		<labelPlural>shetland ponies</labelPlural>
 		<labelMale>shetland pony stallion</labelMale>
 		<labelFemale>shetland pony mare</labelFemale>
-		<race>BMT_ShetlandPony</race>
+		<race>BiomesIslands_ShetlandPony</race>
 		<combatPower>90</combatPower>
 		<ecoSystemWeight>0.9</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>
@@ -179,7 +179,7 @@
 	<!-- This rat requires 0 handling skill, shows up on every island, and is useless except for being a good pet and training lowbie annimal handlers. -->
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>BMT_PhoebaniaRat</defName>
+		<defName>BiomesIslands_PhoebaniaRat</defName>
 		<label>phoebania rat</label>
 		<description>An unusually friendly rat found on islands around the world. Named for the high stelarch Phoebe, who keeps one as a companion and is guided by its advice.</description>
 		<statBases>
@@ -281,9 +281,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_PhoebaniaRat</defName>
+		<defName>BiomesIslands_PhoebaniaRat</defName>
 		<label>phoebania rat</label>
-		<race>BMT_PhoebaniaRat</race>
+		<race>BiomesIslands_PhoebaniaRat</race>
 		<combatPower>25</combatPower>
 		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<GameConditionDef>
-		<defName>BMT_GlowTide</defName>
+		<defName>GlowTide</defName>
 		<conditionClass>BiomesIslands.Incidents.GameCondition_GlowTide</conditionClass>
 		<label>bioluminescent tide</label>
 		<description>Beautiful glowing plankton are lighting up the sea.</description>
@@ -17,21 +17,21 @@
 	</GameConditionDef>
 
 	<IncidentDef>
-		<defName>BMT_GlowTide</defName>
+		<defName>GlowTide</defName>
 		<label>bioluminescent tide</label>
 		<category>Misc</category>
 		<allowedBiomes>
-			<li>BMT_Atoll</li>
-			<li>BMT_BorealIsland</li>
-			<li>BMT_BorealArchipelago</li>
-			<li>BMT_DesertIsland</li>
-			<li>BMT_DesertArchipelago</li>
-			<li>BMT_TropicalIsland</li>
-			<li>BMT_TropicalArchipelago</li>
-			<li>BMT_TundraIsland</li>
-			<li>BMT_TundraArchipelago</li>
-			<li>BMT_TemperateIsland</li>
-			<li>BMT_TemperateArchipelago</li>
+			<li>BiomesIslands_Atoll</li>
+			<li>BiomesIslands_BorealIsland</li>
+			<li>BiomesIslands_BorealArchipelago</li>
+			<li>BiomesIslands_DesertIsland</li>
+			<li>BiomesIslands_DesertArchipelago</li>
+			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BiomesIslands_TundraIsland</li>
+			<li>BiomesIslands_TundraArchipelago</li>
+			<li>BiomesIslands_TemperateIsland</li>
+			<li>BiomesIslands_TemperateArchipelago</li>
 		</allowedBiomes>
 		<targetTags>
 			<li>Map_PlayerHome</li>
@@ -41,14 +41,14 @@
 		<minRefireDays>30</minRefireDays>
 		<letterLabel>Bioluminescent tide</letterLabel>
 		<letterDef>PositiveEvent</letterDef>
-		<tale>BMT_GlowTide</tale>
+		<tale>GlowTide</tale>
 		<durationDays>1.5~3.5</durationDays>
-		<gameCondition>BMT_GlowTide</gameCondition>
+		<gameCondition>GlowTide</gameCondition>
 	</IncidentDef>
 
 
 	<TaleDef>
-		<defName>BMT_GlowTide</defName>
+		<defName>GlowTide</defName>
 		<label>bioluminescent tide</label>
 		<taleClass>Tale_SinglePawn</taleClass>
 		<type>Volatile</type>

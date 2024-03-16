@@ -4,7 +4,7 @@
 	<!-- ================== Insects ================== -->
 
 	<ThingDef ParentName="BaseInsect">
-		<defName>BMT_Megamantis</defName>
+		<defName>BiomesIslands_Megamantis</defName>
 		<label>megamantis</label>
 		<description>A large, genetically-engineered mantis. Spliced with insectoid DNA by a rogue scientist, this species has become an apex predator on the tropical islands where it makes its home.</description>
 		<statBases>
@@ -83,7 +83,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggMegamantisFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggMegamantisFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -107,7 +107,7 @@
 			<wildness>0.95</wildness>
 			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
-			<leatherDef>BMT_GreenChitin</leatherDef>
+			<leatherDef>BiomesCore_GreenChitin</leatherDef>
 			<lifeExpectancy>10</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -137,9 +137,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Megamantis</defName>
+		<defName>BiomesIslands_Megamantis</defName>
 		<label>megamantis</label>
-		<race>BMT_Megamantis</race>
+		<race>BiomesIslands_Megamantis</race>
 		<combatPower>160</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.5</ecoSystemWeight>

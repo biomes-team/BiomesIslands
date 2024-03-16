@@ -5,7 +5,7 @@
 		<defName>BMT_Chinampa_Coral</defName>
 		<label>coral chinampa</label>
 		<costList>
-			<BMT_ChunkCoral>1</BMT_ChunkCoral>
+			<BiomesIslands_ChunkCoral>1</BiomesIslands_ChunkCoral>
 		</costList>
 	</TerrainDef>
 	

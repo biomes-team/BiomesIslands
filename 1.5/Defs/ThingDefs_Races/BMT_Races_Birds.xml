@@ -15,7 +15,7 @@
 
 	<!--====================	Small Birds		=====================-->
 	<ThingDef ParentName="BigBirdThingBase">
-		<defName>BMT_KiwiBird</defName>
+		<defName>BiomesIslands_KiwiBird</defName>
 		<label>kiwi</label>
 		<description>The miniscule, spherical cousin of the moa. Inferior in every way to their bigger relative. Helpless in the face of danger because of it's lack of flight.</description>
 		<statBases>
@@ -67,7 +67,7 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggKiwiFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggKiwiFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>9</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
@@ -128,9 +128,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="BigBirdKindBase">
-		<defName>BMT_KiwiBird</defName>
+		<defName>BiomesIslands_KiwiBird</defName>
 		<label>kiwi</label>
-		<race>BMT_KiwiBird</race>
+		<race>BiomesIslands_KiwiBird</race>
 		<combatPower>38</combatPower>
 		<ecoSystemWeight>0.28</ecoSystemWeight>
 		<lifeStages>
@@ -170,7 +170,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_SeagullBabyTiny</defName>
+		<defName>BiomesIslands_SeagullBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -179,7 +179,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_SeagullJuvenile</defName>
+		<defName>BiomesIslands_SeagullJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -194,7 +194,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_SeagullAdult</defName>
+		<defName>BiomesIslands_SeagullAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -203,7 +203,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_BirdThingBase">
-		<defName>BMT_Seagull</defName>
+		<defName>BiomesIslands_Seagull</defName>
 		<label>seagull</label>
 		<description>Noisy birds that eat anything small enough to fit down their gullets. They live in large colonies, and will happily prey on and swallow whole any animal they can.</description>
 		<statBases>
@@ -227,15 +227,15 @@
 			<manhunterOnDamageChance>0.013</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
-					<def>BMT_SeagullBabyTiny</def>
+					<def>BiomesIslands_SeagullBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_SeagullJuvenile</def>
+					<def>BiomesIslands_SeagullJuvenile</def>
 					<minAge>0.22</minAge>
 				</li>
 				<li>
-					<def>BMT_SeagullAdult</def>
+					<def>BiomesIslands_SeagullAdult</def>
 					<minAge>0.45</minAge>
 				</li>
 			</lifeStageAges>
@@ -254,7 +254,7 @@
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggSeagullFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggSeagullFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>9</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -318,9 +318,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="BigBirdKindBase">
-		<defName>BMT_Seagull</defName>
+		<defName>BiomesIslands_Seagull</defName>
 		<label>seagull</label>
-		<race>BMT_Seagull</race>
+		<race>BiomesIslands_Seagull</race>
 		<combatPower>45</combatPower>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
 		<wildGroupSize>
@@ -377,7 +377,7 @@
 	<!-- ===================	Large Birds		==================== -->
 
 	<ThingDef ParentName="BigBirdThingBase">
-		<defName>BMT_OmegaDodo</defName>
+		<defName>BiomesIslands_OmegaDodo</defName>
 		<label>omegadodo</label>
 		<description>The last dodo you'll ever want or need! Having been brought back from extinction by Urbworld scientists, this species of dodo has been genetically engineered to be far larger than the rest of its kind for the purposes of giving meat.\n\nWhen in a caravan, people can ride omegadodos to increase the caravan's speed.</description>
 		<statBases>
@@ -421,8 +421,8 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggOmegaDodoFertilized</eggFertilizedDef>
-				<eggUnfertilizedDef>BMT_EggOmegaDodoUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggOmegaDodoFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BiomesIslands_EggOmegaDodoUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>4</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
@@ -487,9 +487,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="BigBirdKindBase">
-		<defName>BMT_OmegaDodo</defName>
+		<defName>BiomesIslands_OmegaDodo</defName>
 		<label>omegadodo</label>
-		<race>BMT_OmegaDodo</race>
+		<race>BiomesIslands_OmegaDodo</race>
 		<combatPower>38</combatPower>
 		<ecoSystemWeight>0.75</ecoSystemWeight>
 		<lifeStages>

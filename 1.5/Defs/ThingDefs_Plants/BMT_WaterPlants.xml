@@ -4,7 +4,7 @@
 	<!-- For fish to eat -->
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Kelp</defName>
+		<defName>BiomesIslands_Kelp</defName>
 		<label>kelp</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -42,7 +42,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_SeaSponge</defName>
+		<defName>BiomesIslands_SeaSponge</defName>
 		<label>sea sponge</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -83,7 +83,7 @@
 
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_SeaGrass</defName>
+		<defName>BiomesIslands_SeaGrass</defName>
 		<label>seagrass</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -117,7 +117,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Seaweed</defName>
+		<defName>BiomesIslands_Seaweed</defName>
 		<label>seaweed</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -156,7 +156,7 @@
 
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_GreenAlgae</defName>
+		<defName>BiomesIslands_GreenAlgae</defName>
 		<label>green algae</label>
 		<description>An greenish algae that grows in warm water.</description>
 		<statBases>
@@ -195,7 +195,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Sargassum</defName>
+		<defName>BiomesIslands_Sargassum</defName>
 		<label>sargassum seaweed</label>
 		<description>A brownish seaweed</description>
 		<statBases>
@@ -235,7 +235,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_WhiteAlgae</defName>
+		<defName>BiomesIslands_WhiteAlgae</defName>
 		<label>brown algae</label>
 		<description>A brown algae that grows in cold water.</description>
 		<statBases>
@@ -272,7 +272,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Murkweed</defName>
+		<defName>BiomesIslands_Murkweed</defName>
 		<label>murkweed</label>
 		<description>An aquatic plant that prefers cold, deep water</description>
 		<statBases>
@@ -308,7 +308,7 @@
 
 	<!-- Special -->
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_GlowPlankton</defName>
+		<defName>BiomesIslands_GlowPlankton</defName>
 		<label>bioluminescent plankton</label>
 		<thingClass>BiomesCore.DerivedClasses.BMT_Plant</thingClass>
 		<description>A short lived plankton that emits a soft glow</description>

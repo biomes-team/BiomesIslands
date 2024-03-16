@@ -4,7 +4,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_WalrusBabyTiny</defName>
+		<defName>BiomesIslands_WalrusBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -13,7 +13,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_WalrusJuvenile</defName>
+		<defName>BiomesIslands_WalrusJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -28,7 +28,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_WalrusAdult</defName>
+		<defName>BiomesIslands_WalrusAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -37,7 +37,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_Walrus</defName>
+		<defName>BiomesIslands_Walrus</defName>
 		<label>walrus</label>
 		<description>Known for their large tusks, Walruses are one of the easiest to identify sea mammals. They use these tusks for movement assistance as well as scavenging for food on the seabed.</description>
 		<statBases>
@@ -87,8 +87,8 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>BMT_WhaleBody</body>
-			<leatherDef>BMT_Leather_Whaleskin</leatherDef>
+			<body>Biomes_WhaleBody</body>
+			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>5.0</baseHealthScale>
@@ -105,19 +105,19 @@
 			<meatColor>(255,210,210)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WalrusBabyTiny</def>
+					<def>BiomesIslands_WalrusBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WalrusJuvenile</def>
+					<def>BiomesIslands_WalrusJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_WalrusAdult</def>
+					<def>BiomesIslands_WalrusAdult</def>
 					<minAge>3.5</minAge>
 
-					<soundCall>BMT_Whale_Call</soundCall>
-					<soundAngry>BMT_Whale_Angry</soundAngry>
+					<soundCall>BiomesIslands_Whale_Call</soundCall>
+					<soundAngry>BiomesIslands_Whale_Angry</soundAngry>
 
 				</li>
 			</lifeStageAges>
@@ -133,9 +133,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Walrus</defName>
+		<defName>BiomesIslands_Walrus</defName>
 		<label>walrus</label>
-		<race>BMT_Walrus</race>
+		<race>BiomesIslands_Walrus</race>
 		<combatPower>250</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>2~6</wildGroupSize>
@@ -188,7 +188,7 @@
 
 	<!-- BoomWhale -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_SealionBabyTiny</defName>
+		<defName>BiomesIslands_SealionBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -197,7 +197,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_SealionJuvenile</defName>
+		<defName>BiomesIslands_SealionJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -212,7 +212,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_SealionAdult</defName>
+		<defName>BiomesIslands_SealionAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -221,7 +221,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_Sealion</defName>
+		<defName>BiomesIslands_Sealion</defName>
 		<label>sea lion</label>
 		<description>Easily trained due to their high intelligence and sociability, sea lions are used by many seaside communities for dumb labor. While very cute, they can be dangerous due to their sharp teeth and predatory nature.</description>
 		<statBases>
@@ -234,7 +234,7 @@
 		<li Class="BiomesCore.CompProperties_BottomFeeder">
 			<feedingTerrainTag>Water</feedingTerrainTag>
 			<consumingFoodReportString>Scavenging.</consumingFoodReportString>
-			<effecterDef>BMT_EatFish</effecterDef>
+			<effecterDef>EatFish</effecterDef>
 		</li>
 	</comps>
 		<tools>
@@ -271,8 +271,8 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>BMT_WhaleBody</body>
-			<leatherDef>BMT_Leather_Pinnipedskin</leatherDef>
+			<body>Biomes_WhaleBody</body>
+			<leatherDef>BiomesIslands_Leather_Pinnipedskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>5.0</baseHealthScale>
@@ -289,19 +289,19 @@
 			<meatColor>(255,210,210)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_SealionBabyTiny</def>
+					<def>BiomesIslands_SealionBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_SealionJuvenile</def>
+					<def>BiomesIslands_SealionJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_SealionAdult</def>
+					<def>BiomesIslands_SealionAdult</def>
 					<minAge>3.5</minAge>
 
-					<soundCall>BMT_Whale_Call</soundCall>
-					<soundAngry>BMT_Whale_Angry</soundAngry>
+					<soundCall>BiomesIslands_Whale_Call</soundCall>
+					<soundAngry>BiomesIslands_Whale_Angry</soundAngry>
 
 				</li>
 			</lifeStageAges>
@@ -317,9 +317,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Sealion</defName>
+		<defName>BiomesIslands_Sealion</defName>
 		<label>sea lion</label>
-		<race>BMT_Sealion</race>
+		<race>BiomesIslands_Sealion</race>
 		<combatPower>220</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>2~6</wildGroupSize>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_BaitfishBase">
-		<defName>BMT_LimepeelAngelfish</defName>
+		<defName>BiomesIslands_LimepeelAngelfish</defName>
 		<label>limepeel angelfish</label>
 		<statBases>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -10,7 +10,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggLimepeelAngelfishFertilized</eggFertilizedDef>
+				<eggFertilizedDef>EggLimepeelAngelfishFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>12</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -26,9 +26,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="BMT_BaseBaitfish">
-		<defName>BMT_LimepeelAngelfish</defName>
+		<defName>BiomesIslands_LimepeelAngelfish</defName>
 		<label>limepeel angelfish</label>
-		<race>BMT_LimepeelAngelfish</race>
+		<race>BiomesIslands_LimepeelAngelfish</race>
 		<wildGroupSize>3~8</wildGroupSize>
 		<lifeStages>
 			<li>

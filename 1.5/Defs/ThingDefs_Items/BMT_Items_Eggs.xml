@@ -5,7 +5,7 @@
 	<!--================== Bird eggs ==================-->
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggKiwiFertilized</defName>
+		<defName>BiomesIslands_EggKiwiFertilized</defName>
 		<label>kiwi egg (fert.)</label>
 		<description>A fertilized kiwi egg. If all goes well, it should hatch into a baby kiwi. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -18,13 +18,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_KiwiBird</hatcherPawn>
+				<hatcherPawn>BiomesIslands_KiwiBird</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggSeagullFertilized</defName>
+		<defName>BiomesIslands_EggSeagullFertilized</defName>
 		<label>seagull egg (fert.)</label>
 		<description>A fertilized seagull egg. If all goes well, it should hatch into a baby seagull. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -37,14 +37,14 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_Seagull</hatcherPawn>
+				<hatcherPawn>BiomesIslands_Seagull</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 
 	<ThingDef ParentName="EggUnfertBase">
-		<defName>BMT_EggOmegaDodoUnfertilized</defName>
+		<defName>BiomesIslands_EggOmegaDodoUnfertilized</defName>
 		<label>omegadodo egg (unfert.)</label>
 		<description>An unfertilized omegadodo egg. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -58,7 +58,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggOmegaDodoFertilized</defName>
+		<defName>BiomesIslands_EggOmegaDodoFertilized</defName>
 		<label>omegadodo egg (fert.)</label>
 		<description>A fertilized omegadodo egg. If all goes well, it should hatch into a baby omegadodo. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -72,7 +72,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_OmegaDodo</hatcherPawn>
+				<hatcherPawn>BiomesIslands_OmegaDodo</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
@@ -81,7 +81,7 @@
 	<!--================== Crab eggs ==================-->
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggRimCrabFertilized</defName>
+		<defName>BiomesIslands_EggRimCrabFertilized</defName>
 		<label>rimcrab egg (fert.)</label>
 		<description>A fertilized rimcrab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -94,13 +94,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>9</hatcherDaystoHatch>
-				<hatcherPawn>BMT_RimCrab</hatcherPawn>
+				<hatcherPawn>BiomesIslands_RimCrab</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggBlueCrabFertilized</defName>
+		<defName>BiomesIslands_EggBlueCrabFertilized</defName>
 		<label>blue crab egg (fert.)</label>
 		<description>A fertilized blue crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -113,13 +113,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>9</hatcherDaystoHatch>
-				<hatcherPawn>BMT_BlueCrab</hatcherPawn>
+				<hatcherPawn>BiomesIslands_BlueCrab</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggFiddlerCrabFertilized</defName>
+		<defName>BiomesIslands_EggFiddlerCrabFertilized</defName>
 		<label>fiddler crab egg (fert.)</label>
 		<description>A fertilized fiddler crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -132,13 +132,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>9</hatcherDaystoHatch>
-				<hatcherPawn>BMT_FiddlerCrab</hatcherPawn>
+				<hatcherPawn>BiomesIslands_FiddlerCrab</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggHermitCrabFertilized</defName>
+		<defName>BiomesIslands_EggHermitCrabFertilized</defName>
 		<label>hermit crab egg (fert.)</label>
 		<description>A fertilized hermit crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -151,13 +151,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>9</hatcherDaystoHatch>
-				<hatcherPawn>BMT_HermitCrab</hatcherPawn>
+				<hatcherPawn>BiomesIslands_HermitCrab</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggClutterCrabFertilized</defName>
+		<defName>BiomesIslands_EggClutterCrabFertilized</defName>
 		<label>clutter crab egg (fert.)</label>
 		<description>A fertilized clutter crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -170,7 +170,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>12</hatcherDaystoHatch>
-				<hatcherPawn>BMT_ClutterCrab</hatcherPawn>
+				<hatcherPawn>BiomesIslands_ClutterCrab</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
@@ -179,7 +179,7 @@
 	<!--================== Reptile eggs ==================-->
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggGigantacondaFertilized</defName>
+		<defName>BiomesIslands_EggGigantacondaFertilized</defName>
 		<label>gigantaconda egg (fert.)</label>
 		<description>A fertilized gigantaconda egg. If all goes well, it should hatch into a baby gigantaconda. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -192,13 +192,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>11</hatcherDaystoHatch>
-				<hatcherPawn>BMT_Gigantaconda</hatcherPawn>
+				<hatcherPawn>BiomesIslands_Gigantaconda</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggSeaTurtleFertilized</defName>
+		<defName>BiomesIslands_EggSeaTurtleFertilized</defName>
 		<label>sea turtle egg (fert.)</label>
 		<description>A fertilized sea turtle egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -212,13 +212,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>10</hatcherDaystoHatch>
-				<hatcherPawn>BMT_SeaTurtle</hatcherPawn>
+				<hatcherPawn>BiomesIslands_SeaTurtle</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggLeatherbackTurtleFertilized</defName>
+		<defName>BiomesIslands_EggLeatherbackTurtleFertilized</defName>
 		<label>leatherback turtle egg (fert.)</label>
 		<description>A fertilized sea turtle egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -232,14 +232,14 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>10</hatcherDaystoHatch>
-				<hatcherPawn>BMT_LeatherbackTurtle</hatcherPawn>
+				<hatcherPawn>BiomesIslands_LeatherbackTurtle</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggMarineIguanaFertilized</defName>
+		<defName>BiomesIslands_EggMarineIguanaFertilized</defName>
 		<label>marine iguana egg (fert.)</label>
 		<description>A fertilized marine iguana egg. If all goes well, it should hatch into a baby iguana. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -252,13 +252,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>4.5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_MarineIguana</hatcherPawn>
+				<hatcherPawn>BiomesIslands_MarineIguana</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggGreenGeckoFertilized</defName>
+		<defName>BiomesIslands_EggGreenGeckoFertilized</defName>
 		<label>green gecko egg (fert.)</label>
 		<description>A fertilized marine iguana egg. If all goes well, it should hatch into a gecko. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -271,13 +271,13 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_GreenGecko</hatcherPawn>
+				<hatcherPawn>BiomesIslands_GreenGecko</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggGalapagosTortoiseFertilized</defName>
+		<defName>BiomesIslands_EggGalapagosTortoiseFertilized</defName>
 		<label>galapagos tortoise egg (fert.)</label>
 		<description>A fertilized galapagos tortoise egg. If all goes well, it should hatch into a baby tortoise. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -291,7 +291,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5.5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_GalapagosTortoise</hatcherPawn>
+				<hatcherPawn>BiomesIslands_GalapagosTortoise</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
@@ -300,7 +300,7 @@
 	<!--================== Misc land eggs ==================-->
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggMegamantisFertilized</defName>
+		<defName>BiomesIslands_EggMegamantisFertilized</defName>
 		<label>megamantis egg (fert.)</label>
 		<description>A fertilized megamantis egg. If all goes well, it should hatch into a baby megamantis. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
@@ -313,7 +313,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_Megamantis</hatcherPawn>
+				<hatcherPawn>BiomesIslands_Megamantis</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

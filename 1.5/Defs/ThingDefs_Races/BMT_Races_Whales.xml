@@ -4,7 +4,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_WhaleBabyTiny</defName>
+		<defName>BiomesIslands_WhaleBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -13,7 +13,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_WhaleJuvenile</defName>
+		<defName>BiomesIslands_WhaleJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -28,7 +28,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_WhaleAdult</defName>
+		<defName>BiomesIslands_WhaleAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -37,7 +37,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_Whale</defName>
+		<defName>BiomesIslands_Whale</defName>
 		<label>whale</label>
 		<description>Whales live in the seas, they look like large fishes, but they are actually mammals. They breathe air before diving and can endure hours without returning to the surface, they produce milk for the baby whales. They can be found usually in groups.</description>
 		<statBases>
@@ -80,8 +80,8 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
-			<body>BMT_WhaleBody</body>
-			<leatherDef>BMT_Leather_Whaleskin</leatherDef>
+			<body>Biomes_WhaleBody</body>
+			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>5.0</baseHealthScale>
@@ -99,19 +99,19 @@
 			<meatColor>(255,210,210)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WhaleBabyTiny</def>
+					<def>BiomesIslands_WhaleBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleJuvenile</def>
+					<def>BiomesIslands_WhaleJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleAdult</def>
+					<def>BiomesIslands_WhaleAdult</def>
 					<minAge>3.5</minAge>
 
-					<soundCall>BMT_Whale_Call</soundCall>
-					<soundAngry>BMT_Whale_Angry</soundAngry>
+					<soundCall>BiomesIslands_Whale_Call</soundCall>
+					<soundAngry>BiomesIslands_Whale_Angry</soundAngry>
 
 				</li>
 			</lifeStageAges>
@@ -127,9 +127,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Whale</defName>
+		<defName>BiomesIslands_Whale</defName>
 		<label>whale</label>
-		<race>BMT_Whale</race>
+		<race>BiomesIslands_Whale</race>
 		<combatPower>250</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>2~6</wildGroupSize>
@@ -182,7 +182,7 @@
 
 	<!-- BoomWhale -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_BoomWhaleBabyTiny</defName>
+		<defName>BiomesIslands_BoomWhaleBabyTiny</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -191,7 +191,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_BoomWhaleJuvenile</defName>
+		<defName>BiomesIslands_BoomWhaleJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -206,7 +206,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_BoomWhaleAdult</defName>
+		<defName>BiomesIslands_BoomWhaleAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -215,7 +215,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_BoomWhale</defName>
+		<defName>BiomesIslands_BoomWhale</defName>
 		<label>boomwhale</label>
 		<description>A whale that explodes. Related to both whales and boomalopes, it is somewhat smaller and dumber than its unmodified cousins.</description>
 		<statBases>
@@ -266,7 +266,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>BMT_WhaleBody</body>
+			<body>Biomes_WhaleBody</body>
 			<leatherDef>Leather_Plain</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>3.2</baseBodySize>
@@ -281,26 +281,26 @@
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.6</manhunterOnDamageChance>
-			<useMeatFrom>BMT_Whale</useMeatFrom>
+			<useMeatFrom>BiomesIslands_Whale</useMeatFrom>
 			<deathAction>
 				<workerClass>DeathActionWorker_BigExplosion</workerClass>
 			</deathAction>
 			<executionRange>6</executionRange>
 			<lifeStageAges>
 				<li>
-					<def>BMT_BoomWhaleBabyTiny</def>
+					<def>BiomesIslands_BoomWhaleBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_BoomWhaleJuvenile</def>
+					<def>BiomesIslands_BoomWhaleJuvenile</def>
 					<minAge>1.2</minAge>
 				</li>
 				<li>
-					<def>BMT_BoomWhaleAdult</def>
+					<def>BiomesIslands_BoomWhaleAdult</def>
 					<minAge>3.0</minAge>
 
-					<soundCall>BMT_Whale_Call</soundCall>
-					<soundAngry>BMT_Whale_Angry</soundAngry>
+					<soundCall>BiomesIslands_Whale_Call</soundCall>
+					<soundAngry>BiomesIslands_Whale_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -315,9 +315,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_BoomWhale</defName>
+		<defName>BiomesIslands_BoomWhale</defName>
 		<label>boomwhale</label>
-		<race>BMT_BoomWhale</race>
+		<race>BiomesIslands_BoomWhale</race>
 		<combatPower>250</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>

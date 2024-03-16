@@ -4,7 +4,7 @@
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
 	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_Orcaphibian</defName>
+		<defName>BiomesIslands_Orcaphibian</defName>
 		<bodySizeFactor>0.1</bodySizeFactor>
 		<foodMaxFactor>4</foodMaxFactor>
 		<statFactors>
@@ -13,7 +13,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_OrcaphibianJuvenile</defName>
+		<defName>BiomesIslands_OrcaphibianJuvenile</defName>
 		<label>juvenile</label>
 		<voxPitch>1.2</voxPitch>
 		<bodySizeFactor>0.5</bodySizeFactor>
@@ -28,7 +28,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>BMT_OrcaphibianAdult</defName>
+		<defName>BiomesIslands_OrcaphibianAdult</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
@@ -37,7 +37,7 @@
 	</LifeStageDef>
 
 	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
-		<defName>BMT_Orcaphibian</defName>
+		<defName>BiomesIslands_Orcaphibian</defName>
 		<label>whale</label>
 		<description>Orcaphibians are the result of minor genetic alteration, returning their vestigial legs and turning them from merely a fierce oceanic predator into one on both land and sea. Certain island and coastal-dwelling societies make use of them as fierce attack animals. They attack so fiercly that their quarry rarely has time to react before being torn to pieces.</description>
 		<statBases>
@@ -80,8 +80,8 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
-			<body>BMT_OrcaphibianBody</body>
-			<leatherDef>BMT_Leather_Whaleskin</leatherDef>
+			<body>Biomes_OrcaphibianBody</body>
+			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>5.0</baseHealthScale>
@@ -99,19 +99,19 @@
 			<meatColor>(255,210,210)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WhaleBabyTiny</def>
+					<def>BiomesIslands_WhaleBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleJuvenile</def>
+					<def>BiomesIslands_WhaleJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleAdult</def>
+					<def>BiomesIslands_WhaleAdult</def>
 					<minAge>3.5</minAge>
 
-					<soundCall>BMT_Whale_Call</soundCall>
-					<soundAngry>BMT_Whale_Angry</soundAngry>
+					<soundCall>BiomesIslands_Whale_Call</soundCall>
+					<soundAngry>BiomesIslands_Whale_Angry</soundAngry>
 
 				</li>
 			</lifeStageAges>
@@ -127,9 +127,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_Orcaphibian</defName>
+		<defName>BiomesIslands_Orcaphibian</defName>
 		<label>orcaphibian</label>
-		<race>BMT_Orcaphibian</race>
+		<race>BiomesIslands_Orcaphibian</race>
 		<combatPower>250</combatPower>
 		<ecoSystemWeight>2.0</ecoSystemWeight>
 		<wildGroupSize>2~6</wildGroupSize>
@@ -180,7 +180,7 @@
 	</PawnKindDef>
 
 	<BodyDef>
-		<defName>BMT_OrcaphibianBody</defName>
+		<defName>Biomes_OrcaphibianBody</defName>
 		<label>fish</label>
 		<corePart>
 		  <def>Body</def>
@@ -188,18 +188,18 @@
 		  <depth>Outside</depth>
 		  <parts>
 				<li>
-					<def>BMT_FishTail</def>
+					<def>FishTail</def>
 					<height>Middle</height>
 					<coverage>0.1</coverage>
 					<parts>
 						<li>
-							<def>BMT_Fin</def>
+							<def>BiomesIslands_Fin</def>
 							<customLabel>right tail fin</customLabel>
 							<coverage>0.07</coverage>
 							<height>Middle</height>
 						</li>
 						<li>
-							<def>BMT_Fin</def>
+							<def>BiomesIslands_Fin</def>
 							<customLabel>left tail fin</customLabel>
 							<coverage>0.07</coverage>
 							<height>Middle</height>
@@ -293,37 +293,37 @@
 					</parts>
 				</li>
 				<li>
-					<def>BMT_OrcaphibianLeg</def>
+					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>right front leg</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>BMT_OrcaphibianLeg</def>
+					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>left front leg</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>BMT_OrcaphibianLeg</def>
+					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>right back leg</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>BMT_OrcaphibianLeg</def>
+					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>left back leg</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>BMT_Fin</def>
+					<def>BiomesIslands_Fin</def>
 					<customLabel>right flipper</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
-					<def>BMT_Fin</def>
+					<def>BiomesIslands_Fin</def>
 					<customLabel>dorsal fin</customLabel>
 					<coverage>0.07</coverage>
 					<height>Top</height>

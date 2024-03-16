@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Small Crabs -->
-	<ThingDef ParentName="BMT_CrabThingBase">
-		<defName>BMT_BlueCrab</defName>
+	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+		<defName>BiomesIslands_BlueCrab</defName>
 		<label>blue crab</label>
 		<description>A medium sized crab species related to the rimcrab. It is native to cold and temperate islands.</description>
 		<statBases>
@@ -25,11 +25,11 @@
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<wildness>0.20</wildness>
 			<roamMtbDays>3</roamMtbDays>
-			<useMeatFrom>BMT_RimCrab</useMeatFrom>
+			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggBlueCrabFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggBlueCrabFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>9</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -62,9 +62,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_BlueCrab</defName>
+		<defName>BiomesIslands_BlueCrab</defName>
 		<label>blue crab</label>
-		<race>BMT_BlueCrab</race>
+		<race>BiomesIslands_BlueCrab</race>
 		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>
@@ -105,8 +105,8 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="BMT_CrabThingBase">
-		<defName>BMT_FiddlerCrab</defName>
+	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+		<defName>BiomesIslands_FiddlerCrab</defName>
 		<label>fiddler crab</label>
 		<description>A crab species native to tropical islands. Male fiddlers have an oversized claw on one side.</description>
 		<statBases>
@@ -127,11 +127,11 @@
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<wildness>0.30</wildness>
 			<roamMtbDays>3</roamMtbDays>
-			<useMeatFrom>BMT_RimCrab</useMeatFrom>
+			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggFiddlerCrabFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggFiddlerCrabFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>11</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -164,9 +164,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_FiddlerCrab</defName>
+		<defName>BiomesIslands_FiddlerCrab</defName>
 		<label>fiddler crab</label>
-		<race>BMT_FiddlerCrab</race>
+		<race>BiomesIslands_FiddlerCrab</race>
 		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>
@@ -231,8 +231,8 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="BMT_CrabThingBase">
-		<defName>BMT_HermitCrab</defName>
+	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+		<defName>BiomesIslands_HermitCrab</defName>
 		<label>hermit crab</label>
 		<description>A crab species known for hiding inside seashells. Despite their name, they are highly social, living in colonies of hundreds of crabs. Their hard shells make them very tough for their size.</description>
 		<statBases>
@@ -253,11 +253,11 @@
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
 			<wildness>0.10</wildness>
-			<useMeatFrom>BMT_RimCrab</useMeatFrom>
+			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggHermitCrabFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggHermitCrabFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>9.5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -290,9 +290,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_HermitCrab</defName>
+		<defName>BiomesIslands_HermitCrab</defName>
 		<label>hermitcrab</label>
-		<race>BMT_HermitCrab</race>
+		<race>BiomesIslands_HermitCrab</race>
 		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
 
@@ -349,8 +349,8 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="BMT_CrabThingBase">
-		<defName>BMT_RimCrab</defName>
+	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+		<defName>BiomesIslands_RimCrab</defName>
 		<label>rimcrab</label>
 		<description>A mongrel crab species that can survive on most rimworlds in warm waters. It moves in large packs, which can be a threat to smaller islands because of their ravenous hunger. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
 		<statBases>
@@ -376,7 +376,7 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggRimCrabFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggRimCrabFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>11</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -409,9 +409,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_RimCrab</defName>
+		<defName>BiomesIslands_RimCrab</defName>
 		<label>rimcrab</label>
-		<race>BMT_RimCrab</race>
+		<race>BiomesIslands_RimCrab</race>
 		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<wildGroupSize>
@@ -453,8 +453,8 @@
 	</PawnKindDef>
 
 	<!-- Large Crabs -->
-	<ThingDef ParentName="BMT_CrabThingBase">
-		<defName>BMT_ClutterCrab</defName>
+	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+		<defName>BiomesIslands_ClutterCrab</defName>
 		<label>clutter crab</label>
 		<description>An unusually large and intelligent crab. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
 		<statBases>
@@ -472,13 +472,13 @@
 			<manhunterOnTameFailChance>0.85</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.45</manhunterOnDamageChance>
 			<wildness>0.65</wildness>
-			<useMeatFrom>BMT_RimCrab</useMeatFrom>
+			<useMeatFrom>BiomesIslands_RimCrab</useMeatFrom>
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggClutterCrabFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BiomesIslands_EggClutterCrabFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -511,9 +511,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_ClutterCrab</defName>
+		<defName>BiomesIslands_ClutterCrab</defName>
 		<label>clutter crab</label>
-		<race>BMT_ClutterCrab</race>
+		<race>BiomesIslands_ClutterCrab</race>
 		<combatPower>80</combatPower>
 		<ecoSystemWeight>0.50</ecoSystemWeight>
 		<lifeStages>

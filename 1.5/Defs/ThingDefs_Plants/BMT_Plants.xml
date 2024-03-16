@@ -4,7 +4,7 @@
 	<!--====================	Fruit Trees		=====================-->
 
 	<ThingDef ParentName="BMT_FruitTreeBase">
-		<defName>BMT_BananaPlant</defName>
+		<defName>BiomesIslands_BananaPlant</defName>
 		<label>sugar banana plant</label>
 		<description>A large flowering herb often mistaken for a tree. Produces bananas.</description>
 		<graphicData>
@@ -19,12 +19,12 @@
 			<harvestYield>70</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
-			<harvestedThingDef>BMT_Bananas</harvestedThingDef>
+			<harvestedThingDef>BiomesIslands_Bananas</harvestedThingDef>
 		</plant>
 	</ThingDef>
 
 	<ThingDef ParentName="BMT_FruitTreeBase">
-		<defName>BMT_DevilsClawTree</defName>
+		<defName>BiomesIslands_DevilsClawTree</defName>
 		<label>devil's claw</label>
 		<description>A tropical tree with broad, edible leaves.</description>
 		<graphicData>
@@ -38,12 +38,12 @@
 			<harvestYield>40</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
-			<harvestedThingDef>BMT_Devilsclaw</harvestedThingDef>
+			<harvestedThingDef>BiomesIslands_Devilsclaw</harvestedThingDef>
 		</plant>
 	</ThingDef>
 
 	<ThingDef ParentName="BMT_FruitTreeBase">
-		<defName>BMT_OrangeTree</defName>
+		<defName>BiomesIslands_OrangeTree</defName>
 		<label>blood orange tree</label>
 		<description>The orange tree is a tree, which can reach 10 m in height, provided with branches with few weak spines. Produces sweet oranges.</description>
 		<graphicData>
@@ -57,12 +57,12 @@
 			<harvestYield>48</harvestYield>
 			<harvestWork>400</harvestWork>
 			<harvestMinGrowth>0.80</harvestMinGrowth>
-			<harvestedThingDef>BMT_Oranges</harvestedThingDef>
+			<harvestedThingDef>BiomesIslands_Oranges</harvestedThingDef>
 		</plant>
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Pineappleplant</defName>
+		<defName>BiomesIslands_Pineappleplant</defName>
 		<label>spineapple plant</label>
 		<description>A tall fruiting herb. It produces only a single fruit before dying, but leaves offspring behind to take it's place.</description>
 		<statBases>
@@ -94,7 +94,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<harvestedThingDef>BMT_Pineapples</harvestedThingDef>
+			<harvestedThingDef>BiomesIslands_Pineapples</harvestedThingDef>
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
@@ -103,7 +103,7 @@
 	<!--====================	Other Trees		=====================-->
 
 	<ThingDef ParentName="TreeBase">
-		<defName>BMT_WindsweptTree</defName>
+		<defName>BiomesIslands_WindsweptTree</defName>
 		<label>windswept birch</label>
 		<description>A birch that has been stunted and deformed due to growing in a cold, harsh climate.</description>
 		<graphicData>
@@ -131,7 +131,7 @@
 	<!--====================	Grazing Plants		=====================-->
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Fern</defName>
+		<defName>BiomesIslands_Fern</defName>
 		<label>fern</label>
 		<description>A fast growing fern</description>
 		<statBases>
@@ -157,7 +157,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_FloweringFern</defName>
+		<defName>BiomesIslands_FloweringFern</defName>
 		<label>fern</label>
 		<description>A pretty fern with a faintly luminous flowerspike</description>
 		<statBases>
@@ -192,7 +192,7 @@
 
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_FloweringFernDomestic</defName>
+		<defName>BiomesIslands_FloweringFernDomestic</defName>
 		<label>fern</label>
 		<description>A pretty fern with a faintly luminous flowerspike.</description>
 		<statBases>
@@ -233,7 +233,7 @@
 
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Bayhops</defName>
+		<defName>BiomesIslands_Bayhops</defName>
 		<label>bayhops</label>
 		<description>A medicinal plant native to tropical beaches. Highly salt resistant.</description>
 		<statBases>
@@ -275,7 +275,7 @@
 
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_Lavender</defName>
+		<defName>BiomesIslands_Lavender</defName>
 		<label>lavender</label>
 		<description>A purple flower known for its pleasing scent.</description>
 		<statBases>
@@ -305,7 +305,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BMT_PurpleSaxifrage</defName>
+		<defName>BiomesIslands_PurpleSaxifrage</defName>
 		<label>purple saxifrage</label>
 		<description>A small, delicate flower adapted for cold climates</description>
 		<statBases>

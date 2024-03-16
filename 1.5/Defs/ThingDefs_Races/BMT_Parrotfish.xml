@@ -87,8 +87,8 @@
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<body>BMT_FishBody</body>
-			<leatherDef>BMT_Leather_Fishskin</leatherDef>
+			<body>Biomes_FishBody</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<baseHungerRate>0.50</baseHungerRate>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>0.9</baseHealthScale>
@@ -101,7 +101,7 @@
 			<trainability>None</trainability>
 			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
 					<def>BMT_ParrotfishBabyTiny</def>

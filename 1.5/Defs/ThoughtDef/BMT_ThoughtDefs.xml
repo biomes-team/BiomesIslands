@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>BMT_Pineapple</defName>
+		<defName>BiomesIslands_Pineapple</defName>
 		<durationDays>0.5</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -18,7 +18,7 @@
 		<defName>BMT_GlowTide</defName>
 		<workerClass>BiomesIslands.Incidents.ThoughtWorker_GlowTide</workerClass>
 		<!-- <workerClass>ThoughtWorker_GameCondition</workerClass> -->
-		<gameCondition>BMT_GlowTide</gameCondition>
+		<gameCondition>GlowTide</gameCondition>
 		<stages>
 			<li>
 				<label>ooooh.... the ocean is glowing!</label>

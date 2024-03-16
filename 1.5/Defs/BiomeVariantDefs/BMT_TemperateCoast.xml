@@ -24,18 +24,18 @@
 				<wildPlants operation="add">
 
 					<!-- land plants -->
-					<BMT_OrangeTree>0.3</BMT_OrangeTree>
-					<BMT_Fern>0.8</BMT_Fern>
-					<BMT_FloweringFern>0.1</BMT_FloweringFern>
-					<BMT_Lavender>0.1</BMT_Lavender>
+					<BiomesIslands_OrangeTree>0.3</BiomesIslands_OrangeTree>
+					<BiomesIslands_Fern>0.8</BiomesIslands_Fern>
+					<BiomesIslands_FloweringFern>0.1</BiomesIslands_FloweringFern>
+					<BiomesIslands_Lavender>0.1</BiomesIslands_Lavender>
 
 					<!-- water plants -->
-					<BMT_SeaGrass>7.0</BMT_SeaGrass>
-					<BMT_Seaweed>2</BMT_Seaweed>
-					<BMT_Kelp>0.7</BMT_Kelp>
-					<BMT_SeaSponge>0.05</BMT_SeaSponge>
-					<BMT_GreenAlgae>0.3</BMT_GreenAlgae>
-					<BMT_Sargassum>0.1</BMT_Sargassum>
+					<BiomesIslands_SeaGrass>7.0</BiomesIslands_SeaGrass>
+					<BiomesIslands_Seaweed>2</BiomesIslands_Seaweed>
+					<BiomesIslands_Kelp>0.7</BiomesIslands_Kelp>
+					<BiomesIslands_SeaSponge>0.05</BiomesIslands_SeaSponge>
+					<BiomesIslands_GreenAlgae>0.3</BiomesIslands_GreenAlgae>
+					<BiomesIslands_Sargassum>0.1</BiomesIslands_Sargassum>
 
 				</wildPlants>
 
@@ -43,32 +43,32 @@
 				<wildAnimals operation="add">
 
 					<!-- land grazers -->
-					<BMT_PhoebaniaRat>0.1</BMT_PhoebaniaRat>
+					<BiomesIslands_PhoebaniaRat>0.1</BiomesIslands_PhoebaniaRat>
 					<BMT_SeaOtter>0.08</BMT_SeaOtter>
-					<BMT_Seagull>0.6</BMT_Seagull>
-					<BMT_BlueCrab>0.2</BMT_BlueCrab>
-					<BMT_SeaTurtle>0.5</BMT_SeaTurtle>
-					<BMT_GreenGecko>0.4</BMT_GreenGecko>
-					<BMT_LeatherbackTurtle>0.3</BMT_LeatherbackTurtle>
+					<BiomesIslands_Seagull>0.6</BiomesIslands_Seagull>
+					<BiomesIslands_BlueCrab>0.2</BiomesIslands_BlueCrab>
+					<BiomesIslands_SeaTurtle>0.5</BiomesIslands_SeaTurtle>
+					<BiomesIslands_GreenGecko>0.4</BiomesIslands_GreenGecko>
+					<BiomesIslands_LeatherbackTurtle>0.3</BiomesIslands_LeatherbackTurtle>
 
 					<!-- land predators -->
-					<BMT_Megamantis>0.05</BMT_Megamantis>
+					<BiomesIslands_Megamantis>0.05</BiomesIslands_Megamantis>
 
 					<!-- water grazers -->
-					<BMT_Sardine>1.0</BMT_Sardine>
+					<BiomesIslands_Sardine>1.0</BiomesIslands_Sardine>
 					<BMT_SunfinAngelfish>0.3</BMT_SunfinAngelfish>
 					<BMT_OrangepeelAngelfish>0.5</BMT_OrangepeelAngelfish>
-					<BMT_LimepeelAngelfish>0.5</BMT_LimepeelAngelfish>
+					<BiomesIslands_LimepeelAngelfish>0.5</BiomesIslands_LimepeelAngelfish>
 					<BMT_Muckfrill>1.0</BMT_Muckfrill>
-					<BMT_BlueSeaSnail>0.4</BMT_BlueSeaSnail>
+					<BiomesIslands_BlueSeaSnail>0.4</BiomesIslands_BlueSeaSnail>
 					<BMT_GreenEel>0.5</BMT_GreenEel>
-					<BMT_Trout>1.5</BMT_Trout>
-					<BMT_MantaRay>0.08</BMT_MantaRay>
+					<BiomesIslands_Trout>1.5</BiomesIslands_Trout>
+					<BiomesIslands_MantaRay>0.08</BiomesIslands_MantaRay>
 
 					<!-- water predators -->
-					<BMT_Tuna>0.2</BMT_Tuna>
-					<BMT_WhiteShark>0.05</BMT_WhiteShark>
-					<BMT_RedSnapper>0.15</BMT_RedSnapper>
+					<BiomesIslands_Tuna>0.2</BiomesIslands_Tuna>
+					<BiomesIslands_WhiteShark>0.05</BiomesIslands_WhiteShark>
+					<BiomesIslands_RedSnapper>0.15</BiomesIslands_RedSnapper>
 
 				</wildAnimals>
 

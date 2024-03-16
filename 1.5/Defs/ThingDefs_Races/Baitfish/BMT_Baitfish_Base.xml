@@ -77,9 +77,9 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>BMT_FishBody</body>
-			<leatherDef>BMT_Leather_Fishskin</leatherDef>
-			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
+			<body>Biomes_FishBody</body>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom>
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseBodySize>0.12</baseBodySize>
 			<baseHealthScale>0.20</baseHealthScale>

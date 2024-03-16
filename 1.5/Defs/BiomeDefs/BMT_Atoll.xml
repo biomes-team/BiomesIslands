@@ -2,7 +2,7 @@
 <Defs>
 
 	<BiomeDef>
-		<defName>BMT_Atoll</defName>
+		<defName>BiomesIslands_Atoll</defName>
 		<label>atoll</label>
 		<description>Surrounded by coral reefs, atolls emerge as remnants of sinking volcanic islands. Their central lagoons, while picturesque, provide limited construction space. Yet, abundant wild food and scarce predators under the embrace of a warm climate make life here comfortably paradisiacal.</description>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
@@ -29,7 +29,7 @@
 			-->
 			<li Class="VFECore.BiomeExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<uniqueRockTypes>
-					<li>BMT_CoralRock</li>
+					<li>BiomesIslands_CoralRock</li>
 				</uniqueRockTypes>
 			</li>
 		</modExtensions>
@@ -115,7 +115,7 @@
 				<max>16</max>
 			</li>
 			<li>
-				<terrain>BMT_WaterShallowLagoon</terrain>
+				<terrain>BiomesCore_WaterShallowLagoon</terrain>
 				<min>16</min>
 				<max>999</max>
 			</li>
@@ -164,58 +164,58 @@
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- land plants -->
-			<BMT_CoconutPalm>0.07</BMT_CoconutPalm>
-			<BMT_DevilsClawTree>0.05</BMT_DevilsClawTree>
-			<BMT_Fern>0.4</BMT_Fern>
-			<BMT_FloweringFern>0.4</BMT_FloweringFern>
+			<BiomesIslands_CoconutPalm>0.07</BiomesIslands_CoconutPalm>
+			<BiomesIslands_DevilsClawTree>0.05</BiomesIslands_DevilsClawTree>
+			<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
+			<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
 			<Plant_Grass>2.0</Plant_Grass>
 			<Plant_ShrubLow>1.0</Plant_ShrubLow>
 			<Plant_TreePalm>1.0</Plant_TreePalm>
 
 			<!-- sand plants -->
-			<BMT_Bayhops>5</BMT_Bayhops>
+			<BiomesIslands_Bayhops>5</BiomesIslands_Bayhops>
 			<!-- water plants -->
 
-			<BMT_Kelp>0.25</BMT_Kelp>
-			<BMT_SeaSponge>0.15</BMT_SeaSponge>
-			<BMT_SeaGrass>1.0</BMT_SeaGrass>
-			<BMT_Seaweed>0.4</BMT_Seaweed>
-			<BMT_GreenAlgae>0.1</BMT_GreenAlgae>
-			<BMT_Sargassum>0.25</BMT_Sargassum>
+			<BiomesIslands_Kelp>0.25</BiomesIslands_Kelp>
+			<BiomesIslands_SeaSponge>0.15</BiomesIslands_SeaSponge>
+			<BiomesIslands_SeaGrass>1.0</BiomesIslands_SeaGrass>
+			<BiomesIslands_Seaweed>0.4</BiomesIslands_Seaweed>
+			<BiomesIslands_GreenAlgae>0.1</BiomesIslands_GreenAlgae>
+			<BiomesIslands_Sargassum>0.25</BiomesIslands_Sargassum>
 
 		</wildPlants>
 		<wildAnimals>
 			<!-- land grazers -->
-			<BMT_Seagull>1</BMT_Seagull>
-			<BMT_KiwiBird>1.3</BMT_KiwiBird>
-			<BMT_Flamingo>0.9</BMT_Flamingo>
-			<BMT_HermitCrab>0.5</BMT_HermitCrab>
+			<BiomesIslands_Seagull>1</BiomesIslands_Seagull>
+			<BiomesIslands_KiwiBird>1.3</BiomesIslands_KiwiBird>
+			<BiomesIslands_Flamingo>0.9</BiomesIslands_Flamingo>
+			<BiomesIslands_HermitCrab>0.5</BiomesIslands_HermitCrab>
 			<Tortoise>0.5</Tortoise>
-			<BMT_SeaTurtle>0.3</BMT_SeaTurtle>
-			<BMT_MarineIguana>0.6</BMT_MarineIguana>
-			<BMT_PhoebaniaRat>0.2</BMT_PhoebaniaRat>
+			<BiomesIslands_SeaTurtle>0.3</BiomesIslands_SeaTurtle>
+			<BiomesIslands_MarineIguana>0.6</BiomesIslands_MarineIguana>
+			<BiomesIslands_PhoebaniaRat>0.2</BiomesIslands_PhoebaniaRat>
 			<!-- land predators -->
-			<BMT_Gigantaconda>0.05</BMT_Gigantaconda>
+			<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
 
 			<!-- aquatic grazers -->
 			<BMT_Sunfish>0.1</BMT_Sunfish>
-			<BMT_Sardine>0.6</BMT_Sardine>
+			<BiomesIslands_Sardine>0.6</BiomesIslands_Sardine>
 			<BMT_SunfinAngelfish>0.8</BMT_SunfinAngelfish>
 			<BMT_OrchidBasslet>0.3</BMT_OrchidBasslet>
 			<BMT_OrangepeelAngelfish>0.5</BMT_OrangepeelAngelfish>
-			<BMT_LimepeelAngelfish>1.2</BMT_LimepeelAngelfish>
-			<BMT_BlueSeaSnail>0.6</BMT_BlueSeaSnail>
+			<BiomesIslands_LimepeelAngelfish>1.2</BiomesIslands_LimepeelAngelfish>
+			<BiomesIslands_BlueSeaSnail>0.6</BiomesIslands_BlueSeaSnail>
 
 			<BMT_GreenEel>1.0</BMT_GreenEel>
 			<BMT_Parrotfish>0.7</BMT_Parrotfish>
-			<BMT_MantaRay>0.1</BMT_MantaRay>
+			<BiomesIslands_MantaRay>0.1</BiomesIslands_MantaRay>
 			<!-- aquatic predators -->
 			<BMT_Dolphin>0.3</BMT_Dolphin>
 			<BMT_Swordfish>0.09</BMT_Swordfish>
-			<BMT_RedSnapper>0.18</BMT_RedSnapper>
-			<BMT_Tuna>0.22</BMT_Tuna>
-			<BMT_Hammerhead>0.15</BMT_Hammerhead>
-			<BMT_WhiteShark>0.12</BMT_WhiteShark>
+			<BiomesIslands_RedSnapper>0.18</BiomesIslands_RedSnapper>
+			<BiomesIslands_Tuna>0.22</BiomesIslands_Tuna>
+			<BiomesIslands_Hammerhead>0.15</BiomesIslands_Hammerhead>
+			<BiomesIslands_WhiteShark>0.12</BiomesIslands_WhiteShark>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
