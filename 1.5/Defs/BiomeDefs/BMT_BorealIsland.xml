@@ -2,6 +2,7 @@
 <Defs>
 
 	<BiomeDef Name="BiomesIslands_BorealIslandBase" Abstract="True">
+		<defName>BiomesIslands_BorealIsland</defName>
 		<label>boreal island</label>
 		<description>Blanketed with coniferous forests and kissed by cold winds, boreal islands offer solitude amid nature. Though winters are long and harsh, the land is rich with game, and the trees provide ample shelter and resources.</description>
 		<canAutoChoose>false</canAutoChoose>

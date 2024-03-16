@@ -2,6 +2,7 @@
 <Defs>
 
 	<BiomeDef Name="BiomesIslands_TropicalIslandBase" Abstract="True">
+		<defName>BiomesIslands_TropicalIslandBase</defName>
 		<label>tropical island</label>
 		<description>Lush rainforests teem with life under the humid embrace of the tropics. Vibrant flora and fauna make for a vibrant, though occasionally challenging, ecosystem. Caution is advised; for beauty here often conceals lurking dangers.</description>
 		<canAutoChoose>false</canAutoChoose>

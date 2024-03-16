@@ -2,6 +2,7 @@
 <Defs>
 
 	<BiomeDef Name="BiomesIslands_DesertIslandBase" Abstract="True">
+		<defName>BiomesIslands_DesertIslandBase</defName>
 		<label>desert island</label>
 		<description>Scorched by the sun and stripped of most vegetation, these sandy stretches may seem barren. But with resilience, one can unearth hidden resources, making survival a true testament to adaptability.</description>
 		<canAutoChoose>false</canAutoChoose>

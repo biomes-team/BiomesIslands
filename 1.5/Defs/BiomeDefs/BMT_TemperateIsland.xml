@@ -2,6 +2,7 @@
 <Defs>
 
 	<BiomeDef Name="BiomesIslands_TemperateIslandBase" Abstract="True">
+		<defName>BiomesIslands_TemperateIslandBase</defName>
 		<label>temperate island</label>
 		<description>Balancing warmth and moisture, these islands boast sandy shores and bountiful resources, perfect for a temperate retreat. With minimal predatory threats, it's an inviting, relatively peaceful sanctuary.</description>
 		<canAutoChoose>false</canAutoChoose>

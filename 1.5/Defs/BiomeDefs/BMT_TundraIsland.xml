@@ -2,6 +2,7 @@
 <Defs>
 
 	<BiomeDef Name="BiomesIslands_TundraIslandBase" Abstract="True">
+		<defName>BiomesIslands_TundraIslandBase</defName>
 		<label>tundra island</label>
 		<description>Frigid and windswept, these islands are a realm of ice and sparse vegetation. Though the environment is harsh, it isn't devoid of life; hardy species thrive, providing opportunities for those resilient enough to call it home.</description>
 		<canAutoChoose>false</canAutoChoose>
