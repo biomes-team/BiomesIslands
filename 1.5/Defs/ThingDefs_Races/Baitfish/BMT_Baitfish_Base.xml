@@ -34,7 +34,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail" Abstract="true"
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail" Abstract="true"
 	          Name="BMT_BaitfishBase">
 		<defName>BMT_BaitfishBase</defName>
 		<label>fish</label>

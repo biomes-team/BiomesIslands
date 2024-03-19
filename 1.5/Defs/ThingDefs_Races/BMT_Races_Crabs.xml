@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Small Crabs -->
-	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_BlueCrab</defName>
 		<label>blue crab</label>
 		<description>A medium sized crab species related to the rimcrab. It is native to cold and temperate islands.</description>
@@ -105,7 +105,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_FiddlerCrab</defName>
 		<label>fiddler crab</label>
 		<description>A crab species native to tropical islands. Male fiddlers have an oversized claw on one side.</description>
@@ -231,7 +231,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_HermitCrab</defName>
 		<label>hermit crab</label>
 		<description>A crab species known for hiding inside seashells. Despite their name, they are highly social, living in colonies of hundreds of crabs. Their hard shells make them very tough for their size.</description>
@@ -349,7 +349,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_RimCrab</defName>
 		<label>rimcrab</label>
 		<description>A mongrel crab species that can survive on most rimworlds in warm waters. It moves in large packs, which can be a threat to smaller islands because of their ravenous hunger. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
@@ -453,7 +453,7 @@
 	</PawnKindDef>
 
 	<!-- Large Crabs -->
-	<ThingDef ParentName="BiomesIslands_CrabThingBase">
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
 		<defName>BiomesIslands_ClutterCrab</defName>
 		<label>clutter crab</label>
 		<description>An unusually large and intelligent crab. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>

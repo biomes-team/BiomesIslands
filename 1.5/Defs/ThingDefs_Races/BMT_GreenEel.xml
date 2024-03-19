@@ -34,7 +34,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_GreenEel</defName>
 		<label>green eel</label>
 		<description>A herbivorous eel that lives in warm waters.</description>

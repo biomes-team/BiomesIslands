@@ -36,7 +36,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_Walrus</defName>
 		<label>walrus</label>
 		<description>Known for their large tusks, Walruses are one of the easiest to identify sea mammals. They use these tusks for movement assistance as well as scavenging for food on the seabed.</description>
@@ -220,7 +220,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_Sealion</defName>
 		<label>sea lion</label>
 		<description>Easily trained due to their high intelligence and sociability, sea lions are used by many seaside communities for dumb labor. While very cute, they can be dangerous due to their sharp teeth and predatory nature.</description>

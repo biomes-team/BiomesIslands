@@ -3,7 +3,7 @@
 
 	<!--====================	Fruit Trees		=====================-->
 
-	<ThingDef ParentName="BMT_FruitTreeBase">
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_BananaPlant</defName>
 		<label>sugar banana plant</label>
 		<description>A large flowering herb often mistaken for a tree. Produces bananas.</description>
@@ -23,7 +23,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_FruitTreeBase">
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_DevilsClawTree</defName>
 		<label>devil's claw</label>
 		<description>A tropical tree with broad, edible leaves.</description>
@@ -42,7 +42,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_FruitTreeBase">
+	<ThingDef ParentName="BiomesCore_FruitTreeBase">
 		<defName>BiomesIslands_OrangeTree</defName>
 		<label>blood orange tree</label>
 		<description>The orange tree is a tree, which can reach 10 m in height, provided with branches with few weak spines. Produces sweet oranges.</description>

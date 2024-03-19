@@ -36,7 +36,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_WhiteShark</defName>
 		<label>great white shark</label>
 		<description>A large species of mackarel shark. Feared for their power and sharp teeth, they live mainly in warm waters and prefer to hunt large prey.</description>
@@ -206,7 +206,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_Hammerhead</defName>
 		<label>hammerhead shark</label>
 		<description>A large species of sphyrnidae shark. Recognized by the unique and striking head they have, they live mainly near coastal regions feeding on medium size prey.</description>
@@ -374,7 +374,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_Tuna</defName>
 		<label>tuna</label>
 		<description>A large carnivorous fish. Will eat anything they can swallow whole. Fortunately, they are not large enough to swallow people.</description>
@@ -559,7 +559,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_WaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_WaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_BlueSeaSnail</defName>
 		<label>sea snail</label>
 		<description>A diminutive aquatic mollusk. Food for fish and otters.</description>
@@ -718,7 +718,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_RedSnapper</defName>
 		<label>red snapper</label>
 		<description>A carnivorous fish. Will eat anything they can swallow whole. Fortunately, they are not large enough to swallow people.</description>
@@ -886,7 +886,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_Trout</defName>
 		<label>trout</label>
 		<description>A large herbivorous fish.</description>
@@ -1065,7 +1065,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_MantaRay</defName>
 		<label>manta ray</label>
 		<description>Manta ray, closely related to sharks, can be found in warm, subtropical and tropical waters. Migrates across open oceans, singly or in groups.</description>

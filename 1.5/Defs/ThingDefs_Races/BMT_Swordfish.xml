@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? No. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Fish leather. Should give its skull when butchered. -->
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Swordfish</defName>
 		<label>swordfish</label>
 		<description>A large species of swordfish.</description>

@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? No -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weak leather. -->
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Dolphin</defName>
 		<label>dolphin</label>
 		<description>A generalized hybrid of many species of oceanic dolphin. They use echolocation to both communicate and find food.</description>

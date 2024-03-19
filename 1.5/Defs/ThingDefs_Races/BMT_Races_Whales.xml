@@ -36,7 +36,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_Whale</defName>
 		<label>whale</label>
 		<description>Whales live in the seas, they look like large fishes, but they are actually mammals. They breathe air before diving and can endure hours without returning to the surface, they produce milk for the baby whales. They can be found usually in groups.</description>
@@ -214,7 +214,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_BoomWhale</defName>
 		<label>boomwhale</label>
 		<description>A whale that explodes. Related to both whales and boomalopes, it is somewhat smaller and dumber than its unmodified cousins.</description>

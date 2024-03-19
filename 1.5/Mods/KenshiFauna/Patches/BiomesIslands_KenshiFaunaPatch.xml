@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<value>
+			<KenshiFauna_Gutter>0.05</KenshiFauna_Gutter>
+			<KenshiFauna_Skinspider>0.01</KenshiFauna_Skinspider>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<value>
+			<KenshiFauna_Bonedog>0.1</KenshiFauna_Bonedog>
+			<KenshiFauna_Bull>0.1</KenshiFauna_Bull>
+			<KenshiFauna_Garru>0.05</KenshiFauna_Garru>
+			<KenshiFauna_Goat>0.1</KenshiFauna_Goat>
+			<KenshiFauna_Gutter>0.02</KenshiFauna_Gutter>
+			<KenshiFauna_SandSkimmer>0.2</KenshiFauna_SandSkimmer>
+			<KenshiFauna_Skinspider>0.05</KenshiFauna_Skinspider>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BiomesIslands_TemperateIsland"]/wildAnimals</xpath>
+		<value>
+			<KenshiFauna_Gorillo>0.1</KenshiFauna_Gorillo>
+			<KenshiFauna_Landbat>0.1</KenshiFauna_Landbat>
+			<KenshiFauna_WaterRaptor>0.05</KenshiFauna_WaterRaptor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<value>
+			<KenshiFauna_Bloodspider>0.05</KenshiFauna_Bloodspider>
+			<KenshiFauna_ElephantTurtle>0.2</KenshiFauna_ElephantTurtle>
+			<KenshiFauna_GiantBlindCrab>0.05</KenshiFauna_GiantBlindCrab>
+			<KenshiFauna_WaterRaptor>0.1</KenshiFauna_WaterRaptor>
+		</value>
+	</Operation>
+
+</Patch>
+

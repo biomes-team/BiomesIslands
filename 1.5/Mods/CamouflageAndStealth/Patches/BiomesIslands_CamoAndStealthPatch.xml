@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+Arctic
+Desert
+Jungle
+Stone
+Urban
+Woodland
+-->
+
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll" or @Name="BiomesIslands_TropicalIslandBase"]</xpath>
+		<value>
+			<li Class="CompCamo.CompCamoDefs">
+				<CamoType>Jungle</CamoType>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]</xpath>
+		<value>
+			<li Class="CompCamo.CompCamoDefs">
+				<CamoType>Desert</CamoType>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase" or @Name="BiomesIslands_TemperateIslandBase"]</xpath>
+		<value>
+			<li Class="CompCamo.CompCamoDefs">
+				<CamoType>Woodland</CamoType>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]</xpath>
+		<value>
+			<li Class="CompCamo.CompCamoDefs">
+				<CamoType>Arctic</CamoType>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
+

@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? No. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Fish leather. Its attacks should cause rapid toxic buildup. -->
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Lionfish</defName>
 		<label>lionfish</label>
 		<description>A small species of lionfish.</description>

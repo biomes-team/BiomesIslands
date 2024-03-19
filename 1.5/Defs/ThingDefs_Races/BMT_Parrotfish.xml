@@ -35,7 +35,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Parrotfish</defName>
 		<label>parrotfish</label>
 		<description>A large herbivorous fish, found in warm waters.</description>

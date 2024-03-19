@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TerrainDef ParentName="StoneBridgeBase">
+		<defName>VFEArch_BridgeCoral</defName>
+		<label>coral bridge</label>
+		<color>(250,180,147)</color>
+		<costList>
+			<BiomesIslands_BlocksCoral>12</BiomesIslands_BlocksCoral>
+		</costList>
+		<uiIconPath>Icon/StoneBridgeCoral_MenuIcon</uiIconPath>
+	</TerrainDef>
+
+	<TerrainDef ParentName="CobblestoneBase">
+		<defName>VFEArch_CobblestoneFloorCoral</defName>
+		<label>coral cobblestone floor</label>
+		<color>(250,180,147)</color>
+		<costList>
+			<BiomesIslands_BlocksCoral>4</BiomesIslands_BlocksCoral>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="StoneSlabsBase">
+		<defName>VFEArch_SlabsCoral</defName>
+		<label>coral slabs</label>
+		<color>(250,180,147)</color>
+		<costList>
+			<BiomesIslands_BlocksCoral>8</BiomesIslands_BlocksCoral>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="PolishedStoneFloorBase">
+		<defName>VFEArch_PolishedStoneFloorCoral</defName>
+		<label>polished coral stone floor</label>
+		<color>(250,180,147)</color>
+		<costList>
+			<BiomesIslands_BlocksCoral>12</BiomesIslands_BlocksCoral>
+		</costList>
+	</TerrainDef>
+
+</Defs>

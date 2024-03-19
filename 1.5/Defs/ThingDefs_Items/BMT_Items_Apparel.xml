@@ -30,6 +30,7 @@
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Apparel</li>
+			<li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>

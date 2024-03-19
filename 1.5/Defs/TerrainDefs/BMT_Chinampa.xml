@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<TerrainDef ParentName="BMT_Chinampa_Base">
-		<defName>BMT_Chinampa_Coral</defName>
+	<TerrainDef ParentName="BiomesCore_FloatingGarden">
+		<defName>FloatinggardenCoral</defName>
 		<label>coral chinampa</label>
 		<costList>
 			<BiomesIslands_ChunkCoral>1</BiomesIslands_ChunkCoral>

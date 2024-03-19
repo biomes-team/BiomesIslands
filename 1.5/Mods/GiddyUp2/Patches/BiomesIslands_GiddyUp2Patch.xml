@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Water animals are not mountable by default. -->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[@Name="BiomesCore_WaterAnimal"]</xpath>
+		<value>
+			<li Class="GiddyUp.NotMountable"/>
+		</value>
+	</Operation>
+	<!-- DrawingOffsets: x: -left, +right, y: drawing priority, z: -down, +up. -->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BiomesIslands_OmegaDodo"]</xpath>
+		<value>
+			<li Class="GiddyUp.DrawingOffset">
+				<northOffset>0,0,-0.1</northOffset>
+				<southOffset>0,-1,-0.1</southOffset>
+				<eastOffset>-0.2,0,0.2</eastOffset>
+				<westOffset>0.2,0,0.2</westOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="BiomesIslands_OmegaDodo"]</xpath>
+		<value>
+			<li Class="GiddyUp.CustomStats">
+				<speedModifier>0.9</speedModifier>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BiomesIslands_ShetlandPony"]</xpath>
+		<value>
+			<li Class="GiddyUp.DrawingOffset">
+				<northOffset>0,0,-0.1</northOffset>
+				<southOffset>0,1,0.1</southOffset>
+				<eastOffset>-0.1,0,0</eastOffset>
+				<westOffset>0.1,0,0</westOffset>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

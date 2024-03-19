@@ -8,7 +8,7 @@
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Fish leather. -->
 <!-- They should give a lot of meat at once. -->
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Sunfish</defName>
 		<label>sunfish</label>
 		<description>A large species of sunfish.</description>

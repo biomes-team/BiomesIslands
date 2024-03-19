@@ -36,7 +36,7 @@
 		<shearable>true</shearable>
 	</LifeStageDef>
 
-	<ThingDef ParentName="BMT_SaltWaterAnimal" ADogSaidBody="Tail">
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BiomesIslands_Orcaphibian</defName>
 		<label>whale</label>
 		<description>Orcaphibians are the result of minor genetic alteration, returning their vestigial legs and turning them from merely a fierce oceanic predator into one on both land and sea. Certain island and coastal-dwelling societies make use of them as fierce attack animals. They attack so fiercly that their quarry rarely has time to react before being torn to pieces.</description>
