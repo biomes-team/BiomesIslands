@@ -30,7 +30,6 @@
 			<AA_Swarmling>0.01</AA_Swarmling>
 			<AA_TeratogenicOriginator>0.01</AA_TeratogenicOriginator>
 			<AA_Thermadon>0.01</AA_Thermadon>
-			<AA_WaywardMobileAssembler>0.005</AA_WaywardMobileAssembler>
 		</value>
 	</Operation>
 
@@ -68,7 +67,6 @@
 			<AA_Swarmling>0.07</AA_Swarmling>
 			<AA_TeratogenicOriginator>0.01</AA_TeratogenicOriginator>
 			<AA_Thermadon>0.01</AA_Thermadon>
-			<AA_WaywardMobileAssembler>0.005</AA_WaywardMobileAssembler>
 		</value>
 	</Operation>
 
@@ -105,7 +103,6 @@
 			<AA_Swarmling>0.01</AA_Swarmling>
 			<AA_TeratogenicOriginator>0.01</AA_TeratogenicOriginator>
 			<AA_Thermadon>0.01</AA_Thermadon>
-			<AA_WaywardMobileAssembler>0.005</AA_WaywardMobileAssembler>
 		</value>
 	</Operation>
 
@@ -145,7 +142,6 @@
 			<AA_Swarmling>0.07</AA_Swarmling>
 			<AA_TeratogenicOriginator>0.01</AA_TeratogenicOriginator>
 			<AA_Thermadon>0.01</AA_Thermadon>
-			<AA_WaywardMobileAssembler>0.005</AA_WaywardMobileAssembler>
 		</value>
 	</Operation>
 
@@ -186,7 +182,6 @@
 			<AA_Swarmling>0.03</AA_Swarmling>
 			<AA_TeratogenicOriginator>0.01</AA_TeratogenicOriginator>
 			<AA_Thermadon>0.01</AA_Thermadon>
-			<AA_WaywardMobileAssembler>0.005</AA_WaywardMobileAssembler>
 		</value>
 	</Operation>
 
@@ -220,7 +215,6 @@
 			<AA_Swarmling>0.01</AA_Swarmling>
 			<AA_TeratogenicOriginator>0.01</AA_TeratogenicOriginator>
 			<AA_Thermadon>0.05</AA_Thermadon>
-			<AA_WaywardMobileAssembler>0.005</AA_WaywardMobileAssembler>
 		</value>
 	</Operation>
 
