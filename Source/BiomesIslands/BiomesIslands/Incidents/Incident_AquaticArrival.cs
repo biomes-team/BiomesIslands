@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using PathfindingFramework;
 using PathfindingFramework.ExtensionMethodCaches;
+using PathfindingFramework.MovementDefUtils;
 using PathfindingFramework.Patches;
 using RimWorld;
 using RimWorld.Planet;
@@ -73,7 +74,7 @@ namespace BiomesIslands.Incidents
 
 		private static bool IsAquatic(PawnKindDef animalKind)
 		{
-			return animalKind.race.MovementDef() == MovementDefOf.PF_Movement_Aquatic;
+			return MovementDefDatabase<ThingDef>.Get(animalKind.race) == MovementDefOf.PF_Movement_Aquatic;
 		}
 
 		private static float AnimalWeight(PawnKindDef pawnKindDef)
