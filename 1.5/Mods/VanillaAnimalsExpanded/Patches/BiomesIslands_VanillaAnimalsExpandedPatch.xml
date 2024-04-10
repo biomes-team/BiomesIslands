@@ -60,7 +60,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_TemperateIsland"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AEXP_Alligator>0.03</AEXP_Alligator>
 			<AEXP_Badger>0.3</AEXP_Badger>
