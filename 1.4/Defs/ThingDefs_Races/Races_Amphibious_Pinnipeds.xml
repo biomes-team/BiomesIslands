@@ -146,7 +146,7 @@
 					<drawSize>2.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Whale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -156,7 +156,7 @@
 					<drawSize>4.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Whale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
 					<drawSize>4.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -166,7 +166,7 @@
 					<drawSize>4.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Whale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
