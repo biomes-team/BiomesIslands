@@ -252,14 +252,14 @@
 				</li>
 				<li>
 					<def>Head</def>
-					<coverage>0.25</coverage>
+					<coverage>0.20</coverage>
 					<groups>
 						<li>HeadAttackTool</li>
 					</groups>
 					<parts>
 						<li>
 							<def>Skull</def>
-							<coverage>0.40</coverage>
+							<coverage>0.35</coverage>
 							<depth>Inside</depth>
 								<parts>
 									<li>
