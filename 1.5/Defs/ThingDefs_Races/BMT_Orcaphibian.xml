@@ -208,7 +208,7 @@
 				</li>
 				<li>
 					<def>Spine</def>
-					<coverage>0.08</coverage>
+					<coverage>0.07</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
@@ -252,7 +252,7 @@
 				</li>
 				<li>
 					<def>Head</def>
-					<coverage>0.20</coverage>
+					<coverage>0.16</coverage>
 					<groups>
 						<li>HeadAttackTool</li>
 					</groups>
@@ -281,7 +281,7 @@
 						</li>
 						<li>
 							<def>Nose</def>
-							<coverage>0.15</coverage>
+							<coverage>0.1</coverage>
 						</li>
 						<li>
 							<def>AnimalJaw</def>
@@ -295,37 +295,37 @@
 				<li>
 					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>right front leg</customLabel>
-					<coverage>0.07</coverage>
+					<coverage>0.04</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
 					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>left front leg</customLabel>
-					<coverage>0.07</coverage>
+					<coverage>0.04</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
 					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>right back leg</customLabel>
-					<coverage>0.07</coverage>
+					<coverage>0.04</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
 					<def>BiomesIslands_OrcaphibianLeg</def>
 					<customLabel>left back leg</customLabel>
-					<coverage>0.07</coverage>
+					<coverage>0.04</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
 					<def>BiomesIslands_Fin</def>
 					<customLabel>right flipper</customLabel>
-					<coverage>0.07</coverage>
+					<coverage>0.04</coverage>
 					<height>Bottom</height>
 				</li>
 				<li>
 					<def>BiomesIslands_Fin</def>
 					<customLabel>dorsal fin</customLabel>
-					<coverage>0.07</coverage>
+					<coverage>0.04</coverage>
 					<height>Top</height>
 				</li>
 			</parts>

@@ -34,6 +34,9 @@
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>pathfinding.framework</li>
+		<li>VanillaExpanded.VFEArchitect</li>
+		<li>OskarPotocki.VFE.Classical</li>
+		<li>sol.vfearchaddon</li>
 		<li>BiomesTeam.BiomesCore</li>
 	</loadAfter>
 	<description>
