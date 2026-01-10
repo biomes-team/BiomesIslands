@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_TropicalCoast</defName>
+
+		<label>tropical coast</label>
+
+		<biomeLabel operation="appendPar">coast</biomeLabel>
+		<biomeDescription operation="appendLine">A tropical coast borders this tile.</biomeDescription>
+
+		<worldTileConditions>
+			<coast>Ocean</coast>
+			<anyOf>
+				<biome>TropicalRainforest</biome>
+				<biome>TropicalSwamp</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<layers>
+			<li>
+
+				<!-- use the operation "add" to append entries to the wildPlants of the main biome -->
+				<wildPlants operation="add">
+
+					<!-- land plants -->
+					<BiomesIslands_CoconutPalm>0.3</BiomesIslands_CoconutPalm>
+					<BiomesIslands_OrangeTree>0.2</BiomesIslands_OrangeTree>
+					<BiomesIslands_BananaPlant>0.3</BiomesIslands_BananaPlant>
+					<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
+					<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
+
+					<!-- water plants -->
+					<BiomesIslands_Kelp>0.15</BiomesIslands_Kelp>
+					<BiomesIslands_SeaSponge>0.02</BiomesIslands_SeaSponge>
+					<BiomesIslands_SeaGrass>3.0</BiomesIslands_SeaGrass>
+					<BiomesIslands_Seaweed>2.0</BiomesIslands_Seaweed>
+					<BiomesIslands_GreenAlgae>3</BiomesIslands_GreenAlgae>
+					<BiomesIslands_Sargassum>0.15</BiomesIslands_Sargassum>
+
+				</wildPlants>
+
+				<!-- use the operation "add" to append entries to the wildAnimals of the main biome -->
+				<wildAnimals operation="add">
+
+					<!-- land grazers -->
+					<BiomesIslands_Seagull>0.5</BiomesIslands_Seagull>
+					<BiomesIslands_Flamingo>0.7</BiomesIslands_Flamingo>
+					<BiomesIslands_FiddlerCrab>0.5</BiomesIslands_FiddlerCrab>
+					<BiomesIslands_HermitCrab>0.6</BiomesIslands_HermitCrab>
+					<BiomesIslands_MarineIguana>0.5</BiomesIslands_MarineIguana>
+					<BiomesIslands_GreenGecko>1.5</BiomesIslands_GreenGecko>
+					<BiomesIslands_SeaTurtle>0.5</BiomesIslands_SeaTurtle>
+					<BiomesIslands_LeatherbackTurtle>0.8</BiomesIslands_LeatherbackTurtle>
+					<BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
+
+					<!-- land predators -->
+					<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
+					<BiomesIslands_Megamantis>0.1</BiomesIslands_Megamantis>
+					<BMT_KomodoDragon>0.05</BMT_KomodoDragon>
+
+					<!-- aquatic grazers -->
+					<BiomesIslands_Sardine>0.5</BiomesIslands_Sardine>
+					<BMT_SunfinAngelfish>0.5</BMT_SunfinAngelfish>
+					<BiomesIslands_LimepeelAngelfish>1.0</BiomesIslands_LimepeelAngelfish>
+					<BMT_OrangepeelAngelfish>1.0</BMT_OrangepeelAngelfish>
+					<BMT_Muckfrill>0.5</BMT_Muckfrill>
+					<BiomesIslands_BlueSeaSnail>0.75</BiomesIslands_BlueSeaSnail>
+					<BMT_GreenEel>1.0</BMT_GreenEel>
+					<BMT_Parrotfish>0.2</BMT_Parrotfish>
+					<BiomesIslands_BoomWhale>0.1</BiomesIslands_BoomWhale>
+					<BiomesIslands_MantaRay>0.03</BiomesIslands_MantaRay>
+
+					<!-- aquatic predators -->
+					<BiomesIslands_Tuna>0.2</BiomesIslands_Tuna>
+					<BiomesIslands_RedSnapper>0.08</BiomesIslands_RedSnapper>
+					<BiomesIslands_Hammerhead>0.08</BiomesIslands_Hammerhead>
+					<BiomesIslands_WhiteShark>0.06</BiomesIslands_WhiteShark>
+
+				</wildAnimals>
+
+			</li>
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

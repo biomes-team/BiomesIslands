@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<value>
+			<FoxSquirrel>0.05</FoxSquirrel>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase" or
+			@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals
+		</xpath>
+		<value>
+			<FoxSquirrel>0.12</FoxSquirrel>
+		</value>
+	</Operation>
+
+</Patch>
+

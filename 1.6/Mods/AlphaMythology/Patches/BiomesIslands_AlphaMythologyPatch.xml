@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<value>
+			<MM_Ahuizotl>0.03</MM_Ahuizotl>
+			<MM_Cerberus>0.07</MM_Cerberus>
+			<MM_Chimera>0.004</MM_Chimera>
+			<MM_ErymanthianBoar>0.07</MM_ErymanthianBoar>
+			<MM_Griffin>0.06</MM_Griffin>
+			<MM_LernaeanHydra>0.05</MM_LernaeanHydra>
+			<MM_LesserWyvern>0.001</MM_LesserWyvern>
+			<MM_Pegasus>0.02</MM_Pegasus>
+			<MM_Phoenix>0.001</MM_Phoenix>
+			<MM_StymphalianBird>0.015</MM_StymphalianBird>
+			<MM_Unicorn>0.02</MM_Unicorn>
+			<MM_WillOWisp>0.07</MM_WillOWisp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<value>
+			<MM_Ahuizotl>0.008</MM_Ahuizotl>
+			<MM_Basilisk>0.004</MM_Basilisk>
+			<MM_CeryneianHind>0.05</MM_CeryneianHind>
+			<MM_Chimera>0.008</MM_Chimera>
+			<MM_ErymanthianBoar>0.03</MM_ErymanthianBoar>
+			<MM_Fenghuang>0.008</MM_Fenghuang>
+			<MM_Griffin>0.05</MM_Griffin>
+			<MM_Ieltxu>0.005</MM_Ieltxu>
+			<MM_Kitsune>0.06</MM_Kitsune>
+			<MM_LesserWyvern>0.001</MM_LesserWyvern>
+			<MM_Pegasus>0.01</MM_Pegasus>
+			<MM_Phoenix>0.001</MM_Phoenix>
+			<MM_StymphalianBird>0.015</MM_StymphalianBird>
+			<MM_Qilin>0.1</MM_Qilin>
+			<MM_WillOWisp>0.01</MM_WillOWisp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<value>
+			<MM_Ahuizotl>0.005</MM_Ahuizotl>
+			<MM_Catoblepas>0.08</MM_Catoblepas>
+			<MM_Cerberus>0.01</MM_Cerberus>
+			<MM_Chimera>0.03</MM_Chimera>
+			<MM_ErymanthianBoar>0.01</MM_ErymanthianBoar>
+			<MM_Griffin>0.01</MM_Griffin>
+			<MM_LernaeanHydra>0.1</MM_LernaeanHydra>
+			<MM_LesserWyvern>0.001</MM_LesserWyvern>
+			<MM_Manticore>0.05</MM_Manticore>
+			<MM_Pegasus>0.01</MM_Pegasus>
+			<MM_Phoenix>0.001</MM_Phoenix>
+			<MM_StymphalianBird>0.015</MM_StymphalianBird>
+			<MM_Qilin>0.002</MM_Qilin>
+			<MM_Tlilcoatl>0.01</MM_Tlilcoatl>
+			<MM_WildMinotaur>0.02</MM_WildMinotaur>
+			<MM_Xiezhi>0.01</MM_Xiezhi>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
+		<value>
+			<MM_Ahuizotl>0.005</MM_Ahuizotl>
+			<MM_Basilisk>0.005</MM_Basilisk>
+			<MM_Catoblepas>0.05</MM_Catoblepas>
+			<MM_CeryneianHind>0.03</MM_CeryneianHind>
+			<MM_ErymanthianBoar>0.05</MM_ErymanthianBoar>
+			<MM_Fenghuang>0.008</MM_Fenghuang>
+			<MM_Griffin>0.06</MM_Griffin>
+			<MM_Ieltxu>0.005</MM_Ieltxu>
+			<MM_Kitsune>0.06</MM_Kitsune>
+			<MM_LesserWyvern>0.001</MM_LesserWyvern>
+			<MM_Manticore>0.05</MM_Manticore>
+			<MM_Phoenix>0.001</MM_Phoenix>
+			<MM_Qilin>0.07</MM_Qilin>
+			<MM_StymphalianBird>0.015</MM_StymphalianBird>
+			<MM_Unicorn>0.01</MM_Unicorn>
+			<MM_WildMinotaur>0.02</MM_WildMinotaur>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<value>
+			<MM_Ahuizotl>0.05</MM_Ahuizotl>
+			<MM_Basilisk>0.01</MM_Basilisk>
+			<MM_Catoblepas>0.05</MM_Catoblepas>
+			<MM_Cerberus>0.03</MM_Cerberus>
+			<MM_CeryneianHind>0.01</MM_CeryneianHind>
+			<MM_Chimera>0.03</MM_Chimera>
+			<MM_Ieltxu>0.005</MM_Ieltxu>
+			<MM_LernaeanHydra>0.07</MM_LernaeanHydra>
+			<MM_LesserWyvern>0.001</MM_LesserWyvern>
+			<MM_Manticore>0.05</MM_Manticore>
+			<MM_Unicorn>0.01</MM_Unicorn>
+			<MM_Phoenix>0.001</MM_Phoenix>
+			<MM_StymphalianBird>0.015</MM_StymphalianBird>
+			<MM_WildMinotaur>0.02</MM_WildMinotaur>
+			<MM_WillOWisp>0.03</MM_WillOWisp>
+		</value>
+	</Operation>
+	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<value>
+			<MM_CeryneianHind>0.005</MM_CeryneianHind>
+			<MM_Chimera>0.001</MM_Chimera>
+			<MM_ErymanthianBoar>0.05</MM_ErymanthianBoar>
+			<MM_Kitsune>0.07</MM_Kitsune>
+			<MM_LernaeanHydra>0.05</MM_LernaeanHydra>
+			<MM_LesserWyvern>0.001</MM_LesserWyvern>
+			<MM_Pegasus>0.001</MM_Pegasus>
+			<MM_Phoenix>0.001</MM_Phoenix>
+			<MM_Qilin>0.005</MM_Qilin>
+			<MM_StymphalianBird>0.015</MM_StymphalianBird>
+			<MM_WillOWisp>0.01</MM_WillOWisp>
+		</value>
+	</Operation>
+
+</Patch>
+

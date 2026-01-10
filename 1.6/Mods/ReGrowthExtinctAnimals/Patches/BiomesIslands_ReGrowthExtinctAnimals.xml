@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals
+		</xpath>
+		<value>
+			<RG_ArcticDrak>0.2</RG_ArcticDrak>
+			<RG_SabertoothSquirrel>0.8</RG_SabertoothSquirrel>
+			<RG_SabertoothTiger>0.04</RG_SabertoothTiger>
+			<RG_Velociraptor>0.1</RG_Velociraptor>
+			<RG_WoollyMammoth>0.2</RG_WoollyMammoth>
+			<RG_WoollyRhinoceros>0.1</RG_WoollyRhinoceros>
+			<RG_WoollyStegosaurus>0.05</RG_WoollyStegosaurus>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals
+		</xpath>
+		<value>
+			<RG_Synthetion>0.2</RG_Synthetion>
+			<RG_TerrorBird>0.4</RG_TerrorBird>
+			<RG_Thrinaxodon>0.2</RG_Thrinaxodon>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals
+		</xpath>
+		<value>
+			<RG_Megalenhydris>0.5</RG_Megalenhydris>
+			<RG_SabertoothTiger>0.04</RG_SabertoothTiger>
+			<RG_Synthetion>0.2</RG_Synthetion>
+			<RG_TerrorBird>0.3</RG_TerrorBird>
+			<RG_Thrinaxodon>0.8</RG_Thrinaxodon>
+			<RG_Velociraptor>0.2</RG_Velociraptor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals
+		</xpath>
+		<value>
+			<RG_TerrorBird>0.4</RG_TerrorBird>
+			<RG_Thrinaxodon>0.2</RG_Thrinaxodon>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals
+		</xpath>
+		<value>
+			<RG_ArcticDrak>0.3</RG_ArcticDrak>
+			<RG_SabertoothSquirrel>1.2</RG_SabertoothSquirrel>
+			<RG_SabertoothTiger>0.02</RG_SabertoothTiger>
+			<RG_Velociraptor>0.2</RG_Velociraptor>
+			<RG_WoollyMammoth>0.2</RG_WoollyMammoth>
+			<RG_WoollyRhinoceros>0.15</RG_WoollyRhinoceros>
+		</value>
+	</Operation>
+
+</Patch>
+

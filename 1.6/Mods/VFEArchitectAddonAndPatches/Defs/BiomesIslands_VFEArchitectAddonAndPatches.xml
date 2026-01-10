@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TerrainDef ParentName="StoneBridgeBase">
+		<defName>SBridgeDeepCoral</defName>
+		<label>deep water coral bridge</label>
+		<color>(250,180,147)</color>
+		<costList>
+			<BiomesIslands_BlocksCoral>16</BiomesIslands_BlocksCoral>
+		</costList>
+		<uiIconPath>Icon/StoneBridgeCoral_MenuIcon</uiIconPath>
+		<terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded>
+	</TerrainDef>
+
+</Defs>

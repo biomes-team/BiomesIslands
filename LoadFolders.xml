@@ -27,7 +27,6 @@
 		<li>\</li>
 		<li>1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/DLC/Royalty</li>
-
 		<li IfModActive="sarg.alphaanimals">1.5/Mods/AlphaAnimals</li>
 		<li IfModActive="sarg.rimbees">1.5/Mods/AlphaBees</li>
 		<li IfModActive="sarg.magicalmenagerie">1.5/Mods/AlphaMythology</li>
@@ -53,4 +52,35 @@
 		<li IfModActive="sol.vfearchaddon">1.5/Mods/VFEArchitectAddonAndPatches</li>
 		<li IfModActive="VanillaExpanded.VAEWaste">1.5/Mods/VanillaAnimalsExpandedWaste</li>
 	</v1.5>
+	
+	
+	<v1.6>
+		<li>\</li>
+		<li>1.6</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.6/DLC/Royalty</li>
+		<li IfModActive="sarg.alphaanimals">1.6/Mods/AlphaAnimals</li>
+		<li IfModActive="sarg.rimbees">1.6/Mods/AlphaBees</li>
+		<li IfModActive="sarg.magicalmenagerie">1.6/Mods/AlphaMythology</li>
+		<li IfModActive="Mlie.CamouflageandStealth">1.6/Mods/CamouflageAndStealth</li>
+		<li IfModActive="CETeam.CombatExtended">1.6/Mods/CombatExtended</li>
+		<li IfModActive="spincrus.dinosauria">1.6/Mods/Dinosauria</li>
+		<li IfModActive="Erin.Foxsquirrel">1.6/Mods/ErinsFoxSquirrel</li>
+		<li IfModActive="Erin.Mountain">1.6/Mods/ErinsMountainAnimals</li>
+		<li IfModActive="Rikiki.FishIndustry">1.6/Mods/FishIndustry</li>
+		<li IfModActive="Owlchemist.GiddyUp">1.6/Mods/GiddyUp2</li>
+		<li IfModActive="EL.KenshiFauna">1.6/Mods/KenshiFauna</li>
+		<li IfModActive="DankPyon.Medieval.Overhaul">1.6/Mods/MedievalOverhaul</li>
+		<li IfModActive="Gargamiel.PokeWorld">1.6/Mods/PokeWorld</li>
+		<li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">1.6/Mods/ReGrowthExtinctAnimals</li>
+		<li IfModActive="Mlie.RC2.Core">1.6/Mods/RimCuisine2Core</li>
+		<li IfModActive="Fluffy.StuffedFloors">1.6/Mods/StuffedFloors</li>
+		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.6/Mods/VanillaAnimalsExpanded</li>
+		<li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/Mods/VanillaFurnitureExpandedArchitect</li>
+		<li IfModActive="OskarPotocki.VFE.Classical">1.6/Mods/VanillaFactionsExpandedClassical</li>
+		<li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
+		<li IfModActive="VanillaExpanded.VPlantsEMore">1.6/Mods/VanillaPlantsExpandedMore</li>
+		<li IfModActive="sol.vfearchaddon">1.6/Mods/VFEArchitectAddonAndPatches</li>
+		<li IfModActive="VanillaExpanded.VAEWaste">1.6/Mods/VanillaAnimalsExpandedWaste</li>
+	</v1.6>
 </loadFolders>

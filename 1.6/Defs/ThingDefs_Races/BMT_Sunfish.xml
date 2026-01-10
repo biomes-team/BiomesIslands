@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Big as a cow. -->
+<!-- What does it eat? (is it a predator?) Filter feeder if that ever gets done, otherwise herbivore. -->
+<!-- Where does it live? All islands, albeit rarely. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Fish leather. -->
+<!-- They should give a lot of meat at once. -->
+
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
+		<defName>BMT_Sunfish</defName>
+		<label>sunfish</label>
+		<description>A large species of sunfish.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<MarketValue>1500</MarketValue>
+			<MeatAmount>142</MeatAmount>
+			<Wildness>0.33</Wildness>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.8</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>28</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>false</predator>
+			<body>Biomes_FishBody</body>
+			<!-- <leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef> -->
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<!-- <useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom> -->
+			<baseHungerRate>0.7</baseHungerRate>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>2.2</baseHealthScale>
+			<!-- <maxPreyBodySize>0.33</maxPreyBodySize> -->
+			<foodType>VegetarianAnimal</foodType>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<packAnimal>false</packAnimal>
+			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<petness>0.01</petness>
+			<lifeExpectancy>35</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.4</manhunterOnDamageChance>
+			<specificMeatDef>BMT_FishMeat</specificMeatDef>
+			<lifeStageAges>
+				<li>
+					<def>BiomesIslands_WhiteSharkBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhiteSharkJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhiteSharkAdult</def>
+					<minAge>0.8</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Sunfish</defName>
+		<label>sunfish</label>
+		<race>BMT_Sunfish</race>
+		<combatPower>70</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Sunfish/Sunfish</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<color>(100,60,70)</color>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Sunfish/Sunfish</texPath>
+					<drawSize>2.65</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<color>(100,60,70)</color>
+					<drawSize>2.65</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Sunfish/Sunfish</texPath>
+					<drawSize>3.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>3.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<!-- TO-DO: Replace the sub shark -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="PathfindingFramework.TerrainTagGraphicExtension"> -->
+				<!-- <terrainTags> -->
+					<!-- <li>PF_TerrainTag_WaterShallow</li> -->
+					<!-- <li>PF_TerrainTag_WaterChest</li> -->
+					<!-- <li>PF_TerrainTag_WaterDeep</li> -->
+				<!-- </terrainTags> -->
+				<!-- <bodyGraphicData> -->
+					<!-- <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath> -->
+				<!-- </bodyGraphicData> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
+
+</Defs>

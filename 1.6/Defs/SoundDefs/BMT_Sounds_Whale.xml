@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<SoundDef>
+		<defName>BiomesIslands_Whale_Call</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Animals/Whale/Biomes_Whale_Call</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>32~32</volumeRange>
+				<distRange>0~50</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BiomesIslands_Whale_Angry</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Animals/Whale/Biomes_Whale_Angry</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>34.39024~34.39024</volumeRange>
+				<distRange>0~70</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+</Defs>

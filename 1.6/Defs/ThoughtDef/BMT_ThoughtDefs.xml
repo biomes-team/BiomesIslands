@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>BiomesIslands_Pineapple</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Yummy pineapple</label>
+				<description>That pineapple was tasty! I feel really full!</description>
+				<baseMoodEffect>+1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>BMT_GlowTide</defName>
+		<workerClass>BiomesIslands.Incidents.ThoughtWorker_GlowTide</workerClass>
+		<!-- <workerClass>ThoughtWorker_GameCondition</workerClass> -->
+		<gameCondition>GlowTide</gameCondition>
+		<stages>
+			<li>
+				<label>ooooh.... the ocean is glowing!</label>
+				<description>The sea is full of stars</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

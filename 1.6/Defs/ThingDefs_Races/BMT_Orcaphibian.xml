@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Whale -->
+
+	<!-- Copied from LifeStages.xml, added modExtensions -->
+	<LifeStageDef ParentName="AnimalBaby">
+		<defName>BiomesIslands_Orcaphibian</defName>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.6</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef>
+		<defName>BiomesIslands_OrcaphibianJuvenile</defName>
+		<label>juvenile</label>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef>
+		<defName>BiomesIslands_OrcaphibianAdult</defName>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
+
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
+		<defName>BiomesIslands_Orcaphibian</defName>
+		<label>whale</label>
+		<description>Orcaphibians are the result of minor genetic alteration, returning their vestigial legs and turning them from merely a fierce oceanic predator into one on both land and sea. Certain island and coastal-dwelling societies make use of them as fierce attack animals. They attack so fiercly that their quarry rarely has time to react before being torn to pieces.</description>
+		<statBases>
+			<MoveSpeed>7</MoveSpeed>
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>1500</MarketValue>
+			<Wildness>0.60</Wildness>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.6</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.3</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<body>Biomes_OrcaphibianBody</body>
+			<leatherDef>BiomesIslands_Leather_Whaleskin</leatherDef>
+			<baseHungerRate>2.7</baseHungerRate>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>5.0</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<packAnimal>false</packAnimal>
+			<nuzzleMtbHours>20</nuzzleMtbHours>
+			<petness>0.01</petness>
+			<lifeExpectancy>70</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.7</manhunterOnDamageChance>
+			<meatLabel>blubber</meatLabel>
+			<meatColor>(255,210,210)</meatColor>
+			<lifeStageAges>
+				<li>
+					<def>BiomesIslands_WhaleBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhaleJuvenile</def>
+					<minAge>1.8</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhaleAdult</def>
+					<minAge>3.5</minAge>
+
+					<soundCall>BiomesIslands_Whale_Call</soundCall>
+					<soundAngry>BiomesIslands_Whale_Angry</soundAngry>
+
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Amphibious</movementDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BiomesIslands_Orcaphibian</defName>
+		<label>orcaphibian</label>
+		<race>BiomesIslands_Orcaphibian</race>
+		<combatPower>250</combatPower>
+		<ecoSystemWeight>2.0</ecoSystemWeight>
+		<wildGroupSize>2~6</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibian</texPath>
+					<drawSize>2.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibian</texPath>
+					<drawSize>4.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibian</texPath>
+					<drawSize>4.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OrcaPhibian/OrcaPhibianSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<BodyDef>
+		<defName>Biomes_OrcaphibianBody</defName>
+		<label>fish</label>
+		<corePart>
+		  <def>Body</def>
+		  <height>Middle</height>
+		  <depth>Outside</depth>
+		  <parts>
+				<li>
+					<def>FishTail</def>
+					<height>Middle</height>
+					<coverage>0.1</coverage>
+					<parts>
+						<li>
+							<def>BiomesIslands_Fin</def>
+							<customLabel>right tail fin</customLabel>
+							<coverage>0.07</coverage>
+							<height>Middle</height>
+						</li>
+						<li>
+							<def>BiomesIslands_Fin</def>
+							<customLabel>left tail fin</customLabel>
+							<coverage>0.07</coverage>
+							<height>Middle</height>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Spine</def>
+					<coverage>0.07</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Head</def>
+					<coverage>0.16</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Skull</def>
+							<coverage>0.35</coverage>
+							<depth>Inside</depth>
+								<parts>
+									<li>
+										<def>Brain</def>
+										<coverage>0.35</coverage>
+										<depth>Inside</depth>
+									</li>
+								</parts>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>left eye</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>right eye</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>Nose</def>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>AnimalJaw</def>
+							<coverage>0.2</coverage>
+							<groups>
+								<li>Teeth</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>BiomesIslands_OrcaphibianLeg</def>
+					<customLabel>right front leg</customLabel>
+					<coverage>0.04</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>BiomesIslands_OrcaphibianLeg</def>
+					<customLabel>left front leg</customLabel>
+					<coverage>0.04</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>BiomesIslands_OrcaphibianLeg</def>
+					<customLabel>right back leg</customLabel>
+					<coverage>0.04</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>BiomesIslands_OrcaphibianLeg</def>
+					<customLabel>left back leg</customLabel>
+					<coverage>0.04</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>BiomesIslands_Fin</def>
+					<customLabel>right flipper</customLabel>
+					<coverage>0.04</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>BiomesIslands_Fin</def>
+					<customLabel>dorsal fin</customLabel>
+					<coverage>0.04</coverage>
+					<height>Top</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

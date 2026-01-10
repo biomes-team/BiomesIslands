@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BiomeVariantDef>
+
+		<defName>BMT_BorealCoast</defName>
+
+		<label>boreal coast</label>
+
+		<biomeLabel operation="appendPar">coast</biomeLabel>
+		<biomeDescription operation="appendLine">A boreal coast borders this tile.</biomeDescription>
+
+		<worldTileConditions>
+			<coast>Ocean</coast>
+			<anyOf>
+				<biome>BorealForest</biome>
+				<biome>ColdBog</biome>
+			</anyOf>
+		</worldTileConditions>
+
+		<layers>
+			<li>
+
+				<!-- use the operation "add" to append entries to the wildPlants of the main biome -->
+				<wildPlants operation="add">
+
+					<!-- land plants -->
+					<BiomesIslands_Lavender>1</BiomesIslands_Lavender>
+
+					<!-- water plants -->
+					<BiomesIslands_Kelp>0.7</BiomesIslands_Kelp>
+					<BiomesIslands_SeaGrass>1.5</BiomesIslands_SeaGrass>
+					<BiomesIslands_Seaweed>6.0</BiomesIslands_Seaweed>
+					<BiomesIslands_Murkweed>1.2</BiomesIslands_Murkweed>
+					<BiomesIslands_WhiteAlgae>0.5</BiomesIslands_WhiteAlgae>
+
+				</wildPlants>
+
+				<!-- use the operation "add" to append entries to the wildAnimals of the main biome -->
+				<wildAnimals operation="add">
+
+					<!-- land grazers -->
+					<BiomesIslands_ShetlandPony>1</BiomesIslands_ShetlandPony>
+					<BiomesIslands_Seagull>1</BiomesIslands_Seagull>
+					<BiomesIslands_OmegaDodo>0.5</BiomesIslands_OmegaDodo>
+					<BiomesIslands_BlueCrab>0.5</BiomesIslands_BlueCrab>
+					<BiomesIslands_SeaTurtle>0.05</BiomesIslands_SeaTurtle>
+					<BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
+					<BMT_SeaOtter>0.5</BMT_SeaOtter>
+
+					<!-- aquatic grazers -->
+					<BiomesIslands_Sardine>1.8</BiomesIslands_Sardine>
+					<BMT_Obsidianfin>0.7</BMT_Obsidianfin>
+					<BiomesIslands_Trout>1.5</BiomesIslands_Trout>
+					<BiomesIslands_Whale>0.05</BiomesIslands_Whale>
+
+					<!-- aquatic predators -->
+					<BiomesIslands_Tuna>0.3</BiomesIslands_Tuna>
+					<BiomesIslands_WhiteShark>0.18</BiomesIslands_WhiteShark>
+
+				</wildAnimals>
+
+			</li>
+		</layers>
+
+	</BiomeVariantDef>
+</Defs>

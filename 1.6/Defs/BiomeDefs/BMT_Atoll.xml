@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef>
+		<defName>BiomesIslands_Atoll</defName>
+		<label>atoll</label>
+		<description>Surrounded by coral reefs, atolls emerge as remnants of sinking volcanic islands. Their central lagoons, while picturesque, provide limited construction space. Yet, abundant wild food and scarce predators under the embrace of a warm climate make life here comfortably paradisiacal.</description>
+		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.BiomesMap">
+				<isIsland>true</isIsland>
+				<islandShapes>
+					<li>Smooth</li>
+				</islandShapes>
+				<addIslandHills>false</addIslandHills>
+				<hasScatterables>false</hasScatterables>
+				<allowBeach>false</allowBeach>
+				<useOceanMaterial>true</useOceanMaterial>
+				<overlayTexturePath>BiomesIslands_World/MapGraphics/Atoll</overlayTexturePath>
+			</li>
+			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+				<isWaterCovered>true</isWaterCovered>
+				<allowLandforms>false</allowLandforms>
+				<allowBiomeTransitions>false</allowBiomeTransitions>
+			</li>
+			<!--
+			Stop coral from spawning in other biomes when Alpha Biomes is installed.
+			Based on code from Leon The Hero's mod "Biomes! Islands + Alpha Biomes Coral Compatibility Patch".
+			-->
+			<li Class="VFECore.BiomeExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<uniqueRockTypes>
+					<li>BiomesIslands_CoralRock</li>
+				</uniqueRockTypes>
+			</li>
+		</modExtensions>
+
+		<canAutoChoose>false</canAutoChoose>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<animalDensity>4.5</animalDensity>
+		<plantDensity>0.85</plantDensity>
+		<settlementSelectionWeight>0.01</settlementSelectionWeight>
+		<campSelectionWeight>0.4</campSelectionWeight>
+		<movementDifficulty>1.5</movementDifficulty>
+		<texture>World/Biomes/Ocean</texture>
+		<forageability>0.1</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<wildPlantRegrowDays>12</wildPlantRegrowDays>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<diseaseMtbDays>40</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Malaria</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>WaterOceanDeep</terrain>
+				<min>-999</min>
+				<max>0.40</max>
+			</li>
+			<li>
+				<terrain>WaterOceanShallow</terrain>
+				<min>0.40</min>
+				<max>1.0</max>
+			</li>
+			<li>
+				<terrain>Sand</terrain>
+				<min>1.0</min>
+				<max>1.8</max>
+			</li>
+			<li>
+				<terrain>Gravel</terrain>
+				<min>1.8</min>
+				<max>11.0</max>
+			</li>
+			<li>
+				<terrain>Sand</terrain>
+				<min>11.0</min>
+				<max>16</max>
+			</li>
+			<li>
+				<terrain>BiomesCore_WaterShallowLagoon</terrain>
+				<min>16</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.015</perlinFrequency>
+				<minFertility>1.8</minFertility>
+				<maxFertility>11.0</maxFertility>
+				<thresholds>
+					<li>
+						<terrain>Soil</terrain>
+						<min>-999</min>
+						<max>-0.30</max>
+					</li>
+					<li>
+						<terrain>Sand</terrain>
+						<min>0.60</min>
+						<max>999</max>
+					</li>
+
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.028</perlinFrequency>
+				<minFertility>3.0</minFertility>
+				<maxFertility>8.0</maxFertility>
+				<thresholds>
+					<li>
+						<terrain>SoilRich</terrain>
+						<min>0.25</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>0.5</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>0.5</FoggyRain>
+			<SnowGentle>3</SnowGentle>
+			<SnowHard>3</SnowHard>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<!-- land plants -->
+			<BiomesIslands_CoconutPalm>0.07</BiomesIslands_CoconutPalm>
+			<BiomesIslands_DevilsClawTree>0.05</BiomesIslands_DevilsClawTree>
+			<BiomesIslands_Fern>0.4</BiomesIslands_Fern>
+			<BiomesIslands_FloweringFern>0.4</BiomesIslands_FloweringFern>
+			<Plant_Grass>2.0</Plant_Grass>
+			<Plant_ShrubLow>1.0</Plant_ShrubLow>
+			<Plant_TreePalm>1.0</Plant_TreePalm>
+
+			<!-- sand plants -->
+			<BiomesIslands_Bayhops>5</BiomesIslands_Bayhops>
+			<!-- water plants -->
+
+			<BiomesIslands_Kelp>0.25</BiomesIslands_Kelp>
+			<BiomesIslands_SeaSponge>0.15</BiomesIslands_SeaSponge>
+			<BiomesIslands_SeaGrass>1.0</BiomesIslands_SeaGrass>
+			<BiomesIslands_Seaweed>0.4</BiomesIslands_Seaweed>
+			<BiomesIslands_GreenAlgae>0.1</BiomesIslands_GreenAlgae>
+			<BiomesIslands_Sargassum>0.25</BiomesIslands_Sargassum>
+
+		</wildPlants>
+		<wildAnimals>
+			<!-- land grazers -->
+			<BiomesIslands_Seagull>1</BiomesIslands_Seagull>
+			<BiomesIslands_KiwiBird>1.3</BiomesIslands_KiwiBird>
+			<BiomesIslands_Flamingo>0.9</BiomesIslands_Flamingo>
+			<BiomesIslands_HermitCrab>0.5</BiomesIslands_HermitCrab>
+			<Tortoise>0.5</Tortoise>
+			<BiomesIslands_SeaTurtle>0.3</BiomesIslands_SeaTurtle>
+			<BiomesIslands_MarineIguana>0.6</BiomesIslands_MarineIguana>
+			<BiomesIslands_PhoebaniaRat>0.2</BiomesIslands_PhoebaniaRat>
+			<!-- land predators -->
+			<BiomesIslands_Gigantaconda>0.05</BiomesIslands_Gigantaconda>
+
+			<!-- aquatic grazers -->
+			<BMT_Sunfish>0.1</BMT_Sunfish>
+			<BiomesIslands_Sardine>0.6</BiomesIslands_Sardine>
+			<BMT_SunfinAngelfish>0.8</BMT_SunfinAngelfish>
+			<BMT_OrchidBasslet>0.3</BMT_OrchidBasslet>
+			<BMT_OrangepeelAngelfish>0.5</BMT_OrangepeelAngelfish>
+			<BiomesIslands_LimepeelAngelfish>1.2</BiomesIslands_LimepeelAngelfish>
+			<BiomesIslands_BlueSeaSnail>0.6</BiomesIslands_BlueSeaSnail>
+
+			<BMT_GreenEel>1.0</BMT_GreenEel>
+			<BMT_Parrotfish>0.7</BMT_Parrotfish>
+			<BiomesIslands_MantaRay>0.1</BiomesIslands_MantaRay>
+			<!-- aquatic predators -->
+			<BMT_Dolphin>0.3</BMT_Dolphin>
+			<BMT_Swordfish>0.09</BMT_Swordfish>
+			<BiomesIslands_RedSnapper>0.18</BiomesIslands_RedSnapper>
+			<BiomesIslands_Tuna>0.22</BiomesIslands_Tuna>
+			<BiomesIslands_Hammerhead>0.15</BiomesIslands_Hammerhead>
+			<BiomesIslands_WhiteShark>0.12</BiomesIslands_WhiteShark>
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+		</allowedPackAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Boomalope>0.2</Boomalope>
+			<Boomrat>0.2</Boomrat>
+			<Megascarab>0.2</Megascarab>
+			<Rat>0.2</Rat>
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.1</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
+		</pollutionWildAnimals>
+	</BiomeDef>
+</Defs>

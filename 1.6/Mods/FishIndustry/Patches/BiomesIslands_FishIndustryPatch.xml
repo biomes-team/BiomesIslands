@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="PawnKindDefFishSduiggles"]/naturalBiomes</xpath>
+		<value>
+			<li>BiomesIslands_Atoll</li>
+			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BiomesIslands_TemperateIsland</li>
+			<li>BiomesIslands_TemperateArchipelago</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="PawnKindDefFishSeasnake"]/naturalBiomes</xpath>
+		<value>
+			<li>BiomesIslands_Atoll</li>
+			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BiomesIslands_BorealIsland</li>
+			<li>BiomesIslands_BorealArchipelago</li>
+			<li>BiomesIslands_TundraIsland</li>
+			<li>BiomesIslands_TundraArchipelago</li>
+			<li>BiomesIslands_TemperateIsland</li>
+			<li>BiomesIslands_TemperateArchipelago</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="PawnKindDefFishMashgon"]/naturalBiomes</xpath>
+		<value>
+			<li>BiomesIslands_Atoll</li>
+			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BiomesIslands_BorealIsland</li>
+			<li>BiomesIslands_BorealArchipelago</li>
+			<li>BiomesIslands_TundraIsland</li>
+			<li>BiomesIslands_TundraArchipelago</li>
+			<li>BiomesIslands_TemperateIsland</li>
+			<li>BiomesIslands_TemperateArchipelago</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="PawnKindDefFishBlueblade"]/naturalBiomes</xpath>
+		<value>
+			<li>BiomesIslands_Atoll</li>
+			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BiomesIslands_DesertIsland</li>
+			<li>BiomesIslands_DesertArchipelago</li>
+			<li>BiomesIslands_BorealIsland</li>
+			<li>BiomesIslands_BorealArchipelago</li>
+			<li>BiomesIslands_TundraIsland</li>
+			<li>BiomesIslands_TundraArchipelago</li>
+			<li>BiomesIslands_TemperateIsland</li>
+			<li>BiomesIslands_TemperateArchipelago</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="PawnKindDefFishTailteeth"]/naturalBiomes</xpath>
+		<value>
+			<li>BiomesIslands_Atoll</li>
+			<li>BiomesIslands_TropicalIsland</li>
+			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BiomesIslands_DesertIsland</li>
+			<li>BiomesIslands_DesertArchipelago</li>
+			<li>BiomesIslands_TemperateIsland</li>
+			<li>BiomesIslands_TemperateArchipelago</li>
+		</value>
+	</Operation>
+
+</Patch>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<value>
+			<Snow_leopard>0.02</Snow_leopard>
+			<Pika>0.07</Pika>
+			<Pallas_cat>0.05</Pallas_cat>
+			<Argali>0.3</Argali>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<value>
+			<Snow_leopard>0.05</Snow_leopard>
+			<Pika>0.07</Pika>
+			<Pallas_cat>0.06</Pallas_cat>
+			<Argali>0.1</Argali>
+		</value>
+	</Operation>
+
+</Patch>
+

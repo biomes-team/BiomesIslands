@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<value>
+			<AEXP_Anaconda>0.01</AEXP_Anaconda>
+			<AEXP_Crocodile>0.1</AEXP_Crocodile>
+			<AEXP_DesertTortoise>1.2</AEXP_DesertTortoise>
+			<AEXP_Hyena>0.1</AEXP_Hyena>
+			<AEXP_Koala>0.1</AEXP_Koala>
+			<AEXP_Lemur>0.1</AEXP_Lemur>
+			<AEXP_Platypus>0.05</AEXP_Platypus>
+			<AEXP_RedPanda>0.1</AEXP_RedPanda>
+			<AEXP_WildGoose>0.1</AEXP_WildGoose>
+			<AEXP_Wildebeest>0.01</AEXP_Wildebeest>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<value>
+			<AEXP_ArcticCoyote>0.2</AEXP_ArcticCoyote>
+			<AEXP_Badger>0.1</AEXP_Badger>
+			<AEXP_Beaver>0.04</AEXP_Beaver>
+			<AEXP_BlackBear>0.05</AEXP_BlackBear>
+			<AEXP_Boombat>0.05</AEXP_Boombat>
+			<AEXP_Hedgehog>0.4</AEXP_Hedgehog>
+			<AEXP_Kangaroo>0.01</AEXP_Kangaroo>
+			<AEXP_Koala>0.1</AEXP_Koala>
+			<AEXP_Moose>0.3</AEXP_Moose>
+			<AEXP_Muskox>0.2</AEXP_Muskox>
+			<AEXP_Otter>1</AEXP_Otter>
+			<AEXP_Platypus>0.1</AEXP_Platypus>
+			<AEXP_Porcupine>0.3</AEXP_Porcupine>
+			<AEXP_RedPanda>0.1</AEXP_RedPanda>
+			<AEXP_WildGoose>0.25</AEXP_WildGoose>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<value>
+			<AEXP_Boombat>0.3</AEXP_Boombat>
+			<AEXP_Camel>0.3</AEXP_Camel>
+			<AEXP_Cheetah>0.3</AEXP_Cheetah>
+			<AEXP_Coyote>0.3</AEXP_Coyote>
+			<AEXP_Crocodile>0.1</AEXP_Crocodile>
+			<AEXP_DesertTortoise>0.9</AEXP_DesertTortoise>
+			<AEXP_GilaMonster>0.4</AEXP_GilaMonster>
+			<AEXP_Hyena>0.6</AEXP_Hyena>
+			<AEXP_Kangaroo>0.3</AEXP_Kangaroo>
+			<AEXP_Koala>0.2</AEXP_Koala>
+			<AEXP_Lion>0.4</AEXP_Lion>
+			<AEXP_Megascorpion>0.2</AEXP_Megascorpion>
+			<AEXP_Rattlesnake>0.2</AEXP_Rattlesnake>
+			<AEXP_Wildebeest>0.2</AEXP_Wildebeest>
+			<AEXP_Zebra>0.2</AEXP_Zebra>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
+		<value>
+			<AEXP_Alligator>0.03</AEXP_Alligator>
+			<AEXP_Badger>0.3</AEXP_Badger>
+			<AEXP_Beaver>0.1</AEXP_Beaver>
+			<AEXP_Boombat>0.5</AEXP_Boombat>
+			<AEXP_Hedgehog>0.6</AEXP_Hedgehog>
+			<AEXP_Kangaroo>0.05</AEXP_Kangaroo>
+			<AEXP_Koala>0.2</AEXP_Koala>
+			<AEXP_Platypus>0.1</AEXP_Platypus>
+			<AEXP_RedPanda>0.7</AEXP_RedPanda>
+			<AEXP_WildGoose>0.5</AEXP_WildGoose>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<value>
+			<AEXP_Alligator>0.07</AEXP_Alligator>
+			<AEXP_Anaconda>0.04</AEXP_Anaconda>
+			<AEXP_Cheetah>0.2</AEXP_Cheetah>
+			<AEXP_Gorilla>0.5</AEXP_Gorilla>
+			<AEXP_IndianElephant>0.2</AEXP_IndianElephant>
+			<AEXP_Jaguar>0.1</AEXP_Jaguar>
+			<AEXP_Koala>0.08</AEXP_Koala>
+			<AEXP_Lemur>1</AEXP_Lemur>
+			<AEXP_Lion>0.2</AEXP_Lion>
+			<AEXP_Mandrill>0.8</AEXP_Mandrill>
+			<AEXP_Platypus>0.1</AEXP_Platypus>
+			<AEXP_Rattlesnake>0.01</AEXP_Rattlesnake>
+			<AEXP_RedPanda>0.1</AEXP_RedPanda>
+			<AEXP_Tapir>0.4</AEXP_Tapir>
+			<AEXP_Tiger>0.05</AEXP_Tiger>
+			<AEXP_Zebra>0.1</AEXP_Zebra>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<value>
+			<AEXP_ArcticCoyote>0.2</AEXP_ArcticCoyote>
+			<AEXP_BlackBear>0.04</AEXP_BlackBear>
+			<AEXP_MegaWolverine>0.1</AEXP_MegaWolverine>
+			<AEXP_Moose>0.8</AEXP_Moose>
+			<AEXP_Muskox>1.2</AEXP_Muskox>
+			<AEXP_Otter>0.4</AEXP_Otter>
+			<AEXP_Penguin>0.01</AEXP_Penguin>
+			<AEXP_Porcupine>0.3</AEXP_Porcupine>
+			<AEXP_Seal>0.03</AEXP_Seal>
+			<AEXP_Walrus>0.03</AEXP_Walrus>
+		</value>
+	</Operation>
+
+</Patch>

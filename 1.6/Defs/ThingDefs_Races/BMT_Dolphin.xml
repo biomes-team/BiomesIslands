@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Roughly cow sized? -->
+<!-- What does it eat? (is it a predator?) Predator, only eats pretty small prey. -->
+<!-- Where does it live? Boreal to hot islands. -->
+<!-- Does it spawn in packs? No -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Weak leather. -->
+
+	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
+		<defName>BMT_Dolphin</defName>
+		<label>dolphin</label>
+		<description>A generalized hybrid of many species of oceanic dolphin. They use echolocation to both communicate and find food.</description>
+		<statBases>
+			<MoveSpeed>8</MoveSpeed>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<MarketValue>1500</MarketValue>
+			<Wildness>0.33</Wildness>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.8</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>28</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<body>Biomes_SharkBody</body>
+			<!-- <leatherDef>BiomesIslands_Leather_Sharkskin</leatherDef> -->
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<!-- <useMeatFrom>BiomesIslands_WhiteShark</useMeatFrom> -->
+			<baseHungerRate>0.7</baseHungerRate>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>2.6</baseHealthScale>
+			<maxPreyBodySize>0.33</maxPreyBodySize>
+			<foodType>CarnivoreAnimal</foodType>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<packAnimal>false</packAnimal>
+			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<petness>0.01</petness>
+			<lifeExpectancy>35</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.4</manhunterOnDamageChance>
+			<specificMeatDef>BMT_FishMeat</specificMeatDef>
+			<lifeStageAges>
+				<li>
+					<def>BiomesIslands_WhiteSharkBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhiteSharkJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>BiomesIslands_WhiteSharkAdult</def>
+					<minAge>0.8</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Dolphin</defName>
+		<label>dolphin</label>
+		<race>BMT_Dolphin</race>
+		<combatPower>160</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dolphin/Dolphin</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<color>(100,60,70)</color>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dolphin/Dolphin</texPath>
+					<drawSize>2.65</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<color>(100,60,70)</color>
+					<drawSize>2.65</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dolphin/Dolphin</texPath>
+					<drawSize>3.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>3.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<!-- TO-DO: Replace the sub shark with a dolphin or remove this part. -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="PathfindingFramework.TerrainTagGraphicExtension"> -->
+				<!-- <terrainTags> -->
+					<!-- <li>PF_TerrainTag_WaterShallow</li> -->
+					<!-- <li>PF_TerrainTag_WaterChest</li> -->
+					<!-- <li>PF_TerrainTag_WaterDeep</li> -->
+				<!-- </terrainTags> -->
+				<!-- <bodyGraphicData> -->
+					<!-- <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath> -->
+				<!-- </bodyGraphicData> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
+
+</Defs>

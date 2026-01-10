@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<RecipeDef ParentName="DankPyon_MineShaftBase">
+				<defName>BiomesIslands_MakeStoneChunks_Coral</defName>
+				<workAmount>2350</workAmount>
+				<label>gather coral chunk</label>
+				<jobString>Mining 1 coral chunk.</jobString>
+				<products>
+					<BiomesIslands_ChunkCoral>1</BiomesIslands_ChunkCoral>
+				</products>
+			</RecipeDef>
+		</value>
+	</Operation>
+
+</Patch>
+

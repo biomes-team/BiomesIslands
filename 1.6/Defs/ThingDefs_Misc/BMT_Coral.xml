@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="UglyRockBase" Name="BiomesIslands_CoralRockBase">
+		<defName>BiomesIslands_CoralRock</defName>
+		<label>coral</label>
+		<generateCommonality>0</generateCommonality>
+		<description>A chunk of coral.</description>
+		<graphicData>
+			<color>(250,180,147)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+		</statBases>
+		<building>
+			<mineableThing>BiomesIslands_ChunkCoral</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<smoothedThing>BiomesIslands_SmoothedCoral</smoothedThing>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="BiomesIslands_CoralRockBase">
+		<defName>BiomesIslands_SmoothedCoral</defName>
+		<label>smoothed coral</label>
+		<description>Smoothed and polished coral</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<MarketValue>15</MarketValue>
+		</statBases>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<smoothedThing/>
+		</building>
+		<saveCompressible>false</saveCompressible>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+
+	<ThingDef ParentName="ChunkRockBase">
+		<defName>BiomesIslands_ChunkCoral</defName>
+		<label>coral chunk</label>
+		<graphicData>
+			<color>(250,180,147)</color>
+			<texPath>BiomesIslands_Things/Item/Chunk/ChunkCoral</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>22</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<BiomesIslands_BlocksCoral>20</BiomesIslands_BlocksCoral>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>BiomesIslands_BlocksCoral</defName>
+		<label>coral blocks</label>
+		<description>Blocks of solid coral.</description>
+		<graphicData>
+			<color>(250,180,147)</color>
+		</graphicData>
+		<statBases>
+			<Beauty>1.35</Beauty>
+			<Mass>1.0</Mass>
+		</statBases>
+		<stuffProps>
+			<color>(250,180,147)</color>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<stuffAdjective>coral</stuffAdjective>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+			</statFactors>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+			<commonality>0</commonality>
+		</stuffProps>
+	</ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>BiomesIslands_Make_StoneBlocksCoral</defName>
+		<label>make coral blocks</label>
+		<description>Cuts coral chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BiomesIslands_ChunkCoral</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BiomesIslands_ChunkCoral</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BiomesIslands_BlocksCoral>20</BiomesIslands_BlocksCoral>
+		</products>
+	</RecipeDef>
+
+</Defs>
