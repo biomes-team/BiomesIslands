@@ -23,15 +23,15 @@
 				<wildPlants operation="add">
 
 					<!-- land plants -->
-					<BiomesIslands_WindsweptTree>0.8</BiomesIslands_WindsweptTree>
-					<BiomesIslands_PurpleSaxifrage>0.5</BiomesIslands_PurpleSaxifrage>
+					<BMT_WindsweptTree>0.8</BMT_WindsweptTree>
+					<BMT_PurpleSaxifrage>0.5</BMT_PurpleSaxifrage>
 
 					<!-- water plants -->
-					<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
-					<BiomesIslands_SeaGrass>0.5</BiomesIslands_SeaGrass>
-					<BiomesIslands_Seaweed>9.0</BiomesIslands_Seaweed>
-					<BiomesIslands_Murkweed>2.0</BiomesIslands_Murkweed>
-					<BiomesIslands_WhiteAlgae>1.0</BiomesIslands_WhiteAlgae>
+					<BMT_Kelp>1.0</BMT_Kelp>
+					<BMT_SeaGrass>0.5</BMT_SeaGrass>
+					<BMT_Seaweed>9.0</BMT_Seaweed>
+					<BMT_Murkweed>2.0</BMT_Murkweed>
+					<BMT_WhiteAlgae>1.0</BMT_WhiteAlgae>
 
 				</wildPlants>
 
@@ -39,22 +39,22 @@
 				<wildAnimals operation="add">
 
 					<!-- land grazers -->
-					<BiomesIslands_ShetlandPony>0.5</BiomesIslands_ShetlandPony>
-					<BiomesIslands_Seagull>2</BiomesIslands_Seagull>
-					<BiomesIslands_OmegaDodo>1.5</BiomesIslands_OmegaDodo>
-					<BiomesIslands_BlueCrab>2</BiomesIslands_BlueCrab>
-					<BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
+					<BMT_ShetlandPony>0.5</BMT_ShetlandPony>
+					<BMT_Seagull>2</BMT_Seagull>
+					<BMT_OmegaDodo>1.5</BMT_OmegaDodo>
+					<BMT_BlueCrab>2</BMT_BlueCrab>
+					<BMT_PhoebaniaRat>0.05</BMT_PhoebaniaRat>
 					<BMT_SeaOtter>0.3</BMT_SeaOtter>
 
 					<!-- aquatic grazers -->
-					<BiomesIslands_Sardine>1.5</BiomesIslands_Sardine>
+					<BMT_Sardine>1.5</BMT_Sardine>
 					<BMT_Obsidianfin>1.5</BMT_Obsidianfin>
-					<BiomesIslands_Trout>2.0</BiomesIslands_Trout>
-					<BiomesIslands_Whale>0.5</BiomesIslands_Whale>
+					<BMT_Trout>2.0</BMT_Trout>
+					<BMT_Whale>0.5</BMT_Whale>
 
 					<!-- aquatic predators -->
-					<BiomesIslands_Tuna>0.45</BiomesIslands_Tuna>
-					<BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
+					<BMT_Tuna>0.45</BMT_Tuna>
+					<BMT_WhiteShark>0.08</BMT_WhiteShark>
 
 				</wildAnimals>
 

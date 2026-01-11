@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
+		<defName>BMT_ClutterCrab</defName>
+		<label>clutter crab</label>
+		<description>An unusually large and intelligent crab. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
+		<statBases>
+			<MarketValue>410</MarketValue>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<Wildness>0.65</Wildness>
+		</statBases>
+		<race>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+			<baseHungerRate>0.55</baseHungerRate>
+			<lifeExpectancy>11</lifeExpectancy>
+			<manhunterOnTameFailChance>0.85</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.45</manhunterOnDamageChance>
+			<useMeatFrom>BMT_RimCrab</useMeatFrom>
+			<trainability>Advanced</trainability>
+			<packAnimal>true</packAnimal>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggClutterCrabFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggClutterCrabUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>2</max>
+				</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_ClutterCrab</defName>
+		<label>clutter crab</label>
+		<race>BMT_ClutterCrab</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/ClutterCrab/ClutterCrab</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/ClutterCrab/ClutterCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/ClutterCrab/ClutterCrab</texPath>
+					<drawSize>2.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>2.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggClutterCrabFertilized</defName>
+		<label>clutter crab egg (fert.)</label>
+		<description>A fertilized clutter crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(177,224,224)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>55.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12</hatcherDaystoHatch>
+				<hatcherPawn>BMT_ClutterCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggClutterCrabUnfertilized</defName>
+		<label>clutter crab egg (unfert.)</label>
+		<description>An unfertilized clutter crab egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(167,214,214)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>26.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+</Defs>

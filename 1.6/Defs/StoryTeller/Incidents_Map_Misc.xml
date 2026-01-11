@@ -11,15 +11,15 @@
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<allowedBiomes>
-			<li>BiomesIslands_Atoll</li>
-			<li>BiomesIslands_BorealIsland</li>
-			<li>BiomesIslands_BorealArchipelago</li>
-			<li>BiomesIslands_DesertIsland</li>
-			<li>BiomesIslands_DesertArchipelago</li>
-			<li>BiomesIslands_TropicalIsland</li>
-			<li>BiomesIslands_TropicalArchipelago</li>
-			<li>BiomesIslands_TundraIsland</li>
-			<li>BiomesIslands_TundraArchipelago</li>
+			<li>BMT_Atoll</li>
+			<li>BMT_BorealIsland</li>
+			<li>BMT_BorealArchipelago</li>
+			<li>BMT_DesertIsland</li>
+			<li>BMT_DesertArchipelago</li>
+			<li>BMT_TropicalIsland</li>
+			<li>BMT_TropicalArchipelago</li>
+			<li>BMT_TundraIsland</li>
+			<li>BMT_TundraArchipelago</li>
 		</allowedBiomes>
 		<workerClass>BiomesIslands.Incidents.Incident_AquaticArrival</workerClass>
 		<baseChance>1.0</baseChance>
@@ -33,13 +33,13 @@
 		<label>crab migration</label>
 		<category>Misc</category>
 		<allowedBiomes>
-			<li>BiomesIslands_Atoll</li>
-			<li>BiomesIslands_BorealIsland</li>
-			<li>BiomesIslands_BorealArchipelago</li>
-			<li>BiomesIslands_DesertIsland</li>
-			<li>BiomesIslands_DesertArchipelago</li>
-			<li>BiomesIslands_TropicalIsland</li>
-			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BMT_Atoll</li>
+			<li>BMT_BorealIsland</li>
+			<li>BMT_BorealArchipelago</li>
+			<li>BMT_DesertIsland</li>
+			<li>BMT_DesertArchipelago</li>
+			<li>BMT_TropicalIsland</li>
+			<li>BMT_TropicalArchipelago</li>
 		</allowedBiomes>
 		<targetTags>
 			<li>Map_PlayerHome</li>
@@ -59,13 +59,13 @@
 		<label>ravenous crabs</label>
 		<category>Misc</category>
 		<allowedBiomes>
-			<li>BiomesIslands_Atoll</li>
-			<li>BiomesIslands_BorealIsland</li>
-			<li>BiomesIslands_BorealArchipelago</li>
-			<li>BiomesIslands_DesertIsland</li>
-			<li>BiomesIslands_DesertArchipelago</li>
-			<li>BiomesIslands_TropicalIsland</li>
-			<li>BiomesIslands_TropicalArchipelago</li>
+			<li>BMT_Atoll</li>
+			<li>BMT_BorealIsland</li>
+			<li>BMT_BorealArchipelago</li>
+			<li>BMT_DesertIsland</li>
+			<li>BMT_DesertArchipelago</li>
+			<li>BMT_TropicalIsland</li>
+			<li>BMT_TropicalArchipelago</li>
 		</allowedBiomes>
 		<targetTags>
 			<li>Map_PlayerHome</li>

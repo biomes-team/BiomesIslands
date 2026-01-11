@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<BiomeDef Name="BiomesIslands_TundraIslandBase" Abstract="True">
-		<defName>BiomesIslands_TundraIslandBase</defName>
+	<BiomeDef Name="BMT_TundraIslandBase" Abstract="True">
+		<defName>BMT_TundraIslandBase</defName>
 		<label>tundra island</label>
 		<description>Frigid and windswept, these islands are a realm of ice and sparse vegetation. Though the environment is harsh, it isn't devoid of life; hardy species thrive, providing opportunities for those resilient enough to call it home.</description>
 		<canAutoChoose>false</canAutoChoose>
@@ -138,16 +138,16 @@
 			<Plant_Astragalus>0.1</Plant_Astragalus>
 			<Plant_Dandelion>0.1</Plant_Dandelion>
 			<Plant_TreePine>0.8</Plant_TreePine>
-			<BiomesIslands_WindsweptTree>0.8</BiomesIslands_WindsweptTree>
+			<BMT_WindsweptTree>0.8</BMT_WindsweptTree>
 			<Plant_Berry>0.07</Plant_Berry>
 			<Plant_HealrootWild>0.05</Plant_HealrootWild>
-			<BiomesIslands_PurpleSaxifrage>0.5</BiomesIslands_PurpleSaxifrage>
+			<BMT_PurpleSaxifrage>0.5</BMT_PurpleSaxifrage>
 			<!-- water plants -->
-			<BiomesIslands_Kelp>1.0</BiomesIslands_Kelp>
-			<BiomesIslands_SeaGrass>0.5</BiomesIslands_SeaGrass>
-			<BiomesIslands_Seaweed>9.0</BiomesIslands_Seaweed>
-			<BiomesIslands_Murkweed>2.0</BiomesIslands_Murkweed>
-			<BiomesIslands_WhiteAlgae>1.0</BiomesIslands_WhiteAlgae>
+			<BMT_Kelp>1.0</BMT_Kelp>
+			<BMT_SeaGrass>0.5</BMT_SeaGrass>
+			<BMT_Seaweed>9.0</BMT_Seaweed>
+			<BMT_Murkweed>2.0</BMT_Murkweed>
+			<BMT_WhiteAlgae>1.0</BMT_WhiteAlgae>
 		</wildPlants>
 		<wildAnimals>
 			<!-- land grazers -->
@@ -158,11 +158,11 @@
 			<Muffalo>2</Muffalo>
 			<Ibex>2</Ibex>
 			<Megasloth>0.2</Megasloth>
-			<BiomesIslands_ShetlandPony>0.5</BiomesIslands_ShetlandPony>
-			<BiomesIslands_Seagull>2</BiomesIslands_Seagull>
-			<BiomesIslands_OmegaDodo>1.5</BiomesIslands_OmegaDodo>
-			<BiomesIslands_BlueCrab>2</BiomesIslands_BlueCrab>
-			<BiomesIslands_PhoebaniaRat>0.05</BiomesIslands_PhoebaniaRat>
+			<BMT_ShetlandPony>0.5</BMT_ShetlandPony>
+			<BMT_Seagull>2</BMT_Seagull>
+			<BMT_OmegaDodo>1.5</BMT_OmegaDodo>
+			<BMT_BlueCrab>2</BMT_BlueCrab>
+			<BMT_PhoebaniaRat>0.05</BMT_PhoebaniaRat>
 			<BMT_SeaOtter>0.3</BMT_SeaOtter>
 
 			<!-- land predators -->
@@ -177,14 +177,14 @@
 			<!-- Water animals have ~50% higher stats relative to other islands to keep water pops up -->
 			<!-- aquatic grazers -->
 			<BMT_Sunfish>0.1</BMT_Sunfish>
-			<BiomesIslands_Sardine>1.5</BiomesIslands_Sardine>
+			<BMT_Sardine>1.5</BMT_Sardine>
 			<BMT_Obsidianfin>1.5</BMT_Obsidianfin>
-			<BiomesIslands_Trout>2.0</BiomesIslands_Trout>
-			<BiomesIslands_Whale>0.5</BiomesIslands_Whale>
+			<BMT_Trout>2.0</BMT_Trout>
+			<BMT_Whale>0.5</BMT_Whale>
 			<!-- aquatic predators -->
-			<BiomesIslands_Tuna>0.45</BiomesIslands_Tuna>
+			<BMT_Tuna>0.45</BMT_Tuna>
 			<BMT_Swordfish>0.08</BMT_Swordfish>
-			<BiomesIslands_WhiteShark>0.08</BiomesIslands_WhiteShark>
+			<BMT_WhiteShark>0.08</BMT_WhiteShark>
 
 		</wildAnimals>
 		<allowedPackAnimals>
@@ -198,8 +198,8 @@
 		</pollutionWildAnimals>
 	</BiomeDef>
 
-	<BiomeDef ParentName="BiomesIslands_TundraIslandBase">
-		<defName>BiomesIslands_TundraIsland</defName>
+	<BiomeDef ParentName="BMT_TundraIslandBase">
+		<defName>BMT_TundraIsland</defName>
 		<label>tundra island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TundraIsland</workerClass>
 		<modExtensions>
@@ -214,7 +214,7 @@
 					<li>Pair</li>
 				</islandShapes>
 				<useOceanMaterial>true</useOceanMaterial>
-				<overlayTexturePath>BiomesIslands_World/MapGraphics/TundraIsland</overlayTexturePath>
+				<overlayTexturePath>BMT_World/MapGraphics/TundraIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
 				<isWaterCovered>true</isWaterCovered>
@@ -224,8 +224,8 @@
 		</modExtensions>
 	</BiomeDef>
 
-	<BiomeDef ParentName="BiomesIslands_TundraIslandBase">
-		<defName>BiomesIslands_TundraArchipelago</defName>
+	<BiomeDef ParentName="BMT_TundraIslandBase">
+		<defName>BMT_TundraArchipelago</defName>
 		<label>tundra archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TundraArchipelago</workerClass>
 		<modExtensions>
@@ -237,7 +237,7 @@
 					<li>Cluster</li>
 				</islandShapes>
 				<useOceanMaterial>true</useOceanMaterial>
-				<overlayTexturePath>BiomesIslands_World/MapGraphics/TundraArchipelago</overlayTexturePath>
+				<overlayTexturePath>BMT_World/MapGraphics/TundraArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>
 	</BiomeDef>

@@ -2,13 +2,13 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>BiomesIslands_Pineapple</defName>
+		<defName>BMT_Pineapple</defName>
 		<durationDays>0.5</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
-				<label>Yummy pineapple</label>
-				<description>That pineapple was tasty! I feel really full!</description>
+				<label>Yummy spineapple</label>
+				<description>That spineapple was tasty! I feel really full!</description>
 				<baseMoodEffect>+1</baseMoodEffect>
 			</li>
 		</stages>

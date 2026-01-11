@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>BMT_Gigantaconda</defName>
+		<label>gigantaconda</label>
+		<description>Constrictor snakes large enough to swallow a man whole. They wrap themselves around their prey and crush it to death.</description>
+		<statBases>
+			<MoveSpeed>4.8</MoveSpeed>
+			<MarketValue>420</MarketValue>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>8</FilthRate>
+			<Wildness>0.88</Wildness>
+		</statBases>
+		<tools>
+			<li>
+				<label>fangs</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggGigantacondaFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggGigantacondaUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>22.0</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>2</max>
+				</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>Snake</body>
+			<predator>true</predator>
+			<maxPreyBodySize>3</maxPreyBodySize>
+			<baseHungerRate>0.25</baseHungerRate>
+			<baseBodySize>2.5</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<roamMtbDays>2.5</roamMtbDays>
+			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+			<nameOnTameChance>1</nameOnTameChance>
+			<lifeExpectancy>30</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.35</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalExotic</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Amphibious</movementDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Gigantaconda</defName>
+		<label>gigantaconda</label>
+		<race>BMT_Gigantaconda</race>
+		<combatPower>165</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Gigantaconda</texPath>
+					<drawSize>2.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Dessicated_Gigantaconda</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.25, 0.25)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Gigantaconda</texPath>
+					<drawSize>2.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Dessicated_Gigantaconda</texPath>
+					<drawSize>2.8</drawSize>
+					<shadowData>
+						<volume>(0.35, 0.35, 0.35)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Gigantaconda</texPath>
+					<drawSize>3.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Gigantaconda/Dessicated_Gigantaconda</texPath>
+					<drawSize>3.6</drawSize>
+					<shadowData>
+						<volume>(0.45, 0.45, 0.45)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggGigantacondaFertilized</defName>
+		<label>gigantaconda egg (fert.)</label>
+		<description>A fertilized gigantaconda egg. If all goes well, it should hatch into a baby gigantaconda. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(220,230,180)</color>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>88.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>11</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Gigantaconda</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggGigantacondaUnfertilized</defName>
+		<label>gigantaconda egg (unfert.)</label>
+		<description>An unfertilized gigantaconda egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(210,220,170)</color>
+			<drawSize>2.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>31.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+</Defs>

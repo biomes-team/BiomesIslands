@@ -223,7 +223,7 @@
 				</islandShapes>
 			</li>
 			<li Class="BiomesKit.BiomesKitControls">
-				<materialPath>BiomesIslands_World/MapGraphics/Placeholder</materialPath>
+				<materialPath>BMT_World/MapGraphics/Placeholder</materialPath>
 				<frequency>5</frequency>
 				<materialLayer>3509</materialLayer>
 				<allowOnWater>true</allowOnWater>

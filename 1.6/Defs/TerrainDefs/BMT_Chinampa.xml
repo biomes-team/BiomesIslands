@@ -5,7 +5,7 @@
 		<defName>FloatinggardenCoral</defName>
 		<label>coral chinampa</label>
 		<costList>
-			<BiomesIslands_ChunkCoral>1</BiomesIslands_ChunkCoral>
+			<BMT_ChunkCoral>1</BMT_ChunkCoral>
 		</costList>
 	</TerrainDef>
 	

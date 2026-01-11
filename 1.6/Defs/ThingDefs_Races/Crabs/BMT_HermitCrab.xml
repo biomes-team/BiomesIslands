@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
+		<defName>BMT_HermitCrab</defName>
+		<label>hermit crab</label>
+		<description>A crab species known for hiding inside seashells. Despite their name, they are highly social, living in colonies of hundreds of crabs. Their hard shells make them very tough for their size.</description>
+		<statBases>
+			<MarketValue>110</MarketValue>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<PainShockThreshold>0.5</PainShockThreshold>
+			<Wildness>0.10</Wildness>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>true</herdMigrationAllowed>
+			<baseBodySize>0.15</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.25</baseHungerRate>
+			<lifeExpectancy>9</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+			<useMeatFrom>BMT_RimCrab</useMeatFrom>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggHermitCrabFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggHermitCrabUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>9.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>3</max>
+				</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_HermitCrab</defName>
+		<label>hermitcrab</label>
+		<race>BMT_HermitCrab</race>
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
+
+		<wildGroupSize>
+			<min>12</min>
+			<max>30</max>
+		</wildGroupSize>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab1</texPath>
+			</li>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab2</texPath>
+			</li>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab3</texPath>
+			</li>
+			<li>
+				<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab4</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
+					<drawSize>0.4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
+					<drawSize>0.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/HermitCrab</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HermitCrab/Dessicated_HermitCrab</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggHermitCrabFertilized</defName>
+		<label>hermit crab egg (fert.)</label>
+		<description>A fertilized hermit crab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(212,75,75)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>29.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9</hatcherDaystoHatch>
+				<hatcherPawn>BMT_HermitCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggHermitCrabUnfertilized</defName>
+		<label>hermit crab egg (unfert.)</label>
+		<description>An unfertilized hermit crab egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(202,68,68)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>12.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+</Defs>

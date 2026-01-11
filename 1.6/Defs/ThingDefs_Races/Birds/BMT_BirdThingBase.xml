@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase" Name="BMT_BirdThingBase" Abstract="True">
+		<race>
+			<body>Bird</body>
+			<leatherDef>Leather_Bird</leatherDef>
+			<gestationPeriodDays>24</gestationPeriodDays>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<uiIconScale>1.2</uiIconScale>
+	</ThingDef>
+
+
+	<!-- ===================	Large Birds		==================== -->
+
+</Defs>

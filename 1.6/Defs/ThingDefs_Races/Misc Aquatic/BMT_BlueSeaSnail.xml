@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Snails -->
+
+	<LifeStageDef ParentName="AnimalBaby">
+		<defName>BMT_BlueSeaSnailTiny</defName>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.5</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef>
+		<defName>BMT_BlueSeaSnailJuvenile</defName>
+		<label>juvenile</label>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef>
+		<defName>BMT_BlueSeaSnailAdult</defName>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
+
+	<ThingDef ParentName="BiomesCore_WaterAnimal" ADogSaidBody="Tail">
+		<defName>BMT_BlueSeaSnail</defName>
+		<label>sea snail</label>
+		<description>A diminutive aquatic mollusk. Food for fish and otters.</description>
+		<statBases>
+			<MoveSpeed>8</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>100</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<Wildness>0.5</Wildness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggBlueSeaSnailFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggBlueSeaSnailUnfertilized</eggUnfertilizedDef>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~4</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<body>BiomesCore_Snail</body>
+			<leatherDef>BMT_Leather_Gastropoda</leatherDef>
+			<baseHungerRate>0.3</baseHungerRate>
+			<baseBodySize>0.15</baseBodySize>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<packAnimal>false</packAnimal>
+			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<petness>0.01</petness>
+			<lifeExpectancy>35</lifeExpectancy>
+			<trainability>None</trainability>
+			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<meatLabel>snail meat</meatLabel>
+			<meatColor>(62,133,215)</meatColor>
+			<lifeStageAges>
+				<li>
+					<def>BMT_BlueSeaSnailTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_BlueSeaSnailJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>BMT_BlueSeaSnailAdult</def>
+					<minAge>0.8</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_BlueSeaSnail</defName>
+		<label>blue sea snail</label>
+		<race>BMT_BlueSeaSnail</race>
+		<combatPower>38</combatPower>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<drawSize>0.45</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Dessicated_BlueSeaSnail</texPath>
+					<drawSize>0.45</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<drawSize>0.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Dessicated_BlueSeaSnail</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<drawSize>0.85</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Dessicated_BlueSeaSnail</texPath>
+					<drawSize>0.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnailSubmerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggBlueSeaSnailFertilized</defName>
+		<label>blue sea snail egg (fert.)</label>
+		<description>A fertilized blue sea snail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(247,254,238)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8</hatcherDaystoHatch>
+				<hatcherPawn>BMT_BlueSeaSnail</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggBlueSeaSnailUnfertilized</defName>
+		<label>blue sea snail egg (unfert.)</label>
+		<description>An unfertilized blue sea snail egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(237,244,228)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+</Defs>

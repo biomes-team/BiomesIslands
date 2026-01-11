@@ -4,7 +4,7 @@
 	<!-- For fish to eat -->
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_Kelp</defName>
+		<defName>BMT_Kelp</defName>
 		<label>kelp</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -27,7 +27,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.3</fertilityMin>
 			<fertilitySensitivity>1</fertilitySensitivity>
@@ -43,7 +43,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_SeaSponge</defName>
+		<defName>BMT_SeaSponge</defName>
 		<label>sea sponge</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -64,7 +64,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<plant>
 			<maxMeshCount>1</maxMeshCount>
@@ -84,7 +84,7 @@
 
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_SeaGrass</defName>
+		<defName>BMT_SeaGrass</defName>
 		<label>seagrass</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -107,7 +107,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -119,7 +119,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_Seaweed</defName>
+		<defName>BMT_Seaweed</defName>
 		<label>seaweed</label>
 		<description>An aquatic plant</description>
 		<statBases>
@@ -142,7 +142,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -159,7 +159,7 @@
 
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_GreenAlgae</defName>
+		<defName>BMT_GreenAlgae</defName>
 		<label>green algae</label>
 		<description>An greenish algae that grows in warm water.</description>
 		<statBases>
@@ -185,7 +185,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -199,7 +199,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_Sargassum</defName>
+		<defName>BMT_Sargassum</defName>
 		<label>sargassum seaweed</label>
 		<description>A brownish seaweed</description>
 		<statBases>
@@ -224,7 +224,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<plant>
 			<fertilityMin>0.10</fertilityMin>
@@ -240,7 +240,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_WhiteAlgae</defName>
+		<defName>BMT_WhiteAlgae</defName>
 		<label>brown algae</label>
 		<description>A brown algae that grows in cold water.</description>
 		<statBases>
@@ -264,7 +264,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.10</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -278,7 +278,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_Murkweed</defName>
+		<defName>BMT_Murkweed</defName>
 		<label>murkweed</label>
 		<description>An aquatic plant that prefers cold, deep water</description>
 		<statBases>
@@ -299,7 +299,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
@@ -314,7 +314,7 @@
 
 	<!-- Special -->
 	<ThingDef ParentName="PlantBase">
-		<defName>BiomesIslands_GlowPlankton</defName>
+		<defName>BMT_GlowPlankton</defName>
 		<label>bioluminescent plankton</label>
 		<thingClass>BiomesCore.DerivedClasses.BMT_Plant</thingClass>
 		<description>A short lived plankton that emits a soft glow</description>
@@ -343,7 +343,7 @@
 				<needsRest>false</needsRest>
 			</li>
 		</modExtensions>
-		<!-- <hideAtSnowDepth>0.5</hideAtSnowDepth> -->
+		<!-- <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth> -->
 		<plant>
 			<fertilityMin>0.15</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>

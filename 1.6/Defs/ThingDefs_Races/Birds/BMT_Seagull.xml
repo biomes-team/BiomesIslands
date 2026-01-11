@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Copied from LifeStages.xml, added modExtensions -->
+	<LifeStageDef ParentName="AnimalBaby">
+		<defName>BMT_SeagullBabyTiny</defName>
+		<bodySizeFactor>0.1</bodySizeFactor>
+		<foodMaxFactor>4</foodMaxFactor>
+		<statFactors>
+			<MoveSpeed>0.5</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef>
+		<defName>BMT_SeagullJuvenile</defName>
+		<label>juvenile</label>
+		<voxPitch>1.2</voxPitch>
+		<bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>0.6</healthScaleFactor>
+		<hungerRateFactor>0.75</hungerRateFactor>
+		<marketValueFactor>0.75</marketValueFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+
+	<LifeStageDef>
+		<defName>BMT_SeagullAdult</defName>
+		<label>adult</label>
+		<visible>false</visible>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<shearable>true</shearable>
+	</LifeStageDef>
+
+	<ThingDef ParentName="BMT_BirdThingBase">
+		<defName>BMT_Seagull</defName>
+		<label>seagull</label>
+		<description>Noisy birds that eat anything small enough to fit down their gullets. They live in large colonies, and will happily prey on and swallow whole any animal they can.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>95</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<Wildness>0.45</Wildness>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>0.20</maxPreyBodySize>
+			<baseBodySize>0.45</baseBodySize>
+			<baseHealthScale>0.5</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<trainability>Intermediate</trainability>
+			<lifeExpectancy>11</lifeExpectancy>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.013</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>BMT_SeagullBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_SeagullJuvenile</def>
+					<minAge>0.22</minAge>
+				</li>
+				<li>
+					<def>BMT_SeagullAdult</def>
+					<minAge>0.45</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
+			<li Class="PathfindingFramework.LocomotionMovementExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<moveSpeedMultiplier>4</moveSpeedMultiplier>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggSeagullFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggSeagullUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>9</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>2</min>
+					<max>4</max>
+				</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4.5</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_Seagull</defName>
+		<label>seagull</label>
+		<race>BMT_Seagull</race>
+		<combatPower>45</combatPower>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<wildGroupSize>
+			<min>6</min>
+			<max>11</max>
+		</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>seagull chick</label>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Seagull/Seagull</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Seagull/Seagull</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Seagull/Seagull</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.LocomotionGraphicExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Seagull/SeagullFlying</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggSeagullFertilized</defName>
+		<label>seagull egg (fert.)</label>
+		<description>A fertilized seagull egg. If all goes well, it should hatch into a baby seagull. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>28.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Seagull</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggSeagullUnfertilized</defName>
+		<label>seagull egg (unfert.)</label>
+		<description>An unfertilized seagull egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(226,207,174)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>13.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+</Defs>

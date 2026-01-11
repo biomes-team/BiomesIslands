@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<BiomeDef Name="BiomesIslands_DesertIslandBase" Abstract="True">
-		<defName>BiomesIslands_DesertIslandBase</defName>
+	<BiomeDef Name="BMT_DesertIslandBase" Abstract="True">
+		<defName>BMT_DesertIslandBase</defName>
 		<label>desert island</label>
 		<description>Scorched by the sun and stripped of most vegetation, these sandy stretches may seem barren. But with resilience, one can unearth hidden resources, making survival a true testament to adaptability.</description>
 		<canAutoChoose>false</canAutoChoose>
@@ -123,13 +123,13 @@
 			<Plant_Berry>0.10</Plant_Berry>
 			<BiomesIslands_CoconutPalm>0.03</BiomesIslands_CoconutPalm>
 			<!-- water plants -->
-			<BiomesIslands_Kelp>1.5</BiomesIslands_Kelp>
-			<BiomesIslands_SeaGrass>4.0</BiomesIslands_SeaGrass>
-			<BiomesIslands_Seaweed>4.0</BiomesIslands_Seaweed>
-			<BiomesIslands_GreenAlgae>0.3</BiomesIslands_GreenAlgae>
-			<BiomesIslands_Murkweed>0.1</BiomesIslands_Murkweed>
-			<BiomesIslands_WhiteAlgae>0.8</BiomesIslands_WhiteAlgae>
-			<BiomesIslands_Sargassum>1.5</BiomesIslands_Sargassum>
+			<BMT_Kelp>1.5</BMT_Kelp>
+			<BMT_SeaGrass>4.0</BMT_SeaGrass>
+			<BMT_Seaweed>4.0</BMT_Seaweed>
+			<BMT_GreenAlgae>0.3</BMT_GreenAlgae>
+			<BMT_Murkweed>0.1</BMT_Murkweed>
+			<BMT_WhiteAlgae>0.8</BMT_WhiteAlgae>
+			<BMT_Sargassum>1.5</BMT_Sargassum>
 		</wildPlants>
 		<wildAnimals>
 			<!-- land grazers -->
@@ -148,15 +148,15 @@
 			<Rhinoceros>0.5</Rhinoceros>
 			<Boomalope>0.5</Boomalope>
 			<Megasloth>0.1</Megasloth>
-			<BiomesIslands_ClutterCrab>0.4</BiomesIslands_ClutterCrab>
-			<BiomesIslands_Seagull>1.3</BiomesIslands_Seagull>
-			<BiomesIslands_FiddlerCrab>0.8</BiomesIslands_FiddlerCrab>
-			<BiomesIslands_HermitCrab>0.2</BiomesIslands_HermitCrab>
-			<BiomesIslands_SeaTurtle>0.5</BiomesIslands_SeaTurtle>
-			<BiomesIslands_MarineIguana>0.7</BiomesIslands_MarineIguana>
-			<BiomesIslands_LeatherbackTurtle>0.3</BiomesIslands_LeatherbackTurtle>
-			<BiomesIslands_PhoebaniaRat>0.1</BiomesIslands_PhoebaniaRat>
-			<BiomesIslands_GalapagosTortoise>0.5</BiomesIslands_GalapagosTortoise>
+			<BMT_ClutterCrab>0.4</BMT_ClutterCrab>
+			<BMT_Seagull>1.3</BMT_Seagull>
+			<BMT_FiddlerCrab>0.8</BMT_FiddlerCrab>
+			<BMT_HermitCrab>0.2</BMT_HermitCrab>
+			<BMT_SeaTurtle>0.5</BMT_SeaTurtle>
+			<BMT_MarineIguana>0.7</BMT_MarineIguana>
+			<BMT_LeatherbackTurtle>0.3</BMT_LeatherbackTurtle>
+			<BMT_PhoebaniaRat>0.1</BMT_PhoebaniaRat>
+			<BMT_GalapagosTortoise>0.5</BMT_GalapagosTortoise>
 			<BMT_SeaOtter>0.01</BMT_SeaOtter>
 
 			<!-- land predators -->
@@ -167,23 +167,23 @@
 			<!-- Water animals have ~50% higher stats relative to other islands to keep water pops up -->
 			<!-- aquatic grazers -->
 			<BMT_Sunfish>0.1</BMT_Sunfish>
-			<BiomesIslands_Sardine>1.5</BiomesIslands_Sardine>
+			<BMT_Sardine>1.5</BMT_Sardine>
 			<BMT_SunfinAngelfish>1.0</BMT_SunfinAngelfish>
 			<BMT_OrchidBasslet>1.0</BMT_OrchidBasslet>
-			<BiomesIslands_LimepeelAngelfish>1.5</BiomesIslands_LimepeelAngelfish>
+			<BMT_LimepeelAngelfish>1.5</BMT_LimepeelAngelfish>
 			<BMT_GreenEel>1.0</BMT_GreenEel>
-			<BiomesIslands_Trout>0.15</BiomesIslands_Trout>
-			<BiomesIslands_BoomWhale>1.0</BiomesIslands_BoomWhale>
+			<BMT_Trout>0.15</BMT_Trout>
+			<BMT_BoomWhale>1.0</BMT_BoomWhale>
 			<BMT_Parrotfish>1.5</BMT_Parrotfish>
-			<BiomesIslands_MantaRay>0.05</BiomesIslands_MantaRay>
+			<BMT_MantaRay>0.05</BMT_MantaRay>
 
 			<!-- aquatic predators -->
 			<BMT_Dolphin>0.3</BMT_Dolphin>
 			<BMT_Swordfish>0.09</BMT_Swordfish>
-			<BiomesIslands_RedSnapper>0.3</BiomesIslands_RedSnapper>
-			<BiomesIslands_Tuna>0.45</BiomesIslands_Tuna>
-			<BiomesIslands_Hammerhead>0.2</BiomesIslands_Hammerhead>
-			<BiomesIslands_WhiteShark>0.158</BiomesIslands_WhiteShark>
+			<BMT_RedSnapper>0.3</BMT_RedSnapper>
+			<BMT_Tuna>0.45</BMT_Tuna>
+			<BMT_Hammerhead>0.2</BMT_Hammerhead>
+			<BMT_WhiteShark>0.158</BMT_WhiteShark>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
@@ -202,8 +202,8 @@
 		</pollutionWildAnimals>
 	</BiomeDef>
 
-	<BiomeDef ParentName="BiomesIslands_DesertIslandBase">
-		<defName>BiomesIslands_DesertIsland</defName>
+	<BiomeDef ParentName="BMT_DesertIslandBase">
+		<defName>BMT_DesertIsland</defName>
 		<label>desert island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_DesertIsland</workerClass>
 		<modExtensions>
@@ -218,7 +218,7 @@
 					<li>Pair</li>
 				</islandShapes>
 				<useOceanMaterial>true</useOceanMaterial>
-				<overlayTexturePath>BiomesIslands_World/MapGraphics/DesertIsland</overlayTexturePath>
+				<overlayTexturePath>BMT_World/MapGraphics/DesertIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
 				<isWaterCovered>true</isWaterCovered>
@@ -228,8 +228,8 @@
 		</modExtensions>
 	</BiomeDef>
 
-	<BiomeDef ParentName="BiomesIslands_DesertIslandBase">
-		<defName>BiomesIslands_DesertArchipelago</defName>
+	<BiomeDef ParentName="BMT_DesertIslandBase">
+		<defName>BMT_DesertArchipelago</defName>
 		<label>desert Archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_DesertArchipelago</workerClass>
 		<modExtensions>
@@ -241,7 +241,7 @@
 					<li>Cluster</li>
 				</islandShapes>
 				<useOceanMaterial>true</useOceanMaterial>
-				<overlayTexturePath>BiomesIslands_World/MapGraphics/DesertArchipelago</overlayTexturePath>
+				<overlayTexturePath>BMT_World/MapGraphics/DesertArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>
 	</BiomeDef>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BigBirdThingBase">
+		<defName>BMT_KiwiBird</defName>
+		<label>kiwi</label>
+		<description>The miniscule, spherical cousin of the moa. Inferior in every way to their bigger relative. Helpless in the face of danger because of it's lack of flight.</description>
+		<statBases>
+			<MoveSpeed>3.1</MoveSpeed>
+			<MarketValue>80</MarketValue>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<LeatherAmount>5</LeatherAmount>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>0.15</baseBodySize>
+			<baseHealthScale>0.5</baseHealthScale>
+			<baseHungerRate>0.4</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<trainability>None</trainability>
+			<lifeExpectancy>12</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+					<soundWounded>BMT_Kiwi_Call</soundWounded>
+					<soundDeath>BMT_Kiwi_Call</soundDeath>
+					<soundCall>BMT_Kiwi_Call</soundCall>
+					<soundAngry>BMT_Kiwi_Call</soundAngry>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.12</minAge>
+					<soundWounded>BMT_Kiwi_Call</soundWounded>
+					<soundDeath>BMT_Kiwi_Call</soundDeath>
+					<soundCall>BMT_Kiwi_Call</soundCall>
+					<soundAngry>BMT_Kiwi_Call</soundAngry>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>BMT_Kiwi_Call</soundWounded>
+					<soundDeath>BMT_Kiwi_Call</soundDeath>
+					<soundCall>BMT_Kiwi_Call</soundCall>
+					<soundAngry>BMT_Kiwi_Call</soundAngry>
+				</li>
+			</lifeStageAges>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<nuzzleMtbHours>48</nuzzleMtbHours>
+			<nameOnTameChance>0.5</nameOnTameChance>
+			<petness>0.1</petness>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggKiwiFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggKiwiUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>9</eggLayIntervalDays>
+				<eggCountRange>1</eggCountRange>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_KiwiBird</defName>
+		<label>kiwi</label>
+		<race>BMT_KiwiBird</race>
+		<combatPower>38</combatPower>
+		<ecoSystemWeight>0.28</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>kiwi chick</label>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Kiwi</texPath>
+					<drawSize>0.45</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
+					<drawSize>0.45</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Kiwi</texPath>
+					<drawSize>0.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Kiwi</texPath>
+					<drawSize>0.85</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Kiwi/Dessicated_Kiwi</texPath>
+					<drawSize>0.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggKiwiFertilized</defName>
+		<label>kiwi egg (fert.)</label>
+		<description>A fertilized kiwi egg. If all goes well, it should hatch into a baby kiwi. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(236,217,184)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_KiwiBird</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggKiwiUnfertilized</defName>
+		<label>kiwi egg (unfert.)</label>
+		<description>An unfertilized kiwi egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(226,207,174)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+
+</Defs>

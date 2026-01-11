@@ -3,7 +3,7 @@
 	<!--================== Plant products ==================-->
 
 	<ThingDef ParentName="BiomesCore_FruitBase">
-		<defName>BiomesIslands_Bananas</defName>
+		<defName>BMT_Bananas</defName>
 		<label>sugar bananas</label>
 		<description>Long yellow fruit with a thick peel and creamy flesh.</description>
 		<graphicData>
@@ -27,7 +27,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BiomesCore_VegBase">
-		<defName>BiomesIslands_Devilsclaw</defName>
+		<defName>BMT_Devilsclaw</defName>
 		<label>devil's claw leaves</label>
 		<description>Edible leaves from the devil's claw tree. A healthy leafy green!</description>
 		<graphicData>
@@ -50,7 +50,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BiomesCore_FruitBase">
-		<defName>BiomesIslands_Oranges</defName>
+		<defName>BMT_Oranges</defName>
 		<label>blood oranges</label>
 		<description>Round, orange and with a sweet juice.</description>
 		<graphicData>
@@ -75,7 +75,7 @@
 
 
 	<ThingDef ParentName="BiomesCore_FruitBase">
-		<defName>BiomesIslands_Pineapples</defName>
+		<defName>BMT_Pineapples</defName>
 		<label>spineapple slices</label>
 		<description>Big round fruit slices with the spiny exterior removed, revealing a sweet milky center.</description>
 		<graphicData>
@@ -100,7 +100,7 @@
 
 	<!--================== Fish Food ==================-->
 	<ThingDef ParentName="OrganicProductBase">
-		<defName>BiomesIslands_FishFood</defName>
+		<defName>BMT_FishFood</defName>
 		<label>fish food</label>
 		<description>Fish food made from mixed meat and plant sources. Less efficient than kibble, but won't deteriorate in water. Humans can eat it, but they really, really don't like it.</description>
 		<thingCategories>
@@ -133,7 +133,7 @@
 	</ThingDef>
 
 	<RecipeDef>
-		<defName>BiomesIslands_MakeFishFood</defName>
+		<defName>BMT_MakeFishFood</defName>
 		<label>make fish food</label>
 		<description>Make fish food by combining raw meat and plants.</description>
 		<jobString>Making fish food.</jobString>
@@ -170,7 +170,7 @@
 			<li>TableButcher</li>
 		</recipeUsers>
 		<products>
-			<BiomesIslands_FishFood>45</BiomesIslands_FishFood>
+			<BMT_FishFood>45</BMT_FishFood>
 		</products>
 		<fixedIngredientFilter>
 			<categories>

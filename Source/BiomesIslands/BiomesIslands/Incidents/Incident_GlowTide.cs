@@ -81,9 +81,9 @@ namespace BiomesIslands.Incidents
             //radRange.min = Math.Max(radRange.min, 10);
             //radRange.max = Math.Min(radRange.max, 50);
 
-            if (CellFinder.TryFindRandomEdgeCellWith((IntVec3 c) => PlantUtility.CanEverPlantAt(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, c, map), map, 0f, out IntVec3 initialSpawn))
+            if (CellFinder.TryFindRandomEdgeCellWith((IntVec3 c) => PlantUtility.CanEverPlantAt(BiomesIslandsDefOf.BMT_GlowPlankton, c, map), map, 0f, out IntVec3 initialSpawn))
             {
-                GenSpawn.Spawn(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, initialSpawn, map, WipeMode.Vanish);
+                GenSpawn.Spawn(BiomesIslandsDefOf.BMT_GlowPlankton, initialSpawn, map, WipeMode.Vanish);
             }
 
             CircleData initCircle = new CircleData(initialSpawn, radRange.RandomInRange, curGeneration);
@@ -112,14 +112,14 @@ namespace BiomesIslands.Incidents
             for (int j = 0; j < spawnCount; j++)
             {
                 IntVec3 spawnSpot = CellFinderLoose.RandomCellWith((IntVec3 c) => c.GetFirstBuilding(map) == null
-                    && PlantUtility.CanEverPlantAt(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, c, map)
+                    && PlantUtility.CanEverPlantAt(BiomesIslandsDefOf.BMT_GlowPlankton, c, map)
                     && validSpawns.Contains(c), map, 500);
 
                 if (spawnSpot != null)
                 {
                     if (spawnSpot.InBounds(map))
                     {
-                        GenSpawn.Spawn(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, spawnSpot, map, WipeMode.Vanish);
+                        GenSpawn.Spawn(BiomesIslandsDefOf.BMT_GlowPlankton, spawnSpot, map, WipeMode.Vanish);
                     }
                 }
             }
@@ -171,7 +171,7 @@ namespace BiomesIslands.Incidents
             }
             //validSpawns = result;
             result = result.Where(c => c.InBounds(map)).ToList();
-            validSpawns = result.Where(c => PlantUtility.CanEverPlantAt(BiomesIslandsDefOf.BiomesIslands_GlowPlankton, c, map)).ToList();
+            validSpawns = result.Where(c => PlantUtility.CanEverPlantAt(BiomesIslandsDefOf.BMT_GlowPlankton, c, map)).ToList();
 
             //if(validSpawns.Count() == 0)
             //{

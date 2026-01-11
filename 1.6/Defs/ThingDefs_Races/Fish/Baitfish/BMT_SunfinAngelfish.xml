@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BMT_BaitfishBase">
+		<defName>BMT_SunfinAngelfish</defName>
+		<label>sunfin angelfish</label>
+		<statBases>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMax>65</ComfyTemperatureMax>
+			<Wildness>0.25</Wildness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggSunfinAngelfishFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggSunfinAngelfishUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>12</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~3</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<lifeExpectancy>3</lifeExpectancy>
+			<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
+			<baseBodySize>0.20</baseBodySize>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BMT_BaseBaitfish">
+		<defName>BMT_SunfinAngelfish</defName>
+		<label>sunfin angelfish</label>
+		<race>BMT_SunfinAngelfish</race>
+		<wildGroupSize>2~4</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
+					<drawSize>0.35</drawSize>
+					<color>(253,240,0)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.35</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
+					<drawSize>0.6</drawSize>
+					<color>(253,240,0)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
+					<drawSize>0.95</drawSize>
+					<color>(253,240,0)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.95</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
+					<color>(253,240,0)</color>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggSunfinAngelfishFertilized</defName>
+		<label>sunfin angelfish egg (fert.)</label>
+		<description>A fertilized sunfin angelfish egg. If all goes well, it should hatch into a fish. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(230,220,180)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_SunfinAngelfish</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+  
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggSunfinAngelfishUnfertilized</defName>
+		<label>sunfin angelfish egg (unfert.)</label>
+		<description>An unfertilized sunfin angelfish egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(220,210,170)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="FurnitureWithQualityBase">
-		<defName>BiomesIslands_AquaticKelpBed</defName>
+		<defName>BMT_AquaticKelpBed</defName>
 		<thingClass>Building_Bed</thingClass>
 		<label>kelp bed</label>
 		<description>A bed of artificial kelp. Great for aquatic animals like fish.</description>

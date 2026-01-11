@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BigBirdThingBase">
+		<defName>BMT_OmegaDodo</defName>
+		<label>omegadodo</label>
+		<description>The last dodo you'll ever want or need! Having been brought back from extinction by Urbworld scientists, this species of dodo has been genetically engineered to be far larger than the rest of its kind for the purposes of giving meat.\n\nWhen in a caravan, people can ride omegadodos to increase the caravan's speed.</description>
+		<statBases>
+			<MoveSpeed>4.8</MoveSpeed>
+			<MarketValue>400</MarketValue>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<LeatherAmount>25</LeatherAmount>
+			<FilthRate>12</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<Wildness>0.50</Wildness>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+			<baseHungerRate>0.70</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<roamMtbDays>2.2</roamMtbDays>
+			<trainability>None</trainability>
+			<lifeExpectancy>40</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.45</minAge>
+				</li>
+			</lifeStageAges>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<nuzzleMtbHours>10</nuzzleMtbHours>
+			<nameOnTameChance>0.90</nameOnTameChance>
+			<petness>0.10</petness>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggOmegaDodoFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggOmegaDodoUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>4</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>3</max>
+
+				</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_OmegaDodo</defName>
+		<label>omegadodo</label>
+		<race>BMT_OmegaDodo</race>
+		<combatPower>38</combatPower>
+		<ecoSystemWeight>0.75</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>dodo chick</label>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/OmegaDodo</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/Dessicated_OmegaDodo</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/OmegaDodo</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/Dessicated_OmegaDodo</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/OmegaDodo</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/OmegaDodo/Dessicated_OmegaDodo</texPath>
+					<drawSize>1.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggOmegaDodoUnfertilized</defName>
+		<label>omegadodo egg (unfert.)</label>
+		<description>An unfertilized omegadodo egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(118,118,118)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19.0</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggOmegaDodoFertilized</defName>
+		<label>omegadodo egg (fert.)</label>
+		<description>A fertilized omegadodo egg. If all goes well, it should hatch into a baby omegadodo. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(128,128,128)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>32.0</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_OmegaDodo</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

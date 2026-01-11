@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BiomesCore_CrabThingBase">
+		<defName>BMT_RimCrab</defName>
+		<label>rimcrab</label>
+		<description>A mongrel crab species that can survive on most rimworlds in warm waters. It moves in large packs, which can be a threat to smaller islands because of their ravenous hunger. The animal’s hard shell makes it hard to get at it’s delicious meat, but the effort may well be worth it.</description>
+		<statBases>
+			<MarketValue>110</MarketValue>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
+			<Wildness>0.25</Wildness>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.25</baseBodySize>
+			<baseHealthScale>0.6</baseHealthScale>
+			<baseHungerRate>0.30</baseHungerRate>
+			<lifeExpectancy>9</lifeExpectancy>
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<roamMtbDays>3</roamMtbDays>
+			<meatLabel>crab meat</meatLabel>
+			<meatColor>(251,172,202)</meatColor>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggRimCrabFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggRimCrabUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>11</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>
+					<min>1</min>
+					<max>3</max>
+				</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_RimCrab</defName>
+		<label>rimcrab</label>
+		<race>BMT_RimCrab</race>
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.30</ecoSystemWeight>
+		<wildGroupSize>
+			<min>4</min>
+			<max>15</max>
+		</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/RimCrab</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/RimCrab</texPath>
+					<drawSize>1.25</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/RimCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RimCrab/Dessicated_RimCrab</texPath>
+					<drawSize>1.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggRimCrabFertilized</defName>
+		<label>rimcrab egg (fert.)</label>
+		<description>A fertilized rimcrab egg. If all goes well, it should hatch into a baby crab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(95,125,140)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>35.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>9</hatcherDaystoHatch>
+				<hatcherPawn>BMT_RimCrab</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggRimCrabUnfertilized</defName>
+		<label>rimcrab egg (unfert.)</label>
+		<description>An unfertilized rimcrab egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(86,115,130)</color>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>17.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+</Defs>

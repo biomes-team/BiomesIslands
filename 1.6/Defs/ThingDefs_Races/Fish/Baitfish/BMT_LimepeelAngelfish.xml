@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BMT_BaitfishBase">
+		<defName>BMT_LimepeelAngelfish</defName>
+		<label>limepeel angelfish</label>
+		<statBases>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<Wildness>0.55</Wildness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggLimepeelAngelfishFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggLimepeelAngelfishUnfertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>12</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>2~4</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<lifeExpectancy>3</lifeExpectancy>
+			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BMT_BaseBaitfish">
+		<defName>BMT_LimepeelAngelfish</defName>
+		<label>limepeel angelfish</label>
+		<race>BMT_LimepeelAngelfish</race>
+		<wildGroupSize>3~8</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
+					<drawSize>0.3</drawSize>
+					<color>(150,220,30)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
+					<drawSize>0.5</drawSize>
+					<color>(150,220,30)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRound</texPath>
+					<drawSize>0.8</drawSize>
+					<color>(150,220,30)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
+					<color>(150,220,30)</color>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggLimepeelAngelfishFertilized</defName>
+		<label>limepeel angelfish egg (fert.)</label>
+		<description>A fertilized limepeel angelfish egg. If all goes well, it should hatch into a fish. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(230,220,220)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_LimepeelAngelfish</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggLimepeelAngelfishUnfertilized</defName>
+		<label>limepeel angelfish egg (unfert.)</label>
+		<description>An unfertilized limepeel angelfish egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(220,210,210)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+</Defs>
