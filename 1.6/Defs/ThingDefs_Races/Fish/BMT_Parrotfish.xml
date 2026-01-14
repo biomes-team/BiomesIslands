@@ -2,38 +2,7 @@
 <Defs>
 
 	<!-- Copied from LifeStages.xml, added modExtensions -->
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_ParrotfishBabyTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_ParrotfishJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_ParrotfishAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
+	
 
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Parrotfish</defName>
@@ -105,15 +74,15 @@
 			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
-					<def>BMT_ParrotfishBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_ParrotfishJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>0.30</minAge>
 				</li>
 				<li>
-					<def>BMT_ParrotfishAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>0.55</minAge>
 				</li>
 			</lifeStageAges>

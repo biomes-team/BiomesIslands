@@ -4,39 +4,6 @@
 
 	<!-- Hammerhead Shark -->
 
-	<!-- Copied from LifeStages.xml, added modExtensions -->
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_HammerheadBabyTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_HammerheadJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_HammerheadAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
 
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Hammerhead</defName>
@@ -100,15 +67,15 @@
 			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
-					<def>BMT_HammerheadBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_HammerheadJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>0.4</minAge>
 				</li>
 				<li>
-					<def>BMT_HammerheadAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>0.8</minAge>
 				</li>
 			</lifeStageAges>
@@ -134,6 +101,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/HammerheadSubmerged</texPath>
+					<drawSize>0.75</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -144,6 +115,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/HammerheadSubmerged</texPath>
+					<drawSize>2</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -154,19 +129,14 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/HammerheadSubmerged</texPath>
+					<drawSize>2.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Hammerhead/HammerheadSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
 		</modExtensions>
 	</PawnKindDef>
 </Defs>

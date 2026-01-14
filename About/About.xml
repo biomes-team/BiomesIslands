@@ -18,12 +18,12 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
-		<li>
-			<packageId>pathfinding.framework</packageId>
-			<displayName>PathfindingFramework</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/ToDo</steamWorkshopUrl>
-			<downloadUrl>https://github.com/joseasoler/Pathfinding-Framework/</downloadUrl>
-		</li>
+		<!-- <li> -->
+			<!-- <packageId>pathfinding.framework</packageId> -->
+			<!-- <displayName>PathfindingFramework</displayName> -->
+			<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/ToDo</steamWorkshopUrl> -->
+			<!-- <downloadUrl>https://github.com/joseasoler/Pathfinding-Framework/</downloadUrl> -->
+		<!-- </li> -->
 		<li>
 			<packageId>BiomesTeam.BiomesCore</packageId>
 			<displayName>Biomes! Core</displayName>
@@ -34,7 +34,7 @@
 		<li>brrainz.harmony</li>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
-		<li>pathfinding.framework</li>
+		<!-- <li>pathfinding.framework</li> -->
 		<li>VanillaExpanded.VFEArchitect</li>
 		<li>OskarPotocki.VFE.Classical</li>
 		<li>sol.vfearchaddon</li>

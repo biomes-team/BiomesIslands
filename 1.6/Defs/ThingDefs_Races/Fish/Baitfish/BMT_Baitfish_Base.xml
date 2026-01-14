@@ -2,37 +2,6 @@
 <Defs>
 
 	<!-- ================ Baitfish Base ================ -->
-	<LifeStageDef ParentName="AnimalBaby" Abstract="true" Name="BMT_BaitfishBabyTinyBase">
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.4</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef Name="BMT_BaitfishJuvenileBase" Abstract="true">
-		<defName>BMT_BaitfishJuvenileBase</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef Name="BMT_BaitfishAdultBase" Abstract="true">
-		<defName>BMT_BaitfishAdultBase</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
 
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail" Abstract="true"
 	          Name="BMT_BaitfishBase">

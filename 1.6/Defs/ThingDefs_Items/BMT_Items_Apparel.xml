@@ -52,11 +52,11 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li Class="PathfindingFramework.MovementExtension"> -->
+				<!-- <movementDef>PF_Movement_Amphibious</movementDef> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 
 	</ThingDef>
 </Defs>

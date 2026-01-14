@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-
 	<!-- Trout -->
-
-	<!-- Copied from LifeStages.xml, added modExtensions -->
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_TroutBabyTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_TroutJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_TroutAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
 
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Trout</defName>
@@ -109,15 +73,15 @@
 			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
-					<def>BMT_TroutBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_TroutJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>0.30</minAge>
 				</li>
 				<li>
-					<def>BMT_TroutAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>0.55</minAge>
 				</li>
 			</lifeStageAges>
@@ -145,6 +109,11 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
+					<drawSize>0.5</drawSize>
+					<color>(180,170,160)</color>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -156,6 +125,11 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
+					<drawSize>1.2</drawSize>
+					<color>(180,170,160)</color>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -167,21 +141,13 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
+					<drawSize>1.6</drawSize>
+					<color>(180,170,160)</color>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
-					<color>(180,170,160)</color>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 

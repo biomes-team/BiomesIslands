@@ -45,6 +45,11 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>0.3</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
+					<drawSize>0.3</drawSize>
+					<color>(231,88,217)</color>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -56,6 +61,11 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
+					<drawSize>0.5</drawSize>
+					<color>(231,88,217)</color>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -67,20 +77,15 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
+					<drawSize>0.7</drawSize>
+					<color>(231,88,217)</color>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFish/BaitFishSubmerged</texPath>
-					<color>(231,88,217)</color>
-				</bodyGraphicData>
-			</li>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
 		</modExtensions>
 	</PawnKindDef>
 
