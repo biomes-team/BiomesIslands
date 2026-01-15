@@ -6,40 +6,6 @@
 
 	<!-- Red Snapper -->
 
-	<!-- Copied from LifeStages.xml, added modExtensions -->
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_RedSnapperBabyTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_RedSnapperJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_RedSnapperAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
-
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_RedSnapper</defName>
 		<label>red snapper</label>
@@ -112,15 +78,15 @@
 			<useMeatFrom>BMT_WhiteShark</useMeatFrom>
 			<lifeStageAges>
 				<li>
-					<def>BMT_RedSnapperBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_RedSnapperJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>0.2</minAge>
 				</li>
 				<li>
-					<def>BMT_RedSnapperAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>0.45</minAge>
 				</li>
 			</lifeStageAges>
@@ -146,6 +112,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
+					<drawSize>0.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -156,6 +126,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
+					<drawSize>1.2</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -166,20 +140,12 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
+					<drawSize>1.6</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">

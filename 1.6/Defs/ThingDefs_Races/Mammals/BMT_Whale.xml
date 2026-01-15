@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_WhaleBabyTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.6</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_WhaleJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_WhaleAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
-
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Whale</defName>
 		<label>whale</label>
@@ -97,31 +64,24 @@
 			<meatColor>(255,210,210)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WhaleBabyTiny</def>
+					<def>AnimaleBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>3.5</minAge>
-
 					<soundCall>BMT_Whale_Call</soundCall>
 					<soundAngry>BMT_Whale_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -141,16 +101,20 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+					<drawSize>2.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/Whale</texPath>
 					<drawSize>4.0</drawSize>
 				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
 					<drawSize>4.0</drawSize>
-				</dessicatedBodyGraphicData>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -161,20 +125,12 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Whale</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+					<drawSize>4.8</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 
