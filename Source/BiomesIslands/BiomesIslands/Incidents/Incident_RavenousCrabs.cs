@@ -1,5 +1,4 @@
-﻿using PathfindingFramework;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -22,15 +21,17 @@ namespace BiomesIslands.Incidents
 
 			Map map = (Map) parms.target;
 
-			return LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal, false,
-				null, BiomesIslandsDefOf.BMT_RimCrab);
+			//return LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal, false,
+			//	null, BiomesIslandsDefOf.BMT_RimCrab);
+			return RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 _, map, 0.1f);
 		}
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map) parms.target;
-			if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 result, map, CellFinder.EdgeRoadChance_Animal, false,
-				    null, BiomesIslandsDefOf.BMT_RimCrab))
+			//if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 result, map, CellFinder.EdgeRoadChance_Animal, false,
+			//	    null, BiomesIslandsDefOf.BMT_RimCrab))
+			if (!RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 result, map, 0.1f))
 			{
 				return false;
 			}
@@ -45,9 +46,13 @@ namespace BiomesIslands.Incidents
 
 			for (int crabIndex = 1; crabIndex < num; crabIndex++)
 			{
+
 				// Choose a nearby location valid for the next crab.
-				LocationFinding.TryRandomClosewalkCellNear(firstCrab, 10, out IntVec3 closeLocation);
-				Pawn spawnedCrab = ((Pawn) GenSpawn.Spawn(PawnGenerator.GeneratePawn(BiomesIslandsDefOf.BMT_RimCrab),
+				//LocationFinding.TryRandomClosewalkCellNear(firstCrab, 10, out IntVec3 closeLocation);
+				IntVec3 closeLocation = CellFinder.RandomClosewalkCellNear(result, map, 10);
+
+
+                Pawn spawnedCrab = ((Pawn) GenSpawn.Spawn(PawnGenerator.GeneratePawn(BiomesIslandsDefOf.BMT_RimCrab),
 					closeLocation, map));
 				spawnedCrab.needs.food.CurLevelPercentage = 1f;
 			}

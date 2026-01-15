@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<SoundDef>
+		<defName>BMT_Seagull_Call</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Animals/BMT_Seagull/Call</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>29~33</volumeRange>
+				<distRange>0~50</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BMT_Seagull_Angry</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Animals/BMT_Seagull/Angry</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>32~35</volumeRange>
+				<distRange>0~70</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BMT_Seagull_Wounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Animals/BMT_Seagull/Wounded</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>32~35</volumeRange>
+				<distRange>0~70</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+</Defs>

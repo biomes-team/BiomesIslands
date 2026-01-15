@@ -36,21 +36,13 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.45</minAge>
+					<soundCall>BMT_Seagull_Call</soundCall>
+					<soundAngry>BMT_Seagull_Angry</soundAngry>
+					<soundWounded>BMT_Seagull_Wounded</soundWounded>
+					<soundDeath>BMT_Seagull_Wounded</soundDeath>
 				</li>
 			</lifeStageAges>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>4</moveSpeedMultiplier>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggSeagullFertilized</eggFertilizedDef>

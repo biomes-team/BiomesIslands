@@ -1,8 +1,4 @@
 ﻿using System.Collections.Generic;
-using PathfindingFramework;
-using PathfindingFramework.ExtensionMethodCaches;
-using PathfindingFramework.MovementDefUtils;
-using PathfindingFramework.Patches;
 using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
@@ -23,8 +19,9 @@ namespace BiomesIslands.Incidents
 				// It is possible to find a prey and predator animal pair...
 				TryFindPreyPredatorPair(map.Tile, out PawnKindDef preyKindDef, out PawnKindDef _) &&
 				//... and a place for them to spawn.
-				LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal, false, null,
-					preyKindDef)
+				IslandsUtil.FindAquaticSpawnPoint(map, out IntVec3 _)
+				//LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal, false, null,
+				//	preyKindDef)
 				;
 		}
 
@@ -39,8 +36,7 @@ namespace BiomesIslands.Incidents
 				return false;
 			}
 
-			if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 start, map, CellFinder.EdgeRoadChance_Animal, false,
-				    null, preyKindDef))
+			if (!IslandsUtil.FindAquaticSpawnPoint(map, out IntVec3 start))
 			{
 				return false;
 			}
@@ -50,17 +46,18 @@ namespace BiomesIslands.Incidents
 
 			// Spawn one of the prey animals first. It will be used to choose the location of other prey.
 			Pawn preyPawn = GenSpawn.Spawn(prey[0], start, map) as Pawn;
+			IntVec3 closeLocation;
 			for (int preyIndex = 1; preyIndex < prey.Count; ++preyIndex)
 			{
-				LocationFinding.TryRandomClosewalkCellNear(preyPawn, preySpawnRadius, out IntVec3 closeLocation);
+				closeLocation = IslandsUtil.FindAquaticSpawnPointNear(start, map, preySpawnRadius);
 				GenSpawn.Spawn(prey[preyIndex], closeLocation, map, rot);
 			}
 
 			List<Pawn> predator = GenerateAnimals(predatorKindDef, map.Tile, AnimalsPredatorMin);
 			for (int predatorIndex = 0; predatorIndex < predator.Count; predatorIndex++)
-			{
-				LocationFinding.TryRandomClosewalkCellNear(preyPawn, predatorSpawnRadius, out IntVec3 closeLocation);
-				GenSpawn.Spawn(predator[predatorIndex], closeLocation, map, rot);
+            {
+                closeLocation = IslandsUtil.FindAquaticSpawnPointNear(start, map, predatorSpawnRadius);
+                GenSpawn.Spawn(predator[predatorIndex], closeLocation, map, rot);
 			}
 
 			string preyText = preyKindDef.GetLabelPlural().CapitalizeFirst();
@@ -74,12 +71,13 @@ namespace BiomesIslands.Incidents
 
 		private static bool IsAquatic(PawnKindDef animalKind)
 		{
-			return MovementDefDatabase<ThingDef>.Get(animalKind.race) == MovementDefOf.PF_Movement_Aquatic;
+			return animalKind.HasModExtension<WaterWalker.WaterWalkerExtension>();
+			//return MovementDefDatabase<ThingDef>.Get(animalKind.race) == MovementDefOf.PF_Movement_Aquatic;
 		}
 
 		private static float AnimalWeight(PawnKindDef pawnKindDef)
 		{
-			return Mathf.Lerp(0.2F, 1.0F, pawnKindDef.RaceProps.wildness);
+			return Mathf.Lerp(0.2F, 1.0F, pawnKindDef.race.statBases.GetStatValueFromList(StatDefOf.Wildness, 1f));
 		}
 
 		private static bool TryFindPreyPredatorPair(int tile, out PawnKindDef preyKindDef, out PawnKindDef predatorKindDef)

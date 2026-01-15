@@ -1,13 +1,27 @@
 using BiomesCore.WorldMap;
+using RimWorld;
 using RimWorld.Planet;
+using Verse;
 
 namespace BiomesIslands.BiomeWorkers
 {
-	public class BiomeWorker_TropicalIsland : BiomeWorker_Island
+	public class BiomeWorker_TropicalIsland : BiomeWorker
 	{
-		protected override float GetIslandScore(Tile tile, int tileID, float islandPresence)
-		{
-			return BiomeWorkerUtil.TropicalScore(tile);
-		}
-	}
+        public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
+        {
+            if (tile.elevation > -100)
+            {
+                return -100f;
+            }
+            if (!tile.WaterCovered)
+            {
+                return -100f;
+            }
+            if (Rand.Value > .005f)
+            {
+                return -100f;
+            }
+            return BiomeWorkerUtil.TropicalScore(tile);
+        }
+    }
 }

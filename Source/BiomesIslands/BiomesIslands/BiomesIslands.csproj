@@ -45,10 +45,6 @@
       <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\..\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="PathfindingFramework">
-      <HintPath>..\..\..\..\Pathfinding-Framework\1.5\Assemblies\PathfindingFramework.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="BiomesCore">
       <HintPath>..\..\..\..\BiomesCore\1.5\Assemblies\BiomesCore.dll</HintPath>
       <Private>False</Private>
@@ -65,6 +61,10 @@
       <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\..\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="WaterWalker">
+      <HintPath>..\..\..\..\BiomesCore\1.6\Assemblies\WaterWalker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiomesIslands.cs" />
@@ -73,7 +73,6 @@
     <Compile Include="BiomeWorkers\BiomeWorker_BorealIsland.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_DesertArchipelago.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_DesertIsland.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_Island.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_TemperateArchipelago.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_TemperateIsland.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_TropicalArchipelago.cs" />
@@ -85,6 +84,7 @@
     <Compile Include="Incidents\Incident_CrabMigration.cs" />
     <Compile Include="Incidents\Incident_RavenousCrabs.cs" />
     <Compile Include="Incidents\Incident_GlowTide.cs" />
+    <Compile Include="IslandsUtil.cs" />
     <Compile Include="Patches\QuestGen\QuestNode_Root_WorkSite_PotentialSiteTiles_Patch.cs" />
     <Compile Include="Patches\ThingDefGenerator_Meat_ImpliedMeatDefs_Patch.cs" />
     <Compile Include="Patches\World_NaturalRockTypesIn_Patch.cs" />

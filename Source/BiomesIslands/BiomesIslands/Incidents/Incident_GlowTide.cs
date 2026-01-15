@@ -115,13 +115,13 @@ namespace BiomesIslands.Incidents
                     && PlantUtility.CanEverPlantAt(BiomesIslandsDefOf.BMT_GlowPlankton, c, map)
                     && validSpawns.Contains(c), map, 500);
 
-                if (spawnSpot != null)
-                {
+                //if (spawnSpot != null)
+                //{
                     if (spawnSpot.InBounds(map))
                     {
                         GenSpawn.Spawn(BiomesIslandsDefOf.BMT_GlowPlankton, spawnSpot, map, WipeMode.Vanish);
                     }
-                }
+                //}
             }
         }
 

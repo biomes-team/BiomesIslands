@@ -34,6 +34,9 @@
 			</li>
 		</modExtensions>
 
+		<forceRockTypes>
+			<li>BMT_CoralRock</li>
+		</forceRockTypes>
 		<canAutoChoose>false</canAutoChoose>
 		<allowRoads>false</allowRoads>
 		<allowRivers>false</allowRivers>

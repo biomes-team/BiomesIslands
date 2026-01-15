@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using PathfindingFramework;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -26,8 +25,7 @@ namespace BiomesIslands.Incidents
 				return false;
 			}
 
-			if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 start, map, CellFinder.EdgeRoadChance_Animal, false,
-				    null, crabKindDef))
+			if (CellFinder.TryFindRandomEdgeCellWith((IntVec3 c) => map.reachability.CanReachColony(c), map, CellFinder.EdgeRoadChance_Ignore, out IntVec3 start))
 			{
 				return false;
 			}
@@ -39,8 +37,9 @@ namespace BiomesIslands.Incidents
 			for (int crabPawnIndex = 1; crabPawnIndex < crabs.Count; crabPawnIndex++)
 			{
 				Pawn newThing = crabs[crabPawnIndex];
-				// Choose a nearby location valid for the crabs.
-				LocationFinding.TryRandomClosewalkCellNear(crabPawn, 10, out IntVec3 closeLocation);
+                // Choose a nearby location valid for the crabs.
+                CellFinder.TryFindRandomSpawnCellForPawnNear(start, map, out IntVec3 closeLocation, 10, null);
+                //LocationFinding.TryRandomClosewalkCellNear(crabPawn, 10, out IntVec3 closeLocation);
 				GenSpawn.Spawn(newThing, closeLocation, map, rot);
 			}
 
@@ -53,6 +52,7 @@ namespace BiomesIslands.Incidents
 			return true;
 		}
 
+
 		protected bool TryFindAnimalKind(int tile, out PawnKindDef animalKind)
 		{
 			return DefDatabase<PawnKindDef>.AllDefs
@@ -60,7 +60,7 @@ namespace BiomesIslands.Incidents
 				                      pawnKindDef.race.tradeTags.Contains("BMT_TradeTag_Crab") &&
 				                      Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile,
 					                      pawnKindDef.race))
-				.TryRandomElementByWeight(pawnKindDef => Mathf.Lerp(0.2f, 1f, pawnKindDef.RaceProps.wildness), out animalKind);
+				.TryRandomElementByWeight(pawnKindDef => Mathf.Lerp(0.2f, 1f, pawnKindDef.race.statBases.GetStatValueFromList(StatDefOf.Wildness, 1f)), out animalKind);
 		}
 
 		protected List<Pawn> GenerateAnimals(PawnKindDef animalKind, int tile, IntRange minRange)

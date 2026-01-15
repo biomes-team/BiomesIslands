@@ -1,11 +1,15 @@
 using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
+using RimWorld.Planet;
 using RimWorld.QuestGen;
 using Verse;
 
 namespace BiomesIslands.Patches.QuestGen
 {
+	/*
+	 
+
 	/// <summary>
 	/// Allows Ideology work sites to spawn when the colony is surrounded by ocean.
 	/// This uses a destructive prefix due to how extensive the required changes are.
@@ -24,6 +28,7 @@ namespace BiomesIslands.Patches.QuestGen
 		{
 			return (!Find.World.Impassable(tileID) || Find.WorldGrid.tiles[tileID].biome == BiomeDefOf.Ocean) &&
 			       Find.WorldGrid.ApproxDistanceInTiles(tileID, rootID) <= 9.0;
+
 		}
 
 		/// <summary>
@@ -51,4 +56,7 @@ namespace BiomesIslands.Patches.QuestGen
 			return false;
 		}
 	}
+
+
+	*/
 }

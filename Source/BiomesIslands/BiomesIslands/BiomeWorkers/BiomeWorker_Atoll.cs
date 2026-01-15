@@ -9,25 +9,24 @@ namespace BiomesIslands.BiomeWorkers
 {
 	[HotSwappable]
 	public class BiomeWorker_Atoll : BiomeWorker
-	{
-		public override float GetScore(Tile tile, int tileID)
-		{
+    {
+        public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
+        {
 			if (tile.elevation > -100 || tile.temperature < 15 || tile.rainfall < 600)
 			{
 				// Atolls are islands. They require a minimum amount of temperature and rainfall.
-				return BiomeWorker_Island.IgnoreMe;
+				return -100f;
 			}
-
-			const float atollFrequency = 0.005F;
-			if (Rand.ChanceSeeded(1.0F - atollFrequency, Gen.HashCombineInt(WorldGenInfoHandler.WorldSeed, tileID)))
+			if(!tile.WaterCovered)
 			{
-				return BiomeWorker_Island.IgnoreMe;
+				return -100f;
+			}
+			if (Rand.Value > .005f)
+			{
+				return -100f;
 			}
 
-			float volcanicActivity = WorldGenInfoHandler.Get<WorldGenInfo_VolcanicActivity>().GetValue(tileID);
-			// Atolls only appear in areas with low volcanic activity.
-			volcanicActivity = Math.Min(0.4F, volcanicActivity);
-			return 500.0F * volcanicActivity;
+			return 100f;
 		}
 	}
 }
