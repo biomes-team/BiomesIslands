@@ -71,7 +71,7 @@
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.4</manhunterOnDamageChance>
-			<specificMeatDef>BMT_FishMeat</specificMeatDef>
+			<specificMeatDef>BMT_FishMeatCore</specificMeatDef>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>

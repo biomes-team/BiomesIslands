@@ -63,7 +63,7 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>Biomes_SharkBody</body>
+			<body>BMT_SharkBody</body>
 			<!-- <leatherDef>BMT_Sharkskin</leatherDef> -->
 			<leatherDef>BMT_Fishskin</leatherDef>
 			<!-- <useMeatFrom>BMT_WhiteShark</useMeatFrom> -->
@@ -80,7 +80,7 @@
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.8</manhunterOnDamageChance>
-			<specificMeatDef>BMT_FishMeat</specificMeatDef>
+			<specificMeatDef>BMT_FishMeatCore</specificMeatDef>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>

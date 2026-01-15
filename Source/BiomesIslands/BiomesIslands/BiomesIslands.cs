@@ -17,8 +17,8 @@ namespace BiomesIslands
 			new Harmony(Id).PatchAll();
 			//HarmonyInstance.Create(Id).PatchAll();
 			// Register WorldGenInfos in Biomes! Core.
-			WorldGenInfoHandler.Register<WorldGenInfo_IslandPresence>();
-			WorldGenInfoHandler.Register<WorldGenInfo_VolcanicActivity>();
+			//WorldGenInfoHandler.Register<WorldGenInfo_IslandPresence>();
+			//WorldGenInfoHandler.Register<WorldGenInfo_VolcanicActivity>();
 			Log("Initialized");
 		}
 

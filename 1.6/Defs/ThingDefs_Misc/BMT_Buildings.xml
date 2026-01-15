@@ -102,7 +102,6 @@
 		<pathCost>80</pathCost>
 		<blockWind>false</blockWind>
 		<fillPercent>0.25</fillPercent>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>

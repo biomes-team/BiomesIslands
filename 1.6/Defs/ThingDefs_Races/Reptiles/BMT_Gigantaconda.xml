@@ -96,11 +96,6 @@
 			<li>AnimalExotic</li>
 			<li>AnimalFighter</li>
 		</tradeTags>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

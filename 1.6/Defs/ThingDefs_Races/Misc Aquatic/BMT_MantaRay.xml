@@ -50,7 +50,7 @@
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
 			<!-- <maxPreyBodySize>0.8</maxPreyBodySize> -->
-			<body>Biomes_MantaBody</body>
+			<body>BMT_MantaBody</body>
 			<leatherDef>BMT_Sharkskin</leatherDef>
 			<baseHungerRate>0.8</baseHungerRate>
 			<baseBodySize>2</baseBodySize>

@@ -3,39 +3,6 @@
 
 	<!-- Snails -->
 
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_BlueSeaSnailTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.5</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_BlueSeaSnailJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_BlueSeaSnailAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
-
 	<ThingDef ParentName="BiomesCore_WaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_BlueSeaSnail</defName>
 		<label>sea snail</label>
@@ -89,16 +56,16 @@
 			<meatColor>(62,133,215)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_BlueSeaSnailTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_BlueSeaSnailJuvenile</def>
-					<minAge>0.4</minAge>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
 				</li>
 				<li>
-					<def>BMT_BlueSeaSnailAdult</def>
-					<minAge>0.8</minAge>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -123,6 +90,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Dessicated_BlueSeaSnail</texPath>
 					<drawSize>0.45</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<drawSize>0.45</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -133,6 +104,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Dessicated_BlueSeaSnail</texPath>
 					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<drawSize>0.75</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -143,20 +118,12 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Dessicated_BlueSeaSnail</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<drawSize>0.85</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnailSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 

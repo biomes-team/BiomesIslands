@@ -1,43 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_SealionBabyTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.6</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_SealionJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_SealionAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
-
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Sealion</defName>
-		<label>sea lion</label>
-		<description>Easily trained due to their high intelligence and sociability, sea lions are used by many seaside communities for dumb labor. While very cute, they can be dangerous due to their sharp teeth and predatory nature.</description>
+		<label>bullneck sea lion</label>
+		<description>Easily trained due to their high intelligence and sociability, sturdy bullneck sea lions are used by many seaside communities for dumb labor. While very cute, they can be dangerous due to their sharp teeth and predatory nature.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<ComfyTemperatureMin>-95</ComfyTemperatureMin>
@@ -45,13 +12,13 @@
 			<MarketValue>400</MarketValue>
 			<Wildness>0.20</Wildness>
 		</statBases>
-	<comps>
-		<li Class="BiomesCore.CompProperties_BottomFeeder">
-			<feedingTerrainTag>Water</feedingTerrainTag>
-			<consumingFoodReportString>Scavenging.</consumingFoodReportString>
-			<effecterDef>EatFish</effecterDef>
-		</li>
-	</comps>
+		<comps>
+			<li Class="BiomesCore.CompProperties_BottomFeeder">
+				<feedingTerrainTag>Water</feedingTerrainTag>
+				<consumingFoodReportString>Scavenging.</consumingFoodReportString>
+				<effecterDef>EatFish</effecterDef>
+			</li>
+		</comps>
 		<tools>
 			<li>
 				<label>teeth</label>
@@ -86,7 +53,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>Biomes_WhaleBody</body>
+			<body>BMT_WhaleBody</body>
 			<leatherDef>BMT_Pinnipedskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
@@ -101,33 +68,28 @@
 			<manhunterOnDamageChance>0.7</manhunterOnDamageChance>
 			<meatLabel>blubber</meatLabel>
 			<meatColor>(255,210,210)</meatColor>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
-					<def>BMT_SealionBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_SealionJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_SealionAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>3.5</minAge>
-
-					<soundCall>BMT_Whale_Call</soundCall>
-					<soundAngry>BMT_Whale_Angry</soundAngry>
-
+					<!-- <soundCall>BMT_Whale_Call</soundCall> -->
+					<!-- <soundAngry>BMT_Whale_Angry</soundAngry> -->
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -147,6 +109,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/Dessicated_SeaLion</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/SeaLionSubmerged</texPath>
+					<drawSize>2.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -157,6 +123,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/Dessicated_SeaLion</texPath>
 					<drawSize>4.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/SeaLionSubmerged</texPath>
+					<drawSize>4.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -167,20 +137,12 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/Dessicated_SeaLion</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/SeaLionSubmerged</texPath>
+					<drawSize>4.8</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/SeaLionSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 

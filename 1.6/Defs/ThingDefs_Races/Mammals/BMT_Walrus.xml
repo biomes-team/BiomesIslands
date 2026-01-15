@@ -1,42 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-
-
-
-	<!-- Copied from LifeStages.xml, added modExtensions -->
-	<LifeStageDef ParentName="AnimalBaby">
-		<defName>BMT_WalrusBabyTiny</defName>
-		<bodySizeFactor>0.1</bodySizeFactor>
-		<foodMaxFactor>4</foodMaxFactor>
-		<statFactors>
-			<MoveSpeed>0.6</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_WalrusJuvenile</defName>
-		<label>juvenile</label>
-		<voxPitch>1.2</voxPitch>
-		<bodySizeFactor>0.5</bodySizeFactor>
-		<foodMaxFactor>1.5</foodMaxFactor>
-		<healthScaleFactor>0.6</healthScaleFactor>
-		<hungerRateFactor>0.75</hungerRateFactor>
-		<marketValueFactor>0.75</marketValueFactor>
-		<meleeDamageFactor>0.75</meleeDamageFactor>
-		<statFactors>
-			<MoveSpeed>0.9</MoveSpeed>
-		</statFactors>
-	</LifeStageDef>
-
-	<LifeStageDef>
-		<defName>BMT_WalrusAdult</defName>
-		<label>adult</label>
-		<visible>false</visible>
-		<reproductive>true</reproductive>
-		<milkable>true</milkable>
-		<shearable>true</shearable>
-	</LifeStageDef>
 
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Walrus</defName>
@@ -90,7 +53,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>Biomes_WhaleBody</body>
+			<body>BMT_WhaleBody</body>
 			<leatherDef>BMT_Whaleskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
@@ -105,21 +68,23 @@
 			<manhunterOnDamageChance>0.7</manhunterOnDamageChance>
 			<meatLabel>blubber</meatLabel>
 			<meatColor>(255,210,210)</meatColor>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WalrusBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WalrusJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_WalrusAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>3.5</minAge>
 
-					<soundCall>BMT_Whale_Call</soundCall>
-					<soundAngry>BMT_Whale_Angry</soundAngry>
+					<!-- <soundCall>BMT_Whale_Call</soundCall> -->
+					<!-- <soundAngry>BMT_Whale_Angry</soundAngry> -->
 
 				</li>
 			</lifeStageAges>
@@ -127,11 +92,6 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -151,6 +111,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/WalrusSubmerged</texPath>
+					<drawSize>2.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -161,6 +125,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
 					<drawSize>4.0</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/WalrusSubmerged</texPath>
+					<drawSize>4.0</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -171,20 +139,12 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/WalrusSubmerged</texPath>
+					<drawSize>4.8</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/WalrusSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 

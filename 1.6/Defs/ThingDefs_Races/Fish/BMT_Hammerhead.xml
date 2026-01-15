@@ -50,7 +50,7 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>Biomes_SharkBody</body>
+			<body>BMT_SharkBody</body>
 			<leatherDef>BMT_Sharkskin</leatherDef>
 			<baseHungerRate>0.7</baseHungerRate>
 			<baseBodySize>1.5</baseBodySize>

@@ -75,6 +75,8 @@
 			<trainability>Intermediate</trainability>
 			<petness>0.13</petness>
 			<lifeExpectancy>12</lifeExpectancy>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>2</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -100,11 +102,6 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
-		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -123,6 +120,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_MarineIguana</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguanaSubmerged</texPath>
+					<drawSize>1.2</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -133,6 +134,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_MarineIguana</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguanaSubmerged</texPath>
+					<drawSize>1.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -143,20 +148,12 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Dessicated_MarineIguana</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguanaSubmerged</texPath>
+					<drawSize>1.7</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguanaSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 

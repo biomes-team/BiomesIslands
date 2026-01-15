@@ -46,7 +46,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
-			<body>Biomes_WhaleBody</body>
+			<body>BMT_WhaleBody</body>
 			<leatherDef>BMT_Whaleskin</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
@@ -64,7 +64,7 @@
 			<meatColor>(255,210,210)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>AnimaleBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>

@@ -56,7 +56,7 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
-			<body>Biomes_WhaleBody</body>
+			<body>BMT_WhaleBody</body>
 			<leatherDef>Leather_Plain</leatherDef>
 			<baseHungerRate>2.7</baseHungerRate>
 			<baseBodySize>3.2</baseBodySize>

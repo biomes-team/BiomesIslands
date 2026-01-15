@@ -65,15 +65,15 @@
 			<meatColor>(255,210,210)</meatColor>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WhaleBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>1.8</minAge>
 				</li>
 				<li>
-					<def>BMT_WhaleAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>3.5</minAge>
 
 					<soundCall>BMT_Whale_Call</soundCall>
@@ -152,7 +152,7 @@
 		  <depth>Outside</depth>
 		  <parts>
 				<li>
-					<def>FishTail</def>
+					<def>BMT_FishTail</def>
 					<height>Middle</height>
 					<coverage>0.1</coverage>
 					<parts>
