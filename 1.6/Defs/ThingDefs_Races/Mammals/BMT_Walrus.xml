@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="BiomesCore_SaltWaterAnimal" ADogSaidBody="Tail">
 		<defName>BMT_Walrus</defName>
-		<label>walrus</label>
-		<description>Known for their large tusks, Walruses are one of the easiest to identify sea mammals. They use these tusks for movement assistance as well as scavenging for food on the seabed.</description>
+		<label>snaggletooth walrus</label>
+		<description>Known for their large tusks, these snaggletooth walruses are one of the easiest to identify sea mammals. They use these tusks for movement assistance as well as scavenging for food on the seabed.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<ComfyTemperatureMin>-95</ComfyTemperatureMin>
@@ -83,8 +83,10 @@
 					<def>AnimalAdult</def>
 					<minAge>3.5</minAge>
 
-					<!-- <soundCall>BMT_Whale_Call</soundCall> -->
-					<!-- <soundAngry>BMT_Whale_Angry</soundAngry> -->
+					<soundCall>BMT_Seal_Call</soundCall>
+					<soundAngry>BMT_Seal_Angry</soundAngry>
+					<soundWounded>BMT_Seal_Wounded</soundWounded>
+					<soundDeath>BMT_Seal_Death</soundDeath>
 
 				</li>
 			</lifeStageAges>

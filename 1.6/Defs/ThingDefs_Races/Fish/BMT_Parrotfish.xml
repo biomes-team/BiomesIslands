@@ -58,7 +58,7 @@
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
-			<body>Biomes_FishBody</body>
+			<body>BMT_FishBody</body>
 			<leatherDef>BMT_Fishskin</leatherDef>
 			<baseHungerRate>0.50</baseHungerRate>
 			<baseBodySize>0.9</baseBodySize>

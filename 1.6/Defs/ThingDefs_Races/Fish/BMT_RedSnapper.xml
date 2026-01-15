@@ -62,7 +62,7 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>Biomes_FishBody</body>
+			<body>BMT_FishBody</body>
 			<leatherDef>BMT_Fishskin</leatherDef>
 			<baseHungerRate>0.85</baseHungerRate>
 			<baseBodySize>1.3</baseBodySize>

@@ -53,7 +53,7 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
-			<body>Biomes_FishBody</body>
+			<body>BMT_FishBody</body>
 			<!-- <leatherDef>BMT_Sharkskin</leatherDef> -->
 			<leatherDef>BMT_Fishskin</leatherDef>
 			<!-- <useMeatFrom>BMT_WhiteShark</useMeatFrom> -->
