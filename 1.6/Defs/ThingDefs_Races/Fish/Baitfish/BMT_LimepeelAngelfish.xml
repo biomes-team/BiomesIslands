@@ -25,7 +25,7 @@
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 		</race>
 		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
+			<li Class="BiomesCore.WaterWalkerExtension"/>
 		</modExtensions>
 	</ThingDef>
 

@@ -89,7 +89,7 @@
 			<li>AnimalUncommon</li>
 		</tradeTags>
 		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
+			<li Class="BiomesCore.WaterWalkerExtension"/>
 		</modExtensions>
 	</ThingDef>
 

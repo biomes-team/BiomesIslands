@@ -27,7 +27,7 @@
 			<baseBodySize>0.20</baseBodySize>
 		</race>
 		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
+			<li Class="BiomesCore.WaterWalkerExtension"/>
 		</modExtensions>
 	</ThingDef>
 

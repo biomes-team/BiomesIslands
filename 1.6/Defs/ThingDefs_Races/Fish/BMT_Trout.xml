@@ -90,7 +90,7 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
+			<li Class="BiomesCore.WaterWalkerExtension"/>
 		</modExtensions>
 	</ThingDef>
 

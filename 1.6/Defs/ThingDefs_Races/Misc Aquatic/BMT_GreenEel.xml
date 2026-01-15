@@ -44,7 +44,7 @@
 			</li>
 		</tools>
 		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
+			<li Class="BiomesCore.WaterWalkerExtension"/>
 		</modExtensions>
 		<race>
 			<herdAnimal>false</herdAnimal>
