@@ -114,6 +114,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/SeaLionSubmerged</texPath>
 					<drawSize>2.0</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 			<li>
@@ -128,6 +129,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/SeaLionSubmerged</texPath>
 					<drawSize>4.0</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 			<li>
@@ -142,6 +144,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/SeaLion/SeaLionSubmerged</texPath>
 					<drawSize>4.8</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 		</lifeStages>

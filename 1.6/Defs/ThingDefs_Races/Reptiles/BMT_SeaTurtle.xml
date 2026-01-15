@@ -110,6 +110,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
 					<drawSize>1.5</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 			<li>
@@ -124,6 +125,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
 					<drawSize>2.5</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 			<li>
@@ -142,6 +144,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
 					<drawSize>4</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 		</lifeStages>

@@ -110,6 +110,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/LeatherbackTurtle/LeatherbackTurtleSubmerged</texPath>
 					<drawSize>1.3</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 			<li>
@@ -124,6 +125,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/LeatherbackTurtle/LeatherbackTurtleSubmerged</texPath>
 					<drawSize>2.5</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 			<li>
@@ -142,6 +144,7 @@
 				<swimmingGraphicData>
 					<texPath>BiomesIslands_Things/Pawn/Animal/LeatherbackTurtle/LeatherbackTurtleSubmerged</texPath>
 					<drawSize>3.5</drawSize>
+					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
 			</li>
 		</lifeStages>
