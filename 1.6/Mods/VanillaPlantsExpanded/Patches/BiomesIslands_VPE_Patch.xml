@@ -3,42 +3,42 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll"]/wildPlants</xpath>
 		<value>
 			<VCE_Opuntia>0.005</VCE_Opuntia>
 			<VCE_PeachTree>0.005</VCE_PeachTree>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildPlants</xpath>
 		<value>
 			<VCE_CherryTree>0.005</VCE_CherryTree>
 			<VCE_BearBerryBush>0.005</VCE_BearBerryBush>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildPlants</xpath>
 		<value>
 			<VCE_PeachTree>0.005</VCE_PeachTree>
 			<VCE_Opuntia>0.005</VCE_Opuntia>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildPlants</xpath>
 		<value>
 			<VCE_PlumTree>0.005</VCE_PlumTree>
 			<VCE_PearTree>0.005</VCE_PearTree>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildPlants</xpath>
 		<value>
 			<VCE_CherryTree>0.005</VCE_CherryTree>
 			<VCE_BearBerryBush>0.005</VCE_BearBerryBush>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/wildPlants</xpath>
 		<value>
 			<VCE_AppleTree>0.005</VCE_AppleTree>
 			<VCE_BearBerryBush>0.005</VCE_BearBerryBush>

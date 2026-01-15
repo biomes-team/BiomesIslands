@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_GreenAlgae"]/plant</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_GreenAlgae"]/plant</xpath>
 		<value>
 			<sowTags>
 				<li>VCE_Aquatic</li>
@@ -10,7 +10,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_Bayhops"]/plant</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_Bayhops"]/plant</xpath>
 		<value>
 			<sowTags>
 				<li>VCE_Sandy</li>

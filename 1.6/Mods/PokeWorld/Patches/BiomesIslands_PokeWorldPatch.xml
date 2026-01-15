@@ -3,7 +3,7 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildAnimals</xpath>
 		<value>
 			<PW_Bulbasaur>0.0938</PW_Bulbasaur>
 			<PW_Ivysaur>0.0234</PW_Ivysaur>
@@ -426,7 +426,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildAnimals</xpath>
 		<value>
 			<PW_Bulbasaur>0.0625</PW_Bulbasaur>
 			<PW_Ivysaur>0.0156</PW_Ivysaur>
@@ -851,7 +851,7 @@
 
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/wildAnimals</xpath>
 		<value>
 			<PW_Bulbasaur>0.1875</PW_Bulbasaur>
 			<PW_Ivysaur>0.0469</PW_Ivysaur>
@@ -1274,7 +1274,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll"]/wildAnimals</xpath>
 		<value>
 			<PW_Bulbasaur>0.1250</PW_Bulbasaur>
 			<PW_Ivysaur>0.0312</PW_Ivysaur>
@@ -1698,7 +1698,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildAnimals</xpath>
 		<value>
 			<PW_Bulbasaur>0.3750</PW_Bulbasaur>
 			<PW_Ivysaur>0.0938</PW_Ivysaur>
@@ -2122,7 +2122,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildAnimals</xpath>
 		<value>
 			<PW_Bulbasaur>0.1250</PW_Bulbasaur>
 			<PW_Ivysaur>0.0312</PW_Ivysaur>

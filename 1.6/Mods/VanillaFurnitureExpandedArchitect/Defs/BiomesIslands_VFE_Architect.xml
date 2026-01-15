@@ -6,7 +6,7 @@
 		<label>coral bridge</label>
 		<color>(250,180,147)</color>
 		<costList>
-			<BiomesIslands_BlocksCoral>12</BiomesIslands_BlocksCoral>
+			<BMT_BlocksCoral>12</BMT_BlocksCoral>
 		</costList>
 		<uiIconPath>Icon/StoneBridgeCoral_MenuIcon</uiIconPath>
 	</TerrainDef>
@@ -16,7 +16,7 @@
 		<label>coral cobblestone floor</label>
 		<color>(250,180,147)</color>
 		<costList>
-			<BiomesIslands_BlocksCoral>4</BiomesIslands_BlocksCoral>
+			<BMT_BlocksCoral>4</BMT_BlocksCoral>
 		</costList>
 	</TerrainDef>
 
@@ -25,7 +25,7 @@
 		<label>coral slabs</label>
 		<color>(250,180,147)</color>
 		<costList>
-			<BiomesIslands_BlocksCoral>8</BiomesIslands_BlocksCoral>
+			<BMT_BlocksCoral>8</BMT_BlocksCoral>
 		</costList>
 	</TerrainDef>
 
@@ -34,7 +34,7 @@
 		<label>polished coral stone floor</label>
 		<color>(250,180,147)</color>
 		<costList>
-			<BiomesIslands_BlocksCoral>12</BiomesIslands_BlocksCoral>
+			<BMT_BlocksCoral>12</BMT_BlocksCoral>
 		</costList>
 	</TerrainDef>
 

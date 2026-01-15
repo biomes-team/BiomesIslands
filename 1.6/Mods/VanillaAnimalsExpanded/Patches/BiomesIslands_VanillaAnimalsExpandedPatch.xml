@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll"]/wildAnimals</xpath>
 		<value>
 			<AEXP_Anaconda>0.01</AEXP_Anaconda>
 			<AEXP_Crocodile>0.1</AEXP_Crocodile>
@@ -18,7 +18,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AEXP_ArcticCoyote>0.2</AEXP_ArcticCoyote>
 			<AEXP_Badger>0.1</AEXP_Badger>
@@ -39,7 +39,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AEXP_Boombat>0.3</AEXP_Boombat>
 			<AEXP_Camel>0.3</AEXP_Camel>
@@ -60,7 +60,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AEXP_Alligator>0.03</AEXP_Alligator>
 			<AEXP_Badger>0.3</AEXP_Badger>
@@ -76,7 +76,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AEXP_Alligator>0.07</AEXP_Alligator>
 			<AEXP_Anaconda>0.04</AEXP_Anaconda>
@@ -98,7 +98,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AEXP_ArcticCoyote>0.2</AEXP_ArcticCoyote>
 			<AEXP_BlackBear>0.04</AEXP_BlackBear>

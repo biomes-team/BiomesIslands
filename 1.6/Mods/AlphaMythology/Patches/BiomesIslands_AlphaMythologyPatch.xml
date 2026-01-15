@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll"]/wildAnimals</xpath>
 		<value>
 			<MM_Ahuizotl>0.03</MM_Ahuizotl>
 			<MM_Cerberus>0.07</MM_Cerberus>
@@ -20,7 +20,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildAnimals</xpath>
 		<value>
 			<MM_Ahuizotl>0.008</MM_Ahuizotl>
 			<MM_Basilisk>0.004</MM_Basilisk>
@@ -41,7 +41,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildAnimals</xpath>
 		<value>
 			<MM_Ahuizotl>0.005</MM_Ahuizotl>
 			<MM_Catoblepas>0.08</MM_Catoblepas>
@@ -63,7 +63,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/wildAnimals</xpath>
 		<value>
 			<MM_Ahuizotl>0.005</MM_Ahuizotl>
 			<MM_Basilisk>0.005</MM_Basilisk>
@@ -85,7 +85,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildAnimals</xpath>
 		<value>
 			<MM_Ahuizotl>0.05</MM_Ahuizotl>
 			<MM_Basilisk>0.01</MM_Basilisk>
@@ -107,7 +107,7 @@
 	
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildAnimals</xpath>
 		<value>
 			<MM_CeryneianHind>0.005</MM_CeryneianHind>
 			<MM_Chimera>0.001</MM_Chimera>

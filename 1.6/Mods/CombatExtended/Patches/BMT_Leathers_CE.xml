@@ -3,13 +3,13 @@
 <Patch>
 	<!--========== Sharkskin ==========-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_Leather_Sharkskin"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_Sharkskin"]/statBases/StuffPower_Armor_Sharp</xpath>
 		<value>
 			<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_Leather_Sharkskin"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_Sharkskin"]/statBases/StuffPower_Armor_Blunt</xpath>
 		<value>
 			<StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
 		</value>
@@ -17,13 +17,13 @@
 
 	<!--========== Fishskin ==========-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_Leather_Fishskin"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_Fishskin"]/statBases/StuffPower_Armor_Sharp</xpath>
 		<value>
 			<StuffPower_Armor_Sharp>0.24</StuffPower_Armor_Sharp>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_Leather_Fishskin"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_Fishskin"]/statBases</xpath>
 		<value>
 			<StuffPower_Armor_Blunt>0.06</StuffPower_Armor_Blunt>
 		</value>
@@ -31,13 +31,13 @@
 
 	<!--========== Whaleskin ==========-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_Leather_Whaleskin"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_Whaleskin"]/statBases/StuffPower_Armor_Sharp</xpath>
 		<value>
 			<StuffPower_Armor_Sharp>0.58</StuffPower_Armor_Sharp>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_Leather_Whaleskin"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_Whaleskin"]/statBases</xpath>
 		<value>
 			<StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
 		</value>

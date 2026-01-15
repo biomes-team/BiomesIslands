@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildAnimals
 		</xpath>
 		<value>
 			<RG_ArcticDrak>0.2</RG_ArcticDrak>
@@ -16,7 +16,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildAnimals
 		</xpath>
 		<value>
 			<RG_Synthetion>0.2</RG_Synthetion>
@@ -26,7 +26,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/wildAnimals
 		</xpath>
 		<value>
 			<RG_Megalenhydris>0.5</RG_Megalenhydris>
@@ -39,7 +39,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildAnimals
 		</xpath>
 		<value>
 			<RG_TerrorBird>0.4</RG_TerrorBird>
@@ -48,7 +48,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildAnimals
 		</xpath>
 		<value>
 			<RG_ArcticDrak>0.3</RG_ArcticDrak>

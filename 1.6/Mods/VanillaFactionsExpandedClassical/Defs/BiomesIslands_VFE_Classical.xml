@@ -6,7 +6,7 @@
 		<label>coral mosaics</label>
 		<color>(250,180,147)</color>
 		<costList>
-			<BiomesIslands_BlocksCoral>10</BiomesIslands_BlocksCoral>
+			<BMT_BlocksCoral>10</BMT_BlocksCoral>
 		</costList>
 	</TerrainDef>
 

@@ -5,12 +5,12 @@
 	<!--+++++++++ Fish, Shark, and Whale +++++++++-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BodyDef[
-			defName="Biomes_FishBody" or
-			defName="Biomes_SharkBody" or
-			defName="Biomes_WhaleBody"]//*[
+			defName="BMT_FishBody" or
+			defName="BMT_SharkBody" or
+			defName="BMT_WhaleBody"]//*[
 			def="Body" or
-			def="FishTail" or
-			def="BiomesIslands_Fin"]
+			def="BMT_FishTail" or
+			def="BMT_Fin"]
 		</xpath>
 		<value>
 			<groups>
@@ -19,12 +19,12 @@
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BodyDef[
-			defName="Biomes_FishBody" or
-			defName="Biomes_SharkBody" or
-			defName="Biomes_WhaleBody"]//*[
+			defName="BMT_FishBody" or
+			defName="BMT_SharkBody" or
+			defName="BMT_WhaleBody"]//*[
 			def="Body" or
-			def="FishTail" or
-			def="BiomesIslands_Fin" or
+			def="BMT_FishTail" or
+			def="BMT_Fin" or
 			def="Head" or
 			def="AnimalJaw"]/groups
 		</xpath>
@@ -35,9 +35,9 @@
 
 	<!--+++++++++ Rays +++++++++-->
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BodyDef[defName="Biomes_MantaBody"]//*[
+		<xpath>/Defs/BodyDef[defName="BMT_MantaBody"]//*[
 			def="Body" or
-			def="BiomesIslands_Fin" or
+			def="BMT_Fin" or
 			def="Tail"]
 		</xpath>
 		<value>
@@ -46,10 +46,10 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BodyDef[defName="Biomes_MantaBody"]//*[
+		<xpath>/Defs/BodyDef[defName="BMT_MantaBody"]//*[
 			def="Body" or
 			def="Tail" or
-			def="BiomesIslands_Fin" or
+			def="BMT_Fin" or
 			def="Head" or
 			def="AnimalJaw"]/groups
 		</xpath>

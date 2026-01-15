@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll"]/wildAnimals</xpath>
 		<value>
 			<AA_AcanthamoebaGiganteaSmall>0.005</AA_AcanthamoebaGiganteaSmall>
 			<AA_Aerofleet>0.2</AA_Aerofleet>
@@ -34,7 +34,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
 			<AA_Aerofleet>0.4</AA_Aerofleet>
@@ -71,7 +71,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AA_Aerofleet>0.1</AA_Aerofleet>
 			<AA_AngelMoth>0.05</AA_AngelMoth>
@@ -107,7 +107,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
 			<AA_Aerofleet>0.4</AA_Aerofleet>
@@ -146,7 +146,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AA_AcanthamoebaGiganteaSmall>0.005</AA_AcanthamoebaGiganteaSmall>
 			<AA_Aerofleet>0.3</AA_Aerofleet>
@@ -186,7 +186,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildAnimals</xpath>
 		<value>
 			<AA_AcanthamoebaGiganteaSmall>0.01</AA_AcanthamoebaGiganteaSmall>
 			<AA_Aerofleet>0.05</AA_Aerofleet>

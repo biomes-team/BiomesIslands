@@ -10,7 +10,7 @@
 	</Operation>
 	<!-- DrawingOffsets: x: -left, +right, y: drawing priority, z: -down, +up. -->
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_OmegaDodo"]</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_OmegaDodo"]</xpath>
 		<value>
 			<li Class="GiddyUp.DrawingOffset">
 				<northOffset>0,0,-0.1</northOffset>
@@ -21,7 +21,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="BiomesIslands_OmegaDodo"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="BMT_OmegaDodo"]</xpath>
 		<value>
 			<li Class="GiddyUp.CustomStats">
 				<speedModifier>0.9</speedModifier>
@@ -29,7 +29,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="BiomesIslands_ShetlandPony"]</xpath>
+		<xpath>Defs/ThingDef[defName="BMT_ShetlandPony"]</xpath>
 		<value>
 			<li Class="GiddyUp.DrawingOffset">
 				<northOffset>0,0,-0.1</northOffset>

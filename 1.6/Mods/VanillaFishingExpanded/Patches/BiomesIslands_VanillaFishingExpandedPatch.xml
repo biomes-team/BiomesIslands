@@ -4,20 +4,20 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeCold"]/biomes</xpath>
 		<value>
-			<li>BiomesIslands_TundraIsland</li>
-			<li>BiomesIslands_TundraArchipelago</li>
-			<li>BiomesIslands_BorealIsland</li>
-			<li>BiomesIslands_BorealArchipelago</li>
+			<li>BMT_TundraIsland</li>
+			<li>BMT_TundraArchipelago</li>
+			<li>BMT_BorealIsland</li>
+			<li>BMT_BorealArchipelago</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
 		<value>
-			<li>BiomesIslands_Atoll</li>
-			<li>BiomesIslands_TropicalIsland</li>
-			<li>BiomesIslands_TropicalArchipelago</li>
-			<li>BiomesIslands_TemperateIsland</li>
-			<li>BiomesIslands_TemperateArchipelago</li>
+			<li>BMT_Atoll</li>
+			<li>BMT_TropicalIsland</li>
+			<li>BMT_TropicalArchipelago</li>
+			<li>BMT_TemperateIsland</li>
+			<li>BMT_TemperateArchipelago</li>
 			<!-- Oceans -->
 			<li>Lake</li>
 			<li>Ocean</li>
@@ -26,8 +26,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeHot"]/biomes</xpath>
 		<value>
-			<li>BiomesIslands_DesertIsland</li>
-			<li>BiomesIslands_DesertArchipelago</li>
+			<li>BMT_DesertIsland</li>
+			<li>BMT_DesertArchipelago</li>
 		</value>
 	</Operation>
 

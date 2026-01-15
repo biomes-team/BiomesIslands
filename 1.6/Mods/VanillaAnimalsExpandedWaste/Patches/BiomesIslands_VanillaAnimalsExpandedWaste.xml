@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll" or @Name="BiomesIslands_DesertIslandBase"]/pollutionWildAnimals</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll" or @Name="BMT_DesertIslandBase"]/pollutionWildAnimals</xpath>
 		<value>
 			<VAEWaste_Toxiguana>1</VAEWaste_Toxiguana>
 			<VAEWaste_Toxlion>0.5</VAEWaste_Toxlion>
@@ -10,7 +10,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/pollutionWildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/pollutionWildAnimals</xpath>
 		<value>
 			<VAEWaste_Wasteffalo>0.5</VAEWaste_Wasteffalo>
 			<VAEWaste_Toxbear>0.07</VAEWaste_Toxbear>
@@ -18,7 +18,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/pollutionWildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/pollutionWildAnimals</xpath>
 		<value>
 			<VAEWaste_Toxafox>0.07</VAEWaste_Toxafox>
 			<VAEWaste_Wasteboar>0.5</VAEWaste_Wasteboar>
@@ -27,7 +27,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/pollutionWildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/pollutionWildAnimals</xpath>
 		<value>
 			<VAEWaste_Hydra>0.15</VAEWaste_Hydra>
 			<VAEWaste_Megatardi>0.5</VAEWaste_Megatardi>
@@ -36,7 +36,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/pollutionWildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/pollutionWildAnimals</xpath>
 
 		<value>
 			<VAEWaste_Wasteffalo>2</VAEWaste_Wasteffalo>

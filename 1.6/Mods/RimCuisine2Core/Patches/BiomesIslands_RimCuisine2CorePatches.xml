@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll"]/wildPlants</xpath>
 		<value>
 			<RC2_PlantCucumber>0.0000000000000001</RC2_PlantCucumber>
 			<RC2_PlantYam>0.001</RC2_PlantYam>
@@ -27,7 +27,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildPlants</xpath>
 		<value>
 			<RC2_PlantCucumber>0.0000000000000001</RC2_PlantCucumber>
 			<RC2_PlantYam>0.0000000000000001</RC2_PlantYam>
@@ -52,7 +52,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildPlants</xpath>
 		<value>
 			<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
 			<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
@@ -69,7 +69,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildPlants</xpath>
 		<value>
 			<RC2_PlantSorghum>0.0000000000000001</RC2_PlantSorghum>
 			<RC2_PlantChickpeas>0.0000000000000001</RC2_PlantChickpeas>
@@ -89,7 +89,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildPlants</xpath>
 		<value>
 			<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
 			<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
@@ -106,7 +106,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TemperateIslandBase"]/wildPlants</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TemperateIslandBase"]/wildPlants</xpath>
 		<value>
 			<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
 			<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>

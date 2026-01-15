@@ -3,7 +3,7 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase"]/wildAnimals</xpath>
 		<value>
 			<Snow_leopard>0.02</Snow_leopard>
 			<Pika>0.07</Pika>
@@ -13,7 +13,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]/wildAnimals</xpath>
 		<value>
 			<Snow_leopard>0.05</Snow_leopard>
 			<Pika>0.07</Pika>

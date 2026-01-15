@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll"]/wildAnimals</xpath>
 		<value>
 			<KenshiFauna_Gutter>0.05</KenshiFauna_Gutter>
 			<KenshiFauna_Skinspider>0.01</KenshiFauna_Skinspider>
@@ -10,7 +10,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]/wildAnimals</xpath>
 		<value>
 			<KenshiFauna_Bonedog>0.1</KenshiFauna_Bonedog>
 			<KenshiFauna_Bull>0.1</KenshiFauna_Bull>
@@ -23,7 +23,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_TemperateIsland"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_TemperateIsland"]/wildAnimals</xpath>
 		<value>
 			<KenshiFauna_Gorillo>0.1</KenshiFauna_Gorillo>
 			<KenshiFauna_Landbat>0.1</KenshiFauna_Landbat>
@@ -32,7 +32,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TropicalIslandBase"]/wildAnimals</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TropicalIslandBase"]/wildAnimals</xpath>
 		<value>
 			<KenshiFauna_Bloodspider>0.05</KenshiFauna_Bloodspider>
 			<KenshiFauna_ElephantTurtle>0.2</KenshiFauna_ElephantTurtle>

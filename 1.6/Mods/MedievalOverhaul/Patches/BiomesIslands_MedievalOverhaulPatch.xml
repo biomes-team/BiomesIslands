@@ -5,7 +5,7 @@
 		<xpath>Defs</xpath>
 		<value>
 			<RecipeDef ParentName="DankPyon_MineShaftBase">
-				<defName>BiomesIslands_MakeStoneChunks_Coral</defName>
+				<defName>BMT_MakeStoneChunks_Coral</defName>
 				<workAmount>2350</workAmount>
 				<label>gather coral chunk</label>
 				<jobString>Mining 1 coral chunk.</jobString>

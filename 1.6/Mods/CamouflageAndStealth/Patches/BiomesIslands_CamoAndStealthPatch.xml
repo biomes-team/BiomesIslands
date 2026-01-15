@@ -12,7 +12,7 @@ Woodland
 <Patch>
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/BiomeDef[defName="BiomesIslands_Atoll" or @Name="BiomesIslands_TropicalIslandBase"]</xpath>
+		<xpath>Defs/BiomeDef[defName="BMT_Atoll" or @Name="BMT_TropicalIslandBase"]</xpath>
 		<value>
 			<li Class="CompCamo.CompCamoDefs">
 				<CamoType>Jungle</CamoType>
@@ -21,7 +21,7 @@ Woodland
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_DesertIslandBase"]</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_DesertIslandBase"]</xpath>
 		<value>
 			<li Class="CompCamo.CompCamoDefs">
 				<CamoType>Desert</CamoType>
@@ -30,7 +30,7 @@ Woodland
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_BorealIslandBase" or @Name="BiomesIslands_TemperateIslandBase"]</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_BorealIslandBase" or @Name="BMT_TemperateIslandBase"]</xpath>
 		<value>
 			<li Class="CompCamo.CompCamoDefs">
 				<CamoType>Woodland</CamoType>
@@ -39,7 +39,7 @@ Woodland
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/BiomeDef[@Name="BiomesIslands_TundraIslandBase"]</xpath>
+		<xpath>Defs/BiomeDef[@Name="BMT_TundraIslandBase"]</xpath>
 		<value>
 			<li Class="CompCamo.CompCamoDefs">
 				<CamoType>Arctic</CamoType>
