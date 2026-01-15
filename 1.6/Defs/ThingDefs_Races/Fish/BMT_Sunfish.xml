@@ -74,15 +74,15 @@
 			<specificMeatDef>BMT_FishMeat</specificMeatDef>
 			<lifeStageAges>
 				<li>
-					<def>BMT_WhiteSharkBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BMT_WhiteSharkJuvenile</def>
+					<def>AnimalJuvenile</def>
 					<minAge>0.4</minAge>
 				</li>
 				<li>
-					<def>BMT_WhiteSharkAdult</def>
+					<def>AnimalAdult</def>
 					<minAge>0.8</minAge>
 				</li>
 			</lifeStageAges>
@@ -132,19 +132,6 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<!-- TO-DO: Replace the sub shark -->
-		<!-- <modExtensions> -->
-			<!-- <li Class="PathfindingFramework.TerrainTagGraphicExtension"> -->
-				<!-- <terrainTags> -->
-					<!-- <li>PF_TerrainTag_WaterShallow</li> -->
-					<!-- <li>PF_TerrainTag_WaterChest</li> -->
-					<!-- <li>PF_TerrainTag_WaterDeep</li> -->
-				<!-- </terrainTags> -->
-				<!-- <bodyGraphicData> -->
-					<!-- <texPath>BiomesIslands_Things/Pawn/Animal/GreatWhiteShark/GreatWhiteSubmerged</texPath> -->
-				<!-- </bodyGraphicData> -->
-			<!-- </li> -->
-		<!-- </modExtensions> -->
 	</PawnKindDef>
 
 </Defs>

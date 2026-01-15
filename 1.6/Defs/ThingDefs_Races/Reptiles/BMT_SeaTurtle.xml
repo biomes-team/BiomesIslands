@@ -62,6 +62,8 @@
 			<lifeExpectancy>140</lifeExpectancy>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<meatLabel>sea turtle meat</meatLabel>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -88,9 +90,7 @@
 			<li>AnimalUncommon</li>
 		</tradeTags>
 		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
 		</modExtensions>
 	</ThingDef>
 
@@ -110,6 +110,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
+					<drawSize>1.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -120,6 +124,10 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
+					<drawSize>2.5</drawSize>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -134,20 +142,12 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Dessicated_GreenSeaTurtle</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
+					<drawSize>4</drawSize>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 
