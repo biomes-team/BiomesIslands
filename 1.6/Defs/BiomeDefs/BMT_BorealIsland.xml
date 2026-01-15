@@ -215,6 +215,7 @@
 		<defName>BMT_BorealIsland</defName>
 		<label>boreal island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_BorealIsland</workerClass>
+		<texture>World/Biomes/BorealForest</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -226,7 +227,7 @@
 					<li>Crescent</li>
 					<li>Pair</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/BorealIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -241,6 +242,7 @@
 		<defName>BMT_BorealArchipelago</defName>
 		<label>boreal Archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_BorealArchipelago</workerClass>
+		<texture>BiomesIslands_World/Biomes/BorealArchipelago</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -249,7 +251,7 @@
 				<islandShapes>
 					<li>Cluster</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/BorealArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>

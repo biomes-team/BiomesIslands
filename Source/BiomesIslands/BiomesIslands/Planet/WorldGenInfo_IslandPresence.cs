@@ -8,10 +8,14 @@ using Verse.Noise;
 
 namespace BiomesIslands.Planet
 {
-	/// <summary>
-	/// Random value for each world map tile. The perlin noise generating the value is distributed to have solitary
-	/// peaks always surrounded by valleys. Peaks tend to appear in clusters. This value is either 0 or 1.
-	/// </summary>
+    /// <summary>
+    /// Random value for each world map tile. The perlin noise generating the value is distributed to have solitary
+    /// peaks always surrounded by valleys. Peaks tend to appear in clusters. This value is either 0 or 1.
+    /// </summary>
+    /// 
+
+    /*
+
 	[HotSwappable]
 	public class WorldGenInfo_IslandPresence : WorldGenInfo
 	{
@@ -97,4 +101,9 @@ namespace BiomesIslands.Planet
 			return value > 0.5F;
 		}
 	}
+
+
+	*/
+
 }
+

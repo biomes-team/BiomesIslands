@@ -14,7 +14,7 @@
 		<allowFarmingCamps>false</allowFarmingCamps>
 		<campSelectionWeight>0.1</campSelectionWeight>
 		<movementDifficulty>2</movementDifficulty>
-		<texture>World/Biomes/Ocean</texture>
+		<!-- <texture>World/Biomes/Ocean</texture> -->
 		<forageability>0.5</forageability>
 		<foragedFood>RawBerries</foragedFood>
 		<wildPlantRegrowDays>25</wildPlantRegrowDays>
@@ -202,6 +202,7 @@
 		<defName>BMT_TundraIsland</defName>
 		<label>tundra island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TundraIsland</workerClass>
+		<texture>World/Biomes/Tundra</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -213,7 +214,7 @@
 					<li>Crescent</li>
 					<li>Pair</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/TundraIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -228,6 +229,7 @@
 		<defName>BMT_TundraArchipelago</defName>
 		<label>tundra archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TundraArchipelago</workerClass>
+		<texture>BiomesIslands_World/Biomes/TundraArchipelago</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -236,7 +238,7 @@
 				<islandShapes>
 					<li>Cluster</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/TundraArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>

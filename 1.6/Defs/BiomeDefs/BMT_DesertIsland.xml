@@ -206,6 +206,7 @@
 		<defName>BMT_DesertIsland</defName>
 		<label>desert island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_DesertIsland</workerClass>
+		<texture>World/Biomes/Desert</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -217,7 +218,7 @@
 					<li>Crescent</li>
 					<li>Pair</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/DesertIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -232,6 +233,7 @@
 		<defName>BMT_DesertArchipelago</defName>
 		<label>desert Archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_DesertArchipelago</workerClass>
+		<texture>BiomesIslands_World/Biomes/DesertArchipelago</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -240,7 +242,7 @@
 				<islandShapes>
 					<li>Cluster</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/DesertArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>

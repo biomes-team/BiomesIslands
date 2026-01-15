@@ -10,7 +10,7 @@ namespace BiomesIslands.BiomeWorkers
 
         public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
-            if (tile.elevation > -100)
+            if (tile.elevation > -100 || tile.elevation < -250f)
             {
                 return -100f;
             }

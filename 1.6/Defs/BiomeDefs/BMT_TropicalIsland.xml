@@ -228,6 +228,7 @@
 		<defName>BMT_TropicalIsland</defName>
 		<label>tropical Island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TropicalIsland</workerClass>
+		<texture>World/Biomes/TropicalRainforest</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -239,7 +240,7 @@
 					<li>Crescent</li>
 					<li>Pair</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/TropicalIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -254,6 +255,7 @@
 		<defName>BMT_TropicalArchipelago</defName>
 		<label>tropical Archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TropicalArchipelago</workerClass>
+		<texture>BiomesIslands_World/Biomes/TropicalArchipelago</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -262,7 +264,7 @@
 				<islandShapes>
 					<li>Cluster</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/TropicalArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>

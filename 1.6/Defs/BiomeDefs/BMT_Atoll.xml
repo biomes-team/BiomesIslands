@@ -6,6 +6,7 @@
 		<label>atoll</label>
 		<description>Surrounded by coral reefs, atolls emerge as remnants of sinking volcanic islands. Their central lagoons, while picturesque, provide limited construction space. Yet, abundant wild food and scarce predators under the embrace of a warm climate make life here comfortably paradisiacal.</description>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_Atoll</workerClass>
+		<texture>BiomesIslands_World/Biomes/Atoll</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -15,7 +16,7 @@
 				<addIslandHills>false</addIslandHills>
 				<hasScatterables>false</hasScatterables>
 				<allowBeach>false</allowBeach>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/Atoll</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">

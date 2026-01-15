@@ -10,6 +10,9 @@ namespace BiomesIslands.Planet
 	/// Simulates areas with volcanic activity in the world. Negative values have no volcanic activity. Positive values
 	/// indicate increasing amounts of activity.
 	/// </summary>
+	
+	/*
+
 	[HotSwappable]
 	public class WorldGenInfo_VolcanicActivity : WorldGenInfo
 	{
@@ -31,4 +34,6 @@ namespace BiomesIslands.Planet
 			return _volcanicActivityNoise.GetValue(tileCenter);
 		}
 	}
+
+	*/
 }

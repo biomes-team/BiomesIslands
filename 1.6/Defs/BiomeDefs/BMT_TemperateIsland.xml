@@ -250,6 +250,7 @@
 		<defName>BMT_TemperateIsland</defName>
 		<label>temperate island</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TemperateIsland</workerClass>
+		<texture>World/Biomes/TemperateForest</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -261,7 +262,7 @@
 					<li>Crescent</li>
 					<li>Pair</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/TemperateIsland</overlayTexturePath>
 			</li>
 			<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
@@ -276,6 +277,7 @@
 		<defName>BMT_TemperateArchipelago</defName>
 		<label>temperate Archipelago</label>
 		<workerClass>BiomesIslands.BiomeWorkers.BiomeWorker_TemperateArchipelago</workerClass>
+		<texture>BiomesIslands_World/Biomes/TemperateArchipelago</texture>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
 				<isIsland>true</isIsland>
@@ -284,7 +286,7 @@
 				<islandShapes>
 					<li>Cluster</li>
 				</islandShapes>
-				<useOceanMaterial>true</useOceanMaterial>
+				<!-- <useOceanMaterial>true</useOceanMaterial> -->
 				<overlayTexturePath>BMT_World/MapGraphics/TemperateArchipelago</overlayTexturePath>
 			</li>
 		</modExtensions>
