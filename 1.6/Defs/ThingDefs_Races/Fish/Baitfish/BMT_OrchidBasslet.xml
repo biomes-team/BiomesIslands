@@ -26,6 +26,9 @@
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 			<baseBodySize>0.17</baseBodySize>
 		</race>
+		<modExtensions>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BMT_BaseBaitfish">
@@ -87,9 +90,6 @@
 				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
-		</modExtensions>
 	</PawnKindDef>
 
 

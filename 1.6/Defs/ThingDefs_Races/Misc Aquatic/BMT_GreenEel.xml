@@ -43,6 +43,9 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
+		</modExtensions>
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>

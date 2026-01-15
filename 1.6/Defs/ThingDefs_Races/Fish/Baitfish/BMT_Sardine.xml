@@ -25,6 +25,9 @@
 			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 		</race>
+		<modExtensions>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BMT_BaseBaitfish">
@@ -85,9 +88,6 @@
 				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
-		</modExtensions>
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">

@@ -26,6 +26,9 @@
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 			<baseBodySize>0.20</baseBodySize>
 		</race>
+		<modExtensions>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
+		</modExtensions>
 	</ThingDef>
 
 
@@ -88,9 +91,6 @@
 				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
-		</modExtensions>
 	</PawnKindDef>
 
 

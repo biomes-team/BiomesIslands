@@ -88,6 +88,9 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -148,9 +151,6 @@
 				</swimmingGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li Class="WaterWalker.WaterWalkerExtension"/>
-		</modExtensions>
 	</PawnKindDef>
 
 
