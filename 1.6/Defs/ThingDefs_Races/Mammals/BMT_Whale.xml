@@ -105,7 +105,7 @@
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/Swimming_Whale</texPath>
 					<drawSize>2.0</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -116,7 +116,7 @@
 					<drawSize>4.0</drawSize>
 				</bodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/Swimming_Whale</texPath>
 					<drawSize>4.0</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -131,7 +131,7 @@
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/WhaleSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Whale/Swimming_Whale</texPath>
 					<drawSize>4.8</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>

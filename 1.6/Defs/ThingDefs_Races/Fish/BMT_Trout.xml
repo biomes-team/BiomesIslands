@@ -113,7 +113,7 @@
 					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/Swimming_Trout</texPath>
 					<drawSize>0.5</drawSize>
 					<color>(180,170,160)</color>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -130,7 +130,7 @@
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/Swimming_Trout</texPath>
 					<drawSize>1.2</drawSize>
 					<color>(180,170,160)</color>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -147,7 +147,7 @@
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/TroutSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Trout/Swimming_Trout</texPath>
 					<drawSize>1.6</drawSize>
 					<color>(180,170,160)</color>
 					<graphicClass>Graphic_Multi</graphicClass>

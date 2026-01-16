@@ -106,7 +106,7 @@
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/Swimming_MantaRay</texPath>
 					<drawSize>1</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -121,7 +121,7 @@
 					<drawSize>2.65</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/Swimming_MantaRay</texPath>
 					<drawSize>2.65</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -136,7 +136,7 @@
 					<drawSize>3.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/MantaRaySubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MantaRay/Swimming_MantaRay</texPath>
 					<drawSize>3.2</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>

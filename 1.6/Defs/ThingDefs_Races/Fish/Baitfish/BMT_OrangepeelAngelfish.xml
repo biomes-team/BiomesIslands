@@ -46,7 +46,7 @@
 					<drawSize>0.35</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/Swimming_BaitFishRound</texPath>
 					<drawSize>0.35</drawSize>
 					<color>(242,146,38)</color>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -63,7 +63,7 @@
 					<drawSize>0.6</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/Swimming_BaitFishRound</texPath>
 					<drawSize>0.6</drawSize>
 					<color>(242,146,38)</color>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -80,7 +80,7 @@
 					<drawSize>0.95</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/BaitFishRoundSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BaitFishRound/Swimming_BaitFishRound</texPath>
 					<drawSize>0.95</drawSize>
 					<color>(242,146,38)</color>
 					<graphicClass>Graphic_Multi</graphicClass>

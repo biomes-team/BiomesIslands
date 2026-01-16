@@ -99,7 +99,7 @@
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/HerbEelSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/Swimming_HerbEel</texPath>
 					<drawSize>1</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -114,7 +114,7 @@
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/HerbEelSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/Swimming_HerbEel</texPath>
 					<drawSize>2</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -129,7 +129,7 @@
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/HerbEelSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/HerbEel/Swimming_HerbEel</texPath>
 					<drawSize>2.5</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>

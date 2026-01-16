@@ -116,7 +116,7 @@
 					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/Swimming_RedSnapper</texPath>
 					<drawSize>0.5</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -131,7 +131,7 @@
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/Swimming_RedSnapper</texPath>
 					<drawSize>1.2</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -146,7 +146,7 @@
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/RedSnapperSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/RedSnapper/Swimming_RedSnapper</texPath>
 					<drawSize>1.6</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>

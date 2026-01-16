@@ -108,7 +108,7 @@
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Swimming_GreenSeaTurtle</texPath>
 					<drawSize>1.5</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -123,7 +123,7 @@
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Swimming_GreenSeaTurtle</texPath>
 					<drawSize>2.5</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -142,7 +142,7 @@
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/GreenSeaTurtleSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/GreenSeaTurtle/Swimming_GreenSeaTurtle</texPath>
 					<drawSize>4</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>

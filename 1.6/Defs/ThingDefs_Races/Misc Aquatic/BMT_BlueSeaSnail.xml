@@ -94,7 +94,7 @@
 					<drawSize>0.45</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Swimming_BlueSeaSnail</texPath>
 					<drawSize>0.45</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -109,7 +109,7 @@
 					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Swimming_BlueSeaSnail</texPath>
 					<drawSize>0.75</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -124,7 +124,7 @@
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/BlueSeaSnail</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BlueSeaSnail/Swimming_BlueSeaSnail</texPath>
 					<drawSize>0.85</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>

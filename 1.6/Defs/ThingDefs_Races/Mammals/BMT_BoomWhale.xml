@@ -119,7 +119,7 @@
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/Swimming_BoomWhale</texPath>
 					<drawSize>1.7</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -134,7 +134,7 @@
 					<drawSize>3.0</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/Swimming_BoomWhale</texPath>
 					<drawSize>3.0</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -149,7 +149,7 @@
 					<drawSize>3.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/BoomWhale</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/BoomWhale/Swimming_BoomWhale</texPath>
 					<drawSize>3.8</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>

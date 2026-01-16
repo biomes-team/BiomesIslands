@@ -120,10 +120,11 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/TunaSubmerged</texPath>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/Swimming_Tuna</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>0.75</drawSize>
-				</bodyGraphicData>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -134,10 +135,11 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/TunaSubmerged</texPath>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/Swimming_Tuna</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>2</drawSize>
-				</bodyGraphicData>
+				</swimmingGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -148,10 +150,11 @@
 					<texPath>BiomesIslands_Things/Pawn/Animal/Dessicated/Fish</texPath>
 					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
-				<bodyGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/TunaSubmerged</texPath>
+				<swimmingGraphicData>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Tuna/Swimming_Tuna</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>2.4</drawSize>
-				</bodyGraphicData>
+				</swimmingGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
