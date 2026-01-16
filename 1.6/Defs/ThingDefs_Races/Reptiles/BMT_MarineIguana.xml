@@ -121,7 +121,7 @@
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguanaSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Swimming_MarineIguana</texPath>
 					<drawSize>1.2</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -136,7 +136,7 @@
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguanaSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Swimming_MarineIguana</texPath>
 					<drawSize>1.5</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -151,7 +151,7 @@
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/MarineIguanaSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/MarineIguana/Swimming_MarineIguana</texPath>
 					<drawSize>1.7</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
