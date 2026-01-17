@@ -114,7 +114,7 @@
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/WalrusSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Swimming_Walrus</texPath>
 					<drawSize>2.0</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -129,7 +129,7 @@
 					<drawSize>4.0</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/WalrusSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Swimming_Walrus</texPath>
 					<drawSize>4.0</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
@@ -144,7 +144,7 @@
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<swimmingGraphicData>
-					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/WalrusSubmerged</texPath>
+					<texPath>BiomesIslands_Things/Pawn/Animal/Walrus/Swimming_Walrus</texPath>
 					<drawSize>4.8</drawSize>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</swimmingGraphicData>
