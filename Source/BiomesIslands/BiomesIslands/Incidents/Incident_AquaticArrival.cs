@@ -15,14 +15,10 @@ namespace BiomesIslands.Incidents
 		{
 			Map map = (Map) parms.target;
 
-			return
-				// It is possible to find a prey and predator animal pair...
-				TryFindPreyPredatorPair(map.Tile, out PawnKindDef preyKindDef, out PawnKindDef _) &&
-				//... and a place for them to spawn.
-				IslandsUtil.FindAquaticSpawnPoint(map, out IntVec3 _)
-				//LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal, false, null,
-				//	preyKindDef)
-				;
+			bool foundPredatorPrey = TryFindPreyPredatorPair(map.Tile, out PawnKindDef preyKindDef, out PawnKindDef _);
+			bool foundSpawnSpot = IslandsUtil.TryFindAquaticSpawnPoint(map, out IntVec3 _);
+
+			return foundPredatorPrey && foundSpawnSpot;
 		}
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
@@ -33,10 +29,10 @@ namespace BiomesIslands.Incidents
 
 			if (!TryFindPreyPredatorPair(map.Tile, out PawnKindDef preyKindDef, out PawnKindDef predatorKindDef))
 			{
-				return false;
+                return false;
 			}
 
-			if (!IslandsUtil.FindAquaticSpawnPoint(map, out IntVec3 start))
+			if (!IslandsUtil.TryFindAquaticSpawnPoint(map, out IntVec3 start))
 			{
 				return false;
 			}
@@ -71,8 +67,7 @@ namespace BiomesIslands.Incidents
 
 		private static bool IsAquatic(PawnKindDef animalKind)
 		{
-			return animalKind.HasModExtension<BiomesCore.WaterWalkerExtension>();
-			//return MovementDefDatabase<ThingDef>.Get(animalKind.race) == MovementDefOf.PF_Movement_Aquatic;
+			return animalKind.race.HasModExtension<BiomesCore.WaterWalkerExtension>();
 		}
 
 		private static float AnimalWeight(PawnKindDef pawnKindDef)
@@ -93,28 +88,25 @@ namespace BiomesIslands.Incidents
 			for (int pawnKindIndex = 0; pawnKindIndex < pawnKindDefs.Count; ++pawnKindIndex)
 			{
 				PawnKindDef pawnKindDef = pawnKindDefs[pawnKindIndex];
-				if (!IsAquatic(pawnKindDef) ||
-				    !tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, pawnKindDef.race))
+				if (IsAquatic(pawnKindDef) && tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, pawnKindDef.race))
 				{
 					// Allow only aquatic creatures that can spawn with this season and temperature are allowed.
-					continue;
-				}
+					// Filter each aquatic animal into their list.
+					switch (pawnKindDef.RaceProps.foodType)
+					{
+						case FoodTypeFlags.VegetarianRoughAnimal:
+							preyKindDefs.Add(pawnKindDef);
+							break;
+						case FoodTypeFlags.CarnivoreAnimal:
+							predatorKindDefs.Add(pawnKindDef);
+							break;
+					}
+                }
+            }
 
-				// Filter each aquatic animal into their list.
-				switch (pawnKindDef.RaceProps.foodType)
-				{
-					case FoodTypeFlags.VegetarianRoughAnimal:
-						preyKindDefs.Add(pawnKindDef);
-						break;
-					case FoodTypeFlags.CarnivoreAnimal:
-						predatorKindDefs.Add(pawnKindDef);
-						break;
-				}
-			}
-
-			if (preyKindDefs.Count == 0 || predatorKindDefs.Count == 0)
+            if (preyKindDefs.Count == 0 || predatorKindDefs.Count == 0)
 			{
-				return false;
+                return false;
 			}
 
 			return preyKindDefs.TryRandomElementByWeight(AnimalWeight, out preyKindDef) &&

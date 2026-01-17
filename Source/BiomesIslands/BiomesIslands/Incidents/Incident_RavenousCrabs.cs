@@ -23,15 +23,16 @@ namespace BiomesIslands.Incidents
 
 			//return LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal, false,
 			//	null, BiomesIslandsDefOf.BMT_RimCrab);
-			return RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 _, map, 0.1f);
-		}
+			//return RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 _, map, 0.1f);
+			return RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 _, map, CellFinder.EdgeRoadChance_Animal);
+        }
 
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map) parms.target;
 			//if (!LocationFinding.TryFindRandomPawnEntryCell(out IntVec3 result, map, CellFinder.EdgeRoadChance_Animal, false,
 			//	    null, BiomesIslandsDefOf.BMT_RimCrab))
-			if (!RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 result, map, 0.1f))
+			if (!RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 result, map, CellFinder.EdgeRoadChance_Animal))
 			{
 				return false;
 			}

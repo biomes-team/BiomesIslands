@@ -55,7 +55,7 @@
 	<!-- =========================== Bad ============================-->
 
 	<IncidentDef>
-		<defName>RevenousCrabs</defName>
+		<defName>RavenousCrabs</defName>
 		<label>ravenous crabs</label>
 		<category>Misc</category>
 		<allowedBiomes>
@@ -74,8 +74,7 @@
 		<baseChance>0.5</baseChance>
 		<minRefireDays>30</minRefireDays>
 		<letterLabel>Ravenous crabs!</letterLabel>
-		<letterText>A group of hungry, island scouring crabs as just arrived.\n\nTry to eliminate them before they eat every
-			last bit of food in the region.
+		<letterText>A group of hungry, island scouring crabs as just arrived.\n\nTry to eliminate them before they eat every last bit of food in the region.
 		</letterText>
 		<letterDef>ThreatSmall</letterDef>
 	</IncidentDef>

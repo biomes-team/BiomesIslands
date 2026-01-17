@@ -11,12 +11,13 @@ namespace BiomesIslands
 {
     public static class IslandsUtil
     {
-        public static bool FindAquaticSpawnPoint(Map map, out IntVec3 initialSpawn)
+        public static bool TryFindAquaticSpawnPoint(Map map, out IntVec3 initialSpawn)
         {
             if (CellFinder.TryFindRandomEdgeCellWith((IntVec3 c) => map.terrainGrid.TerrainAt(c).IsWater, map, 0f, out initialSpawn))
             {
                 return true;
             }
+
             return false;
 
         }
