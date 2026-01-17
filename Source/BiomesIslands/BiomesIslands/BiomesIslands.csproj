@@ -46,7 +46,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="BiomesCore">
-      <HintPath>..\..\..\..\BiomesCore\1.5\Assemblies\BiomesCore.dll</HintPath>
+      <HintPath>..\..\..\..\BiomesCore\1.6\Assemblies\BiomesCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -59,10 +59,6 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\..\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="WaterWalker">
-      <HintPath>..\..\..\..\BiomesCore\1.6\Assemblies\WaterWalker.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

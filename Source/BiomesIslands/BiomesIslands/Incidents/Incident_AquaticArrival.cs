@@ -71,7 +71,7 @@ namespace BiomesIslands.Incidents
 
 		private static bool IsAquatic(PawnKindDef animalKind)
 		{
-			return animalKind.HasModExtension<WaterWalker.WaterWalkerExtension>();
+			return animalKind.HasModExtension<BiomesCore.WaterWalkerExtension>();
 			//return MovementDefDatabase<ThingDef>.Get(animalKind.race) == MovementDefOf.PF_Movement_Aquatic;
 		}
 
