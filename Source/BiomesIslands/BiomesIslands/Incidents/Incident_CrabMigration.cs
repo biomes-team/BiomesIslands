@@ -1,6 +1,7 @@
-using System.Collections.Generic;
-using System.Linq;
 using RimWorld;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -27,6 +28,7 @@ namespace BiomesIslands.Incidents
 
 			if (CellFinder.TryFindRandomEdgeCellWith((IntVec3 c) => map.reachability.CanReachColony(c), map, CellFinder.EdgeRoadChance_Ignore, out IntVec3 start))
 			{
+				Log.Message("7- Could  Not  Find  Entry  Cell");
 				return false;
 			}
 
@@ -55,12 +57,23 @@ namespace BiomesIslands.Incidents
 
 		protected bool TryFindAnimalKind(int tile, out PawnKindDef animalKind)
 		{
-			return DefDatabase<PawnKindDef>.AllDefs
-				.Where(pawnKindDef => pawnKindDef.RaceProps.CanDoHerdMigration && pawnKindDef.race.tradeTags != null &&
-				                      pawnKindDef.race.tradeTags.Contains("BMT_TradeTag_Crab") &&
-				                      Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile,
-					                      pawnKindDef.race))
-				.TryRandomElementByWeight(pawnKindDef => Mathf.Lerp(0.2f, 1f, pawnKindDef.race.statBases.GetStatValueFromList(StatDefOf.Wildness, 1f)), out animalKind);
+
+            List<PawnKindDef> pawnKindDefs = DefDatabase<PawnKindDef>.AllDefsListForReading;
+			pawnKindDefs = pawnKindDefs.Where(p => p.RaceProps.CanDoHerdMigration).ToList();
+            pawnKindDefs = pawnKindDefs.Where(p => p.race.tradeTags != null).ToList();
+            pawnKindDefs = pawnKindDefs.Where(p => p.race.tradeTags.Contains("BMT_TradeTag_Crab")).ToList();
+            pawnKindDefs = pawnKindDefs.Where(p => Find.World.tileTemperatures.SeasonAndOutdoorTemperatureAcceptableFor(tile, p.race)).ToList();
+			
+			if (pawnKindDefs.Count == 0)
+			{
+				animalKind = null;
+                return false;
+			}
+			else
+			{
+				animalKind = pawnKindDefs.RandomElementByWeight(p => 0.2f + p.race.statBases.GetStatValueFromList(StatDefOf.Wildness, 1f));
+				return true;
+			}
 		}
 
 		protected List<Pawn> GenerateAnimals(PawnKindDef animalKind, int tile, IntRange minRange)
