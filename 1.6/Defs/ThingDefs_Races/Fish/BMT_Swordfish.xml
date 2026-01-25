@@ -98,6 +98,8 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 		</race>
 		<modExtensions>
 			<li Class="BiomesCore.WaterWalkerExtension"/>

@@ -47,6 +47,8 @@
 			<li Class="BiomesCore.WaterWalkerExtension"/>
 		</modExtensions>
 		<race>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
 			<body>Snake</body>

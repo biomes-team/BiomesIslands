@@ -24,6 +24,8 @@
 			<manhunterOnDamageChance>0.02</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
 			<baseBodySize>0.20</baseBodySize>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 		</race>
 		<modExtensions>
 			<li Class="BiomesCore.WaterWalkerExtension"/>

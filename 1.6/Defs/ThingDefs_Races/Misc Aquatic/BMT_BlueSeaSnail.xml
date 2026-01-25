@@ -71,6 +71,8 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 		</race>
 		<modExtensions>
 			<li Class="BiomesCore.WaterWalkerExtension"/>

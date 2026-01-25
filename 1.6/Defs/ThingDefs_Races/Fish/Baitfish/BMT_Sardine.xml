@@ -24,6 +24,8 @@
 			<lifeExpectancy>3</lifeExpectancy>
 			<manhunterOnDamageChance>0.01</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 		</race>
 		<modExtensions>
 			<li Class="BiomesCore.WaterWalkerExtension"/>
