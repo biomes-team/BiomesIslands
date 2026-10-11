@@ -75,12 +75,13 @@
 		<li IfModActive="Mlie.RC2.Core">1.6/Mods/RimCuisine2Core</li>
 		<li IfModActive="Fluffy.StuffedFloors">1.6/Mods/StuffedFloors</li>
 		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.6/Mods/VanillaAnimalsExpanded</li>
-		<li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li>
 		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/Mods/VanillaFurnitureExpandedArchitect</li>
 		<li IfModActive="OskarPotocki.VFE.Classical">1.6/Mods/VanillaFactionsExpandedClassical</li>
 		<li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
 		<li IfModActive="VanillaExpanded.VPlantsEMore">1.6/Mods/VanillaPlantsExpandedMore</li>
 		<li IfModActive="sol.vfearchaddon">1.6/Mods/VFEArchitectAddonAndPatches</li>
 		<li IfModActive="VanillaExpanded.VAEWaste">1.6/Mods/VanillaAnimalsExpandedWaste</li>
+		<!-- Req seperate odyssey check -->
+		<!-- <li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li> -->
 	</v1.6>
 </loadFolders>
