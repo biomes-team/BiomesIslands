@@ -1,96 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C87AC0BA-1005-478A-80B4-E8830B7DBF1E}</ProjectGuid>
+    <TargetFramework>net10.0</TargetFramework>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<GenerateDependencyFile>false</GenerateDependencyFile>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BiomesIslands</RootNamespace>
-    <AssemblyName>BiomesIslands</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
     <LangVersion>8</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>BiomesIslands</AssemblyTitle>
+    <Product>BiomesIslands</Product>
+    <Copyright>Copyright © The Biomes Team 2019</Copyright>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\..\1.6\Assemblies\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\..\1.7\Assemblies\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\..\1.6\Assemblies\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\..\1.7\Assemblies\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lib.Harmony.3.0.0-rc.1\lib\net48\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\..\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="BiomesCore">
-      <HintPath>..\..\..\..\BiomesFramework\1.6\Assemblies\BiomesCore.dll</HintPath>
+      <HintPath>..\..\..\..\BiomesFramework\1.7\Assemblies\BiomesCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-      <HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\..\..\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.4977-alpha.1" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="Lib.Harmony" Version="3.0.0-rc.2" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="BiomesIslands.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_Atoll.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_BorealArchipelago.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_BorealIsland.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_DesertArchipelago.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_DesertIsland.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_TemperateArchipelago.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_TemperateIsland.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_TropicalArchipelago.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_TropicalIsland.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_TundraArchipelago.cs" />
-    <Compile Include="BiomeWorkers\BiomeWorker_TundraIsland.cs" />
-    <Compile Include="HotSwappableAttribute.cs" />
-    <Compile Include="Incidents\Incident_AquaticArrival.cs" />
-    <Compile Include="Incidents\Incident_CrabMigration.cs" />
-    <Compile Include="Incidents\Incident_RavenousCrabs.cs" />
-    <Compile Include="Incidents\Incident_GlowTide.cs" />
-    <Compile Include="IslandsUtil.cs" />
-    <Compile Include="Patches\QuestGen\QuestNode_Root_WorkSite_PotentialSiteTiles_Patch.cs" />
-    <Compile Include="Patches\ThingDefGenerator_Meat_ImpliedMeatDefs_Patch.cs" />
-    <Compile Include="Patches\World_NaturalRockTypesIn_Patch.cs" />
-    <Compile Include="Planet\WorldGenInfo_IslandPresence.cs" />
-    <Compile Include="Planet\WorldGenInfo_VolcanicActivity.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BiomesIslandsDefOf.cs" />
-    <Compile Include="Incidents\ThoughtWorker_GlowTide.cs" />
+  <ItemGroup Label="Compile items now included by globbing that were not in the original project file">
+    <Compile Remove="Patches\GenStep_ValleyPatch.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
