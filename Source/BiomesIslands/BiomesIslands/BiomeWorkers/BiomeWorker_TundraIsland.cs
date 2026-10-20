@@ -9,7 +9,7 @@ namespace BiomesIslands.BiomeWorkers
 	{
         public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
         {
-            if (tile.elevation > -100 || tile.elevation < -250f)
+            if (tile.elevation > -100 || tile.elevation < -250f || BiomeWorkerUtil.IsPermanentIce(tile))
             {
                 return -100f;
             }
