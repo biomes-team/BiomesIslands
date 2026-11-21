@@ -137,7 +137,7 @@
 			<Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
 			<Plant_TreeDrago>0.20</Plant_TreeDrago>
 			<Plant_Berry>0.10</Plant_Berry>
-			<BiomesIslands_CoconutPalm>0.03</BiomesIslands_CoconutPalm>
+			<!-- <BiomesIslands_CoconutPalm>0.03</BiomesIslands_CoconutPalm> -->
 			<!-- water plants -->
 			<BMT_Kelp>1.5</BMT_Kelp>
 			<BMT_SeaGrass>4.0</BMT_SeaGrass>
